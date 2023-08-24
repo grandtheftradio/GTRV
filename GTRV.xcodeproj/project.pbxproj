@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBB3BE3A2A97E79300E72A23 /* GTRVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE392A97E79300E72A23 /* GTRVApp.swift */; };
+		EBB3BE3C2A97E79300E72A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE3B2A97E79300E72A23 /* ContentView.swift */; };
+		EBB3BE3E2A97E79400E72A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE3D2A97E79400E72A23 /* Assets.xcassets */; };
+		EBB3BE412A97E79400E72A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE402A97E79400E72A23 /* Preview Assets.xcassets */; };
+		EBB3BE492A97E96300E72A23 /* RADIO_07_DANCE_01 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE482A97E96200E72A23 /* RADIO_07_DANCE_01 */; };
+		EBB3BE4B2A97E99100E72A23 /* RADIO_NEWS in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE4A2A97E99100E72A23 /* RADIO_NEWS */; };
+		EBB3BE4D2A97E99E00E72A23 /* RADIO_ADVERTS in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE4C2A97E99E00E72A23 /* RADIO_ADVERTS */; };
+		EBB3BE4F2A97E9B000E72A23 /* DLC_BATTLE_MUSIC in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE4E2A97E9B000E72A23 /* DLC_BATTLE_MUSIC */; };
+		EBB3BE512A97E9F700E72A23 /* DLC_CHRISTMAS2017 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE502A97E9F700E72A23 /* DLC_CHRISTMAS2017 */; };
+		EBB3BE532A97EA2300E72A23 /* RADIO_18_90S_ROCK in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE522A97EA2300E72A23 /* RADIO_18_90S_ROCK */; };
+		EBB3BE552A97EA7400E72A23 /* RADIO_17_FUNK in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE542A97EA7400E72A23 /* RADIO_17_FUNK */; };
+		EBB3BE572A97EA8600E72A23 /* RADIO_16_SILVERLAKE in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE562A97EA8500E72A23 /* RADIO_16_SILVERLAKE */; };
+		EBB3BE592A97EA9300E72A23 /* DLC_THELAB in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE582A97EA9300E72A23 /* DLC_THELAB */; };
+		EBB3BE5B2A97EAA000E72A23 /* RADIO_15_MOTOWN in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE5A2A97EAA000E72A23 /* RADIO_15_MOTOWN */; };
+		EBB3BE5D2A97EAAD00E72A23 /* RADIO_14_DANCE_02 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE5C2A97EAAD00E72A23 /* RADIO_14_DANCE_02 */; };
+		EBB3BE5F2A97EABC00E72A23 /* RADIO_13_JAZZ in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE5E2A97EABC00E72A23 /* RADIO_13_JAZZ */; };
+		EBB3BE612A97EAC700E72A23 /* RADIO_12_REGGAE in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE602A97EAC700E72A23 /* RADIO_12_REGGAE */; };
+		EBB3BE632A97EAD500E72A23 /* RADIO_11_TALK_02 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE622A97EAD500E72A23 /* RADIO_11_TALK_02 */; };
+		EBB3BE652A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE642A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD */; };
+		EBB3BE672A97EAEA00E72A23 /* RADIO_08_MEXICAN in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE662A97EAEA00E72A23 /* RADIO_08_MEXICAN */; };
+		EBB3BE692A97EB0600E72A23 /* RADIO_06_COUNTRY in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE682A97EB0600E72A23 /* RADIO_06_COUNTRY */; };
+		EBB3BE6B2A97EB2400E72A23 /* RADIO_05_TALK_01 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE6A2A97EB2400E72A23 /* RADIO_05_TALK_01 */; };
+		EBB3BE6D2A97EB3300E72A23 /* RADIO_04_PUNK in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE6C2A97EB3200E72A23 /* RADIO_04_PUNK */; };
+		EBB3BE6F2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE6E2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW */; };
+		EBB3BE712A97EB5300E72A23 /* RADIO_02_POP in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE702A97EB5300E72A23 /* RADIO_02_POP */; };
+		EBB3BE732A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE722A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK */; };
+		EBB3BE762A97ED1700E72A23 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE752A97ED1700E72A23 /* GlobalVariables.swift */; };
+		EBB3BE782A97ED4B00E72A23 /* RadioAdverts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE772A97ED4B00E72A23 /* RadioAdverts.swift */; };
+		EBB3BE7A2A97ED8000E72A23 /* RadioNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE792A97ED8000E72A23 /* RadioNews.swift */; };
+		EBB3BE7C2A97EDA600E72A23 /* RadioStations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE7B2A97EDA600E72A23 /* RadioStations.swift */; };
+		EBB3BE7F2A97EDF000E72A23 /* AudioPlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE7E2A97EDF000E72A23 /* AudioPlayerDelegate.swift */; };
+		EBB3BE812A97EE3100E72A23 /* BackgroundImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE802A97EE3100E72A23 /* BackgroundImagePicker.swift */; };
+		EBB3BE832A97EE9A00E72A23 /* CharacterColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE822A97EE9A00E72A23 /* CharacterColor.swift */; };
+		EBB3BE852A97EECA00E72A23 /* StopRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE842A97EECA00E72A23 /* StopRadio.swift */; };
+		EBB3BE872A97F0D200E72A23 /* TuneInTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE862A97F0D200E72A23 /* TuneInTime.swift */; };
+		EBB3BE892A97F13D00E72A23 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE882A97F13D00E72A23 /* ViewModel.swift */; };
+		EBB3BE8C2A97F1AB00E72A23 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE8B2A97F1AB00E72A23 /* UIImage.swift */; };
+		EBB3BE8F2A97F20C00E72A23 /* TuneData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE8E2A97F20C00E72A23 /* TuneData.swift */; };
+		EBB3BE912A97F24400E72A23 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE902A97F24400E72A23 /* Song.swift */; };
+		EBB3BE932A97F28300E72A23 /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE922A97F28300E72A23 /* Sector.swift */; };
+		EBB3BE952A97FBF600E72A23 /* CustomColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE942A97FBF500E72A23 /* CustomColorData.swift */; };
+		EBB3BE972A97FC3900E72A23 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE962A97FC3900E72A23 /* RadioStation.swift */; };
+		EBB3BE992A97FC6B00E72A23 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE982A97FC6B00E72A23 /* Position.swift */; };
+		EBB3BE9B2A97FCA600E72A23 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE9A2A97FCA600E72A23 /* Label.swift */; };
+		EBB3BE9D2A97FCD900E72A23 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE9C2A97FCD900E72A23 /* Intro.swift */; };
+		EBB3BEA02A97FD4200E72A23 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE9F2A97FD4200E72A23 /* BackgroundImage.swift */; };
+		EBB3BEA22A97FD7200E72A23 /* ButtonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEA12A97FD7200E72A23 /* ButtonImage.swift */; };
+		EBB3BEA42A97FDA300E72A23 /* ColorSelectorName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEA32A97FDA300E72A23 /* ColorSelectorName.swift */; };
+		EBB3BEA62A97FDD200E72A23 /* ColorSelectorSector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEA52A97FDD200E72A23 /* ColorSelectorSector.swift */; };
+		EBB3BEA82A97FDF900E72A23 /* RadioStationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEA72A97FDF900E72A23 /* RadioStationButton.swift */; };
+		EBB3BEAA2A97FE2200E72A23 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEA92A97FE2200E72A23 /* Settings.swift */; };
+		EBB3BEAC2A97FE5700E72A23 /* StationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */; };
+		EBB3BEAE2A97FE8700E72A23 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEAD2A97FE8700E72A23 /* Stations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EBB3BE362A97E79300E72A23 /* GTRV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTRV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB3BE392A97E79300E72A23 /* GTRVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTRVApp.swift; sourceTree = "<group>"; };
+		EBB3BE3B2A97E79300E72A23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBB3BE3D2A97E79400E72A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBB3BE402A97E79400E72A23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EBB3BE482A97E96200E72A23 /* RADIO_07_DANCE_01 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_07_DANCE_01; sourceTree = "<group>"; };
+		EBB3BE4A2A97E99100E72A23 /* RADIO_NEWS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_NEWS; sourceTree = "<group>"; };
+		EBB3BE4C2A97E99E00E72A23 /* RADIO_ADVERTS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_ADVERTS; sourceTree = "<group>"; };
+		EBB3BE4E2A97E9B000E72A23 /* DLC_BATTLE_MUSIC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_BATTLE_MUSIC; sourceTree = "<group>"; };
+		EBB3BE502A97E9F700E72A23 /* DLC_CHRISTMAS2017 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_CHRISTMAS2017; sourceTree = "<group>"; };
+		EBB3BE522A97EA2300E72A23 /* RADIO_18_90S_ROCK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_18_90S_ROCK; sourceTree = "<group>"; };
+		EBB3BE542A97EA7400E72A23 /* RADIO_17_FUNK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_17_FUNK; sourceTree = "<group>"; };
+		EBB3BE562A97EA8500E72A23 /* RADIO_16_SILVERLAKE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_16_SILVERLAKE; sourceTree = "<group>"; };
+		EBB3BE582A97EA9300E72A23 /* DLC_THELAB */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_THELAB; sourceTree = "<group>"; };
+		EBB3BE5A2A97EAA000E72A23 /* RADIO_15_MOTOWN */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_15_MOTOWN; sourceTree = "<group>"; };
+		EBB3BE5C2A97EAAD00E72A23 /* RADIO_14_DANCE_02 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_14_DANCE_02; sourceTree = "<group>"; };
+		EBB3BE5E2A97EABC00E72A23 /* RADIO_13_JAZZ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_13_JAZZ; sourceTree = "<group>"; };
+		EBB3BE602A97EAC700E72A23 /* RADIO_12_REGGAE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_12_REGGAE; sourceTree = "<group>"; };
+		EBB3BE622A97EAD500E72A23 /* RADIO_11_TALK_02 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_11_TALK_02; sourceTree = "<group>"; };
+		EBB3BE642A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_09_HIPHOP_OLD; sourceTree = "<group>"; };
+		EBB3BE662A97EAEA00E72A23 /* RADIO_08_MEXICAN */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_08_MEXICAN; sourceTree = "<group>"; };
+		EBB3BE682A97EB0600E72A23 /* RADIO_06_COUNTRY */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_06_COUNTRY; sourceTree = "<group>"; };
+		EBB3BE6A2A97EB2400E72A23 /* RADIO_05_TALK_01 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_05_TALK_01; sourceTree = "<group>"; };
+		EBB3BE6C2A97EB3200E72A23 /* RADIO_04_PUNK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_04_PUNK; sourceTree = "<group>"; };
+		EBB3BE6E2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_03_HIPHOP_NEW; sourceTree = "<group>"; };
+		EBB3BE702A97EB5300E72A23 /* RADIO_02_POP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_02_POP; sourceTree = "<group>"; };
+		EBB3BE722A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_01_CLASS_ROCK; sourceTree = "<group>"; };
+		EBB3BE752A97ED1700E72A23 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		EBB3BE772A97ED4B00E72A23 /* RadioAdverts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAdverts.swift; sourceTree = "<group>"; };
+		EBB3BE792A97ED8000E72A23 /* RadioNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioNews.swift; sourceTree = "<group>"; };
+		EBB3BE7B2A97EDA600E72A23 /* RadioStations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStations.swift; sourceTree = "<group>"; };
+		EBB3BE7E2A97EDF000E72A23 /* AudioPlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerDelegate.swift; sourceTree = "<group>"; };
+		EBB3BE802A97EE3100E72A23 /* BackgroundImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImagePicker.swift; sourceTree = "<group>"; };
+		EBB3BE822A97EE9A00E72A23 /* CharacterColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterColor.swift; sourceTree = "<group>"; };
+		EBB3BE842A97EECA00E72A23 /* StopRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopRadio.swift; sourceTree = "<group>"; };
+		EBB3BE862A97F0D200E72A23 /* TuneInTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneInTime.swift; sourceTree = "<group>"; };
+		EBB3BE882A97F13D00E72A23 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EBB3BE8B2A97F1AB00E72A23 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		EBB3BE8E2A97F20C00E72A23 /* TuneData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneData.swift; sourceTree = "<group>"; };
+		EBB3BE902A97F24400E72A23 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		EBB3BE922A97F28300E72A23 /* Sector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sector.swift; sourceTree = "<group>"; };
+		EBB3BE942A97FBF500E72A23 /* CustomColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorData.swift; sourceTree = "<group>"; };
+		EBB3BE962A97FC3900E72A23 /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		EBB3BE982A97FC6B00E72A23 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		EBB3BE9A2A97FCA600E72A23 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		EBB3BE9C2A97FCD900E72A23 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		EBB3BE9F2A97FD4200E72A23 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
+		EBB3BEA12A97FD7200E72A23 /* ButtonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImage.swift; sourceTree = "<group>"; };
+		EBB3BEA32A97FDA300E72A23 /* ColorSelectorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectorName.swift; sourceTree = "<group>"; };
+		EBB3BEA52A97FDD200E72A23 /* ColorSelectorSector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectorSector.swift; sourceTree = "<group>"; };
+		EBB3BEA72A97FDF900E72A23 /* RadioStationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationButton.swift; sourceTree = "<group>"; };
+		EBB3BEA92A97FE2200E72A23 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLabel.swift; sourceTree = "<group>"; };
+		EBB3BEAD2A97FE8700E72A23 /* Stations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBB3BE332A97E79300E72A23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBB3BE2D2A97E79300E72A23 = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE382A97E79300E72A23 /* GTRV */,
+				EBB3BE372A97E79300E72A23 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBB3BE372A97E79300E72A23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE362A97E79300E72A23 /* GTRV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBB3BE382A97E79300E72A23 /* GTRV */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE472A97E94300E72A23 /* Audio */,
+				EBB3BE742A97ECE700E72A23 /* Data */,
+				EBB3BE8A2A97F18200E72A23 /* Extension */,
+				EBB3BE7D2A97EDC800E72A23 /* Logic */,
+				EBB3BE8D2A97F1EA00E72A23 /* Type */,
+				EBB3BE9E2A97FD1D00E72A23 /* View */,
+				EBB3BE392A97E79300E72A23 /* GTRVApp.swift */,
+				EBB3BE3B2A97E79300E72A23 /* ContentView.swift */,
+				EBB3BE3D2A97E79400E72A23 /* Assets.xcassets */,
+				EBB3BE3F2A97E79400E72A23 /* Preview Content */,
+			);
+			path = GTRV;
+			sourceTree = "<group>";
+		};
+		EBB3BE3F2A97E79400E72A23 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE402A97E79400E72A23 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBB3BE472A97E94300E72A23 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE722A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK */,
+				EBB3BE702A97EB5300E72A23 /* RADIO_02_POP */,
+				EBB3BE6E2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW */,
+				EBB3BE6C2A97EB3200E72A23 /* RADIO_04_PUNK */,
+				EBB3BE6A2A97EB2400E72A23 /* RADIO_05_TALK_01 */,
+				EBB3BE682A97EB0600E72A23 /* RADIO_06_COUNTRY */,
+				EBB3BE482A97E96200E72A23 /* RADIO_07_DANCE_01 */,
+				EBB3BE662A97EAEA00E72A23 /* RADIO_08_MEXICAN */,
+				EBB3BE642A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD */,
+				EBB3BE622A97EAD500E72A23 /* RADIO_11_TALK_02 */,
+				EBB3BE602A97EAC700E72A23 /* RADIO_12_REGGAE */,
+				EBB3BE5E2A97EABC00E72A23 /* RADIO_13_JAZZ */,
+				EBB3BE5C2A97EAAD00E72A23 /* RADIO_14_DANCE_02 */,
+				EBB3BE5A2A97EAA000E72A23 /* RADIO_15_MOTOWN */,
+				EBB3BE582A97EA9300E72A23 /* DLC_THELAB */,
+				EBB3BE562A97EA8500E72A23 /* RADIO_16_SILVERLAKE */,
+				EBB3BE542A97EA7400E72A23 /* RADIO_17_FUNK */,
+				EBB3BE522A97EA2300E72A23 /* RADIO_18_90S_ROCK */,
+				EBB3BE502A97E9F700E72A23 /* DLC_CHRISTMAS2017 */,
+				EBB3BE4E2A97E9B000E72A23 /* DLC_BATTLE_MUSIC */,
+				EBB3BE4C2A97E99E00E72A23 /* RADIO_ADVERTS */,
+				EBB3BE4A2A97E99100E72A23 /* RADIO_NEWS */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		EBB3BE742A97ECE700E72A23 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE752A97ED1700E72A23 /* GlobalVariables.swift */,
+				EBB3BE772A97ED4B00E72A23 /* RadioAdverts.swift */,
+				EBB3BE792A97ED8000E72A23 /* RadioNews.swift */,
+				EBB3BE7B2A97EDA600E72A23 /* RadioStations.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EBB3BE7D2A97EDC800E72A23 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE7E2A97EDF000E72A23 /* AudioPlayerDelegate.swift */,
+				EBB3BE802A97EE3100E72A23 /* BackgroundImagePicker.swift */,
+				EBB3BE822A97EE9A00E72A23 /* CharacterColor.swift */,
+				EBB3BE842A97EECA00E72A23 /* StopRadio.swift */,
+				EBB3BE862A97F0D200E72A23 /* TuneInTime.swift */,
+				EBB3BE882A97F13D00E72A23 /* ViewModel.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		EBB3BE8A2A97F18200E72A23 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE8B2A97F1AB00E72A23 /* UIImage.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EBB3BE8D2A97F1EA00E72A23 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE942A97FBF500E72A23 /* CustomColorData.swift */,
+				EBB3BE9C2A97FCD900E72A23 /* Intro.swift */,
+				EBB3BE9A2A97FCA600E72A23 /* Label.swift */,
+				EBB3BE982A97FC6B00E72A23 /* Position.swift */,
+				EBB3BE962A97FC3900E72A23 /* RadioStation.swift */,
+				EBB3BE922A97F28300E72A23 /* Sector.swift */,
+				EBB3BE902A97F24400E72A23 /* Song.swift */,
+				EBB3BE8E2A97F20C00E72A23 /* TuneData.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		EBB3BE9E2A97FD1D00E72A23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBB3BE9F2A97FD4200E72A23 /* BackgroundImage.swift */,
+				EBB3BEA12A97FD7200E72A23 /* ButtonImage.swift */,
+				EBB3BEA32A97FDA300E72A23 /* ColorSelectorName.swift */,
+				EBB3BEA52A97FDD200E72A23 /* ColorSelectorSector.swift */,
+				EBB3BEA72A97FDF900E72A23 /* RadioStationButton.swift */,
+				EBB3BEA92A97FE2200E72A23 /* Settings.swift */,
+				EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */,
+				EBB3BEAD2A97FE8700E72A23 /* Stations.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBB3BE352A97E79300E72A23 /* GTRV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB3BE442A97E79400E72A23 /* Build configuration list for PBXNativeTarget "GTRV" */;
+			buildPhases = (
+				EBB3BE322A97E79300E72A23 /* Sources */,
+				EBB3BE332A97E79300E72A23 /* Frameworks */,
+				EBB3BE342A97E79300E72A23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTRV;
+			productName = GTRV;
+			productReference = EBB3BE362A97E79300E72A23 /* GTRV.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBB3BE2E2A97E79300E72A23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EBB3BE352A97E79300E72A23 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EBB3BE312A97E79300E72A23 /* Build configuration list for PBXProject "GTRV" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBB3BE2D2A97E79300E72A23;
+			productRefGroup = EBB3BE372A97E79300E72A23 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBB3BE352A97E79300E72A23 /* GTRV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBB3BE342A97E79300E72A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB3BE6F2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW in Resources */,
+				EBB3BE492A97E96300E72A23 /* RADIO_07_DANCE_01 in Resources */,
+				EBB3BE532A97EA2300E72A23 /* RADIO_18_90S_ROCK in Resources */,
+				EBB3BE4B2A97E99100E72A23 /* RADIO_NEWS in Resources */,
+				EBB3BE712A97EB5300E72A23 /* RADIO_02_POP in Resources */,
+				EBB3BE572A97EA8600E72A23 /* RADIO_16_SILVERLAKE in Resources */,
+				EBB3BE4F2A97E9B000E72A23 /* DLC_BATTLE_MUSIC in Resources */,
+				EBB3BE512A97E9F700E72A23 /* DLC_CHRISTMAS2017 in Resources */,
+				EBB3BE6B2A97EB2400E72A23 /* RADIO_05_TALK_01 in Resources */,
+				EBB3BE652A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD in Resources */,
+				EBB3BE5B2A97EAA000E72A23 /* RADIO_15_MOTOWN in Resources */,
+				EBB3BE5F2A97EABC00E72A23 /* RADIO_13_JAZZ in Resources */,
+				EBB3BE4D2A97E99E00E72A23 /* RADIO_ADVERTS in Resources */,
+				EBB3BE732A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK in Resources */,
+				EBB3BE612A97EAC700E72A23 /* RADIO_12_REGGAE in Resources */,
+				EBB3BE6D2A97EB3300E72A23 /* RADIO_04_PUNK in Resources */,
+				EBB3BE552A97EA7400E72A23 /* RADIO_17_FUNK in Resources */,
+				EBB3BE412A97E79400E72A23 /* Preview Assets.xcassets in Resources */,
+				EBB3BE632A97EAD500E72A23 /* RADIO_11_TALK_02 in Resources */,
+				EBB3BE672A97EAEA00E72A23 /* RADIO_08_MEXICAN in Resources */,
+				EBB3BE592A97EA9300E72A23 /* DLC_THELAB in Resources */,
+				EBB3BE3E2A97E79400E72A23 /* Assets.xcassets in Resources */,
+				EBB3BE5D2A97EAAD00E72A23 /* RADIO_14_DANCE_02 in Resources */,
+				EBB3BE692A97EB0600E72A23 /* RADIO_06_COUNTRY in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBB3BE322A97E79300E72A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB3BE762A97ED1700E72A23 /* GlobalVariables.swift in Sources */,
+				EBB3BE782A97ED4B00E72A23 /* RadioAdverts.swift in Sources */,
+				EBB3BEA62A97FDD200E72A23 /* ColorSelectorSector.swift in Sources */,
+				EBB3BE972A97FC3900E72A23 /* RadioStation.swift in Sources */,
+				EBB3BEAE2A97FE8700E72A23 /* Stations.swift in Sources */,
+				EBB3BEA82A97FDF900E72A23 /* RadioStationButton.swift in Sources */,
+				EBB3BE7C2A97EDA600E72A23 /* RadioStations.swift in Sources */,
+				EBB3BE3C2A97E79300E72A23 /* ContentView.swift in Sources */,
+				EBB3BEAC2A97FE5700E72A23 /* StationLabel.swift in Sources */,
+				EBB3BE7A2A97ED8000E72A23 /* RadioNews.swift in Sources */,
+				EBB3BE852A97EECA00E72A23 /* StopRadio.swift in Sources */,
+				EBB3BEA02A97FD4200E72A23 /* BackgroundImage.swift in Sources */,
+				EBB3BE7F2A97EDF000E72A23 /* AudioPlayerDelegate.swift in Sources */,
+				EBB3BE932A97F28300E72A23 /* Sector.swift in Sources */,
+				EBB3BE832A97EE9A00E72A23 /* CharacterColor.swift in Sources */,
+				EBB3BEA42A97FDA300E72A23 /* ColorSelectorName.swift in Sources */,
+				EBB3BE3A2A97E79300E72A23 /* GTRVApp.swift in Sources */,
+				EBB3BE9D2A97FCD900E72A23 /* Intro.swift in Sources */,
+				EBB3BE912A97F24400E72A23 /* Song.swift in Sources */,
+				EBB3BE8F2A97F20C00E72A23 /* TuneData.swift in Sources */,
+				EBB3BE812A97EE3100E72A23 /* BackgroundImagePicker.swift in Sources */,
+				EBB3BE952A97FBF600E72A23 /* CustomColorData.swift in Sources */,
+				EBB3BE892A97F13D00E72A23 /* ViewModel.swift in Sources */,
+				EBB3BE8C2A97F1AB00E72A23 /* UIImage.swift in Sources */,
+				EBB3BE992A97FC6B00E72A23 /* Position.swift in Sources */,
+				EBB3BE9B2A97FCA600E72A23 /* Label.swift in Sources */,
+				EBB3BEAA2A97FE2200E72A23 /* Settings.swift in Sources */,
+				EBB3BE872A97F0D200E72A23 /* TuneInTime.swift in Sources */,
+				EBB3BEA22A97FD7200E72A23 /* ButtonImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EBB3BE422A97E79400E72A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBB3BE432A97E79400E72A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBB3BE452A97E79400E72A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GTRV/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = grandtheftradio.GTRV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBB3BE462A97E79400E72A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GTRV/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = grandtheftradio.GTRV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBB3BE312A97E79300E72A23 /* Build configuration list for PBXProject "GTRV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB3BE422A97E79400E72A23 /* Debug */,
+				EBB3BE432A97E79400E72A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB3BE442A97E79400E72A23 /* Build configuration list for PBXNativeTarget "GTRV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBB3BE452A97E79400E72A23 /* Debug */,
+				EBB3BE462A97E79400E72A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBB3BE2E2A97E79300E72A23 /* Project object */;
+}
