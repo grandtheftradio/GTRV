@@ -89,6 +89,8 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+.DS_Store
+
 # Media
 
 *.mp3
