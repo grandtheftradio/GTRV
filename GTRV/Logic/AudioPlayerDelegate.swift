@@ -313,7 +313,6 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					s = Int(arc4random_uniform(UInt32(unplayed.count)))
 				}
 				
-				
 				let randomSong: Song = unplayed[s]
 				let song: String = randomSong.file
 				let songRoot: String = randomSong.root
@@ -595,7 +594,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		var playID: Bool = false
 		
 		switch Station.number {
-		case 5, 7, 8, 11, 13, 14, 16, 20, 21:
+		case 7, 8, 13, 14, 16, 20, 21:
 			playSong = true
 		default:
 			switch outroType {
@@ -604,21 +603,38 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			case "news":
 				playNews = true
 			default:
-				let news_monoSolo_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
-				if ((lastPlayed == "ad") || (lastPlayed == "news")) {
-					if (lastPlayed == "ad") {
-						playAd = (news_monoSolo_ad_song <= 5.0) // ~5.0%
+				switch Station.number {
+				case 5, 11:
+					let news_ad: Double = Double.random(in: 1.0..<(100.0 + 1))
+					switch lastPlayed {
+					case "id":
+						playSong = true
+					case "ad":
+						playAd = (news_ad <= 50.0) // ~50.0%
 						playID = !playAd
-					} else {
+					case "news":
 						playID = true
+					default: //song
+						playAd = (news_ad <= 90.0) // ~90.0%
+						playNews = !playAd
 					}
-				} else {
-					if (lastPlayed == "song") {
-						playNews = (news_monoSolo_ad_song <= 1.17) // ~1.17% [-8]
-						playAd = playNews ? false : (news_monoSolo_ad_song <= (1.17 + 2.3)) // ~2.3% [-16]
-						playMonoSolo = (playNews || playAd) ? false : (news_monoSolo_ad_song <= (1.17 + 2.30 + 25.38)) // ~25.38% [+12]
+				default:
+					let news_monoSolo_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
+					if ((lastPlayed == "ad") || (lastPlayed == "news")) {
+						if (lastPlayed == "ad") {
+							playAd = (news_monoSolo_ad_song <= 5.0) // ~5.0%
+							playID = !playAd
+						} else {
+							playID = true
+						}
+					} else {
+						if (lastPlayed == "song") {
+							playNews = (news_monoSolo_ad_song <= 1.17) // ~1.17% [-8]
+							playAd = playNews ? false : (news_monoSolo_ad_song <= (1.17 + 2.3)) // ~2.3% [-16]
+							playMonoSolo = (playNews || playAd) ? false : (news_monoSolo_ad_song <= (1.17 + 2.30 + 25.38)) // ~25.38% [+12]
+						}
+						playSong = (playNews || playAd || playMonoSolo) ? false : (news_monoSolo_ad_song <= (1.17 + 2.30 + 25.38 + 71.15)) // ~71.15% [+12]
 					}
-					playSong = (playNews || playAd || playMonoSolo) ? false : (news_monoSolo_ad_song <= (1.17 + 2.30 + 25.38 + 71.15)) // ~71.15% [+12]
 				}
 			}
 		}
