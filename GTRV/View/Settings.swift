@@ -166,7 +166,7 @@ struct Settings: View {
 						) {
 							BackgroundImage(
 								pickerView: true,
-								bgUIImage: customBackgroundUIImage == nil ? backgroundImagePicker.uiImage : customBackgroundUIImage
+								bgUIImage: customBackgroundUIImage// == nil ? backgroundImagePicker.uiImage : customBackgroundUIImage
 							)
 							.frame(
 								width: 250.0,

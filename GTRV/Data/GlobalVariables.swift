@@ -96,6 +96,29 @@ var playOutro: Bool = false
 var playedStations: [Int] = []
 
 var radioStationIndex: Int = 10
+var rotated: [String: Bool] = [
+	"Los Santos Rock Radio": false,
+	"Non-Stop-Pop FM": false,
+	"Radio Los Santos": false,
+	"Channel X": false,
+	"WCTR": false,
+	"Rebel Radio": false,
+	"Soulwax FM": false,
+	"East Los FM": false,
+	"West Coast Classics": false,
+	"Radio Off": false,
+	"Blaine County Radio": false,
+	"The Blue Ark": false,
+	"Worldwide FM": false,
+	"FlyLo FM": false,
+	"The Low Down 91.1": false,
+	"The Lab": false,
+	"Radio Mirror Park": false,
+	"Space 103.2": false,
+	"Vinewood Boulevard Radio": false,
+	"Blonded Los Santos 97.8 FM": false,
+	"Los Santos Underground Radio": false
+]
 
 var startPlaying: Bool = false
 

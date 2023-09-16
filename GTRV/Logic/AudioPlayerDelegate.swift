@@ -201,7 +201,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let monoSoloRoot: String = ("\(stationRoot)/mono_solo_\(monoSolo)")
 				print("mono_solo: \(monoSoloRoot)/MONO_SOLO_\(monoSolo)")
 				guard let monoSoloPath = Bundle.main.path(forResource: "MONO_SOLO_\(monoSolo)", ofType: "mp3", inDirectory: monoSoloRoot) else {
-					//print("guard: play > ad > monoSoloPath")
+					//print("guard: play > mono_solo > monoSoloPath")
 					return
 				}
 				let monoSoloURL: URL = URL(fileURLWithPath: monoSoloPath)
@@ -235,7 +235,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			let news = rootNews[1]
 			print("news: RADIO_NEWS/\(newsRoot)/\(news)")
 			guard let newsPath = Bundle.main.path(forResource: news, ofType: "mp3", inDirectory: "RADIO_NEWS/\(newsRoot)/") else {
-				//print("guard: play > ad > newsPath")
+				//print("guard: play > news > newsPath")
 				return
 			}
 			let newsURL = URL(fileURLWithPath: newsPath)
@@ -268,7 +268,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let stationIDRoot: String = ("\(stationRoot)/id_\(stationID)")
 				print("id: \(stationIDRoot)/ID_\(stationID)")
 				guard let stationIDPath = Bundle.main.path(forResource: "ID_\(stationID)", ofType: "mp3", inDirectory: stationIDRoot) else {
-					//print("guard: play > ad > stationIDPath")
+					//print("guard: play > station_id > stationIDPath")
 					return
 				}
 				let stationIDURL: URL = URL(fileURLWithPath: stationIDPath)
@@ -297,13 +297,18 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				
 				if (unplayed.isEmpty) {
 					if (Station.rotate) {
-						if (tune.In) {
+						guard let isRotated = rotated[Station.name] else {
+							//print("guard: play > song > unplayed.isEmpty > isRotated")
+							return
+						}
+						if (!isRotated) {
 							let frs: Int = Int(arc4random_uniform(UInt32(songs.count)))
 							var rotatedSongs: [Song] = []
 							for rs in frs..<songs.count {
 								rotatedSongs.append(songs[rs])
 							}
 							unplayed = rotatedSongs
+							rotated[Station.name] = true
 						} else {
 							unplayed = songs
 						}
@@ -609,21 +614,21 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			default:
 				switch Station.number {
 				case 5, 11:
-					let news_ad: Double = Double.random(in: 1.0..<(100.0 + 1))
+					let news_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
 					switch lastPlayed {
 					case "id":
 						playSong = true
 					case "ad":
-						playAd = (news_ad <= 50.0) // ~50.0%
+						playAd = (news_ad_song <= 40.0) // ~50.0%
 						playID = !playAd
 					case "news":
 						playID = true
 					case "song":
-						playAd = (news_ad <= 90.0) // ~90.0%
+						playAd = (news_ad_song <= 90.0) // ~90.0%
 						playNews = !playAd
 					default:
-						playAd = (news_ad <= 33.33)
-						playNews = playAd ? false : (news_ad <= 66.67)
+						playAd = (news_ad_song <= 16.0)
+						playNews = playAd ? false : (news_ad_song <= 20.0)
 						playSong = !(playAd || playNews)
 					}
 				default:
