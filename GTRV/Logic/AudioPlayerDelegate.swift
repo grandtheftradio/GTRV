@@ -296,13 +296,17 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				var unplayed: [Song] = unplayedSongs[Station.name] ?? []
 				
 				if (unplayed.isEmpty) {
-					if Station.rotate {
-						let frs: Int = Int(arc4random_uniform(UInt32(songs.count)))
-						var rotatedSongs: [Song] = []
-						for rs in frs..<songs.count {
-							rotatedSongs.append(songs[rs])
+					if (Station.rotate) {
+						if (tune.In) {
+							let frs: Int = Int(arc4random_uniform(UInt32(songs.count)))
+							var rotatedSongs: [Song] = []
+							for rs in frs..<songs.count {
+								rotatedSongs.append(songs[rs])
+							}
+							unplayed = rotatedSongs
+						} else {
+							unplayed = songs
 						}
-						unplayed = rotatedSongs
 					} else {
 						unplayed = songs
 					}
@@ -614,9 +618,13 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						playID = !playAd
 					case "news":
 						playID = true
-					default: //song
+					case "song":
 						playAd = (news_ad <= 90.0) // ~90.0%
 						playNews = !playAd
+					default:
+						playAd = (news_ad <= 33.33)
+						playNews = playAd ? false : (news_ad <= 66.67)
+						playSong = !(playAd || playNews)
 					}
 				default:
 					let news_monoSolo_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))

@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB51EB4E2AB617A80079C937 /* RADIO_01_CLASS_ROCK in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB4D2AB617A80079C937 /* RADIO_01_CLASS_ROCK */; };
+		EB51EB502AB617BA0079C937 /* RADIO_02_POP in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB4F2AB617BA0079C937 /* RADIO_02_POP */; };
+		EB51EB522AB61A020079C937 /* DLC_BATTLE_MUSIC in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB512AB61A020079C937 /* DLC_BATTLE_MUSIC */; };
+		EB51EB542AB61A250079C937 /* RADIO_03_HIPHOP_NEW in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB532AB61A250079C937 /* RADIO_03_HIPHOP_NEW */; };
+		EB51EB562AB61A330079C937 /* RADIO_04_PUNK in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB552AB61A330079C937 /* RADIO_04_PUNK */; };
+		EB51EB582AB61A3F0079C937 /* RADIO_05_TALK_01 in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB572AB61A3F0079C937 /* RADIO_05_TALK_01 */; };
+		EB51EB5A2AB61A6D0079C937 /* RADIO_06_COUNTRY in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB592AB61A6D0079C937 /* RADIO_06_COUNTRY */; };
+		EB51EB5C2AB61A760079C937 /* RADIO_07_DANCE_01 in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB5B2AB61A760079C937 /* RADIO_07_DANCE_01 */; };
+		EB51EB5E2AB61A7F0079C937 /* RADIO_08_MEXICAN in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB5D2AB61A7F0079C937 /* RADIO_08_MEXICAN */; };
+		EB51EB602AB61A8A0079C937 /* RADIO_09_HIPHOP_OLD in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB5F2AB61A8A0079C937 /* RADIO_09_HIPHOP_OLD */; };
+		EB51EB622AB61A940079C937 /* RADIO_11_TALK_02 in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB612AB61A940079C937 /* RADIO_11_TALK_02 */; };
+		EB51EB642AB61A9C0079C937 /* RADIO_12_REGGAE in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB632AB61A9C0079C937 /* RADIO_12_REGGAE */; };
+		EB51EB662AB61AA40079C937 /* RADIO_13_JAZZ in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB652AB61AA40079C937 /* RADIO_13_JAZZ */; };
+		EB51EB682AB61AAC0079C937 /* RADIO_14_DANCE_02 in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB672AB61AAC0079C937 /* RADIO_14_DANCE_02 */; };
+		EB51EB6A2AB61AB80079C937 /* RADIO_15_MOTOWN in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB692AB61AB80079C937 /* RADIO_15_MOTOWN */; };
+		EB51EB6C2AB61AC00079C937 /* RADIO_16_SILVERLAKE in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB6B2AB61AC00079C937 /* RADIO_16_SILVERLAKE */; };
+		EB51EB6E2AB61AE80079C937 /* RADIO_17_FUNK in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB6D2AB61AE80079C937 /* RADIO_17_FUNK */; };
+		EB51EB702AB61AF10079C937 /* RADIO_18_90S_ROCK in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB6F2AB61AF10079C937 /* RADIO_18_90S_ROCK */; };
+		EB51EB722AB61B040079C937 /* DLC_THELAB in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB712AB61B040079C937 /* DLC_THELAB */; };
+		EB51EB742AB61BCC0079C937 /* DLC_CHRISTMAS2017 in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB732AB61BCB0079C937 /* DLC_CHRISTMAS2017 */; };
+		EB51EB762AB620590079C937 /* RADIO_ADVERTS in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB752AB620590079C937 /* RADIO_ADVERTS */; };
+		EB51EB782AB620640079C937 /* RADIO_NEWS in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB772AB620630079C937 /* RADIO_NEWS */; };
 		EBB3BE3A2A97E79300E72A23 /* GTRVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE392A97E79300E72A23 /* GTRVApp.swift */; };
 		EBB3BE3C2A97E79300E72A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE3B2A97E79300E72A23 /* ContentView.swift */; };
 		EBB3BE3E2A97E79400E72A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE3D2A97E79400E72A23 /* Assets.xcassets */; };
 		EBB3BE412A97E79400E72A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE402A97E79400E72A23 /* Preview Assets.xcassets */; };
-		EBB3BE492A97E96300E72A23 /* RADIO_07_DANCE_01 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE482A97E96200E72A23 /* RADIO_07_DANCE_01 */; };
-		EBB3BE4B2A97E99100E72A23 /* RADIO_NEWS in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE4A2A97E99100E72A23 /* RADIO_NEWS */; };
-		EBB3BE4D2A97E99E00E72A23 /* RADIO_ADVERTS in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE4C2A97E99E00E72A23 /* RADIO_ADVERTS */; };
-		EBB3BE4F2A97E9B000E72A23 /* DLC_BATTLE_MUSIC in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE4E2A97E9B000E72A23 /* DLC_BATTLE_MUSIC */; };
-		EBB3BE512A97E9F700E72A23 /* DLC_CHRISTMAS2017 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE502A97E9F700E72A23 /* DLC_CHRISTMAS2017 */; };
-		EBB3BE532A97EA2300E72A23 /* RADIO_18_90S_ROCK in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE522A97EA2300E72A23 /* RADIO_18_90S_ROCK */; };
-		EBB3BE552A97EA7400E72A23 /* RADIO_17_FUNK in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE542A97EA7400E72A23 /* RADIO_17_FUNK */; };
-		EBB3BE572A97EA8600E72A23 /* RADIO_16_SILVERLAKE in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE562A97EA8500E72A23 /* RADIO_16_SILVERLAKE */; };
-		EBB3BE592A97EA9300E72A23 /* DLC_THELAB in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE582A97EA9300E72A23 /* DLC_THELAB */; };
-		EBB3BE5B2A97EAA000E72A23 /* RADIO_15_MOTOWN in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE5A2A97EAA000E72A23 /* RADIO_15_MOTOWN */; };
-		EBB3BE5D2A97EAAD00E72A23 /* RADIO_14_DANCE_02 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE5C2A97EAAD00E72A23 /* RADIO_14_DANCE_02 */; };
-		EBB3BE5F2A97EABC00E72A23 /* RADIO_13_JAZZ in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE5E2A97EABC00E72A23 /* RADIO_13_JAZZ */; };
-		EBB3BE612A97EAC700E72A23 /* RADIO_12_REGGAE in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE602A97EAC700E72A23 /* RADIO_12_REGGAE */; };
-		EBB3BE632A97EAD500E72A23 /* RADIO_11_TALK_02 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE622A97EAD500E72A23 /* RADIO_11_TALK_02 */; };
-		EBB3BE652A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE642A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD */; };
-		EBB3BE672A97EAEA00E72A23 /* RADIO_08_MEXICAN in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE662A97EAEA00E72A23 /* RADIO_08_MEXICAN */; };
-		EBB3BE692A97EB0600E72A23 /* RADIO_06_COUNTRY in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE682A97EB0600E72A23 /* RADIO_06_COUNTRY */; };
-		EBB3BE6B2A97EB2400E72A23 /* RADIO_05_TALK_01 in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE6A2A97EB2400E72A23 /* RADIO_05_TALK_01 */; };
-		EBB3BE6D2A97EB3300E72A23 /* RADIO_04_PUNK in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE6C2A97EB3200E72A23 /* RADIO_04_PUNK */; };
-		EBB3BE6F2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE6E2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW */; };
-		EBB3BE712A97EB5300E72A23 /* RADIO_02_POP in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE702A97EB5300E72A23 /* RADIO_02_POP */; };
-		EBB3BE732A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE722A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK */; };
 		EBB3BE762A97ED1700E72A23 /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE752A97ED1700E72A23 /* GlobalVariables.swift */; };
 		EBB3BE782A97ED4B00E72A23 /* RadioAdverts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE772A97ED4B00E72A23 /* RadioAdverts.swift */; };
 		EBB3BE7A2A97ED8000E72A23 /* RadioNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE792A97ED8000E72A23 /* RadioNews.swift */; };
@@ -63,33 +63,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB51EB4D2AB617A80079C937 /* RADIO_01_CLASS_ROCK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_01_CLASS_ROCK; sourceTree = "<group>"; };
+		EB51EB4F2AB617BA0079C937 /* RADIO_02_POP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_02_POP; sourceTree = "<group>"; };
+		EB51EB512AB61A020079C937 /* DLC_BATTLE_MUSIC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_BATTLE_MUSIC; sourceTree = "<group>"; };
+		EB51EB532AB61A250079C937 /* RADIO_03_HIPHOP_NEW */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_03_HIPHOP_NEW; sourceTree = "<group>"; };
+		EB51EB552AB61A330079C937 /* RADIO_04_PUNK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_04_PUNK; sourceTree = "<group>"; };
+		EB51EB572AB61A3F0079C937 /* RADIO_05_TALK_01 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_05_TALK_01; sourceTree = "<group>"; };
+		EB51EB592AB61A6D0079C937 /* RADIO_06_COUNTRY */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_06_COUNTRY; sourceTree = "<group>"; };
+		EB51EB5B2AB61A760079C937 /* RADIO_07_DANCE_01 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_07_DANCE_01; sourceTree = "<group>"; };
+		EB51EB5D2AB61A7F0079C937 /* RADIO_08_MEXICAN */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_08_MEXICAN; sourceTree = "<group>"; };
+		EB51EB5F2AB61A8A0079C937 /* RADIO_09_HIPHOP_OLD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_09_HIPHOP_OLD; sourceTree = "<group>"; };
+		EB51EB612AB61A940079C937 /* RADIO_11_TALK_02 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_11_TALK_02; sourceTree = "<group>"; };
+		EB51EB632AB61A9C0079C937 /* RADIO_12_REGGAE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_12_REGGAE; sourceTree = "<group>"; };
+		EB51EB652AB61AA40079C937 /* RADIO_13_JAZZ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_13_JAZZ; sourceTree = "<group>"; };
+		EB51EB672AB61AAC0079C937 /* RADIO_14_DANCE_02 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_14_DANCE_02; sourceTree = "<group>"; };
+		EB51EB692AB61AB80079C937 /* RADIO_15_MOTOWN */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_15_MOTOWN; sourceTree = "<group>"; };
+		EB51EB6B2AB61AC00079C937 /* RADIO_16_SILVERLAKE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_16_SILVERLAKE; sourceTree = "<group>"; };
+		EB51EB6D2AB61AE80079C937 /* RADIO_17_FUNK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_17_FUNK; sourceTree = "<group>"; };
+		EB51EB6F2AB61AF10079C937 /* RADIO_18_90S_ROCK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_18_90S_ROCK; sourceTree = "<group>"; };
+		EB51EB712AB61B040079C937 /* DLC_THELAB */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_THELAB; sourceTree = "<group>"; };
+		EB51EB732AB61BCB0079C937 /* DLC_CHRISTMAS2017 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_CHRISTMAS2017; sourceTree = "<group>"; };
+		EB51EB752AB620590079C937 /* RADIO_ADVERTS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_ADVERTS; sourceTree = "<group>"; };
+		EB51EB772AB620630079C937 /* RADIO_NEWS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_NEWS; sourceTree = "<group>"; };
 		EBB3BE362A97E79300E72A23 /* GTRV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTRV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB3BE392A97E79300E72A23 /* GTRVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTRVApp.swift; sourceTree = "<group>"; };
 		EBB3BE3B2A97E79300E72A23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBB3BE3D2A97E79400E72A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB3BE402A97E79400E72A23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EBB3BE482A97E96200E72A23 /* RADIO_07_DANCE_01 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_07_DANCE_01; sourceTree = "<group>"; };
-		EBB3BE4A2A97E99100E72A23 /* RADIO_NEWS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_NEWS; sourceTree = "<group>"; };
-		EBB3BE4C2A97E99E00E72A23 /* RADIO_ADVERTS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_ADVERTS; sourceTree = "<group>"; };
-		EBB3BE4E2A97E9B000E72A23 /* DLC_BATTLE_MUSIC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_BATTLE_MUSIC; sourceTree = "<group>"; };
-		EBB3BE502A97E9F700E72A23 /* DLC_CHRISTMAS2017 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_CHRISTMAS2017; sourceTree = "<group>"; };
-		EBB3BE522A97EA2300E72A23 /* RADIO_18_90S_ROCK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_18_90S_ROCK; sourceTree = "<group>"; };
-		EBB3BE542A97EA7400E72A23 /* RADIO_17_FUNK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_17_FUNK; sourceTree = "<group>"; };
-		EBB3BE562A97EA8500E72A23 /* RADIO_16_SILVERLAKE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_16_SILVERLAKE; sourceTree = "<group>"; };
-		EBB3BE582A97EA9300E72A23 /* DLC_THELAB */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_THELAB; sourceTree = "<group>"; };
-		EBB3BE5A2A97EAA000E72A23 /* RADIO_15_MOTOWN */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_15_MOTOWN; sourceTree = "<group>"; };
-		EBB3BE5C2A97EAAD00E72A23 /* RADIO_14_DANCE_02 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_14_DANCE_02; sourceTree = "<group>"; };
-		EBB3BE5E2A97EABC00E72A23 /* RADIO_13_JAZZ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_13_JAZZ; sourceTree = "<group>"; };
-		EBB3BE602A97EAC700E72A23 /* RADIO_12_REGGAE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_12_REGGAE; sourceTree = "<group>"; };
-		EBB3BE622A97EAD500E72A23 /* RADIO_11_TALK_02 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_11_TALK_02; sourceTree = "<group>"; };
-		EBB3BE642A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_09_HIPHOP_OLD; sourceTree = "<group>"; };
-		EBB3BE662A97EAEA00E72A23 /* RADIO_08_MEXICAN */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_08_MEXICAN; sourceTree = "<group>"; };
-		EBB3BE682A97EB0600E72A23 /* RADIO_06_COUNTRY */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_06_COUNTRY; sourceTree = "<group>"; };
-		EBB3BE6A2A97EB2400E72A23 /* RADIO_05_TALK_01 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_05_TALK_01; sourceTree = "<group>"; };
-		EBB3BE6C2A97EB3200E72A23 /* RADIO_04_PUNK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_04_PUNK; sourceTree = "<group>"; };
-		EBB3BE6E2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_03_HIPHOP_NEW; sourceTree = "<group>"; };
-		EBB3BE702A97EB5300E72A23 /* RADIO_02_POP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_02_POP; sourceTree = "<group>"; };
-		EBB3BE722A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_01_CLASS_ROCK; sourceTree = "<group>"; };
 		EBB3BE752A97ED1700E72A23 /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		EBB3BE772A97ED4B00E72A23 /* RadioAdverts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAdverts.swift; sourceTree = "<group>"; };
 		EBB3BE792A97ED8000E72A23 /* RadioNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioNews.swift; sourceTree = "<group>"; };
@@ -176,28 +176,28 @@
 		EBB3BE472A97E94300E72A23 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				EBB3BE722A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK */,
-				EBB3BE702A97EB5300E72A23 /* RADIO_02_POP */,
-				EBB3BE6E2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW */,
-				EBB3BE6C2A97EB3200E72A23 /* RADIO_04_PUNK */,
-				EBB3BE6A2A97EB2400E72A23 /* RADIO_05_TALK_01 */,
-				EBB3BE682A97EB0600E72A23 /* RADIO_06_COUNTRY */,
-				EBB3BE482A97E96200E72A23 /* RADIO_07_DANCE_01 */,
-				EBB3BE662A97EAEA00E72A23 /* RADIO_08_MEXICAN */,
-				EBB3BE642A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD */,
-				EBB3BE622A97EAD500E72A23 /* RADIO_11_TALK_02 */,
-				EBB3BE602A97EAC700E72A23 /* RADIO_12_REGGAE */,
-				EBB3BE5E2A97EABC00E72A23 /* RADIO_13_JAZZ */,
-				EBB3BE5C2A97EAAD00E72A23 /* RADIO_14_DANCE_02 */,
-				EBB3BE5A2A97EAA000E72A23 /* RADIO_15_MOTOWN */,
-				EBB3BE582A97EA9300E72A23 /* DLC_THELAB */,
-				EBB3BE562A97EA8500E72A23 /* RADIO_16_SILVERLAKE */,
-				EBB3BE542A97EA7400E72A23 /* RADIO_17_FUNK */,
-				EBB3BE522A97EA2300E72A23 /* RADIO_18_90S_ROCK */,
-				EBB3BE502A97E9F700E72A23 /* DLC_CHRISTMAS2017 */,
-				EBB3BE4E2A97E9B000E72A23 /* DLC_BATTLE_MUSIC */,
-				EBB3BE4C2A97E99E00E72A23 /* RADIO_ADVERTS */,
-				EBB3BE4A2A97E99100E72A23 /* RADIO_NEWS */,
+				EB51EB4D2AB617A80079C937 /* RADIO_01_CLASS_ROCK */,
+				EB51EB4F2AB617BA0079C937 /* RADIO_02_POP */,
+				EB51EB532AB61A250079C937 /* RADIO_03_HIPHOP_NEW */,
+				EB51EB552AB61A330079C937 /* RADIO_04_PUNK */,
+				EB51EB572AB61A3F0079C937 /* RADIO_05_TALK_01 */,
+				EB51EB592AB61A6D0079C937 /* RADIO_06_COUNTRY */,
+				EB51EB5B2AB61A760079C937 /* RADIO_07_DANCE_01 */,
+				EB51EB5D2AB61A7F0079C937 /* RADIO_08_MEXICAN */,
+				EB51EB5F2AB61A8A0079C937 /* RADIO_09_HIPHOP_OLD */,
+				EB51EB612AB61A940079C937 /* RADIO_11_TALK_02 */,
+				EB51EB632AB61A9C0079C937 /* RADIO_12_REGGAE */,
+				EB51EB652AB61AA40079C937 /* RADIO_13_JAZZ */,
+				EB51EB672AB61AAC0079C937 /* RADIO_14_DANCE_02 */,
+				EB51EB692AB61AB80079C937 /* RADIO_15_MOTOWN */,
+				EB51EB712AB61B040079C937 /* DLC_THELAB */,
+				EB51EB6B2AB61AC00079C937 /* RADIO_16_SILVERLAKE */,
+				EB51EB6D2AB61AE80079C937 /* RADIO_17_FUNK */,
+				EB51EB6F2AB61AF10079C937 /* RADIO_18_90S_ROCK */,
+				EB51EB732AB61BCB0079C937 /* DLC_CHRISTMAS2017 */,
+				EB51EB512AB61A020079C937 /* DLC_BATTLE_MUSIC */,
+				EB51EB752AB620590079C937 /* RADIO_ADVERTS */,
+				EB51EB772AB620630079C937 /* RADIO_NEWS */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -322,30 +322,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB3BE6F2A97EB3E00E72A23 /* RADIO_03_HIPHOP_NEW in Resources */,
-				EBB3BE492A97E96300E72A23 /* RADIO_07_DANCE_01 in Resources */,
-				EBB3BE532A97EA2300E72A23 /* RADIO_18_90S_ROCK in Resources */,
-				EBB3BE4B2A97E99100E72A23 /* RADIO_NEWS in Resources */,
-				EBB3BE712A97EB5300E72A23 /* RADIO_02_POP in Resources */,
-				EBB3BE572A97EA8600E72A23 /* RADIO_16_SILVERLAKE in Resources */,
-				EBB3BE4F2A97E9B000E72A23 /* DLC_BATTLE_MUSIC in Resources */,
-				EBB3BE512A97E9F700E72A23 /* DLC_CHRISTMAS2017 in Resources */,
-				EBB3BE6B2A97EB2400E72A23 /* RADIO_05_TALK_01 in Resources */,
-				EBB3BE652A97EAE000E72A23 /* RADIO_09_HIPHOP_OLD in Resources */,
-				EBB3BE5B2A97EAA000E72A23 /* RADIO_15_MOTOWN in Resources */,
-				EBB3BE5F2A97EABC00E72A23 /* RADIO_13_JAZZ in Resources */,
-				EBB3BE4D2A97E99E00E72A23 /* RADIO_ADVERTS in Resources */,
-				EBB3BE732A97EB5E00E72A23 /* RADIO_01_CLASS_ROCK in Resources */,
-				EBB3BE612A97EAC700E72A23 /* RADIO_12_REGGAE in Resources */,
-				EBB3BE6D2A97EB3300E72A23 /* RADIO_04_PUNK in Resources */,
-				EBB3BE552A97EA7400E72A23 /* RADIO_17_FUNK in Resources */,
+				EB51EB642AB61A9C0079C937 /* RADIO_12_REGGAE in Resources */,
+				EB51EB6C2AB61AC00079C937 /* RADIO_16_SILVERLAKE in Resources */,
+				EB51EB5C2AB61A760079C937 /* RADIO_07_DANCE_01 in Resources */,
+				EB51EB5E2AB61A7F0079C937 /* RADIO_08_MEXICAN in Resources */,
+				EB51EB542AB61A250079C937 /* RADIO_03_HIPHOP_NEW in Resources */,
+				EB51EB6A2AB61AB80079C937 /* RADIO_15_MOTOWN in Resources */,
+				EB51EB622AB61A940079C937 /* RADIO_11_TALK_02 in Resources */,
+				EB51EB742AB61BCC0079C937 /* DLC_CHRISTMAS2017 in Resources */,
+				EB51EB722AB61B040079C937 /* DLC_THELAB in Resources */,
 				EBB3BE412A97E79400E72A23 /* Preview Assets.xcassets in Resources */,
-				EBB3BE632A97EAD500E72A23 /* RADIO_11_TALK_02 in Resources */,
-				EBB3BE672A97EAEA00E72A23 /* RADIO_08_MEXICAN in Resources */,
-				EBB3BE592A97EA9300E72A23 /* DLC_THELAB in Resources */,
+				EB51EB6E2AB61AE80079C937 /* RADIO_17_FUNK in Resources */,
+				EB51EB702AB61AF10079C937 /* RADIO_18_90S_ROCK in Resources */,
+				EB51EB4E2AB617A80079C937 /* RADIO_01_CLASS_ROCK in Resources */,
+				EB51EB782AB620640079C937 /* RADIO_NEWS in Resources */,
+				EB51EB502AB617BA0079C937 /* RADIO_02_POP in Resources */,
+				EB51EB522AB61A020079C937 /* DLC_BATTLE_MUSIC in Resources */,
+				EB51EB562AB61A330079C937 /* RADIO_04_PUNK in Resources */,
+				EB51EB582AB61A3F0079C937 /* RADIO_05_TALK_01 in Resources */,
 				EBB3BE3E2A97E79400E72A23 /* Assets.xcassets in Resources */,
-				EBB3BE5D2A97EAAD00E72A23 /* RADIO_14_DANCE_02 in Resources */,
-				EBB3BE692A97EB0600E72A23 /* RADIO_06_COUNTRY in Resources */,
+				EB51EB762AB620590079C937 /* RADIO_ADVERTS in Resources */,
+				EB51EB662AB61AA40079C937 /* RADIO_13_JAZZ in Resources */,
+				EB51EB5A2AB61A6D0079C937 /* RADIO_06_COUNTRY in Resources */,
+				EB51EB602AB61A8A0079C937 /* RADIO_09_HIPHOP_OLD in Resources */,
+				EB51EB682AB61AAC0079C937 /* RADIO_14_DANCE_02 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,8 +519,11 @@
 				INFOPLIST_FILE = GTRV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,8 +551,11 @@
 				INFOPLIST_FILE = GTRV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
