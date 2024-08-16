@@ -6,9 +6,4970 @@
 //
 
 public let RadioStations: [RadioStation] = [
-	// MARK: Los Santos Rock Radio
+	// MARK: Radio Off
 	RadioStation(
 		index: 0,
+		number: 10,
+		name: "Radio Off",
+		image: "gtav_radio_stations_texture_512",
+		imagePosition: Position(
+			row: 4,
+			column: 4
+		),
+		randomize: false,
+		rotate: false,
+		root: nil,
+		songs: nil,
+		general: nil,
+		sid: nil,
+		mono_solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Media Player
+	RadioStation(
+		index: 0,
+		number: 10,
+		name: "Media Player",
+		image: "gta_radio_stations_texture11_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: false,
+		root: nil,
+		songs: nil,
+		general: nil,
+		sid: nil,
+		mono_solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Blaine County Radio
+	RadioStation(
+		index: 2,
+		number: 11,
+		name: "Blaine County Radio",
+		image: "gtav_radio_stations_texture_512",
+		imagePosition: Position(
+			row: 3,
+			column: 2
+		),
+		randomize: false,
+		rotate: true,
+		root: "RADIO_11_TALK_02",
+		songs: [
+			//MONO_BCR_COMMUNITY_HOUR
+			Song(
+				file: "MONO_BCR_COMMUNITY_HOUR",
+				root: "RADIO_11_TALK_02/mono_bcr_community_hour/",
+				labels: [
+					Label(
+						artist: "BCR Community Hour",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//MONO_BEYOND_INSEMINATION
+			Song(
+				file: "MONO_BEYOND_INSEMINATION",
+				root: "RADIO_11_TALK_02/mono_beyond_insemination/",
+				labels: [
+					Label(
+						artist: "Beyond Insemination",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//MONO_BLESS_YOUR_HEART
+			Song(
+				file: "MONO_BLESS_YOUR_HEART",
+				root: "RADIO_11_TALK_02/mono_bless_your_heart/",
+				labels: [
+					Label(
+						artist: "BLESS YOUR HEART",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//MONO_ZBEYOND_INSEMINATION_PART_2
+			Song(
+				file: "MONO_ZBEYOND_INSEMINATION_PART_2",
+				root: "RADIO_11_TALK_02/mono_zbeyond_insemination_part_2/",
+				labels: [
+					Label(
+						artist: "Beyond Insemination",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			)
+		],
+		general: [],
+		sid: ["01","02","03","04","05","06","07","08","09","10","11"],
+		mono_solo: [],
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: The Music Locker
+	RadioStation(
+		index: 3,
+		number: 25,
+		name: "The Music Locker",
+		image: "gta_radio_stations_texture08_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: false,
+		root: nil,
+		songs: nil,
+		general: nil,
+		sid: nil,
+		mono_solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: MOTOMAMI Los Santos
+	RadioStation(
+		index: 4,
+		number: 27,
+		name: "MOTOMAMI Los Santos",
+		image: "gta_radio_stations_texture12_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: false,
+		root: nil,
+		songs: nil,
+		general: nil,
+		sid: nil,
+		mono_solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: The Blue Ark
+	RadioStation(
+		index: 5,
+		number: 12,
+		name: "The Blue Ark",
+		image: "gtav_radio_stations_texture_512",
+		imagePosition: Position(
+			row: 4,
+			column: 3
+		),
+		randomize: true,
+		rotate: false,
+		root: "RADIO_12_REGGAE",
+		songs: [
+			//ADDI_TRUTH
+			Song(
+				file: "ADDI_TRUTH",
+				root: "RADIO_12_REGGAE/addi_truth/",
+				labels: [
+					Label(
+						artist: "VYBZ KARTEL",
+						title: "Addi Truth",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//CHAPTER3
+			Song(
+				file: "CHAPTER3",
+				root: "RADIO_12_REGGAE/chapter3/",
+				labels: [
+					Label(
+						artist: "JOE GIBBS & THE PROFESSIONALS",
+						title: "Chapter Three",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CHAPTER3_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "CHAPTER3_02",
+						delay: 5.0
+					)
+				]
+			),
+			//CRAZY_GIRL
+			Song(
+				file: "CRAZY_GIRL",
+				root: "RADIO_12_REGGAE/crazy_girl/",
+				labels: [
+					Label(
+						artist: "HALF PINT",
+						title: "Crazy Girl",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CRAZY_GIRL_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "CRAZY_GIRL_02",
+						delay: 5.0
+					)
+				]
+			),
+			//DISCO_DEVIL
+			Song(
+				file: "DISCO_DEVIL",
+				root: "RADIO_12_REGGAE/disco_devil/",
+				labels: [
+					Label(
+						artist: "LEE SCRATCH PERRY & THE FULL EXPERIENCE",
+						title: "Disco Devil",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DISCO_DEVIL_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "DISCO_DEVIL_02",
+						delay: 5.0
+					)
+				]
+			),
+			//GRUMBLIN_DUB
+			Song(
+				file: "GRUMBLIN_DUB",
+				root: "RADIO_12_REGGAE/grumblin_dub/",
+				labels: [
+					Label(
+						artist: "THE UPSETTERS",
+						title: "Grumblin' Dub",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GRUMBLIN_DUB_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "GRUMBLIN_DUB_02",
+						delay: 5.0
+					)
+				]
+			),
+			//GUN_SHOT_A_FIRE
+			Song(
+				file: "GUN_SHOT_A_FIRE",
+				root: "RADIO_12_REGGAE/gun_shot_a_fire/",
+				labels: [
+					Label(
+						artist: "KONSHENS",
+						title: "Gun Shot A Fire",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//I_AM_A_MADMAN
+			Song(
+				file: "I_AM_A_MADMAN",
+				root: "RADIO_12_REGGAE/i_am_a_madman/",
+				labels: [
+					Label(
+						artist: "LEE SCRATCH PERRY",
+						title: "I Am A Madman",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "I_AM_A_MADMAN_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "I_AM_A_MADMAN_02",
+						delay: 5.0
+					)
+				]
+			),
+			//KINGSTON_BE_WISE
+			Song(
+				file: "KINGSTON_BE_WISE",
+				root: "RADIO_12_REGGAE/kingston_be_wise/",
+				labels: [
+					Label(
+						artist: "PROTOJE",
+						title: "Kingston Be Wise",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//KINGSTON_TOWN
+			Song(
+				file: "KINGSTON_TOWN",
+				root: "RADIO_12_REGGAE/kingston_town/",
+				labels: [
+					Label(
+						artist: "BUSY SIGNAL",
+						title: "Kingston Town",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "KINGSTON_TOWN_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "KINGSTON_TOWN_02",
+						delay: 5.0
+					)
+				]
+			),
+			//LOYALS
+			Song(
+				file: "LOYALS",
+				root: "RADIO_12_REGGAE/loyals/",
+				labels: [
+					Label(
+						artist: "DEMARCO",
+						title: "Loyals (Royals Remix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//MONEY_COME_MONEY_GO
+			Song(
+				file: "MONEY_COME_MONEY_GO",
+				root: "RADIO_12_REGGAE/money_come_money_go/",
+				labels: [
+					Label(
+						artist: "LEE \"SCRATCH\" PERRY",
+						title: "Money Come And Money Go",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MONEY_COME_MONEY_GO_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "MONEY_COME_MONEY_GO_02",
+						delay: 5.0
+					)
+				]
+			),
+			//MONEY_IN_MY_POCKET
+			Song(
+				file: "MONEY_IN_MY_POCKET",
+				root: "RADIO_12_REGGAE/money_in_my_pocket/",
+				labels: [
+					Label(
+						artist: "DENNIS BROWN",
+						title: "Money In My Pocket",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//MR_MONEY_MAN
+			Song(
+				file: "MR_MONEY_MAN",
+				root: "RADIO_12_REGGAE/mr_money_man/",
+				labels: [
+					Label(
+						artist: "DANNY HENSWORTH",
+						title: "Mr. Money Man",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MR_MONEY_MAN_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "MR_MONEY_MAN_02",
+						delay: 5.0
+					)
+				]
+			),
+			//NIGHT_NURSE
+			Song(
+				file: "NIGHT_NURSE",
+				root: "RADIO_12_REGGAE/night_nurse/",
+				labels: [
+					Label(
+						artist: "GREGORY ISAACS",
+						title: "Night Nurse",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NIGHT_NURSE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "NIGHT_NURSE_02",
+						delay: 5.0
+					)
+				]
+			),
+			//NOBODY_MOVE_GET_HURT
+			Song(
+				file: "NOBODY_MOVE_GET_HURT",
+				root: "RADIO_12_REGGAE/nobody_move_get_hurt/",
+				labels: [
+					Label(
+						artist: "YELLOWMAN",
+						title: "Nobody Move Nobody Get Hurt",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NOBODY_MOVE_GET_HURT_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "NOBODY_MOVE_GET_HURT_02",
+						delay: 5.0
+					)
+				]
+			),
+			//ODD_RAS
+			Song(
+				file: "ODD_RAS",
+				root: "RADIO_12_REGGAE/odd_ras/",
+				labels: [
+					Label(
+						artist: "CHRONIXX",
+						title: "Odd Ras",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//PSYCHO
+			Song(
+				file: "PSYCHO",
+				root: "RADIO_12_REGGAE/psycho/",
+				labels: [
+					Label(
+						artist: "TOMMY LEE SPARTA",
+						title: "Psycho",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//ROAST_FISH_AND_CORNBREAD
+			Song(
+				file: "ROAST_FISH_AND_CORNBREAD",
+				root: "RADIO_12_REGGAE/roast_fish_and_cornbread/",
+				labels: [
+					Label(
+						artist: "LEE \"SCRATCH\" PERRY",
+						title: "Roast Fish & Cornbread",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//SONS_OF_SLAVES
+			Song(
+				file: "SONS_OF_SLAVES",
+				root: "RADIO_12_REGGAE/sons_of_slaves/",
+				labels: [
+					Label(
+						artist: "JUNIOR DELGADO",
+						title: "Sons Of Slaves",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SONS_OF_SLAVES_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "SONS_OF_SLAVES_02",
+						delay: 5.0
+					)
+				]
+			),
+			//TOPIC_OF_THE_DAY
+			Song(
+				file: "TOPIC_OF_THE_DAY",
+				root: "RADIO_12_REGGAE/topic_of_the_day/",
+				labels: [
+					Label(
+						artist: "I-OCTANE",
+						title: "Topic Of The Day",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//WE_NEVER_FEAR_DEM
+			Song(
+				file: "WE_NEVER_FEAR_DEM",
+				root: "RADIO_12_REGGAE/we_never_fear_dem/",
+				labels: [
+					Label(
+						artist: "VYBZ KARTEL FEAT. POPCAAN",
+						title: "We Never Fear Dem",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			)
+		],
+		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
+		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
+		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		time: [
+			"EVENING": ["01","02","03"],
+			"MORNING": ["01","02","03","04","05"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05"],
+			"NEWS": ["01","02","03","04"]
+		]
+	),
+	
+	// MARK: Worldwide FM
+	RadioStation(
+		index: 6,
+		number: 13,
+		name: "Worldwide FM",
+		image: "gtav_radio_stations_texture_512",
+		imagePosition: Position(
+			row: 1,
+			column: 4
+		),
+		randomize: false,
+		rotate: true,
+		root: "RADIO_13_JAZZ",
+		songs: [
+			//wwfm_p1
+			Song(
+				file: "0x04A02233",
+				root: "RADIO_13_JAZZ/wwfm_p1/",
+				labels: [
+					//Mirror Maru
+					Label(
+						artist: "CASHMERE CAT",
+						title: "Mirror Maru",
+						time: 0.0
+					),
+					//Cold Air
+					Label(
+						artist: "THE HICS",
+						title: "Cold Air",
+						time: 161.0
+					),
+					//The Place
+					Label(
+						artist: "INC.",
+						title: "The Place",
+						time: 306.0
+					),
+					//Beginning
+					Label(
+						artist: "TRICKSKI",
+						title: "Beginning",
+						time: 519.0
+					),
+					//Ghost
+					Label(
+						artist: "MALA",
+						title: "Ghost",
+						time: 784.0
+					),
+					//Forest Funk
+					Label(
+						artist: "SWINDLE",
+						title: "Forest Funk",
+						time: 990.0
+					),
+					//Throw Down
+					Label(
+						artist: "TOM BROWNE",
+						title: "Throw Down",
+						time: 1155.0
+					),
+					//You And The Music
+					Label(
+						artist: "DONALD BYRD",
+						title: "You And The Music",
+						time: 1323.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//wwfm_p2
+			Song(
+				file: "0x1EDECB2F",
+				root: "RADIO_13_JAZZ/wwfm_p2/",
+				labels: [
+					//Thousand Finger Man
+					Label(
+						artist: "CANDIDO",
+						title: "Thousand Finger Man",
+						time: 0.0
+					),
+					//Harm In Charge
+					Label(
+						artist: "TORO Y MOI",
+						title: "Harm In Charge",
+						time: 215.0
+					),
+					//Breaking
+					Label(
+						artist: "KYODAI",
+						title: "Breaking",
+						time: 345.0
+					),
+					//Waveforms
+					Label(
+						artist: "DJANGO DJANGO",
+						title: "Waveforms",
+						time: 559.0
+					),
+					//Nissim
+					Label(
+						artist: "THE GASLAMP KILLER",
+						title: "Nissim",
+						time: 731.0
+					),
+					//Harpoon Land
+					Label(
+						artist: "OWINY SIGOMA BAND",
+						title: "Harpoon Land",
+						time: 965.0
+					),
+					//Brand New Revolution
+					Label(
+						artist: "GUTS",
+						title: "Brand New Revolution",
+						time: 1135.0
+					),
+					//Live Your Live (Melo-X Motherland God Mix)
+					Label(
+						artist: "YUNA",
+						title: "Live Your Live (Melo-X Motherland God Mix)",
+						time: 1318.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//wwfm_p3
+			Song(
+				file: "0x15ED4708",
+				root: "RADIO_13_JAZZ/wwfm_p3/",
+				labels: [
+					//Lovery (Slow Cuban Vibe Mix)
+					Label(
+						artist: "KIKO NAVARRO & TUCCILLO FEAT. AMOR",
+						title: "Lovery (Slow Cuban Vibe Mix)",
+						time: 0.0
+					),
+					//1759 (Outro)
+					Label(
+						artist: "RICHARD SPAVEN",
+						title: "1759 (Outro)",
+						time: 280.0
+					),
+					//Forgotten Notes
+					Label(
+						artist: "HACKMAN",
+						title: "Forgotten Notes",
+						time: 3606.0 - 3086.0
+					),
+					//Shark Week
+					Label(
+						artist: "SINKANE",
+						title: "Shark Week",
+						time: 520.0
+					),
+					//Body & Soul
+					Label(
+						artist: "WILLIAM ONYEABOR",
+						title: "Body & Soul",
+						time: 924.0
+					),
+					//Kool FM
+					Label(
+						artist: "FOUR TET",
+						title: "Kool FM",
+						time: 1099.0
+					),
+					//Made To Stray
+					Label(
+						artist: "MOUNT KIMBIE",
+						title: "Made To Stray",
+						time: 1253.0
+					),
+					//World In A Room
+					Label(
+						artist: "ANUSHKA",
+						title: "World In A Room",
+						time: 1460.0
+					),
+					//Why You Wanna See My Bad Side?
+					Label(
+						artist: "SMOKEY ROBINSON",
+						title: "Why You Wanna See My Bad Side?",
+						time: 1619.0
+					),
+					//Street Life
+					Label(
+						artist: "RANDY CRAWFORD",
+						title: "Street Life",
+						time: 1831.0
+					),
+					//What You Need
+					Label(
+						artist: "FLUME",
+						title: "What You Need",
+						time: 2110.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//wwfm_p4
+			Song(
+				file: "0x1E4AFD9D",
+				root: "RADIO_13_JAZZ/wwfm_p4/",
+				labels: [
+					//What You Need
+					Label(
+						artist: "FLUME",
+						title: "What You Need",
+						time: 0.0
+					),
+					//Hive
+					Label(
+						artist: "EARL SWEATSHIRT FT. VINCE STAPLES & CASEY VEGGIES",
+						title: "Hive",
+						time: 186.0
+					),
+					//Numb
+					Label(
+						artist: "PORTISHEAD",
+						title: "Numb",
+						time: 470.0
+					),
+					//Black Magic
+					Label(
+						artist: "JON WAYNE ",
+						title: "Black Magic",
+						time: 647.0
+					),
+					//I69
+					Label(
+						artist: "ROMAN GIANARTHUR",
+						title: "I69",
+						time: 752.0
+					),
+					//Treat Me Like Fire
+					Label(
+						artist: "LION BABE",
+						title: "Treat Me Like Fire",
+						time: 904.0
+					),
+					//Killdat
+					Label(
+						artist: "DAM-FUNK",
+						title: "Killdat",
+						time: 1013.0
+					),
+					//Run Away
+					Label(
+						artist: "JAMIE LIDELL",
+						title: "Run Away",
+						time: 1111.0
+					),
+					//Recover (CID RIM REMIX)
+					Label(
+						artist: "CHVRCHES",
+						title: "Recover (CID RIM REMIX)",
+						time: 1297.0
+					),
+					//Let Yrself Be
+					Label(
+						artist: "JIMMY EDGAR",
+						title: "Let Yrself Be",
+						time: 1459.0
+					),
+					//Viarejo
+					Label(
+						artist: "CLAP! CLAP!",
+						title: "Viarejo",
+						time: 1641.0
+					),
+					//No Balanço Da Canoa
+					Label(
+						artist: "MAGA BO",
+						title: "No Balanço Da Canoa",
+						time: 1772.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//wwfm_p1
+			Song(
+				file: "0x120DAFC1",
+				root: "RADIO_13_JAZZ/wwfm_p1/",
+				labels: [
+					//Mirror Maru
+					Label(
+						artist: "CASHMERE CAT",
+						title: "Mirror Maru",
+						time: 0.0
+					),
+					//Cold Air
+					Label(
+						artist: "THE HICS",
+						title: "Cold Air",
+						time: 161.0
+					),
+					//The Place
+					Label(
+						artist: "INC.",
+						title: "The Place",
+						time: 306.0
+					),
+					//Beginning
+					Label(
+						artist: "TRICKSKI",
+						title: "Beginning",
+						time: 519.0
+					),
+					//Ghost
+					Label(
+						artist: "MALA",
+						title: "Ghost",
+						time: 784.0
+					),
+					//Forest Funk
+					Label(
+						artist: "SWINDLE",
+						title: "Forest Funk",
+						time: 990.0
+					),
+					//Throw Down
+					Label(
+						artist: "TOM BROWNE",
+						title: "Throw Down",
+						time: 1155.0
+					),
+					//You And The Music
+					Label(
+						artist: "DONALD BYRD",
+						title: "You And The Music",
+						time: 1323.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//wwfm_p2
+			Song(
+				file: "0x117A33D2",
+				root: "RADIO_13_JAZZ/wwfm_p2/",
+				labels: [
+					//Thousand Finger Man
+					Label(
+						artist: "CANDIDO",
+						title: "Thousand Finger Man",
+						time: 0.0
+					),
+					//Harm In Charge
+					Label(
+						artist: "TORO Y MOI",
+						title: "Harm In Charge",
+						time: 215.0
+					),
+					//Breaking
+					Label(
+						artist: "KYODAI",
+						title: "Breaking",
+						time: 345.0
+					),
+					//Waveforms
+					Label(
+						artist: "DJANGO DJANGO",
+						title: "Waveforms",
+						time: 559.0
+					),
+					//Nissim
+					Label(
+						artist: "THE GASLAMP KILLER",
+						title: "Nissim",
+						time: 731.0
+					),
+					//Harpoon Land
+					Label(
+						artist: "OWINY SIGOMA BAND",
+						title: "Harpoon Land",
+						time: 965.0
+					),
+					//Brand New Revolution
+					Label(
+						artist: "GUTS",
+						title: "Brand New Revolution",
+						time: 1135.0
+					),
+					//Live Your Live (Melo-X Motherland God Mix)
+					Label(
+						artist: "YUNA",
+						title: "Live Your Live (Melo-X Motherland God Mix)",
+						time: 1318.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//wwfm_p3
+			Song(
+				file: "0x032BC446",
+				root: "RADIO_13_JAZZ/wwfm_p3/",
+				labels: [
+					//Lovery (Slow Cuban Vibe Mix)
+					Label(
+						artist: "KIKO NAVARRO & TUCCILLO FEAT. AMOR",
+						title: "Lovery (Slow Cuban Vibe Mix)",
+						time: 0.0
+					),
+					//1759 (Outro)
+					Label(
+						artist: "RICHARD SPAVEN",
+						title: "1759 (Outro)",
+						time: 280.0
+					),
+					//Forgotten Notes
+					Label(
+						artist: "HACKMAN",
+						title: "Forgotten Notes",
+						time: 3606.0 - 3086.0
+					),
+					//Shark Week
+					Label(
+						artist: "SINKANE",
+						title: "Shark Week",
+						time: 520.0
+					),
+					//Body & Soul
+					Label(
+						artist: "WILLIAM ONYEABOR",
+						title: "Body & Soul",
+						time: 924.0
+					),
+					//Kool FM
+					Label(
+						artist: "FOUR TET",
+						title: "Kool FM",
+						time: 1099.0
+					),
+					//Made To Stray
+					Label(
+						artist: "MOUNT KIMBIE",
+						title: "Made To Stray",
+						time: 1253.0
+					),
+					//World In A Room
+					Label(
+						artist: "ANUSHKA",
+						title: "World In A Room",
+						time: 1460.0
+					),
+					//Why You Wanna See My Bad Side?
+					Label(
+						artist: "SMOKEY ROBINSON",
+						title: "Why You Wanna See My Bad Side?",
+						time: 1619.0
+					),
+					//Street Life
+					Label(
+						artist: "RANDY CRAWFORD",
+						title: "Street Life",
+						time: 1831.0
+					),
+					//What You Need
+					Label(
+						artist: "FLUME",
+						title: "What You Need",
+						time: 2110.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//wwfm_p4
+			Song(
+				file: "0x1E66F1A0",
+				root: "RADIO_13_JAZZ/wwfm_p4/",
+				labels: [
+					//What You Need
+					Label(
+						artist: "FLUME",
+						title: "What You Need",
+						time: 0.0
+					),
+					//Hive
+					Label(
+						artist: "EARL SWEATSHIRT FT. VINCE STAPLES & CASEY VEGGIES",
+						title: "Hive",
+						time: 186.0
+					),
+					//Numb
+					Label(
+						artist: "PORTISHEAD",
+						title: "Numb",
+						time: 470.0
+					),
+					//Black Magic
+					Label(
+						artist: "JON WAYNE ",
+						title: "Black Magic",
+						time: 647.0
+					),
+					//I69
+					Label(
+						artist: "ROMAN GIANARTHUR",
+						title: "I69",
+						time: 752.0
+					),
+					//Treat Me Like Fire
+					Label(
+						artist: "LION BABE",
+						title: "Treat Me Like Fire",
+						time: 904.0
+					),
+					//Killdat
+					Label(
+						artist: "DAM-FUNK",
+						title: "Killdat",
+						time: 1013.0
+					),
+					//Run Away
+					Label(
+						artist: "JAMIE LIDELL",
+						title: "Run Away",
+						time: 1111.0
+					),
+					//Recover (CID RIM REMIX)
+					Label(
+						artist: "CHVRCHES",
+						title: "Recover (CID RIM REMIX)",
+						time: 1297.0
+					),
+					//Let Yrself Be
+					Label(
+						artist: "JIMMY EDGAR",
+						title: "Let Yrself Be",
+						time: 1459.0
+					),
+					//Viarejo
+					Label(
+						artist: "CLAP! CLAP!",
+						title: "Viarejo",
+						time: 1641.0
+					),
+					//No Balanço Da Canoa
+					Label(
+						artist: "MAGA BO",
+						title: "No Balanço Da Canoa",
+						time: 1772.0
+					)
+				],
+				set: nil,
+				intros: []
+			)
+		],
+		general: [],
+		sid: [],
+		mono_solo: [],
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: FlyLo FM
+	RadioStation(
+		index: 7,
+		number: 14,
+		name: "FlyLo FM",
+		image: "gtav_radio_stations_texture_512",
+		imagePosition: Position(
+			row: 2,
+			column: 4
+		),
+		randomize: false,
+		rotate: true,
+		root: "RADIO_14_DANCE_02",
+		songs: [
+			Song(
+				file: "0x0A818E80",
+				root: "RADIO_14_DANCE_02/flylo_part1/",
+				labels: [
+					//Getting There
+					Label(
+						artist: "FLYING LOTUS FEAT. NIKI RANDA",
+						title: "Getting There",
+						time: 0.0
+					),
+					//Crystals
+					Label(
+						artist: "CLAMS CASINO",
+						title: "Crystals",
+						time: 142.0
+					),
+					//Crosswerved
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Crosswerved",
+						time: 219.0
+					),
+					//Be Spin
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Be Spin",
+						time: 259.0
+					),
+					//See Thru To U (ft Erykah Badu)
+					Label(
+						artist: "FLYING LOTUS",
+						title: "See Thru To U (ft Erykah Badu)",
+						time: 358.0
+					),
+					//The Diddler
+					Label(
+						artist: "FLYING LOTUS",
+						title: "The Diddler",
+						time: 407.0
+					),
+					//Computer Face RMX
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Computer Face RMX",
+						time: 476.0
+					),
+					//100hm
+					Label(
+						artist: "HUDSON MOHAWKE",
+						title: "100hm",
+						time: 566.0
+					),
+					//The Kill
+					Label(
+						artist: "FLYING LOTUS FEAT. NIKI RANDA",
+						title: "The Kill",
+						time: 637.0
+					),
+					//Garbage
+					Label(
+						artist: "TYLER, THE CREATOR",
+						title: "Garbage",
+						time: 835.0
+					),
+					//Elevators (Me & You)
+					Label(
+						artist: "OUTKAST",
+						title: "Elevators (Me & You)",
+						time: 1026.0
+					),
+					//Evil Grin
+					Label(
+						artist: "CAPTAIN MURPHY",
+						title: "Evil Grin",
+						time: 1178.0
+					),
+					//Catapult Man
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Catapult Man",
+						time: 1289.0
+					),
+					//Encoded Flow
+					Label(
+						artist: "DABRYE",
+						title: "Encoded Flow",
+						time: 1395.0
+					),
+					//She Died There
+					Label(
+						artist: "MACHINEDRUM",
+						title: "She Died There",
+						time: 1472.0
+					),
+					//It's Wack
+					Label(
+						artist: "DJ RASHAD & HEAVEE",
+						title: "It's Wack",
+						time: 1608.0
+					),
+					//O Sheit It's X
+					Label(
+						artist: "THUNDERCAT",
+						title: "O Sheit It's X",
+						time: 1784.0
+					),
+					//Stonecutters
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Stonecutters",
+						time: 1948.0
+					),
+					//23
+					Label(
+						artist: "SHADOW CHILD",
+						title: "23",
+						time: 2077.0
+					),
+					//Stalker Ha
+					Label(
+						artist: "KINGDOM",
+						title: "Stalker Ha",
+						time: 2245.0
+					),
+					//Windowlicker
+					Label(
+						artist: "APHEX TWIN",
+						title: "Windowlicker",
+						time: 2339.0
+					),
+					//Eddie You Should Know Better
+					Label(
+						artist: "CURTIS MAYFIELD",
+						title: "Eddie You Should Know Better",
+						time: 2475.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			Song(
+				file: "0x0339EC32",
+				root: "RADIO_14_DANCE_02/flylo_part2/",
+				labels: [
+					//You Never Come Closer
+					Label(
+						artist: "DORIS",
+						title: "You Never Come Closer",
+						time: 0.0
+					),
+					//Medication Medication
+					Label(
+						artist: "FLYING LOTUS FT. KRAYZIE BONE",
+						title: "Medication Medication",
+						time: 265.0
+					),
+					//What We Want
+					Label(
+						artist: "XXYYXX",
+						title: "What We Want",
+						time: 404.0
+					),
+					//Make Money
+					Label(
+						artist: "LAPALUX",
+						title: "Make Money",
+						time: 570.0
+					),
+					//Shred You To Bits
+					Label(
+						artist: "GASLAMP KILLER",
+						title: "Shred You To Bits",
+						time: 659.0
+					),
+					//B Adams
+					Label(
+						artist: "MONO/POLY AND THUNDERCAT",
+						title: "B Adams",
+						time: 752.0
+					),
+					//Osaka Trade
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Osaka Trade",
+						time: 839.0
+					),
+					//Masquatch
+					Label(
+						artist: "DOOM",
+						title: "Masquatch",
+						time: 973.0
+					),
+					//Early Mountain
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Early Mountain",
+						time: 1084.0
+					),
+					//Into Vogon Skulls
+					Label(
+						artist: "DIMLITE",
+						title: "Into Vogon Skulls",
+						time: 1201.0
+					),
+					//F--- The Makeup, Skip The Shower
+					Label(
+						artist: "KNOWER",
+						title: "F--- The Makeup, Skip The Shower",
+						time: 1344.0
+					),
+					//4AM/AraabMuzik Streetz Tonight Remix
+					Label(
+						artist: "KASKADE",
+						title: "4AM/AraabMuzik Streetz Tonight Remix",
+						time: 1478.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			Song(
+				file: "0x17E2800E",
+				root: "RADIO_14_DANCE_02/flylo_part1/",
+				labels: [
+					//Getting There
+					Label(
+						artist: "FLYING LOTUS FEAT. NIKI RANDA",
+						title: "Getting There",
+						time: 0.0
+					),
+					//Crystals
+					Label(
+						artist: "CLAMS CASINO",
+						title: "Crystals",
+						time: 142.0
+					),
+					//Crosswerved
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Crosswerved",
+						time: 219.0
+					),
+					//Be Spin
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Be Spin",
+						time: 259.0
+					),
+					//See Thru To U (ft Erykah Badu)
+					Label(
+						artist: "FLYING LOTUS",
+						title: "See Thru To U (ft Erykah Badu)",
+						time: 358.0
+					),
+					//The Diddler
+					Label(
+						artist: "FLYING LOTUS",
+						title: "The Diddler",
+						time: 407.0
+					),
+					//Computer Face RMX
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Computer Face RMX",
+						time: 476.0
+					),
+					//100hm
+					Label(
+						artist: "HUDSON MOHAWKE",
+						title: "100hm",
+						time: 566.0
+					),
+					//The Kill
+					Label(
+						artist: "FLYING LOTUS FEAT. NIKI RANDA",
+						title: "The Kill",
+						time: 637.0
+					),
+					//Garbage
+					Label(
+						artist: "TYLER, THE CREATOR",
+						title: "Garbage",
+						time: 835.0
+					),
+					//Elevators (Me & You)
+					Label(
+						artist: "OUTKAST",
+						title: "Elevators (Me & You)",
+						time: 1026.0
+					),
+					//Evil Grin
+					Label(
+						artist: "CAPTAIN MURPHY",
+						title: "Evil Grin",
+						time: 1178.0
+					),
+					//Catapult Man
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Catapult Man",
+						time: 1289.0
+					),
+					//Encoded Flow
+					Label(
+						artist: "DABRYE",
+						title: "Encoded Flow",
+						time: 1395.0
+					),
+					//She Died There
+					Label(
+						artist: "MACHINEDRUM",
+						title: "She Died There",
+						time: 1472.0
+					),
+					//It's Wack
+					Label(
+						artist: "DJ RASHAD & HEAVEE",
+						title: "It's Wack",
+						time: 1608.0
+					),
+					//O Sheit It's X
+					Label(
+						artist: "THUNDERCAT",
+						title: "O Sheit It's X",
+						time: 1784.0
+					),
+					//Stonecutters
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Stonecutters",
+						time: 1948.0
+					),
+					//23
+					Label(
+						artist: "SHADOW CHILD",
+						title: "23",
+						time: 2077.0
+					),
+					//Stalker Ha
+					Label(
+						artist: "KINGDOM",
+						title: "Stalker Ha",
+						time: 2245.0
+					),
+					//Windowlicker
+					Label(
+						artist: "APHEX TWIN",
+						title: "Windowlicker",
+						time: 2339.0
+					),
+					//Eddie You Should Know Better
+					Label(
+						artist: "CURTIS MAYFIELD",
+						title: "Eddie You Should Know Better",
+						time: 2475.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			Song(
+				file: "0x08194D53",
+				root: "RADIO_14_DANCE_02/flylo_part2/",
+				labels: [
+					//You Never Come Closer
+					Label(
+						artist: "DORIS",
+						title: "You Never Come Closer",
+						time: 0.0
+					),
+					//Medication Medication
+					Label(
+						artist: "FLYING LOTUS FT. KRAYZIE BONE",
+						title: "Medication Medication",
+						time: 265.0
+					),
+					//What We Want
+					Label(
+						artist: "XXYYXX",
+						title: "What We Want",
+						time: 404.0
+					),
+					//Make Money
+					Label(
+						artist: "LAPALUX",
+						title: "Make Money",
+						time: 570.0
+					),
+					//Shred You To Bits
+					Label(
+						artist: "GASLAMP KILLER",
+						title: "Shred You To Bits",
+						time: 659.0
+					),
+					//B Adams
+					Label(
+						artist: "MONO/POLY AND THUNDERCAT",
+						title: "B Adams",
+						time: 752.0
+					),
+					//Osaka Trade
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Osaka Trade",
+						time: 839.0
+					),
+					//Masquatch
+					Label(
+						artist: "DOOM",
+						title: "Masquatch",
+						time: 973.0
+					),
+					//Early Mountain
+					Label(
+						artist: "FLYING LOTUS",
+						title: "Early Mountain",
+						time: 1084.0
+					),
+					//Into Vogon Skulls
+					Label(
+						artist: "DIMLITE",
+						title: "Into Vogon Skulls",
+						time: 1201.0
+					),
+					//F--- The Makeup, Skip The Shower
+					Label(
+						artist: "KNOWER",
+						title: "F--- The Makeup, Skip The Shower",
+						time: 1344.0
+					),
+					//4AM/AraabMuzik Streetz Tonight Remix
+					Label(
+						artist: "KASKADE",
+						title: "4AM/AraabMuzik Streetz Tonight Remix",
+						time: 1478.0
+					)
+				],
+				set: nil,
+				intros: []
+			)
+		],
+		general: [],
+		sid: [],
+		mono_solo: [],
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: The Low Down 91.1
+	RadioStation(
+		index: 8,
+		number: 15,
+		name: "The Low Down 91.1",
+		image: "gtav_radio_stations_texture_512",
+		imagePosition: Position(
+			row: 3,
+			column: 4
+		),
+		randomize: true,
+		rotate: false,
+		root: "RADIO_15_MOTOWN",
+		songs: [
+			//ASHLEYS_ROACHCLIP
+			Song(
+				file: "ASHLEYS_ROACHCLIP",
+				root: "RADIO_15_MOTOWN/ashleys_roachclip/",
+				labels: [
+					Label(
+						artist: "THE SOUL SEARCHERS",
+						title: "Ashley's Roachclip",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ASHLEYS_ROACHCLIP_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "ASHLEYS_ROACHCLIP_02",
+						delay: 5.0
+					)
+				]
+			),
+			//BOUNCY_LADY
+			Song(
+				file: "BOUNCY_LADY",
+				root: "RADIO_15_MOTOWN/bouncy_lady/",
+				labels: [
+					Label(
+						artist: "PLEASURE",
+						title: "Bouncy Lady",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//CALIFORNIA_SOUL
+			Song(
+				file: "CALIFORNIA_SOUL",
+				root: "RADIO_15_MOTOWN/california_soul/",
+				labels: [
+					Label(
+						artist: "MARLENA SHAW",
+						title: "California Soul",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CALIFORNIA_SOUL_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "CALIFORNIA_SOUL_02",
+						delay: 5.0
+					)
+				]
+			),
+			//CHANGIN
+			Song(
+				file: "CHANGIN",
+				root: "RADIO_15_MOTOWN/changin/",
+				labels: [
+					Label(
+						artist: "BRASS CONSTRUCTION",
+						title: "Changin'",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//CLIMAX
+			Song(
+				file: "CLIMAX",
+				root: "RADIO_15_MOTOWN/climax/",
+				labels: [
+					Label(
+						artist: "OHIO PLAYERS",
+						title: "Climax",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CLIMAX_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "CLIMAX_02",
+						delay: 5.0
+					)
+				]
+			),
+			//CRUISIN
+			Song(
+				file: "CRUISIN",
+				root: "RADIO_15_MOTOWN/cruisin/",
+				labels: [
+					Label(
+						artist: "SMOKEEY ROBINSON",
+						title: "Crusin'",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CRUISIN_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "CRUISIN_02",
+						delay: 5.0
+					)
+				]
+			),
+			//DO_IT_TIL_YOURE_SATISFIED
+			Song(
+				file: "DO_IT_TIL_YOURE_SATISFIED",
+				root: "RADIO_15_MOTOWN/do_it_til_youre_satisfied/",
+				labels: [
+					Label(
+						artist: "BT EXPRESS",
+						title: "Do It ('Til You're Satisfied)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DO_IT_TIL_YOURE_SATISFIED_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "DO_IT_TIL_YOURE_SATISFIED_02",
+						delay: 5.0
+					)
+				]
+			),
+			//FUNNY_FEELING
+			Song(
+				file: "FUNNY_FEELING",
+				root: "RADIO_15_MOTOWN/funny_feeling/",
+				labels: [
+					Label(
+						artist: "THE DELFONICS",
+						title: "Funny Feeling",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FUNNY_FEELING_01",
+						delay: 5.0
+					)
+				]
+			),
+			//HERCULES
+			Song(
+				file: "HERCULES",
+				root: "RADIO_15_MOTOWN/hercules/",
+				labels: [
+					Label(
+						artist: "AARON NEVILLE",
+						title: "Hercules",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HERCULES_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "HERCULES_02",
+						delay: 5.0
+					)
+				]
+			),
+			//I_BELIEVE_IN_MIRACLES
+			Song(
+				file: "I_BELIEVE_IN_MIRACLES",
+				root: "RADIO_15_MOTOWN/i_believe_in_miracles/",
+				labels: [
+					Label(
+						artist: "JACKSON SISTERS",
+						title: "I Believe In Miracles",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "I_BELIEVE_IN_MIRACLES_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "I_BELIEVE_IN_MIRACLES_02",
+						delay: 5.0
+					)
+				]
+			),
+			//I_GET_LIFTED
+			Song(
+				file: "I_GET_LIFTED",
+				root: "RADIO_15_MOTOWN/i_get_lifted/",
+				labels: [
+					Label(
+						artist: "GEORGE MACCRAE",
+						title: "I Get Lifted",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "I_GET_LIFTED_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "I_GET_LIFTED_02",
+						delay: 5.0
+					)
+				]
+			),
+			//MAGIC_MOUNTAIN
+			Song(
+				file: "MAGIC_MOUNTAIN",
+				root: "RADIO_15_MOTOWN/magic_mountain/",
+				labels: [
+					Label(
+						artist: "WAR",
+						title: "Magic Mountain",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MAGIC_MOUNTAIN_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "MAGIC_MOUNTAIN_02",
+						delay: 5.0
+					)
+				]
+			),
+			//O_O_H_CHILD
+			Song(
+				file: "O_O_H_CHILD",
+				root: "RADIO_15_MOTOWN/o_o_h_child/",
+				labels: [
+					Label(
+						artist: "THE FIVE STAIRSTEPS",
+						title: "O-O-H Child",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "O_O_H_CHILD_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "O_O_H_CHILD_02",
+						delay: 5.0
+					)
+				]
+			),
+			//READY_OR_NOT
+			Song(
+				file: "READY_OR_NOT",
+				root: "RADIO_15_MOTOWN/ready_or_not/",
+				labels: [
+					Label(
+						artist: "THE DELFONICS",
+						title: "Ready Or Not Here I Come (Can't Hide From Love)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "READY_OR_NOT_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "READY_OR_NOT_02",
+						delay: 5.0
+					)
+				]
+			),
+			//RUBBER_BAND
+			Song(
+				file: "RUBBER_BAND",
+				root: "RADIO_15_MOTOWN/rubber_band/",
+				labels: [
+					Label(
+						artist: "THE TRAMMPS",
+						title: "Rubber Band",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "RUBBER_BAND_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "RUBBER_BAND_02",
+						delay: 5.0
+					)
+				]
+			),
+			//SMILING_FACES
+			Song(
+				file: "SMILING_FACES",
+				root: "RADIO_15_MOTOWN/smiling_faces/",
+				labels: [
+					Label(
+						artist: "THE UNDISPUTED TRUTH",
+						title: "Smiling Faces Sometimes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SMILING_FACES_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "SMILING_FACES_02",
+						delay: 5.0
+					)
+				]
+			),
+			//STORIES
+			Song(
+				file: "STORIES",
+				root: "RADIO_15_MOTOWN/stories/",
+				labels: [
+					Label(
+						artist: "THE CHAKACHAS",
+						title: "Stories",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//SUPERMAN_LOVER
+			Song(
+				file: "SUPERMAN_LOVER",
+				root: "RADIO_15_MOTOWN/superman_lover/",
+				labels: [
+					Label(
+						artist: "JOHNNY \"GUITAR\" WATSON",
+						title: "Superman Lover",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SUPERMAN_LOVER_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "SUPERMAN_LOVER_02",
+						delay: 5.0
+					)
+				]
+			),
+			//THE_CISCO_KID
+			Song(
+				file: "THE_CISCO_KID",
+				root: "RADIO_15_MOTOWN/the_cisco_kid/",
+				labels: [
+					Label(
+						artist: "WAR",
+						title: "The Cisco Kid",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_CISCO_KID_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_CISCO_KID_02",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_CISCO_KID_03",
+						delay: 5.0
+					)
+				]
+			),
+			//VIVA_TIRADO
+			Song(
+				file: "VIVA_TIRADO",
+				root: "RADIO_15_MOTOWN/viva_tirado/",
+				labels: [
+					Label(
+						artist: "EL CHICANO",
+						title: "Viva Tirado - Part 1",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "VIVA_TIRADO_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "VIVA_TIRADO_02",
+						delay: 5.0
+					)
+				]
+			)
+		],
+		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
+		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12"],
+		time: [
+			"EVENING": ["01","02","03","04","05"],
+			"MORNING": ["01","02","03","04","05","06"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05"],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: The Lab
+	RadioStation(
+		index: 9,
+		number: 16,
+		name: "The Lab",
+		image: "gta_radio_stations_texture04_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: true,
+		root: "DLC_THELAB",
+		songs: [
+			//LAB_P1
+			Song(
+				file: "LAB_P1",
+				root: "DLC_THELAB/lab_p1/",
+				labels: [
+					Label(
+						artist: "",
+						title: "",
+						time: 0.0
+					),
+					//Play It Cool
+					Label(
+						artist: "GANGRENE FEAT. SAMUEL T. HERRING & EARL SWEATSHIRT",
+						title: "Play It Cool",
+						time: 7.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 223.0
+					),
+					//Trouble
+					Label(
+						artist: "AB SOUL FEAT. ALOE BLACC",
+						title: "Trouble",
+						time: 267.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 471.0
+					),
+					//Speedline Miracle Masterpiece
+					Label(
+						artist: "TUNDE ADEBIMPE FEAT. SAL P & SINKANE",
+						title: "Speedline Miracle Masterpiece",
+						time: 511.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 758.0
+					),
+					//Welcome To Los Santos
+					Label(
+						artist: "MC EIHT & FREDDIE GIBBS FEAT. KOKANE",
+						title: "Welcome To Los Santos",
+						time: 786.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 1010.0
+					),
+					//K.Y.S.A.
+					Label(
+						artist: "PHANTOGRAM",
+						title: "K.Y.S.A.",
+						time: 1043.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 1300.0
+					),
+					//Fast Life
+					Label(
+						artist: "VYBZ KARTEL",
+						title: "Fast Life",
+						time: 1385.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 1591.0
+					),
+					//20's 50's 100's
+					Label(
+						artist: "KING AVRIEL FEAT. A$AP FERG",
+						title: "20's 50's 100's",
+						time: 1620.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 1878.0
+					),
+					//Lock & Load
+					Label(
+						artist: "MNDR FEAT. KILLER MIKE",
+						title: "Lock & Load",
+						time: 1950.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//LAB_P2
+			Song(
+				file: "LAB_P2",
+				root: "DLC_THELAB/lab_p2/",
+				labels: [
+					Label(
+						artist: "",
+						title: "",
+						time: 0.0
+					),
+					//Born Bad
+					Label(
+						artist: "POPCAAN FEAT. FREDDIE GIBBS",
+						title: "Born Bad",
+						time: 45.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 251.0
+					),
+					//California
+					Label(
+						artist: "E-40 FEAT. DAM FUNK & ARIEL PINK",
+						title: "California",
+						time: 286.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 515.0
+					),
+					//Leave
+					Label(
+						artist: "WAVVES",
+						title: "Leave",
+						time: 518.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 700.0
+					),
+					//Fetti
+					Label(
+						artist: "CURREN$Y & FREDDIE GIBBS",
+						title: "Fetti",
+						time: 715.0
+					),
+					Label(
+						artist: "",
+						title: "",
+						time: 971.0
+					),
+					//Wanderer
+					Label(
+						artist: "LITTLE DRAGON",
+						title: "Wanderer",
+						time: 1022.0
+					)
+				],
+				set: nil,
+				intros: []
+			)
+		],
+		general: [],
+		sid: [],
+		mono_solo: [],
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: Radio Mirror Park
+	RadioStation(
+		index: 10,
+		number: 16, /*17*/
+		name: "Radio Mirror Park",
+		image: "gtav_radio_stations_texture_512",
+		imagePosition: Position(
+			row: 4,
+			column: 2
+		),
+		randomize: true,
+		rotate: false,
+		root: "RADIO_16_SILVERLAKE",
+		songs: [
+			//ALWAYS
+			Song(
+				file: "ALWAYS",
+				root: "RADIO_16_SILVERLAKE/always/",
+				labels: [
+					Label(
+						artist: "PANAMA",
+						title: "Always",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ALWAYS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ALWAYS_02",
+						delay: 8.0
+					)
+				]
+			),
+			//BOOGIE_IN_ZERO_GRAVITY
+			Song(
+				file: "BOOGIE_IN_ZERO_GRAVITY",
+				root: "RADIO_16_SILVERLAKE/boogie_in_zero_gravity/",
+				labels: [
+					Label(
+						artist: "BLACK STROBE",
+						title: "Boogie In Zero Gravity",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BOOGIE_IN_ZERO_GRAVITY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BOOGIE_IN_ZERO_GRAVITY_02",
+						delay: 8.0
+					)
+				]
+			),
+			//CHANGE_OF_COAST
+			Song(
+				file: "CHANGE_OF_COAST",
+				root: "RADIO_16_SILVERLAKE/change_of_coast/",
+				labels: [
+					Label(
+						artist: "NEON INDIAN",
+						title: "Change Of Coast",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//COLOURS
+			Song(
+				file: "COLOURS",
+				root: "RADIO_16_SILVERLAKE/colours/",
+				labels: [
+					Label(
+						artist: "AGE OF CONSENT",
+						title: "Colours",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//CRYSTALFILM
+			Song(
+				file: "CRYSTALFILM",
+				root: "RADIO_16_SILVERLAKE/crystalfilm/",
+				labels: [
+					Label(
+						artist: "LITTLE DRAGON",
+						title: "Crystalfilm",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CRYSTALFILM_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CRYSTALFILM_02",
+						delay: 8.0
+					)
+				]
+			),
+			//DARK_MATTER
+			Song(
+				file: "DARK_MATTER",
+				root: "RADIO_16_SILVERLAKE/dark_matter/",
+				labels: [
+					Label(
+						artist: "FEATHERS",
+						title: "Dark Matter",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DARK_MATTER_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "DARK_MATTER_02",
+						delay: 8.0
+					)
+				]
+			),
+			//DO_YOU_BELIEVE
+			Song(
+				file: "DO_YOU_BELIEVE",
+				root: "RADIO_16_SILVERLAKE/do_you_believe/",
+				labels: [
+					Label(
+						artist: "POOLSIDE",
+						title: "Do You Believe",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DO_YOU_BELIEVE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "DO_YOU_BELIEVE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//DONT_COME_CLOSE
+			Song(
+				file: "DONT_COME_CLOSE",
+				root: "RADIO_16_SILVERLAKE/dont_come_close/",
+				labels: [
+					Label(
+						artist: "YEASAYER",
+						title: "Don't Come Close",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DONT_COME_CLOSE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "DONT_COME_CLOSE_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "DONT_COME_CLOSE_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "DONT_COME_CLOSE_04",
+						delay: 8.0
+					)
+				]
+			),
+			//FEEL_THE_SAME
+			Song(
+				file: "FEEL_THE_SAME",
+				root: "RADIO_16_SILVERLAKE/feel_the_same/",
+				labels: [
+					Label(
+						artist: "BATTLE TAPES",
+						title: "Feel The Same",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FEEL_THE_SAME_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FEEL_THE_SAME_02",
+						delay: 8.0
+					)
+				]
+			),
+			//FLUTES
+			Song(
+				file: "FLUTES",
+				root: "RADIO_16_SILVERLAKE/flutes/",
+				labels: [
+					Label(
+						artist: "HOT CHIP",
+						title: "Flutes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//FORGET
+			Song(
+				file: "FORGET",
+				root: "RADIO_16_SILVERLAKE/forget/",
+				labels: [
+					Label(
+						artist: "TWIN SHADOW",
+						title: "Forget",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FORGET_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FORGET_02",
+						delay: 8.0
+					)
+				]
+			),
+			//FROM_NOWHERE
+			Song(
+				file: "FROM_NOWHERE",
+				root: "RADIO_16_SILVERLAKE/from_nowhere/",
+				labels: [
+					Label(
+						artist: "DAN CROLL",
+						title: "From Nowhere (Baardson Remix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FROM_NOWHERE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FROM_NOWHERE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//HEART_IN_THE_PIPES
+			Song(
+				file: "HEART_IN_THE_PIPES",
+				root: "RADIO_16_SILVERLAKE/heart_in_the_pipes/",
+				labels: [
+					Label(
+						artist: "TONY CASTLES",
+						title: "Heart In The Pipes (KAUF Remix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HEART_IN_THE_PIPES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HEART_IN_THE_PIPES_02",
+						delay: 8.0
+					)
+				]
+			),
+			//HEARTBREAK
+			Song(
+				file: "HEARTBREAK",
+				root: "RADIO_16_SILVERLAKE/heartbreak/",
+				labels: [
+					Label(
+						artist: "AGE OF CONSENT",
+						title: "Heartbreak",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//HIGH_PRESSURE
+			Song(
+				file: "HIGH_PRESSURE",
+				root: "RADIO_16_SILVERLAKE/high_pressure/",
+				labels: [
+					Label(
+						artist: "HEALTH",
+						title: "High Pressure Dave",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//HOLD_ON_HOLY_GHOST
+			Song(
+				file: "HOLD_ON_HOLY_GHOST",
+				root: "RADIO_16_SILVERLAKE/hold_on_holy_ghost/",
+				labels: [
+					Label(
+						artist: "HOLLY GHOST!",
+						title: "Hold On",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HOLD_ON_HOLY_GHOST_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HOLD_ON_HOLY_GHOST_02",
+						delay: 8.0
+					)
+				]
+			),
+			//IN_REAL_LIFE
+			Song(
+				file: "IN_REAL_LIFE",
+				root: "RADIO_16_SILVERLAKE/in_real_life/",
+				labels: [
+					Label(
+						artist: "THE RUBY SUNS",
+						title: "In Real Life",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "IN_REAL_LIFE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "IN_REAL_LIFE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//JASMINE
+			Song(
+				file: "JASMINE",
+				root: "RADIO_16_SILVERLAKE/jasmine/",
+				labels: [
+					Label(
+						artist: "JAI PAUL",
+						title: "Jasmine",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "JASMINE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "JASMINE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//LITTLE_WHITE_LIE
+			Song(
+				file: "LITTLE_WHITE_LIE",
+				root: "RADIO_16_SILVERLAKE/little_white_lie/",
+				labels: [
+					Label(
+						artist: "LIVING DAYS",
+						title: "Little White Lie",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LITTLE_WHITE_LIE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LITTLE_WHITE_LIE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//LIVING_IN_AMERICA
+			Song(
+				file: "LIVING_IN_AMERICA",
+				root: "RADIO_16_SILVERLAKE/living_in_america/",
+				labels: [
+					Label(
+						artist: "DOM",
+						title: "Living In America",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LIVING_IN_AMERICA_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LIVING_IN_AMERICA_02",
+						delay: 8.0
+					)
+				]
+			),
+			//LUCKY_BOY
+			Song(
+				file: "LUCKY_BOY",
+				root: "RADIO_16_SILVERLAKE/lucky_boy/",
+				labels: [
+					Label(
+						artist: "DJ MEHDI",
+						title: "Lucky Boy (Outlines Remix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LUCKY_BOY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LUCKY_BOY_02",
+						delay: 8.0
+					)
+				]
+			),
+			//MESMERIZED
+			Song(
+				file: "MESMERIZED",
+				root: "RADIO_16_SILVERLAKE/mesmerized/",
+				labels: [
+					Label(
+						artist: "SCENIC",
+						title: "Mesmerised",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//NEW_BEAT
+			Song(
+				file: "NEW_BEAT",
+				root: "RADIO_16_SILVERLAKE/new_beat/",
+				labels: [
+					Label(
+						artist: "TORO Y MOI",
+						title: "New Beat",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NEW_BEAT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "NEW_BEAT_02",
+						delay: 8.0
+					)
+				]
+			),
+			//NOWHERE_TO_GO
+			Song(
+				file: "NOWHERE_TO_GO",
+				root: "RADIO_16_SILVERLAKE/nowhere_to_go/",
+				labels: [
+					Label(
+						artist: "NITE JEWEL",
+						title: "Nowhere To Go",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NOWHERE_TO_GO_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "NOWHERE_TO_GO_02",
+						delay: 8.0
+					)
+				]
+			),
+			//O_N_E
+			Song(
+				file: "O_N_E",
+				root: "RADIO_16_SILVERLAKE/o_n_e/",
+				labels: [
+					Label(
+						artist: "YEASAYER",
+						title: "O.N.E.",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//OLD_LOVE
+			Song(
+				file: "OLD_LOVE",
+				root: "RADIO_16_SILVERLAKE/old_love/",
+				labels: [
+					Label(
+						artist: "TWIN SHADOW",
+						title: "Old Love, New Love",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "OLD_LOVE_01",
+						delay: 8.0
+					)
+				]
+			),
+			//ONE_GIRL_ONE_BOY
+			Song(
+				file: "ONE_GIRL_ONE_BOY",
+				root: "RADIO_16_SILVERLAKE/one_girl_one_boy/",
+				labels: [
+					Label(
+						artist: "!!!",
+						title: "One Girl/One Boy",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ONE_GIRL_ONE_BOY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ONE_GIRL_ONE_BOY_02",
+						delay: 8.0
+					)
+				]
+			),
+			//PHARAOHS
+			Song(
+				file: "PHARAOHS",
+				root: "RADIO_16_SILVERLAKE/pharaohs/",
+				labels: [
+					Label(
+						artist: "SBTRKT",
+						title: "Pharaohs feat Roses Gabor",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "PHARAOHS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "PHARAOHS_02",
+						delay: 8.0
+					)
+				]
+			),
+			//POLISH_GIRL
+			Song(
+				file: "POLISH_GIRL",
+				root: "RADIO_16_SILVERLAKE/polish_girl/",
+				labels: [
+					Label(
+						artist: "NEON INDIAN",
+						title: "Polish Girl",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "POLISH_GIRL_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "POLISH_GIRL_02",
+						delay: 8.0
+					)
+				]
+			),
+			//PSYCHIC_CITY
+			Song(
+				file: "PSYCHIC_CITY",
+				root: "RADIO_16_SILVERLAKE/psychic_city/",
+				labels: [
+					Label(
+						artist: "YACHT",
+						title: "Psychic City (Classixx Remix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "PSYCHIC_CITY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "PSYCHIC_CITY_02",
+						delay: 8.0
+					)
+				]
+			),
+			//SHINE_A_LIGHT
+			Song(
+				file: "SHINE_A_LIGHT",
+				root: "RADIO_16_SILVERLAKE/shine_a_light/",
+				labels: [
+					Label(
+						artist: "THE C90S",
+						title: "Shine A Light (Flight Facilities Remix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SHINE_A_LIGHT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SHINE_A_LIGHT_02",
+						delay: 8.0
+					)
+				]
+			),
+			//SHOOTING_HOLES
+			Song(
+				file: "SHOOTING_HOLES",
+				root: "RADIO_16_SILVERLAKE/shooting_holes/",
+				labels: [
+					Label(
+						artist: "TWIN SHADOW",
+						title: "Shooting Holes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SHOOTING_HOLES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SHOOTING_HOLES_02",
+						delay: 8.0
+					)
+				]
+			),
+			//SLEEPWALKING
+			Song(
+				file: "SLEEPWALKING",
+				root: "RADIO_16_SILVERLAKE/sleepwalking/",
+				labels: [
+					Label(
+						artist: "THE CHAIN GANG OF 1974",
+						title: "Sleepwalking",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SLEEPWALKING_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SLEEPWALKING_02",
+						delay: 8.0
+					)
+				]
+			),
+			//SO_MANY_DETAILS
+			Song(
+				file: "SO_MANY_DETAILS",
+				root: "RADIO_16_SILVERLAKE/so_many_details/",
+				labels: [
+					Label(
+						artist: "TORO Y MOI",
+						title: "So Many Details",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SO_MANY_DETAILS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SO_MANY_DETAILS_02",
+						delay: 8.0
+					)
+				]
+			),
+			//SOMETIMES
+			Song(
+				file: "SOMETIMES",
+				root: "RADIO_16_SILVERLAKE/sometimes/",
+				labels: [
+					Label(
+						artist: "MIAMI HORROR",
+						title: "Sometimes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SOMETIMES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SOMETIMES_02",
+						delay: 8.0
+					)
+				]
+			),
+			//STRANGERS_IN_THE_WIND
+			Song(
+				file: "STRANGERS_IN_THE_WIND",
+				root: "RADIO_16_SILVERLAKE/strangers_in_the_wind/",
+				labels: [
+					Label(
+						artist: "CUT COPY",
+						title: "Strangers In The Wind",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//THE_DRUMMER
+			Song(
+				file: "THE_DRUMMER",
+				root: "RADIO_16_SILVERLAKE/the_drummer/",
+				labels: [
+					Label(
+						artist: "NIKI & THE DOVE",
+						title: "The Drummer",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_DRUMMER_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "THE_DRUMMER_02",
+						delay: 8.0
+					)
+				]
+			),
+			//THE_SET_UP
+			Song(
+				file: "THE_SET_UP",
+				root: "RADIO_16_SILVERLAKE/the_set_up/",
+				labels: [
+					Label(
+						artist: "FAVORED NATIONS",
+						title: "The Set Up",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//TRULY_ALIVE
+			Song(
+				file: "TRULY_ALIVE",
+				root: "RADIO_16_SILVERLAKE/truly_alive/",
+				labels: [
+					Label(
+						artist: "MITZI",
+						title: "Truly Alive",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TRULY_ALIVE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TRULY_ALIVE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//WHEN_YOURE_OUT
+			Song(
+				file: "WHEN_YOURE_OUT",
+				root: "RADIO_16_SILVERLAKE/when_youre_out/",
+				labels: [
+					Label(
+						artist: "KAUF",
+						title: "When You're Out",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WHEN_YOURE_OUT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WHEN_YOURE_OUT_02",
+						delay: 8.0
+					)
+				]
+			)
+		],
+		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
+		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		time: [
+			"EVENING": ["01","02","03","04"],
+			"MORNING": ["01","02","03","04"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05"],
+			"NEWS": ["01","02","03","04"]
+		]
+	),
+	
+	// MARK: Kult FM
+	RadioStation(
+		index: 11,
+		number: 24,
+		name: "Kult FM",
+		image: "gta_radio_stations_texture10_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: false,
+		root: nil,
+		songs: nil,
+		general: nil,
+		sid: nil,
+		mono_solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Space 103.2
+	RadioStation(
+		index: 12,
+		number: 17, /*18*/
+		name: "Space 103.2",
+		image: "gta_radio_stations_texture02_512",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: true,
+		rotate: false,
+		root: "RADIO_17_FUNK",
+		songs: [
+			//BACK_AND_FORTH
+			Song(
+				file: "BACK_AND_FORTH",
+				root: "RADIO_17_FUNK/back_and_forth/",
+				labels: [
+					Label(
+						artist: "CAMEO",
+						title: "Back And Forth",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BACK_AND_FORTH_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BACK_AND_FORTH_02",
+						delay: 8.0
+					)
+				]
+			),
+			//CANT_HOLD_BACK*
+			/*Song(
+				file: "CANT_HOLD_BACK",
+				root: "RADIO_17_FUNK/cant_hold_back/",
+				labels: [
+					Label(
+						artist: "KANO",
+						title: "Can't Hold Back (Your Lovin')",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "YOUR_LOVIN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "YOUR_LOVIN_02",
+						delay: 8.0
+					)
+				]
+			),*/
+			//CUTIE_PIE
+			Song(
+				file: "CUTIE_PIE",
+				root: "RADIO_17_FUNK/cutie_pie/",
+				labels: [
+					Label(
+						artist: "ONE WAY",
+						title: "Cutie Pie",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CUTIE_PIE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CUTIE_PIE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//DO_IT_ROGER
+			Song(
+				file: "DO_IT_ROGER",
+				root: "RADIO_17_FUNK/do_it_roger/",
+				labels: [
+					Label(
+						artist: "ZAPP & ROGER",
+						title: "Do It Roger",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DO_IT_ROGER_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "DO_IT_ROGER_02",
+						delay: 8.0
+					)
+				]
+			),
+			//FLASHBACK
+			Song(
+				file: "FLASHBACK",
+				root: "RADIO_17_FUNK/flashback/",
+				labels: [
+					Label(
+						artist: "IMAGINATION",
+						title: "Flashback",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//FLASHLIGHT
+			Song(
+				file: "FLASHLIGHT",
+				root: "RADIO_17_FUNK/flashlight/",
+				labels: [
+					Label(
+						artist: "PARLIAMENT",
+						title: "Flashlight",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//FUNKASIZE_YOU
+			Song(
+				file: "FUNKASIZE_YOU",
+				root: "RADIO_17_FUNK/funkasize_you/",
+				labels: [
+					Label(
+						artist: "SHO-NUFF",
+						title: "Funkasize You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//GIVE_IT_TO_ME_BABY
+			Song(
+				file: "GIVE_IT_TO_ME_BABY",
+				root: "RADIO_17_FUNK/give_it_to_me_baby/",
+				labels: [
+					Label(
+						artist: "RICK JAMES",
+						title: "Give It To Me Baby",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GIVE_IT_TO_ME_BABY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GIVE_IT_TO_ME_BABY_02",
+						delay: 8.0
+					)
+				]
+			),
+			//GOTTA_GET_MY_HANDS_ON_SOME_MONEY
+			Song(
+				file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY",
+				root: "RADIO_17_FUNK/gotta_get_my_hands_on_some_money/",
+				labels: [
+					Label(
+						artist: "FATBACK BAND",
+						title: "Gotta Get My Hands On Some (Money)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY_02",
+						delay: 8.0
+					)
+				]
+			),
+			//HABOGLABOTRIBIN
+			Song(
+				file: "HABOGLABOTRIBIN",
+				root: "RADIO_17_FUNK/haboglabotribin/",
+				labels: [
+					Label(
+						artist: "BERNARD WRIGHT",
+						title: "Haboglabotribin'",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//HEART_BEAT
+			Song(
+				file: "HEART_BEAT",
+				root: "RADIO_17_FUNK/heart_beat/",
+				labels: [
+					Label(
+						artist: "TAANA GARDNER",
+						title: "Heartbeat",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HEARTBEAT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HEARTBEAT_02",
+						delay: 8.0
+					)
+				]
+			),
+			//HEARTBREAKER
+			Song(
+				file: "HEARTBREAKER",
+				root: "RADIO_17_FUNK/heartbreaker/",
+				labels: [
+					Label(
+						artist: "ZAPP",
+						title: "Heartbreaker, Pts. 1-2",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//ID_RATHER_BE_WITH_YOU
+			Song(
+				file: "ID_RATHER_BE_WITH_YOU",
+				root: "RADIO_17_FUNK/id_rather_be_with_you/",
+				labels: [
+					Label(
+						artist: "BOOTSY COLLINS",
+						title: "I'd Rather Be With You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ID_RATHER_BE_WITH_YOU_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ID_RATHER_BE_WITH_YOU_02",
+						delay: 8.0
+					)
+				]
+			),
+			//IM_IN_LOVE
+			Song(
+				file: "IM_IN_LOVE",
+				root: "RADIO_17_FUNK/im_in_love/",
+				labels: [
+					Label(
+						artist: "EVELYN CHAMPAGNE KING",
+						title: "I'm In Love (12\" Dance Mix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "IM_IN_LOVE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "IM_IN_LOVE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//JOYSTICK
+			Song(
+				file: "JOYSTICK",
+				root: "RADIO_17_FUNK/joystick/",
+				labels: [
+					Label(
+						artist: "DAZZ BAND",
+						title: "Joystick",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "JOYSTICK_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "JOYSTICK_02",
+						delay: 8.0
+					)
+				]
+			),
+			//MOTHERSHIP_CONNECTION
+			Song(
+				file: "MOTHERSHIP_CONNECTION",
+				root: "RADIO_17_FUNK/mothership_connection/",
+				labels: [
+					Label(
+						artist: "PARLIAMENT",
+						title: "Mothership Connection",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//NIGHTS_FEEL_LIKE
+			Song(
+				file: "NIGHTS_FEEL_LIKE",
+				root: "RADIO_17_FUNK/nights_feel_like/",
+				labels: [
+					Label(
+						artist: "BILLY OCEAN",
+						title: "Nights (Feel Like Getting Down)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//PARTY_ALL_THE_TIME
+			Song(
+				file: "PARTY_ALL_THE_TIME",
+				root: "RADIO_17_FUNK/party_all_the_time/",
+				labels: [
+					Label(
+						artist: "EDDIE MURPHY",
+						title: "Party All The Time",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//SKELETONS
+			Song(
+				file: "SKELETONS",
+				root: "RADIO_17_FUNK/skeletons/",
+				labels: [
+					Label(
+						artist: "STEVIE WONDER",
+						title: "Skeletons",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SKELETONS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SKELETONS_02",
+						delay: 8.0
+					)
+				]
+			),
+			//TONIGHT
+			Song(
+				file: "TONIGHT",
+				root: "RADIO_17_FUNK/tonight/",
+				labels: [
+					Label(
+						artist: "KLEEER",
+						title: "Tonight",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//WALKING_INTO_SUNSHINE
+			Song(
+				file: "WALKING_INTO_SUNSHINE",
+				root: "RADIO_17_FUNK/walking_into_sunshine/",
+				labels: [
+					Label(
+						artist: "CENTRAL LINE",
+						title: "Walking Into Sunshine",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//YOURE_THE_ONE_FOR_ME
+			Song(
+				file: "YOURE_THE_ONE_FOR_ME",
+				root: "RADIO_17_FUNK/youre_the_one_for_me/",
+				labels: [
+					Label(
+						artist: "D TRAIN",
+						title: "You're The One For Me",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "YOURE_THE_ONE_FOR_ME_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "YOURE_THE_ONE_FOR_ME_02",
+						delay: 8.0
+					)
+				]
+			)
+		],
+		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"],
+		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14"],
+		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		time: [
+			"EVENING": ["01","02","03","04"],
+			"MORNING": ["01","02","03","04"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05"],
+			"NEWS": ["01","02","03","04","05"]
+		]
+	),
+	
+	// MARK: Vinewood Boulevard Radio
+	RadioStation(
+		index: 13,
+		number: 18, /*19*/
+		name: "Vinewood Boulevard Radio",
+		image: "gtav_radio_stations_texture_512",
+		imagePosition: Position(
+			row: 2,
+			column: 3
+		),
+		randomize: true,
+		rotate: false,
+		root: "RADIO_18_90S_ROCK",
+		songs: [
+			//ANSWER_TO_YOURSELF
+			Song(
+				file: "ANSWER_TO_YOURSELF",
+				root: "RADIO_18_90S_ROCK/answer_to_yourself/",
+				labels: [
+					Label(
+						artist: "THE SOFT PACK",
+						title: "Answer To Yourself",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ANSWER_TO_YOURSELF_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ANSWER_TO_YOURSELF_02",
+						delay: 8.0
+					)
+				]
+			),
+			//BLACK_GREASE
+			Song(
+				file: "BLACK_GREASE",
+				root: "RADIO_18_90S_ROCK/black_grease/",
+				labels: [
+					Label(
+						artist: "THE BLACK ANGELS",
+						title: "Black Grease",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BLACK_GREASE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BLACK_GREASE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//CALIFORNIA_GIRLS
+			Song(
+				file: "CALIFORNIA_GIRLS",
+				root: "RADIO_18_90S_ROCK/california_girls/",
+				labels: [
+					Label(
+						artist: "SHARK?",
+						title: "California Grrls",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CALIFORNIA_GIRLS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CALIFORNIA_GIRLS_02",
+						delay: 8.0
+					)
+				]
+			),
+			//COCAINE
+			Song(
+				file: "COCAINE",
+				root: "RADIO_18_90S_ROCK/cocaine/",
+				labels: [
+					Label(
+						artist: "FIDLAR",
+						title: "Cocaine",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "COCAINE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "COCAINE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//CRAWLING_AFTER_YOU
+			Song(
+				file: "CRAWLING_AFTER_YOU",
+				root: "RADIO_18_90S_ROCK/crawling_after_you/",
+				labels: [
+					Label(
+						artist: "BASS DRUM OF DEATH",
+						title: "Crawling After You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CRAWLING_AFTER_YOU_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CRAWLING_AFTER_YOU_02",
+						delay: 8.0
+					)
+				]
+			),
+			//DIDDY_WAH_DIDDY
+			Song(
+				file: "DIDDY_WAH_DIDDY",
+				root: "RADIO_18_90S_ROCK/diddy_wah_diddy/",
+				labels: [
+					Label(
+						artist: "TY SEGALL BAND",
+						title: "Diddy Wah Diddy",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//FALL_IN_LINE
+			Song(
+				file: "FALL_IN_LINE",
+				root: "RADIO_18_90S_ROCK/fall_in_line/",
+				labels: [
+					Label(
+						artist: "MIND SPIDERS",
+						title: "Fall In Line",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FALL_IN_LINE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FALL_IN_LINE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//FIRE_DOESNT_BURN_ITSELF
+			Song(
+				file: "FIRE_DOESNT_BURN_ITSELF",
+				root: "RADIO_18_90S_ROCK/fire_doesnt_burn_itself/",
+				labels: [
+					Label(
+						artist: "SAM FLAX",
+						title: "Fire Doesn't Burn Itself",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FIRE_DOESNT_BURN_ITSELF_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FIRE_DOESNT_BURN_ITSELF_02",
+						delay: 8.0
+					)
+				]
+			),
+			//GONE_FOR_GOOD
+			Song(
+				file: "GONE_FOR_GOOD",
+				root: "RADIO_18_90S_ROCK/gone_for_good/",
+				labels: [
+					Label(
+						artist: "NOBUNNY",
+						title: "Gone For Good",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GONE_FOR_GOOD_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GONE_FOR_GOOD_02",
+						delay: 8.0
+					)
+				]
+			),
+			//HYSTERIA
+			Song(
+				file: "HYSTERIA",
+				root: "RADIO_18_90S_ROCK/hysteria/",
+				labels: [
+					Label(
+						artist: "CEREMONY",
+						title: "Hysteria",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//NEXT_STOP
+			Song(
+				file: "NEXT_STOP",
+				root: "RADIO_18_90S_ROCK/next_stop/",
+				labels: [
+					Label(
+						artist: "BLEACHED",
+						title: "Next Stop",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NEXT_STOP_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "NEXT_STOP_02",
+						delay: 8.0
+					)
+				]
+			),
+			//NINE_IS_GOD
+			Song(
+				file: "NINE_IS_GOD",
+				root: "RADIO_18_90S_ROCK/nine_is_god/",
+				labels: [
+					Label(
+						artist: "WAVVES",
+						title: "Nine Is God",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NINE_IS_GOD_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "NINE_IS_GOD_02",
+						delay: 8.0
+					)
+				]
+			),
+			//SIXPACK
+			Song(
+				file: "SIXPACK",
+				root: "RADIO_18_90S_ROCK/sixpack/",
+				labels: [
+					Label(
+						artist: "JEFF THE BROTHERHOOD",
+						title: "Sixpack",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SIXPACK_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SIXPACK_02",
+						delay: 8.0
+					)
+				]
+			),
+			//SLEEPWALKER
+			Song(
+				file: "SLEEPWALKER",
+				root: "RADIO_18_90S_ROCK/sleepwalker/",
+				labels: [
+					Label(
+						artist: "MOON DUO",
+						title: "Sleepwalker",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SLEEPWALKER_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SLEEPWALKER_02",
+						delay: 8.0
+					)
+				]
+			),
+			//THE_DREAM
+			Song(
+				file: "THE_DREAM",
+				root: "RADIO_18_90S_ROCK/the_dream/",
+				labels: [
+					Label(
+						artist: "THEE OH SEES",
+						title: "The Dream",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//THIS_MYSTIC_DECADE
+			Song(
+				file: "THIS_MYSTIC_DECADE",
+				root: "RADIO_18_90S_ROCK/this_mystic_decade/",
+				labels: [
+					Label(
+						artist: "HOT SNAKES",
+						title: "This mystic Decade",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THIS_MYSTIC_DECADE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "THIS_MYSTIC_DECADE_02",
+						delay: 8.0
+					)
+				]
+			),
+			//TURN_IT_AROUND
+			Song(
+				file: "TURN_IT_AROUND",
+				root: "RADIO_18_90S_ROCK/turn_it_around/",
+				labels: [
+					Label(
+						artist: "THE MEN",
+						title: "Turn It Around",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TURN_IT_AROUND_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TURN_IT_AROUND_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "TURN_IT_AROUND_03",
+						delay: 8.0
+					)
+				]
+			),
+			//USED_BLOOD
+			Song(
+				file: "USED_BLOOD",
+				root: "RADIO_18_90S_ROCK/used_blood/",
+				labels: [
+					Label(
+						artist: "COLISEUM",
+						title: "Used Blood",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "USED_BLOOD_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "USED_BLOOD_02",
+						delay: 8.0
+					)
+				]
+			),
+			//WET_BLANKET
+			Song(
+				file: "WET_BLANKET",
+				root: "RADIO_18_90S_ROCK/wet_blanket/",
+				labels: [
+					Label(
+						artist: "METZ",
+						title: "Wet Blanket",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WET_BLANKET_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WET_BLANKET_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "WET_BLANKET_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "WET_BLANKET_04",
+						delay: 8.0
+					)
+				]
+			),
+			//WHO_NEEDS_YOU
+			Song(
+				file: "WHO_NEEDS_YOU",
+				root: "RADIO_18_90S_ROCK/who_needs_you/",
+				labels: [
+					Label(
+						artist: "THE ORWELLS",
+						title: "Who Needs You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WHO_NEEDS_YOU_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WHO_NEEDS_YOU_02",
+						delay: 8.0
+					)
+				]
+			)
+		],
+		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48"],
+		sid: ["01","02","03","04","05","06","07","08","09"],
+		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
+		time: [
+			"EVENING": ["01","02","03","04","05"],
+			"MORNING": ["01","02","03","04","05"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05"],
+			"NEWS": ["01","02","03"]
+		]
+	),
+	
+	// MARK: Blonded Los Santos 97.8 FM
+	RadioStation(
+		index: 14,
+		number: 20,
+		name: "Blonded Los Santos 97.8 FM",
+		image: "gta_radio_stations_texture05_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: true,
+		root: "DLC_CHRISTMAS2017",
+		songs: [
+			//RADIO_XM17_P1
+			Song(
+				file: "RADIO_XM17_P1", //1864.0
+				root: "DLC_CHRISTMAS2017/radio_xm17_p1/",
+				labels: [
+					Label(
+						artist: "",
+						title: "",
+						time: 0.0
+					),
+					//International Feel
+					Label(
+						artist: "TODD RUNDGREN",
+						title: "International Feel",
+						time: 26.0
+					),
+					//Mr Noah
+					Label(
+						artist: "PANDA BEAR",
+						title: "Mr Noah",
+						time: 203.0
+					),
+					//Provider
+					Label(
+						artist: "FRANK OCEAN",
+						title: "Provider",
+						time: 414.0
+					),
+					//Kno Ya Wrong
+					Label(
+						artist: "SCHOOLBOY Q FEAT. LANCE SKIIIWALKER",
+						title: "Kno Ya Wrong",
+						time: 653.0
+					),
+					//Rain
+					Label(
+						artist: "SWV",
+						title: "Rain",
+						time: 978.0
+					),
+					//On a Farm
+					Label(
+						artist: "JOY AGAIN",
+						title: "On a Farm",
+						time: 1224.0
+					),
+					//Ivy
+					Label(
+						artist: "FRANK OCEAN",
+						title: "Ivy",
+						time: 1315.0
+					),
+					//So In Love
+					Label(
+						artist: "CURTIS MAYFIELD",
+						title: "So In Love",
+						time: 1543.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//RADIO_XM17_P2
+			Song(
+				file: "RADIO_XM17_P2", //2357.0
+				root: "DLC_CHRISTMAS2017/radio_xm17_p2/",
+				labels: [
+					//When Did You Stop Loving Me, When Did I Stop Loving You
+					Label(
+						artist: "MARVIN GAYE",
+						title: "When Did You Stop Loving Me, When Did I Stop Loving You",
+						time: 1.0
+					),
+					//Je ne bois pas beaucoup
+					Label(
+						artist: "LES YA TOUPAS DU ZAIRE",
+						title: "Je ne bois pas beaucoup",
+						time: 377.0
+					),
+					//Andreaen Sand Dunes
+					Label(
+						artist: "DREXCIYA",
+						title: "Andreaen Sand Dunes",
+						time: 576.0
+					),
+					//Dead Presidents II
+					Label(
+						artist: "JAY-Z",
+						title: "Dead Presidents II",
+						time: 729.0
+					),
+					//Crack Rock
+					Label(
+						artist: "FRANK OCEAN",
+						title: "Crack Rock",
+						time: 950.0
+					),
+					//AD - Declasse Yosemite
+					Label(
+						artist: "",
+						title: "",
+						time: 1178.0
+					),
+					//EZ Come, EZ Go
+					Label(
+						artist: "M.C. MACK",
+						title: "EZ Come, EZ Go",
+						time: 1242.0
+					),
+					//IZ-US
+					Label(
+						artist: "APHEX TWIN",
+						title: "IZ-US",
+						time: 1452.0
+					),
+					//Hiders
+					Label(
+						artist: "BURIAL",
+						title: "Hiders",
+						time: 1617.0
+					),
+					//Codeine Crazy
+					Label(
+						artist: "FUTURE",
+						title: "Codeine Crazy",
+						time: 1805.0
+					),
+					//Chanel
+					Label(
+						artist: "FRANK OCEAN",
+						title: "Chanel",
+						time: 2143.0
+					)
+				],
+				set: nil,
+				intros: []
+			),
+			//RADIO_XM17_P3
+			Song(
+				file: "RADIO_XM17_P3", //1919.0
+				root: "DLC_CHRISTMAS2017/radio_xm17_p3/",
+				labels: [
+					//For Real
+					Label(
+						artist: "LIL UZI VERT",
+						title: "For Real",
+						time: 1.0
+					),
+					//First 48
+					Label(
+						artist: "MIGOS",
+						title: "First 48",
+						time: 164.0
+					),
+					//FBG
+					Label(
+						artist: "SUSPECT",
+						title: "FBG",
+						time: 363.0
+					),
+					//Nights
+					Label(
+						artist: "FRANK OCEAN",
+						title: "Nights",
+						time: 545.0
+					),
+					//AD - Pfister neon
+					Label(
+						artist: "",
+						title: "",
+						time: 858.0
+					),
+					//YSL
+					Label(
+						artist: "GUNNA FEAT. PLAYBOI CARTI",
+						title: "YSL",
+						time: 911.0
+					),
+					//Winnin
+					Label(
+						artist: "CHIEF KEEF FEAT. KING LOUIE",
+						title: "Winnin",
+						time: 1065.0
+					),
+					//Miss White Cocaine
+					Label(
+						artist: "LIL SKO",
+						title: "Miss White Cocaine",
+						time: 1303.0
+					),
+					//Man Don't Care
+					Label(
+						artist: "JME FEAT. GIGGS",
+						title: "Man Don't Care",
+						time: 1443.0
+					),
+					//Master
+					Label(
+						artist: "(SANDY) ALEX G",
+						title: "Master",
+						time: 1648.0
+					),
+					//Pretty Sweet
+					Label(
+						artist: "FRANK OCEAN",
+						title: "Pretty Sweet",
+						time: 1764.0
+					)
+				],
+				set: nil,
+				intros: []
+			)
+		],
+		general: [],
+		sid: [],
+		mono_solo: [],
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: Los Santos Underground Radio
+	RadioStation(
+		index: 15,
+		number: 21,
+		name: "Los Santos Underground Radio",
+		image: "gta_radio_stations_texture06_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: true,
+		root: "DLC_BATTLE_MUSIC",
+		songs: [
+			//BATTLE_MIX1_RADIO_01
+			Song(
+				file: "BATTLE_MIX1_RADIO_01",
+				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_01/",
+				labels: [
+					//The Plan
+					Label(
+						artist: "AM$TRAD BILLIONAIRE",
+						title: "The Plan",
+						time: 0.0
+					),
+					//Natural States (Edit)
+					Label(
+						artist: "ARA KOUFAX",
+						title: "Natural States (Edit)",
+						time: 274.0
+					),
+					//In The Car Crash (Headgear's Always Crashing In The Same Car Mix)
+					Label(
+						artist: "SWAYZAK",
+						title: "In The Car Crash (Headgear's Always Crashing In The Same Car Mix)",
+						time: 619.0
+					),
+					//Bitcoins (Original Mix)
+					Label(
+						artist: "D. LYNNWOOD",
+						title: "Bitcoins (Original Mix)",
+						time: 978.0
+					),
+					//Don't Stop The Dance (Todd Terje Remix)
+					Label(
+						artist: "BRYAN FERRY",
+						title: "Don't Stop The Dance (Todd Terje Remix)",
+						time: 1174.0
+					),
+					//Madness Of Many
+					Label(
+						artist: "DENIS HORVAT",
+						title: "Madness Of Many",
+						time: 1519.0
+					)
+				],
+				set: "Solomun",
+				intros: []
+			),
+			//BATTLE_MIX1_RADIO_02
+			Song(
+				file: "BATTLE_MIX1_RADIO_02",
+				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_02/",
+				labels: [
+					//Madness Of Many
+					Label(
+						artist: "DENIS HORVAT",
+						title: "Madness Of Many",
+						time: 0.0
+					),
+					//Incoherence
+					Label(
+						artist: "JOHANNES BRECHT",
+						title: "Incoherence",
+						time: 127.0
+					),
+					//Ich Muss Los
+					Label(
+						artist: "SOLOMUN",
+						title: "Ich Muss Los",
+						time: 472.0
+					),
+					//Monster
+					Label(
+						artist: "MATTHEW DEAR",
+						title: "Monster",
+						time: 752.0
+					),
+					//WRKTRX3
+					Label(
+						artist: "TRUNCATE",
+						title: "WRKTRX3",
+						time: 962.0
+					),
+					//Spin (Original Mix)
+					Label(
+						artist: "FLOORPLAN",
+						title: "Spin (Original Mix)",
+						time: 1199.0
+					),
+					//The Freaks Come Out (Original 2000 Freaks Mix)
+					Label(
+						artist: "CEVIN FISHER",
+						title: "The Freaks Come Out (Original 2000 Freaks Mix)",
+						time: 1489.0
+					),
+					//You're Mine (Clean Version)
+					Label(
+						artist: "CHRIS LUM",
+						title: "You're Mine (Clean Version)",
+						time: 1779.0
+					),
+					//The Q
+					Label(
+						artist: "ALEX METRIC & TEN VEN",
+						title: "The Q",
+						time: 1980.0
+					),
+					//Customer Is King
+					Label(
+						artist: "SOLOMUN",
+						title: "Customer Is King",
+						time: 2285.0
+					)
+				],
+				set: "Solomun",
+				intros: []
+			),
+			//BATTLE_MIX1_RADIO_03
+			Song(
+				file: "BATTLE_MIX1_RADIO_03",
+				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_03/",
+				labels: [
+					//Customer Is King
+					Label(
+						artist: "SOLOMUN",
+						title: "Customer Is King",
+						time: 0.0
+					),
+					//Planet 9
+					Label(
+						artist: "ADAM PORT",
+						title: "Planet 9",
+						time: 208.0
+					),
+					//The End To My Beginning
+					Label(
+						artist: "DUBFIRE",
+						title: "The End To My Beginning",
+						time: 454.0
+					),
+					//You Want It Darker (Solomun Remix)
+					Label(
+						artist: "LEONARD COHEN",
+						title: "You Want It Darker (Solomun Remix)",
+						time: 877.0
+					)
+				],
+				set: "Solomun",
+				intros: []
+			),
+			//BATTLE_MIX2_RADIO_01
+			Song(
+				file: "BATTLE_MIX2_RADIO_01",
+				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_01/",
+				labels: [
+					//Overture
+					Label(
+						artist: "TALE OF US",
+						title: "Overture",
+						time: 0.0
+					),
+					//1911
+					Label(
+						artist: "TALE OF US",
+						title: "1911",
+						time: 61.0
+					),
+					//Trevor's Dream
+					Label(
+						artist: "TALE OF US",
+						title: "Trevor's Dream",
+						time: 289.0
+					),
+					//Vinewood Blues
+					Label(
+						artist: "TALE OF US",
+						title: "Vinewood Blues",
+						time: 438.0
+					),
+					//Anywhere
+					Label(
+						artist: "TALE OF US",
+						title: "Anywhere",
+						time: 644.0
+					),
+					//Symphony of the Night
+					Label(
+						artist: "TALE OF US",
+						title: "Symphony of the Night",
+						time: 875.0
+					)
+				],
+				set: "Tale Of Us",
+				intros: []
+			),
+			//BATTLE_MIX2_RADIO_02
+			Song(
+				file: "BATTLE_MIX2_RADIO_02",
+				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_02/",
+				labels: [
+					//Symphony of the Night
+					Label(
+						artist: "TALE OF US",
+						title: "Symphony of the Night",
+						time: 0.0
+					),
+					//Another World
+					Label(
+						artist: "TALE OF US",
+						title: "Another World",
+						time: 39.0
+					),
+					//The Portal
+					Label(
+						artist: "TALE OF US",
+						title: "The Portal",
+						time: 240.0
+					),
+					//Solitude
+					Label(
+						artist: "TALE OF US",
+						title: "Solitude",
+						time: 450.0
+					),
+					//Morgan's Fate
+					Label(
+						artist: "TALE OF US",
+						title: "Morgan's Fate",
+						time: 728.0
+					),
+					//Fisherman's Horizon
+					Label(
+						artist: "TALE OF US",
+						title: "Fisherman's Horizon",
+						time: 1018.0
+					),
+					//Myst
+					Label(
+						artist: "TALE OF US",
+						title: "Myst",
+						time: 1209.0
+					)
+				],
+				set: "Tale Of Us",
+				intros: []
+			),
+			//BATTLE_MIX2_RADIO_03
+			Song(
+				file: "BATTLE_MIX2_RADIO_03",
+				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_03/",
+				labels: [
+					//Myst
+					Label(
+						artist: "TALE OF US",
+						title: "Myst",
+						time: 0.0
+					),
+					//Seeds
+					Label(
+						artist: "TALE OF US",
+						title: "Seeds",
+						time: 26.0
+					),
+					//Endless Journey
+					Label(
+						artist: "TALE OF US",
+						title: "Endless Journey",
+						time: 205.0
+					),
+					//Valkyr
+					Label(
+						artist: "TALE OF US",
+						title: "Valkyr",
+						time: 393.0
+					),
+					//In Hyrule
+					Label(
+						artist: "TALE OF US",
+						title: "In Hyrule",
+						time: 560.0
+					),
+					//Disgracelands
+					Label(
+						artist: "TALE OF US",
+						title: "Disgracelands",
+						time: 709.0
+					),
+					//Heart of Darkness
+					Label(
+						artist: "TALE OF US",
+						title: "Heart of Darkness",
+						time: 944.0
+					)
+				],
+				set: "Tale Of Us",
+				intros: []
+			),
+			//BATTLE_MIX3_RADIO_01
+			Song(
+				file: "BATTLE_MIX3_RADIO_01",
+				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_01/",
+				labels: [
+					//Convergence
+					Label(
+						artist: "CARL FINLOW",
+						title: "Convergence",
+						time: 0.0
+					),
+					//Yes I Do
+					Label(
+						artist: "CARAVACA",
+						title: "Yes I Do",
+						time: 257.0
+					),
+					//The Atmospherian (Tornado Wallace Remix)
+					Label(
+						artist: "WARP FACTOR 9",
+						title: "The Atmospherian (Tornado Wallace Remix)",
+						time: 482.0
+					),
+					//Roman (Bas Ibellini Remix)
+					Label(
+						artist: "MASHROU' LEILA",
+						title: "Roman (Bas Ibellini Remix)",
+						time: 745.0
+					),
+					//Connection (I-Cube Rework)
+					Label(
+						artist: "FUTURE FOUR",
+						title: "Connection (I-Cube Rework)",
+						time: 980.0
+					)
+				],
+				set: "Dixon",
+				intros: []
+			),
+			//BATTLE_MIX3_RADIO_02
+			Song(
+				file: "BATTLE_MIX3_RADIO_02",
+				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_02/",
+				labels: [
+					//Connection (I-Cube Rework)
+					Label(
+						artist: "FUTURE FOUR",
+						title: "Connection (I-Cube Rework)",
+						time: 0.0
+					),
+					//Quinquerime
+					Label(
+						artist: "RITE DE PASSAGE",
+						title: "Quinquerime",
+						time: 32.0
+					),
+					//Electro Pharaoh (Instrumental)
+					Label(
+						artist: "THE EGYPTIAN LOVER",
+						title: "Electro Pharaoh (Instrumental)",
+						time: 235.0
+					),
+					//Telstar
+					Label(
+						artist: "MARCUS L.",
+						title: "Telstar",
+						time: 396.0
+					),
+					//Bring U Up (Deetron Edit)
+					Label(
+						artist: "ROMANTHONY",
+						title: "Bring U Up (Deetron Edit)",
+						time: 655.0
+					),
+					//5 Seconds
+					Label(
+						artist: "SOLAR",
+						title: "5 Seconds",
+						time: 937.0
+					),
+					//And Dance
+					Label(
+						artist: "SHARIF LAFFREY",
+						title: "And Dance",
+						time: 1259.0
+					)
+				],
+				set: "Dixon",
+				intros: []
+			),
+			//BATTLE_MIX3_RADIO_03
+			Song(
+				file: "BATTLE_MIX3_RADIO_03",
+				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_03/",
+				labels: [
+					//And Dance
+					Label(
+						artist: "SHARIF LAFFREY",
+						title: "And Dance",
+						time: 0.0
+					),
+					//Sensation (Dub Version)
+					Label(
+						artist: "RON HARDY",
+						title: "Sensation (Dub Version)",
+						time: 190.0
+					),
+					//Sharivari (Digital Original Aux 88 Mix)
+					Label(
+						artist: "AUX 88",
+						title: "Sharivari (Digital Original Aux 88 Mix)",
+						time: 344.0
+					),
+					//OAR03-B
+					Label(
+						artist: "ONI AYHUN",
+						title: "OAR03-B",
+						time: 592.0
+					),
+					//Reach Out Your Hand (Erol Alkan Rework) - GTA Edit
+					Label(
+						artist: "TCK FT. JG",
+						title: "Reach Out Your Hand (Erol Alkan Rework) - GTA Edit",
+						time: 909.0
+					)
+				],
+				set: "Dixon",
+				intros: []
+			),
+			//BATTLE_MIX4_RADIO_01
+			Song(
+				file: "BATTLE_MIX4_RADIO_01",
+				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_01/",
+				labels: [
+					//Sensation
+					Label(
+						artist: "RON HARDY",
+						title: "Sensation",
+						time: 0.0
+					),
+					//Where Ya At
+					Label(
+						artist: "DERRICK CARTER",
+						title: "Where Ya At",
+						time: 212.0
+					),
+					//Bugatti
+					Label(
+						artist: "TIGA",
+						title: "Bugatti",
+						time: 372.0
+					),
+					//Miura
+					Label(
+						artist: "METRO AREA",
+						title: "Miura",
+						time: 682.0//DOUBLE CHECK TIME
+					)
+				],
+				set: "The Black Madonna",
+				intros: []
+			),
+			//BATTLE_MIX4_RADIO_02
+			Song(
+				file: "BATTLE_MIX4_RADIO_02",
+				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_02/",
+				labels: [
+					//Miura
+					Label(
+						artist: "METRO AREA",
+						title: "Miura",
+						time: 0.0
+					),
+					//A Jealous Heart Never Rests
+					Label(
+						artist: "THE BLACK MADONNA",
+						title: "A Jealous Heart Never Rests",
+						time: 128.0
+					),
+					//Beat Box
+					Label(
+						artist: "ART OF NOISE",
+						title: "Beat Box",
+						time: 287.0
+					),
+					//We Still Believe
+					Label(
+						artist: "THE BLACK MADONNA FT. JAMIE PRINCIPLE",
+						title: "We Still Believe",
+						time: 565.0
+					),
+					//Can't Believe
+					Label(
+						artist: "NANCY MARTIN",
+						title: "Can't Believe",
+						time: 933.0
+					),
+					//Hydraulic Pump Pt. 3
+					Label(
+						artist: "P-FUNK ALL STARS",
+						title: "Hydraulic Pump Pt. 3",
+						time: 1250.0
+					),
+					//Computer Madness
+					Label(
+						artist: "STEVE POINDEXTER",
+						title: "Computer Madness",
+						time: 1419.0
+					),
+					//Devotion
+					Label(
+						artist: "TEN CITY",
+						title: "Devotion",
+						time: 1575.0
+					)
+				],
+				set: "The Black Madonna",
+				intros: []
+			),
+			//BATTLE_MIX4_RADIO_03
+			Song(
+				file: "BATTLE_MIX4_RADIO_03",
+				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_03/",
+				labels: [
+					//Devotion
+					Label(
+						artist: "TEN CITY",
+						title: "Devotion",
+						time: 0.0
+					),
+					//We Can Never Be Apart
+					Label(
+						artist: "THE BLACK MADONNA",
+						title: "We Can Never Be Apart",
+						time: 161.0
+					),
+					//Steppin' Out
+					Label(
+						artist: "JOE JACKSON",
+						title: "Steppin' Out",
+						time: 614.0
+					),
+					//He Is The Voice I Hear
+					Label(
+						artist: "THE BLACK MADONNA",
+						title: "He Is The Voice I Hear",
+						time: 861.0
+					)
+				],
+				set: "The Black Madonna",
+				intros: []
+			)
+		],
+		general: [],
+		sid: [],
+		mono_solo: [],
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: iFruit Radio
+	RadioStation(
+		index: 16,
+		number: 22,
+		name: "iFruit Radio",
+		image: "gta_radio_stations_texture07_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: false,
+		root: nil,
+		songs: nil,
+		general: nil,
+		sid: nil,
+		mono_solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Self Radio
+	RadioStation(
+		index: 17,
+		number: 0,
+		name: "Self Radio",
+		image: "gta_radio_stations_texture03_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: false,
+		root: nil,
+		songs: nil,
+		general: nil,
+		sid: nil,
+		mono_solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Still Slipping Los Santos
+	RadioStation(
+		index: 18,
+		number: 23,
+		name: "Still Slipping Los Santos",
+		image: "gta_radio_stations_texture09_128",
+		imagePosition: Position(
+			row: 1,
+			column: 1
+		),
+		randomize: false,
+		rotate: false,
+		root: nil,
+		songs: nil,
+		general: nil,
+		sid: nil,
+		mono_solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Los Santos Rock Radio
+	RadioStation(
+		index: 19,
 		number: 1,
 		name: "Los Santos Rock Radio",
 		image: "gtav_radio_stations_texture_512",
@@ -861,7 +5822,7 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Non-Stop-Pop FM
 	RadioStation(
-		index: 1,
+		index: 20,
 		number: 2,
 		name: "Non-Stop-Pop FM",
 		image: "gtav_radio_stations_texture_512",
@@ -1880,7 +6841,7 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Radio Los Santos
 	RadioStation(
-		index: 2,
+		index: 21,
 		number: 3,
 		name: "Radio Los Santos",
 		image: "gtav_radio_stations_texture_512",
@@ -2602,7 +7563,7 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Channel X
 	RadioStation(
-		index: 3,
+		index: 22,
 		number: 4,
 		name: "Channel X",
 		image: "gtav_radio_stations_texture_512",
@@ -3012,7 +7973,7 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: WCTR
 	RadioStation(
-		index: 4,
+		index: 23,
 		number: 5,
 		name: "WCTR",
 		image: "gta_radio_stations_texture02_512",
@@ -3096,7 +8057,7 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Rebel Radio
 	RadioStation(
-		index: 5,
+		index: 24,
 		number: 6,
 		name: "Rebel Radio",
 		image: "gtav_radio_stations_texture_512",
@@ -3461,7 +8422,7 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Soulwax FM
 	RadioStation(
-		index: 6,
+		index: 25,
 		number: 7,
 		name: "Soulwax FM",
 		image: "gtav_radio_stations_texture_512",
@@ -3611,7 +8572,7 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: East Los FM
 	RadioStation(
-		index: 7,
+		index: 26,
 		number: 8,
 		name: "East Los FM",
 		image: "gtav_radio_stations_texture_512",
@@ -3738,7 +8699,7 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: West Coast Classics
 	RadioStation(
-		index: 8,
+		index: 27,
 		number: 9,
 		name: "West Coast Classics",
 		image: "gtav_radio_stations_texture_512",
@@ -4413,4820 +9374,6 @@ public let RadioStations: [RadioStation] = [
 		to: [
 			"AD": ["01","02","03","04","05","06","07"],
 			"NEWS": ["01","02","03","04","05","06"]
-		]
-	),
-	
-	// MARK: Radio Off
-	RadioStation(
-		index: 9,
-		number: 10,
-		name: "Radio Off",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 4,
-			column: 4
-		),
-		randomize: false,
-		rotate: false,
-		root: nil,
-		songs: nil,
-		general: nil,
-		sid: nil,
-		mono_solo: nil,
-		time: nil,
-		to: nil
-	),
-	
-	// MARK: Blaine County Radio
-	RadioStation(
-		index: 10,
-		number: 11,
-		name: "Blaine County Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 3,
-			column: 2
-		),
-		randomize: false,
-		rotate: true,
-		root: "RADIO_11_TALK_02",
-		songs: [
-			//MONO_BCR_COMMUNITY_HOUR
-			Song(
-				file: "MONO_BCR_COMMUNITY_HOUR",
-				root: "RADIO_11_TALK_02/mono_bcr_community_hour/",
-				labels: [
-					Label(
-						artist: "BCR Community Hour",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MONO_BEYOND_INSEMINATION
-			Song(
-				file: "MONO_BEYOND_INSEMINATION",
-				root: "RADIO_11_TALK_02/mono_beyond_insemination/",
-				labels: [
-					Label(
-						artist: "Beyond Insemination",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MONO_BLESS_YOUR_HEART
-			Song(
-				file: "MONO_BLESS_YOUR_HEART",
-				root: "RADIO_11_TALK_02/mono_bless_your_heart/",
-				labels: [
-					Label(
-						artist: "BLESS YOUR HEART",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MONO_ZBEYOND_INSEMINATION_PART_2
-			Song(
-				file: "MONO_ZBEYOND_INSEMINATION_PART_2",
-				root: "RADIO_11_TALK_02/mono_zbeyond_insemination_part_2/",
-				labels: [
-					Label(
-						artist: "Beyond Insemination",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: [],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11"],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: The Blue Ark
-	RadioStation(
-		index: 11,
-		number: 12,
-		name: "The Blue Ark",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 4,
-			column: 3
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_12_REGGAE",
-		songs: [
-			//ADDI_TRUTH
-			Song(
-				file: "ADDI_TRUTH",
-				root: "RADIO_12_REGGAE/addi_truth/",
-				labels: [
-					Label(
-						artist: "VYBZ KARTEL",
-						title: "Addi Truth",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//CHAPTER3
-			Song(
-				file: "CHAPTER3",
-				root: "RADIO_12_REGGAE/chapter3/",
-				labels: [
-					Label(
-						artist: "JOE GIBBS & THE PROFESSIONALS",
-						title: "Chapter Three",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CHAPTER3_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "CHAPTER3_02",
-						delay: 5.0
-					)
-				]
-			),
-			//CRAZY_GIRL
-			Song(
-				file: "CRAZY_GIRL",
-				root: "RADIO_12_REGGAE/crazy_girl/",
-				labels: [
-					Label(
-						artist: "HALF PINT",
-						title: "Crazy Girl",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CRAZY_GIRL_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "CRAZY_GIRL_02",
-						delay: 5.0
-					)
-				]
-			),
-			//DISCO_DEVIL
-			Song(
-				file: "DISCO_DEVIL",
-				root: "RADIO_12_REGGAE/disco_devil/",
-				labels: [
-					Label(
-						artist: "LEE SCRATCH PERRY & THE FULL EXPERIENCE",
-						title: "Disco Devil",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DISCO_DEVIL_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "DISCO_DEVIL_02",
-						delay: 5.0
-					)
-				]
-			),
-			//GRUMBLIN_DUB
-			Song(
-				file: "GRUMBLIN_DUB",
-				root: "RADIO_12_REGGAE/grumblin_dub/",
-				labels: [
-					Label(
-						artist: "THE UPSETTERS",
-						title: "Grumblin' Dub",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GRUMBLIN_DUB_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "GRUMBLIN_DUB_02",
-						delay: 5.0
-					)
-				]
-			),
-			//GUN_SHOT_A_FIRE
-			Song(
-				file: "GUN_SHOT_A_FIRE",
-				root: "RADIO_12_REGGAE/gun_shot_a_fire/",
-				labels: [
-					Label(
-						artist: "KONSHENS",
-						title: "Gun Shot A Fire",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//I_AM_A_MADMAN
-			Song(
-				file: "I_AM_A_MADMAN",
-				root: "RADIO_12_REGGAE/i_am_a_madman/",
-				labels: [
-					Label(
-						artist: "LEE SCRATCH PERRY",
-						title: "I Am A Madman",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "I_AM_A_MADMAN_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "I_AM_A_MADMAN_02",
-						delay: 5.0
-					)
-				]
-			),
-			//KINGSTON_BE_WISE
-			Song(
-				file: "KINGSTON_BE_WISE",
-				root: "RADIO_12_REGGAE/kingston_be_wise/",
-				labels: [
-					Label(
-						artist: "PROTOJE",
-						title: "Kingston Be Wise",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//KINGSTON_TOWN
-			Song(
-				file: "KINGSTON_TOWN",
-				root: "RADIO_12_REGGAE/kingston_town/",
-				labels: [
-					Label(
-						artist: "BUSY SIGNAL",
-						title: "Kingston Town",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "KINGSTON_TOWN_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "KINGSTON_TOWN_02",
-						delay: 5.0
-					)
-				]
-			),
-			//LOYALS
-			Song(
-				file: "LOYALS",
-				root: "RADIO_12_REGGAE/loyals/",
-				labels: [
-					Label(
-						artist: "DEMARCO",
-						title: "Loyals (Royals Remix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MONEY_COME_MONEY_GO
-			Song(
-				file: "MONEY_COME_MONEY_GO",
-				root: "RADIO_12_REGGAE/money_come_money_go/",
-				labels: [
-					Label(
-						artist: "LEE \"SCRATCH\" PERRY",
-						title: "Money Come And Money Go",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MONEY_COME_MONEY_GO_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "MONEY_COME_MONEY_GO_02",
-						delay: 5.0
-					)
-				]
-			),
-			//MONEY_IN_MY_POCKET
-			Song(
-				file: "MONEY_IN_MY_POCKET",
-				root: "RADIO_12_REGGAE/money_in_my_pocket/",
-				labels: [
-					Label(
-						artist: "DENNIS BROWN",
-						title: "Money In My Pocket",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MR_MONEY_MAN
-			Song(
-				file: "MR_MONEY_MAN",
-				root: "RADIO_12_REGGAE/mr_money_man/",
-				labels: [
-					Label(
-						artist: "DANNY HENSWORTH",
-						title: "Mr. Money Man",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MR_MONEY_MAN_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "MR_MONEY_MAN_02",
-						delay: 5.0
-					)
-				]
-			),
-			//NIGHT_NURSE
-			Song(
-				file: "NIGHT_NURSE",
-				root: "RADIO_12_REGGAE/night_nurse/",
-				labels: [
-					Label(
-						artist: "GREGORY ISAACS",
-						title: "Night Nurse",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NIGHT_NURSE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "NIGHT_NURSE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//NOBODY_MOVE_GET_HURT
-			Song(
-				file: "NOBODY_MOVE_GET_HURT",
-				root: "RADIO_12_REGGAE/nobody_move_get_hurt/",
-				labels: [
-					Label(
-						artist: "YELLOWMAN",
-						title: "Nobody Move Nobody Get Hurt",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NOBODY_MOVE_GET_HURT_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "NOBODY_MOVE_GET_HURT_02",
-						delay: 5.0
-					)
-				]
-			),
-			//ODD_RAS
-			Song(
-				file: "ODD_RAS",
-				root: "RADIO_12_REGGAE/odd_ras/",
-				labels: [
-					Label(
-						artist: "CHRONIXX",
-						title: "Odd Ras",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//PSYCHO
-			Song(
-				file: "PSYCHO",
-				root: "RADIO_12_REGGAE/psycho/",
-				labels: [
-					Label(
-						artist: "TOMMY LEE SPARTA",
-						title: "Psycho",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//ROAST_FISH_AND_CORNBREAD
-			Song(
-				file: "ROAST_FISH_AND_CORNBREAD",
-				root: "RADIO_12_REGGAE/roast_fish_and_cornbread/",
-				labels: [
-					Label(
-						artist: "LEE \"SCRATCH\" PERRY",
-						title: "Roast Fish & Cornbread",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//SONS_OF_SLAVES
-			Song(
-				file: "SONS_OF_SLAVES",
-				root: "RADIO_12_REGGAE/sons_of_slaves/",
-				labels: [
-					Label(
-						artist: "JUNIOR DELGADO",
-						title: "Sons Of Slaves",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SONS_OF_SLAVES_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "SONS_OF_SLAVES_02",
-						delay: 5.0
-					)
-				]
-			),
-			//TOPIC_OF_THE_DAY
-			Song(
-				file: "TOPIC_OF_THE_DAY",
-				root: "RADIO_12_REGGAE/topic_of_the_day/",
-				labels: [
-					Label(
-						artist: "I-OCTANE",
-						title: "Topic Of The Day",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//WE_NEVER_FEAR_DEM
-			Song(
-				file: "WE_NEVER_FEAR_DEM",
-				root: "RADIO_12_REGGAE/we_never_fear_dem/",
-				labels: [
-					Label(
-						artist: "VYBZ KARTEL FEAT. POPCAAN",
-						title: "We Never Fear Dem",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		time: [
-			"EVENING": ["01","02","03"],
-			"MORNING": ["01","02","03","04","05"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05"],
-			"NEWS": ["01","02","03","04"]
-		]
-	),
-	
-	// MARK: Worldwide FM
-	RadioStation(
-		index: 12,
-		number: 13,
-		name: "Worldwide FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 1,
-			column: 4
-		),
-		randomize: false,
-		rotate: true,
-		root: "RADIO_13_JAZZ",
-		songs: [
-			//wwfm_p1
-			Song(
-				file: "0x04A02233",
-				root: "RADIO_13_JAZZ/wwfm_p1/",
-				labels: [
-					//Mirror Maru
-					Label(
-						artist: "CASHMERE CAT",
-						title: "Mirror Maru",
-						time: 0.0
-					),
-					//Cold Air
-					Label(
-						artist: "THE HICS",
-						title: "Cold Air",
-						time: 161.0
-					),
-					//The Place
-					Label(
-						artist: "INC.",
-						title: "The Place",
-						time: 306.0
-					),
-					//Beginning
-					Label(
-						artist: "TRICKSKI",
-						title: "Beginning",
-						time: 519.0
-					),
-					//Ghost
-					Label(
-						artist: "MALA",
-						title: "Ghost",
-						time: 784.0
-					),
-					//Forest Funk
-					Label(
-						artist: "SWINDLE",
-						title: "Forest Funk",
-						time: 990.0
-					),
-					//Throw Down
-					Label(
-						artist: "TOM BROWNE",
-						title: "Throw Down",
-						time: 1155.0
-					),
-					//You And The Music
-					Label(
-						artist: "DONALD BYRD",
-						title: "You And The Music",
-						time: 1323.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//wwfm_p2
-			Song(
-				file: "0x1EDECB2F",
-				root: "RADIO_13_JAZZ/wwfm_p2/",
-				labels: [
-					//Thousand Finger Man
-					Label(
-						artist: "CANDIDO",
-						title: "Thousand Finger Man",
-						time: 0.0
-					),
-					//Harm In Charge
-					Label(
-						artist: "TORO Y MOI",
-						title: "Harm In Charge",
-						time: 215.0
-					),
-					//Breaking
-					Label(
-						artist: "KYODAI",
-						title: "Breaking",
-						time: 345.0
-					),
-					//Waveforms
-					Label(
-						artist: "DJANGO DJANGO",
-						title: "Waveforms",
-						time: 559.0
-					),
-					//Nissim
-					Label(
-						artist: "THE GASLAMP KILLER",
-						title: "Nissim",
-						time: 731.0
-					),
-					//Harpoon Land
-					Label(
-						artist: "OWINY SIGOMA BAND",
-						title: "Harpoon Land",
-						time: 965.0
-					),
-					//Brand New Revolution
-					Label(
-						artist: "GUTS",
-						title: "Brand New Revolution",
-						time: 1135.0
-					),
-					//Live Your Live (Melo-X Motherland God Mix)
-					Label(
-						artist: "YUNA",
-						title: "Live Your Live (Melo-X Motherland God Mix)",
-						time: 1318.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//wwfm_p3
-			Song(
-				file: "0x15ED4708",
-				root: "RADIO_13_JAZZ/wwfm_p3/",
-				labels: [
-					//Lovery (Slow Cuban Vibe Mix)
-					Label(
-						artist: "KIKO NAVARRO & TUCCILLO FEAT. AMOR",
-						title: "Lovery (Slow Cuban Vibe Mix)",
-						time: 0.0
-					),
-					//1759 (Outro)
-					Label(
-						artist: "RICHARD SPAVEN",
-						title: "1759 (Outro)",
-						time: 280.0
-					),
-					//Forgotten Notes
-					Label(
-						artist: "HACKMAN",
-						title: "Forgotten Notes",
-						time: 3606.0 - 3086.0
-					),
-					//Shark Week
-					Label(
-						artist: "SINKANE",
-						title: "Shark Week",
-						time: 520.0
-					),
-					//Body & Soul
-					Label(
-						artist: "WILLIAM ONYEABOR",
-						title: "Body & Soul",
-						time: 924.0
-					),
-					//Kool FM
-					Label(
-						artist: "FOUR TET",
-						title: "Kool FM",
-						time: 1099.0
-					),
-					//Made To Stray
-					Label(
-						artist: "MOUNT KIMBIE",
-						title: "Made To Stray",
-						time: 1253.0
-					),
-					//World In A Room
-					Label(
-						artist: "ANUSHKA",
-						title: "World In A Room",
-						time: 1460.0
-					),
-					//Why You Wanna See My Bad Side?
-					Label(
-						artist: "SMOKEY ROBINSON",
-						title: "Why You Wanna See My Bad Side?",
-						time: 1619.0
-					),
-					//Street Life
-					Label(
-						artist: "RANDY CRAWFORD",
-						title: "Street Life",
-						time: 1831.0
-					),
-					//What You Need
-					Label(
-						artist: "FLUME",
-						title: "What You Need",
-						time: 2110.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//wwfm_p4
-			Song(
-				file: "0x1E4AFD9D",
-				root: "RADIO_13_JAZZ/wwfm_p4/",
-				labels: [
-					//What You Need
-					Label(
-						artist: "FLUME",
-						title: "What You Need",
-						time: 0.0
-					),
-					//Hive
-					Label(
-						artist: "EARL SWEATSHIRT FT. VINCE STAPLES & CASEY VEGGIES",
-						title: "Hive",
-						time: 186.0
-					),
-					//Numb
-					Label(
-						artist: "PORTISHEAD",
-						title: "Numb",
-						time: 470.0
-					),
-					//Black Magic
-					Label(
-						artist: "JON WAYNE ",
-						title: "Black Magic",
-						time: 647.0
-					),
-					//I69
-					Label(
-						artist: "ROMAN GIANARTHUR",
-						title: "I69",
-						time: 752.0
-					),
-					//Treat Me Like Fire
-					Label(
-						artist: "LION BABE",
-						title: "Treat Me Like Fire",
-						time: 904.0
-					),
-					//Killdat
-					Label(
-						artist: "DAM-FUNK",
-						title: "Killdat",
-						time: 1013.0
-					),
-					//Run Away
-					Label(
-						artist: "JAMIE LIDELL",
-						title: "Run Away",
-						time: 1111.0
-					),
-					//Recover (CID RIM REMIX)
-					Label(
-						artist: "CHVRCHES",
-						title: "Recover (CID RIM REMIX)",
-						time: 1297.0
-					),
-					//Let Yrself Be
-					Label(
-						artist: "JIMMY EDGAR",
-						title: "Let Yrself Be",
-						time: 1459.0
-					),
-					//Viarejo
-					Label(
-						artist: "CLAP! CLAP!",
-						title: "Viarejo",
-						time: 1641.0
-					),
-					//No Balanço Da Canoa
-					Label(
-						artist: "MAGA BO",
-						title: "No Balanço Da Canoa",
-						time: 1772.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//wwfm_p1
-			Song(
-				file: "0x120DAFC1",
-				root: "RADIO_13_JAZZ/wwfm_p1/",
-				labels: [
-					//Mirror Maru
-					Label(
-						artist: "CASHMERE CAT",
-						title: "Mirror Maru",
-						time: 0.0
-					),
-					//Cold Air
-					Label(
-						artist: "THE HICS",
-						title: "Cold Air",
-						time: 161.0
-					),
-					//The Place
-					Label(
-						artist: "INC.",
-						title: "The Place",
-						time: 306.0
-					),
-					//Beginning
-					Label(
-						artist: "TRICKSKI",
-						title: "Beginning",
-						time: 519.0
-					),
-					//Ghost
-					Label(
-						artist: "MALA",
-						title: "Ghost",
-						time: 784.0
-					),
-					//Forest Funk
-					Label(
-						artist: "SWINDLE",
-						title: "Forest Funk",
-						time: 990.0
-					),
-					//Throw Down
-					Label(
-						artist: "TOM BROWNE",
-						title: "Throw Down",
-						time: 1155.0
-					),
-					//You And The Music
-					Label(
-						artist: "DONALD BYRD",
-						title: "You And The Music",
-						time: 1323.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//wwfm_p2
-			Song(
-				file: "0x117A33D2",
-				root: "RADIO_13_JAZZ/wwfm_p2/",
-				labels: [
-					//Thousand Finger Man
-					Label(
-						artist: "CANDIDO",
-						title: "Thousand Finger Man",
-						time: 0.0
-					),
-					//Harm In Charge
-					Label(
-						artist: "TORO Y MOI",
-						title: "Harm In Charge",
-						time: 215.0
-					),
-					//Breaking
-					Label(
-						artist: "KYODAI",
-						title: "Breaking",
-						time: 345.0
-					),
-					//Waveforms
-					Label(
-						artist: "DJANGO DJANGO",
-						title: "Waveforms",
-						time: 559.0
-					),
-					//Nissim
-					Label(
-						artist: "THE GASLAMP KILLER",
-						title: "Nissim",
-						time: 731.0
-					),
-					//Harpoon Land
-					Label(
-						artist: "OWINY SIGOMA BAND",
-						title: "Harpoon Land",
-						time: 965.0
-					),
-					//Brand New Revolution
-					Label(
-						artist: "GUTS",
-						title: "Brand New Revolution",
-						time: 1135.0
-					),
-					//Live Your Live (Melo-X Motherland God Mix)
-					Label(
-						artist: "YUNA",
-						title: "Live Your Live (Melo-X Motherland God Mix)",
-						time: 1318.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//wwfm_p3
-			Song(
-				file: "0x032BC446",
-				root: "RADIO_13_JAZZ/wwfm_p3/",
-				labels: [
-					//Lovery (Slow Cuban Vibe Mix)
-					Label(
-						artist: "KIKO NAVARRO & TUCCILLO FEAT. AMOR",
-						title: "Lovery (Slow Cuban Vibe Mix)",
-						time: 0.0
-					),
-					//1759 (Outro)
-					Label(
-						artist: "RICHARD SPAVEN",
-						title: "1759 (Outro)",
-						time: 280.0
-					),
-					//Forgotten Notes
-					Label(
-						artist: "HACKMAN",
-						title: "Forgotten Notes",
-						time: 3606.0 - 3086.0
-					),
-					//Shark Week
-					Label(
-						artist: "SINKANE",
-						title: "Shark Week",
-						time: 520.0
-					),
-					//Body & Soul
-					Label(
-						artist: "WILLIAM ONYEABOR",
-						title: "Body & Soul",
-						time: 924.0
-					),
-					//Kool FM
-					Label(
-						artist: "FOUR TET",
-						title: "Kool FM",
-						time: 1099.0
-					),
-					//Made To Stray
-					Label(
-						artist: "MOUNT KIMBIE",
-						title: "Made To Stray",
-						time: 1253.0
-					),
-					//World In A Room
-					Label(
-						artist: "ANUSHKA",
-						title: "World In A Room",
-						time: 1460.0
-					),
-					//Why You Wanna See My Bad Side?
-					Label(
-						artist: "SMOKEY ROBINSON",
-						title: "Why You Wanna See My Bad Side?",
-						time: 1619.0
-					),
-					//Street Life
-					Label(
-						artist: "RANDY CRAWFORD",
-						title: "Street Life",
-						time: 1831.0
-					),
-					//What You Need
-					Label(
-						artist: "FLUME",
-						title: "What You Need",
-						time: 2110.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//wwfm_p4
-			Song(
-				file: "0x1E66F1A0",
-				root: "RADIO_13_JAZZ/wwfm_p4/",
-				labels: [
-					//What You Need
-					Label(
-						artist: "FLUME",
-						title: "What You Need",
-						time: 0.0
-					),
-					//Hive
-					Label(
-						artist: "EARL SWEATSHIRT FT. VINCE STAPLES & CASEY VEGGIES",
-						title: "Hive",
-						time: 186.0
-					),
-					//Numb
-					Label(
-						artist: "PORTISHEAD",
-						title: "Numb",
-						time: 470.0
-					),
-					//Black Magic
-					Label(
-						artist: "JON WAYNE ",
-						title: "Black Magic",
-						time: 647.0
-					),
-					//I69
-					Label(
-						artist: "ROMAN GIANARTHUR",
-						title: "I69",
-						time: 752.0
-					),
-					//Treat Me Like Fire
-					Label(
-						artist: "LION BABE",
-						title: "Treat Me Like Fire",
-						time: 904.0
-					),
-					//Killdat
-					Label(
-						artist: "DAM-FUNK",
-						title: "Killdat",
-						time: 1013.0
-					),
-					//Run Away
-					Label(
-						artist: "JAMIE LIDELL",
-						title: "Run Away",
-						time: 1111.0
-					),
-					//Recover (CID RIM REMIX)
-					Label(
-						artist: "CHVRCHES",
-						title: "Recover (CID RIM REMIX)",
-						time: 1297.0
-					),
-					//Let Yrself Be
-					Label(
-						artist: "JIMMY EDGAR",
-						title: "Let Yrself Be",
-						time: 1459.0
-					),
-					//Viarejo
-					Label(
-						artist: "CLAP! CLAP!",
-						title: "Viarejo",
-						time: 1641.0
-					),
-					//No Balanço Da Canoa
-					Label(
-						artist: "MAGA BO",
-						title: "No Balanço Da Canoa",
-						time: 1772.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: [],
-		sid: [],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: FlyLo FM
-	RadioStation(
-		index: 13,
-		number: 14,
-		name: "FlyLo FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 2,
-			column: 4
-		),
-		randomize: false,
-		rotate: true,
-		root: "RADIO_14_DANCE_02",
-		songs: [
-			Song(
-				file: "0x0A818E80",
-				root: "RADIO_14_DANCE_02/flylo_part1/",
-				labels: [
-					//Getting There
-					Label(
-						artist: "FLYING LOTUS FEAT. NIKI RANDA",
-						title: "Getting There",
-						time: 0.0
-					),
-					//Crystals
-					Label(
-						artist: "CLAMS CASINO",
-						title: "Crystals",
-						time: 142.0
-					),
-					//Crosswerved
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Crosswerved",
-						time: 219.0
-					),
-					//Be Spin
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Be Spin",
-						time: 259.0
-					),
-					//See Thru To U (ft Erykah Badu)
-					Label(
-						artist: "FLYING LOTUS",
-						title: "See Thru To U (ft Erykah Badu)",
-						time: 358.0
-					),
-					//The Diddler
-					Label(
-						artist: "FLYING LOTUS",
-						title: "The Diddler",
-						time: 407.0
-					),
-					//Computer Face RMX
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Computer Face RMX",
-						time: 476.0
-					),
-					//100hm
-					Label(
-						artist: "HUDSON MOHAWKE",
-						title: "100hm",
-						time: 566.0
-					),
-					//The Kill
-					Label(
-						artist: "FLYING LOTUS FEAT. NIKI RANDA",
-						title: "The Kill",
-						time: 637.0
-					),
-					//Garbage
-					Label(
-						artist: "TYLER, THE CREATOR",
-						title: "Garbage",
-						time: 835.0
-					),
-					//Elevators (Me & You)
-					Label(
-						artist: "OUTKAST",
-						title: "Elevators (Me & You)",
-						time: 1026.0
-					),
-					//Evil Grin
-					Label(
-						artist: "CAPTAIN MURPHY",
-						title: "Evil Grin",
-						time: 1178.0
-					),
-					//Catapult Man
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Catapult Man",
-						time: 1289.0
-					),
-					//Encoded Flow
-					Label(
-						artist: "DABRYE",
-						title: "Encoded Flow",
-						time: 1395.0
-					),
-					//She Died There
-					Label(
-						artist: "MACHINEDRUM",
-						title: "She Died There",
-						time: 1472.0
-					),
-					//It's Wack
-					Label(
-						artist: "DJ RASHAD & HEAVEE",
-						title: "It's Wack",
-						time: 1608.0
-					),
-					//O Sheit It's X
-					Label(
-						artist: "THUNDERCAT",
-						title: "O Sheit It's X",
-						time: 1784.0
-					),
-					//Stonecutters
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Stonecutters",
-						time: 1948.0
-					),
-					//23
-					Label(
-						artist: "SHADOW CHILD",
-						title: "23",
-						time: 2077.0
-					),
-					//Stalker Ha
-					Label(
-						artist: "KINGDOM",
-						title: "Stalker Ha",
-						time: 2245.0
-					),
-					//Windowlicker
-					Label(
-						artist: "APHEX TWIN",
-						title: "Windowlicker",
-						time: 2339.0
-					),
-					//Eddie You Should Know Better
-					Label(
-						artist: "CURTIS MAYFIELD",
-						title: "Eddie You Should Know Better",
-						time: 2475.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			Song(
-				file: "0x0339EC32",
-				root: "RADIO_14_DANCE_02/flylo_part2/",
-				labels: [
-					//You Never Come Closer
-					Label(
-						artist: "DORIS",
-						title: "You Never Come Closer",
-						time: 0.0
-					),
-					//Medication Medication
-					Label(
-						artist: "FLYING LOTUS FT. KRAYZIE BONE",
-						title: "Medication Medication",
-						time: 265.0
-					),
-					//What We Want
-					Label(
-						artist: "XXYYXX",
-						title: "What We Want",
-						time: 404.0
-					),
-					//Make Money
-					Label(
-						artist: "LAPALUX",
-						title: "Make Money",
-						time: 570.0
-					),
-					//Shred You To Bits
-					Label(
-						artist: "GASLAMP KILLER",
-						title: "Shred You To Bits",
-						time: 659.0
-					),
-					//B Adams
-					Label(
-						artist: "MONO/POLY AND THUNDERCAT",
-						title: "B Adams",
-						time: 752.0
-					),
-					//Osaka Trade
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Osaka Trade",
-						time: 839.0
-					),
-					//Masquatch
-					Label(
-						artist: "DOOM",
-						title: "Masquatch",
-						time: 973.0
-					),
-					//Early Mountain
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Early Mountain",
-						time: 1084.0
-					),
-					//Into Vogon Skulls
-					Label(
-						artist: "DIMLITE",
-						title: "Into Vogon Skulls",
-						time: 1201.0
-					),
-					//F--- The Makeup, Skip The Shower
-					Label(
-						artist: "KNOWER",
-						title: "F--- The Makeup, Skip The Shower",
-						time: 1344.0
-					),
-					//4AM/AraabMuzik Streetz Tonight Remix
-					Label(
-						artist: "KASKADE",
-						title: "4AM/AraabMuzik Streetz Tonight Remix",
-						time: 1478.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			Song(
-				file: "0x17E2800E",
-				root: "RADIO_14_DANCE_02/flylo_part1/",
-				labels: [
-					//Getting There
-					Label(
-						artist: "FLYING LOTUS FEAT. NIKI RANDA",
-						title: "Getting There",
-						time: 0.0
-					),
-					//Crystals
-					Label(
-						artist: "CLAMS CASINO",
-						title: "Crystals",
-						time: 142.0
-					),
-					//Crosswerved
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Crosswerved",
-						time: 219.0
-					),
-					//Be Spin
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Be Spin",
-						time: 259.0
-					),
-					//See Thru To U (ft Erykah Badu)
-					Label(
-						artist: "FLYING LOTUS",
-						title: "See Thru To U (ft Erykah Badu)",
-						time: 358.0
-					),
-					//The Diddler
-					Label(
-						artist: "FLYING LOTUS",
-						title: "The Diddler",
-						time: 407.0
-					),
-					//Computer Face RMX
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Computer Face RMX",
-						time: 476.0
-					),
-					//100hm
-					Label(
-						artist: "HUDSON MOHAWKE",
-						title: "100hm",
-						time: 566.0
-					),
-					//The Kill
-					Label(
-						artist: "FLYING LOTUS FEAT. NIKI RANDA",
-						title: "The Kill",
-						time: 637.0
-					),
-					//Garbage
-					Label(
-						artist: "TYLER, THE CREATOR",
-						title: "Garbage",
-						time: 835.0
-					),
-					//Elevators (Me & You)
-					Label(
-						artist: "OUTKAST",
-						title: "Elevators (Me & You)",
-						time: 1026.0
-					),
-					//Evil Grin
-					Label(
-						artist: "CAPTAIN MURPHY",
-						title: "Evil Grin",
-						time: 1178.0
-					),
-					//Catapult Man
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Catapult Man",
-						time: 1289.0
-					),
-					//Encoded Flow
-					Label(
-						artist: "DABRYE",
-						title: "Encoded Flow",
-						time: 1395.0
-					),
-					//She Died There
-					Label(
-						artist: "MACHINEDRUM",
-						title: "She Died There",
-						time: 1472.0
-					),
-					//It's Wack
-					Label(
-						artist: "DJ RASHAD & HEAVEE",
-						title: "It's Wack",
-						time: 1608.0
-					),
-					//O Sheit It's X
-					Label(
-						artist: "THUNDERCAT",
-						title: "O Sheit It's X",
-						time: 1784.0
-					),
-					//Stonecutters
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Stonecutters",
-						time: 1948.0
-					),
-					//23
-					Label(
-						artist: "SHADOW CHILD",
-						title: "23",
-						time: 2077.0
-					),
-					//Stalker Ha
-					Label(
-						artist: "KINGDOM",
-						title: "Stalker Ha",
-						time: 2245.0
-					),
-					//Windowlicker
-					Label(
-						artist: "APHEX TWIN",
-						title: "Windowlicker",
-						time: 2339.0
-					),
-					//Eddie You Should Know Better
-					Label(
-						artist: "CURTIS MAYFIELD",
-						title: "Eddie You Should Know Better",
-						time: 2475.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			Song(
-				file: "0x08194D53",
-				root: "RADIO_14_DANCE_02/flylo_part2/",
-				labels: [
-					//You Never Come Closer
-					Label(
-						artist: "DORIS",
-						title: "You Never Come Closer",
-						time: 0.0
-					),
-					//Medication Medication
-					Label(
-						artist: "FLYING LOTUS FT. KRAYZIE BONE",
-						title: "Medication Medication",
-						time: 265.0
-					),
-					//What We Want
-					Label(
-						artist: "XXYYXX",
-						title: "What We Want",
-						time: 404.0
-					),
-					//Make Money
-					Label(
-						artist: "LAPALUX",
-						title: "Make Money",
-						time: 570.0
-					),
-					//Shred You To Bits
-					Label(
-						artist: "GASLAMP KILLER",
-						title: "Shred You To Bits",
-						time: 659.0
-					),
-					//B Adams
-					Label(
-						artist: "MONO/POLY AND THUNDERCAT",
-						title: "B Adams",
-						time: 752.0
-					),
-					//Osaka Trade
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Osaka Trade",
-						time: 839.0
-					),
-					//Masquatch
-					Label(
-						artist: "DOOM",
-						title: "Masquatch",
-						time: 973.0
-					),
-					//Early Mountain
-					Label(
-						artist: "FLYING LOTUS",
-						title: "Early Mountain",
-						time: 1084.0
-					),
-					//Into Vogon Skulls
-					Label(
-						artist: "DIMLITE",
-						title: "Into Vogon Skulls",
-						time: 1201.0
-					),
-					//F--- The Makeup, Skip The Shower
-					Label(
-						artist: "KNOWER",
-						title: "F--- The Makeup, Skip The Shower",
-						time: 1344.0
-					),
-					//4AM/AraabMuzik Streetz Tonight Remix
-					Label(
-						artist: "KASKADE",
-						title: "4AM/AraabMuzik Streetz Tonight Remix",
-						time: 1478.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: [],
-		sid: [],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: The Low Down 91.1
-	RadioStation(
-		index: 14,
-		number: 15,
-		name: "The Low Down 91.1",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 3,
-			column: 4
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_15_MOTOWN",
-		songs: [
-			//ASHLEYS_ROACHCLIP
-			Song(
-				file: "ASHLEYS_ROACHCLIP",
-				root: "RADIO_15_MOTOWN/ashleys_roachclip/",
-				labels: [
-					Label(
-						artist: "THE SOUL SEARCHERS",
-						title: "Ashley's Roachclip",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ASHLEYS_ROACHCLIP_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "ASHLEYS_ROACHCLIP_02",
-						delay: 5.0
-					)
-				]
-			),
-			//BOUNCY_LADY
-			Song(
-				file: "BOUNCY_LADY",
-				root: "RADIO_15_MOTOWN/bouncy_lady/",
-				labels: [
-					Label(
-						artist: "PLEASURE",
-						title: "Bouncy Lady",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//CALIFORNIA_SOUL
-			Song(
-				file: "CALIFORNIA_SOUL",
-				root: "RADIO_15_MOTOWN/california_soul/",
-				labels: [
-					Label(
-						artist: "MARLENA SHAW",
-						title: "California Soul",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CALIFORNIA_SOUL_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "CALIFORNIA_SOUL_02",
-						delay: 5.0
-					)
-				]
-			),
-			//CHANGIN
-			Song(
-				file: "CHANGIN",
-				root: "RADIO_15_MOTOWN/changin/",
-				labels: [
-					Label(
-						artist: "BRASS CONSTRUCTION",
-						title: "Changin'",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//CLIMAX
-			Song(
-				file: "CLIMAX",
-				root: "RADIO_15_MOTOWN/climax/",
-				labels: [
-					Label(
-						artist: "OHIO PLAYERS",
-						title: "Climax",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CLIMAX_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "CLIMAX_02",
-						delay: 5.0
-					)
-				]
-			),
-			//CRUISIN
-			Song(
-				file: "CRUISIN",
-				root: "RADIO_15_MOTOWN/cruisin/",
-				labels: [
-					Label(
-						artist: "SMOKEEY ROBINSON",
-						title: "Crusin'",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CRUISIN_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "CRUISIN_02",
-						delay: 5.0
-					)
-				]
-			),
-			//DO_IT_TIL_YOURE_SATISFIED
-			Song(
-				file: "DO_IT_TIL_YOURE_SATISFIED",
-				root: "RADIO_15_MOTOWN/do_it_til_youre_satisfied/",
-				labels: [
-					Label(
-						artist: "BT EXPRESS",
-						title: "Do It ('Til You're Satisfied)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DO_IT_TIL_YOURE_SATISFIED_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "DO_IT_TIL_YOURE_SATISFIED_02",
-						delay: 5.0
-					)
-				]
-			),
-			//FUNNY_FEELING
-			Song(
-				file: "FUNNY_FEELING",
-				root: "RADIO_15_MOTOWN/funny_feeling/",
-				labels: [
-					Label(
-						artist: "THE DELFONICS",
-						title: "Funny Feeling",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FUNNY_FEELING_01",
-						delay: 5.0
-					)
-				]
-			),
-			//HERCULES
-			Song(
-				file: "HERCULES",
-				root: "RADIO_15_MOTOWN/hercules/",
-				labels: [
-					Label(
-						artist: "AARON NEVILLE",
-						title: "Hercules",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HERCULES_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "HERCULES_02",
-						delay: 5.0
-					)
-				]
-			),
-			//I_BELIEVE_IN_MIRACLES
-			Song(
-				file: "I_BELIEVE_IN_MIRACLES",
-				root: "RADIO_15_MOTOWN/i_believe_in_miracles/",
-				labels: [
-					Label(
-						artist: "JACKSON SISTERS",
-						title: "I Believe In Miracles",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "I_BELIEVE_IN_MIRACLES_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "I_BELIEVE_IN_MIRACLES_02",
-						delay: 5.0
-					)
-				]
-			),
-			//I_GET_LIFTED
-			Song(
-				file: "I_GET_LIFTED",
-				root: "RADIO_15_MOTOWN/i_get_lifted/",
-				labels: [
-					Label(
-						artist: "GEORGE MACCRAE",
-						title: "I Get Lifted",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "I_GET_LIFTED_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "I_GET_LIFTED_02",
-						delay: 5.0
-					)
-				]
-			),
-			//MAGIC_MOUNTAIN
-			Song(
-				file: "MAGIC_MOUNTAIN",
-				root: "RADIO_15_MOTOWN/magic_mountain/",
-				labels: [
-					Label(
-						artist: "WAR",
-						title: "Magic Mountain",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MAGIC_MOUNTAIN_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "MAGIC_MOUNTAIN_02",
-						delay: 5.0
-					)
-				]
-			),
-			//O_O_H_CHILD
-			Song(
-				file: "O_O_H_CHILD",
-				root: "RADIO_15_MOTOWN/o_o_h_child/",
-				labels: [
-					Label(
-						artist: "THE FIVE STAIRSTEPS",
-						title: "O-O-H Child",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "O_O_H_CHILD_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "O_O_H_CHILD_02",
-						delay: 5.0
-					)
-				]
-			),
-			//READY_OR_NOT
-			Song(
-				file: "READY_OR_NOT",
-				root: "RADIO_15_MOTOWN/ready_or_not/",
-				labels: [
-					Label(
-						artist: "THE DELFONICS",
-						title: "Ready Or Not Here I Come (Can't Hide From Love)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "READY_OR_NOT_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "READY_OR_NOT_02",
-						delay: 5.0
-					)
-				]
-			),
-			//RUBBER_BAND
-			Song(
-				file: "RUBBER_BAND",
-				root: "RADIO_15_MOTOWN/rubber_band/",
-				labels: [
-					Label(
-						artist: "THE TRAMMPS",
-						title: "Rubber Band",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "RUBBER_BAND_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "RUBBER_BAND_02",
-						delay: 5.0
-					)
-				]
-			),
-			//SMILING_FACES
-			Song(
-				file: "SMILING_FACES",
-				root: "RADIO_15_MOTOWN/smiling_faces/",
-				labels: [
-					Label(
-						artist: "THE UNDISPUTED TRUTH",
-						title: "Smiling Faces Sometimes",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SMILING_FACES_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "SMILING_FACES_02",
-						delay: 5.0
-					)
-				]
-			),
-			//STORIES
-			Song(
-				file: "STORIES",
-				root: "RADIO_15_MOTOWN/stories/",
-				labels: [
-					Label(
-						artist: "THE CHAKACHAS",
-						title: "Stories",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//SUPERMAN_LOVER
-			Song(
-				file: "SUPERMAN_LOVER",
-				root: "RADIO_15_MOTOWN/superman_lover/",
-				labels: [
-					Label(
-						artist: "JOHNNY \"GUITAR\" WATSON",
-						title: "Superman Lover",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SUPERMAN_LOVER_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "SUPERMAN_LOVER_02",
-						delay: 5.0
-					)
-				]
-			),
-			//THE_CISCO_KID
-			Song(
-				file: "THE_CISCO_KID",
-				root: "RADIO_15_MOTOWN/the_cisco_kid/",
-				labels: [
-					Label(
-						artist: "WAR",
-						title: "The Cisco Kid",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_CISCO_KID_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_CISCO_KID_02",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_CISCO_KID_03",
-						delay: 5.0
-					)
-				]
-			),
-			//VIVA_TIRADO
-			Song(
-				file: "VIVA_TIRADO",
-				root: "RADIO_15_MOTOWN/viva_tirado/",
-				labels: [
-					Label(
-						artist: "EL CHICANO",
-						title: "Viva Tirado - Part 1",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "VIVA_TIRADO_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "VIVA_TIRADO_02",
-						delay: 5.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12"],
-		time: [
-			"EVENING": ["01","02","03","04","05"],
-			"MORNING": ["01","02","03","04","05","06"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05"],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: The Lab
-	RadioStation(
-		index: 15,
-		number: 16,
-		name: "The Lab",
-		image: "gta_radio_stations_texture04_128",
-		imagePosition: Position(
-			row: 1,
-			column: 1
-		),
-		randomize: false,
-		rotate: true,
-		root: "DLC_THELAB",
-		songs: [
-			//LAB_P1
-			Song(
-				file: "LAB_P1",
-				root: "DLC_THELAB/lab_p1/",
-				labels: [
-					Label(
-						artist: "",
-						title: "",
-						time: 0.0
-					),
-					//Play It Cool
-					Label(
-						artist: "GANGRENE FEAT. SAMUEL T. HERRING & EARL SWEATSHIRT",
-						title: "Play It Cool",
-						time: 7.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 223.0
-					),
-					//Trouble
-					Label(
-						artist: "AB SOUL FEAT. ALOE BLACC",
-						title: "Trouble",
-						time: 267.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 471.0
-					),
-					//Speedline Miracle Masterpiece
-					Label(
-						artist: "TUNDE ADEBIMPE FEAT. SAL P & SINKANE",
-						title: "Speedline Miracle Masterpiece",
-						time: 511.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 758.0
-					),
-					//Welcome To Los Santos
-					Label(
-						artist: "MC EIHT & FREDDIE GIBBS FEAT. KOKANE",
-						title: "Welcome To Los Santos",
-						time: 786.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 1010.0
-					),
-					//K.Y.S.A.
-					Label(
-						artist: "PHANTOGRAM",
-						title: "K.Y.S.A.",
-						time: 1043.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 1300.0
-					),
-					//Fast Life
-					Label(
-						artist: "VYBZ KARTEL",
-						title: "Fast Life",
-						time: 1385.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 1591.0
-					),
-					//20's 50's 100's
-					Label(
-						artist: "KING AVRIEL FEAT. A$AP FERG",
-						title: "20's 50's 100's",
-						time: 1620.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 1878.0
-					),
-					//Lock & Load
-					Label(
-						artist: "MNDR FEAT. KILLER MIKE",
-						title: "Lock & Load",
-						time: 1950.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//LAB_P2
-			Song(
-				file: "LAB_P2",
-				root: "DLC_THELAB/lab_p2/",
-				labels: [
-					Label(
-						artist: "",
-						title: "",
-						time: 0.0
-					),
-					//Born Bad
-					Label(
-						artist: "POPCAAN FEAT. FREDDIE GIBBS",
-						title: "Born Bad",
-						time: 45.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 251.0
-					),
-					//California
-					Label(
-						artist: "E-40 FEAT. DAM FUNK & ARIEL PINK",
-						title: "California",
-						time: 286.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 515.0
-					),
-					//Leave
-					Label(
-						artist: "WAVVES",
-						title: "Leave",
-						time: 518.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 700.0
-					),
-					//Fetti
-					Label(
-						artist: "CURREN$Y & FREDDIE GIBBS",
-						title: "Fetti",
-						time: 715.0
-					),
-					Label(
-						artist: "",
-						title: "",
-						time: 971.0
-					),
-					//Wanderer
-					Label(
-						artist: "LITTLE DRAGON",
-						title: "Wanderer",
-						time: 1022.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: [],
-		sid: [],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: Radio Mirror Park
-	RadioStation(
-		index: 16,
-		number: 17,
-		name: "Radio Mirror Park",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 4,
-			column: 2
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_16_SILVERLAKE",
-		songs: [
-			//ALWAYS
-			Song(
-				file: "ALWAYS",
-				root: "RADIO_16_SILVERLAKE/always/",
-				labels: [
-					Label(
-						artist: "PANAMA",
-						title: "Always",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ALWAYS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ALWAYS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BOOGIE_IN_ZERO_GRAVITY
-			Song(
-				file: "BOOGIE_IN_ZERO_GRAVITY",
-				root: "RADIO_16_SILVERLAKE/boogie_in_zero_gravity/",
-				labels: [
-					Label(
-						artist: "BLACK STROBE",
-						title: "Boogie In Zero Gravity",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BOOGIE_IN_ZERO_GRAVITY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BOOGIE_IN_ZERO_GRAVITY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//CHANGE_OF_COAST
-			Song(
-				file: "CHANGE_OF_COAST",
-				root: "RADIO_16_SILVERLAKE/change_of_coast/",
-				labels: [
-					Label(
-						artist: "NEON INDIAN",
-						title: "Change Of Coast",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//COLOURS
-			Song(
-				file: "COLOURS",
-				root: "RADIO_16_SILVERLAKE/colours/",
-				labels: [
-					Label(
-						artist: "AGE OF CONSENT",
-						title: "Colours",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//CRYSTALFILM
-			Song(
-				file: "CRYSTALFILM",
-				root: "RADIO_16_SILVERLAKE/crystalfilm/",
-				labels: [
-					Label(
-						artist: "LITTLE DRAGON",
-						title: "Crystalfilm",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CRYSTALFILM_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "CRYSTALFILM_02",
-						delay: 8.0
-					)
-				]
-			),
-			//DARK_MATTER
-			Song(
-				file: "DARK_MATTER",
-				root: "RADIO_16_SILVERLAKE/dark_matter/",
-				labels: [
-					Label(
-						artist: "FEATHERS",
-						title: "Dark Matter",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DARK_MATTER_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "DARK_MATTER_02",
-						delay: 8.0
-					)
-				]
-			),
-			//DO_YOU_BELIEVE
-			Song(
-				file: "DO_YOU_BELIEVE",
-				root: "RADIO_16_SILVERLAKE/do_you_believe/",
-				labels: [
-					Label(
-						artist: "POOLSIDE",
-						title: "Do You Believe",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DO_YOU_BELIEVE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "DO_YOU_BELIEVE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//DONT_COME_CLOSE
-			Song(
-				file: "DONT_COME_CLOSE",
-				root: "RADIO_16_SILVERLAKE/dont_come_close/",
-				labels: [
-					Label(
-						artist: "YEASAYER",
-						title: "Don't Come Close",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DONT_COME_CLOSE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "DONT_COME_CLOSE_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "DONT_COME_CLOSE_03",
-						delay: 8.0
-					),
-					Intro(
-						file: "DONT_COME_CLOSE_04",
-						delay: 8.0
-					)
-				]
-			),
-			//FEEL_THE_SAME
-			Song(
-				file: "FEEL_THE_SAME",
-				root: "RADIO_16_SILVERLAKE/feel_the_same/",
-				labels: [
-					Label(
-						artist: "BATTLE TAPES",
-						title: "Feel The Same",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FEEL_THE_SAME_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "FEEL_THE_SAME_02",
-						delay: 8.0
-					)
-				]
-			),
-			//FLUTES
-			Song(
-				file: "FLUTES",
-				root: "RADIO_16_SILVERLAKE/flutes/",
-				labels: [
-					Label(
-						artist: "HOT CHIP",
-						title: "Flutes",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//FORGET
-			Song(
-				file: "FORGET",
-				root: "RADIO_16_SILVERLAKE/forget/",
-				labels: [
-					Label(
-						artist: "TWIN SHADOW",
-						title: "Forget",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FORGET_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "FORGET_02",
-						delay: 8.0
-					)
-				]
-			),
-			//FROM_NOWHERE
-			Song(
-				file: "FROM_NOWHERE",
-				root: "RADIO_16_SILVERLAKE/from_nowhere/",
-				labels: [
-					Label(
-						artist: "DAN CROLL",
-						title: "From Nowhere (Baardson Remix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FROM_NOWHERE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "FROM_NOWHERE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HEART_IN_THE_PIPES
-			Song(
-				file: "HEART_IN_THE_PIPES",
-				root: "RADIO_16_SILVERLAKE/heart_in_the_pipes/",
-				labels: [
-					Label(
-						artist: "TONY CASTLES",
-						title: "Heart In The Pipes (KAUF Remix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HEART_IN_THE_PIPES_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HEART_IN_THE_PIPES_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HEARTBREAK
-			Song(
-				file: "HEARTBREAK",
-				root: "RADIO_16_SILVERLAKE/heartbreak/",
-				labels: [
-					Label(
-						artist: "AGE OF CONSENT",
-						title: "Heartbreak",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//HIGH_PRESSURE
-			Song(
-				file: "HIGH_PRESSURE",
-				root: "RADIO_16_SILVERLAKE/high_pressure/",
-				labels: [
-					Label(
-						artist: "HEALTH",
-						title: "High Pressure Dave",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//HOLD_ON_HOLY_GHOST
-			Song(
-				file: "HOLD_ON_HOLY_GHOST",
-				root: "RADIO_16_SILVERLAKE/hold_on_holy_ghost/",
-				labels: [
-					Label(
-						artist: "HOLLY GHOST!",
-						title: "Hold On",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HOLD_ON_HOLY_GHOST_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HOLD_ON_HOLY_GHOST_02",
-						delay: 8.0
-					)
-				]
-			),
-			//IN_REAL_LIFE
-			Song(
-				file: "IN_REAL_LIFE",
-				root: "RADIO_16_SILVERLAKE/in_real_life/",
-				labels: [
-					Label(
-						artist: "THE RUBY SUNS",
-						title: "In Real Life",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "IN_REAL_LIFE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "IN_REAL_LIFE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//JASMINE
-			Song(
-				file: "JASMINE",
-				root: "RADIO_16_SILVERLAKE/jasmine/",
-				labels: [
-					Label(
-						artist: "JAI PAUL",
-						title: "Jasmine",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "JASMINE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "JASMINE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//LITTLE_WHITE_LIE
-			Song(
-				file: "LITTLE_WHITE_LIE",
-				root: "RADIO_16_SILVERLAKE/little_white_lie/",
-				labels: [
-					Label(
-						artist: "LIVING DAYS",
-						title: "Little White Lie",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LITTLE_WHITE_LIE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LITTLE_WHITE_LIE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//LIVING_IN_AMERICA
-			Song(
-				file: "LIVING_IN_AMERICA",
-				root: "RADIO_16_SILVERLAKE/living_in_america/",
-				labels: [
-					Label(
-						artist: "DOM",
-						title: "Living In America",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LIVING_IN_AMERICA_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LIVING_IN_AMERICA_02",
-						delay: 8.0
-					)
-				]
-			),
-			//LUCKY_BOY
-			Song(
-				file: "LUCKY_BOY",
-				root: "RADIO_16_SILVERLAKE/lucky_boy/",
-				labels: [
-					Label(
-						artist: "DJ MEHDI",
-						title: "Lucky Boy (Outlines Remix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LUCKY_BOY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LUCKY_BOY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//MESMERIZED
-			Song(
-				file: "MESMERIZED",
-				root: "RADIO_16_SILVERLAKE/mesmerized/",
-				labels: [
-					Label(
-						artist: "SCENIC",
-						title: "Mesmerised",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//NEW_BEAT
-			Song(
-				file: "NEW_BEAT",
-				root: "RADIO_16_SILVERLAKE/new_beat/",
-				labels: [
-					Label(
-						artist: "TORO Y MOI",
-						title: "New Beat",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NEW_BEAT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "NEW_BEAT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//NOWHERE_TO_GO
-			Song(
-				file: "NOWHERE_TO_GO",
-				root: "RADIO_16_SILVERLAKE/nowhere_to_go/",
-				labels: [
-					Label(
-						artist: "NITE JEWEL",
-						title: "Nowhere To Go",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NOWHERE_TO_GO_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "NOWHERE_TO_GO_02",
-						delay: 8.0
-					)
-				]
-			),
-			//O_N_E
-			Song(
-				file: "O_N_E",
-				root: "RADIO_16_SILVERLAKE/o_n_e/",
-				labels: [
-					Label(
-						artist: "YEASAYER",
-						title: "O.N.E.",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//OLD_LOVE
-			Song(
-				file: "OLD_LOVE",
-				root: "RADIO_16_SILVERLAKE/old_love/",
-				labels: [
-					Label(
-						artist: "TWIN SHADOW",
-						title: "Old Love, New Love",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "OLD_LOVE_01",
-						delay: 8.0
-					)
-				]
-			),
-			//ONE_GIRL_ONE_BOY
-			Song(
-				file: "ONE_GIRL_ONE_BOY",
-				root: "RADIO_16_SILVERLAKE/one_girl_one_boy/",
-				labels: [
-					Label(
-						artist: "!!!",
-						title: "One Girl/One Boy",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ONE_GIRL_ONE_BOY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ONE_GIRL_ONE_BOY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//PHARAOHS
-			Song(
-				file: "PHARAOHS",
-				root: "RADIO_16_SILVERLAKE/pharaohs/",
-				labels: [
-					Label(
-						artist: "SBTRKT",
-						title: "Pharaohs feat Roses Gabor",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "PHARAOHS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "PHARAOHS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//POLISH_GIRL
-			Song(
-				file: "POLISH_GIRL",
-				root: "RADIO_16_SILVERLAKE/polish_girl/",
-				labels: [
-					Label(
-						artist: "NEON INDIAN",
-						title: "Polish Girl",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "POLISH_GIRL_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "POLISH_GIRL_02",
-						delay: 8.0
-					)
-				]
-			),
-			//PSYCHIC_CITY
-			Song(
-				file: "PSYCHIC_CITY",
-				root: "RADIO_16_SILVERLAKE/psychic_city/",
-				labels: [
-					Label(
-						artist: "YACHT",
-						title: "Psychic City (Classixx Remix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "PSYCHIC_CITY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "PSYCHIC_CITY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SHINE_A_LIGHT
-			Song(
-				file: "SHINE_A_LIGHT",
-				root: "RADIO_16_SILVERLAKE/shine_a_light/",
-				labels: [
-					Label(
-						artist: "THE C90S",
-						title: "Shine A Light (Flight Facilities Remix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SHINE_A_LIGHT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SHINE_A_LIGHT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SHOOTING_HOLES
-			Song(
-				file: "SHOOTING_HOLES",
-				root: "RADIO_16_SILVERLAKE/shooting_holes/",
-				labels: [
-					Label(
-						artist: "TWIN SHADOW",
-						title: "Shooting Holes",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SHOOTING_HOLES_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SHOOTING_HOLES_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SLEEPWALKING
-			Song(
-				file: "SLEEPWALKING",
-				root: "RADIO_16_SILVERLAKE/sleepwalking/",
-				labels: [
-					Label(
-						artist: "THE CHAIN GANG OF 1974",
-						title: "Sleepwalking",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SLEEPWALKING_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SLEEPWALKING_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SO_MANY_DETAILS
-			Song(
-				file: "SO_MANY_DETAILS",
-				root: "RADIO_16_SILVERLAKE/so_many_details/",
-				labels: [
-					Label(
-						artist: "TORO Y MOI",
-						title: "So Many Details",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SO_MANY_DETAILS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SO_MANY_DETAILS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SOMETIMES
-			Song(
-				file: "SOMETIMES",
-				root: "RADIO_16_SILVERLAKE/sometimes/",
-				labels: [
-					Label(
-						artist: "MIAMI HORROR",
-						title: "Sometimes",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SOMETIMES_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SOMETIMES_02",
-						delay: 8.0
-					)
-				]
-			),
-			//STRANGERS_IN_THE_WIND
-			Song(
-				file: "STRANGERS_IN_THE_WIND",
-				root: "RADIO_16_SILVERLAKE/strangers_in_the_wind/",
-				labels: [
-					Label(
-						artist: "CUT COPY",
-						title: "Strangers In The Wind",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//THE_DRUMMER
-			Song(
-				file: "THE_DRUMMER",
-				root: "RADIO_16_SILVERLAKE/the_drummer/",
-				labels: [
-					Label(
-						artist: "NIKI & THE DOVE",
-						title: "The Drummer",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_DRUMMER_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "THE_DRUMMER_02",
-						delay: 8.0
-					)
-				]
-			),
-			//THE_SET_UP
-			Song(
-				file: "THE_SET_UP",
-				root: "RADIO_16_SILVERLAKE/the_set_up/",
-				labels: [
-					Label(
-						artist: "FAVORED NATIONS",
-						title: "The Set Up",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//TRULY_ALIVE
-			Song(
-				file: "TRULY_ALIVE",
-				root: "RADIO_16_SILVERLAKE/truly_alive/",
-				labels: [
-					Label(
-						artist: "MITZI",
-						title: "Truly Alive",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TRULY_ALIVE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TRULY_ALIVE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//WHEN_YOURE_OUT
-			Song(
-				file: "WHEN_YOURE_OUT",
-				root: "RADIO_16_SILVERLAKE/when_youre_out/",
-				labels: [
-					Label(
-						artist: "KAUF",
-						title: "When You're Out",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WHEN_YOURE_OUT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WHEN_YOURE_OUT_02",
-						delay: 8.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		time: [
-			"EVENING": ["01","02","03","04"],
-			"MORNING": ["01","02","03","04"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05"],
-			"NEWS": ["01","02","03","04"]
-		]
-	),
-	
-	// MARK: Space 103.2
-	RadioStation(
-		index: 17,
-		number: 18,
-		name: "Space 103.2",
-		image: "gta_radio_stations_texture02_512",
-		imagePosition: Position(
-			row: 1,
-			column: 1
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_17_FUNK",
-		songs: [
-			//BACK_AND_FORTH
-			Song(
-				file: "BACK_AND_FORTH",
-				root: "RADIO_17_FUNK/back_and_forth/",
-				labels: [
-					Label(
-						artist: "CAMEO",
-						title: "Back And Forth",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BACK_AND_FORTH_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BACK_AND_FORTH_02",
-						delay: 8.0
-					)
-				]
-			),
-			//CANT_HOLD_BACK*
-			/*Song(
-				file: "CANT_HOLD_BACK",
-				root: "RADIO_17_FUNK/cant_hold_back/",
-				labels: [
-					Label(
-						artist: "KANO",
-						title: "Can't Hold Back (Your Lovin')",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "YOUR_LOVIN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "YOUR_LOVIN_02",
-						delay: 8.0
-					)
-				]
-			),*/
-			//CUTIE_PIE
-			Song(
-				file: "CUTIE_PIE",
-				root: "RADIO_17_FUNK/cutie_pie/",
-				labels: [
-					Label(
-						artist: "ONE WAY",
-						title: "Cutie Pie",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CUTIE_PIE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "CUTIE_PIE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//DO_IT_ROGER
-			Song(
-				file: "DO_IT_ROGER",
-				root: "RADIO_17_FUNK/do_it_roger/",
-				labels: [
-					Label(
-						artist: "ZAPP & ROGER",
-						title: "Do It Roger",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DO_IT_ROGER_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "DO_IT_ROGER_02",
-						delay: 8.0
-					)
-				]
-			),
-			//FLASHBACK
-			Song(
-				file: "FLASHBACK",
-				root: "RADIO_17_FUNK/flashback/",
-				labels: [
-					Label(
-						artist: "IMAGINATION",
-						title: "Flashback",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//FLASHLIGHT
-			Song(
-				file: "FLASHLIGHT",
-				root: "RADIO_17_FUNK/flashlight/",
-				labels: [
-					Label(
-						artist: "PARLIAMENT",
-						title: "Flashlight",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//FUNKASIZE_YOU
-			Song(
-				file: "FUNKASIZE_YOU",
-				root: "RADIO_17_FUNK/funkasize_you/",
-				labels: [
-					Label(
-						artist: "SHO-NUFF",
-						title: "Funkasize You",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//GIVE_IT_TO_ME_BABY
-			Song(
-				file: "GIVE_IT_TO_ME_BABY",
-				root: "RADIO_17_FUNK/give_it_to_me_baby/",
-				labels: [
-					Label(
-						artist: "RICK JAMES",
-						title: "Give It To Me Baby",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GIVE_IT_TO_ME_BABY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "GIVE_IT_TO_ME_BABY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//GOTTA_GET_MY_HANDS_ON_SOME_MONEY
-			Song(
-				file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY",
-				root: "RADIO_17_FUNK/gotta_get_my_hands_on_some_money/",
-				labels: [
-					Label(
-						artist: "FATBACK BAND",
-						title: "Gotta Get My Hands On Some (Money)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HABOGLABOTRIBIN
-			Song(
-				file: "HABOGLABOTRIBIN",
-				root: "RADIO_17_FUNK/haboglabotribin/",
-				labels: [
-					Label(
-						artist: "BERNARD WRIGHT",
-						title: "Haboglabotribin'",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//HEART_BEAT
-			Song(
-				file: "HEART_BEAT",
-				root: "RADIO_17_FUNK/heart_beat/",
-				labels: [
-					Label(
-						artist: "TAANA GARDNER",
-						title: "Heartbeat",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HEARTBEAT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HEARTBEAT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HEARTBREAKER
-			Song(
-				file: "HEARTBREAKER",
-				root: "RADIO_17_FUNK/heartbreaker/",
-				labels: [
-					Label(
-						artist: "ZAPP",
-						title: "Heartbreaker, Pts. 1-2",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//ID_RATHER_BE_WITH_YOU
-			Song(
-				file: "ID_RATHER_BE_WITH_YOU",
-				root: "RADIO_17_FUNK/id_rather_be_with_you/",
-				labels: [
-					Label(
-						artist: "BOOTSY COLLINS",
-						title: "I'd Rather Be With You",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ID_RATHER_BE_WITH_YOU_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ID_RATHER_BE_WITH_YOU_02",
-						delay: 8.0
-					)
-				]
-			),
-			//IM_IN_LOVE
-			Song(
-				file: "IM_IN_LOVE",
-				root: "RADIO_17_FUNK/im_in_love/",
-				labels: [
-					Label(
-						artist: "EVELYN CHAMPAGNE KING",
-						title: "I'm In Love (12\" Dance Mix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "IM_IN_LOVE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "IM_IN_LOVE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//JOYSTICK
-			Song(
-				file: "JOYSTICK",
-				root: "RADIO_17_FUNK/joystick/",
-				labels: [
-					Label(
-						artist: "DAZZ BAND",
-						title: "Joystick",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "JOYSTICK_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "JOYSTICK_02",
-						delay: 8.0
-					)
-				]
-			),
-			//MOTHERSHIP_CONNECTION
-			Song(
-				file: "MOTHERSHIP_CONNECTION",
-				root: "RADIO_17_FUNK/mothership_connection/",
-				labels: [
-					Label(
-						artist: "PARLIAMENT",
-						title: "Mothership Connection",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//NIGHTS_FEEL_LIKE
-			Song(
-				file: "NIGHTS_FEEL_LIKE",
-				root: "RADIO_17_FUNK/nights_feel_like/",
-				labels: [
-					Label(
-						artist: "BILLY OCEAN",
-						title: "Nights (Feel Like Getting Down)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//PARTY_ALL_THE_TIME
-			Song(
-				file: "PARTY_ALL_THE_TIME",
-				root: "RADIO_17_FUNK/party_all_the_time/",
-				labels: [
-					Label(
-						artist: "EDDIE MURPHY",
-						title: "Party All The Time",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//SKELETONS
-			Song(
-				file: "SKELETONS",
-				root: "RADIO_17_FUNK/skeletons/",
-				labels: [
-					Label(
-						artist: "STEVIE WONDER",
-						title: "Skeletons",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SKELETONS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SKELETONS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//TONIGHT
-			Song(
-				file: "TONIGHT",
-				root: "RADIO_17_FUNK/tonight/",
-				labels: [
-					Label(
-						artist: "KLEEER",
-						title: "Tonight",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//WALKING_INTO_SUNSHINE
-			Song(
-				file: "WALKING_INTO_SUNSHINE",
-				root: "RADIO_17_FUNK/walking_into_sunshine/",
-				labels: [
-					Label(
-						artist: "CENTRAL LINE",
-						title: "Walking Into Sunshine",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//YOURE_THE_ONE_FOR_ME
-			Song(
-				file: "YOURE_THE_ONE_FOR_ME",
-				root: "RADIO_17_FUNK/youre_the_one_for_me/",
-				labels: [
-					Label(
-						artist: "D TRAIN",
-						title: "You're The One For Me",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "YOURE_THE_ONE_FOR_ME_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "YOURE_THE_ONE_FOR_ME_02",
-						delay: 8.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		time: [
-			"EVENING": ["01","02","03","04"],
-			"MORNING": ["01","02","03","04"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05"],
-			"NEWS": ["01","02","03","04","05"]
-		]
-	),
-	
-	// MARK: Vinewood Boulevard Radio
-	RadioStation(
-		index: 18,
-		number: 19,
-		name: "Vinewood Boulevard Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 2,
-			column: 3
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_18_90S_ROCK",
-		songs: [
-			//ANSWER_TO_YOURSELF
-			Song(
-				file: "ANSWER_TO_YOURSELF",
-				root: "RADIO_18_90S_ROCK/answer_to_yourself/",
-				labels: [
-					Label(
-						artist: "THE SOFT PACK",
-						title: "Answer To Yourself",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ANSWER_TO_YOURSELF_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ANSWER_TO_YOURSELF_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BLACK_GREASE
-			Song(
-				file: "BLACK_GREASE",
-				root: "RADIO_18_90S_ROCK/black_grease/",
-				labels: [
-					Label(
-						artist: "THE BLACK ANGELS",
-						title: "Black Grease",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BLACK_GREASE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BLACK_GREASE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//CALIFORNIA_GIRLS
-			Song(
-				file: "CALIFORNIA_GIRLS",
-				root: "RADIO_18_90S_ROCK/california_girls/",
-				labels: [
-					Label(
-						artist: "SHARK?",
-						title: "California Grrls",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CALIFORNIA_GIRLS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "CALIFORNIA_GIRLS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//COCAINE
-			Song(
-				file: "COCAINE",
-				root: "RADIO_18_90S_ROCK/cocaine/",
-				labels: [
-					Label(
-						artist: "FIDLAR",
-						title: "Cocaine",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "COCAINE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "COCAINE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//CRAWLING_AFTER_YOU
-			Song(
-				file: "CRAWLING_AFTER_YOU",
-				root: "RADIO_18_90S_ROCK/crawling_after_you/",
-				labels: [
-					Label(
-						artist: "BASS DRUM OF DEATH",
-						title: "Crawling After You",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CRAWLING_AFTER_YOU_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "CRAWLING_AFTER_YOU_02",
-						delay: 8.0
-					)
-				]
-			),
-			//DIDDY_WAH_DIDDY
-			Song(
-				file: "DIDDY_WAH_DIDDY",
-				root: "RADIO_18_90S_ROCK/diddy_wah_diddy/",
-				labels: [
-					Label(
-						artist: "TY SEGALL BAND",
-						title: "Diddy Wah Diddy",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//FALL_IN_LINE
-			Song(
-				file: "FALL_IN_LINE",
-				root: "RADIO_18_90S_ROCK/fall_in_line/",
-				labels: [
-					Label(
-						artist: "MIND SPIDERS",
-						title: "Fall In Line",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FALL_IN_LINE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "FALL_IN_LINE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//FIRE_DOESNT_BURN_ITSELF
-			Song(
-				file: "FIRE_DOESNT_BURN_ITSELF",
-				root: "RADIO_18_90S_ROCK/fire_doesnt_burn_itself/",
-				labels: [
-					Label(
-						artist: "SAM FLAX",
-						title: "Fire Doesn't Burn Itself",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FIRE_DOESNT_BURN_ITSELF_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "FIRE_DOESNT_BURN_ITSELF_02",
-						delay: 8.0
-					)
-				]
-			),
-			//GONE_FOR_GOOD
-			Song(
-				file: "GONE_FOR_GOOD",
-				root: "RADIO_18_90S_ROCK/gone_for_good/",
-				labels: [
-					Label(
-						artist: "NOBUNNY",
-						title: "Gone For Good",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GONE_FOR_GOOD_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "GONE_FOR_GOOD_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HYSTERIA
-			Song(
-				file: "HYSTERIA",
-				root: "RADIO_18_90S_ROCK/hysteria/",
-				labels: [
-					Label(
-						artist: "CEREMONY",
-						title: "Hysteria",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//NEXT_STOP
-			Song(
-				file: "NEXT_STOP",
-				root: "RADIO_18_90S_ROCK/next_stop/",
-				labels: [
-					Label(
-						artist: "BLEACHED",
-						title: "Next Stop",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NEXT_STOP_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "NEXT_STOP_02",
-						delay: 8.0
-					)
-				]
-			),
-			//NINE_IS_GOD
-			Song(
-				file: "NINE_IS_GOD",
-				root: "RADIO_18_90S_ROCK/nine_is_god/",
-				labels: [
-					Label(
-						artist: "WAVVES",
-						title: "Nine Is God",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NINE_IS_GOD_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "NINE_IS_GOD_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SIXPACK
-			Song(
-				file: "SIXPACK",
-				root: "RADIO_18_90S_ROCK/sixpack/",
-				labels: [
-					Label(
-						artist: "JEFF THE BROTHERHOOD",
-						title: "Sixpack",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SIXPACK_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SIXPACK_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SLEEPWALKER
-			Song(
-				file: "SLEEPWALKER",
-				root: "RADIO_18_90S_ROCK/sleepwalker/",
-				labels: [
-					Label(
-						artist: "MOON DUO",
-						title: "Sleepwalker",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SLEEPWALKER_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SLEEPWALKER_02",
-						delay: 8.0
-					)
-				]
-			),
-			//THE_DREAM
-			Song(
-				file: "THE_DREAM",
-				root: "RADIO_18_90S_ROCK/the_dream/",
-				labels: [
-					Label(
-						artist: "THEE OH SEES",
-						title: "The Dream",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//THIS_MYSTIC_DECADE
-			Song(
-				file: "THIS_MYSTIC_DECADE",
-				root: "RADIO_18_90S_ROCK/this_mystic_decade/",
-				labels: [
-					Label(
-						artist: "HOT SNAKES",
-						title: "This mystic Decade",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THIS_MYSTIC_DECADE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "THIS_MYSTIC_DECADE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//TURN_IT_AROUND
-			Song(
-				file: "TURN_IT_AROUND",
-				root: "RADIO_18_90S_ROCK/turn_it_around/",
-				labels: [
-					Label(
-						artist: "THE MEN",
-						title: "Turn It Around",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TURN_IT_AROUND_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TURN_IT_AROUND_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "TURN_IT_AROUND_03",
-						delay: 8.0
-					)
-				]
-			),
-			//USED_BLOOD
-			Song(
-				file: "USED_BLOOD",
-				root: "RADIO_18_90S_ROCK/used_blood/",
-				labels: [
-					Label(
-						artist: "COLISEUM",
-						title: "Used Blood",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "USED_BLOOD_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "USED_BLOOD_02",
-						delay: 8.0
-					)
-				]
-			),
-			//WET_BLANKET
-			Song(
-				file: "WET_BLANKET",
-				root: "RADIO_18_90S_ROCK/wet_blanket/",
-				labels: [
-					Label(
-						artist: "METZ",
-						title: "Wet Blanket",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WET_BLANKET_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WET_BLANKET_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "WET_BLANKET_03",
-						delay: 8.0
-					),
-					Intro(
-						file: "WET_BLANKET_04",
-						delay: 8.0
-					)
-				]
-			),
-			//WHO_NEEDS_YOU
-			Song(
-				file: "WHO_NEEDS_YOU",
-				root: "RADIO_18_90S_ROCK/who_needs_you/",
-				labels: [
-					Label(
-						artist: "THE ORWELLS",
-						title: "Who Needs You",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WHO_NEEDS_YOU_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WHO_NEEDS_YOU_02",
-						delay: 8.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48"],
-		sid: ["01","02","03","04","05","06","07","08","09"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
-		time: [
-			"EVENING": ["01","02","03","04","05"],
-			"MORNING": ["01","02","03","04","05"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05"],
-			"NEWS": ["01","02","03"]
-		]
-	),
-	
-	// MARK: Blonded Los Santos 97.8 FM
-	RadioStation(
-		index: 19,
-		number: 20,
-		name: "Blonded Los Santos 97.8 FM",
-		image: "gta_radio_stations_texture05_128",
-		imagePosition: Position(
-			row: 1,
-			column: 1
-		),
-		randomize: false,
-		rotate: true,
-		root: "DLC_CHRISTMAS2017",
-		songs: [
-			//RADIO_XM17_P1
-			Song(
-				file: "RADIO_XM17_P1", //1864.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p1/",
-				labels: [
-					Label(
-						artist: "",
-						title: "",
-						time: 0.0
-					),
-					//International Feel
-					Label(
-						artist: "TODD RUNDGREN",
-						title: "International Feel",
-						time: 26.0
-					),
-					//Mr Noah
-					Label(
-						artist: "PANDA BEAR",
-						title: "Mr Noah",
-						time: 203.0
-					),
-					//Provider
-					Label(
-						artist: "FRANK OCEAN",
-						title: "Provider",
-						time: 414.0
-					),
-					//Kno Ya Wrong
-					Label(
-						artist: "SCHOOLBOY Q FEAT. LANCE SKIIIWALKER",
-						title: "Kno Ya Wrong",
-						time: 653.0
-					),
-					//Rain
-					Label(
-						artist: "SWV",
-						title: "Rain",
-						time: 978.0
-					),
-					//On a Farm
-					Label(
-						artist: "JOY AGAIN",
-						title: "On a Farm",
-						time: 1224.0
-					),
-					//Ivy
-					Label(
-						artist: "FRANK OCEAN",
-						title: "Ivy",
-						time: 1315.0
-					),
-					//So In Love
-					Label(
-						artist: "CURTIS MAYFIELD",
-						title: "So In Love",
-						time: 1543.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//RADIO_XM17_P2
-			Song(
-				file: "RADIO_XM17_P2", //2357.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p2/",
-				labels: [
-					//When Did You Stop Loving Me, When Did I Stop Loving You
-					Label(
-						artist: "MARVIN GAYE",
-						title: "When Did You Stop Loving Me, When Did I Stop Loving You",
-						time: 1.0
-					),
-					//Je ne bois pas beaucoup
-					Label(
-						artist: "LES YA TOUPAS DU ZAIRE",
-						title: "Je ne bois pas beaucoup",
-						time: 377.0
-					),
-					//Andreaen Sand Dunes
-					Label(
-						artist: "DREXCIYA",
-						title: "Andreaen Sand Dunes",
-						time: 576.0
-					),
-					//Dead Presidents II
-					Label(
-						artist: "JAY-Z",
-						title: "Dead Presidents II",
-						time: 729.0
-					),
-					//Crack Rock
-					Label(
-						artist: "FRANK OCEAN",
-						title: "Crack Rock",
-						time: 950.0
-					),
-					//AD - Declasse Yosemite
-					Label(
-						artist: "",
-						title: "",
-						time: 1178.0
-					),
-					//EZ Come, EZ Go
-					Label(
-						artist: "M.C. MACK",
-						title: "EZ Come, EZ Go",
-						time: 1242.0
-					),
-					//IZ-US
-					Label(
-						artist: "APHEX TWIN",
-						title: "IZ-US",
-						time: 1452.0
-					),
-					//Hiders
-					Label(
-						artist: "BURIAL",
-						title: "Hiders",
-						time: 1617.0
-					),
-					//Codeine Crazy
-					Label(
-						artist: "FUTURE",
-						title: "Codeine Crazy",
-						time: 1805.0
-					),
-					//Chanel
-					Label(
-						artist: "FRANK OCEAN",
-						title: "Chanel",
-						time: 2143.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//RADIO_XM17_P3
-			Song(
-				file: "RADIO_XM17_P3", //1919.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p3/",
-				labels: [
-					//For Real
-					Label(
-						artist: "LIL UZI VERT",
-						title: "For Real",
-						time: 1.0
-					),
-					//First 48
-					Label(
-						artist: "MIGOS",
-						title: "First 48",
-						time: 164.0
-					),
-					//FBG
-					Label(
-						artist: "SUSPECT",
-						title: "FBG",
-						time: 363.0
-					),
-					//Nights
-					Label(
-						artist: "FRANK OCEAN",
-						title: "Nights",
-						time: 545.0
-					),
-					//AD - Pfister neon
-					Label(
-						artist: "",
-						title: "",
-						time: 858.0
-					),
-					//YSL
-					Label(
-						artist: "GUNNA FEAT. PLAYBOI CARTI",
-						title: "YSL",
-						time: 911.0
-					),
-					//Winnin
-					Label(
-						artist: "CHIEF KEEF FEAT. KING LOUIE",
-						title: "Winnin",
-						time: 1065.0
-					),
-					//Miss White Cocaine
-					Label(
-						artist: "LIL SKO",
-						title: "Miss White Cocaine",
-						time: 1303.0
-					),
-					//Man Don't Care
-					Label(
-						artist: "JME FEAT. GIGGS",
-						title: "Man Don't Care",
-						time: 1443.0
-					),
-					//Master
-					Label(
-						artist: "(SANDY) ALEX G",
-						title: "Master",
-						time: 1648.0
-					),
-					//Pretty Sweet
-					Label(
-						artist: "FRANK OCEAN",
-						title: "Pretty Sweet",
-						time: 1764.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: [],
-		sid: [],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: Los Santos Underground Radio
-	RadioStation(
-		index: 20,
-		number: 21,
-		name: "Los Santos Underground Radio",
-		image: "gta_radio_stations_texture06_128",
-		imagePosition: Position(
-			row: 1,
-			column: 1
-		),
-		randomize: false,
-		rotate: true,
-		root: "DLC_BATTLE_MUSIC",
-		songs: [
-			//BATTLE_MIX1_RADIO_01
-			Song(
-				file: "BATTLE_MIX1_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_01/",
-				labels: [
-					//The Plan
-					Label(
-						artist: "AM$TRAD BILLIONAIRE",
-						title: "The Plan",
-						time: 0.0
-					),
-					//Natural States (Edit)
-					Label(
-						artist: "ARA KOUFAX",
-						title: "Natural States (Edit)",
-						time: 274.0
-					),
-					//In The Car Crash (Headgear's Always Crashing In The Same Car Mix)
-					Label(
-						artist: "SWAYZAK",
-						title: "In The Car Crash (Headgear's Always Crashing In The Same Car Mix)",
-						time: 619.0
-					),
-					//Bitcoins (Original Mix)
-					Label(
-						artist: "D. LYNNWOOD",
-						title: "Bitcoins (Original Mix)",
-						time: 978.0
-					),
-					//Don't Stop The Dance (Todd Terje Remix)
-					Label(
-						artist: "BRYAN FERRY",
-						title: "Don't Stop The Dance (Todd Terje Remix)",
-						time: 1174.0
-					),
-					//Madness Of Many
-					Label(
-						artist: "DENIS HORVAT",
-						title: "Madness Of Many",
-						time: 1519.0
-					)
-				],
-				set: "Solomun",
-				intros: []
-			),
-			//BATTLE_MIX1_RADIO_02
-			Song(
-				file: "BATTLE_MIX1_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_02/",
-				labels: [
-					//Madness Of Many
-					Label(
-						artist: "DENIS HORVAT",
-						title: "Madness Of Many",
-						time: 0.0
-					),
-					//Incoherence
-					Label(
-						artist: "JOHANNES BRECHT",
-						title: "Incoherence",
-						time: 127.0
-					),
-					//Ich Muss Los
-					Label(
-						artist: "SOLOMUN",
-						title: "Ich Muss Los",
-						time: 472.0
-					),
-					//Monster
-					Label(
-						artist: "MATTHEW DEAR",
-						title: "Monster",
-						time: 752.0
-					),
-					//WRKTRX3
-					Label(
-						artist: "TRUNCATE",
-						title: "WRKTRX3",
-						time: 962.0
-					),
-					//Spin (Original Mix)
-					Label(
-						artist: "FLOORPLAN",
-						title: "Spin (Original Mix)",
-						time: 1199.0
-					),
-					//The Freaks Come Out (Original 2000 Freaks Mix)
-					Label(
-						artist: "CEVIN FISHER",
-						title: "The Freaks Come Out (Original 2000 Freaks Mix)",
-						time: 1489.0
-					),
-					//You're Mine (Clean Version)
-					Label(
-						artist: "CHRIS LUM",
-						title: "You're Mine (Clean Version)",
-						time: 1779.0
-					),
-					//The Q
-					Label(
-						artist: "ALEX METRIC & TEN VEN",
-						title: "The Q",
-						time: 1980.0
-					),
-					//Customer Is King
-					Label(
-						artist: "SOLOMUN",
-						title: "Customer Is King",
-						time: 2285.0
-					)
-				],
-				set: "Solomun",
-				intros: []
-			),
-			//BATTLE_MIX1_RADIO_03
-			Song(
-				file: "BATTLE_MIX1_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_03/",
-				labels: [
-					//Customer Is King
-					Label(
-						artist: "SOLOMUN",
-						title: "Customer Is King",
-						time: 0.0
-					),
-					//Planet 9
-					Label(
-						artist: "ADAM PORT",
-						title: "Planet 9",
-						time: 208.0
-					),
-					//The End To My Beginning
-					Label(
-						artist: "DUBFIRE",
-						title: "The End To My Beginning",
-						time: 454.0
-					),
-					//You Want It Darker (Solomun Remix)
-					Label(
-						artist: "LEONARD COHEN",
-						title: "You Want It Darker (Solomun Remix)",
-						time: 877.0
-					)
-				],
-				set: "Solomun",
-				intros: []
-			),
-			//BATTLE_MIX2_RADIO_01
-			Song(
-				file: "BATTLE_MIX2_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_01/",
-				labels: [
-					//Overture
-					Label(
-						artist: "TALE OF US",
-						title: "Overture",
-						time: 0.0
-					),
-					//1911
-					Label(
-						artist: "TALE OF US",
-						title: "1911",
-						time: 61.0
-					),
-					//Trevor's Dream
-					Label(
-						artist: "TALE OF US",
-						title: "Trevor's Dream",
-						time: 289.0
-					),
-					//Vinewood Blues
-					Label(
-						artist: "TALE OF US",
-						title: "Vinewood Blues",
-						time: 438.0
-					),
-					//Anywhere
-					Label(
-						artist: "TALE OF US",
-						title: "Anywhere",
-						time: 644.0
-					),
-					//Symphony of the Night
-					Label(
-						artist: "TALE OF US",
-						title: "Symphony of the Night",
-						time: 875.0
-					)
-				],
-				set: "Tale Of Us",
-				intros: []
-			),
-			//BATTLE_MIX2_RADIO_02
-			Song(
-				file: "BATTLE_MIX2_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_02/",
-				labels: [
-					//Symphony of the Night
-					Label(
-						artist: "TALE OF US",
-						title: "Symphony of the Night",
-						time: 0.0
-					),
-					//Another World
-					Label(
-						artist: "TALE OF US",
-						title: "Another World",
-						time: 39.0
-					),
-					//The Portal
-					Label(
-						artist: "TALE OF US",
-						title: "The Portal",
-						time: 240.0
-					),
-					//Solitude
-					Label(
-						artist: "TALE OF US",
-						title: "Solitude",
-						time: 450.0
-					),
-					//Morgan's Fate
-					Label(
-						artist: "TALE OF US",
-						title: "Morgan's Fate",
-						time: 728.0
-					),
-					//Fisherman's Horizon
-					Label(
-						artist: "TALE OF US",
-						title: "Fisherman's Horizon",
-						time: 1018.0
-					),
-					//Myst
-					Label(
-						artist: "TALE OF US",
-						title: "Myst",
-						time: 1209.0
-					)
-				],
-				set: "Tale Of Us",
-				intros: []
-			),
-			//BATTLE_MIX2_RADIO_03
-			Song(
-				file: "BATTLE_MIX2_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_03/",
-				labels: [
-					//Myst
-					Label(
-						artist: "TALE OF US",
-						title: "Myst",
-						time: 0.0
-					),
-					//Seeds
-					Label(
-						artist: "TALE OF US",
-						title: "Seeds",
-						time: 26.0
-					),
-					//Endless Journey
-					Label(
-						artist: "TALE OF US",
-						title: "Endless Journey",
-						time: 205.0
-					),
-					//Valkyr
-					Label(
-						artist: "TALE OF US",
-						title: "Valkyr",
-						time: 393.0
-					),
-					//In Hyrule
-					Label(
-						artist: "TALE OF US",
-						title: "In Hyrule",
-						time: 560.0
-					),
-					//Disgracelands
-					Label(
-						artist: "TALE OF US",
-						title: "Disgracelands",
-						time: 709.0
-					),
-					//Heart of Darkness
-					Label(
-						artist: "TALE OF US",
-						title: "Heart of Darkness",
-						time: 944.0
-					)
-				],
-				set: "Tale Of Us",
-				intros: []
-			),
-			//BATTLE_MIX3_RADIO_01
-			Song(
-				file: "BATTLE_MIX3_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_01/",
-				labels: [
-					//Convergence
-					Label(
-						artist: "CARL FINLOW",
-						title: "Convergence",
-						time: 0.0
-					),
-					//Yes I Do
-					Label(
-						artist: "CARAVACA",
-						title: "Yes I Do",
-						time: 257.0
-					),
-					//The Atmospherian (Tornado Wallace Remix)
-					Label(
-						artist: "WARP FACTOR 9",
-						title: "The Atmospherian (Tornado Wallace Remix)",
-						time: 482.0
-					),
-					//Roman (Bas Ibellini Remix)
-					Label(
-						artist: "MASHROU' LEILA",
-						title: "Roman (Bas Ibellini Remix)",
-						time: 745.0
-					),
-					//Connection (I-Cube Rework)
-					Label(
-						artist: "FUTURE FOUR",
-						title: "Connection (I-Cube Rework)",
-						time: 980.0
-					)
-				],
-				set: "Dixon",
-				intros: []
-			),
-			//BATTLE_MIX3_RADIO_02
-			Song(
-				file: "BATTLE_MIX3_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_02/",
-				labels: [
-					//Connection (I-Cube Rework)
-					Label(
-						artist: "FUTURE FOUR",
-						title: "Connection (I-Cube Rework)",
-						time: 0.0
-					),
-					//Quinquerime
-					Label(
-						artist: "RITE DE PASSAGE",
-						title: "Quinquerime",
-						time: 32.0
-					),
-					//Electro Pharaoh (Instrumental)
-					Label(
-						artist: "THE EGYPTIAN LOVER",
-						title: "Electro Pharaoh (Instrumental)",
-						time: 235.0
-					),
-					//Telstar
-					Label(
-						artist: "MARCUS L.",
-						title: "Telstar",
-						time: 396.0
-					),
-					//Bring U Up (Deetron Edit)
-					Label(
-						artist: "ROMANTHONY",
-						title: "Bring U Up (Deetron Edit)",
-						time: 655.0
-					),
-					//5 Seconds
-					Label(
-						artist: "SOLAR",
-						title: "5 Seconds",
-						time: 937.0
-					),
-					//And Dance
-					Label(
-						artist: "SHARIF LAFFREY",
-						title: "And Dance",
-						time: 1259.0
-					)
-				],
-				set: "Dixon",
-				intros: []
-			),
-			//BATTLE_MIX3_RADIO_03
-			Song(
-				file: "BATTLE_MIX3_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_03/",
-				labels: [
-					//And Dance
-					Label(
-						artist: "SHARIF LAFFREY",
-						title: "And Dance",
-						time: 0.0
-					),
-					//Sensation (Dub Version)
-					Label(
-						artist: "RON HARDY",
-						title: "Sensation (Dub Version)",
-						time: 190.0
-					),
-					//Sharivari (Digital Original Aux 88 Mix)
-					Label(
-						artist: "AUX 88",
-						title: "Sharivari (Digital Original Aux 88 Mix)",
-						time: 344.0
-					),
-					//OAR03-B
-					Label(
-						artist: "ONI AYHUN",
-						title: "OAR03-B",
-						time: 592.0
-					),
-					//Reach Out Your Hand (Erol Alkan Rework) - GTA Edit
-					Label(
-						artist: "TCK FT. JG",
-						title: "Reach Out Your Hand (Erol Alkan Rework) - GTA Edit",
-						time: 909.0
-					)
-				],
-				set: "Dixon",
-				intros: []
-			),
-			//BATTLE_MIX4_RADIO_01
-			Song(
-				file: "BATTLE_MIX4_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_01/",
-				labels: [
-					//Sensation
-					Label(
-						artist: "RON HARDY",
-						title: "Sensation",
-						time: 0.0
-					),
-					//Where Ya At
-					Label(
-						artist: "DERRICK CARTER",
-						title: "Where Ya At",
-						time: 212.0
-					),
-					//Bugatti
-					Label(
-						artist: "TIGA",
-						title: "Bugatti",
-						time: 372.0
-					),
-					//Miura
-					Label(
-						artist: "METRO AREA",
-						title: "Miura",
-						time: 682.0//DOUBLE CHECK TIME
-					)
-				],
-				set: "The Black Madonna",
-				intros: []
-			),
-			//BATTLE_MIX4_RADIO_02
-			Song(
-				file: "BATTLE_MIX4_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_02/",
-				labels: [
-					//Miura
-					Label(
-						artist: "METRO AREA",
-						title: "Miura",
-						time: 0.0
-					),
-					//A Jealous Heart Never Rests
-					Label(
-						artist: "THE BLACK MADONNA",
-						title: "A Jealous Heart Never Rests",
-						time: 128.0
-					),
-					//Beat Box
-					Label(
-						artist: "ART OF NOISE",
-						title: "Beat Box",
-						time: 287.0
-					),
-					//We Still Believe
-					Label(
-						artist: "THE BLACK MADONNA FT. JAMIE PRINCIPLE",
-						title: "We Still Believe",
-						time: 565.0
-					),
-					//Can't Believe
-					Label(
-						artist: "NANCY MARTIN",
-						title: "Can't Believe",
-						time: 933.0
-					),
-					//Hydraulic Pump Pt. 3
-					Label(
-						artist: "P-FUNK ALL STARS",
-						title: "Hydraulic Pump Pt. 3",
-						time: 1250.0
-					),
-					//Computer Madness
-					Label(
-						artist: "STEVE POINDEXTER",
-						title: "Computer Madness",
-						time: 1419.0
-					),
-					//Devotion
-					Label(
-						artist: "TEN CITY",
-						title: "Devotion",
-						time: 1575.0
-					)
-				],
-				set: "The Black Madonna",
-				intros: []
-			),
-			//BATTLE_MIX4_RADIO_03
-			Song(
-				file: "BATTLE_MIX4_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_03/",
-				labels: [
-					//Devotion
-					Label(
-						artist: "TEN CITY",
-						title: "Devotion",
-						time: 0.0
-					),
-					//We Can Never Be Apart
-					Label(
-						artist: "THE BLACK MADONNA",
-						title: "We Can Never Be Apart",
-						time: 161.0
-					),
-					//Steppin' Out
-					Label(
-						artist: "JOE JACKSON",
-						title: "Steppin' Out",
-						time: 614.0
-					),
-					//He Is The Voice I Hear
-					Label(
-						artist: "THE BLACK MADONNA",
-						title: "He Is The Voice I Hear",
-						time: 861.0
-					)
-				],
-				set: "The Black Madonna",
-				intros: []
-			)
-		],
-		general: [],
-		sid: [],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
 		]
 	),
 ]
