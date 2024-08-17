@@ -6,7 +6,7 @@
 //
 
 public let RadioStations: [RadioStation] = [
-	// MARK: Radio Off
+	// MARK: Radio Off	#10
 	RadioStation(
 		index: 0,
 		number: 10,
@@ -29,8 +29,8 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Media Player
 	RadioStation(
-		index: 0,
-		number: 10,
+		index: 1,
+		number: 26,
 		name: "Media Player",
 		image: "gta_radio_stations_texture11_128",
 		imagePosition: Position(
@@ -135,7 +135,7 @@ public let RadioStations: [RadioStation] = [
 	// MARK: The Music Locker
 	RadioStation(
 		index: 3,
-		number: 25,
+		number: 23,
 		name: "The Music Locker",
 		image: "gta_radio_stations_texture08_128",
 		imagePosition: Position(
@@ -2095,7 +2095,7 @@ public let RadioStations: [RadioStation] = [
 	// MARK: The Lab
 	RadioStation(
 		index: 9,
-		number: 16,
+		number: 19, /*16*/
 		name: "The Lab",
 		image: "gta_radio_stations_texture04_128",
 		imagePosition: Position(
@@ -4949,7 +4949,7 @@ public let RadioStations: [RadioStation] = [
 	// MARK: Still Slipping Los Santos
 	RadioStation(
 		index: 18,
-		number: 23,
+		number: 25,
 		name: "Still Slipping Los Santos",
 		image: "gta_radio_stations_texture09_128",
 		imagePosition: Position(
