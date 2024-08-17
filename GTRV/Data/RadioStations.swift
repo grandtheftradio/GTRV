@@ -6,7 +6,7 @@
 //
 
 public let RadioStations: [RadioStation] = [
-	// MARK: Radio Off	#10
+	// MARK: Radio Off
 	RadioStation(
 		index: 0,
 		number: 10,
