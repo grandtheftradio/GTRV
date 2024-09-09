@@ -21,6 +21,7 @@ public let RadioStations: [RadioStation] = [
 		root: nil,
 		songs: nil,
 		general: nil,
+		general_root: nil,
 		sid: nil,
 		mono_solo: nil,
 		time: nil,
@@ -42,6 +43,7 @@ public let RadioStations: [RadioStation] = [
 		root: nil,
 		songs: nil,
 		general: nil,
+		general_root: nil,
 		sid: nil,
 		mono_solo: nil,
 		time: nil,
@@ -74,7 +76,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MONO_BEYOND_INSEMINATION
 			Song(
@@ -88,7 +91,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MONO_BLESS_YOUR_HEART
 			Song(
@@ -102,7 +106,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MONO_ZBEYOND_INSEMINATION_PART_2
 			Song(
@@ -116,10 +121,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: ["01","02","03","04","05","06","07","08","09","10","11"],
 		mono_solo: [],
 		time: [
@@ -147,6 +154,7 @@ public let RadioStations: [RadioStation] = [
 		root: nil,
 		songs: nil,
 		general: nil,
+		general_root: nil,
 		sid: nil,
 		mono_solo: nil,
 		time: nil,
@@ -165,9 +173,745 @@ public let RadioStations: [RadioStation] = [
 		),
 		randomize: false,
 		rotate: false,
-		root: nil,
-		songs: nil,
+		root: "dlc_security_music",
+		songs: [
+			//100_dissin
+			Song(
+				file: "0x1DCE0DD0",//0x13667803
+				root: "dlc_security_music/100_dissin/",
+				labels: [
+					Label(
+						artist: "ARMANDO",
+						title: "100% of Disin' You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil
+			),
+			//xulita
+			Song(
+				file: "0x1B0448B0",//0x11BECEC6
+				root: "dlc_security_music/xulita/",
+				labels: [
+					Label(
+						artist: "YOUNG CISTER FEAT. KAYDY CAIN",
+						title: "XULITA",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil
+			),
+			//snap_and_roll
+			Song(
+				file: "0x0E477B98",//0x062CCA9B
+				root: "dlc_security_music/snap_and_roll/",
+				labels: [
+					Label(
+						artist: "SOULJA BOY TELL'EM",
+						title: "Snap And Roll",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1C67F034",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//nubes
+			Song(
+				file: "0x1AD8BAFA",//0x1DE39D2B
+				root: "dlc_security_music/nubes/",
+				labels: [
+					Label(
+						artist: "RAUW ALEJANDRO",
+						title: "Nubes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x03B9906A",
+						delay: 5.0
+					),
+					Intro(
+						file: "0x11D06C6C",
+						delay: 5.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//bounce_n_break
+			Song(
+				file: "0x0D607271",//0x02202F9C
+				root: "dlc_security_music/bounce_n_break/",
+				labels: [
+					Label(
+						artist: "DJ SPINN",
+						title: "Bounce N Break Yo Back",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil
+			),
+			//contigo
+			Song(
+				file: "0x1AB0DEE4",//0x043179FD
+				root: "dlc_security_music/contigo/",
+				labels: [
+					Label(
+						artist: "ÑEJO & DALMATA",
+						title: "Vacilar Contigo",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x065AD2BB",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x186D36E0",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//rockstar_made
+			Song(
+				file: "0x1B3CB8DD",//0x08097FF6
+				root: "dlc_security_music/rockstar_made/",
+				labels: [
+					Label(
+						artist: "PLAYBOI CARTI",
+						title: "Rockstar Made",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1BF809DE",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x1062F2A8",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//calle_luna
+			Song(
+				file: "0x0E6DB772",//0x09F4F127
+				root: "dlc_security_music/calle_luna/",
+				labels: [
+					Label(
+						artist: "WILLIE COLÓN & HÉCTOR LAVOE",
+						title: "Calle Luna Calle Sol",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0C7102D6",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x1E186623",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x11054BFD",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//machote
+			Song(
+				file: "0x1DC31D8F",//0x13F2722D
+				root: "dlc_security_music/machote/",
+				labels: [
+					Label(
+						artist: "ARCA",
+						title: "Machote",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0A702F6D",
+						delay: 10.0
+					),
+					Intro(
+						file: "0x0DCDF64F",
+						delay: 10.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//418
+			Song(
+				file: "0x0B6157A1",//0x01C2371A
+				root: "dlc_security_music/418/",
+				labels: [
+					Label(
+						artist: "DJ SLUGO",
+						title: "418 (Bounce Mix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0F4C5FC7",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//con_altura
+			Song(
+				file: "0x0BDF6B91",//0x04FC63CB
+				root: "dlc_security_music/con_altura/",
+				labels: [
+					Label(
+						artist: "ROSALÍA FEAT. J BALVIN",
+						title: "Con Altura",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1C2F351E",
+						delay: 2.0
+					),
+					Intro(
+						file: "0x15ECE87A",
+						delay: 2.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//klk
+			Song(
+				file: "0x0DB6BA96",//0x182A7858
+				root: "dlc_security_music/klk/",
+				labels: [
+					Label(
+						artist: "ARCA FEAT. ROSALÍA",
+						title: "KLK",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x066D0171",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x0896C5C2",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//linda
+			Song(
+				file: "0x14DF58DA",//0x089C6414
+				root: "dlc_security_music/linda/",
+				labels: [
+					Label(
+						artist: "TOKISCHA & ROSALÍA",
+						title: "Linda",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x11213EDB",
+						delay: 0.0
+					),
+					Intro(
+						file: "0x129241BD",
+						delay: 0.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//vamos_disco
+			Song(
+				file: "0x14CAF742",//0x175074BD
+				root: "dlc_security_music/vamos_disco/",
+				labels: [
+					Label(
+						artist: "LAS GUANABANAS",
+						title: "Vamos Pa la Disco",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0A47B49C",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x08FE720A",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x17D34FB4",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x18021011",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//duro
+			Song(
+				file: "file_alt_1",//file_alt_2
+				root: "dlc_security_music/duro/",
+				labels: [
+					Label(
+						artist: "LA GOONY CHONGA",
+						title: "Duro 2005",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x043BFAC9",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x19742539",
+						delay: 10.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//bank_robber (skinny_jeans)
+			Song(
+				file: "0x0F83DFE6",//0x1ECA47CC
+				root: "dlc_security_music/bank_robber/",
+				labels: [
+					Label(
+						artist: "LIKKLE VYBZ & LIKKLE ADDI",
+						title: "Skinny Jeans",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1BC43DFC",
+						delay: 6.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//dominicana
+			Song(
+				file: "0x0BFCFE77",//0x061AA958
+				root: "dlc_security_music/dominicana/",
+				labels: [
+					Label(
+						artist: "CHUCKY73",
+						title: "Dominicana",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0A3D0C5D",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x0BF98FD4",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//tumbando_fronte
+			Song(
+				file: "0x08957DDF",//0x0359245A
+				root: "dlc_security_music/tumbando_fronte/",
+				labels: [
+					Label(
+						artist: "ALBERTO STYLEE",
+						title: "Tumbando Fronte",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil
+			),
+			//la_fama
+			Song(
+				file: "0x10C4A42B",//0x07580BF2
+				root: "dlc_security_music/la_fama/",
+				labels: [
+					Label(
+						artist: "ROSALÍA & THE WEEKEND",
+						title: "LA FAMA",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0BA2F8CE",
+						delay: 2.0
+					),
+					Intro(
+						file: "0x01E9A55C",
+						delay: 2.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//where_heart_is
+			Song(
+				file: "0x0B550E1C",//0x160CF1BA
+				root: "dlc_security_music/where_heart_is/",
+				labels: [
+					Label(
+						artist: "Q",
+						title: "Take Me Where Your Heart Is",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil
+			),
+			//dipra (al_la_mia)
+			Song(
+				file: "0x1CE0150E",//0x03BE5568
+				root: "dlc_security_music/dipra/",
+				labels: [
+					Label(
+						artist: "BAD GYAL",
+						title: "Al La Mía",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0B9CBBC6",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x192B16DA",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//mi_nombre
+			Song(
+				file: "0x1EDF2C82",//0x14878196
+				root: "dlc_security_music/mi_nombre/",
+				labels: [
+					Label(
+						artist: "ROSALÍA",
+						title: "DI MI NOMBRE (Cap.8: Éxtasis)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0D512971",
+						delay: 5.0
+					),
+					Intro(
+						file: "0x1F8DCDEA",
+						delay: 5.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//body_so_good
+			Song(
+				file: "0x06C33383",//0x0921E5CF
+				root: "dlc_security_music/body_so_good/",
+				labels: [
+					Label(
+						artist: "POPCAAN",
+						title: "Body So Good",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1A608A16",
+						delay: 15.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//bunny_rider
+			Song(
+				file: "0x0D9FF440",//0x10E2CC9A
+				root: "dlc_security_music/bunny_rider/",
+				labels: [
+					Label(
+						artist: "CAROLINE POLACHEK",
+						title: "Bunny Is A Rider",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0BA5F5E8",
+						delay: 12.0
+					),
+					Intro(
+						file: "0x0D21B8D8",
+						delay: 12.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//stress
+			Song(
+				file: "0x1FBD1F43",//0x08C62DED
+				root: "dlc_security_music/stress/",
+				labels: [
+					Label(
+						artist: "JUSTICE",
+						title: "Stress",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0D0A9219",
+						delay: 4.0
+					),
+					Intro(
+						file: "0x13C3DF89",
+						delay: 4.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//salgo_calle
+			Song(
+				file: "0x0C731A68",//0x0FA8C527
+				root: "dlc_security_music/salgo_calle/",
+				labels: [
+					Label(
+						artist: "DADDY YANKEE",
+						title: "Salgo Pa' La Calle",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1F614BE1",
+						delay: 6.0
+					),
+					Intro(
+						file: "0x063C5998",
+						delay: 6.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//volando_voy
+			Song(
+				file: "0x1E9E1CCE",//0x16C3A092
+				root: "dlc_security_music/volando_voy/",
+				labels: [
+					Label(
+						artist: "CAMARÓN DE LA ISLA",
+						title: "Volando Voy",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1B86396A",
+						delay: 12.0
+					),
+					Intro(
+						file: "0x192BF4AF",
+						delay: 12.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//mystery_love
+			Song(
+				file: "0x0EFF101A",//0x0F2949F8
+				root: "dlc_security_music/mystery_love/",
+				labels: [
+					Label(
+						artist: "MR. FINGERS",
+						title: "Mystery of Love (2011) (Instrumental)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x13AE8A4F",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//a_pale
+			Song(
+				file: "0x05A8D17D",//0x17E0F6F2
+				root: "dlc_security_music/a_pale/",
+				labels: [
+					Label(
+						artist: "ROSALÍA",
+						title: "A Palé",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1E88B56B",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x1372DF3F",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//dos_locos
+			Song(
+				file: "0x0B9DBCCC",//0x097BF14B
+				root: "dlc_security_music/dos_locos/",
+				labels: [
+					Label(
+						artist: "MONCHY & ALEJANDRA",
+						title: "Dos Locos",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil
+			),
+			//mi_coranzoncito
+			Song(
+				file: "0x0F7BE938",//0x12FA953F
+				root: "dlc_security_music/mi_coranzoncito/",
+				labels: [
+					Label(
+						artist: "AVENTURA",
+						title: "Mi Corazoncito",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0B7D77FD",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x0E083D12",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x1D339B69",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//tukuntazo
+			Song(
+				file: "0x084C88C6",//0x1609E800
+				root: "dlc_security_music/tukuntazo/",
+				labels: [
+					Label(
+						artist: "TOKISCHA & HARACA KIKO & EL CHERRY SCOM",
+						title: "Tukuntaso",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x007A52CD",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x16BCFF53",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+			//algo_como_tu
+			Song(
+				file: "0x1F11EA14",//0x06347C21
+				root: "dlc_security_music/algo_como_tu/",
+				labels: [
+					Label(
+						artist: "KAYDY CAIN & LOS DEL CONTROL",
+						title: "Algo Como Tú",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x07A333DF",
+						delay: 7.0
+					),
+					Intro(
+						file: "0x022EE8FD",
+						delay: 7.0
+					)
+				],
+				intros_root: "motomami_intro"
+			),
+		],
 		general: nil,
+		general_root: "motomami_general",
 		sid: nil,
 		mono_solo: nil,
 		time: nil,
@@ -200,7 +944,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//CHAPTER3
 			Song(
@@ -223,7 +968,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CHAPTER3_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CRAZY_GIRL
 			Song(
@@ -246,7 +992,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CRAZY_GIRL_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DISCO_DEVIL
 			Song(
@@ -269,7 +1016,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DISCO_DEVIL_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GRUMBLIN_DUB
 			Song(
@@ -292,7 +1040,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GRUMBLIN_DUB_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GUN_SHOT_A_FIRE
 			Song(
@@ -306,7 +1055,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//I_AM_A_MADMAN
 			Song(
@@ -329,7 +1079,8 @@ public let RadioStations: [RadioStation] = [
 						file: "I_AM_A_MADMAN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//KINGSTON_BE_WISE
 			Song(
@@ -343,7 +1094,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//KINGSTON_TOWN
 			Song(
@@ -366,7 +1118,8 @@ public let RadioStations: [RadioStation] = [
 						file: "KINGSTON_TOWN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LOYALS
 			Song(
@@ -380,7 +1133,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MONEY_COME_MONEY_GO
 			Song(
@@ -403,7 +1157,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MONEY_COME_MONEY_GO_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MONEY_IN_MY_POCKET
 			Song(
@@ -417,7 +1172,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MR_MONEY_MAN
 			Song(
@@ -440,7 +1196,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MR_MONEY_MAN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//NIGHT_NURSE
 			Song(
@@ -463,7 +1220,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NIGHT_NURSE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//NOBODY_MOVE_GET_HURT
 			Song(
@@ -486,7 +1244,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NOBODY_MOVE_GET_HURT_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ODD_RAS
 			Song(
@@ -500,7 +1259,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//PSYCHO
 			Song(
@@ -514,7 +1274,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//ROAST_FISH_AND_CORNBREAD
 			Song(
@@ -528,7 +1289,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//SONS_OF_SLAVES
 			Song(
@@ -551,7 +1313,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SONS_OF_SLAVES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//TOPIC_OF_THE_DAY
 			Song(
@@ -565,7 +1328,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//WE_NEVER_FEAR_DEM
 			Song(
@@ -579,10 +1343,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
 		time: [
@@ -664,7 +1430,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//wwfm_p2
 			Song(
@@ -721,7 +1488,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//wwfm_p3
 			Song(
@@ -796,7 +1564,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//wwfm_p4
 			Song(
@@ -823,7 +1592,7 @@ public let RadioStations: [RadioStation] = [
 					),
 					//Black Magic
 					Label(
-						artist: "JON WAYNE ",
+						artist: "JON WAYNE",
 						title: "Black Magic",
 						time: 647.0
 					),
@@ -877,7 +1646,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//wwfm_p1
 			Song(
@@ -934,7 +1704,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//wwfm_p2
 			Song(
@@ -991,7 +1762,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//wwfm_p3
 			Song(
@@ -1066,7 +1838,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//wwfm_p4
 			Song(
@@ -1093,7 +1866,7 @@ public let RadioStations: [RadioStation] = [
 					),
 					//Black Magic
 					Label(
-						artist: "JON WAYNE ",
+						artist: "JON WAYNE",
 						title: "Black Magic",
 						time: 647.0
 					),
@@ -1147,10 +1920,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: [],
 		mono_solo: [],
 		time: [
@@ -1315,7 +2090,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			Song(
 				file: "0x0339EC32",
@@ -1395,7 +2171,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			Song(
 				file: "0x17E2800E",
@@ -1535,7 +2312,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			Song(
 				file: "0x08194D53",
@@ -1615,10 +2393,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: [],
 		mono_solo: [],
 		time: [
@@ -1666,7 +2446,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ASHLEYS_ROACHCLIP_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BOUNCY_LADY
 			Song(
@@ -1680,7 +2461,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//CALIFORNIA_SOUL
 			Song(
@@ -1703,7 +2485,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CALIFORNIA_SOUL_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CHANGIN
 			Song(
@@ -1717,7 +2500,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//CLIMAX
 			Song(
@@ -1740,7 +2524,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CLIMAX_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CRUISIN
 			Song(
@@ -1763,7 +2548,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CRUISIN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DO_IT_TIL_YOURE_SATISFIED
 			Song(
@@ -1786,7 +2572,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DO_IT_TIL_YOURE_SATISFIED_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//FUNNY_FEELING
 			Song(
@@ -1805,7 +2592,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FUNNY_FEELING_01",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HERCULES
 			Song(
@@ -1828,7 +2616,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HERCULES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//I_BELIEVE_IN_MIRACLES
 			Song(
@@ -1851,7 +2640,8 @@ public let RadioStations: [RadioStation] = [
 						file: "I_BELIEVE_IN_MIRACLES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//I_GET_LIFTED
 			Song(
@@ -1874,7 +2664,8 @@ public let RadioStations: [RadioStation] = [
 						file: "I_GET_LIFTED_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MAGIC_MOUNTAIN
 			Song(
@@ -1897,7 +2688,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MAGIC_MOUNTAIN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//O_O_H_CHILD
 			Song(
@@ -1920,7 +2712,8 @@ public let RadioStations: [RadioStation] = [
 						file: "O_O_H_CHILD_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//READY_OR_NOT
 			Song(
@@ -1943,7 +2736,8 @@ public let RadioStations: [RadioStation] = [
 						file: "READY_OR_NOT_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//RUBBER_BAND
 			Song(
@@ -1966,7 +2760,8 @@ public let RadioStations: [RadioStation] = [
 						file: "RUBBER_BAND_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SMILING_FACES
 			Song(
@@ -1989,7 +2784,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SMILING_FACES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//STORIES
 			Song(
@@ -2003,7 +2799,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//SUPERMAN_LOVER
 			Song(
@@ -2026,7 +2823,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SUPERMAN_LOVER_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_CISCO_KID
 			Song(
@@ -2053,7 +2851,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_CISCO_KID_03",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//VIVA_TIRADO
 			Song(
@@ -2076,10 +2875,12 @@ public let RadioStations: [RadioStation] = [
 						file: "VIVA_TIRADO_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12"],
 		time: [
@@ -2104,12 +2905,12 @@ public let RadioStations: [RadioStation] = [
 		),
 		randomize: false,
 		rotate: true,
-		root: "DLC_THELAB",
+		root: "dlc_thelab",
 		songs: [
 			//LAB_P1
 			Song(
 				file: "LAB_P1",
-				root: "DLC_THELAB/lab_p1/",
+				root: "dlc_thelab/lab_p1/",
 				labels: [
 					Label(
 						artist: "",
@@ -2201,12 +3002,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//LAB_P2
 			Song(
 				file: "LAB_P2",
-				root: "DLC_THELAB/lab_p2/",
+				root: "dlc_thelab/lab_p2/",
 				labels: [
 					Label(
 						artist: "",
@@ -2265,10 +3067,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: [],
 		mono_solo: [],
 		time: [
@@ -2316,7 +3120,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ALWAYS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BOOGIE_IN_ZERO_GRAVITY
 			Song(
@@ -2339,7 +3144,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BOOGIE_IN_ZERO_GRAVITY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CHANGE_OF_COAST
 			Song(
@@ -2353,7 +3159,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//COLOURS
 			Song(
@@ -2367,7 +3174,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//CRYSTALFILM
 			Song(
@@ -2390,7 +3198,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CRYSTALFILM_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DARK_MATTER
 			Song(
@@ -2413,7 +3222,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DARK_MATTER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DO_YOU_BELIEVE
 			Song(
@@ -2436,7 +3246,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DO_YOU_BELIEVE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DONT_COME_CLOSE
 			Song(
@@ -2467,7 +3278,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DONT_COME_CLOSE_04",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//FEEL_THE_SAME
 			Song(
@@ -2490,7 +3302,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FEEL_THE_SAME_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//FLUTES
 			Song(
@@ -2504,7 +3317,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//FORGET
 			Song(
@@ -2527,7 +3341,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FORGET_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//FROM_NOWHERE
 			Song(
@@ -2550,7 +3365,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FROM_NOWHERE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HEART_IN_THE_PIPES
 			Song(
@@ -2573,7 +3389,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HEART_IN_THE_PIPES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HEARTBREAK
 			Song(
@@ -2587,7 +3404,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//HIGH_PRESSURE
 			Song(
@@ -2601,7 +3419,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//HOLD_ON_HOLY_GHOST
 			Song(
@@ -2624,7 +3443,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HOLD_ON_HOLY_GHOST_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//IN_REAL_LIFE
 			Song(
@@ -2647,7 +3467,8 @@ public let RadioStations: [RadioStation] = [
 						file: "IN_REAL_LIFE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//JASMINE
 			Song(
@@ -2670,7 +3491,8 @@ public let RadioStations: [RadioStation] = [
 						file: "JASMINE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LITTLE_WHITE_LIE
 			Song(
@@ -2693,7 +3515,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LITTLE_WHITE_LIE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LIVING_IN_AMERICA
 			Song(
@@ -2716,7 +3539,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LIVING_IN_AMERICA_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LUCKY_BOY
 			Song(
@@ -2739,7 +3563,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LUCKY_BOY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MESMERIZED
 			Song(
@@ -2753,7 +3578,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//NEW_BEAT
 			Song(
@@ -2776,7 +3602,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NEW_BEAT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//NOWHERE_TO_GO
 			Song(
@@ -2799,7 +3626,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NOWHERE_TO_GO_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//O_N_E
 			Song(
@@ -2813,7 +3641,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//OLD_LOVE
 			Song(
@@ -2832,7 +3661,8 @@ public let RadioStations: [RadioStation] = [
 						file: "OLD_LOVE_01",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ONE_GIRL_ONE_BOY
 			Song(
@@ -2855,7 +3685,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ONE_GIRL_ONE_BOY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//PHARAOHS
 			Song(
@@ -2878,7 +3709,8 @@ public let RadioStations: [RadioStation] = [
 						file: "PHARAOHS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//POLISH_GIRL
 			Song(
@@ -2901,7 +3733,8 @@ public let RadioStations: [RadioStation] = [
 						file: "POLISH_GIRL_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//PSYCHIC_CITY
 			Song(
@@ -2924,7 +3757,8 @@ public let RadioStations: [RadioStation] = [
 						file: "PSYCHIC_CITY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SHINE_A_LIGHT
 			Song(
@@ -2947,7 +3781,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SHINE_A_LIGHT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SHOOTING_HOLES
 			Song(
@@ -2970,7 +3805,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SHOOTING_HOLES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SLEEPWALKING
 			Song(
@@ -2993,7 +3829,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SLEEPWALKING_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SO_MANY_DETAILS
 			Song(
@@ -3016,7 +3853,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SO_MANY_DETAILS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SOMETIMES
 			Song(
@@ -3039,7 +3877,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SOMETIMES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//STRANGERS_IN_THE_WIND
 			Song(
@@ -3053,7 +3892,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//THE_DRUMMER
 			Song(
@@ -3076,7 +3916,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_DRUMMER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_SET_UP
 			Song(
@@ -3090,7 +3931,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//TRULY_ALIVE
 			Song(
@@ -3113,7 +3955,8 @@ public let RadioStations: [RadioStation] = [
 						file: "TRULY_ALIVE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WHEN_YOURE_OUT
 			Song(
@@ -3136,10 +3979,12 @@ public let RadioStations: [RadioStation] = [
 						file: "WHEN_YOURE_OUT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
 		time: [
@@ -3167,6 +4012,7 @@ public let RadioStations: [RadioStation] = [
 		root: nil,
 		songs: nil,
 		general: nil,
+		general_root: nil,
 		sid: nil,
 		mono_solo: nil,
 		time: nil,
@@ -3208,7 +4054,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BACK_AND_FORTH_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CANT_HOLD_BACK*
 			/*Song(
@@ -3231,7 +4078,8 @@ public let RadioStations: [RadioStation] = [
 						file: "YOUR_LOVIN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),*/
 			//CUTIE_PIE
 			Song(
@@ -3254,7 +4102,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CUTIE_PIE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DO_IT_ROGER
 			Song(
@@ -3277,7 +4126,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DO_IT_ROGER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//FLASHBACK
 			Song(
@@ -3291,7 +4141,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//FLASHLIGHT
 			Song(
@@ -3305,7 +4156,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//FUNKASIZE_YOU
 			Song(
@@ -3319,7 +4171,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//GIVE_IT_TO_ME_BABY
 			Song(
@@ -3342,7 +4195,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GIVE_IT_TO_ME_BABY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GOTTA_GET_MY_HANDS_ON_SOME_MONEY
 			Song(
@@ -3365,7 +4219,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HABOGLABOTRIBIN
 			Song(
@@ -3379,7 +4234,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//HEART_BEAT
 			Song(
@@ -3402,7 +4258,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HEARTBEAT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HEARTBREAKER
 			Song(
@@ -3416,7 +4273,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//ID_RATHER_BE_WITH_YOU
 			Song(
@@ -3439,7 +4297,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ID_RATHER_BE_WITH_YOU_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//IM_IN_LOVE
 			Song(
@@ -3462,7 +4321,8 @@ public let RadioStations: [RadioStation] = [
 						file: "IM_IN_LOVE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//JOYSTICK
 			Song(
@@ -3485,7 +4345,8 @@ public let RadioStations: [RadioStation] = [
 						file: "JOYSTICK_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MOTHERSHIP_CONNECTION
 			Song(
@@ -3499,7 +4360,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//NIGHTS_FEEL_LIKE
 			Song(
@@ -3513,7 +4375,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//PARTY_ALL_THE_TIME
 			Song(
@@ -3527,7 +4390,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//SKELETONS
 			Song(
@@ -3550,7 +4414,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SKELETONS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//TONIGHT
 			Song(
@@ -3564,7 +4429,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//WALKING_INTO_SUNSHINE
 			Song(
@@ -3578,7 +4444,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//YOURE_THE_ONE_FOR_ME
 			Song(
@@ -3601,10 +4468,12 @@ public let RadioStations: [RadioStation] = [
 						file: "YOURE_THE_ONE_FOR_ME_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
 		time: [
@@ -3652,7 +4521,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ANSWER_TO_YOURSELF_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BLACK_GREASE
 			Song(
@@ -3675,7 +4545,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BLACK_GREASE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CALIFORNIA_GIRLS
 			Song(
@@ -3698,7 +4569,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CALIFORNIA_GIRLS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//COCAINE
 			Song(
@@ -3721,7 +4593,8 @@ public let RadioStations: [RadioStation] = [
 						file: "COCAINE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CRAWLING_AFTER_YOU
 			Song(
@@ -3744,7 +4617,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CRAWLING_AFTER_YOU_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DIDDY_WAH_DIDDY
 			Song(
@@ -3758,7 +4632,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//FALL_IN_LINE
 			Song(
@@ -3781,7 +4656,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FALL_IN_LINE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//FIRE_DOESNT_BURN_ITSELF
 			Song(
@@ -3804,7 +4680,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FIRE_DOESNT_BURN_ITSELF_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GONE_FOR_GOOD
 			Song(
@@ -3827,7 +4704,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GONE_FOR_GOOD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HYSTERIA
 			Song(
@@ -3841,7 +4719,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//NEXT_STOP
 			Song(
@@ -3864,7 +4743,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NEXT_STOP_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//NINE_IS_GOD
 			Song(
@@ -3887,7 +4767,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NINE_IS_GOD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SIXPACK
 			Song(
@@ -3910,7 +4791,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SIXPACK_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SLEEPWALKER
 			Song(
@@ -3933,7 +4815,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SLEEPWALKER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_DREAM
 			Song(
@@ -3947,7 +4830,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//THIS_MYSTIC_DECADE
 			Song(
@@ -3970,7 +4854,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THIS_MYSTIC_DECADE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//TURN_IT_AROUND
 			Song(
@@ -3997,7 +4882,8 @@ public let RadioStations: [RadioStation] = [
 						file: "TURN_IT_AROUND_03",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//USED_BLOOD
 			Song(
@@ -4020,7 +4906,8 @@ public let RadioStations: [RadioStation] = [
 						file: "USED_BLOOD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WET_BLANKET
 			Song(
@@ -4051,7 +4938,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WET_BLANKET_04",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WHO_NEEDS_YOU
 			Song(
@@ -4074,10 +4962,12 @@ public let RadioStations: [RadioStation] = [
 						file: "WHO_NEEDS_YOU_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
 		time: [
@@ -4102,12 +4992,12 @@ public let RadioStations: [RadioStation] = [
 		),
 		randomize: false,
 		rotate: true,
-		root: "DLC_CHRISTMAS2017",
+		root: "dlc_christmas2017",
 		songs: [
 			//RADIO_XM17_P1
 			Song(
 				file: "RADIO_XM17_P1", //1864.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p1/",
+				root: "dlc_christmas2017/radio_xm17_p1/",
 				labels: [
 					Label(
 						artist: "",
@@ -4164,12 +5054,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//RADIO_XM17_P2
 			Song(
 				file: "RADIO_XM17_P2", //2357.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p2/",
+				root: "dlc_christmas2017/radio_xm17_p2/",
 				labels: [
 					//When Did You Stop Loving Me, When Did I Stop Loving You
 					Label(
@@ -4239,12 +5130,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//RADIO_XM17_P3
 			Song(
 				file: "RADIO_XM17_P3", //1919.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p3/",
+				root: "dlc_christmas2017/radio_xm17_p3/",
 				labels: [
 					//For Real
 					Label(
@@ -4314,10 +5206,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: [],
 		mono_solo: [],
 		time: [
@@ -4342,12 +5236,12 @@ public let RadioStations: [RadioStation] = [
 		),
 		randomize: false,
 		rotate: true,
-		root: "DLC_BATTLE_MUSIC",
+		root: "dlc_battle_music",
 		songs: [
 			//BATTLE_MIX1_RADIO_01
 			Song(
 				file: "BATTLE_MIX1_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_01/",
+				root: "dlc_battle_music/battle_mix1_radio_01/",
 				labels: [
 					//The Plan
 					Label(
@@ -4387,12 +5281,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Solomun",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX1_RADIO_02
 			Song(
 				file: "BATTLE_MIX1_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_02/",
+				root: "dlc_battle_music/battle_mix1_radio_02/",
 				labels: [
 					//Madness Of Many
 					Label(
@@ -4456,12 +5351,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Solomun",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX1_RADIO_03
 			Song(
 				file: "BATTLE_MIX1_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_03/",
+				root: "dlc_battle_music/battle_mix1_radio_03/",
 				labels: [
 					//Customer Is King
 					Label(
@@ -4489,12 +5385,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Solomun",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX2_RADIO_01
 			Song(
 				file: "BATTLE_MIX2_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_01/",
+				root: "dlc_battle_music/battle_mix2_radio_01/",
 				labels: [
 					//Overture
 					Label(
@@ -4534,12 +5431,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Tale Of Us",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX2_RADIO_02
 			Song(
 				file: "BATTLE_MIX2_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_02/",
+				root: "dlc_battle_music/battle_mix2_radio_02/",
 				labels: [
 					//Symphony of the Night
 					Label(
@@ -4585,12 +5483,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Tale Of Us",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX2_RADIO_03
 			Song(
 				file: "BATTLE_MIX2_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_03/",
+				root: "dlc_battle_music/battle_mix2_radio_03/",
 				labels: [
 					//Myst
 					Label(
@@ -4636,12 +5535,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Tale Of Us",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX3_RADIO_01
 			Song(
 				file: "BATTLE_MIX3_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_01/",
+				root: "dlc_battle_music/battle_mix3_radio_01/",
 				labels: [
 					//Convergence
 					Label(
@@ -4675,12 +5575,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Dixon",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX3_RADIO_02
 			Song(
 				file: "BATTLE_MIX3_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_02/",
+				root: "dlc_battle_music/battle_mix3_radio_02/",
 				labels: [
 					//Connection (I-Cube Rework)
 					Label(
@@ -4726,12 +5627,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Dixon",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX3_RADIO_03
 			Song(
 				file: "BATTLE_MIX3_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_03/",
+				root: "dlc_battle_music/battle_mix3_radio_03/",
 				labels: [
 					//And Dance
 					Label(
@@ -4765,12 +5667,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Dixon",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX4_RADIO_01
 			Song(
 				file: "BATTLE_MIX4_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_01/",
+				root: "dlc_battle_music/battle_mix4_radio_01/",
 				labels: [
 					//Sensation
 					Label(
@@ -4798,12 +5701,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "The Black Madonna",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX4_RADIO_02
 			Song(
 				file: "BATTLE_MIX4_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_02/",
+				root: "dlc_battle_music/battle_mix4_radio_02/",
 				labels: [
 					//Miura
 					Label(
@@ -4855,12 +5759,13 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "The Black Madonna",
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//BATTLE_MIX4_RADIO_03
 			Song(
 				file: "BATTLE_MIX4_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_03/",
+				root: "dlc_battle_music/battle_mix4_radio_03/",
 				labels: [
 					//Devotion
 					Label(
@@ -4888,10 +5793,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "The Black Madonna",
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: [],
 		mono_solo: [],
 		time: [
@@ -4919,6 +5826,7 @@ public let RadioStations: [RadioStation] = [
 		root: nil,
 		songs: nil,
 		general: nil,
+		general_root: nil,
 		sid: nil,
 		mono_solo: nil,
 		time: nil,
@@ -4940,6 +5848,7 @@ public let RadioStations: [RadioStation] = [
 		root: nil,
 		songs: nil,
 		general: nil,
+		general_root: nil,
 		sid: nil,
 		mono_solo: nil,
 		time: nil,
@@ -4961,6 +5870,7 @@ public let RadioStations: [RadioStation] = [
 		root: nil,
 		songs: nil,
 		general: nil,
+		general_root: nil,
 		sid: nil,
 		mono_solo: nil,
 		time: nil,
@@ -5002,7 +5912,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ALL_THE_THINGS_SHE_SAID_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BAKER_STREET
 			Song(
@@ -5025,7 +5936,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BAKER_STREET_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BIG_LOG
 			Song(
@@ -5048,7 +5960,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BIG_LOG_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BLACK_VELVET
 			Song(
@@ -5071,7 +5984,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BLACK_VELVET_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BURNING_HEART
 			Song(
@@ -5094,7 +6008,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BURNING_HEART_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CARRY_ON_MY_WAYWARD_SUN
 			Song(
@@ -5117,7 +6032,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CARRY_ON_MY_WAYWARD_SUN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CATS_IN_THE_CRADLE
 			Song(
@@ -5136,7 +6052,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CATS_IN_THE_CRADLE_01",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CIRCLE_IN_THE_SAND
 			Song(
@@ -5150,7 +6067,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//COMING_ON_STRONG
 			Song(
@@ -5173,7 +6091,8 @@ public let RadioStations: [RadioStation] = [
 						file: "COMING_ON_STRONG_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DANGER_ZONE
 			Song(
@@ -5187,7 +6106,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//DIRTY_WHITE_BOY
 			Song(
@@ -5210,7 +6130,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DIRTY_WHITE_BOY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//FORTUNATE_SON
 			Song(
@@ -5233,7 +6154,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FORTUNATE_SON_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GIMME_ALL_YOUR_LOVIN
 			Song(
@@ -5256,7 +6178,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GIMME_ALL_YOUR_LOVIN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HEARTBEAT
 			Song(
@@ -5279,7 +6202,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HEARTBEAT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HIGHER_LOVE
 			Song(
@@ -5302,7 +6226,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HIGHER_LOVE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HOLLYWOOD_NIGHTS
 			Song(
@@ -5325,7 +6250,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HOLLYWOOD_NIGHTS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//I_CANT_WAIT
 			Song(
@@ -5348,7 +6274,8 @@ public let RadioStations: [RadioStation] = [
 						file: "I_CANT_WAIT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//I_DONT_CARE_ANYMORE
 			Song(
@@ -5362,7 +6289,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//I_WOULDNT_WANT_TO_BE
 			Song(
@@ -5385,7 +6313,8 @@ public let RadioStations: [RadioStation] = [
 						file: "I_WOULDNT_WANT_TO_BE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//IF_YOU_LEAVE_ME_NOW
 			Song(
@@ -5408,7 +6337,8 @@ public let RadioStations: [RadioStation] = [
 						file: "IF_YOU_LEAVE_ME_NOW_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//IM_FREE
 			Song(
@@ -5431,7 +6361,8 @@ public let RadioStations: [RadioStation] = [
 						file: "IM_FREE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LONELY_IS_THE_NIGHT
 			Song(
@@ -5454,7 +6385,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LONELY_IS_THE_NIGHT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MISSISSIPPI_QUEEN
 			Song(
@@ -5477,7 +6409,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MISSISSIPPI_QUEEN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//NIGHT_MOVES
 			Song(
@@ -5500,7 +6433,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NIGHT_MOVES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//OGDENS_NUT_GONE_FLAKE
 			Song(
@@ -5523,7 +6457,8 @@ public let RadioStations: [RadioStation] = [
 						file: "OGDENS_NUT_GONE_FLAKE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//PEACE_OF_MIND
 			Song(
@@ -5546,7 +6481,8 @@ public let RadioStations: [RadioStation] = [
 						file: "PEACE_OF_MIND_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//PHOTOGRAPH
 			Song(
@@ -5569,7 +6505,8 @@ public let RadioStations: [RadioStation] = [
 						file: "PHOTOGRAPH_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//RADIO_GA_GA
 			Song(
@@ -5588,7 +6525,8 @@ public let RadioStations: [RadioStation] = [
 						file: "RADIO_GA_GA_01",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//RAIN
 			Song(
@@ -5611,7 +6549,8 @@ public let RadioStations: [RadioStation] = [
 						file: "RAIN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ROCKIN_ME
 			Song(
@@ -5625,7 +6564,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//ROUNDABOUT
 			Song(
@@ -5648,7 +6588,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ROUNDABOUT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SATURDAY_NIGHTS_ALRIGHT
 			Song(
@@ -5671,7 +6612,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SATURDAY_NIGHTS_ALRIGHT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SHADOWS_OF_THE_NIGHT
 			Song(
@@ -5698,7 +6640,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SHADOWS_OF_THE_NIGHT_03",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_BREAKUP_SONG
 			Song(
@@ -5721,7 +6664,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_BREAKUP_SONG_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THIRTY_DAYS_IN_THE_HOLE
 			Song(
@@ -5744,7 +6688,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THIRTY_DAYS_IN_THE_HOLE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//TOO_LATE_FOR_GOODBYES
 			Song(
@@ -5767,7 +6712,8 @@ public let RadioStations: [RadioStation] = [
 						file: "TOO_LATE_FOR_GOODBYES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WE_BUILT_THIS_CITY
 			Song(
@@ -5790,7 +6736,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WE_BUILT_THIS_CITY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WHAT_A_FOOL_BELIEVES
 			Song(
@@ -5804,10 +6751,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25"],
 		time: [
@@ -5855,7 +6804,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ADULT_EDUCATION_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ALRIGHT
 			Song(
@@ -5869,7 +6819,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//ANTHEM
 			Song(
@@ -5892,7 +6843,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ANTHEM_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//APPLAUSE
 			Song(
@@ -5915,7 +6867,8 @@ public let RadioStations: [RadioStation] = [
 						file: "APPLAUSE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BAD_GIRLS
 			Song(
@@ -5938,7 +6891,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BAD_GIRLS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CIRCLE_IN_THE_SAND*
 			/*Song(
@@ -5961,7 +6915,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CIRCLE_IN_THE_SAND_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),*/
 			//COOLER_THAN_ME
 			Song(
@@ -5984,7 +6939,8 @@ public let RadioStations: [RadioStation] = [
 						file: "COOLER_THAN_ME_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DAYS_GO_BY
 			Song(
@@ -6007,7 +6963,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DAYS_GO_BY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DONT_WANNA_FALL_IN_LOVE
 			Song(
@@ -6030,7 +6987,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DONT_WANNA_FALL_IN_LOVE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//EVERYTHING_SHE_WANTS
 			Song(
@@ -6053,7 +7011,8 @@ public let RadioStations: [RadioStation] = [
 						file: "EVERYTHING_SHE_WANTS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//FEEL_GOOD_INC
 			Song(
@@ -6076,7 +7035,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FEEL_GOOD_INC_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GIMME_MORE
 			Song(
@@ -6099,7 +7059,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GIMME_MORE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GLAMOROUS
 			Song(
@@ -6122,7 +7083,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GLAMOROUS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//I_WANT_IT_THAT_WAY
 			Song(
@@ -6145,7 +7107,8 @@ public let RadioStations: [RadioStation] = [
 						file: "I_WANT_IT_THAT_WAY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//KIDS
 			Song(
@@ -6168,7 +7131,8 @@ public let RadioStations: [RadioStation] = [
 						file: "KIDS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LADY_HEAR_ME_TONIGHT
 			Song(
@@ -6191,7 +7155,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LADY_HEAR_ME_TONIGHT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LETS_GO_ALL_THE_WAY
 			Song(
@@ -6214,7 +7179,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LETS_GO_ALL_THE_WAY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LIVING_IN_A_BOX
 			Song(
@@ -6237,7 +7203,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LIVING_IN_A_BOX_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ME_AND_YOU
 			Song(
@@ -6260,7 +7227,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ME_AND_YOU_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MEET_ME_HALFWAY
 			Song(
@@ -6283,7 +7251,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MEET_ME_HALFWAY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MIDNIGHT_CITY
 			Song(
@@ -6306,7 +7275,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MIDNIGHT_CITY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MOVES_LIKE_JAGGER
 			Song(
@@ -6329,7 +7299,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MOVES_LIKE_JAGGER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MUSIC_SOUNDS_BETTER_WITH_YOU
 			Song(
@@ -6352,7 +7323,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MUSIC_SOUNDS_BETTER_WITH_YOU_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//NEW_SENSATION
 			Song(
@@ -6375,7 +7347,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NEW_SENSATION_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ON_OUR_OWN
 			Song(
@@ -6398,7 +7371,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ON_OUR_OWN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ONE_THING
 			Song(
@@ -6421,7 +7395,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ONE_THING_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ONLY_GIRL_IN_THE_WORLD
 			Song(
@@ -6444,7 +7419,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ONLY_GIRL_IN_THE_WORLD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//PROMISES_PROMISES
 			Song(
@@ -6467,7 +7443,8 @@ public let RadioStations: [RadioStation] = [
 						file: "PROMISES_PROMISES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//PURE_SHORES
 			Song(
@@ -6490,7 +7467,8 @@ public let RadioStations: [RadioStation] = [
 						file: "PURE_SHORES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//RYTHM_OF_THE_NIGHT
 			Song(
@@ -6513,7 +7491,8 @@ public let RadioStations: [RadioStation] = [
 						file: "RYTHM_OF_THE_NIGHT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SCANDALOUS
 			Song(
@@ -6540,7 +7519,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SCANDALOUS_03",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SEND_ME_AN_ANGEL
 			Song(
@@ -6554,7 +7534,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//SIX_UNDERGROUND
 			Song(
@@ -6577,7 +7558,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SIX_UNDERGROUND_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SMALLTOWN_BOY
 			Song(
@@ -6600,7 +7582,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SMALLTOWN_BOY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SOMETHING_GOT_ME_STARTED_REMIX
 			Song(
@@ -6623,7 +7606,8 @@ public let RadioStations: [RadioStation] = [
 						file: "0x00934929",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//TAPE_LOOP
 			Song(
@@ -6654,7 +7638,8 @@ public let RadioStations: [RadioStation] = [
 						file: "TAPE_LOOP_04",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//TELL_TO_MY_HEART
 			Song(
@@ -6677,7 +7662,8 @@ public let RadioStations: [RadioStation] = [
 						file: "TELL_IT_TO_MY_HEART_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//TENNIS_COURT
 			Song(
@@ -6700,7 +7686,8 @@ public let RadioStations: [RadioStation] = [
 						file: "TENNIS_COURT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_TIME_IS_NOW
 			Song(
@@ -6731,7 +7718,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_TIME_IS_NOW_04",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WAIT
 			Song(
@@ -6754,7 +7742,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WAIT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WEST_END_GIRLS
 			Song(
@@ -6777,7 +7766,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WEST_END_GIRLS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WITH_EVERY_HEARTBEAT
 			Song(
@@ -6800,7 +7790,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WITH_EVERY_HEARTBEAT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WORK
 			Song(
@@ -6823,10 +7814,12 @@ public let RadioStations: [RadioStation] = [
 						file: "WORK_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"],
 		time: [
@@ -6874,7 +7867,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ADHD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ALI_BOMAYE
 			Song(
@@ -6897,7 +7891,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ALI_BOMAYE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BAD_NEWS
 			Song(
@@ -6920,7 +7915,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BAD_NEWS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BASSHEADS
 			Song(
@@ -6943,7 +7939,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BASSHEADS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BUGATTI
 			Song(
@@ -6966,7 +7963,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BUGATTI_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//COLLARD_GREENS
 			Song(
@@ -6980,7 +7978,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//DO_IT_BIG
 			Song(
@@ -7003,7 +8002,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DO_IT_BIG_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//EASILY
 			Song(
@@ -7026,7 +8026,8 @@ public let RadioStations: [RadioStation] = [
 						file: "EASILY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//EVERYDAY
 			Song(
@@ -7049,7 +8050,8 @@ public let RadioStations: [RadioStation] = [
 						file: "EVERYDAY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HOLD_UP
 			Song(
@@ -7063,7 +8065,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//HOOD_GONE_LOVE_IT
 			Song(
@@ -7086,7 +8089,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HOOD_GONE_LOVE_IT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HOW_IT_WAS
 			Song(
@@ -7109,7 +8113,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HOW_IT_WAS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//HUNNID_STAX
 			Song(
@@ -7132,7 +8137,8 @@ public let RadioStations: [RadioStation] = [
 						file: "HUNNID_STAX_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//I_CANT_WAIT_SCOOTER
 			Song(
@@ -7155,7 +8161,8 @@ public let RadioStations: [RadioStation] = [
 						file: "I_CANT_WAIT_SCOOTER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//ILLUMINATE
 			Song(
@@ -7178,7 +8185,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ILLUMINATE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//IM_A_REAL_ONE
 			Song(
@@ -7201,7 +8209,8 @@ public let RadioStations: [RadioStation] = [
 						file: "IM_A_REAL_ONE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//KUSH_COMA
 			Song(
@@ -7224,7 +8233,8 @@ public let RadioStations: [RadioStation] = [
 						file: "KUSH_COMA_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LIFE_OF_A_MACK
 			Song(
@@ -7251,7 +8261,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LIFE_OF_A_MACK_03",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MILLIONS
 			Song(
@@ -7274,7 +8285,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MILLIONS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//R_CALI
 			Song(
@@ -7301,7 +8313,8 @@ public let RadioStations: [RadioStation] = [
 						file: "R_CALI_03",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//RELAXIN
 			Song(
@@ -7324,7 +8337,8 @@ public let RadioStations: [RadioStation] = [
 						file: "RELAXIN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SAY_THAT_THEN
 			Song(
@@ -7347,7 +8361,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SAY_THAT_THEN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SELLIN_DOPE
 			Song(
@@ -7361,7 +8376,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//SLOW_DOWN
 			Song(
@@ -7384,7 +8400,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SLOW_DOWN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SMOKIN_AND_RIDIN
 			Song(
@@ -7411,7 +8428,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SMOKIN_AND_RIDIN_03",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//STILL_LIVIN
 			Song(
@@ -7434,7 +8452,8 @@ public let RadioStations: [RadioStation] = [
 						file: "STILL_LIVIN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SWIMMING_POOLS
 			Song(
@@ -7457,7 +8476,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SWIMMING_POOLS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//TOO_HOOD
 			Song(
@@ -7480,7 +8500,8 @@ public let RadioStations: [RadioStation] = [
 						file: "TOO_HOOD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//UPPER_ECHELON
 			Song(
@@ -7503,7 +8524,8 @@ public let RadioStations: [RadioStation] = [
 						file: "UPPER_ECHELON_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WORK_FERG
 			Song(
@@ -7522,7 +8544,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WORK_FERG_01",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WORK_YOUNG_SCOOTER
 			Song(
@@ -7545,10 +8568,12 @@ public let RadioStations: [RadioStation] = [
 						file: "WORK_YOUNG_SCOOTER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21"],
 		time: [
@@ -7596,7 +8621,8 @@ public let RadioStations: [RadioStation] = [
 						file: "AMOEBA_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BLOWN_AWAY
 			Song(
@@ -7619,7 +8645,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BLOWN_AWAY_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BORED_OF_YOU
 			Song(
@@ -7642,7 +8669,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BORED_OF_YOU_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DONT_NEED_SOCIETY
 			Song(
@@ -7665,7 +8693,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DONT_NEED_SOCIETY_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DONT_PUSH_ME_AROUND
 			Song(
@@ -7688,7 +8717,8 @@ public let RadioStations: [RadioStation] = [
 						file: "DONT_PUSH_ME_AROUND_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//JOHN_WAYNE
 			Song(
@@ -7711,7 +8741,8 @@ public let RadioStations: [RadioStation] = [
 						file: "JOHN_WAYNE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LEXICON_DEVIL
 			Song(
@@ -7734,7 +8765,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LEXICON_DEVIL_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LIFE_OF_CRIME
 			Song(
@@ -7748,7 +8780,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//LINDA_BLAIR
 			Song(
@@ -7771,7 +8804,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LINDA_BLAIR_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LOS_ANGELES
 			Song(
@@ -7794,7 +8828,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LOS_ANGELES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//MY_WAR
 			Song(
@@ -7817,7 +8852,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MY_WAR_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//PERVERT
 			Song(
@@ -7831,7 +8867,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//ROCK_HOUSE
 			Song(
@@ -7845,7 +8882,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//SILENT_MAJORITY
 			Song(
@@ -7859,7 +8897,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//SUBLIMINAL
 			Song(
@@ -7882,7 +8921,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SUBLIMINAL_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_ENEMY
 			Song(
@@ -7905,7 +8945,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_ENEMY_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_MOUTH_DONT_STOP
 			Song(
@@ -7928,7 +8969,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_MOUTH_DONT_STOP_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WHATS_NEXT
 			Song(
@@ -7955,10 +8997,12 @@ public let RadioStations: [RadioStation] = [
 						file: "WHATS_NEXT_03",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12"],
 		time: [
@@ -7997,7 +9041,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MONO_CHATTERSPHERE
 			Song(
@@ -8011,7 +9056,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MONO_DCHAKRA_ATTACK_PART_2
 			Song(
@@ -8025,7 +9071,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MONO_FERNANDO_SHOW_1
 			Song(
@@ -8039,10 +9086,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: ["01","02","03","04","05","06","07","08","09","10","11"],
 		mono_solo: [],
 		time: [
@@ -8086,7 +9135,8 @@ public let RadioStations: [RadioStation] = [
 						file: "ARE_YOU_SURE_HANK_01",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CANT_HARDLY_STAND
 			Song(
@@ -8109,7 +9159,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CANT_HARDLY_STAND_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CONVOY
 			Song(
@@ -8136,7 +9187,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CONVOY_03",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CRAZY_ARMS
 			Song(
@@ -8150,7 +9202,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//DIPPIN_SNUFF
 			Song(
@@ -8164,7 +9217,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//DIVORCE
 			Song(
@@ -8178,7 +9232,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//GET_OUTTA_MY_CAR
 			Song(
@@ -8205,7 +9260,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GET_OUTTA_MY_CAR_03",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GET_WITH_IT
 			Song(
@@ -8219,7 +9275,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//HIGHWAY_MAN
 			Song(
@@ -8233,7 +9290,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//I_AINT_LIVING_LONG_LIKE_THIS
 			Song(
@@ -8252,7 +9310,8 @@ public let RadioStations: [RadioStation] = [
 						file: "I_AINT_LIVING_LONG_LIKE_THIS_01",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//IF_WANT_TO_GET_HEAVEN
 			Song(
@@ -8275,7 +9334,8 @@ public let RadioStations: [RadioStation] = [
 						file: "IF_WANT_TO_GET_HEAVEN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//IT_DONT_HURT_ANYMORE
 			Song(
@@ -8298,7 +9358,8 @@ public let RadioStations: [RadioStation] = [
 						file: "IT_DONT_HURT_ANYMORE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//IT_WONT_BE_LONG_HATING_YOU
 			Song(
@@ -8321,7 +9382,8 @@ public let RadioStations: [RadioStation] = [
 						file: "IT_WONT_BE_LONG_HATING_YOU_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SHE_MADE_TOOTHPICKS_OUT_OF_ME
 			Song(
@@ -8335,7 +9397,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//THE_GENERAL_LEE
 			Song(
@@ -8358,7 +9421,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_GENERAL_LEE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WHISKEY_RIVER
 			Song(
@@ -8381,7 +9445,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WHISKEY_RIVER_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//YOU_TOOK_ALL_THE_RAMBLIN_OUT
 			Song(
@@ -8404,10 +9469,12 @@ public let RadioStations: [RadioStation] = [
 						file: "YOU_TOOK_ALL_THE_RAMBLIN_OUT_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21"],
 		time: [
@@ -8554,10 +9621,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: [],
 		mono_solo: [],
 		time: [
@@ -8681,10 +9750,12 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			)
 		],
 		general: [],
+		general_root: nil,
 		sid: [],
 		mono_solo: [],
 		time: [
@@ -8732,7 +9803,8 @@ public let RadioStations: [RadioStation] = [
 						file: "AFRO_PUFFS_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//AMBITIONZ_AZ_A_RIDAH
 			Song(
@@ -8755,7 +9827,8 @@ public let RadioStations: [RadioStation] = [
 						file: "AMBITIONZ_AZ_A_RIDAH_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//APPETITE_FOR_DESTRUCTION
 			Song(
@@ -8778,7 +9851,8 @@ public let RadioStations: [RadioStation] = [
 						file: "APPETITE_FOR_DESTRUCTION_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BALLAD_OF_A_MENACE
 			Song(
@@ -8805,7 +9879,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BALLAD_OF_A_MENACE_03",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//BOW_DOWN
 			Song(
@@ -8828,7 +9903,8 @@ public let RadioStations: [RadioStation] = [
 						file: "BOW_DOWN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//C_WALK
 			Song(
@@ -8851,7 +9927,8 @@ public let RadioStations: [RadioStation] = [
 						file: "C_WALK_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//CAPTAIN_SAVE_A_HOE
 			Song(
@@ -8874,7 +9951,8 @@ public let RadioStations: [RadioStation] = [
 						file: "CAPTAIN_SAVE_A_HOE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//DOLLAZ_AND_SENSE
 			Song(
@@ -8888,7 +9966,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//FIRST_OF_THE_MONTH
 			Song(
@@ -8911,7 +9990,8 @@ public let RadioStations: [RadioStation] = [
 						file: "FIRST_OF_THE_MONTH_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GANGSTA_GANGSTA
 			Song(
@@ -8934,7 +10014,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GANGSTA_GANGSTA_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//GIN_AND_JUICE
 			Song(
@@ -8957,7 +10038,8 @@ public let RadioStations: [RadioStation] = [
 						file: "GIN_AND_JUICE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//I_GOT_FIVE_ON_IT
 			Song(
@@ -8971,7 +10053,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//LATE_NIGHT_HYPE
 			Song(
@@ -8994,7 +10077,8 @@ public let RadioStations: [RadioStation] = [
 						file: "LATE_NIGHT_HYPE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//LIKE_A_PIANO
 			Song(
@@ -9008,7 +10092,8 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil
 			),
 			//MIND_PLAYING_TRICKS
 			Song(
@@ -9031,7 +10116,8 @@ public let RadioStations: [RadioStation] = [
 						file: "MIND_PLAYING_TRICKS_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//NO_MORE_QUESTIONS
 			Song(
@@ -9054,7 +10140,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NO_MORE_QUESTIONS_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//NOTHIN_BUT_THE_CAVI_HIT
 			Song(
@@ -9077,7 +10164,8 @@ public let RadioStations: [RadioStation] = [
 						file: "NOTHIN_BUT_THE_CAVI_HIT_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SERVIN_EM_HEAT
 			Song(
@@ -9100,7 +10188,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SERVIN_EM_HEAT_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SHERM_STICK
 			Song(
@@ -9123,7 +10212,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SHERM_STICK_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//SO_YOU_WANT_TO_BE_A_GANGSTER
 			Song(
@@ -9146,7 +10236,8 @@ public let RadioStations: [RadioStation] = [
 						file: "SO_YOU_WANT_TO_BE_A_GANGSTER_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//STILL_D_R_E
 			Song(
@@ -9169,7 +10260,8 @@ public let RadioStations: [RadioStation] = [
 						file: "STILL_D_R_E_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//STRAIGHT_UP_MENACE
 			Song(
@@ -9192,7 +10284,8 @@ public let RadioStations: [RadioStation] = [
 						file: "STRAIGHT_UP_MENACE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_MURDA_SHOW
 			Song(
@@ -9223,7 +10316,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_MURDA_SHOW_04",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THE_NEXT_EPISODE
 			Song(
@@ -9246,7 +10340,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_NEXT_EPISODE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//THIS_DJ
 			Song(
@@ -9269,7 +10364,8 @@ public let RadioStations: [RadioStation] = [
 						file: "THIS_DJ_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WE_ROLL_DEEP
 			Song(
@@ -9292,7 +10388,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WE_ROLL_DEEP_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WHAT_WOULD_YOU_DO
 			Song(
@@ -9315,7 +10412,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WHAT_WOULD_YOU_DO_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//WHAT_YOU_WANNA_DO
 			Song(
@@ -9338,7 +10436,8 @@ public let RadioStations: [RadioStation] = [
 						file: "WHAT_YOU_WANNA_DO_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			),
 			//YOU_KNOW_HOW_WE_DO
 			Song(
@@ -9361,10 +10460,12 @@ public let RadioStations: [RadioStation] = [
 						file: "YOU_KNOW_HOW_WE_DO_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro"
 			)
 		],
 		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"],
+		general_root: "general",
 		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"],
 		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
 		time: [
@@ -9377,3 +10478,5 @@ public let RadioStations: [RadioStation] = [
 		]
 	),
 ]
+
+
