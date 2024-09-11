@@ -11,19 +11,17 @@ public let RadioStations: [RadioStation] = [
 		index: 0,
 		number: 10,
 		name: "Radio Off",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 4,
 			column: 4
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: nil,
 		songs: nil,
 		general: nil,
-		general_root: nil,
-		sid: nil,
-		mono_solo: nil,
+		identity: nil,
+		solo: nil,
 		time: nil,
 		to: nil
 	),
@@ -33,19 +31,17 @@ public let RadioStations: [RadioStation] = [
 		index: 1,
 		number: 26,
 		name: "Media Player",
-		image: "gta_radio_stations_texture11_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture11_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: nil,
 		songs: nil,
 		general: nil,
-		general_root: nil,
-		sid: nil,
-		mono_solo: nil,
+		identity: nil,
+		solo: nil,
 		time: nil,
 		to: nil
 	),
@@ -55,13 +51,12 @@ public let RadioStations: [RadioStation] = [
 		index: 2,
 		number: 11,
 		name: "Blaine County Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 3,
 			column: 2
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "RADIO_11_TALK_02",
 		songs: [
 			//MONO_BCR_COMMUNITY_HOUR
@@ -125,10 +120,21 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: ["01","02","03","04","05","06","07","08","09","10","11"],
-		mono_solo: [],
+		general: nil,
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"])
+		],
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -144,19 +150,17 @@ public let RadioStations: [RadioStation] = [
 		index: 3,
 		number: 23,
 		name: "The Music Locker",
-		image: "gta_radio_stations_texture08_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture08_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: nil,
 		songs: nil,
 		general: nil,
-		general_root: nil,
-		sid: nil,
-		mono_solo: nil,
+		identity: nil,
+		solo: nil,
 		time: nil,
 		to: nil
 	),
@@ -166,13 +170,12 @@ public let RadioStations: [RadioStation] = [
 		index: 4,
 		number: 27,
 		name: "MOTOMAMI Los Santos",
-		image: "gta_radio_stations_texture12_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture12_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: "dlc_security_music",
 		songs: [
 			//100_dissin
@@ -910,10 +913,41 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "motomami_intro"
 			),
 		],
-		general: nil,
-		general_root: "motomami_general",
-		sid: nil,
-		mono_solo: nil,
+		general: General(
+			root: "motomami_general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11"]
+		),
+		identity: [
+			Identity(root: "moto_ident_1", list: ["0x0B3B3827","0x1227D957"]),
+			Identity(root: "moto_ident_2", list: ["0x0A893D1D","0x119F2690"]),
+			Identity(root: "moto_ident_3", list: ["0x1C17A011","0x153C62E5"]),
+			Identity(root: "moto_ident_4", list: ["0x1C192E06","0x1EA39885"]),
+			Identity(root: "moto_ident_5", list: ["0x1EA39885","0x01DD71A7"]),
+			Identity(root: "moto_ident_7", list: ["0x15754A7D","0x19538A97"]),
+			Identity(root: "moto_ident_8", list: ["0x05CE02F1","0x056682F5"]),
+			Identity(root: "moto_ident_9", list: ["0x0EF05639","0x13C14C3B"]),
+			Identity(root: "moto_ident_10", list: ["0x0EF0522E","0x1420E889"]),
+			Identity(root: "moto_ident_11", list: ["0x1452A569","0x1940779B"]),
+			Identity(root: "moto_ident_12", list: ["0x13F66CD7","0x0842F51A"]),
+			Identity(root: "moto_ident_13", list: ["0x0C3D7A42","0x1AA8DD10"]),
+			Identity(root: "moto_ident_14", list: ["0x1A44C918","0x065DBF6E"]),
+			Identity(root: "moto_ident_16", list: ["0x1D76D7B2","0x1F4863EE"]),
+			Identity(root: "moto_ident_17", list: ["0x0898A70A","0x08824102"])
+		],
+		solo: [
+			Solo(root: "motomami_dj_solo_01", list: ["0x039BD0CA","0x123B8251"]),
+			Solo(root: "motomami_dj_solo_02", list: ["0x1E2081FB","0x163CA576"]),
+			Solo(root: "motomami_dj_solo_03", list: ["0x0D06CD91","0x1C5CCE9B"]),
+			Solo(root: "motomami_dj_solo_04", list: ["0x0CFECC7A","0x1C32390E"]),
+			Solo(root: "motomami_dj_solo_05", list: ["0x0DD80922","0x01DD71A7"]),
+			Solo(root: "motomami_dj_solo_06", list: ["0x12DD865C","0x14FA9B90"]),
+			Solo(root: "motomami_dj_solo_07", list: ["0x0F9AFB4F","0x1B88AD3E"]),
+			Solo(root: "motomami_dj_solo_08", list: ["0x1A47A0C9","0x13150690"]),
+			Solo(root: "motomami_dj_solo_09", list: ["0x0CB12190","0x1C52772F"]),
+			Solo(root: "motomami_dj_solo_10", list: ["0x0EECD09E","0x08650DA8"]),
+			Solo(root: "motomami_dj_solo_11", list: ["0x1BDE4C18","0x07709D92"])
+		],
 		time: nil,
 		to: nil
 	),
@@ -923,13 +957,12 @@ public let RadioStations: [RadioStation] = [
 		index: 5,
 		number: 12,
 		name: "The Blue Ark",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 4,
 			column: 3
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_12_REGGAE",
 		songs: [
 			//ADDI_TRUTH
@@ -1347,10 +1380,44 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"]),
+			Identity(root: "id_15", list: ["ID_15"]),
+			Identity(root: "id_16", list: ["ID_16"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"])
+		],
 		time: [
 			"EVENING": ["01","02","03"],
 			"MORNING": ["01","02","03","04","05"]
@@ -1366,13 +1433,12 @@ public let RadioStations: [RadioStation] = [
 		index: 6,
 		number: 13,
 		name: "Worldwide FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 1,
 			column: 4
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "RADIO_13_JAZZ",
 		songs: [
 			//wwfm_p1
@@ -1924,10 +1990,9 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -1943,13 +2008,12 @@ public let RadioStations: [RadioStation] = [
 		index: 7,
 		number: 14,
 		name: "FlyLo FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 2,
 			column: 4
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "RADIO_14_DANCE_02",
 		songs: [
 			Song(
@@ -2397,10 +2461,9 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -2416,13 +2479,12 @@ public let RadioStations: [RadioStation] = [
 		index: 8,
 		number: 15,
 		name: "The Low Down 91.1",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 3,
 			column: 4
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_15_MOTOWN",
 		songs: [
 			//ASHLEYS_ROACHCLIP
@@ -2879,10 +2941,40 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04","05"],
 			"MORNING": ["01","02","03","04","05","06"]
@@ -2896,15 +2988,14 @@ public let RadioStations: [RadioStation] = [
 	// MARK: The Lab
 	RadioStation(
 		index: 9,
-		number: 19, /*16*/
+		number: 19,
 		name: "The Lab",
-		image: "gta_radio_stations_texture04_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture04_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "dlc_thelab",
 		songs: [
 			//LAB_P1
@@ -3071,10 +3162,9 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -3090,13 +3180,12 @@ public let RadioStations: [RadioStation] = [
 		index: 10,
 		number: 16, /*17*/
 		name: "Radio Mirror Park",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 4,
 			column: 2
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_16_SILVERLAKE",
 		songs: [
 			//ALWAYS
@@ -3983,10 +4072,41 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04"],
 			"MORNING": ["01","02","03","04"]
@@ -4002,19 +4122,17 @@ public let RadioStations: [RadioStation] = [
 		index: 11,
 		number: 24,
 		name: "Kult FM",
-		image: "gta_radio_stations_texture10_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture10_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: nil,
 		songs: nil,
 		general: nil,
-		general_root: nil,
-		sid: nil,
-		mono_solo: nil,
+		identity: nil,
+		solo: nil,
 		time: nil,
 		to: nil
 	),
@@ -4024,13 +4142,12 @@ public let RadioStations: [RadioStation] = [
 		index: 12,
 		number: 17, /*18*/
 		name: "Space 103.2",
-		image: "gta_radio_stations_texture02_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture02_512",
 			row: 1,
 			column: 1
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_17_FUNK",
 		songs: [
 			//BACK_AND_FORTH
@@ -4472,10 +4589,42 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04"],
 			"MORNING": ["01","02","03","04"]
@@ -4491,13 +4640,12 @@ public let RadioStations: [RadioStation] = [
 		index: 13,
 		number: 18, /*19*/
 		name: "Vinewood Boulevard Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 2,
 			column: 3
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_18_90S_ROCK",
 		songs: [
 			//ANSWER_TO_YOURSELF
@@ -4966,10 +5114,40 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04","05"],
 			"MORNING": ["01","02","03","04","05"]
@@ -4985,13 +5163,12 @@ public let RadioStations: [RadioStation] = [
 		index: 14,
 		number: 20,
 		name: "Blonded Los Santos 97.8 FM",
-		image: "gta_radio_stations_texture05_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture05_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "dlc_christmas2017",
 		songs: [
 			//RADIO_XM17_P1
@@ -5210,10 +5387,9 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -5229,13 +5405,12 @@ public let RadioStations: [RadioStation] = [
 		index: 15,
 		number: 21,
 		name: "Los Santos Underground Radio",
-		image: "gta_radio_stations_texture06_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture06_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "dlc_battle_music",
 		songs: [
 			//BATTLE_MIX1_RADIO_01
@@ -5797,10 +5972,9 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -5816,19 +5990,17 @@ public let RadioStations: [RadioStation] = [
 		index: 16,
 		number: 22,
 		name: "iFruit Radio",
-		image: "gta_radio_stations_texture07_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture07_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: nil,
 		songs: nil,
 		general: nil,
-		general_root: nil,
-		sid: nil,
-		mono_solo: nil,
+		identity: nil,
+		solo: nil,
 		time: nil,
 		to: nil
 	),
@@ -5838,19 +6010,17 @@ public let RadioStations: [RadioStation] = [
 		index: 17,
 		number: 0,
 		name: "Self Radio",
-		image: "gta_radio_stations_texture03_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture03_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: false,
+		order: "random",
 		root: nil,
 		songs: nil,
 		general: nil,
-		general_root: nil,
-		sid: nil,
-		mono_solo: nil,
+		identity: nil,
+		solo: nil,
 		time: nil,
 		to: nil
 	),
@@ -5860,19 +6030,17 @@ public let RadioStations: [RadioStation] = [
 		index: 18,
 		number: 25,
 		name: "Still Slipping Los Santos",
-		image: "gta_radio_stations_texture09_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture09_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: nil,
 		songs: nil,
 		general: nil,
-		general_root: nil,
-		sid: nil,
-		mono_solo: nil,
+		identity: nil,
+		solo: nil,
 		time: nil,
 		to: nil
 	),
@@ -5882,13 +6050,12 @@ public let RadioStations: [RadioStation] = [
 		index: 19,
 		number: 1,
 		name: "Los Santos Rock Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 4,
 			column: 1
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_01_CLASS_ROCK",
 		songs: [
 			//ALL_THE_THINGS_SHE_SAID
@@ -6755,10 +6922,53 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"]),
+			Solo(root: "mono_solo_22", list: ["MONO_SOLO_22"]),
+			Solo(root: "mono_solo_23", list: ["MONO_SOLO_23"]),
+			Solo(root: "mono_solo_24", list: ["MONO_SOLO_24"]),
+			Solo(root: "mono_solo_25", list: ["MONO_SOLO_25"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04","05","06","07"],
 			"MORNING": ["01","02","03","04","05","06","07"]
@@ -6774,13 +6984,12 @@ public let RadioStations: [RadioStation] = [
 		index: 20,
 		number: 2,
 		name: "Non-Stop-Pop FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 1,
 			column: 2
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_02_POP",
 		songs: [
 			//ADULT_EDUCATION
@@ -7818,10 +8027,61 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"]),
+			Identity(root: "id_15", list: ["ID_15"]),
+			Identity(root: "id_16", list: ["ID_16"]),
+			Identity(root: "id_17", list: ["ID_17"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"]),
+			Solo(root: "mono_solo_22", list: ["MONO_SOLO_22"]),
+			Solo(root: "mono_solo_23", list: ["MONO_SOLO_23"]),
+			Solo(root: "mono_solo_24", list: ["MONO_SOLO_24"]),
+			Solo(root: "mono_solo_25", list: ["MONO_SOLO_25"]),
+			Solo(root: "mono_solo_26", list: ["MONO_SOLO_26"]),
+			Solo(root: "mono_solo_27", list: ["MONO_SOLO_27"]),
+			Solo(root: "mono_solo_28", list: ["MONO_SOLO_28"]),
+			Solo(root: "mono_solo_29", list: ["MONO_SOLO_29"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04","05","06"],
 			"MORNING": ["01","02","03","04","05","06"]
@@ -7837,13 +8097,12 @@ public let RadioStations: [RadioStation] = [
 		index: 21,
 		number: 3,
 		name: "Radio Los Santos",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 3,
 			column: 3
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_03_HIPHOP_NEW",
 		songs: [
 			//ADHD
@@ -8572,10 +8831,50 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04","05","06"],
 			"MORNING": ["01","02","03","04","05"]
@@ -8591,13 +8890,12 @@ public let RadioStations: [RadioStation] = [
 		index: 22,
 		number: 4,
 		name: "Channel X",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 3,
 			column: 1
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_04_PUNK",
 		songs: [
 			//AMOEBA
@@ -9001,10 +9299,37 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"])
+		],
 		time: [
 			"EVENING": ["01","02","03"],
 			"MORNING": ["01","02","03","04"]
@@ -9020,13 +9345,12 @@ public let RadioStations: [RadioStation] = [
 		index: 23,
 		number: 5,
 		name: "WCTR",
-		image: "gta_radio_stations_texture02_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture02_512",
 			row: 2,
 			column: 1
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "RADIO_05_TALK_01",
 		songs: [
 			//MONO_CHAKRA_ATTACK_PART_1
@@ -9090,10 +9414,21 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: ["01","02","03","04","05","06","07","08","09","10","11"],
-		mono_solo: [],
+		general: nil,
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"])
+		],
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -9109,13 +9444,12 @@ public let RadioStations: [RadioStation] = [
 		index: 24,
 		number: 6,
 		name: "Rebel Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 1,
 			column: 1
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_06_COUNTRY",
 		songs: [
 			//ARE_YOU_SURE_HANK
@@ -9473,10 +9807,49 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04"],
 			"MORNING": ["01","02","03","04"]
@@ -9492,13 +9865,12 @@ public let RadioStations: [RadioStation] = [
 		index: 25,
 		number: 7,
 		name: "Soulwax FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 2,
 			column: 2
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: "RADIO_07_DANCE_01",
 		songs: [
 			//SOULWAX_FM_FINAL_MIX_
@@ -9625,10 +9997,9 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -9644,13 +10015,12 @@ public let RadioStations: [RadioStation] = [
 		index: 26,
 		number: 8,
 		name: "East Los FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 2,
 			column: 1
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: "RADIO_08_MEXICAN",
 		songs: [
 			//MEX_FINAL_MIX_
@@ -9754,10 +10124,9 @@ public let RadioStations: [RadioStation] = [
 				intros_root: nil
 			)
 		],
-		general: [],
-		general_root: nil,
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -9773,13 +10142,12 @@ public let RadioStations: [RadioStation] = [
 		index: 27,
 		number: 9,
 		name: "West Coast Classics",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 1,
 			column: 3
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_09_HIPHOP_OLD",
 		songs: [
 			//AFRO_PUFFS
@@ -10464,10 +10832,63 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro"
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"],
-		general_root: "general",
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"]),
+			Identity(root: "id_15", list: ["ID_15"]),
+			Identity(root: "id_16", list: ["ID_16"]),
+			Identity(root: "id_17", list: ["ID_17"]),
+			Identity(root: "id_18", list: ["ID_18"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"]),
+			Solo(root: "mono_solo_22", list: ["MONO_SOLO_22"]),
+			Solo(root: "mono_solo_23", list: ["MONO_SOLO_23"]),
+			Solo(root: "mono_solo_24", list: ["MONO_SOLO_24"]),
+			Solo(root: "mono_solo_25", list: ["MONO_SOLO_25"]),
+			Solo(root: "mono_solo_26", list: ["MONO_SOLO_26"]),
+			Solo(root: "mono_solo_27", list: ["MONO_SOLO_27"]),
+			Solo(root: "mono_solo_28", list: ["MONO_SOLO_28"]),
+			Solo(root: "mono_solo_29", list: ["MONO_SOLO_29"]),
+			Solo(root: "mono_solo_30", list: ["MONO_SOLO_30"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04","05","06","07"],
 			"MORNING": ["01","02","03","04","05","06","07"]

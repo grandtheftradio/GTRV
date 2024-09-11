@@ -194,14 +194,15 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
             
             currentSong = nil
             
-            if let monoSolos: [String] = Station.mono_solo {
-                let stationRoot: String = Station.root ?? ""
-                let m: Int = Int(arc4random_uniform(UInt32(monoSolos.count))) //RANDOM MONO_SOLO INDEX
-                let monoSolo: String = monoSolos[m]
-                let monoSoloRoot: String = ("\(stationRoot)/mono_solo_\(monoSolo)")
-                print("mono_solo: \(monoSoloRoot)/MONO_SOLO_\(monoSolo)")
-                guard let monoSoloPath = Bundle.main.path(forResource: "MONO_SOLO_\(monoSolo)", ofType: "mp3", inDirectory: monoSoloRoot) else {
-                    //print("guard: play > mono_solo > monoSoloPath")
+            if let monoSolos: [Solo] = Station.solo {
+				let stationRoot: String = Station.root ?? ""
+				let m: Int = Int(arc4random_uniform(UInt32(monoSolos.count))) //RANDOM MONO_SOLO INDEX
+				let monoSolo: Solo = monoSolos[m]
+				let solo: String = monoSolo.list.randomElement()!
+				let monoSoloRoot: String = ("\(stationRoot)/\(monoSolos[m].root)")
+				print("mono_solo: \(monoSoloRoot)/\(monoSoloRoot)")
+				guard let monoSoloPath = Bundle.main.path(forResource: solo, ofType: "mp3", inDirectory: monoSoloRoot) else {
+				    //print("guard: play > mono_solo > monoSoloPath")
                     return
                 }
                 let monoSoloURL: URL = URL(fileURLWithPath: monoSoloPath)
@@ -261,13 +262,14 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
             
             currentSong = nil
             
-            if let stationIDs: [String] = Station.sid {
+            if let stationIDs: [Identity] = Station.identity {
                 let stationRoot: String = Station.root ?? ""
                 let i: Int = Int(arc4random_uniform(UInt32(stationIDs.count))) //RANDOM ID INDEX
-                let stationID: String = stationIDs[i]
-                let stationIDRoot: String = ("\(stationRoot)/id_\(stationID)")
+				let stationIdentity: Identity = stationIDs[i]
+				let stationID: String = stationIdentity.list.randomElement()!
+				let stationIDRoot: String = ("\(stationRoot)/\(stationIdentity.root)")
                 print("id: \(stationIDRoot)/ID_\(stationID)")
-                guard let stationIDPath = Bundle.main.path(forResource: "ID_\(stationID)", ofType: "mp3", inDirectory: stationIDRoot) else {
+                guard let stationIDPath = Bundle.main.path(forResource: stationID, ofType: "mp3", inDirectory: stationIDRoot) else {
                     //print("guard: play > station_id > stationIDPath")
                     return
                 }
@@ -296,7 +298,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
                 var unplayed: [Song] = unplayedSongs[Station.name] ?? []
                 
                 if (unplayed.isEmpty) {
-                    if (Station.rotate) {
+					if (Station.order == "rotate") {
                         guard let isRotated = rotated[Station.name] else {
                             //print("guard: play > song > unplayed.isEmpty > isRotated")
                             return
@@ -317,9 +319,9 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
                     }
                 }
                 let stationRoot: String = Station.root ?? ""
-				let generalRoot: String = Station.general_root ?? ""
+				let generalRoot: String = Station.general?.root ?? ""
                 var s: Int = 0 //UNPLAYED SONG INDEX
-                if Station.randomize {
+				if (Station.order == "random") {
                     s = Int(arc4random_uniform(UInt32(unplayed.count)))
                 }
                 
@@ -340,7 +342,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
                 }
                 
                 let hasIntros: Bool = !intros.isEmpty
-                let generals: [String] = Station.general ?? []
+				let generals: [String] = Station.general?.list ?? []
                 let hasGenerals: Bool = !generals.isEmpty
                 
                 var timeMornings: [String] = []
@@ -492,7 +494,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
                 
                 // PLAY SONG
                 print("song: \(songRoot)\(song)")
-                guard let songPath = Bundle.main.path(forResource: song, ofType: "mp3", inDirectory: "\(songRoot)/") else {
+				guard let songPath = Bundle.main.path(forResource: song, ofType: "mp3", inDirectory: "\(songRoot)/") else {
                     //print("guard: play > ad > songPath")
                     return
                 }
@@ -603,18 +605,18 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
         var playNews: Bool = false
         var playID: Bool = false
         
-        switch Station.number {
-        case 7, 8, 13, 14, 16, 20, 21:
-            playSong = true
-        default:
+        switch Station.name {
+		case "Soulwax FM", "East Los FM", "Worldwide FM", "FlyLo FM", "The Lab", "Blonded Los Santos 97.8 FM", "Los Santos Underground Radio":
+			playSong = true
+		default:
             switch outroType {
             case "ad":
                 playAd = true
             case "news":
                 playNews = true
             default:
-                switch Station.number {
-                case 5, 11:
+                switch Station.name {
+				case "WCTR", "Blaine County Radio":
                     let news_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
                     switch lastPlayed {
                     case "id":
@@ -887,9 +889,9 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
             // IMAGE
             if (albumArtwork == nil) {
                 //let CurrentRadioStation: RadioStation = RadioStations[currentStation.index]
-                let logo: String = currentStation.image
-                let row: Int = currentStation.imagePosition.row
-                let column: Int = currentStation.imagePosition.column
+				let logo: String = currentStation.image.name
+                let row: Int = currentStation.image.row
+                let column: Int = currentStation.image.column
                 let sourceImage: UIImage = UIImage(named: logo)!
                 let cropRect: CGRect = CGRect(
                     x: ((128.0 * Double(row)) - 128),

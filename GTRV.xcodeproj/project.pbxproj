@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB51EB4E2AB617A80079C937 /* RADIO_01_CLASS_ROCK in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB4D2AB617A80079C937 /* RADIO_01_CLASS_ROCK */; };
 		EB51EB502AB617BA0079C937 /* RADIO_02_POP in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB4F2AB617BA0079C937 /* RADIO_02_POP */; };
-		EB51EB522AB61A020079C937 /* DLC_BATTLE_MUSIC in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB512AB61A020079C937 /* DLC_BATTLE_MUSIC */; };
+		EB51EB522AB61A020079C937 /* dlc_battle_music in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB512AB61A020079C937 /* dlc_battle_music */; };
 		EB51EB542AB61A250079C937 /* RADIO_03_HIPHOP_NEW in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB532AB61A250079C937 /* RADIO_03_HIPHOP_NEW */; };
 		EB51EB562AB61A330079C937 /* RADIO_04_PUNK in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB552AB61A330079C937 /* RADIO_04_PUNK */; };
 		EB51EB582AB61A3F0079C937 /* RADIO_05_TALK_01 in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB572AB61A3F0079C937 /* RADIO_05_TALK_01 */; };
@@ -25,10 +25,15 @@
 		EB51EB6C2AB61AC00079C937 /* RADIO_16_SILVERLAKE in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB6B2AB61AC00079C937 /* RADIO_16_SILVERLAKE */; };
 		EB51EB6E2AB61AE80079C937 /* RADIO_17_FUNK in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB6D2AB61AE80079C937 /* RADIO_17_FUNK */; };
 		EB51EB702AB61AF10079C937 /* RADIO_18_90S_ROCK in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB6F2AB61AF10079C937 /* RADIO_18_90S_ROCK */; };
-		EB51EB722AB61B040079C937 /* DLC_THELAB in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB712AB61B040079C937 /* DLC_THELAB */; };
-		EB51EB742AB61BCC0079C937 /* DLC_CHRISTMAS2017 in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB732AB61BCB0079C937 /* DLC_CHRISTMAS2017 */; };
+		EB51EB722AB61B040079C937 /* dlc_thelab in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB712AB61B040079C937 /* dlc_thelab */; };
+		EB51EB742AB61BCC0079C937 /* dlc_christmas2017 in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB732AB61BCB0079C937 /* dlc_christmas2017 */; };
 		EB51EB762AB620590079C937 /* RADIO_ADVERTS in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB752AB620590079C937 /* RADIO_ADVERTS */; };
 		EB51EB782AB620640079C937 /* RADIO_NEWS in Resources */ = {isa = PBXBuildFile; fileRef = EB51EB772AB620630079C937 /* RADIO_NEWS */; };
+		EB75BB3A2C91D90700BE0F45 /* dlc_security_music in Resources */ = {isa = PBXBuildFile; fileRef = EB75BB392C91D90700BE0F45 /* dlc_security_music */; };
+		EB75BB3C2C91F19400BE0F45 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3B2C91F19400BE0F45 /* ImageData.swift */; };
+		EB75BB3E2C91FDE500BE0F45 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3D2C91FDE500BE0F45 /* General.swift */; };
+		EB75BB402C9216FE00BE0F45 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3F2C9216FE00BE0F45 /* Identity.swift */; };
+		EB75BB422C922BF300BE0F45 /* Solo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB412C922BF300BE0F45 /* Solo.swift */; };
 		EBB3BE3A2A97E79300E72A23 /* GTRVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE392A97E79300E72A23 /* GTRVApp.swift */; };
 		EBB3BE3C2A97E79300E72A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE3B2A97E79300E72A23 /* ContentView.swift */; };
 		EBB3BE3E2A97E79400E72A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE3D2A97E79400E72A23 /* Assets.xcassets */; };
@@ -49,7 +54,6 @@
 		EBB3BE932A97F28300E72A23 /* Sector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE922A97F28300E72A23 /* Sector.swift */; };
 		EBB3BE952A97FBF600E72A23 /* CustomColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE942A97FBF500E72A23 /* CustomColorData.swift */; };
 		EBB3BE972A97FC3900E72A23 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE962A97FC3900E72A23 /* RadioStation.swift */; };
-		EBB3BE992A97FC6B00E72A23 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE982A97FC6B00E72A23 /* Position.swift */; };
 		EBB3BE9B2A97FCA600E72A23 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE9A2A97FCA600E72A23 /* Label.swift */; };
 		EBB3BE9D2A97FCD900E72A23 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE9C2A97FCD900E72A23 /* Intro.swift */; };
 		EBB3BEA02A97FD4200E72A23 /* BackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE9F2A97FD4200E72A23 /* BackgroundImage.swift */; };
@@ -65,7 +69,7 @@
 /* Begin PBXFileReference section */
 		EB51EB4D2AB617A80079C937 /* RADIO_01_CLASS_ROCK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_01_CLASS_ROCK; sourceTree = "<group>"; };
 		EB51EB4F2AB617BA0079C937 /* RADIO_02_POP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_02_POP; sourceTree = "<group>"; };
-		EB51EB512AB61A020079C937 /* DLC_BATTLE_MUSIC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_BATTLE_MUSIC; sourceTree = "<group>"; };
+		EB51EB512AB61A020079C937 /* dlc_battle_music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dlc_battle_music; sourceTree = "<group>"; };
 		EB51EB532AB61A250079C937 /* RADIO_03_HIPHOP_NEW */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_03_HIPHOP_NEW; sourceTree = "<group>"; };
 		EB51EB552AB61A330079C937 /* RADIO_04_PUNK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_04_PUNK; sourceTree = "<group>"; };
 		EB51EB572AB61A3F0079C937 /* RADIO_05_TALK_01 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_05_TALK_01; sourceTree = "<group>"; };
@@ -81,10 +85,15 @@
 		EB51EB6B2AB61AC00079C937 /* RADIO_16_SILVERLAKE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_16_SILVERLAKE; sourceTree = "<group>"; };
 		EB51EB6D2AB61AE80079C937 /* RADIO_17_FUNK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_17_FUNK; sourceTree = "<group>"; };
 		EB51EB6F2AB61AF10079C937 /* RADIO_18_90S_ROCK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_18_90S_ROCK; sourceTree = "<group>"; };
-		EB51EB712AB61B040079C937 /* DLC_THELAB */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_THELAB; sourceTree = "<group>"; };
-		EB51EB732AB61BCB0079C937 /* DLC_CHRISTMAS2017 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DLC_CHRISTMAS2017; sourceTree = "<group>"; };
+		EB51EB712AB61B040079C937 /* dlc_thelab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dlc_thelab; sourceTree = "<group>"; };
+		EB51EB732AB61BCB0079C937 /* dlc_christmas2017 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dlc_christmas2017; sourceTree = "<group>"; };
 		EB51EB752AB620590079C937 /* RADIO_ADVERTS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_ADVERTS; sourceTree = "<group>"; };
 		EB51EB772AB620630079C937 /* RADIO_NEWS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RADIO_NEWS; sourceTree = "<group>"; };
+		EB75BB392C91D90700BE0F45 /* dlc_security_music */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dlc_security_music; path = ../../../../Desktop/Audio/dlc_security_music; sourceTree = "<group>"; };
+		EB75BB3B2C91F19400BE0F45 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		EB75BB3D2C91FDE500BE0F45 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		EB75BB3F2C9216FE00BE0F45 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		EB75BB412C922BF300BE0F45 /* Solo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo.swift; sourceTree = "<group>"; };
 		EBB3BE362A97E79300E72A23 /* GTRV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTRV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB3BE392A97E79300E72A23 /* GTRVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTRVApp.swift; sourceTree = "<group>"; };
 		EBB3BE3B2A97E79300E72A23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,7 +115,6 @@
 		EBB3BE922A97F28300E72A23 /* Sector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sector.swift; sourceTree = "<group>"; };
 		EBB3BE942A97FBF500E72A23 /* CustomColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorData.swift; sourceTree = "<group>"; };
 		EBB3BE962A97FC3900E72A23 /* RadioStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
-		EBB3BE982A97FC6B00E72A23 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		EBB3BE9A2A97FCA600E72A23 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		EBB3BE9C2A97FCD900E72A23 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		EBB3BE9F2A97FD4200E72A23 /* BackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImage.swift; sourceTree = "<group>"; };
@@ -176,6 +184,7 @@
 		EBB3BE472A97E94300E72A23 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				EB75BB392C91D90700BE0F45 /* dlc_security_music */,
 				EB51EB4D2AB617A80079C937 /* RADIO_01_CLASS_ROCK */,
 				EB51EB4F2AB617BA0079C937 /* RADIO_02_POP */,
 				EB51EB532AB61A250079C937 /* RADIO_03_HIPHOP_NEW */,
@@ -190,12 +199,12 @@
 				EB51EB652AB61AA40079C937 /* RADIO_13_JAZZ */,
 				EB51EB672AB61AAC0079C937 /* RADIO_14_DANCE_02 */,
 				EB51EB692AB61AB80079C937 /* RADIO_15_MOTOWN */,
-				EB51EB712AB61B040079C937 /* DLC_THELAB */,
+				EB51EB712AB61B040079C937 /* dlc_thelab */,
 				EB51EB6B2AB61AC00079C937 /* RADIO_16_SILVERLAKE */,
 				EB51EB6D2AB61AE80079C937 /* RADIO_17_FUNK */,
 				EB51EB6F2AB61AF10079C937 /* RADIO_18_90S_ROCK */,
-				EB51EB732AB61BCB0079C937 /* DLC_CHRISTMAS2017 */,
-				EB51EB512AB61A020079C937 /* DLC_BATTLE_MUSIC */,
+				EB51EB732AB61BCB0079C937 /* dlc_christmas2017 */,
+				EB51EB512AB61A020079C937 /* dlc_battle_music */,
 				EB51EB752AB620590079C937 /* RADIO_ADVERTS */,
 				EB51EB772AB620630079C937 /* RADIO_NEWS */,
 			);
@@ -238,11 +247,14 @@
 			isa = PBXGroup;
 			children = (
 				EBB3BE942A97FBF500E72A23 /* CustomColorData.swift */,
+				EB75BB3D2C91FDE500BE0F45 /* General.swift */,
+				EB75BB3F2C9216FE00BE0F45 /* Identity.swift */,
+				EB75BB3B2C91F19400BE0F45 /* ImageData.swift */,
 				EBB3BE9C2A97FCD900E72A23 /* Intro.swift */,
 				EBB3BE9A2A97FCA600E72A23 /* Label.swift */,
-				EBB3BE982A97FC6B00E72A23 /* Position.swift */,
 				EBB3BE962A97FC3900E72A23 /* RadioStation.swift */,
 				EBB3BE922A97F28300E72A23 /* Sector.swift */,
+				EB75BB412C922BF300BE0F45 /* Solo.swift */,
 				EBB3BE902A97F24400E72A23 /* Song.swift */,
 				EBB3BE8E2A97F20C00E72A23 /* TuneData.swift */,
 			);
@@ -292,7 +304,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					EBB3BE352A97E79300E72A23 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -329,15 +341,16 @@
 				EB51EB542AB61A250079C937 /* RADIO_03_HIPHOP_NEW in Resources */,
 				EB51EB6A2AB61AB80079C937 /* RADIO_15_MOTOWN in Resources */,
 				EB51EB622AB61A940079C937 /* RADIO_11_TALK_02 in Resources */,
-				EB51EB742AB61BCC0079C937 /* DLC_CHRISTMAS2017 in Resources */,
-				EB51EB722AB61B040079C937 /* DLC_THELAB in Resources */,
+				EB51EB742AB61BCC0079C937 /* dlc_christmas2017 in Resources */,
+				EB75BB3A2C91D90700BE0F45 /* dlc_security_music in Resources */,
+				EB51EB722AB61B040079C937 /* dlc_thelab in Resources */,
 				EBB3BE412A97E79400E72A23 /* Preview Assets.xcassets in Resources */,
 				EB51EB6E2AB61AE80079C937 /* RADIO_17_FUNK in Resources */,
 				EB51EB702AB61AF10079C937 /* RADIO_18_90S_ROCK in Resources */,
 				EB51EB4E2AB617A80079C937 /* RADIO_01_CLASS_ROCK in Resources */,
 				EB51EB782AB620640079C937 /* RADIO_NEWS in Resources */,
 				EB51EB502AB617BA0079C937 /* RADIO_02_POP in Resources */,
-				EB51EB522AB61A020079C937 /* DLC_BATTLE_MUSIC in Resources */,
+				EB51EB522AB61A020079C937 /* dlc_battle_music in Resources */,
 				EB51EB562AB61A330079C937 /* RADIO_04_PUNK in Resources */,
 				EB51EB582AB61A3F0079C937 /* RADIO_05_TALK_01 in Resources */,
 				EBB3BE3E2A97E79400E72A23 /* Assets.xcassets in Resources */,
@@ -358,6 +371,7 @@
 			files = (
 				EBB3BE762A97ED1700E72A23 /* GlobalVariables.swift in Sources */,
 				EBB3BE782A97ED4B00E72A23 /* RadioAdverts.swift in Sources */,
+				EB75BB422C922BF300BE0F45 /* Solo.swift in Sources */,
 				EBB3BEA62A97FDD200E72A23 /* ColorSelectorSector.swift in Sources */,
 				EBB3BE972A97FC3900E72A23 /* RadioStation.swift in Sources */,
 				EBB3BEAE2A97FE8700E72A23 /* Stations.swift in Sources */,
@@ -379,11 +393,13 @@
 				EBB3BE812A97EE3100E72A23 /* BackgroundImagePicker.swift in Sources */,
 				EBB3BE952A97FBF600E72A23 /* CustomColorData.swift in Sources */,
 				EBB3BE892A97F13D00E72A23 /* ViewModel.swift in Sources */,
+				EB75BB3C2C91F19400BE0F45 /* ImageData.swift in Sources */,
+				EB75BB3E2C91FDE500BE0F45 /* General.swift in Sources */,
 				EBB3BE8C2A97F1AB00E72A23 /* UIImage.swift in Sources */,
-				EBB3BE992A97FC6B00E72A23 /* Position.swift in Sources */,
 				EBB3BE9B2A97FCA600E72A23 /* Label.swift in Sources */,
 				EBB3BEAA2A97FE2200E72A23 /* Settings.swift in Sources */,
 				EBB3BE872A97F0D200E72A23 /* TuneInTime.swift in Sources */,
+				EB75BB402C9216FE00BE0F45 /* Identity.swift in Sources */,
 				EBB3BEA22A97FD7200E72A23 /* ButtonImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +443,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -487,6 +504,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
