@@ -298,7 +298,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
                 var unplayed: [Song] = unplayedSongs[Station.name] ?? []
                 
                 if (unplayed.isEmpty) {
-					if (Station.order == "rotate") {
+					if (order[Station.name] == "rotate") {
                         guard let isRotated = rotated[Station.name] else {
                             //print("guard: play > song > unplayed.isEmpty > isRotated")
                             return
@@ -321,7 +321,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
                 let stationRoot: String = Station.root ?? ""
 				let generalRoot: String = Station.general?.root ?? ""
                 var s: Int = 0 //UNPLAYED SONG INDEX
-				if (Station.order == "random") {
+				if (order[Station.name] == "random") {
                     s = Int(arc4random_uniform(UInt32(unplayed.count)))
                 }
                 

@@ -175,7 +175,7 @@ public let RadioStations: [RadioStation] = [
 			row: 1,
 			column: 1
 		),
-		order: "static",
+		order: ["split","static","reverse"].randomElement() ?? "static",
 		root: "dlc_security_music",
 		songs: [
 			//100_dissin
