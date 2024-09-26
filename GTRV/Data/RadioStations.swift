@@ -175,7 +175,7 @@ public let RadioStations: [RadioStation] = [
 			row: 1,
 			column: 1
 		),
-		order: ["split","static","reverse"].randomElement() ?? "static",
+		order: ["rotate","reverse","alternate","alternate_r"].randomElement()!,
 		root: "dlc_security_music",
 		songs: [
 			//100_dissin
@@ -493,7 +493,7 @@ public let RadioStations: [RadioStation] = [
 			),
 			//duro
 			Song(
-				file: "file_alt_1",//file_alt_2
+				file: "0x004FFC64",//0x094EC2AA
 				root: "dlc_security_music/duro/",
 				labels: [
 					Label(

@@ -101,46 +101,7 @@ var morningTimeIntroPlayed: Bool = false
 
 var newsPlayed: Bool = false
 
-var order: [String: String] = [
-	"Radio Off": RadioStations[0].order,
-	"Media Player": RadioStations[1].order,
-	"Blaine County Radio": RadioStations[2].order,
-	"The Music Locker": RadioStations[3].order,
-	"MOTOMAMI Los Santos": RadioStations[4].order,
-	"The Blue Ark": RadioStations[5].order,
-	"Worldwide FM": RadioStations[6].order,
-	"FlyLo FM": RadioStations[7].order,
-	"The Low Down 91.1": RadioStations[8].order,
-	"The Lab": RadioStations[9].order,
-	"Radio Mirror Park": RadioStations[10].order,
-	"Kult FM": RadioStations[11].order,
-	"Space 103.2": RadioStations[12].order,
-	"Vinewood Boulevard Radio": RadioStations[13].order,
-	"Blonded Los Santos 97.8 FM": RadioStations[14].order,
-	"Los Santos Underground Radio": RadioStations[15].order,
-	"iFruit Radio": RadioStations[16].order,
-	"Self Radio": RadioStations[17].order,
-	"Still Slipping Los Santos": RadioStations[18].order,
-	"Los Santos Rock Radio": RadioStations[19].order,
-	"Non-Stop-Pop FM": RadioStations[20].order,
-	"Radio Los Santos": RadioStations[21].order,
-	"Channel X": RadioStations[22].order,
-	"WCTR": RadioStations[23].order,
-	"Rebel Radio": RadioStations[24].order,
-	"Soulwax FM": RadioStations[25].order,
-	"East Los FM": RadioStations[26].order,
-	"West Coast Classics": RadioStations[27].order
-]
-var outroDuration: TimeInterval = 0.0
-var outroTime: TimeInterval = 0.0
-var outroType: String = ""
-
-var playIntro: Bool = false
-var playOutro: Bool = false
-var playedStations: [Int] = []
-
-var radioStationIndex: Int = 10
-var rotated: [String: Bool] = [
+var ordered: [String: Bool] = [
 	"Radio Off": false,
 	"Media Player": false,
 	"Blaine County Radio": false,
@@ -170,6 +131,15 @@ var rotated: [String: Bool] = [
 	"East Los FM": false,
 	"West Coast Classics": false
 ]
+var outroDuration: TimeInterval = 0.0
+var outroTime: TimeInterval = 0.0
+var outroType: String = ""
+
+var playIntro: Bool = false
+var playOutro: Bool = false
+var playedStations: [Int] = []
+
+var radioStationIndex: Int = 10
 
 var startPlaying: Bool = false
 
