@@ -167,10 +167,12 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			let adRoot: String = rootAd[0]
 			let ad = rootAd[1]
 			print("[\(#line)]> ad: RADIO_ADVERTS/\(adRoot)/\(ad)")
-			guard let adPath = Bundle.main.path(forResource: ad, ofType: "mp3", inDirectory: "RADIO_ADVERTS/\(adRoot)/") else {
+			
+			guard let adPath = AudioPath(resource: ad, directory: "RADIO_ADVERTS/\(adRoot)/") else {
 				//print("[\(#line)]> guard: play > ad > adPath")
 				return
 			}
+			
 			let adURL = URL(fileURLWithPath: adPath)
 			do {
 				audioPlayer1 = try AVAudioPlayer(contentsOf: adURL)
@@ -201,7 +203,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let solo: String = monoSolo.list.randomElement()!
 				let monoSoloRoot: String = ("\(stationRoot)/\(monoSolos[m].root)")
 				print("[\(#line)]> mono_solo: \(monoSoloRoot)/\(monoSoloRoot)")
-				guard let monoSoloPath = Bundle.main.path(forResource: solo, ofType: "mp3", inDirectory: monoSoloRoot) else {
+				guard let monoSoloPath = AudioPath(resource: solo, directory: monoSoloRoot) else {
 					//print("[\(#line)]> guard: play > mono_solo > monoSoloPath")
 					return
 				}
@@ -235,7 +237,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			let newsRoot: String = rootNews[0]
 			let news = rootNews[1]
 			print("[\(#line)]> news: RADIO_NEWS/\(newsRoot)/\(news)")
-			guard let newsPath = Bundle.main.path(forResource: news, ofType: "mp3", inDirectory: "RADIO_NEWS/\(newsRoot)/") else {
+			guard let newsPath = AudioPath(resource: news, directory: "RADIO_NEWS/\(newsRoot)/") else {
 				//print("[\(#line)]> guard: play > news > newsPath")
 				return
 			}
@@ -269,7 +271,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let stationID: String = stationIdentity.list.randomElement()!
 				let stationIDRoot: String = ("\(stationRoot)/\(stationIdentity.root)")
 				print("[\(#line)]> id: \(stationIDRoot)/ID_\(stationID)")
-				guard let stationIDPath = Bundle.main.path(forResource: stationID, ofType: "mp3", inDirectory: stationIDRoot) else {
+				guard let stationIDPath = AudioPath(resource: stationID, directory: stationIDRoot) else {
 					//print("[\(#line)]> guard: play > station_id > stationIDPath")
 					return
 				}
@@ -489,7 +491,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					let intro: String = intros[i].file
 					introTime = intros[i].delay
 					print("[\(#line)]> intro: \(introRoot)\(intro)")
-					guard let introPath = Bundle.main.path(forResource: intro, ofType: "mp3", inDirectory: introRoot) else {
+					guard let introPath = AudioPath(resource: intro, directory: introRoot) else {
 						//print("[\(#line)]> guard: play > intro > introPath")
 						return
 					}
@@ -508,8 +510,8 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				
 				// PLAY SONG
 				print("[\(#line)]> song: \(songRoot)\(song)")
-				guard let songPath = Bundle.main.path(forResource: song, ofType: "mp3", inDirectory: "\(songRoot)/") else {
-					//print("[\(#line)]> guard: play > song > songPath")
+				guard let songPath = AudioPath(resource: song, directory: "\(songRoot)") else {
+					print("[\(#line)]> guard: play > song > songPath")
 					return
 				}
 				let songURL = URL(fileURLWithPath: songPath)
@@ -573,7 +575,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					let o: Int = Int(arc4random_uniform(UInt32(outros.count))) //RANDOM OUTRO INDEX
 					let outro: String = outros[o].file
 					print("[\(#line)]> outro: \(outroRoot)\(outro)")
-					guard let outroPath = Bundle.main.path(forResource: outro, ofType: "mp3", inDirectory: outroRoot) else {
+					guard let outroPath = AudioPath(resource: outro, directory: outroRoot) else {
 						//print("[\(#line)]> guard: play > outro > outroPath")
 						return
 					}

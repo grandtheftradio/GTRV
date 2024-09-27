@@ -139,7 +139,7 @@ var playIntro: Bool = false
 var playOutro: Bool = false
 var playedStations: [Int] = []
 
-var radioStationIndex: Int = 10
+//var radioStationIndex: Int = 10
 
 var startPlaying: Bool = false
 
