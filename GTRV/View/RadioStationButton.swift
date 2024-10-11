@@ -19,9 +19,9 @@ struct RadioStationButton: View {
 			default:
 				ButtonImage(
 					stationNumber: station.number,
-					image: station.image,
-					row: station.imagePosition.row,
-					column: station.imagePosition.column
+					image: station.image.name,
+					row: station.image.row,
+					column: station.image.column
 				)
 				.mask(
 					Circle()

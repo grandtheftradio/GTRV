@@ -6,4449 +6,57 @@
 //
 
 public let RadioStations: [RadioStation] = [
-	// MARK: Los Santos Rock Radio
-	RadioStation(
-		index: 0,
-		number: 1,
-		name: "Los Santos Rock Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 4,
-			column: 1
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_01_CLASS_ROCK",
-		songs: [
-			//ALL_THE_THINGS_SHE_SAID
-			Song(
-				file: "ALL_THE_THINGS_SHE_SAID",
-				root: "RADIO_01_CLASS_ROCK/all_the_things_she_said/",
-				labels: [
-					Label(
-						artist: "SIMPLE MINDS",
-						title: "All The Things She Said",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ALL_THE_THINGS_SHE_SAID_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ALL_THE_THINGS_SHE_SAID_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BAKER_STREET
-			Song(
-				file: "BAKER_STREET",
-				root: "RADIO_01_CLASS_ROCK/baker_street/",
-				labels: [
-					Label(
-						artist: "GERRY RAFFERTY",
-						title: "Baker Street",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BAKER_STREET_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BAKER_STREET_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BIG_LOG
-			Song(
-				file: "BIG_LOG",
-				root: "RADIO_01_CLASS_ROCK/big_log/",
-				labels: [
-					Label(
-						artist: "ROBERT PLANT",
-						title: "Big Log",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BIG_LOG_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BIG_LOG_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BLACK_VELVET
-			Song(
-				file: "BLACK_VELVET",
-				root: "RADIO_01_CLASS_ROCK/black_velvet/",
-				labels: [
-					Label(
-						artist: "ALANNAH MYLES",
-						title: "Black Velvet",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BLACK_VELVET_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BLACK_VELVET_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BURNING_HEART
-			Song(
-				file: "BURNING_HEART",
-				root: "RADIO_01_CLASS_ROCK/burning_heart/",
-				labels: [
-					Label(
-						artist: "SURVIVOR",
-						title: "Burning Heart",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BURNING_HEART_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BURNING_HEART_02",
-						delay: 8.0
-					)
-				]
-			),
-			//CARRY_ON_MY_WAYWARD_SUN
-			Song(
-				file: "CARRY_ON_MY_WAYWARD_SUN",
-				root: "RADIO_01_CLASS_ROCK/carry_on_my_wayward_sun/",
-				labels: [
-					Label(
-						artist: "KANSAS",
-						title: "Carry On Wayward Son",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CARRY_ON_MY_WAYWARD_SUN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "CARRY_ON_MY_WAYWARD_SUN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//CATS_IN_THE_CRADLE
-			Song(
-				file: "CATS_IN_THE_CRADLE",
-				root: "RADIO_01_CLASS_ROCK/cats_in_the_cradle/",
-				labels: [
-					Label(
-						artist: "HARRY CHAPIN",
-						title: "Cat's In The Cradle",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CATS_IN_THE_CRADLE_01",
-						delay: 8.0
-					)
-				]
-			),
-			//CIRCLE_IN_THE_SAND
-			Song(
-				file: "CIRCLE_IN_THE_SAND",
-				root: "RADIO_01_CLASS_ROCK/circle_in_the_sand/",
-				labels: [
-					Label(
-						artist: "BELINDA CARLISLE",
-						title: "Circle In The Sand",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//COMING_ON_STRONG
-			Song(
-				file: "COMING_ON_STRONG",
-				root: "RADIO_01_CLASS_ROCK/coming_on_strong/",
-				labels: [
-					Label(
-						artist: "BROKEN ENGLISH",
-						title: "Coming On Strong",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "COMING_ON_STRONG_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "COMING_ON_STRONG_02",
-						delay: 8.0
-					)
-				]
-			),
-			//DANGER_ZONE
-			Song(
-				file: "DANGER_ZONE",
-				root: "RADIO_01_CLASS_ROCK/danger_zone/",
-				labels: [
-					Label(
-						artist: "KENNY LOGGINS",
-						title: "Danger Zone",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//DIRTY_WHITE_BOY
-			Song(
-				file: "DIRTY_WHITE_BOY",
-				root: "RADIO_01_CLASS_ROCK/dirty_white_boy/",
-				labels: [
-					Label(
-						artist: "FOREIGNER",
-						title: "Dirty White Boy",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DIRTY_WHITE_BOY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "DIRTY_WHITE_BOY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//FORTUNATE_SON
-			Song(
-				file: "FORTUNATE_SON",
-				root: "RADIO_01_CLASS_ROCK/fortunate_son/",
-				labels: [
-					Label(
-						artist: "CREEDENCE CLEARWATER REVIVAL",
-						title: "Fortunate Son",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FORTUNATE_SON_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "FORTUNATE_SON_02",
-						delay: 8.0
-					)
-				]
-			),
-			//GIMME_ALL_YOUR_LOVIN
-			Song(
-				file: "GIMME_ALL_YOUR_LOVIN",
-				root: "RADIO_01_CLASS_ROCK/gimme_all_your_lovin/",
-				labels: [
-					Label(
-						artist: "ZZ TOP",
-						title: "Gimme All Your Lovin'",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GIMME_ALL_YOUR_LOVIN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "GIMME_ALL_YOUR_LOVIN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HEARTBEAT
-			Song(
-				file: "HEARTBEAT",
-				root: "RADIO_01_CLASS_ROCK/heartbeat/",
-				labels: [
-					Label(
-						artist: "DON JOHNSON",
-						title: "Heartbeat",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HEARTBEAT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HEARTBEAT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HIGHER_LOVE
-			Song(
-				file: "HIGHER_LOVE",
-				root: "RADIO_01_CLASS_ROCK/higher_love/",
-				labels: [
-					Label(
-						artist: "STEVE WINWOOD",
-						title: "Higher Love",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HIGHER_LOVE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HIGHER_LOVE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HOLLYWOOD_NIGHTS
-			Song(
-				file: "HOLLYWOOD_NIGHTS",
-				root: "RADIO_01_CLASS_ROCK/hollywood_nights/",
-				labels: [
-					Label(
-						artist: "BOB SEGER",
-						title: "Hollywood Nights",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HOLLYWOOD_NIGHTS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HOLLYWOOD_NIGHTS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//I_CANT_WAIT
-			Song(
-				file: "I_CANT_WAIT",
-				root: "RADIO_01_CLASS_ROCK/i_cant_wait/",
-				labels: [
-					Label(
-						artist: "STEVIE NICKS",
-						title: "I Can't Wait",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "I_CANT_WAIT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "I_CANT_WAIT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//I_DONT_CARE_ANYMORE
-			Song(
-				file: "I_DONT_CARE_ANYMORE",
-				root: "RADIO_01_CLASS_ROCK/i_dont_care_anymore/",
-				labels: [
-					Label(
-						artist: "PHIL COLLINS",
-						title: "I Don't Care Anymore",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//I_WOULDNT_WANT_TO_BE
-			Song(
-				file: "I_WOULDNT_WANT_TO_BE",
-				root: "RADIO_01_CLASS_ROCK/i_wouldnt_want_to_be/",
-				labels: [
-					Label(
-						artist: "THE ALAN PARSONS PROJECT",
-						title: "I Wouldn't Want To Be Like You",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "I_WOULDNT_WANT_TO_BE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "I_WOULDNT_WANT_TO_BE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//IF_YOU_LEAVE_ME_NOW
-			Song(
-				file: "IF_YOU_LEAVE_ME_NOW",
-				root: "RADIO_01_CLASS_ROCK/if_you_leave_me_now/",
-				labels: [
-					Label(
-						artist: "CHICAGO",
-						title: "If You Leave Me Now",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "IF_YOU_LEAVE_ME_NOW_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "IF_YOU_LEAVE_ME_NOW_02",
-						delay: 8.0
-					)
-				]
-			),
-			//IM_FREE
-			Song(
-				file: "IM_FREE",
-				root: "RADIO_01_CLASS_ROCK/im_free/",
-				labels: [
-					Label(
-						artist: "KENNY LOGGINS",
-						title: "I'm Free(Heaven Helps The Man)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "IM_FREE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "IM_FREE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//LONELY_IS_THE_NIGHT
-			Song(
-				file: "LONELY_IS_THE_NIGHT",
-				root: "RADIO_01_CLASS_ROCK/lonely_is_the_night/",
-				labels: [
-					Label(
-						artist: "BILLY SQUIER",
-						title: "Lonely Is The Night",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LONELY_IS_THE_NIGHT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LONELY_IS_THE_NIGHT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//MISSISSIPPI_QUEEN
-			Song(
-				file: "MISSISSIPPI_QUEEN",
-				root: "RADIO_01_CLASS_ROCK/mississippi_queen/",
-				labels: [
-					Label(
-						artist: "MOUNTAIN",
-						title: "Mississippi Queen",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MISSISSIPPI_QUEEN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "MISSISSIPPI_QUEEN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//NIGHT_MOVES
-			Song(
-				file: "NIGHT_MOVES",
-				root: "RADIO_01_CLASS_ROCK/night_moves/",
-				labels: [
-					Label(
-						artist: "BOB SEGER",
-						title: "Night Moves",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NIGHT_MOVES_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "NIGHT_MOVES_02",
-						delay: 8.0
-					)
-				]
-			),
-			//OGDENS_NUT_GONE_FLAKE
-			Song(
-				file: "OGDENS_NUT_GONE_FLAKE",
-				root: "RADIO_01_CLASS_ROCK/ogdens_nut_gone_flake/",
-				labels: [
-					Label(
-						artist: "SMALL FACES",
-						title: "Ogden's Nut Gone Flake",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "OGDENS_NUT_GONE_FLAKE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "OGDENS_NUT_GONE_FLAKE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//PEACE_OF_MIND
-			Song(
-				file: "PEACE_OF_MIND",
-				root: "RADIO_01_CLASS_ROCK/peace_of_mind/",
-				labels: [
-					Label(
-						artist: "BOSTON",
-						title: "Peace Of Mind",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "PEACE_OF_MIND_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "PEACE_OF_MIND_02",
-						delay: 8.0
-					)
-				]
-			),
-			//PHOTOGRAPH
-			Song(
-				file: "PHOTOGRAPH",
-				root: "RADIO_01_CLASS_ROCK/photograph/",
-				labels: [
-					Label(
-						artist: "DEF LEPPARD",
-						title: "Photograph",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "PHOTOGRAPH_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "PHOTOGRAPH_02",
-						delay: 8.0
-					)
-				]
-			),
-			//RADIO_GA_GA
-			Song(
-				file: "RADIO_GA_GA",
-				root: "RADIO_01_CLASS_ROCK/radio_ga_ga/",
-				labels: [
-					Label(
-						artist: "QUEEN",
-						title: "Radio Ga Ga",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "RADIO_GA_GA_01",
-						delay: 8.0
-					)
-				]
-			),
-			//RAIN
-			Song(
-				file: "RAIN",
-				root: "RADIO_01_CLASS_ROCK/rain/",
-				labels: [
-					Label(
-						artist: "THE CULT",
-						title: "Rain",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "RAIN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "RAIN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//ROCKIN_ME
-			Song(
-				file: "ROCKIN_ME",
-				root: "RADIO_01_CLASS_ROCK/rockin_me/",
-				labels: [
-					Label(
-						artist: "STEVE MILLER",
-						title: "Rock'n Me",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//ROUNDABOUT
-			Song(
-				file: "ROUNDABOUT",
-				root: "RADIO_01_CLASS_ROCK/roundabout/",
-				labels: [
-					Label(
-						artist: "YES",
-						title: "Roundabout",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ROUNDABOUT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ROUNDABOUT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SATURDAY_NIGHTS_ALRIGHT
-			Song(
-				file: "SATURDAY_NIGHTS_ALRIGHT",
-				root: "RADIO_01_CLASS_ROCK/saturday_nights_alright/",
-				labels: [
-					Label(
-						artist: "ELTON JOHN",
-						title: "Saturday Night's Alright For Fighting",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SATURDAY_NIGHTS_ALRIGHT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SATURDAY_NIGHTS_ALRIGHT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SHADOWS_OF_THE_NIGHT
-			Song(
-				file: "SHADOWS_OF_THE_NIGHT",
-				root: "RADIO_01_CLASS_ROCK/shadows_of_the_night/",
-				labels: [
-					Label(
-						artist: "PAT BENATAR",
-						title: "Shadows Of The Night",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SHADOWS_OF_THE_NIGHT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SHADOWS_OF_THE_NIGHT_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "SHADOWS_OF_THE_NIGHT_03",
-						delay: 8.0
-					)
-				]
-			),
-			//THE_BREAKUP_SONG
-			Song(
-				file: "THE_BREAKUP_SONG",
-				root: "RADIO_01_CLASS_ROCK/the_breakup_song/",
-				labels: [
-					Label(
-						artist: "GREG KIHN BAND",
-						title: "The Breakup Song (They Don't Write 'Em)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_BREAKUP_SONG_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "THE_BREAKUP_SONG_02",
-						delay: 8.0
-					)
-				]
-			),
-			//THIRTY_DAYS_IN_THE_HOLE
-			Song(
-				file: "THIRTY_DAYS_IN_THE_HOLE",
-				root: "RADIO_01_CLASS_ROCK/thirty_days_in_the_hole/",
-				labels: [
-					Label(
-						artist: "HUMBLE PIE",
-						title: "Thirty Days In The Hole",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THIRTY_DAYS_IN_THE_HOLE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "THIRTY_DAYS_IN_THE_HOLE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//TOO_LATE_FOR_GOODBYES
-			Song(
-				file: "TOO_LATE_FOR_GOODBYES",
-				root: "RADIO_01_CLASS_ROCK/too_late_for_goodbyes/",
-				labels: [
-					Label(
-						artist: "JULIAN LENNON",
-						title: "Too Late For Goodbyes",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TOO_LATE_FOR_GOODBYES_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TOO_LATE_FOR_GOODBYES_02",
-						delay: 8.0
-					)
-				]
-			),
-			//WE_BUILT_THIS_CITY
-			Song(
-				file: "WE_BUILT_THIS_CITY",
-				root: "RADIO_01_CLASS_ROCK/we_built_this_city/",
-				labels: [
-					Label(
-						artist: "STARSHIP",
-						title: "We Built This City",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WE_BUILT_THIS_CITY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WE_BUILT_THIS_CITY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//WHAT_A_FOOL_BELIEVES
-			Song(
-				file: "WHAT_A_FOOL_BELIEVES",
-				root: "RADIO_01_CLASS_ROCK/what_a_fool_believes/",
-				labels: [
-					Label(
-						artist: "THE DOOBIE BROTHERS",
-						title: "What A Fool Believes",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25"],
-		time: [
-			"EVENING": ["01","02","03","04","05","06","07"],
-			"MORNING": ["01","02","03","04","05","06","07"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05","06","07"],
-			"NEWS": ["01","02","03","04","05","06"]
-		]
-	),
-	
-	// MARK: Non-Stop-Pop FM
-	RadioStation(
-		index: 1,
-		number: 2,
-		name: "Non-Stop-Pop FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 1,
-			column: 2
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_02_POP",
-		songs: [
-			//ADULT_EDUCATION
-			Song(
-				file: "ADULT_EDUCATION",
-				root: "RADIO_02_POP/adult_education/",
-				labels: [
-					Label(
-						artist: "HALL & OATS",
-						title: "Adult Education",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ADULT_EDUCATION_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ADULT_EDUCATION_02",
-						delay: 8.0
-					)
-				]
-			),
-			//ALRIGHT
-			Song(
-				file: "ALRIGHT",
-				root: "RADIO_02_POP/alright/",
-				labels: [
-					Label(
-						artist: "JAMIROQUAI",
-						title: "Alright",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//ANTHEM
-			Song(
-				file: "ANTHEM",
-				root: "RADIO_02_POP/anthem/",
-				labels: [
-					Label(
-						artist: "N-JOI",
-						title: "Anthem",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ANTHEM_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ANTHEM_02",
-						delay: 8.0
-					)
-				]
-			),
-			//APPLAUSE
-			Song(
-				file: "APPLAUSE",
-				root: "RADIO_02_POP/applause/",
-				labels: [
-					Label(
-						artist: "LADY GAGA",
-						title: "Applause",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "APPLAUSE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "APPLAUSE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BAD_GIRLS
-			Song(
-				file: "BAD_GIRLS",
-				root: "RADIO_02_POP/bad_girls/",
-				labels: [
-					Label(
-						artist: "M.I.A.",
-						title: "Bad Girls",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BAD_GIRLS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BAD_GIRLS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//CIRCLE_IN_THE_SAND*
-			/*Song(
-				file: "CIRCLE_IN_THE_SAND",
-				root: "RADIO_01_CLASS_ROCK/circle_in_the_sand/",
-				labels: [
-					Label(
-						artist: "",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CIRCLE_IN_THE_SAND_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "CIRCLE_IN_THE_SAND_02",
-						delay: 8.0
-					)
-				]
-			),*/
-			//COOLER_THAN_ME
-			Song(
-				file: "COOLER_THAN_ME",
-				root: "RADIO_02_POP/cooler_than_me/",
-				labels: [
-					Label(
-						artist: "MIKE POSNER",
-						title: "Cooler Than Me",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "COOLER_THAN_ME_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "COOLER_THAN_ME_02",
-						delay: 8.0
-					)
-				]
-			),
-			//DAYS_GO_BY
-			Song(
-				file: "DAYS_GO_BY",
-				root: "RADIO_02_POP/days_go_by/",
-				labels: [
-					Label(
-						artist: "DIRTY VEGAS",
-						title: "Days Go By",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DAYS_GO_BY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "DAYS_GO_BY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//DONT_WANNA_FALL_IN_LOVE
-			Song(
-				file: "DONT_WANNA_FALL_IN_LOVE",
-				root: "RADIO_02_POP/dont_wanna_fall_in_love/",
-				labels: [
-					Label(
-						artist: "JANE CHILD",
-						title: "Don't Wanna Fall In Love",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DONT_WANNA_FALL_IN_LOVE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "DONT_WANNA_FALL_IN_LOVE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//EVERYTHING_SHE_WANTS
-			Song(
-				file: "EVERYTHING_SHE_WANTS",
-				root: "RADIO_02_POP/everything_she_wants/",
-				labels: [
-					Label(
-						artist: "WHAM!",
-						title: "Everything She Wants",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "EVERYTHING_SHE_WANTS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "EVERYTHING_SHE_WANTS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//FEEL_GOOD_INC
-			Song(
-				file: "FEEL_GOOD_INC",
-				root: "RADIO_02_POP/feel_good_inc/",
-				labels: [
-					Label(
-						artist: "GORILLAZ",
-						title: "Feel Good Inc.",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FEEL_GOOD_INC_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "FEEL_GOOD_INC_02",
-						delay: 8.0
-					)
-				]
-			),
-			//GIMME_MORE
-			Song(
-				file: "GIMME_MORE",
-				root: "RADIO_02_POP/gimme_more/",
-				labels: [
-					Label(
-						artist: "BRITNEY SPEARS",
-						title: "Gimme More",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GIMME_MORE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "GIMME_MORE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//GLAMOROUS
-			Song(
-				file: "GLAMOROUS",
-				root: "RADIO_02_POP/glamorous/",
-				labels: [
-					Label(
-						artist: "FERGIE",
-						title: "Glamorous",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GLAMOROUS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "GLAMOROUS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//I_WANT_IT_THAT_WAY
-			Song(
-				file: "I_WANT_IT_THAT_WAY",
-				root: "RADIO_02_POP/i_want_it_that_way/",
-				labels: [
-					Label(
-						artist: "BACKSTREET BOYS",
-						title: "I Want It That Way",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "I_WANT_IT_THAT_WAY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "I_WANT_IT_THAT_WAY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//KIDS
-			Song(
-				file: "KIDS",
-				root: "RADIO_02_POP/kids/",
-				labels: [
-					Label(
-						artist: "ROBBIE WILLIAMS & KYLIE MINOGUE",
-						title: "Kids",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "KIDS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "KIDS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//LADY_HEAR_ME_TONIGHT
-			Song(
-				file: "LADY_HEAR_ME_TONIGHT",
-				root: "RADIO_02_POP/lady_hear_me_tonight/",
-				labels: [
-					Label(
-						artist: "MODJO",
-						title: "Lady (Hear Me Tonight)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LADY_HEAR_ME_TONIGHT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LADY_HEAR_ME_TONIGHT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//LETS_GO_ALL_THE_WAY
-			Song(
-				file: "LETS_GO_ALL_THE_WAY",
-				root: "RADIO_02_POP/lets_go_all_the_way/",
-				labels: [
-					Label(
-						artist: "SLY FOX",
-						title: "Let's Go All The Way",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LETS_GO_ALL_THE_WAY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LETS_GO_ALL_THE_WAY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//LIVING_IN_A_BOX
-			Song(
-				file: "LIVING_IN_A_BOX",
-				root: "RADIO_02_POP/living_in_a_box/",
-				labels: [
-					Label(
-						artist: "LIVING IN A BOX",
-						title: "Living In A Box",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LIVING_IN_A_BOX_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LIVING_IN_A_BOX_02",
-						delay: 8.0
-					)
-				]
-			),
-			//ME_AND_YOU
-			Song(
-				file: "ME_AND_YOU",
-				root: "RADIO_02_POP/me_and_you/",
-				labels: [
-					Label(
-						artist: "CASSIE",
-						title: "Me & U",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ME_AND_YOU_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ME_AND_YOU_02",
-						delay: 8.0
-					)
-				]
-			),
-			//MEET_ME_HALFWAY
-			Song(
-				file: "MEET_ME_HALFWAY",
-				root: "RADIO_02_POP/meet_me_halfway/",
-				labels: [
-					Label(
-						artist: "THE BLACK EYED PEAS",
-						title: "Meet Me Halfway",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MEET_ME_HALFWAY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "MEET_ME_HALFWAY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//MIDNIGHT_CITY
-			Song(
-				file: "MIDNIGHT_CITY",
-				root: "RADIO_02_POP/midnight_city/",
-				labels: [
-					Label(
-						artist: "M83",
-						title: "Midnight City",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MIDNIGHT_CITY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "MIDNIGHT_CITY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//MOVES_LIKE_JAGGER
-			Song(
-				file: "MOVES_LIKE_JAGGER",
-				root: "RADIO_02_POP/moves_like_jagger/",
-				labels: [
-					Label(
-						artist: "MAROON 5",
-						title: "Moves Like Jagger (feat. Christina Aguilera)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MOVES_LIKE_JAGGER_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "MOVES_LIKE_JAGGER_02",
-						delay: 8.0
-					)
-				]
-			),
-			//MUSIC_SOUNDS_BETTER_WITH_YOU
-			Song(
-				file: "MUSIC_SOUNDS_BETTER_WITH_YOU",
-				root: "RADIO_02_POP/music_sounds_better_with_you/",
-				labels: [
-					Label(
-						artist: "STARDUST",
-						title: "Music Sounds Better With You",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MUSIC_SOUNDS_BETTER_WITH_YOU_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "MUSIC_SOUNDS_BETTER_WITH_YOU_02",
-						delay: 8.0
-					)
-				]
-			),
-			//NEW_SENSATION
-			Song(
-				file: "NEW_SENSATION",
-				root: "RADIO_02_POP/new_sensation/",
-				labels: [
-					Label(
-						artist: "INXS",
-						title: "New Sensation",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NEW_SENSATION_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "NEW_SENSATION_02",
-						delay: 8.0
-					)
-				]
-			),
-			//ON_OUR_OWN
-			Song(
-				file: "ON_OUR_OWN",
-				root: "RADIO_02_POP/on_our_own/",
-				labels: [
-					Label(
-						artist: "BOBBY BROWN",
-						title: "On Our Own",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ON_OUR_OWN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ON_OUR_OWN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//ONE_THING
-			Song(
-				file: "ONE_THING",
-				root: "RADIO_02_POP/one_thing/",
-				labels: [
-					Label(
-						artist: "AMERIE",
-						title: "1 Thing",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ONE_THING_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ONE_THING_02",
-						delay: 8.0
-					)
-				]
-			),
-			//ONLY_GIRL_IN_THE_WORLD
-			Song(
-				file: "ONLY_GIRL_IN_THE_WORLD",
-				root: "RADIO_02_POP/only_girl_in_the_world/",
-				labels: [
-					Label(
-						artist: "RIHANNA",
-						title: "Only Girl (In The World)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ONLY_GIRL_IN_THE_WORLD_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ONLY_GIRL_IN_THE_WORLD_02",
-						delay: 8.0
-					)
-				]
-			),
-			//PROMISES_PROMISES
-			Song(
-				file: "PROMISES_PROMISES",
-				root: "RADIO_02_POP/promises_promises/",
-				labels: [
-					Label(
-						artist: "NAKED EYES",
-						title: "Promises, Promises",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "PROMISES_PROMISES_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "PROMISES_PROMISES_02",
-						delay: 8.0
-					)
-				]
-			),
-			//PURE_SHORES
-			Song(
-				file: "PURE_SHORES",
-				root: "RADIO_02_POP/pure_shores/",
-				labels: [
-					Label(
-						artist: "ALL SAINTS",
-						title: "Pure Shores",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "PURE_SHORES_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "PURE_SHORES_02",
-						delay: 8.0
-					)
-				]
-			),
-			//RYTHM_OF_THE_NIGHT
-			Song(
-				file: "RYTHM_OF_THE_NIGHT",
-				root: "RADIO_02_POP/rythm_of_the_night/",
-				labels: [
-					Label(
-						artist: "CORONA",
-						title: "Rythm Of The Night",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "RYTHM_OF_THE_NIGHT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "RYTHM_OF_THE_NIGHT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SCANDALOUS
-			Song(
-				file: "SCANDALOUS",
-				root: "RADIO_02_POP/scandalous/",
-				labels: [
-					Label(
-						artist: "MIS-TEEQ",
-						title: "Scandalous",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SCANDALOUS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SCANDALOUS_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "SCANDALOUS_03",
-						delay: 8.0
-					)
-				]
-			),
-			//SEND_ME_AN_ANGEL
-			Song(
-				file: "SEND_ME_AN_ANGEL",
-				root: "RADIO_02_POP/send_me_an_angel/",
-				labels: [
-					Label(
-						artist: "REAL LIFE",
-						title: "Send Me An Angel",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//SIX_UNDERGROUND
-			Song(
-				file: "SIX_UNDERGROUND",
-				root: "RADIO_02_POP/six_underground/",
-				labels: [
-					Label(
-						artist: "SNEAKER PIMPS",
-						title: "6 Underground",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SIX_UNDERGROUND_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SIX_UNDERGROUND_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SMALLTOWN_BOY
-			Song(
-				file: "SMALLTOWN_BOY",
-				root: "RADIO_02_POP/smalltown_boy/",
-				labels: [
-					Label(
-						artist: "BRONSKI BEAT",
-						title: "Smalltown Boy",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SMALLTOWN_BOY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SMALLTOWN_BOY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SOMETHING_GOT_ME_STARTED_REMIX
-			Song(
-				file: "SOMETHING_GOT_ME_STARTED_REMIX",
-				root: "RADIO_02_POP/something_got_me_started_remix/",
-				labels: [
-					Label(
-						artist: "SIMPLY RED",
-						title: "Something Got Me Started (Hurley's House Remix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "0x12C8ED94",
-						delay: 8.0
-					),
-					Intro(
-						file: "0x00934929",
-						delay: 8.0
-					)
-				]
-			),
-			//TAPE_LOOP
-			Song(
-				file: "TAPE_LOOP",
-				root: "RADIO_02_POP/tape_loop/",
-				labels: [
-					Label(
-						artist: "MORCHEEBA",
-						title: "Tape Loop",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TAPE_LOOP_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TAPE_LOOP_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "TAPE_LOOP_03",
-						delay: 8.0
-					),
-					Intro(
-						file: "TAPE_LOOP_04",
-						delay: 8.0
-					)
-				]
-			),
-			//TELL_TO_MY_HEART
-			Song(
-				file: "TELL_TO_MY_HEART",
-				root: "RADIO_02_POP/tell_to_my_heart/",
-				labels: [
-					Label(
-						artist: "TAYLOR DAYNE",
-						title: "Tell It To My Heart",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TELL_IT_TO_MY_HEART_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TELL_IT_TO_MY_HEART_02",
-						delay: 8.0
-					)
-				]
-			),
-			//TENNIS_COURT
-			Song(
-				file: "TENNIS_COURT",
-				root: "RADIO_02_POP/tennis_court/",
-				labels: [
-					Label(
-						artist: "LORDE",
-						title: "Tennis Court",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TENNIS_COURT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TENNIS_COURT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//THE_TIME_IS_NOW
-			Song(
-				file: "THE_TIME_IS_NOW",
-				root: "RADIO_02_POP/the_time_is_now/",
-				labels: [
-					Label(
-						artist: "MOLOKO",
-						title: "The Time Is Now",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_TIME_IS_NOW_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "THE_TIME_IS_NOW_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "THE_TIME_IS_NOW_03",
-						delay: 8.0
-					),
-					Intro(
-						file: "THE_TIME_IS_NOW_04",
-						delay: 8.0
-					)
-				]
-			),
-			//WAIT
-			Song(
-				file: "WAIT",
-				root: "RADIO_02_POP/wait/",
-				labels: [
-					Label(
-						artist: "BLOW MONKEYS FEAT. KYM MAZELLE",
-						title: "Wait",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WAIT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WAIT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//WEST_END_GIRLS
-			Song(
-				file: "WEST_END_GIRLS",
-				root: "RADIO_02_POP/west_end_girls/",
-				labels: [
-					Label(
-						artist: "PET SHOP BOYS",
-						title: "West End Girls",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WEST_END_GIRLS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WEST_END_GIRLS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//WITH_EVERY_HEARTBEAT
-			Song(
-				file: "WITH_EVERY_HEARTBEAT",
-				root: "RADIO_02_POP/with_every_heartbeat/",
-				labels: [
-					Label(
-						artist: "ROBYN",
-						title: "With Every Heartbeat (With Kleerup)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WITH_EVERY_HEARTBEAT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WITH_EVERY_HEARTBEAT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//WORK
-			Song(
-				file: "WORK",
-				root: "RADIO_02_POP/work/",
-				labels: [
-					Label(
-						artist: "KELLY ROWLAND",
-						title: "Work (Freemasons Mix)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WORK_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WORK_02",
-						delay: 8.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29"],
-		time: [
-			"EVENING": ["01","02","03","04","05","06"],
-			"MORNING": ["01","02","03","04","05","06"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05","06"],
-			"NEWS": ["01","02","03","04","05","06"]
-		]
-	),
-	
-	// MARK: Radio Los Santos
-	RadioStation(
-		index: 2,
-		number: 3,
-		name: "Radio Los Santos",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 3,
-			column: 3
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_03_HIPHOP_NEW",
-		songs: [
-			//ADHD
-			Song(
-				file: "ADHD",
-				root: "RADIO_03_HIPHOP_NEW/adhd/",
-				labels: [
-					Label(
-						artist: "KENDRICK LAMAR",
-						title: "A.D.H.D.",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ADHD_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ADHD_02",
-						delay: 8.0
-					)
-				]
-			),
-			//ALI_BOMAYE
-			Song(
-				file: "ALI_BOMAYE",
-				root: "RADIO_03_HIPHOP_NEW/ali_bomaye/",
-				labels: [
-					Label(
-						artist: "GAME FEAT. 2 CHAINZ & RICK ROSS",
-						title: "Ali Bomaye",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ALI_BOMAYE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ALI_BOMAYE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BAD_NEWS
-			Song(
-				file: "BAD_NEWS",
-				root: "RADIO_03_HIPHOP_NEW/bad_news/",
-				labels: [
-					Label(
-						artist: "DANNY BROWN & ACTION BRONSON",
-						title: "Bad News",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BAD_NEWS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BAD_NEWS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BASSHEADS
-			Song(
-				file: "BASSHEADS",
-				root: "RADIO_03_HIPHOP_NEW/bassheads/",
-				labels: [
-					Label(
-						artist: "GANGRENE",
-						title: "Bassheads",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BASSHEADS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BASSHEADS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//BUGATTI
-			Song(
-				file: "BUGATTI",
-				root: "RADIO_03_HIPHOP_NEW/bugatti/",
-				labels: [
-					Label(
-						artist: "ACE HOOD FEAT. FUTURE & RICK ROSS",
-						title: "Bugatti",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BUGATTI_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "BUGATTI_02",
-						delay: 8.0
-					)
-				]
-			),
-			//COLLARD_GREENS
-			Song(
-				file: "COLLARD_GREENS",
-				root: "RADIO_03_HIPHOP_NEW/collard_greens/",
-				labels: [
-					Label(
-						artist: "SCHOOLBOY Q FEAT. KENDRICK LAMAR",
-						title: "Collard Greens",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//DO_IT_BIG
-			Song(
-				file: "DO_IT_BIG",
-				root: "RADIO_03_HIPHOP_NEW/do_it_big/",
-				labels: [
-					Label(
-						artist: "PROBLEM & IAMSU! FEAT. BAD LUCC & SAGE THE GEMINI",
-						title: "Do It Big",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DO_IT_BIG_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "DO_IT_BIG_02",
-						delay: 8.0
-					)
-				]
-			),
-			//EASILY
-			Song(
-				file: "EASILY",
-				root: "RADIO_03_HIPHOP_NEW/easily/",
-				labels: [
-					Label(
-						artist: "CHUCK INGLISH",
-						title: "Came Thru/Easily feat Mac Miller and Ab-Soul",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "EASILY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "EASILY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//EVERYDAY
-			Song(
-				file: "EVERYDAY",
-				root: "RADIO_03_HIPHOP_NEW/everyday/",
-				labels: [
-					Label(
-						artist: "TROUBLE FT GUCCI MANE",
-						title: "Everyday",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "EVERYDAY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "EVERYDAY_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HOLD_UP
-			Song(
-				file: "HOLD_UP",
-				root: "RADIO_03_HIPHOP_NEW/hold_up/",
-				labels: [
-					Label(
-						artist: "MARION BAND$ FEAT. NIPSEY HUSSLE",
-						title: "Hold Up",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//HOOD_GONE_LOVE_IT
-			Song(
-				file: "HOOD_GONE_LOVE_IT",
-				root: "RADIO_03_HIPHOP_NEW/hood_gone_love_it/",
-				labels: [
-					Label(
-						artist: "JAY ROCK FEAT. KENDRICK LAMAR",
-						title: "Hood Gone Love It",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HOOD_GONE_LOVE_IT_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HOOD_GONE_LOVE_IT_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HOW_IT_WAS
-			Song(
-				file: "HOW_IT_WAS",
-				root: "RADIO_03_HIPHOP_NEW/how_it_was/",
-				labels: [
-					Label(
-						artist: "FUTURE",
-						title: "How It Was",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HOW_IT_WAS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HOW_IT_WAS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//HUNNID_STAX
-			Song(
-				file: "HUNNID_STAX",
-				root: "RADIO_03_HIPHOP_NEW/hunnid_stax/",
-				labels: [
-					Label(
-						artist: "AB-SOUL FEAT. SCHOOLBOY Q",
-						title: "Hunnid Stax",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HUNNID_STAX_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "HUNNID_STAX_02",
-						delay: 8.0
-					)
-				]
-			),
-			//I_CANT_WAIT_SCOOTER
-			Song(
-				file: "I_CANT_WAIT_SCOOTER",
-				root: "RADIO_03_HIPHOP_NEW/i_cant_wait_scooter/",
-				labels: [
-					Label(
-						artist: "YOUNG SCOOTER FT TRINIDAD JAMES",
-						title: "I Can't Wait",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "I_CANT_WAIT_SCOOTER_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "I_CANT_WAIT_SCOOTER_02",
-						delay: 8.0
-					)
-				]
-			),
-			//ILLUMINATE
-			Song(
-				file: "ILLUMINATE",
-				root: "RADIO_03_HIPHOP_NEW/illuminate/",
-				labels: [
-					Label(
-						artist: "AB-SOUL FT. KENDRICK LAMAR",
-						title: "ILLuminate",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ILLUMINATE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ILLUMINATE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//IM_A_REAL_ONE
-			Song(
-				file: "IM_A_REAL_ONE",
-				root: "RADIO_03_HIPHOP_NEW/im_a_real_one/",
-				labels: [
-					Label(
-						artist: "YG",
-						title: "I'm A Real 1",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "IM_A_REAL_ONE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "IM_A_REAL_ONE_02",
-						delay: 8.0
-					)
-				]
-			),
-			//KUSH_COMA
-			Song(
-				file: "KUSH_COMA",
-				root: "RADIO_03_HIPHOP_NEW/kush_coma/",
-				labels: [
-					Label(
-						artist: "DANNY BROWN FEAT. A$AP ROCKY & ZELOOPERZ",
-						title: "Kush Coma",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "KUSH_COMA_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "KUSH_COMA_02",
-						delay: 8.0
-					)
-				]
-			),
-			//LIFE_OF_A_MACK
-			Song(
-				file: "LIFE_OF_A_MACK",
-				root: "RADIO_03_HIPHOP_NEW/life_of_a_mack/",
-				labels: [
-					Label(
-						artist: "100S",
-						title: "Life Of A Mack",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LIFE_OF_A_MACK_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LIFE_OF_A_MACK_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "LIFE_OF_A_MACK_03",
-						delay: 8.0
-					)
-				]
-			),
-			//MILLIONS
-			Song(
-				file: "MILLIONS",
-				root: "RADIO_03_HIPHOP_NEW/millions/",
-				labels: [
-					Label(
-						artist: "SKEME",
-						title: "Millions",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MILLIONS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "MILLIONS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//R_CALI
-			Song(
-				file: "R_CALI",
-				root: "RADIO_03_HIPHOP_NEW/r_cali/",
-				labels: [
-					Label(
-						artist: "A$AP ROCKY",
-						title: "R-Cali",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "R_CALI_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "R_CALI_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "R_CALI_03",
-						delay: 8.0
-					)
-				]
-			),
-			//RELAXIN
-			Song(
-				file: "RELAXIN",
-				root: "RADIO_03_HIPHOP_NEW/relaxin/",
-				labels: [
-					Label(
-						artist: "G-SIDE FT G-MANE",
-						title: "Relaxin'",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "RELAXIN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "RELAXIN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SAY_THAT_THEN
-			Song(
-				file: "SAY_THAT_THEN",
-				root: "RADIO_03_HIPHOP_NEW/say_that_then/",
-				labels: [
-					Label(
-						artist: "PROBLEM FEAT. GLASSES MALONE",
-						title: "Say That Then",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SAY_THAT_THEN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SAY_THAT_THEN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SELLIN_DOPE
-			Song(
-				file: "SELLIN_DOPE",
-				root: "RADIO_03_HIPHOP_NEW/sellin_dope/",
-				labels: [
-					Label(
-						artist: "FREDDIE GIBBS & MIKE DEAN",
-						title: "Sellin' Dope",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//SLOW_DOWN
-			Song(
-				file: "SLOW_DOWN",
-				root: "RADIO_03_HIPHOP_NEW/slow_down/",
-				labels: [
-					Label(
-						artist: "CLYDE CARSON FEAT. THE TEAM",
-						title: "Slow Down",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SLOW_DOWN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SLOW_DOWN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SMOKIN_AND_RIDIN
-			Song(
-				file: "SMOKIN_AND_RIDIN",
-				root: "RADIO_03_HIPHOP_NEW/smokin_and_ridin/",
-				labels: [
-					Label(
-						artist: "BJ THE CHICAGO KID FEAT. FREDDIE GIBBS & PROBLEM",
-						title: "Smoke And Ride",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SMOKIN_AND_RIDIN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SMOKIN_AND_RIDIN_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "SMOKIN_AND_RIDIN_03",
-						delay: 8.0
-					)
-				]
-			),
-			//STILL_LIVIN
-			Song(
-				file: "STILL_LIVIN",
-				root: "RADIO_03_HIPHOP_NEW/still_livin/",
-				labels: [
-					Label(
-						artist: "FREDDIE GIBBS",
-						title: "Still Livin'",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "STILL_LIVIN_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "STILL_LIVIN_02",
-						delay: 8.0
-					)
-				]
-			),
-			//SWIMMING_POOLS
-			Song(
-				file: "SWIMMING_POOLS",
-				root: "RADIO_03_HIPHOP_NEW/swimming_pools/",
-				labels: [
-					Label(
-						artist: "KENDRICK LAMAR",
-						title: "Swimming Pools (Drank)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SWIMMING_POOLS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SWIMMING_POOLS_02",
-						delay: 8.0
-					)
-				]
-			),
-			//TOO_HOOD
-			Song(
-				file: "TOO_HOOD",
-				root: "RADIO_03_HIPHOP_NEW/too_hood/",
-				labels: [
-					Label(
-						artist: "GUCCI MANE FEAT. CIARA",
-						title: "Too Hard",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TOO_HOOD_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TOO_HOOD_02",
-						delay: 8.0
-					)
-				]
-			),
-			//UPPER_ECHELON
-			Song(
-				file: "UPPER_ECHELON",
-				root: "RADIO_03_HIPHOP_NEW/upper_echelon/",
-				labels: [
-					Label(
-						artist: "TRAVI$ SCOTT",
-						title: "Upper Echelon feat T.I. and 2 Chainz",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "UPPER_ECHELON_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "UPPER_ECHELON_02",
-						delay: 8.0
-					)
-				]
-			),
-			//WORK_FERG
-			Song(
-				file: "WORK_FERG",
-				root: "RADIO_03_HIPHOP_NEW/work_ferg/",
-				labels: [
-					Label(
-						artist: "A$AP FERG",
-						title: "Work",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WORK_FERG_01",
-						delay: 8.0
-					)
-				]
-			),
-			//WORK_YOUNG_SCOOTER
-			Song(
-				file: "WORK_YOUNG_SCOOTER",
-				root: "RADIO_03_HIPHOP_NEW/work_young_scooter/",
-				labels: [
-					Label(
-						artist: "YOUNG SCOOTER FEAT. GUCCI MANE",
-						title: "Work",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WORK_YOUNG_SCOOTER_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "WORK_YOUNG_SCOOTER_02",
-						delay: 8.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21"],
-		time: [
-			"EVENING": ["01","02","03","04","05","06"],
-			"MORNING": ["01","02","03","04","05"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05","06"],
-			"NEWS": ["01","02","03","04","05","06"]
-		]
-	),
-	
-	// MARK: Channel X
-	RadioStation(
-		index: 3,
-		number: 4,
-		name: "Channel X",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 3,
-			column: 1
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_04_PUNK",
-		songs: [
-			//AMOEBA
-			Song(
-				file: "AMOEBA",
-				root: "RADIO_04_PUNK/amoeba/",
-				labels: [
-					Label(
-						artist: "THE ADOLESCENTS",
-						title: "Amoeba",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "AMOEBA_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "AMOEBA_02",
-						delay: 5.0
-					)
-				]
-			),
-			//BLOWN_AWAY
-			Song(
-				file: "BLOWN_AWAY",
-				root: "RADIO_04_PUNK/blown_away/",
-				labels: [
-					Label(
-						artist: "YOUTH BRIGADE",
-						title: "Blown Away",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BLOWN_AWAY_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "BLOWN_AWAY_02",
-						delay: 5.0
-					)
-				]
-			),
-			//BORED_OF_YOU
-			Song(
-				file: "BORED_OF_YOU",
-				root: "RADIO_04_PUNK/bored_of_you/",
-				labels: [
-					Label(
-						artist: "AGENT ORANGE",
-						title: "Bored Of You",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BORED_OF_YOU_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "BORED_OF_YOU_02",
-						delay: 5.0
-					)
-				]
-			),
-			//DONT_NEED_SOCIETY
-			Song(
-				file: "DONT_NEED_SOCIETY",
-				root: "RADIO_04_PUNK/dont_need_society/",
-				labels: [
-					Label(
-						artist: "D.R.I.",
-						title: "I Don't Need Society",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DONT_NEED_SOCIETY_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "DONT_NEED_SOCIETY_02",
-						delay: 5.0
-					)
-				]
-			),
-			//DONT_PUSH_ME_AROUND
-			Song(
-				file: "DONT_PUSH_ME_AROUND",
-				root: "RADIO_04_PUNK/dont_push_me_around/",
-				labels: [
-					Label(
-						artist: "THE ZEROS",
-						title: "Don't Push Me Around",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DONT_PUSH_ME_AROUND_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "DONT_PUSH_ME_AROUND_02",
-						delay: 5.0
-					)
-				]
-			),
-			//JOHN_WAYNE
-			Song(
-				file: "JOHN_WAYNE",
-				root: "RADIO_04_PUNK/john_wayne/",
-				labels: [
-					Label(
-						artist: "MDC",
-						title: "John Wayne Was A Nazi",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "JOHN_WAYNE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "JOHN_WAYNE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//LEXICON_DEVIL
-			Song(
-				file: "LEXICON_DEVIL",
-				root: "RADIO_04_PUNK/lexicon_devil/",
-				labels: [
-					Label(
-						artist: "THE GERMS",
-						title: "Lexicon Devil",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LEXICON_DEVIL_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "LEXICON_DEVIL_02",
-						delay: 5.0
-					)
-				]
-			),
-			//LIFE_OF_CRIME
-			Song(
-				file: "LIFE_OF_CRIME",
-				root: "RADIO_04_PUNK/life_of_crime/",
-				labels: [
-					Label(
-						artist: "THE WEIRDOS",
-						title: "Life Of Crime",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//LINDA_BLAIR
-			Song(
-				file: "LINDA_BLAIR",
-				root: "RADIO_04_PUNK/linda_blair/",
-				labels: [
-					Label(
-						artist: "REDD KROSS",
-						title: "Linda Blair",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LINDA_BLAIR_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "LINDA_BLAIR_02",
-						delay: 5.0
-					)
-				]
-			),
-			//LOS_ANGELES
-			Song(
-				file: "LOS_ANGELES",
-				root: "RADIO_04_PUNK/los_angeles/",
-				labels: [
-					Label(
-						artist: "X",
-						title: "Los Angeles",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LOS_ANGELES_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "LOS_ANGELES_02",
-						delay: 5.0
-					)
-				]
-			),
-			//MY_WAR
-			Song(
-				file: "MY_WAR",
-				root: "RADIO_04_PUNK/my_war/",
-				labels: [
-					Label(
-						artist: "BLACK FLAG",
-						title: "My War",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MY_WAR_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "MY_WAR_02",
-						delay: 5.0
-					)
-				]
-			),
-			//PERVERT
-			Song(
-				file: "PERVERT",
-				root: "RADIO_04_PUNK/pervert/",
-				labels: [
-					Label(
-						artist: "THE DESCENDENTS",
-						title: "Pervert",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//ROCK_HOUSE
-			Song(
-				file: "ROCK_HOUSE",
-				root: "RADIO_04_PUNK/rock_house/",
-				labels: [
-					Label(
-						artist: "CIRCLE JERKS",
-						title: "Rock House",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//SILENT_MAJORITY
-			Song(
-				file: "SILENT_MAJORITY",
-				root: "RADIO_04_PUNK/silent_majority/",
-				labels: [
-					Label(
-						artist: "T.S.O.L.",
-						title: "Abolish Government/Silent Majority",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//SUBLIMINAL
-			Song(
-				file: "SUBLIMINAL",
-				root: "RADIO_04_PUNK/subliminal/",
-				labels: [
-					Label(
-						artist: "SUICIDAL TENDENCIES",
-						title: "Subliminal",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SUBLIMINAL_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "SUBLIMINAL_02",
-						delay: 5.0
-					)
-				]
-			),
-			//THE_ENEMY
-			Song(
-				file: "THE_ENEMY",
-				root: "RADIO_04_PUNK/the_enemy/",
-				labels: [
-					Label(
-						artist: "D.O.A.",
-						title: "The Enemy",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_ENEMY_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_ENEMY_02",
-						delay: 5.0
-					)
-				]
-			),
-			//THE_MOUTH_DONT_STOP
-			Song(
-				file: "THE_MOUTH_DONT_STOP",
-				root: "RADIO_04_PUNK/the_mouth_dont_stop/",
-				labels: [
-					Label(
-						artist: "FEAR",
-						title: "The Mouth Don't Stop (The Trouble With Women Is)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_MOUTH_DONT_STOP_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_MOUTH_DONT_STOP_02",
-						delay: 5.0
-					)
-				]
-			),
-			//WHATS_NEXT
-			Song(
-				file: "WHATS_NEXT",
-				root: "RADIO_04_PUNK/whats_next/",
-				labels: [
-					Label(
-						artist: "OFF!",
-						title: "What's Next?",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WHATS_NEXT_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "WHATS_NEXT_02",
-						delay: 5.0
-					),
-					Intro(
-						file: "WHATS_NEXT_03",
-						delay: 5.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		sid: ["01","02","03","04","05","06","07","08","09","10"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12"],
-		time: [
-			"EVENING": ["01","02","03"],
-			"MORNING": ["01","02","03","04"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05"],
-			"NEWS": ["01","02","03","04"]
-		]
-	),
-	
-	// MARK: WCTR
-	RadioStation(
-		index: 4,
-		number: 5,
-		name: "WCTR",
-		image: "gta_radio_stations_texture02_512",
-		imagePosition: Position(
-			row: 2,
-			column: 1
-		),
-		randomize: false,
-		rotate: true,
-		root: "RADIO_05_TALK_01",
-		songs: [
-			//MONO_CHAKRA_ATTACK_PART_1
-			Song(
-				file: "MONO_CHAKRA_ATTACK_PART_1",
-				root: "RADIO_05_TALK_01/mono_chakra_attack_part_1/",
-				labels: [
-					Label(
-						artist: "CHAKRA ATTACK",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MONO_CHATTERSPHERE
-			Song(
-				file: "MONO_CHATTERSPHERE",
-				root: "RADIO_05_TALK_01/mono_chattersphere/",
-				labels: [
-					Label(
-						artist: "CHATTERSPHERE",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MONO_DCHAKRA_ATTACK_PART_2
-			Song(
-				file: "MONO_DCHAKRA_ATTACK_PART_2",
-				root: "RADIO_05_TALK_01/mono_dchakra_attack_part_2/",
-				labels: [
-					Label(
-						artist: "CHAKRA ATTACK",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MONO_FERNANDO_SHOW_1
-			Song(
-				file: "MONO_FERNANDO_SHOW_1",
-				root: "RADIO_05_TALK_01/mono_fernando_show_1/",
-				labels: [
-					Label(
-						artist: "The Fernando Show",
-						title: "",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: [],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11"],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: Rebel Radio
-	RadioStation(
-		index: 5,
-		number: 6,
-		name: "Rebel Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 1,
-			column: 1
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_06_COUNTRY",
-		songs: [
-			//ARE_YOU_SURE_HANK
-			Song(
-				file: "ARE_YOU_SURE_HANK",
-				root: "RADIO_06_COUNTRY/are_you_sure_hank/",
-				labels: [
-					Label(
-						artist: "WAYLON JENNINGS",
-						title: "Are You Sure Hank Done It This Way",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ARE_YOU_SURE_HANK_01",
-						delay: 5.0
-					)
-				]
-			),
-			//CANT_HARDLY_STAND
-			Song(
-				file: "CANT_HARDLY_STAND",
-				root: "RADIO_06_COUNTRY/cant_hardly_stand/",
-				labels: [
-					Label(
-						artist: "CHARLIE FEATHERS",
-						title: "Can't Hardly Stand It",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CANT_HARDLY_STAND_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "CANT_HARDLY_STAND_02",
-						delay: 5.0
-					)
-				]
-			),
-			//CONVOY
-			Song(
-				file: "CONVOY",
-				root: "RADIO_06_COUNTRY/convoy/",
-				labels: [
-					Label(
-						artist: "C.W. MCCALL",
-						title: "Convoy",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CONVOY_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "CONVOY_02",
-						delay: 5.0
-					),
-					Intro(
-						file: "CONVOY_03",
-						delay: 5.0
-					)
-				]
-			),
-			//CRAZY_ARMS
-			Song(
-				file: "CRAZY_ARMS",
-				root: "RADIO_06_COUNTRY/crazy_arms/",
-				labels: [
-					Label(
-						artist: "RAY PRICE",
-						title: "Crazy Arms",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//DIPPIN_SNUFF
-			Song(
-				file: "DIPPIN_SNUFF",
-				root: "RADIO_06_COUNTRY/dippin_snuff/",
-				labels: [
-					Label(
-						artist: "MARVIN JACKSON",
-						title: "Dippin' Snuff",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//DIVORCE
-			Song(
-				file: "DIVORCE",
-				root: "RADIO_06_COUNTRY/divorce/",
-				labels: [
-					Label(
-						artist: "TAMMY WYNETTE",
-						title: "D-I-V-O-R-C-E",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//GET_OUTTA_MY_CAR
-			Song(
-				file: "GET_OUTTA_MY_CAR",
-				root: "RADIO_06_COUNTRY/get_outta_my_car/",
-				labels: [
-					Label(
-						artist: "HASIL ADKINS",
-						title: "Get Outta My Car",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GET_OUTTA_MY_CAR_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "GET_OUTTA_MY_CAR_02",
-						delay: 5.0
-					),
-					Intro(
-						file: "GET_OUTTA_MY_CAR_03",
-						delay: 5.0
-					)
-				]
-			),
-			//GET_WITH_IT
-			Song(
-				file: "GET_WITH_IT",
-				root: "RADIO_06_COUNTRY/get_with_it/",
-				labels: [
-					Label(
-						artist: "CHARLIE FEATHERS",
-						title: "Get With It",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//HIGHWAY_MAN
-			Song(
-				file: "HIGHWAY_MAN",
-				root: "RADIO_06_COUNTRY/highway_man/",
-				labels: [
-					Label(
-						artist: "THE HIGHWAYMEN",
-						title: "Highwayman",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//I_AINT_LIVING_LONG_LIKE_THIS
-			Song(
-				file: "I_AINT_LIVING_LONG_LIKE_THIS",
-				root: "RADIO_06_COUNTRY/i_aint_living_long_like_this/",
-				labels: [
-					Label(
-						artist: "WAYLON JENNINGS",
-						title: "I Ain't Living Long Like This",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "I_AINT_LIVING_LONG_LIKE_THIS_01",
-						delay: 5.0
-					)
-				]
-			),
-			//IF_WANT_TO_GET_HEAVEN
-			Song(
-				file: "IF_WANT_TO_GET_HEAVEN",
-				root: "RADIO_06_COUNTRY/if_want_to_get_heaven/",
-				labels: [
-					Label(
-						artist: "OZARK MOUNTAIN DAREDEVILS",
-						title: "If You Wanna Get To Heaven",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "IF_WANT_TO_GET_HEAVEN_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "IF_WANT_TO_GET_HEAVEN_02",
-						delay: 5.0
-					)
-				]
-			),
-			//IT_DONT_HURT_ANYMORE
-			Song(
-				file: "IT_DONT_HURT_ANYMORE",
-				root: "RADIO_06_COUNTRY/it_dont_hurt_anymore/",
-				labels: [
-					Label(
-						artist: "HANK THOMPSON",
-						title: "It Don't Hurt Anymore",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "IT_DONT_HURT_ANYMORE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "IT_DONT_HURT_ANYMORE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//IT_WONT_BE_LONG_HATING_YOU
-			Song(
-				file: "IT_WONT_BE_LONG_HATING_YOU",
-				root: "RADIO_06_COUNTRY/it_wont_be_long_hating_you/",
-				labels: [
-					Label(
-						artist: "JOHNNY PAYCHECK",
-						title: "It Won't Be Long (And I'll Be Hating You)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "IT_WONT_BE_LONG_HATING_YOU_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "IT_WONT_BE_LONG_HATING_YOU_02",
-						delay: 5.0
-					)
-				]
-			),
-			//SHE_MADE_TOOTHPICKS_OUT_OF_ME
-			Song(
-				file: "SHE_MADE_TOOTHPICKS_OUT_OF_ME",
-				root: "RADIO_06_COUNTRY/she_made_toothpicks_out_of_me/",
-				labels: [
-					Label(
-						artist: "HOMER & JETHRO",
-						title: "She Made Toothpicks Of The Timber Of My Heart",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//THE_GENERAL_LEE
-			Song(
-				file: "THE_GENERAL_LEE",
-				root: "RADIO_06_COUNTRY/the_general_lee/",
-				labels: [
-					Label(
-						artist: "JOHNNY CASH",
-						title: "The General Lee",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_GENERAL_LEE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_GENERAL_LEE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//WHISKEY_RIVER
-			Song(
-				file: "WHISKEY_RIVER",
-				root: "RADIO_06_COUNTRY/whiskey_river/",
-				labels: [
-					Label(
-						artist: "WILLIE NELSON",
-						title: "Whiskey River",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WHISKEY_RIVER_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "WHISKEY_RIVER_02",
-						delay: 5.0
-					)
-				]
-			),
-			//YOU_TOOK_ALL_THE_RAMBLIN_OUT
-			Song(
-				file: "YOU_TOOK_ALL_THE_RAMBLIN_OUT",
-				root: "RADIO_06_COUNTRY/you_took_all_the_ramblin_out/",
-				labels: [
-					Label(
-						artist: "JERRY REED",
-						title: "You Took All The Ramblin' Out Of Me",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "YOU_TOOK_ALL_THE_RAMBLIN_OUT_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "YOU_TOOK_ALL_THE_RAMBLIN_OUT_02",
-						delay: 5.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21"],
-		time: [
-			"EVENING": ["01","02","03","04"],
-			"MORNING": ["01","02","03","04"]
-		],
-		to: [
-			"AD": ["01","02","03","04"],
-			"NEWS": ["01","02","03","04"]
-		]
-	),
-	
-	// MARK: Soulwax FM
-	RadioStation(
-		index: 6,
-		number: 7,
-		name: "Soulwax FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 2,
-			column: 2
-		),
-		randomize: false,
-		rotate: false,
-		root: "RADIO_07_DANCE_01",
-		songs: [
-			//SOULWAX_FM_FINAL_MIX_
-			Song(
-				file: "SOULWAX_FM_FINAL_MIX_32K",
-				root: "RADIO_07_DANCE_01/soulwax_fm_final_mix_32k/",
-				labels: [
-					Label(
-						artist: "",
-						title: "",
-						time: 0.0
-					),
-					//Stock (Soulwax Remix)
-					Label(
-						artist: "PALMBOMEN",
-						title: "Stock (Soulwax Remix)",
-						time: 15.5
-					),
-					//Fatal Error
-					Label(
-						artist: "FATAL ERROR",
-						title: "Fatal Error",
-						time: 159.0
-					),
-					//Let's Beam Him Up
-					Label(
-						artist: "SUPERSEMPFFT",
-						title: "Let's Beam Him Up",
-						time: 291.0
-					),
-					//Mingi
-					Label(
-						artist: "MIM SULEMAN",
-						title: "Mingi",
-						time: 370.0
-					),
-					//The Strange Art (Inflagranti Remix)
-					Label(
-						artist: "FK CLUB",
-						title: "The Strange Art (Inflagranti Remix)",
-						time: 509.0
-					),
-					//El Sucu Tucu
-					Label(
-						artist: "MATIAS AGUAYO",
-						title: "El Sucu Tucu",
-						time: 639.0
-					),
-					//Naive Reception
-					Label(
-						artist: "DANIEL AVERY",
-						title: "Naive Reception",
-						time: 870.0
-					),
-					//Gabriel (Soulwax Remix)
-					Label(
-						artist: "JOE GODDARD",
-						title: "Gabriel (Soulwax Remix)",
-						time: 967.0
-					),
-					//Body Music (Original Mix)
-					Label(
-						artist: "DANIEL MALASO",
-						title: "Body Music (Original Mix)",
-						time: 1150.0
-					),
-					//Lazer Beams
-					Label(
-						artist: "GREEN VELVET & HARVARD BASS",
-						title: "Lazer Beams",
-						time: 1263.0
-					),
-					//Tryouts
-					Label(
-						artist: "ZOMBIE NATION",
-						title: "Tryouts",
-						time: 1395.0
-					),
-					//Nothing But Pleasure
-					Label(
-						artist: "TOM ROWLANDS",
-						title: "Nothing But Pleasure",
-						time: 1491.0
-					),
-					//Arp #1
-					Label(
-						artist: "JACKSON AND HIS COMPUTER BAND",
-						title: "Arp #1",
-						time: 1644.0
-					),
-					//Synrise (Soulwax Remix)
-					Label(
-						artist: "GOOSE",
-						title: "Synrise (Soulwax Remix)",
-						time: 1826.0
-					),
-					//Mr. Croissant Taker
-					Label(
-						artist: "TRANSISTORCAKE",
-						title: "Mr. Croissant Taker",
-						time: 1976.0
-					),
-					//Plush (Jaques Lu Cont Remix)
-					Label(
-						artist: "TIGA",
-						title: "Plush (Jaques Lu Cont Remix)",
-						time: 2098.0
-					),
-					//Shockwave (Gesaffelstein Remix)
-					Label(
-						artist: "THE HACKER",
-						title: "Shockwave (Gesaffelstein Remix)",
-						time: 2233.0
-					),
-					//After You (Soulwax Remix)
-					Label(
-						artist: "PULP",
-						title: "After You (Soulwax Remix)",
-						time: 2324.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: [],
-		sid: [],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: East Los FM
-	RadioStation(
-		index: 7,
-		number: 8,
-		name: "East Los FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 2,
-			column: 1
-		),
-		randomize: false,
-		rotate: false,
-		root: "RADIO_08_MEXICAN",
-		songs: [
-			//MEX_FINAL_MIX_
-			Song(
-				file: "MEX_FINAL_MIX_32",
-				root: "RADIO_08_MEXICAN/mex_final_mix_32/",
-				labels: [
-					//El Cocaino
-					Label(
-						artist: "LOS BUITRES DE CULIACAN SINALOA",
-						title: "El Cocaino",
-						time: 0.0
-					),
-					//Es-Toy
-					Label(
-						artist: "MEXICAN INSTITUTE OF SOUND",
-						title: "Es-Toy",
-						time: 155.0
-					),
-					//Criminal Sound
-					Label(
-						artist: "NINA DIOZ",
-						title: "Criminal Sound",
-						time: 274.0
-					),
-					//Radio Capital
-					Label(
-						artist: "LA VIDA BOHEME",
-						title: "Radio Capital",
-						time: 366.0
-					),
-					//Autos, Moda Y Rock And Roll
-					Label(
-						artist: "FANDANGO",
-						title: "Autos, Moda Y Rock And Roll",
-						time: 504.0
-					),
-					//El Tatuado
-					Label(
-						artist: "DON CHETO",
-						title: "El Tatuado",
-						time: 638.0
-					),
-					//Se Me Perdio la Cadenita
-					Label(
-						artist: "LA SONORA DINAMITA",
-						title: "Se Me Perdio la Cadenita",
-						time: 839.0
-					),
-					//Fiebre De Jack
-					Label(
-						artist: "SHE'S A TEASE",
-						title: "Fiebre De Jack",
-						time: 988.0
-					),
-					//Pachuco
-					Label(
-						artist: "MALDITA VECINDAD",
-						title: "Pachuco",
-						time: 1210.0
-					),
-					//El Sonidito
-					Label(
-						artist: "HECHIZEROS BAND",
-						title: "El Sonidito",
-						time: 1395.0
-					),
-					//Fresco
-					Label(
-						artist: "MILKMAN",
-						title: "Fresco",
-						time: 1574.0
-					),
-					//Maldito
-					Label(
-						artist: "JESSY BULBO",
-						title: "Maldito",
-						time: 1778.0
-					),
-					//Yo Tengo El Don
-					Label(
-						artist: "LA LIGA FEAT. ALIKA",
-						title: "Yo Tengo El Don",
-						time: 1951.0
-					),
-					//La Granja
-					Label(
-						artist: "LOS TIGRES DEL NORTE",
-						title: "La Granja",
-						time: 2122.0
-					),
-					//El Rey Y Yo
-					Label(
-						artist: "LOS ANGELES NEGROS",
-						title: "El Rey Y Yo",
-						time: 2346.0
-					)
-				],
-				set: nil,
-				intros: []
-			)
-		],
-		general: [],
-		sid: [],
-		mono_solo: [],
-		time: [
-			"EVENING": [],
-			"MORNING": []
-		],
-		to: [
-			"AD": [],
-			"NEWS": []
-		]
-	),
-	
-	// MARK: West Coast Classics
-	RadioStation(
-		index: 8,
-		number: 9,
-		name: "West Coast Classics",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
-			row: 1,
-			column: 3
-		),
-		randomize: true,
-		rotate: false,
-		root: "RADIO_09_HIPHOP_OLD",
-		songs: [
-			//AFRO_PUFFS
-			Song(
-				file: "AFRO_PUFFS",
-				root: "RADIO_09_HIPHOP_OLD/afro_puffs/",
-				labels: [
-					Label(
-						artist: "THE LADY OF RAGE",
-						title: "Afro Puffs",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "AFRO_PUFFS_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "AFRO_PUFFS_02",
-						delay: 5.0
-					)
-				]
-			),
-			//AMBITIONZ_AZ_A_RIDAH
-			Song(
-				file: "AMBITIONZ_AZ_A_RIDAH",
-				root: "RADIO_09_HIPHOP_OLD/ambitionz_az_a_ridah/",
-				labels: [
-					Label(
-						artist: "2PAC",
-						title: "Ambitionz Az A Ridah",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "AMBITIONZ_AZ_A_RIDAH_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "AMBITIONZ_AZ_A_RIDAH_02",
-						delay: 5.0
-					)
-				]
-			),
-			//APPETITE_FOR_DESTRUCTION
-			Song(
-				file: "APPETITE_FOR_DESTRUCTION",
-				root: "RADIO_09_HIPHOP_OLD/appetite_for_destruction/",
-				labels: [
-					Label(
-						artist: "N.W.A",
-						title: "Appetite For Destruction",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "APPETITE_FOR_DESTRUCTION_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "APPETITE_FOR_DESTRUCTION_02",
-						delay: 5.0
-					)
-				]
-			),
-			//BALLAD_OF_A_MENACE
-			Song(
-				file: "BALLAD_OF_A_MENACE",
-				root: "RADIO_09_HIPHOP_OLD/ballad_of_a_menace/",
-				labels: [
-					Label(
-						artist: "CPO",
-						title: "Ballad Of A Menace",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BALLAD_OF_A_MENACE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "BALLAD_OF_A_MENACE_02",
-						delay: 5.0
-					),
-					Intro(
-						file: "BALLAD_OF_A_MENACE_03",
-						delay: 5.0
-					)
-				]
-			),
-			//BOW_DOWN
-			Song(
-				file: "BOW_DOWN",
-				root: "RADIO_09_HIPHOP_OLD/bow_down/",
-				labels: [
-					Label(
-						artist: "WESTSIDE CONNECTION",
-						title: "Bow Down",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "BOW_DOWN_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "BOW_DOWN_02",
-						delay: 5.0
-					)
-				]
-			),
-			//C_WALK
-			Song(
-				file: "C_WALK",
-				root: "RADIO_09_HIPHOP_OLD/c_walk/",
-				labels: [
-					Label(
-						artist: "KURUPT",
-						title: "C-Walk",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "C_WALK_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "C_WALK_02",
-						delay: 5.0
-					)
-				]
-			),
-			//CAPTAIN_SAVE_A_HOE
-			Song(
-				file: "CAPTAIN_SAVE_A_HOE",
-				root: "RADIO_09_HIPHOP_OLD/captain_save_a_hoe/",
-				labels: [
-					Label(
-						artist: "E-40",
-						title: "Captain Save A Hoe",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "CAPTAIN_SAVE_A_HOE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "CAPTAIN_SAVE_A_HOE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//DOLLAZ_AND_SENSE
-			Song(
-				file: "DOLLAZ_AND_SENSE",
-				root: "RADIO_09_HIPHOP_OLD/dollaz_and_sense/",
-				labels: [
-					Label(
-						artist: "DJ QUIK",
-						title: "Dollaz & Sense",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//FIRST_OF_THE_MONTH
-			Song(
-				file: "FIRST_OF_THE_MONTH",
-				root: "RADIO_09_HIPHOP_OLD/first_of_the_month/",
-				labels: [
-					Label(
-						artist: "BONE THUGS-N-HARMONY",
-						title: "1st Of Tha Month",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FIRST_OF_THE_MONTH_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "FIRST_OF_THE_MONTH_02",
-						delay: 5.0
-					)
-				]
-			),
-			//GANGSTA_GANGSTA
-			Song(
-				file: "GANGSTA_GANGSTA",
-				root: "RADIO_09_HIPHOP_OLD/gangsta_gangsta/",
-				labels: [
-					Label(
-						artist: "N.W.A",
-						title: "Gangsta Gangsta",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GANGSTA_GANGSTA_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "GANGSTA_GANGSTA_02",
-						delay: 5.0
-					)
-				]
-			),
-			//GIN_AND_JUICE
-			Song(
-				file: "GIN_AND_JUICE",
-				root: "RADIO_09_HIPHOP_OLD/gin_and_juice/",
-				labels: [
-					Label(
-						artist: "SNOOP DOGG",
-						title: "Gin and Juice",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GIN_AND_JUICE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "GIN_AND_JUICE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//I_GOT_FIVE_ON_IT
-			Song(
-				file: "I_GOT_FIVE_ON_IT",
-				root: "RADIO_09_HIPHOP_OLD/i_got_five_on_it/",
-				labels: [
-					Label(
-						artist: "THE LUNIZ",
-						title: "I Got 5 On It",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//LATE_NIGHT_HYPE
-			Song(
-				file: "LATE_NIGHT_HYPE",
-				root: "RADIO_09_HIPHOP_OLD/late_night_hype/",
-				labels: [
-					Label(
-						artist: "COMPTON'S MOST WANTED",
-						title: "Late Night Hype",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LATE_NIGHT_HYPE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "LATE_NIGHT_HYPE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//LIKE_A_PIANO
-			Song(
-				file: "LIKE_A_PIANO",
-				root: "RADIO_09_HIPHOP_OLD/like_a_piano/",
-				labels: [
-					Label(
-						artist: "KING TEE",
-						title: "Played Like A Piano",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: []
-			),
-			//MIND_PLAYING_TRICKS
-			Song(
-				file: "MIND_PLAYING_TRICKS",
-				root: "RADIO_09_HIPHOP_OLD/mind_playing_tricks/",
-				labels: [
-					Label(
-						artist: "GETO BOYS",
-						title: "Mind Playing Tricks On Me",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MIND_PLAYING_TRICKS_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "MIND_PLAYING_TRICKS_02",
-						delay: 5.0
-					)
-				]
-			),
-			//NO_MORE_QUESTIONS
-			Song(
-				file: "NO_MORE_QUESTIONS",
-				root: "RADIO_09_HIPHOP_OLD/no_more_questions/",
-				labels: [
-					Label(
-						artist: "EAZY-E",
-						title: "No More ?'s",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NO_MORE_QUESTIONS_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "NO_MORE_QUESTIONS_02",
-						delay: 5.0
-					)
-				]
-			),
-			//NOTHIN_BUT_THE_CAVI_HIT
-			Song(
-				file: "NOTHIN_BUT_THE_CAVI_HIT",
-				root: "RADIO_09_HIPHOP_OLD/nothin_but_the_cavi_hit/",
-				labels: [
-					Label(
-						artist: "MACK 10 FEAT. THE DOGG POUND",
-						title: "Nothin' But The Cavi Hit",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NOTHIN_BUT_THE_CAVI_HIT_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "NOTHIN_BUT_THE_CAVI_HIT_02",
-						delay: 5.0
-					)
-				]
-			),
-			//SERVIN_EM_HEAT
-			Song(
-				file: "SERVIN_EM_HEAT",
-				root: "RADIO_09_HIPHOP_OLD/servin_em_heat/",
-				labels: [
-					Label(
-						artist: "SOUTH CENTRAL CARTEL",
-						title: "Servin' 'Em Heat",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SERVIN_EM_HEAT_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "SERVIN_EM_HEAT_02",
-						delay: 5.0
-					)
-				]
-			),
-			//SHERM_STICK
-			Song(
-				file: "SHERM_STICK",
-				root: "RADIO_09_HIPHOP_OLD/sherm_stick/",
-				labels: [
-					Label(
-						artist: "JAYO FELONY",
-						title: "Sherm Stick",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SHERM_STICK_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "SHERM_STICK_02",
-						delay: 5.0
-					)
-				]
-			),
-			//SO_YOU_WANT_TO_BE_A_GANGSTER
-			Song(
-				file: "SO_YOU_WANT_TO_BE_A_GANGSTER",
-				root: "RADIO_09_HIPHOP_OLD/so_you_want_to_be_a_gangster/",
-				labels: [
-					Label(
-						artist: "TOO $HORT",
-						title: "So You Wanna Be A Gangster",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SO_YOU_WANT_TO_BE_A_GANGSTER_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "SO_YOU_WANT_TO_BE_A_GANGSTER_02",
-						delay: 5.0
-					)
-				]
-			),
-			//STILL_D_R_E
-			Song(
-				file: "STILL_D_R_E",
-				root: "RADIO_09_HIPHOP_OLD/still_d_r_e/",
-				labels: [
-					Label(
-						artist: "DR. DRE",
-						title: "Still D.R.E (ft Snoop Dogg)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "STILL_D_R_E_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "STILL_D_R_E_02",
-						delay: 5.0
-					)
-				]
-			),
-			//STRAIGHT_UP_MENACE
-			Song(
-				file: "STRAIGHT_UP_MENACE",
-				root: "RADIO_09_HIPHOP_OLD/straight_up_menace/",
-				labels: [
-					Label(
-						artist: "MC EIHT",
-						title: "Streiht Up Menace",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "STRAIGHT_UP_MENACE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "STRAIGHT_UP_MENACE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//THE_MURDA_SHOW
-			Song(
-				file: "THE_MURDA_SHOW",
-				root: "RADIO_09_HIPHOP_OLD/the_murda_show/",
-				labels: [
-					Label(
-						artist: "SPICE 1 FEAT. MC EIHT",
-						title: "The Murda Show",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_MURDA_SHOW_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_MURDA_SHOW_02",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_MURDA_SHOW_03",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_MURDA_SHOW_04",
-						delay: 5.0
-					)
-				]
-			),
-			//THE_NEXT_EPISODE
-			Song(
-				file: "THE_NEXT_EPISODE",
-				root: "RADIO_09_HIPHOP_OLD/the_next_episode/",
-				labels: [
-					Label(
-						artist: "DR. DRE",
-						title: "The Next Episode (Ft Snoop Dogg)",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_NEXT_EPISODE_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "THE_NEXT_EPISODE_02",
-						delay: 5.0
-					)
-				]
-			),
-			//THIS_DJ
-			Song(
-				file: "THIS_DJ",
-				root: "RADIO_09_HIPHOP_OLD/this_dj/",
-				labels: [
-					Label(
-						artist: "WARREN G",
-						title: "This D.J.",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THIS_DJ_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "THIS_DJ_02",
-						delay: 5.0
-					)
-				]
-			),
-			//WE_ROLL_DEEP
-			Song(
-				file: "WE_ROLL_DEEP",
-				root: "RADIO_09_HIPHOP_OLD/we_roll_deep/",
-				labels: [
-					Label(
-						artist: "THE CONSCIOUS DAUGHTERS",
-						title: "We Roll Deep",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WE_ROLL_DEEP_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "WE_ROLL_DEEP_02",
-						delay: 5.0
-					)
-				]
-			),
-			//WHAT_WOULD_YOU_DO
-			Song(
-				file: "WHAT_WOULD_YOU_DO",
-				root: "RADIO_09_HIPHOP_OLD/what_would_you_do/",
-				labels: [
-					Label(
-						artist: "THE DOGG POUND",
-						title: "What Would U Do",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WHAT_WOULD_YOU_DO_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "WHAT_WOULD_YOU_DO_02",
-						delay: 5.0
-					)
-				]
-			),
-			//WHAT_YOU_WANNA_DO
-			Song(
-				file: "WHAT_YOU_WANNA_DO",
-				root: "RADIO_09_HIPHOP_OLD/what_you_wanna_do/",
-				labels: [
-					Label(
-						artist: "KAUSION",
-						title: "What You Wanna Do",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "WHAT_YOU_WANNA_DO_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "WHAT_YOU_WANNA_DO_02",
-						delay: 5.0
-					)
-				]
-			),
-			//YOU_KNOW_HOW_WE_DO
-			Song(
-				file: "YOU_KNOW_HOW_WE_DO",
-				root: "RADIO_09_HIPHOP_OLD/you_know_how_we_do/",
-				labels: [
-					Label(
-						artist: "ICE CUBE",
-						title: "You Know How We Do It",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "YOU_KNOW_HOW_WE_DO_01",
-						delay: 5.0
-					),
-					Intro(
-						file: "YOU_KNOW_HOW_WE_DO_02",
-						delay: 5.0
-					)
-				]
-			)
-		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
-		time: [
-			"EVENING": ["01","02","03","04","05","06","07"],
-			"MORNING": ["01","02","03","04","05","06","07"]
-		],
-		to: [
-			"AD": ["01","02","03","04","05","06","07"],
-			"NEWS": ["01","02","03","04","05","06"]
-		]
-	),
-	
 	// MARK: Radio Off
 	RadioStation(
-		index: 9,
+		index: 0,
 		number: 10,
 		name: "Radio Off",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 4,
 			column: 4
 		),
-		randomize: false,
-		rotate: false,
+		order: "static",
 		root: nil,
 		songs: nil,
 		general: nil,
-		sid: nil,
-		mono_solo: nil,
+		identity: nil,
+		solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Media Player
+	RadioStation(
+		index: 1,
+		number: 26,
+		name: "Media Player",
+		image: ImageData(
+			name: "gta_radio_stations_texture11_128",
+			row: 1,
+			column: 1
+		),
+		order: "static",
+		root: nil,
+		songs: nil,
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: nil,
 		to: nil
 	),
 	
 	// MARK: Blaine County Radio
 	RadioStation(
-		index: 10,
+		index: 2,
 		number: 11,
 		name: "Blaine County Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 3,
 			column: 2
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "RADIO_11_TALK_02",
 		songs: [
 			//MONO_BCR_COMMUNITY_HOUR
@@ -4463,7 +71,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//MONO_BEYOND_INSEMINATION
 			Song(
@@ -4477,7 +87,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//MONO_BLESS_YOUR_HEART
 			Song(
@@ -4491,7 +103,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//MONO_ZBEYOND_INSEMINATION_PART_2
 			Song(
@@ -4505,12 +119,26 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			)
 		],
-		general: [],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11"],
-		mono_solo: [],
+		general: nil,
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"])
+		],
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -4521,18 +149,857 @@ public let RadioStations: [RadioStation] = [
 		]
 	),
 	
-	// MARK: The Blue Ark
+	// MARK: The Music Locker
 	RadioStation(
-		index: 11,
+		index: 3,
+		number: 23,
+		name: "The Music Locker",
+		image: ImageData(
+			name: "gta_radio_stations_texture08_128",
+			row: 1,
+			column: 1
+		),
+		order: "static",
+		root: nil,
+		songs: nil,
+		general: nil,
+		identity: nil,
+		solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: MOTOMAMI Los Santos
+	RadioStation(
+		index: 4,
+		number: 27,
+		name: "MOTOMAMI Los Santos",
+		image: ImageData(
+			name: "gta_radio_stations_texture12_128",
+			row: 1,
+			column: 1
+		),
+		order: ["rotate","reverse","alternate","alternate_r"].randomElement()!,
+		root: "dlc_security_music",
+		songs: [
+			//100_dissin
+			Song(
+				file: "0x1DCE0DD0",//0x13667803
+				root: "dlc_security_music/100_dissin/",
+				labels: [
+					Label(
+						artist: "ARMANDO",
+						title: "100% of Disin' You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//xulita
+			Song(
+				file: "0x1B0448B0",//0x11BECEC6
+				root: "dlc_security_music/xulita/",
+				labels: [
+					Label(
+						artist: "YOUNG CISTER FEAT. KAYDY CAIN",
+						title: "XULITA",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//snap_and_roll
+			Song(
+				file: "0x0E477B98",//0x062CCA9B
+				root: "dlc_security_music/snap_and_roll/",
+				labels: [
+					Label(
+						artist: "SOULJA BOY TELL'EM",
+						title: "Snap And Roll",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1C67F034",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//nubes
+			Song(
+				file: "0x1AD8BAFA",//0x1DE39D2B
+				root: "dlc_security_music/nubes/",
+				labels: [
+					Label(
+						artist: "RAUW ALEJANDRO",
+						title: "Nubes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x03B9906A",
+						delay: 5.0
+					),
+					Intro(
+						file: "0x11D06C6C",
+						delay: 5.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//bounce_n_break
+			Song(
+				file: "0x0D607271",//0x02202F9C
+				root: "dlc_security_music/bounce_n_break/",
+				labels: [
+					Label(
+						artist: "DJ SPINN",
+						title: "Bounce N Break Yo Back",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//contigo
+			Song(
+				file: "0x1AB0DEE4",//0x043179FD
+				root: "dlc_security_music/contigo/",
+				labels: [
+					Label(
+						artist: "ÑEJO & DALMATA",
+						title: "Vacilar Contigo",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x065AD2BB",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x186D36E0",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//rockstar_made
+			Song(
+				file: "0x1B3CB8DD",//0x08097FF6
+				root: "dlc_security_music/rockstar_made/",
+				labels: [
+					Label(
+						artist: "PLAYBOI CARTI",
+						title: "Rockstar Made",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1BF809DE",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x1062F2A8",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//calle_luna
+			Song(
+				file: "0x0E6DB772",//0x09F4F127
+				root: "dlc_security_music/calle_luna/",
+				labels: [
+					Label(
+						artist: "WILLIE COLÓN & HÉCTOR LAVOE",
+						title: "Calle Luna Calle Sol",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0C7102D6",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x1E186623",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x11054BFD",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//machote
+			Song(
+				file: "0x1DC31D8F",//0x13F2722D
+				root: "dlc_security_music/machote/",
+				labels: [
+					Label(
+						artist: "ARCA",
+						title: "Machote",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0A702F6D",
+						delay: 10.0
+					),
+					Intro(
+						file: "0x0DCDF64F",
+						delay: 10.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//418
+			Song(
+				file: "0x0B6157A1",//0x01C2371A
+				root: "dlc_security_music/418/",
+				labels: [
+					Label(
+						artist: "DJ SLUGO",
+						title: "418 (Bounce Mix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0F4C5FC7",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//con_altura
+			Song(
+				file: "0x0BDF6B91",//0x04FC63CB
+				root: "dlc_security_music/con_altura/",
+				labels: [
+					Label(
+						artist: "ROSALÍA FEAT. J BALVIN",
+						title: "Con Altura",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1C2F351E",
+						delay: 2.0
+					),
+					Intro(
+						file: "0x15ECE87A",
+						delay: 2.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//klk
+			Song(
+				file: "0x0DB6BA96",//0x182A7858
+				root: "dlc_security_music/klk/",
+				labels: [
+					Label(
+						artist: "ARCA FEAT. ROSALÍA",
+						title: "KLK",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x066D0171",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x0896C5C2",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//linda
+			Song(
+				file: "0x14DF58DA",//0x089C6414
+				root: "dlc_security_music/linda/",
+				labels: [
+					Label(
+						artist: "TOKISCHA & ROSALÍA",
+						title: "Linda",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x11213EDB",
+						delay: 0.0
+					),
+					Intro(
+						file: "0x129241BD",
+						delay: 0.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//vamos_disco
+			Song(
+				file: "0x14CAF742",//0x175074BD
+				root: "dlc_security_music/vamos_disco/",
+				labels: [
+					Label(
+						artist: "LAS GUANABANAS",
+						title: "Vamos Pa la Disco",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0A47B49C",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x08FE720A",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x17D34FB4",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x18021011",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//duro
+			Song(
+				file: "0x004FFC64",//0x094EC2AA
+				root: "dlc_security_music/duro/",
+				labels: [
+					Label(
+						artist: "LA GOONY CHONGA",
+						title: "Duro 2005",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x043BFAC9",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x19742539",
+						delay: 10.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//bank_robber (skinny_jeans)
+			Song(
+				file: "0x0F83DFE6",//0x1ECA47CC
+				root: "dlc_security_music/bank_robber/",
+				labels: [
+					Label(
+						artist: "LIKKLE VYBZ & LIKKLE ADDI",
+						title: "Skinny Jeans",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1BC43DFC",
+						delay: 6.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//dominicana
+			Song(
+				file: "0x0BFCFE77",//0x061AA958
+				root: "dlc_security_music/dominicana/",
+				labels: [
+					Label(
+						artist: "CHUCKY73",
+						title: "Dominicana",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0A3D0C5D",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x0BF98FD4",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//tumbando_fronte
+			Song(
+				file: "0x08957DDF",//0x0359245A
+				root: "dlc_security_music/tumbando_fronte/",
+				labels: [
+					Label(
+						artist: "ALBERTO STYLEE",
+						title: "Tumbando Fronte",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//la_fama
+			Song(
+				file: "0x10C4A42B",//0x07580BF2
+				root: "dlc_security_music/la_fama/",
+				labels: [
+					Label(
+						artist: "ROSALÍA & THE WEEKEND",
+						title: "LA FAMA",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0BA2F8CE",
+						delay: 2.0
+					),
+					Intro(
+						file: "0x01E9A55C",
+						delay: 2.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//where_heart_is
+			Song(
+				file: "0x0B550E1C",//0x160CF1BA
+				root: "dlc_security_music/where_heart_is/",
+				labels: [
+					Label(
+						artist: "Q",
+						title: "Take Me Where Your Heart Is",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//dipra (al_la_mia)
+			Song(
+				file: "0x1CE0150E",//0x03BE5568
+				root: "dlc_security_music/dipra/",
+				labels: [
+					Label(
+						artist: "BAD GYAL",
+						title: "Al La Mía",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0B9CBBC6",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x192B16DA",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//mi_nombre
+			Song(
+				file: "0x1EDF2C82",//0x14878196
+				root: "dlc_security_music/mi_nombre/",
+				labels: [
+					Label(
+						artist: "ROSALÍA",
+						title: "DI MI NOMBRE (Cap.8: Éxtasis)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0D512971",
+						delay: 5.0
+					),
+					Intro(
+						file: "0x1F8DCDEA",
+						delay: 5.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//body_so_good
+			Song(
+				file: "0x06C33383",//0x0921E5CF
+				root: "dlc_security_music/body_so_good/",
+				labels: [
+					Label(
+						artist: "POPCAAN",
+						title: "Body So Good",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1A608A16",
+						delay: 15.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//bunny_rider
+			Song(
+				file: "0x0D9FF440",//0x10E2CC9A
+				root: "dlc_security_music/bunny_rider/",
+				labels: [
+					Label(
+						artist: "CAROLINE POLACHEK",
+						title: "Bunny Is A Rider",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0BA5F5E8",
+						delay: 12.0
+					),
+					Intro(
+						file: "0x0D21B8D8",
+						delay: 12.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//stress
+			Song(
+				file: "0x1FBD1F43",//0x08C62DED
+				root: "dlc_security_music/stress/",
+				labels: [
+					Label(
+						artist: "JUSTICE",
+						title: "Stress",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0D0A9219",
+						delay: 4.0
+					),
+					Intro(
+						file: "0x13C3DF89",
+						delay: 4.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//salgo_calle
+			Song(
+				file: "0x0C731A68",//0x0FA8C527
+				root: "dlc_security_music/salgo_calle/",
+				labels: [
+					Label(
+						artist: "DADDY YANKEE",
+						title: "Salgo Pa' La Calle",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1F614BE1",
+						delay: 6.0
+					),
+					Intro(
+						file: "0x063C5998",
+						delay: 6.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//volando_voy
+			Song(
+				file: "0x1E9E1CCE",//0x16C3A092
+				root: "dlc_security_music/volando_voy/",
+				labels: [
+					Label(
+						artist: "CAMARÓN DE LA ISLA",
+						title: "Volando Voy",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1B86396A",
+						delay: 12.0
+					),
+					Intro(
+						file: "0x192BF4AF",
+						delay: 12.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//mystery_love
+			Song(
+				file: "0x0EFF101A",//0x0F2949F8
+				root: "dlc_security_music/mystery_love/",
+				labels: [
+					Label(
+						artist: "MR. FINGERS",
+						title: "Mystery of Love (2011) (Instrumental)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x13AE8A4F",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//a_pale
+			Song(
+				file: "0x05A8D17D",//0x17E0F6F2
+				root: "dlc_security_music/a_pale/",
+				labels: [
+					Label(
+						artist: "ROSALÍA",
+						title: "A Palé",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x1E88B56B",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x1372DF3F",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//dos_locos
+			Song(
+				file: "0x0B9DBCCC",//0x097BF14B
+				root: "dlc_security_music/dos_locos/",
+				labels: [
+					Label(
+						artist: "MONCHY & ALEJANDRA",
+						title: "Dos Locos",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//mi_coranzoncito
+			Song(
+				file: "0x0F7BE938",//0x12FA953F
+				root: "dlc_security_music/mi_coranzoncito/",
+				labels: [
+					Label(
+						artist: "AVENTURA",
+						title: "Mi Corazoncito",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x0B7D77FD",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x0E083D12",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x1D339B69",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//tukuntazo
+			Song(
+				file: "0x084C88C6",//0x1609E800
+				root: "dlc_security_music/tukuntazo/",
+				labels: [
+					Label(
+						artist: "TOKISCHA & HARACA KIKO & EL CHERRY SCOM",
+						title: "Tukuntaso",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x007A52CD",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x16BCFF53",
+						delay: 8.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+			//algo_como_tu
+			Song(
+				file: "0x1F11EA14",//0x06347C21
+				root: "dlc_security_music/algo_como_tu/",
+				labels: [
+					Label(
+						artist: "KAYDY CAIN & LOS DEL CONTROL",
+						title: "Algo Como Tú",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x07A333DF",
+						delay: 7.0
+					),
+					Intro(
+						file: "0x022EE8FD",
+						delay: 7.0
+					)
+				],
+				intros_root: "motomami_intro",
+				frequency: 95.0
+			),
+		],
+		general: General(
+			root: "motomami_general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11"]
+		),
+		identity: [
+			Identity(root: "moto_ident_1", list: ["0x0B3B3827","0x1227D957"]),
+			Identity(root: "moto_ident_2", list: ["0x0A893D1D","0x119F2690"]),
+			Identity(root: "moto_ident_3", list: ["0x1C17A011","0x153C62E5"]),
+			Identity(root: "moto_ident_4", list: ["0x1C192E06","0x1EA39885"]),
+			Identity(root: "moto_ident_5", list: ["0x1EA39885","0x01DD71A7"]),
+			Identity(root: "moto_ident_7", list: ["0x15754A7D","0x19538A97"]),
+			Identity(root: "moto_ident_8", list: ["0x05CE02F1","0x056682F5"]),
+			Identity(root: "moto_ident_9", list: ["0x0EF05639","0x13C14C3B"]),
+			Identity(root: "moto_ident_10", list: ["0x0EF0522E","0x1420E889"]),
+			Identity(root: "moto_ident_11", list: ["0x1452A569","0x1940779B"]),
+			Identity(root: "moto_ident_12", list: ["0x13F66CD7","0x0842F51A"]),
+			Identity(root: "moto_ident_13", list: ["0x0C3D7A42","0x1AA8DD10"]),
+			Identity(root: "moto_ident_14", list: ["0x1A44C918","0x065DBF6E"]),
+			Identity(root: "moto_ident_16", list: ["0x1D76D7B2","0x1F4863EE"]),
+			Identity(root: "moto_ident_17", list: ["0x0898A70A","0x08824102"])
+		],
+		solo: [
+			Solo(root: "motomami_dj_solo_01", list: ["0x039BD0CA","0x123B8251"]),
+			Solo(root: "motomami_dj_solo_02", list: ["0x1E2081FB","0x163CA576"]),
+			Solo(root: "motomami_dj_solo_03", list: ["0x0D06CD91","0x1C5CCE9B"]),
+			Solo(root: "motomami_dj_solo_04", list: ["0x0CFECC7A","0x1C32390E"]),
+			Solo(root: "motomami_dj_solo_05", list: ["0x0DD80922","0x01DD71A7"]),
+			Solo(root: "motomami_dj_solo_06", list: ["0x12DD865C","0x14FA9B90"]),
+			Solo(root: "motomami_dj_solo_07", list: ["0x0F9AFB4F","0x1B88AD3E"]),
+			Solo(root: "motomami_dj_solo_08", list: ["0x1A47A0C9","0x13150690"]),
+			Solo(root: "motomami_dj_solo_09", list: ["0x0CB12190","0x1C52772F"]),
+			Solo(root: "motomami_dj_solo_10", list: ["0x0EECD09E","0x08650DA8"]),
+			Solo(root: "motomami_dj_solo_11", list: ["0x1BDE4C18","0x07709D92"])
+		],
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Blue Ark
+	RadioStation(
+		index: 5,
 		number: 12,
-		name: "The Blue Ark",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		name: "Blue Ark",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 4,
 			column: 3
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_12_REGGAE",
 		songs: [
 			//ADDI_TRUTH
@@ -4547,7 +1014,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//CHAPTER3
 			Song(
@@ -4570,7 +1039,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CHAPTER3_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//CRAZY_GIRL
 			Song(
@@ -4593,7 +1064,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CRAZY_GIRL_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//DISCO_DEVIL
 			Song(
@@ -4616,7 +1089,9 @@ public let RadioStations: [RadioStation] = [
 						file: "DISCO_DEVIL_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//GRUMBLIN_DUB
 			Song(
@@ -4639,7 +1114,9 @@ public let RadioStations: [RadioStation] = [
 						file: "GRUMBLIN_DUB_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//GUN_SHOT_A_FIRE
 			Song(
@@ -4653,7 +1130,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//I_AM_A_MADMAN
 			Song(
@@ -4676,7 +1155,9 @@ public let RadioStations: [RadioStation] = [
 						file: "I_AM_A_MADMAN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//KINGSTON_BE_WISE
 			Song(
@@ -4690,7 +1171,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//KINGSTON_TOWN
 			Song(
@@ -4713,7 +1196,9 @@ public let RadioStations: [RadioStation] = [
 						file: "KINGSTON_TOWN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//LOYALS
 			Song(
@@ -4727,7 +1212,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//MONEY_COME_MONEY_GO
 			Song(
@@ -4750,7 +1237,9 @@ public let RadioStations: [RadioStation] = [
 						file: "MONEY_COME_MONEY_GO_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//MONEY_IN_MY_POCKET
 			Song(
@@ -4764,7 +1253,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//MR_MONEY_MAN
 			Song(
@@ -4787,7 +1278,9 @@ public let RadioStations: [RadioStation] = [
 						file: "MR_MONEY_MAN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//NIGHT_NURSE
 			Song(
@@ -4810,7 +1303,9 @@ public let RadioStations: [RadioStation] = [
 						file: "NIGHT_NURSE_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//NOBODY_MOVE_GET_HURT
 			Song(
@@ -4833,7 +1328,9 @@ public let RadioStations: [RadioStation] = [
 						file: "NOBODY_MOVE_GET_HURT_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//ODD_RAS
 			Song(
@@ -4847,7 +1344,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//PSYCHO
 			Song(
@@ -4861,7 +1360,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//ROAST_FISH_AND_CORNBREAD
 			Song(
@@ -4875,7 +1376,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//SONS_OF_SLAVES
 			Song(
@@ -4898,7 +1401,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SONS_OF_SLAVES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//TOPIC_OF_THE_DAY
 			Song(
@@ -4912,7 +1417,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//WE_NEVER_FEAR_DEM
 			Song(
@@ -4926,12 +1433,49 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"]),
+			Identity(root: "id_15", list: ["ID_15"]),
+			Identity(root: "id_16", list: ["ID_16"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"])
+		],
 		time: [
 			"EVENING": ["01","02","03"],
 			"MORNING": ["01","02","03","04","05"]
@@ -4944,16 +1488,15 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Worldwide FM
 	RadioStation(
-		index: 12,
+		index: 6,
 		number: 13,
 		name: "Worldwide FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 1,
 			column: 4
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "RADIO_13_JAZZ",
 		songs: [
 			//wwfm_p1
@@ -5011,7 +1554,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//wwfm_p2
 			Song(
@@ -5068,7 +1613,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//wwfm_p3
 			Song(
@@ -5143,7 +1690,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//wwfm_p4
 			Song(
@@ -5170,7 +1719,7 @@ public let RadioStations: [RadioStation] = [
 					),
 					//Black Magic
 					Label(
-						artist: "JON WAYNE ",
+						artist: "JON WAYNE",
 						title: "Black Magic",
 						time: 647.0
 					),
@@ -5224,7 +1773,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//wwfm_p1
 			Song(
@@ -5281,7 +1832,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//wwfm_p2
 			Song(
@@ -5338,7 +1891,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//wwfm_p3
 			Song(
@@ -5413,7 +1968,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//wwfm_p4
 			Song(
@@ -5440,7 +1997,7 @@ public let RadioStations: [RadioStation] = [
 					),
 					//Black Magic
 					Label(
-						artist: "JON WAYNE ",
+						artist: "JON WAYNE",
 						title: "Black Magic",
 						time: 647.0
 					),
@@ -5494,12 +2051,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			)
 		],
-		general: [],
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -5512,16 +2071,15 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: FlyLo FM
 	RadioStation(
-		index: 13,
+		index: 7,
 		number: 14,
 		name: "FlyLo FM",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 2,
 			column: 4
 		),
-		randomize: false,
-		rotate: true,
+		order: "rotate",
 		root: "RADIO_14_DANCE_02",
 		songs: [
 			Song(
@@ -5662,7 +2220,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			Song(
 				file: "0x0339EC32",
@@ -5742,7 +2302,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			Song(
 				file: "0x17E2800E",
@@ -5882,7 +2444,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			Song(
 				file: "0x08194D53",
@@ -5962,12 +2526,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			)
 		],
-		general: [],
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -5978,18 +2544,17 @@ public let RadioStations: [RadioStation] = [
 		]
 	),
 	
-	// MARK: The Low Down 91.1
+	// MARK: The Lowdown 91.1
 	RadioStation(
-		index: 14,
+		index: 8,
 		number: 15,
-		name: "The Low Down 91.1",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		name: "The Lowdown 91.1",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 3,
 			column: 4
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_15_MOTOWN",
 		songs: [
 			//ASHLEYS_ROACHCLIP
@@ -6013,7 +2578,9 @@ public let RadioStations: [RadioStation] = [
 						file: "ASHLEYS_ROACHCLIP_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//BOUNCY_LADY
 			Song(
@@ -6027,7 +2594,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//CALIFORNIA_SOUL
 			Song(
@@ -6050,7 +2619,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CALIFORNIA_SOUL_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//CHANGIN
 			Song(
@@ -6064,7 +2635,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//CLIMAX
 			Song(
@@ -6087,7 +2660,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CLIMAX_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//CRUISIN
 			Song(
@@ -6110,7 +2685,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CRUISIN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//DO_IT_TIL_YOURE_SATISFIED
 			Song(
@@ -6133,7 +2710,9 @@ public let RadioStations: [RadioStation] = [
 						file: "DO_IT_TIL_YOURE_SATISFIED_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//FUNNY_FEELING
 			Song(
@@ -6152,7 +2731,9 @@ public let RadioStations: [RadioStation] = [
 						file: "FUNNY_FEELING_01",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//HERCULES
 			Song(
@@ -6175,7 +2756,9 @@ public let RadioStations: [RadioStation] = [
 						file: "HERCULES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//I_BELIEVE_IN_MIRACLES
 			Song(
@@ -6198,7 +2781,9 @@ public let RadioStations: [RadioStation] = [
 						file: "I_BELIEVE_IN_MIRACLES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//I_GET_LIFTED
 			Song(
@@ -6221,7 +2806,9 @@ public let RadioStations: [RadioStation] = [
 						file: "I_GET_LIFTED_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//MAGIC_MOUNTAIN
 			Song(
@@ -6244,7 +2831,9 @@ public let RadioStations: [RadioStation] = [
 						file: "MAGIC_MOUNTAIN_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//O_O_H_CHILD
 			Song(
@@ -6267,7 +2856,9 @@ public let RadioStations: [RadioStation] = [
 						file: "O_O_H_CHILD_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//READY_OR_NOT
 			Song(
@@ -6290,7 +2881,9 @@ public let RadioStations: [RadioStation] = [
 						file: "READY_OR_NOT_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//RUBBER_BAND
 			Song(
@@ -6313,7 +2906,9 @@ public let RadioStations: [RadioStation] = [
 						file: "RUBBER_BAND_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//SMILING_FACES
 			Song(
@@ -6336,7 +2931,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SMILING_FACES_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//STORIES
 			Song(
@@ -6350,7 +2947,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//SUPERMAN_LOVER
 			Song(
@@ -6373,7 +2972,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SUPERMAN_LOVER_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//THE_CISCO_KID
 			Song(
@@ -6400,7 +3001,9 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_CISCO_KID_03",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//VIVA_TIRADO
 			Song(
@@ -6423,12 +3026,45 @@ public let RadioStations: [RadioStation] = [
 						file: "VIVA_TIRADO_02",
 						delay: 5.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04","05"],
 			"MORNING": ["01","02","03","04","05","06"]
@@ -6441,22 +3077,21 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: The Lab
 	RadioStation(
-		index: 15,
-		number: 16,
+		index: 9,
+		number: 19,
 		name: "The Lab",
-		image: "gta_radio_stations_texture04_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture04_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: true,
-		root: "DLC_THELAB",
+		order: "rotate",
+		root: "dlc_thelab",
 		songs: [
 			//LAB_P1
 			Song(
 				file: "LAB_P1",
-				root: "DLC_THELAB/lab_p1/",
+				root: "dlc_thelab/lab_p1/",
 				labels: [
 					Label(
 						artist: "",
@@ -6548,12 +3183,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//LAB_P2
 			Song(
 				file: "LAB_P2",
-				root: "DLC_THELAB/lab_p2/",
+				root: "dlc_thelab/lab_p2/",
 				labels: [
 					Label(
 						artist: "",
@@ -6612,12 +3249,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			)
 		],
-		general: [],
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -6630,16 +3269,15 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Radio Mirror Park
 	RadioStation(
-		index: 16,
-		number: 17,
+		index: 10,
+		number: 16, /*17*/
 		name: "Radio Mirror Park",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 4,
 			column: 2
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_16_SILVERLAKE",
 		songs: [
 			//ALWAYS
@@ -6663,7 +3301,9 @@ public let RadioStations: [RadioStation] = [
 						file: "ALWAYS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//BOOGIE_IN_ZERO_GRAVITY
 			Song(
@@ -6686,7 +3326,9 @@ public let RadioStations: [RadioStation] = [
 						file: "BOOGIE_IN_ZERO_GRAVITY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//CHANGE_OF_COAST
 			Song(
@@ -6700,7 +3342,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//COLOURS
 			Song(
@@ -6714,7 +3358,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//CRYSTALFILM
 			Song(
@@ -6737,7 +3383,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CRYSTALFILM_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//DARK_MATTER
 			Song(
@@ -6760,7 +3408,9 @@ public let RadioStations: [RadioStation] = [
 						file: "DARK_MATTER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//DO_YOU_BELIEVE
 			Song(
@@ -6783,7 +3433,9 @@ public let RadioStations: [RadioStation] = [
 						file: "DO_YOU_BELIEVE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//DONT_COME_CLOSE
 			Song(
@@ -6814,7 +3466,9 @@ public let RadioStations: [RadioStation] = [
 						file: "DONT_COME_CLOSE_04",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//FEEL_THE_SAME
 			Song(
@@ -6837,7 +3491,9 @@ public let RadioStations: [RadioStation] = [
 						file: "FEEL_THE_SAME_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//FLUTES
 			Song(
@@ -6851,7 +3507,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//FORGET
 			Song(
@@ -6874,7 +3532,9 @@ public let RadioStations: [RadioStation] = [
 						file: "FORGET_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//FROM_NOWHERE
 			Song(
@@ -6897,7 +3557,9 @@ public let RadioStations: [RadioStation] = [
 						file: "FROM_NOWHERE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//HEART_IN_THE_PIPES
 			Song(
@@ -6920,7 +3582,9 @@ public let RadioStations: [RadioStation] = [
 						file: "HEART_IN_THE_PIPES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//HEARTBREAK
 			Song(
@@ -6934,7 +3598,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//HIGH_PRESSURE
 			Song(
@@ -6948,7 +3614,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//HOLD_ON_HOLY_GHOST
 			Song(
@@ -6971,7 +3639,9 @@ public let RadioStations: [RadioStation] = [
 						file: "HOLD_ON_HOLY_GHOST_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//IN_REAL_LIFE
 			Song(
@@ -6994,7 +3664,9 @@ public let RadioStations: [RadioStation] = [
 						file: "IN_REAL_LIFE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//JASMINE
 			Song(
@@ -7017,7 +3689,9 @@ public let RadioStations: [RadioStation] = [
 						file: "JASMINE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//LITTLE_WHITE_LIE
 			Song(
@@ -7040,7 +3714,9 @@ public let RadioStations: [RadioStation] = [
 						file: "LITTLE_WHITE_LIE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//LIVING_IN_AMERICA
 			Song(
@@ -7063,7 +3739,9 @@ public let RadioStations: [RadioStation] = [
 						file: "LIVING_IN_AMERICA_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//LUCKY_BOY
 			Song(
@@ -7086,7 +3764,9 @@ public let RadioStations: [RadioStation] = [
 						file: "LUCKY_BOY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//MESMERIZED
 			Song(
@@ -7100,7 +3780,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//NEW_BEAT
 			Song(
@@ -7123,7 +3805,9 @@ public let RadioStations: [RadioStation] = [
 						file: "NEW_BEAT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//NOWHERE_TO_GO
 			Song(
@@ -7146,7 +3830,9 @@ public let RadioStations: [RadioStation] = [
 						file: "NOWHERE_TO_GO_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//O_N_E
 			Song(
@@ -7160,7 +3846,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//OLD_LOVE
 			Song(
@@ -7179,7 +3867,9 @@ public let RadioStations: [RadioStation] = [
 						file: "OLD_LOVE_01",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//ONE_GIRL_ONE_BOY
 			Song(
@@ -7202,7 +3892,9 @@ public let RadioStations: [RadioStation] = [
 						file: "ONE_GIRL_ONE_BOY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//PHARAOHS
 			Song(
@@ -7225,7 +3917,9 @@ public let RadioStations: [RadioStation] = [
 						file: "PHARAOHS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//POLISH_GIRL
 			Song(
@@ -7248,7 +3942,9 @@ public let RadioStations: [RadioStation] = [
 						file: "POLISH_GIRL_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//PSYCHIC_CITY
 			Song(
@@ -7271,7 +3967,9 @@ public let RadioStations: [RadioStation] = [
 						file: "PSYCHIC_CITY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//SHINE_A_LIGHT
 			Song(
@@ -7294,7 +3992,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SHINE_A_LIGHT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 80.0
 			),
 			//SHOOTING_HOLES
 			Song(
@@ -7317,7 +4017,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SHOOTING_HOLES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//SLEEPWALKING
 			Song(
@@ -7340,7 +4042,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SLEEPWALKING_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//SO_MANY_DETAILS
 			Song(
@@ -7363,7 +4067,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SO_MANY_DETAILS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//SOMETIMES
 			Song(
@@ -7386,7 +4092,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SOMETIMES_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//STRANGERS_IN_THE_WIND
 			Song(
@@ -7400,7 +4108,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//THE_DRUMMER
 			Song(
@@ -7423,7 +4133,9 @@ public let RadioStations: [RadioStation] = [
 						file: "THE_DRUMMER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//THE_SET_UP
 			Song(
@@ -7437,7 +4149,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//TRULY_ALIVE
 			Song(
@@ -7460,7 +4174,9 @@ public let RadioStations: [RadioStation] = [
 						file: "TRULY_ALIVE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//WHEN_YOURE_OUT
 			Song(
@@ -7483,12 +4199,46 @@ public let RadioStations: [RadioStation] = [
 						file: "WHEN_YOURE_OUT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04"],
 			"MORNING": ["01","02","03","04"]
@@ -7499,18 +4249,37 @@ public let RadioStations: [RadioStation] = [
 		]
 	),
 	
-	// MARK: Space 103.2
+	// MARK: Kult FM
 	RadioStation(
-		index: 17,
-		number: 18,
-		name: "Space 103.2",
-		image: "gta_radio_stations_texture02_512",
-		imagePosition: Position(
+		index: 11,
+		number: 24,
+		name: "Kult FM",
+		image: ImageData(
+			name: "gta_radio_stations_texture10_128",
 			row: 1,
 			column: 1
 		),
-		randomize: true,
-		rotate: false,
+		order: "static",
+		root: nil,
+		songs: nil,
+		general: nil,
+		identity: nil,
+		solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Space 103.2
+	RadioStation(
+		index: 12,
+		number: 17, /*18*/
+		name: "Space 103.2",
+		image: ImageData(
+			name: "gta_radio_stations_texture02_512",
+			row: 1,
+			column: 1
+		),
+		order: "random",
 		root: "RADIO_17_FUNK",
 		songs: [
 			//BACK_AND_FORTH
@@ -7534,7 +4303,9 @@ public let RadioStations: [RadioStation] = [
 						file: "BACK_AND_FORTH_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//CANT_HOLD_BACK*
 			/*Song(
@@ -7557,7 +4328,9 @@ public let RadioStations: [RadioStation] = [
 						file: "YOUR_LOVIN_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),*/
 			//CUTIE_PIE
 			Song(
@@ -7580,7 +4353,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CUTIE_PIE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//DO_IT_ROGER
 			Song(
@@ -7603,7 +4378,9 @@ public let RadioStations: [RadioStation] = [
 						file: "DO_IT_ROGER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//FLASHBACK
 			Song(
@@ -7617,7 +4394,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//FLASHLIGHT
 			Song(
@@ -7631,7 +4410,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//FUNKASIZE_YOU
 			Song(
@@ -7645,7 +4426,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//GIVE_IT_TO_ME_BABY
 			Song(
@@ -7668,7 +4451,9 @@ public let RadioStations: [RadioStation] = [
 						file: "GIVE_IT_TO_ME_BABY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//GOTTA_GET_MY_HANDS_ON_SOME_MONEY
 			Song(
@@ -7691,7 +4476,9 @@ public let RadioStations: [RadioStation] = [
 						file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//HABOGLABOTRIBIN
 			Song(
@@ -7705,7 +4492,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//HEART_BEAT
 			Song(
@@ -7728,7 +4517,9 @@ public let RadioStations: [RadioStation] = [
 						file: "HEARTBEAT_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//HEARTBREAKER
 			Song(
@@ -7742,7 +4533,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//ID_RATHER_BE_WITH_YOU
 			Song(
@@ -7765,7 +4558,9 @@ public let RadioStations: [RadioStation] = [
 						file: "ID_RATHER_BE_WITH_YOU_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//IM_IN_LOVE
 			Song(
@@ -7788,7 +4583,9 @@ public let RadioStations: [RadioStation] = [
 						file: "IM_IN_LOVE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//JOYSTICK
 			Song(
@@ -7811,7 +4608,9 @@ public let RadioStations: [RadioStation] = [
 						file: "JOYSTICK_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//MOTHERSHIP_CONNECTION
 			Song(
@@ -7825,7 +4624,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//NIGHTS_FEEL_LIKE
 			Song(
@@ -7839,7 +4640,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//PARTY_ALL_THE_TIME
 			Song(
@@ -7853,7 +4656,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//SKELETONS
 			Song(
@@ -7876,7 +4681,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SKELETONS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//TONIGHT
 			Song(
@@ -7890,7 +4697,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//WALKING_INTO_SUNSHINE
 			Song(
@@ -7904,7 +4713,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//YOURE_THE_ONE_FOR_ME
 			Song(
@@ -7927,12 +4738,47 @@ public let RadioStations: [RadioStation] = [
 						file: "YOURE_THE_ONE_FOR_ME_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"],
-		sid: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04"],
 			"MORNING": ["01","02","03","04"]
@@ -7945,16 +4791,15 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Vinewood Boulevard Radio
 	RadioStation(
-		index: 18,
-		number: 19,
+		index: 13,
+		number: 18, /*19*/
 		name: "Vinewood Boulevard Radio",
-		image: "gtav_radio_stations_texture_512",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
 			row: 2,
 			column: 3
 		),
-		randomize: true,
-		rotate: false,
+		order: "random",
 		root: "RADIO_18_90S_ROCK",
 		songs: [
 			//ANSWER_TO_YOURSELF
@@ -7978,7 +4823,9 @@ public let RadioStations: [RadioStation] = [
 						file: "ANSWER_TO_YOURSELF_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//BLACK_GREASE
 			Song(
@@ -8001,7 +4848,9 @@ public let RadioStations: [RadioStation] = [
 						file: "BLACK_GREASE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//CALIFORNIA_GIRLS
 			Song(
@@ -8024,7 +4873,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CALIFORNIA_GIRLS_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//COCAINE
 			Song(
@@ -8047,7 +4898,9 @@ public let RadioStations: [RadioStation] = [
 						file: "COCAINE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//CRAWLING_AFTER_YOU
 			Song(
@@ -8070,7 +4923,9 @@ public let RadioStations: [RadioStation] = [
 						file: "CRAWLING_AFTER_YOU_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//DIDDY_WAH_DIDDY
 			Song(
@@ -8084,7 +4939,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//FALL_IN_LINE
 			Song(
@@ -8107,7 +4964,9 @@ public let RadioStations: [RadioStation] = [
 						file: "FALL_IN_LINE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//FIRE_DOESNT_BURN_ITSELF
 			Song(
@@ -8130,7 +4989,9 @@ public let RadioStations: [RadioStation] = [
 						file: "FIRE_DOESNT_BURN_ITSELF_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//GONE_FOR_GOOD
 			Song(
@@ -8153,7 +5014,9 @@ public let RadioStations: [RadioStation] = [
 						file: "GONE_FOR_GOOD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//HYSTERIA
 			Song(
@@ -8167,7 +5030,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//NEXT_STOP
 			Song(
@@ -8190,7 +5055,9 @@ public let RadioStations: [RadioStation] = [
 						file: "NEXT_STOP_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//NINE_IS_GOD
 			Song(
@@ -8213,7 +5080,9 @@ public let RadioStations: [RadioStation] = [
 						file: "NINE_IS_GOD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//SIXPACK
 			Song(
@@ -8236,7 +5105,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SIXPACK_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//SLEEPWALKER
 			Song(
@@ -8259,7 +5130,9 @@ public let RadioStations: [RadioStation] = [
 						file: "SLEEPWALKER_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//THE_DREAM
 			Song(
@@ -8273,7 +5146,9 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
 			),
 			//THIS_MYSTIC_DECADE
 			Song(
@@ -8296,7 +5171,9 @@ public let RadioStations: [RadioStation] = [
 						file: "THIS_MYSTIC_DECADE_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//TURN_IT_AROUND
 			Song(
@@ -8323,7 +5200,9 @@ public let RadioStations: [RadioStation] = [
 						file: "TURN_IT_AROUND_03",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//USED_BLOOD
 			Song(
@@ -8346,7 +5225,9 @@ public let RadioStations: [RadioStation] = [
 						file: "USED_BLOOD_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//WET_BLANKET
 			Song(
@@ -8377,7 +5258,9 @@ public let RadioStations: [RadioStation] = [
 						file: "WET_BLANKET_04",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			),
 			//WHO_NEEDS_YOU
 			Song(
@@ -8400,12 +5283,45 @@ public let RadioStations: [RadioStation] = [
 						file: "WHO_NEEDS_YOU_02",
 						delay: 8.0
 					)
-				]
+				],
+				intros_root: "intro",
+				frequency: 95.0
 			)
 		],
-		general: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48"],
-		sid: ["01","02","03","04","05","06","07","08","09"],
-		mono_solo: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16"],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"])
+		],
 		time: [
 			"EVENING": ["01","02","03","04","05"],
 			"MORNING": ["01","02","03","04","05"]
@@ -8418,22 +5334,21 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Blonded Los Santos 97.8 FM
 	RadioStation(
-		index: 19,
+		index: 14,
 		number: 20,
 		name: "Blonded Los Santos 97.8 FM",
-		image: "gta_radio_stations_texture05_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture05_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: true,
-		root: "DLC_CHRISTMAS2017",
+		order: "rotate",
+		root: "dlc_christmas2017",
 		songs: [
 			//RADIO_XM17_P1
 			Song(
 				file: "RADIO_XM17_P1", //1864.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p1/",
+				root: "dlc_christmas2017/radio_xm17_p1/",
 				labels: [
 					Label(
 						artist: "",
@@ -8490,12 +5405,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//RADIO_XM17_P2
 			Song(
 				file: "RADIO_XM17_P2", //2357.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p2/",
+				root: "dlc_christmas2017/radio_xm17_p2/",
 				labels: [
 					//When Did You Stop Loving Me, When Did I Stop Loving You
 					Label(
@@ -8565,12 +5482,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//RADIO_XM17_P3
 			Song(
 				file: "RADIO_XM17_P3", //1919.0
-				root: "DLC_CHRISTMAS2017/radio_xm17_p3/",
+				root: "dlc_christmas2017/radio_xm17_p3/",
 				labels: [
 					//For Real
 					Label(
@@ -8640,12 +5559,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: nil,
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			)
 		],
-		general: [],
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -8658,22 +5579,21 @@ public let RadioStations: [RadioStation] = [
 	
 	// MARK: Los Santos Underground Radio
 	RadioStation(
-		index: 20,
+		index: 15,
 		number: 21,
 		name: "Los Santos Underground Radio",
-		image: "gta_radio_stations_texture06_128",
-		imagePosition: Position(
+		image: ImageData(
+			name: "gta_radio_stations_texture06_128",
 			row: 1,
 			column: 1
 		),
-		randomize: false,
-		rotate: true,
-		root: "DLC_BATTLE_MUSIC",
+		order: "rotate",
+		root: "dlc_battle_music",
 		songs: [
 			//BATTLE_MIX1_RADIO_01
 			Song(
 				file: "BATTLE_MIX1_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_01/",
+				root: "dlc_battle_music/battle_mix1_radio_01/",
 				labels: [
 					//The Plan
 					Label(
@@ -8713,12 +5633,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Solomun",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX1_RADIO_02
 			Song(
 				file: "BATTLE_MIX1_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_02/",
+				root: "dlc_battle_music/battle_mix1_radio_02/",
 				labels: [
 					//Madness Of Many
 					Label(
@@ -8782,12 +5704,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Solomun",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX1_RADIO_03
 			Song(
 				file: "BATTLE_MIX1_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix1_radio_03/",
+				root: "dlc_battle_music/battle_mix1_radio_03/",
 				labels: [
 					//Customer Is King
 					Label(
@@ -8815,12 +5739,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Solomun",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX2_RADIO_01
 			Song(
 				file: "BATTLE_MIX2_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_01/",
+				root: "dlc_battle_music/battle_mix2_radio_01/",
 				labels: [
 					//Overture
 					Label(
@@ -8860,12 +5786,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Tale Of Us",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX2_RADIO_02
 			Song(
 				file: "BATTLE_MIX2_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_02/",
+				root: "dlc_battle_music/battle_mix2_radio_02/",
 				labels: [
 					//Symphony of the Night
 					Label(
@@ -8911,12 +5839,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Tale Of Us",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX2_RADIO_03
 			Song(
 				file: "BATTLE_MIX2_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix2_radio_03/",
+				root: "dlc_battle_music/battle_mix2_radio_03/",
 				labels: [
 					//Myst
 					Label(
@@ -8962,12 +5892,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Tale Of Us",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX3_RADIO_01
 			Song(
 				file: "BATTLE_MIX3_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_01/",
+				root: "dlc_battle_music/battle_mix3_radio_01/",
 				labels: [
 					//Convergence
 					Label(
@@ -9001,12 +5933,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Dixon",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX3_RADIO_02
 			Song(
 				file: "BATTLE_MIX3_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_02/",
+				root: "dlc_battle_music/battle_mix3_radio_02/",
 				labels: [
 					//Connection (I-Cube Rework)
 					Label(
@@ -9052,12 +5986,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Dixon",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX3_RADIO_03
 			Song(
 				file: "BATTLE_MIX3_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix3_radio_03/",
+				root: "dlc_battle_music/battle_mix3_radio_03/",
 				labels: [
 					//And Dance
 					Label(
@@ -9091,12 +6027,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "Dixon",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX4_RADIO_01
 			Song(
 				file: "BATTLE_MIX4_RADIO_01",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_01/",
+				root: "dlc_battle_music/battle_mix4_radio_01/",
 				labels: [
 					//Sensation
 					Label(
@@ -9124,12 +6062,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "The Black Madonna",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX4_RADIO_02
 			Song(
 				file: "BATTLE_MIX4_RADIO_02",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_02/",
+				root: "dlc_battle_music/battle_mix4_radio_02/",
 				labels: [
 					//Miura
 					Label(
@@ -9181,12 +6121,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "The Black Madonna",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			),
 			//BATTLE_MIX4_RADIO_03
 			Song(
 				file: "BATTLE_MIX4_RADIO_03",
-				root: "DLC_BATTLE_MUSIC/battle_mix4_radio_03/",
+				root: "dlc_battle_music/battle_mix4_radio_03/",
 				labels: [
 					//Devotion
 					Label(
@@ -9214,12 +6156,14 @@ public let RadioStations: [RadioStation] = [
 					)
 				],
 				set: "The Black Madonna",
-				intros: []
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
 			)
 		],
-		general: [],
-		sid: [],
-		mono_solo: [],
+		general: nil,
+		identity: nil,
+		solo: nil,
 		time: [
 			"EVENING": [],
 			"MORNING": []
@@ -9229,4 +6173,5104 @@ public let RadioStations: [RadioStation] = [
 			"NEWS": []
 		]
 	),
+	
+	// MARK: iFruit Radio
+	RadioStation(
+		index: 16,
+		number: 22,
+		name: "iFruit Radio",
+		image: ImageData(
+			name: "gta_radio_stations_texture07_128",
+			row: 1,
+			column: 1
+		),
+		order: "static",
+		root: nil,
+		songs: nil,
+		general: nil,
+		identity: nil,
+		solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Self Radio
+	RadioStation(
+		index: 17,
+		number: 0,
+		name: "Self Radio",
+		image: ImageData(
+			name: "gta_radio_stations_texture03_128",
+			row: 1,
+			column: 1
+		),
+		order: "random",
+		root: nil,
+		songs: nil,
+		general: nil,
+		identity: nil,
+		solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Still Slipping Los Santos
+	RadioStation(
+		index: 18,
+		number: 25,
+		name: "Still Slipping Los Santos",
+		image: ImageData(
+			name: "gta_radio_stations_texture09_128",
+			row: 1,
+			column: 1
+		),
+		order: "static",
+		root: nil,
+		songs: nil,
+		general: nil,
+		identity: nil,
+		solo: nil,
+		time: nil,
+		to: nil
+	),
+	
+	// MARK: Los Santos Rock Radio
+	RadioStation(
+		index: 19,
+		number: 1,
+		name: "Los Santos Rock Radio",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
+			row: 4,
+			column: 1
+		),
+		order: "random",
+		root: "RADIO_01_CLASS_ROCK",
+		songs: [
+			//ALL_THE_THINGS_SHE_SAID
+			Song(
+				file: "ALL_THE_THINGS_SHE_SAID",
+				root: "RADIO_01_CLASS_ROCK/all_the_things_she_said/",
+				labels: [
+					Label(
+						artist: "SIMPLE MINDS",
+						title: "All The Things She Said",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ALL_THE_THINGS_SHE_SAID_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ALL_THE_THINGS_SHE_SAID_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BAKER_STREET
+			Song(
+				file: "BAKER_STREET",
+				root: "RADIO_01_CLASS_ROCK/baker_street/",
+				labels: [
+					Label(
+						artist: "GERRY RAFFERTY",
+						title: "Baker Street",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BAKER_STREET_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BAKER_STREET_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BIG_LOG
+			Song(
+				file: "BIG_LOG",
+				root: "RADIO_01_CLASS_ROCK/big_log/",
+				labels: [
+					Label(
+						artist: "ROBERT PLANT",
+						title: "Big Log",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BIG_LOG_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BIG_LOG_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BLACK_VELVET
+			Song(
+				file: "BLACK_VELVET",
+				root: "RADIO_01_CLASS_ROCK/black_velvet/",
+				labels: [
+					Label(
+						artist: "ALANNAH MYLES",
+						title: "Black Velvet",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BLACK_VELVET_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BLACK_VELVET_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BURNING_HEART
+			Song(
+				file: "BURNING_HEART",
+				root: "RADIO_01_CLASS_ROCK/burning_heart/",
+				labels: [
+					Label(
+						artist: "SURVIVOR",
+						title: "Burning Heart",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BURNING_HEART_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BURNING_HEART_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//CARRY_ON_MY_WAYWARD_SUN
+			Song(
+				file: "CARRY_ON_MY_WAYWARD_SUN",
+				root: "RADIO_01_CLASS_ROCK/carry_on_my_wayward_sun/",
+				labels: [
+					Label(
+						artist: "KANSAS",
+						title: "Carry On Wayward Son",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CARRY_ON_MY_WAYWARD_SUN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CARRY_ON_MY_WAYWARD_SUN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//CATS_IN_THE_CRADLE
+			Song(
+				file: "CATS_IN_THE_CRADLE",
+				root: "RADIO_01_CLASS_ROCK/cats_in_the_cradle/",
+				labels: [
+					Label(
+						artist: "HARRY CHAPIN",
+						title: "Cat's In The Cradle",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CATS_IN_THE_CRADLE_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//CIRCLE_IN_THE_SAND
+			Song(
+				file: "CIRCLE_IN_THE_SAND",
+				root: "RADIO_01_CLASS_ROCK/circle_in_the_sand/",
+				labels: [
+					Label(
+						artist: "BELINDA CARLISLE",
+						title: "Circle In The Sand",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//COMING_ON_STRONG
+			Song(
+				file: "COMING_ON_STRONG",
+				root: "RADIO_01_CLASS_ROCK/coming_on_strong/",
+				labels: [
+					Label(
+						artist: "BROKEN ENGLISH",
+						title: "Coming On Strong",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "COMING_ON_STRONG_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "COMING_ON_STRONG_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//DANGER_ZONE
+			Song(
+				file: "DANGER_ZONE",
+				root: "RADIO_01_CLASS_ROCK/danger_zone/",
+				labels: [
+					Label(
+						artist: "KENNY LOGGINS",
+						title: "Danger Zone",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//DIRTY_WHITE_BOY
+			Song(
+				file: "DIRTY_WHITE_BOY",
+				root: "RADIO_01_CLASS_ROCK/dirty_white_boy/",
+				labels: [
+					Label(
+						artist: "FOREIGNER",
+						title: "Dirty White Boy",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DIRTY_WHITE_BOY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "DIRTY_WHITE_BOY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//FORTUNATE_SON
+			Song(
+				file: "FORTUNATE_SON",
+				root: "RADIO_01_CLASS_ROCK/fortunate_son/",
+				labels: [
+					Label(
+						artist: "CREEDENCE CLEARWATER REVIVAL",
+						title: "Fortunate Son",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FORTUNATE_SON_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FORTUNATE_SON_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//GIMME_ALL_YOUR_LOVIN
+			Song(
+				file: "GIMME_ALL_YOUR_LOVIN",
+				root: "RADIO_01_CLASS_ROCK/gimme_all_your_lovin/",
+				labels: [
+					Label(
+						artist: "ZZ TOP",
+						title: "Gimme All Your Lovin'",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GIMME_ALL_YOUR_LOVIN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GIMME_ALL_YOUR_LOVIN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//HEARTBEAT
+			Song(
+				file: "HEARTBEAT",
+				root: "RADIO_01_CLASS_ROCK/heartbeat/",
+				labels: [
+					Label(
+						artist: "DON JOHNSON",
+						title: "Heartbeat",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HEARTBEAT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HEARTBEAT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//HIGHER_LOVE
+			Song(
+				file: "HIGHER_LOVE",
+				root: "RADIO_01_CLASS_ROCK/higher_love/",
+				labels: [
+					Label(
+						artist: "STEVE WINWOOD",
+						title: "Higher Love",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HIGHER_LOVE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HIGHER_LOVE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//HOLLYWOOD_NIGHTS
+			Song(
+				file: "HOLLYWOOD_NIGHTS",
+				root: "RADIO_01_CLASS_ROCK/hollywood_nights/",
+				labels: [
+					Label(
+						artist: "BOB SEGER",
+						title: "Hollywood Nights",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HOLLYWOOD_NIGHTS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HOLLYWOOD_NIGHTS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//I_CANT_WAIT
+			Song(
+				file: "I_CANT_WAIT",
+				root: "RADIO_01_CLASS_ROCK/i_cant_wait/",
+				labels: [
+					Label(
+						artist: "STEVIE NICKS",
+						title: "I Can't Wait",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "I_CANT_WAIT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_CANT_WAIT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//I_DONT_CARE_ANYMORE
+			Song(
+				file: "I_DONT_CARE_ANYMORE",
+				root: "RADIO_01_CLASS_ROCK/i_dont_care_anymore/",
+				labels: [
+					Label(
+						artist: "PHIL COLLINS",
+						title: "I Don't Care Anymore",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//I_WOULDNT_WANT_TO_BE
+			Song(
+				file: "I_WOULDNT_WANT_TO_BE",
+				root: "RADIO_01_CLASS_ROCK/i_wouldnt_want_to_be/",
+				labels: [
+					Label(
+						artist: "THE ALAN PARSONS PROJECT",
+						title: "I Wouldn't Want To Be Like You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "I_WOULDNT_WANT_TO_BE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_WOULDNT_WANT_TO_BE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//IF_YOU_LEAVE_ME_NOW
+			Song(
+				file: "IF_YOU_LEAVE_ME_NOW",
+				root: "RADIO_01_CLASS_ROCK/if_you_leave_me_now/",
+				labels: [
+					Label(
+						artist: "CHICAGO",
+						title: "If You Leave Me Now",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "IF_YOU_LEAVE_ME_NOW_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "IF_YOU_LEAVE_ME_NOW_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//IM_FREE
+			Song(
+				file: "IM_FREE",
+				root: "RADIO_01_CLASS_ROCK/im_free/",
+				labels: [
+					Label(
+						artist: "KENNY LOGGINS",
+						title: "I'm Free(Heaven Helps The Man)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "IM_FREE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "IM_FREE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LONELY_IS_THE_NIGHT
+			Song(
+				file: "LONELY_IS_THE_NIGHT",
+				root: "RADIO_01_CLASS_ROCK/lonely_is_the_night/",
+				labels: [
+					Label(
+						artist: "BILLY SQUIER",
+						title: "Lonely Is The Night",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LONELY_IS_THE_NIGHT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LONELY_IS_THE_NIGHT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//MISSISSIPPI_QUEEN
+			Song(
+				file: "MISSISSIPPI_QUEEN",
+				root: "RADIO_01_CLASS_ROCK/mississippi_queen/",
+				labels: [
+					Label(
+						artist: "MOUNTAIN",
+						title: "Mississippi Queen",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MISSISSIPPI_QUEEN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MISSISSIPPI_QUEEN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//NIGHT_MOVES
+			Song(
+				file: "NIGHT_MOVES",
+				root: "RADIO_01_CLASS_ROCK/night_moves/",
+				labels: [
+					Label(
+						artist: "BOB SEGER",
+						title: "Night Moves",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NIGHT_MOVES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "NIGHT_MOVES_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//OGDENS_NUT_GONE_FLAKE
+			Song(
+				file: "OGDENS_NUT_GONE_FLAKE",
+				root: "RADIO_01_CLASS_ROCK/ogdens_nut_gone_flake/",
+				labels: [
+					Label(
+						artist: "SMALL FACES",
+						title: "Ogden's Nut Gone Flake",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "OGDENS_NUT_GONE_FLAKE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "OGDENS_NUT_GONE_FLAKE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//PEACE_OF_MIND
+			Song(
+				file: "PEACE_OF_MIND",
+				root: "RADIO_01_CLASS_ROCK/peace_of_mind/",
+				labels: [
+					Label(
+						artist: "BOSTON",
+						title: "Peace Of Mind",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "PEACE_OF_MIND_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "PEACE_OF_MIND_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//PHOTOGRAPH
+			Song(
+				file: "PHOTOGRAPH",
+				root: "RADIO_01_CLASS_ROCK/photograph/",
+				labels: [
+					Label(
+						artist: "DEF LEPPARD",
+						title: "Photograph",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "PHOTOGRAPH_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "PHOTOGRAPH_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//RADIO_GA_GA
+			Song(
+				file: "RADIO_GA_GA",
+				root: "RADIO_01_CLASS_ROCK/radio_ga_ga/",
+				labels: [
+					Label(
+						artist: "QUEEN",
+						title: "Radio Ga Ga",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "RADIO_GA_GA_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//RAIN
+			Song(
+				file: "RAIN",
+				root: "RADIO_01_CLASS_ROCK/rain/",
+				labels: [
+					Label(
+						artist: "THE CULT",
+						title: "Rain",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "RAIN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "RAIN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//ROCKIN_ME
+			Song(
+				file: "ROCKIN_ME",
+				root: "RADIO_01_CLASS_ROCK/rockin_me/",
+				labels: [
+					Label(
+						artist: "STEVE MILLER",
+						title: "Rock'n Me",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//ROUNDABOUT
+			Song(
+				file: "ROUNDABOUT",
+				root: "RADIO_01_CLASS_ROCK/roundabout/",
+				labels: [
+					Label(
+						artist: "YES",
+						title: "Roundabout",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ROUNDABOUT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ROUNDABOUT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SATURDAY_NIGHTS_ALRIGHT
+			Song(
+				file: "SATURDAY_NIGHTS_ALRIGHT",
+				root: "RADIO_01_CLASS_ROCK/saturday_nights_alright/",
+				labels: [
+					Label(
+						artist: "ELTON JOHN",
+						title: "Saturday Night's Alright For Fighting",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SATURDAY_NIGHTS_ALRIGHT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SATURDAY_NIGHTS_ALRIGHT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SHADOWS_OF_THE_NIGHT
+			Song(
+				file: "SHADOWS_OF_THE_NIGHT",
+				root: "RADIO_01_CLASS_ROCK/shadows_of_the_night/",
+				labels: [
+					Label(
+						artist: "PAT BENATAR",
+						title: "Shadows Of The Night",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SHADOWS_OF_THE_NIGHT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SHADOWS_OF_THE_NIGHT_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "SHADOWS_OF_THE_NIGHT_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//THE_BREAKUP_SONG
+			Song(
+				file: "THE_BREAKUP_SONG",
+				root: "RADIO_01_CLASS_ROCK/the_breakup_song/",
+				labels: [
+					Label(
+						artist: "GREG KIHN BAND",
+						title: "The Breakup Song (They Don't Write 'Em)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_BREAKUP_SONG_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "THE_BREAKUP_SONG_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//THIRTY_DAYS_IN_THE_HOLE
+			Song(
+				file: "THIRTY_DAYS_IN_THE_HOLE",
+				root: "RADIO_01_CLASS_ROCK/thirty_days_in_the_hole/",
+				labels: [
+					Label(
+						artist: "HUMBLE PIE",
+						title: "Thirty Days In The Hole",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THIRTY_DAYS_IN_THE_HOLE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "THIRTY_DAYS_IN_THE_HOLE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//TOO_LATE_FOR_GOODBYES
+			Song(
+				file: "TOO_LATE_FOR_GOODBYES",
+				root: "RADIO_01_CLASS_ROCK/too_late_for_goodbyes/",
+				labels: [
+					Label(
+						artist: "JULIAN LENNON",
+						title: "Too Late For Goodbyes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TOO_LATE_FOR_GOODBYES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TOO_LATE_FOR_GOODBYES_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WE_BUILT_THIS_CITY
+			Song(
+				file: "WE_BUILT_THIS_CITY",
+				root: "RADIO_01_CLASS_ROCK/we_built_this_city/",
+				labels: [
+					Label(
+						artist: "STARSHIP",
+						title: "We Built This City",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WE_BUILT_THIS_CITY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WE_BUILT_THIS_CITY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WHAT_A_FOOL_BELIEVES
+			Song(
+				file: "WHAT_A_FOOL_BELIEVES",
+				root: "RADIO_01_CLASS_ROCK/what_a_fool_believes/",
+				labels: [
+					Label(
+						artist: "THE DOOBIE BROTHERS",
+						title: "What A Fool Believes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			)
+		],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"]),
+			Solo(root: "mono_solo_22", list: ["MONO_SOLO_22"]),
+			Solo(root: "mono_solo_23", list: ["MONO_SOLO_23"]),
+			Solo(root: "mono_solo_24", list: ["MONO_SOLO_24"]),
+			Solo(root: "mono_solo_25", list: ["MONO_SOLO_25"])
+		],
+		time: [
+			"EVENING": ["01","02","03","04","05","06","07"],
+			"MORNING": ["01","02","03","04","05","06","07"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05","06","07"],
+			"NEWS": ["01","02","03","04","05","06"]
+		]
+	),
+	
+	// MARK: Non-Stop-Pop FM
+	RadioStation(
+		index: 20,
+		number: 2,
+		name: "Non-Stop-Pop FM",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
+			row: 1,
+			column: 2
+		),
+		order: "random",
+		root: "RADIO_02_POP",
+		songs: [
+			//ADULT_EDUCATION
+			Song(
+				file: "ADULT_EDUCATION",
+				root: "RADIO_02_POP/adult_education/",
+				labels: [
+					Label(
+						artist: "HALL & OATS",
+						title: "Adult Education",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ADULT_EDUCATION_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ADULT_EDUCATION_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//ALRIGHT
+			Song(
+				file: "ALRIGHT",
+				root: "RADIO_02_POP/alright/",
+				labels: [
+					Label(
+						artist: "JAMIROQUAI",
+						title: "Alright",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//ANTHEM
+			Song(
+				file: "ANTHEM",
+				root: "RADIO_02_POP/anthem/",
+				labels: [
+					Label(
+						artist: "N-JOI",
+						title: "Anthem",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ANTHEM_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ANTHEM_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//APPLAUSE
+			Song(
+				file: "APPLAUSE",
+				root: "RADIO_02_POP/applause/",
+				labels: [
+					Label(
+						artist: "LADY GAGA",
+						title: "Applause",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "APPLAUSE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "APPLAUSE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BAD_GIRLS
+			Song(
+				file: "BAD_GIRLS",
+				root: "RADIO_02_POP/bad_girls/",
+				labels: [
+					Label(
+						artist: "M.I.A.",
+						title: "Bad Girls",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BAD_GIRLS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BAD_GIRLS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//CIRCLE_IN_THE_SAND*
+			/*Song(
+				file: "CIRCLE_IN_THE_SAND",
+				root: "RADIO_01_CLASS_ROCK/circle_in_the_sand/",
+				labels: [
+					Label(
+						artist: "",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CIRCLE_IN_THE_SAND_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CIRCLE_IN_THE_SAND_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),*/
+			//COOLER_THAN_ME
+			Song(
+				file: "COOLER_THAN_ME",
+				root: "RADIO_02_POP/cooler_than_me/",
+				labels: [
+					Label(
+						artist: "MIKE POSNER",
+						title: "Cooler Than Me",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "COOLER_THAN_ME_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "COOLER_THAN_ME_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//DAYS_GO_BY
+			Song(
+				file: "DAYS_GO_BY",
+				root: "RADIO_02_POP/days_go_by/",
+				labels: [
+					Label(
+						artist: "DIRTY VEGAS",
+						title: "Days Go By",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DAYS_GO_BY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "DAYS_GO_BY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//DONT_WANNA_FALL_IN_LOVE
+			Song(
+				file: "DONT_WANNA_FALL_IN_LOVE",
+				root: "RADIO_02_POP/dont_wanna_fall_in_love/",
+				labels: [
+					Label(
+						artist: "JANE CHILD",
+						title: "Don't Wanna Fall In Love",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DONT_WANNA_FALL_IN_LOVE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "DONT_WANNA_FALL_IN_LOVE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//EVERYTHING_SHE_WANTS
+			Song(
+				file: "EVERYTHING_SHE_WANTS",
+				root: "RADIO_02_POP/everything_she_wants/",
+				labels: [
+					Label(
+						artist: "WHAM!",
+						title: "Everything She Wants",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "EVERYTHING_SHE_WANTS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "EVERYTHING_SHE_WANTS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//FEEL_GOOD_INC
+			Song(
+				file: "FEEL_GOOD_INC",
+				root: "RADIO_02_POP/feel_good_inc/",
+				labels: [
+					Label(
+						artist: "GORILLAZ",
+						title: "Feel Good Inc.",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FEEL_GOOD_INC_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FEEL_GOOD_INC_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//GIMME_MORE
+			Song(
+				file: "GIMME_MORE",
+				root: "RADIO_02_POP/gimme_more/",
+				labels: [
+					Label(
+						artist: "BRITNEY SPEARS",
+						title: "Gimme More",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GIMME_MORE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GIMME_MORE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//GLAMOROUS
+			Song(
+				file: "GLAMOROUS",
+				root: "RADIO_02_POP/glamorous/",
+				labels: [
+					Label(
+						artist: "FERGIE",
+						title: "Glamorous",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GLAMOROUS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GLAMOROUS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//I_WANT_IT_THAT_WAY
+			Song(
+				file: "I_WANT_IT_THAT_WAY",
+				root: "RADIO_02_POP/i_want_it_that_way/",
+				labels: [
+					Label(
+						artist: "BACKSTREET BOYS",
+						title: "I Want It That Way",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "I_WANT_IT_THAT_WAY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_WANT_IT_THAT_WAY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//KIDS
+			Song(
+				file: "KIDS",
+				root: "RADIO_02_POP/kids/",
+				labels: [
+					Label(
+						artist: "ROBBIE WILLIAMS & KYLIE MINOGUE",
+						title: "Kids",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "KIDS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "KIDS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LADY_HEAR_ME_TONIGHT
+			Song(
+				file: "LADY_HEAR_ME_TONIGHT",
+				root: "RADIO_02_POP/lady_hear_me_tonight/",
+				labels: [
+					Label(
+						artist: "MODJO",
+						title: "Lady (Hear Me Tonight)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LADY_HEAR_ME_TONIGHT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LADY_HEAR_ME_TONIGHT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LETS_GO_ALL_THE_WAY
+			Song(
+				file: "LETS_GO_ALL_THE_WAY",
+				root: "RADIO_02_POP/lets_go_all_the_way/",
+				labels: [
+					Label(
+						artist: "SLY FOX",
+						title: "Let's Go All The Way",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LETS_GO_ALL_THE_WAY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LETS_GO_ALL_THE_WAY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LIVING_IN_A_BOX
+			Song(
+				file: "LIVING_IN_A_BOX",
+				root: "RADIO_02_POP/living_in_a_box/",
+				labels: [
+					Label(
+						artist: "LIVING IN A BOX",
+						title: "Living In A Box",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LIVING_IN_A_BOX_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LIVING_IN_A_BOX_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//ME_AND_YOU
+			Song(
+				file: "ME_AND_YOU",
+				root: "RADIO_02_POP/me_and_you/",
+				labels: [
+					Label(
+						artist: "CASSIE",
+						title: "Me & U",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ME_AND_YOU_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ME_AND_YOU_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//MEET_ME_HALFWAY
+			Song(
+				file: "MEET_ME_HALFWAY",
+				root: "RADIO_02_POP/meet_me_halfway/",
+				labels: [
+					Label(
+						artist: "THE BLACK EYED PEAS",
+						title: "Meet Me Halfway",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MEET_ME_HALFWAY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MEET_ME_HALFWAY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//MIDNIGHT_CITY
+			Song(
+				file: "MIDNIGHT_CITY",
+				root: "RADIO_02_POP/midnight_city/",
+				labels: [
+					Label(
+						artist: "M83",
+						title: "Midnight City",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MIDNIGHT_CITY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MIDNIGHT_CITY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//MOVES_LIKE_JAGGER
+			Song(
+				file: "MOVES_LIKE_JAGGER",
+				root: "RADIO_02_POP/moves_like_jagger/",
+				labels: [
+					Label(
+						artist: "MAROON 5",
+						title: "Moves Like Jagger (feat. Christina Aguilera)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MOVES_LIKE_JAGGER_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MOVES_LIKE_JAGGER_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//MUSIC_SOUNDS_BETTER_WITH_YOU
+			Song(
+				file: "MUSIC_SOUNDS_BETTER_WITH_YOU",
+				root: "RADIO_02_POP/music_sounds_better_with_you/",
+				labels: [
+					Label(
+						artist: "STARDUST",
+						title: "Music Sounds Better With You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MUSIC_SOUNDS_BETTER_WITH_YOU_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MUSIC_SOUNDS_BETTER_WITH_YOU_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//NEW_SENSATION
+			Song(
+				file: "NEW_SENSATION",
+				root: "RADIO_02_POP/new_sensation/",
+				labels: [
+					Label(
+						artist: "INXS",
+						title: "New Sensation",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NEW_SENSATION_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "NEW_SENSATION_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//ON_OUR_OWN
+			Song(
+				file: "ON_OUR_OWN",
+				root: "RADIO_02_POP/on_our_own/",
+				labels: [
+					Label(
+						artist: "BOBBY BROWN",
+						title: "On Our Own",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ON_OUR_OWN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ON_OUR_OWN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//ONE_THING
+			Song(
+				file: "ONE_THING",
+				root: "RADIO_02_POP/one_thing/",
+				labels: [
+					Label(
+						artist: "AMERIE",
+						title: "1 Thing",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ONE_THING_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ONE_THING_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//ONLY_GIRL_IN_THE_WORLD
+			Song(
+				file: "ONLY_GIRL_IN_THE_WORLD",
+				root: "RADIO_02_POP/only_girl_in_the_world/",
+				labels: [
+					Label(
+						artist: "RIHANNA",
+						title: "Only Girl (In The World)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ONLY_GIRL_IN_THE_WORLD_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ONLY_GIRL_IN_THE_WORLD_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//PROMISES_PROMISES
+			Song(
+				file: "PROMISES_PROMISES",
+				root: "RADIO_02_POP/promises_promises/",
+				labels: [
+					Label(
+						artist: "NAKED EYES",
+						title: "Promises, Promises",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "PROMISES_PROMISES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "PROMISES_PROMISES_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//PURE_SHORES
+			Song(
+				file: "PURE_SHORES",
+				root: "RADIO_02_POP/pure_shores/",
+				labels: [
+					Label(
+						artist: "ALL SAINTS",
+						title: "Pure Shores",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "PURE_SHORES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "PURE_SHORES_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//RYTHM_OF_THE_NIGHT
+			Song(
+				file: "RYTHM_OF_THE_NIGHT",
+				root: "RADIO_02_POP/rythm_of_the_night/",
+				labels: [
+					Label(
+						artist: "CORONA",
+						title: "Rythm Of The Night",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "RYTHM_OF_THE_NIGHT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "RYTHM_OF_THE_NIGHT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SCANDALOUS
+			Song(
+				file: "SCANDALOUS",
+				root: "RADIO_02_POP/scandalous/",
+				labels: [
+					Label(
+						artist: "MIS-TEEQ",
+						title: "Scandalous",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SCANDALOUS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SCANDALOUS_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "SCANDALOUS_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SEND_ME_AN_ANGEL
+			Song(
+				file: "SEND_ME_AN_ANGEL",
+				root: "RADIO_02_POP/send_me_an_angel/",
+				labels: [
+					Label(
+						artist: "REAL LIFE",
+						title: "Send Me An Angel",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//SIX_UNDERGROUND
+			Song(
+				file: "SIX_UNDERGROUND",
+				root: "RADIO_02_POP/six_underground/",
+				labels: [
+					Label(
+						artist: "SNEAKER PIMPS",
+						title: "6 Underground",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SIX_UNDERGROUND_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SIX_UNDERGROUND_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SMALLTOWN_BOY
+			Song(
+				file: "SMALLTOWN_BOY",
+				root: "RADIO_02_POP/smalltown_boy/",
+				labels: [
+					Label(
+						artist: "BRONSKI BEAT",
+						title: "Smalltown Boy",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SMALLTOWN_BOY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SMALLTOWN_BOY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SOMETHING_GOT_ME_STARTED_REMIX
+			Song(
+				file: "SOMETHING_GOT_ME_STARTED_REMIX",
+				root: "RADIO_02_POP/something_got_me_started_remix/",
+				labels: [
+					Label(
+						artist: "SIMPLY RED",
+						title: "Something Got Me Started (Hurley's House Remix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "0x12C8ED94",
+						delay: 8.0
+					),
+					Intro(
+						file: "0x00934929",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//TAPE_LOOP
+			Song(
+				file: "TAPE_LOOP",
+				root: "RADIO_02_POP/tape_loop/",
+				labels: [
+					Label(
+						artist: "MORCHEEBA",
+						title: "Tape Loop",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TAPE_LOOP_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TAPE_LOOP_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "TAPE_LOOP_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "TAPE_LOOP_04",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//TELL_TO_MY_HEART
+			Song(
+				file: "TELL_TO_MY_HEART",
+				root: "RADIO_02_POP/tell_to_my_heart/",
+				labels: [
+					Label(
+						artist: "TAYLOR DAYNE",
+						title: "Tell It To My Heart",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TELL_IT_TO_MY_HEART_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TELL_IT_TO_MY_HEART_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//TENNIS_COURT
+			Song(
+				file: "TENNIS_COURT",
+				root: "RADIO_02_POP/tennis_court/",
+				labels: [
+					Label(
+						artist: "LORDE",
+						title: "Tennis Court",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TENNIS_COURT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TENNIS_COURT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//THE_TIME_IS_NOW
+			Song(
+				file: "THE_TIME_IS_NOW",
+				root: "RADIO_02_POP/the_time_is_now/",
+				labels: [
+					Label(
+						artist: "MOLOKO",
+						title: "The Time Is Now",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_TIME_IS_NOW_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "THE_TIME_IS_NOW_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "THE_TIME_IS_NOW_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "THE_TIME_IS_NOW_04",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WAIT
+			Song(
+				file: "WAIT",
+				root: "RADIO_02_POP/wait/",
+				labels: [
+					Label(
+						artist: "BLOW MONKEYS FEAT. KYM MAZELLE",
+						title: "Wait",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WAIT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WAIT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WEST_END_GIRLS
+			Song(
+				file: "WEST_END_GIRLS",
+				root: "RADIO_02_POP/west_end_girls/",
+				labels: [
+					Label(
+						artist: "PET SHOP BOYS",
+						title: "West End Girls",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WEST_END_GIRLS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WEST_END_GIRLS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WITH_EVERY_HEARTBEAT
+			Song(
+				file: "WITH_EVERY_HEARTBEAT",
+				root: "RADIO_02_POP/with_every_heartbeat/",
+				labels: [
+					Label(
+						artist: "ROBYN",
+						title: "With Every Heartbeat (With Kleerup)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WITH_EVERY_HEARTBEAT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WITH_EVERY_HEARTBEAT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WORK
+			Song(
+				file: "WORK",
+				root: "RADIO_02_POP/work/",
+				labels: [
+					Label(
+						artist: "KELLY ROWLAND",
+						title: "Work (Freemasons Mix)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WORK_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WORK_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			)
+		],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"]),
+			Identity(root: "id_15", list: ["ID_15"]),
+			Identity(root: "id_16", list: ["ID_16"]),
+			Identity(root: "id_17", list: ["ID_17"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"]),
+			Solo(root: "mono_solo_22", list: ["MONO_SOLO_22"]),
+			Solo(root: "mono_solo_23", list: ["MONO_SOLO_23"]),
+			Solo(root: "mono_solo_24", list: ["MONO_SOLO_24"]),
+			Solo(root: "mono_solo_25", list: ["MONO_SOLO_25"]),
+			Solo(root: "mono_solo_26", list: ["MONO_SOLO_26"]),
+			Solo(root: "mono_solo_27", list: ["MONO_SOLO_27"]),
+			Solo(root: "mono_solo_28", list: ["MONO_SOLO_28"]),
+			Solo(root: "mono_solo_29", list: ["MONO_SOLO_29"])
+		],
+		time: [
+			"EVENING": ["01","02","03","04","05","06"],
+			"MORNING": ["01","02","03","04","05","06"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05","06"],
+			"NEWS": ["01","02","03","04","05","06"]
+		]
+	),
+	
+	// MARK: Radio Los Santos
+	RadioStation(
+		index: 21,
+		number: 3,
+		name: "Radio Los Santos",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
+			row: 3,
+			column: 3
+		),
+		order: "random",
+		root: "RADIO_03_HIPHOP_NEW",
+		songs: [
+			//ADHD
+			Song(
+				file: "ADHD",
+				root: "RADIO_03_HIPHOP_NEW/adhd/",
+				labels: [
+					Label(
+						artist: "KENDRICK LAMAR",
+						title: "A.D.H.D.",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ADHD_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ADHD_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//ALI_BOMAYE
+			Song(
+				file: "ALI_BOMAYE",
+				root: "RADIO_03_HIPHOP_NEW/ali_bomaye/",
+				labels: [
+					Label(
+						artist: "GAME FEAT. 2 CHAINZ & RICK ROSS",
+						title: "Ali Bomaye",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ALI_BOMAYE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ALI_BOMAYE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BAD_NEWS
+			Song(
+				file: "BAD_NEWS",
+				root: "RADIO_03_HIPHOP_NEW/bad_news/",
+				labels: [
+					Label(
+						artist: "DANNY BROWN & ACTION BRONSON",
+						title: "Bad News",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BAD_NEWS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BAD_NEWS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BASSHEADS
+			Song(
+				file: "BASSHEADS",
+				root: "RADIO_03_HIPHOP_NEW/bassheads/",
+				labels: [
+					Label(
+						artist: "GANGRENE",
+						title: "Bassheads",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BASSHEADS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BASSHEADS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BUGATTI
+			Song(
+				file: "BUGATTI",
+				root: "RADIO_03_HIPHOP_NEW/bugatti/",
+				labels: [
+					Label(
+						artist: "ACE HOOD FEAT. FUTURE & RICK ROSS",
+						title: "Bugatti",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BUGATTI_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BUGATTI_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//COLLARD_GREENS
+			Song(
+				file: "COLLARD_GREENS",
+				root: "RADIO_03_HIPHOP_NEW/collard_greens/",
+				labels: [
+					Label(
+						artist: "SCHOOLBOY Q FEAT. KENDRICK LAMAR",
+						title: "Collard Greens",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//DO_IT_BIG
+			Song(
+				file: "DO_IT_BIG",
+				root: "RADIO_03_HIPHOP_NEW/do_it_big/",
+				labels: [
+					Label(
+						artist: "PROBLEM & IAMSU! FEAT. BAD LUCC & SAGE THE GEMINI",
+						title: "Do It Big",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DO_IT_BIG_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "DO_IT_BIG_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//EASILY
+			Song(
+				file: "EASILY",
+				root: "RADIO_03_HIPHOP_NEW/easily/",
+				labels: [
+					Label(
+						artist: "CHUCK INGLISH",
+						title: "Came Thru/Easily feat Mac Miller and Ab-Soul",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "EASILY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "EASILY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//EVERYDAY
+			Song(
+				file: "EVERYDAY",
+				root: "RADIO_03_HIPHOP_NEW/everyday/",
+				labels: [
+					Label(
+						artist: "TROUBLE FT GUCCI MANE",
+						title: "Everyday",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "EVERYDAY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "EVERYDAY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//HOLD_UP
+			Song(
+				file: "HOLD_UP",
+				root: "RADIO_03_HIPHOP_NEW/hold_up/",
+				labels: [
+					Label(
+						artist: "MARION BAND$ FEAT. NIPSEY HUSSLE",
+						title: "Hold Up",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//HOOD_GONE_LOVE_IT
+			Song(
+				file: "HOOD_GONE_LOVE_IT",
+				root: "RADIO_03_HIPHOP_NEW/hood_gone_love_it/",
+				labels: [
+					Label(
+						artist: "JAY ROCK FEAT. KENDRICK LAMAR",
+						title: "Hood Gone Love It",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HOOD_GONE_LOVE_IT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HOOD_GONE_LOVE_IT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//HOW_IT_WAS
+			Song(
+				file: "HOW_IT_WAS",
+				root: "RADIO_03_HIPHOP_NEW/how_it_was/",
+				labels: [
+					Label(
+						artist: "FUTURE",
+						title: "How It Was",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HOW_IT_WAS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HOW_IT_WAS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//HUNNID_STAX
+			Song(
+				file: "HUNNID_STAX",
+				root: "RADIO_03_HIPHOP_NEW/hunnid_stax/",
+				labels: [
+					Label(
+						artist: "AB-SOUL FEAT. SCHOOLBOY Q",
+						title: "Hunnid Stax",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HUNNID_STAX_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HUNNID_STAX_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//I_CANT_WAIT_SCOOTER
+			Song(
+				file: "I_CANT_WAIT_SCOOTER",
+				root: "RADIO_03_HIPHOP_NEW/i_cant_wait_scooter/",
+				labels: [
+					Label(
+						artist: "YOUNG SCOOTER FT TRINIDAD JAMES",
+						title: "I Can't Wait",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "I_CANT_WAIT_SCOOTER_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_CANT_WAIT_SCOOTER_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//ILLUMINATE
+			Song(
+				file: "ILLUMINATE",
+				root: "RADIO_03_HIPHOP_NEW/illuminate/",
+				labels: [
+					Label(
+						artist: "AB-SOUL FT. KENDRICK LAMAR",
+						title: "ILLuminate",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ILLUMINATE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ILLUMINATE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//IM_A_REAL_ONE
+			Song(
+				file: "IM_A_REAL_ONE",
+				root: "RADIO_03_HIPHOP_NEW/im_a_real_one/",
+				labels: [
+					Label(
+						artist: "YG",
+						title: "I'm A Real 1",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "IM_A_REAL_ONE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "IM_A_REAL_ONE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//KUSH_COMA
+			Song(
+				file: "KUSH_COMA",
+				root: "RADIO_03_HIPHOP_NEW/kush_coma/",
+				labels: [
+					Label(
+						artist: "DANNY BROWN FEAT. A$AP ROCKY & ZELOOPERZ",
+						title: "Kush Coma",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "KUSH_COMA_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "KUSH_COMA_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LIFE_OF_A_MACK
+			Song(
+				file: "LIFE_OF_A_MACK",
+				root: "RADIO_03_HIPHOP_NEW/life_of_a_mack/",
+				labels: [
+					Label(
+						artist: "100S",
+						title: "Life Of A Mack",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LIFE_OF_A_MACK_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LIFE_OF_A_MACK_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "LIFE_OF_A_MACK_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//MILLIONS
+			Song(
+				file: "MILLIONS",
+				root: "RADIO_03_HIPHOP_NEW/millions/",
+				labels: [
+					Label(
+						artist: "SKEME",
+						title: "Millions",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MILLIONS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MILLIONS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//R_CALI
+			Song(
+				file: "R_CALI",
+				root: "RADIO_03_HIPHOP_NEW/r_cali/",
+				labels: [
+					Label(
+						artist: "A$AP ROCKY",
+						title: "R-Cali",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "R_CALI_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "R_CALI_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "R_CALI_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//RELAXIN
+			Song(
+				file: "RELAXIN",
+				root: "RADIO_03_HIPHOP_NEW/relaxin/",
+				labels: [
+					Label(
+						artist: "G-SIDE FT G-MANE",
+						title: "Relaxin'",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "RELAXIN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "RELAXIN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SAY_THAT_THEN
+			Song(
+				file: "SAY_THAT_THEN",
+				root: "RADIO_03_HIPHOP_NEW/say_that_then/",
+				labels: [
+					Label(
+						artist: "PROBLEM FEAT. GLASSES MALONE",
+						title: "Say That Then",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SAY_THAT_THEN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SAY_THAT_THEN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SELLIN_DOPE
+			Song(
+				file: "SELLIN_DOPE",
+				root: "RADIO_03_HIPHOP_NEW/sellin_dope/",
+				labels: [
+					Label(
+						artist: "FREDDIE GIBBS & MIKE DEAN",
+						title: "Sellin' Dope",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//SLOW_DOWN
+			Song(
+				file: "SLOW_DOWN",
+				root: "RADIO_03_HIPHOP_NEW/slow_down/",
+				labels: [
+					Label(
+						artist: "CLYDE CARSON FEAT. THE TEAM",
+						title: "Slow Down",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SLOW_DOWN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SLOW_DOWN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SMOKIN_AND_RIDIN
+			Song(
+				file: "SMOKIN_AND_RIDIN",
+				root: "RADIO_03_HIPHOP_NEW/smokin_and_ridin/",
+				labels: [
+					Label(
+						artist: "BJ THE CHICAGO KID FEAT. FREDDIE GIBBS & PROBLEM",
+						title: "Smoke And Ride",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SMOKIN_AND_RIDIN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SMOKIN_AND_RIDIN_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "SMOKIN_AND_RIDIN_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//STILL_LIVIN
+			Song(
+				file: "STILL_LIVIN",
+				root: "RADIO_03_HIPHOP_NEW/still_livin/",
+				labels: [
+					Label(
+						artist: "FREDDIE GIBBS",
+						title: "Still Livin'",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "STILL_LIVIN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "STILL_LIVIN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SWIMMING_POOLS
+			Song(
+				file: "SWIMMING_POOLS",
+				root: "RADIO_03_HIPHOP_NEW/swimming_pools/",
+				labels: [
+					Label(
+						artist: "KENDRICK LAMAR",
+						title: "Swimming Pools (Drank)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SWIMMING_POOLS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SWIMMING_POOLS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//TOO_HOOD
+			Song(
+				file: "TOO_HOOD",
+				root: "RADIO_03_HIPHOP_NEW/too_hood/",
+				labels: [
+					Label(
+						artist: "GUCCI MANE FEAT. CIARA",
+						title: "Too Hard",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TOO_HOOD_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TOO_HOOD_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//UPPER_ECHELON
+			Song(
+				file: "UPPER_ECHELON",
+				root: "RADIO_03_HIPHOP_NEW/upper_echelon/",
+				labels: [
+					Label(
+						artist: "TRAVI$ SCOTT",
+						title: "Upper Echelon feat T.I. and 2 Chainz",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "UPPER_ECHELON_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "UPPER_ECHELON_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WORK_FERG
+			Song(
+				file: "WORK_FERG",
+				root: "RADIO_03_HIPHOP_NEW/work_ferg/",
+				labels: [
+					Label(
+						artist: "A$AP FERG",
+						title: "Work",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WORK_FERG_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WORK_YOUNG_SCOOTER
+			Song(
+				file: "WORK_YOUNG_SCOOTER",
+				root: "RADIO_03_HIPHOP_NEW/work_young_scooter/",
+				labels: [
+					Label(
+						artist: "YOUNG SCOOTER FEAT. GUCCI MANE",
+						title: "Work",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WORK_YOUNG_SCOOTER_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WORK_YOUNG_SCOOTER_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			)
+		],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"])
+		],
+		time: [
+			"EVENING": ["01","02","03","04","05","06"],
+			"MORNING": ["01","02","03","04","05"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05","06"],
+			"NEWS": ["01","02","03","04","05","06"]
+		]
+	),
+	
+	// MARK: Channel X
+	RadioStation(
+		index: 22,
+		number: 4,
+		name: "Channel X",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
+			row: 3,
+			column: 1
+		),
+		order: "random",
+		root: "RADIO_04_PUNK",
+		songs: [
+			//AMOEBA
+			Song(
+				file: "AMOEBA",
+				root: "RADIO_04_PUNK/amoeba/",
+				labels: [
+					Label(
+						artist: "THE ADOLESCENTS",
+						title: "Amoeba",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "AMOEBA_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "AMOEBA_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BLOWN_AWAY
+			Song(
+				file: "BLOWN_AWAY",
+				root: "RADIO_04_PUNK/blown_away/",
+				labels: [
+					Label(
+						artist: "YOUTH BRIGADE",
+						title: "Blown Away",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BLOWN_AWAY_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "BLOWN_AWAY_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BORED_OF_YOU
+			Song(
+				file: "BORED_OF_YOU",
+				root: "RADIO_04_PUNK/bored_of_you/",
+				labels: [
+					Label(
+						artist: "AGENT ORANGE",
+						title: "Bored Of You",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BORED_OF_YOU_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "BORED_OF_YOU_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//DONT_NEED_SOCIETY
+			Song(
+				file: "DONT_NEED_SOCIETY",
+				root: "RADIO_04_PUNK/dont_need_society/",
+				labels: [
+					Label(
+						artist: "D.R.I.",
+						title: "I Don't Need Society",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DONT_NEED_SOCIETY_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "DONT_NEED_SOCIETY_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//DONT_PUSH_ME_AROUND
+			Song(
+				file: "DONT_PUSH_ME_AROUND",
+				root: "RADIO_04_PUNK/dont_push_me_around/",
+				labels: [
+					Label(
+						artist: "THE ZEROS",
+						title: "Don't Push Me Around",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DONT_PUSH_ME_AROUND_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "DONT_PUSH_ME_AROUND_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//JOHN_WAYNE
+			Song(
+				file: "JOHN_WAYNE",
+				root: "RADIO_04_PUNK/john_wayne/",
+				labels: [
+					Label(
+						artist: "MDC",
+						title: "John Wayne Was A Nazi",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "JOHN_WAYNE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "JOHN_WAYNE_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LEXICON_DEVIL
+			Song(
+				file: "LEXICON_DEVIL",
+				root: "RADIO_04_PUNK/lexicon_devil/",
+				labels: [
+					Label(
+						artist: "THE GERMS",
+						title: "Lexicon Devil",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LEXICON_DEVIL_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "LEXICON_DEVIL_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LIFE_OF_CRIME
+			Song(
+				file: "LIFE_OF_CRIME",
+				root: "RADIO_04_PUNK/life_of_crime/",
+				labels: [
+					Label(
+						artist: "THE WEIRDOS",
+						title: "Life Of Crime",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//LINDA_BLAIR
+			Song(
+				file: "LINDA_BLAIR",
+				root: "RADIO_04_PUNK/linda_blair/",
+				labels: [
+					Label(
+						artist: "REDD KROSS",
+						title: "Linda Blair",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LINDA_BLAIR_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "LINDA_BLAIR_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LOS_ANGELES
+			Song(
+				file: "LOS_ANGELES",
+				root: "RADIO_04_PUNK/los_angeles/",
+				labels: [
+					Label(
+						artist: "X",
+						title: "Los Angeles",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LOS_ANGELES_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "LOS_ANGELES_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//MY_WAR
+			Song(
+				file: "MY_WAR",
+				root: "RADIO_04_PUNK/my_war/",
+				labels: [
+					Label(
+						artist: "BLACK FLAG",
+						title: "My War",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MY_WAR_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "MY_WAR_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//PERVERT
+			Song(
+				file: "PERVERT",
+				root: "RADIO_04_PUNK/pervert/",
+				labels: [
+					Label(
+						artist: "THE DESCENDENTS",
+						title: "Pervert",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//ROCK_HOUSE
+			Song(
+				file: "ROCK_HOUSE",
+				root: "RADIO_04_PUNK/rock_house/",
+				labels: [
+					Label(
+						artist: "CIRCLE JERKS",
+						title: "Rock House",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//SILENT_MAJORITY
+			Song(
+				file: "SILENT_MAJORITY",
+				root: "RADIO_04_PUNK/silent_majority/",
+				labels: [
+					Label(
+						artist: "T.S.O.L.",
+						title: "Abolish Government/Silent Majority",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//SUBLIMINAL
+			Song(
+				file: "SUBLIMINAL",
+				root: "RADIO_04_PUNK/subliminal/",
+				labels: [
+					Label(
+						artist: "SUICIDAL TENDENCIES",
+						title: "Subliminal",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SUBLIMINAL_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "SUBLIMINAL_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//THE_ENEMY
+			Song(
+				file: "THE_ENEMY",
+				root: "RADIO_04_PUNK/the_enemy/",
+				labels: [
+					Label(
+						artist: "D.O.A.",
+						title: "The Enemy",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_ENEMY_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_ENEMY_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//THE_MOUTH_DONT_STOP
+			Song(
+				file: "THE_MOUTH_DONT_STOP",
+				root: "RADIO_04_PUNK/the_mouth_dont_stop/",
+				labels: [
+					Label(
+						artist: "FEAR",
+						title: "The Mouth Don't Stop (The Trouble With Women Is)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_MOUTH_DONT_STOP_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_MOUTH_DONT_STOP_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WHATS_NEXT
+			Song(
+				file: "WHATS_NEXT",
+				root: "RADIO_04_PUNK/whats_next/",
+				labels: [
+					Label(
+						artist: "OFF!",
+						title: "What's Next?",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WHATS_NEXT_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "WHATS_NEXT_02",
+						delay: 5.0
+					),
+					Intro(
+						file: "WHATS_NEXT_03",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			)
+		],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"])
+		],
+		time: [
+			"EVENING": ["01","02","03"],
+			"MORNING": ["01","02","03","04"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05"],
+			"NEWS": ["01","02","03","04"]
+		]
+	),
+	
+	// MARK: West Coast Talk Radio
+	RadioStation(
+		index: 23,
+		number: 5,
+		name: "WCTR",
+		image: ImageData(
+			name: "gta_radio_stations_texture02_512",
+			row: 2,
+			column: 1
+		),
+		order: "rotate",
+		root: "RADIO_05_TALK_01",
+		songs: [
+			//MONO_CHAKRA_ATTACK_PART_1
+			Song(
+				file: "MONO_CHAKRA_ATTACK_PART_1",
+				root: "RADIO_05_TALK_01/mono_chakra_attack_part_1/",
+				labels: [
+					Label(
+						artist: "CHAKRA ATTACK",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//MONO_CHATTERSPHERE
+			Song(
+				file: "MONO_CHATTERSPHERE",
+				root: "RADIO_05_TALK_01/mono_chattersphere/",
+				labels: [
+					Label(
+						artist: "CHATTERSPHERE",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//MONO_DCHAKRA_ATTACK_PART_2
+			Song(
+				file: "MONO_DCHAKRA_ATTACK_PART_2",
+				root: "RADIO_05_TALK_01/mono_dchakra_attack_part_2/",
+				labels: [
+					Label(
+						artist: "CHAKRA ATTACK",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//MONO_FERNANDO_SHOW_1
+			Song(
+				file: "MONO_FERNANDO_SHOW_1",
+				root: "RADIO_05_TALK_01/mono_fernando_show_1/",
+				labels: [
+					Label(
+						artist: "The Fernando Show",
+						title: "",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			)
+		],
+		general: nil,
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"])
+		],
+		solo: nil,
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: Rebel Radio
+	RadioStation(
+		index: 24,
+		number: 6,
+		name: "Rebel Radio",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
+			row: 1,
+			column: 1
+		),
+		order: "random",
+		root: "RADIO_06_COUNTRY",
+		songs: [
+			//ARE_YOU_SURE_HANK
+			Song(
+				file: "ARE_YOU_SURE_HANK",
+				root: "RADIO_06_COUNTRY/are_you_sure_hank/",
+				labels: [
+					Label(
+						artist: "WAYLON JENNINGS",
+						title: "Are You Sure Hank Done It This Way",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ARE_YOU_SURE_HANK_01",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//CANT_HARDLY_STAND
+			Song(
+				file: "CANT_HARDLY_STAND",
+				root: "RADIO_06_COUNTRY/cant_hardly_stand/",
+				labels: [
+					Label(
+						artist: "CHARLIE FEATHERS",
+						title: "Can't Hardly Stand It",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CANT_HARDLY_STAND_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "CANT_HARDLY_STAND_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//CONVOY
+			Song(
+				file: "CONVOY",
+				root: "RADIO_06_COUNTRY/convoy/",
+				labels: [
+					Label(
+						artist: "C.W. MCCALL",
+						title: "Convoy",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CONVOY_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "CONVOY_02",
+						delay: 5.0
+					),
+					Intro(
+						file: "CONVOY_03",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//CRAZY_ARMS
+			Song(
+				file: "CRAZY_ARMS",
+				root: "RADIO_06_COUNTRY/crazy_arms/",
+				labels: [
+					Label(
+						artist: "RAY PRICE",
+						title: "Crazy Arms",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//DIPPIN_SNUFF
+			Song(
+				file: "DIPPIN_SNUFF",
+				root: "RADIO_06_COUNTRY/dippin_snuff/",
+				labels: [
+					Label(
+						artist: "MARVIN JACKSON",
+						title: "Dippin' Snuff",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//DIVORCE
+			Song(
+				file: "DIVORCE",
+				root: "RADIO_06_COUNTRY/divorce/",
+				labels: [
+					Label(
+						artist: "TAMMY WYNETTE",
+						title: "D-I-V-O-R-C-E",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//GET_OUTTA_MY_CAR
+			Song(
+				file: "GET_OUTTA_MY_CAR",
+				root: "RADIO_06_COUNTRY/get_outta_my_car/",
+				labels: [
+					Label(
+						artist: "HASIL ADKINS",
+						title: "Get Outta My Car",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GET_OUTTA_MY_CAR_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "GET_OUTTA_MY_CAR_02",
+						delay: 5.0
+					),
+					Intro(
+						file: "GET_OUTTA_MY_CAR_03",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//GET_WITH_IT
+			Song(
+				file: "GET_WITH_IT",
+				root: "RADIO_06_COUNTRY/get_with_it/",
+				labels: [
+					Label(
+						artist: "CHARLIE FEATHERS",
+						title: "Get With It",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//HIGHWAY_MAN
+			Song(
+				file: "HIGHWAY_MAN",
+				root: "RADIO_06_COUNTRY/highway_man/",
+				labels: [
+					Label(
+						artist: "THE HIGHWAYMEN",
+						title: "Highwayman",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//I_AINT_LIVING_LONG_LIKE_THIS
+			Song(
+				file: "I_AINT_LIVING_LONG_LIKE_THIS",
+				root: "RADIO_06_COUNTRY/i_aint_living_long_like_this/",
+				labels: [
+					Label(
+						artist: "WAYLON JENNINGS",
+						title: "I Ain't Living Long Like This",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "I_AINT_LIVING_LONG_LIKE_THIS_01",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//IF_WANT_TO_GET_HEAVEN
+			Song(
+				file: "IF_WANT_TO_GET_HEAVEN",
+				root: "RADIO_06_COUNTRY/if_want_to_get_heaven/",
+				labels: [
+					Label(
+						artist: "OZARK MOUNTAIN DAREDEVILS",
+						title: "If You Wanna Get To Heaven",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "IF_WANT_TO_GET_HEAVEN_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "IF_WANT_TO_GET_HEAVEN_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//IT_DONT_HURT_ANYMORE
+			Song(
+				file: "IT_DONT_HURT_ANYMORE",
+				root: "RADIO_06_COUNTRY/it_dont_hurt_anymore/",
+				labels: [
+					Label(
+						artist: "HANK THOMPSON",
+						title: "It Don't Hurt Anymore",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "IT_DONT_HURT_ANYMORE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "IT_DONT_HURT_ANYMORE_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//IT_WONT_BE_LONG_HATING_YOU
+			Song(
+				file: "IT_WONT_BE_LONG_HATING_YOU",
+				root: "RADIO_06_COUNTRY/it_wont_be_long_hating_you/",
+				labels: [
+					Label(
+						artist: "JOHNNY PAYCHECK",
+						title: "It Won't Be Long (And I'll Be Hating You)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "IT_WONT_BE_LONG_HATING_YOU_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "IT_WONT_BE_LONG_HATING_YOU_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SHE_MADE_TOOTHPICKS_OUT_OF_ME
+			Song(
+				file: "SHE_MADE_TOOTHPICKS_OUT_OF_ME",
+				root: "RADIO_06_COUNTRY/she_made_toothpicks_out_of_me/",
+				labels: [
+					Label(
+						artist: "HOMER & JETHRO",
+						title: "She Made Toothpicks Of The Timber Of My Heart",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//THE_GENERAL_LEE
+			Song(
+				file: "THE_GENERAL_LEE",
+				root: "RADIO_06_COUNTRY/the_general_lee/",
+				labels: [
+					Label(
+						artist: "JOHNNY CASH",
+						title: "The General Lee",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_GENERAL_LEE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_GENERAL_LEE_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WHISKEY_RIVER
+			Song(
+				file: "WHISKEY_RIVER",
+				root: "RADIO_06_COUNTRY/whiskey_river/",
+				labels: [
+					Label(
+						artist: "WILLIE NELSON",
+						title: "Whiskey River",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WHISKEY_RIVER_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "WHISKEY_RIVER_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//YOU_TOOK_ALL_THE_RAMBLIN_OUT
+			Song(
+				file: "YOU_TOOK_ALL_THE_RAMBLIN_OUT",
+				root: "RADIO_06_COUNTRY/you_took_all_the_ramblin_out/",
+				labels: [
+					Label(
+						artist: "JERRY REED",
+						title: "You Took All The Ramblin' Out Of Me",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "YOU_TOOK_ALL_THE_RAMBLIN_OUT_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "YOU_TOOK_ALL_THE_RAMBLIN_OUT_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			)
+		],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"])
+		],
+		time: [
+			"EVENING": ["01","02","03","04"],
+			"MORNING": ["01","02","03","04"]
+		],
+		to: [
+			"AD": ["01","02","03","04"],
+			"NEWS": ["01","02","03","04"]
+		]
+	),
+	
+	// MARK: Soulwax FM
+	RadioStation(
+		index: 25,
+		number: 7,
+		name: "Soulwax FM",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
+			row: 2,
+			column: 2
+		),
+		order: "static",
+		root: "RADIO_07_DANCE_01",
+		songs: [
+			//SOULWAX_FM_FINAL_MIX_
+			Song(
+				file: "SOULWAX_FM_FINAL_MIX_32K",
+				root: "RADIO_07_DANCE_01/soulwax_fm_final_mix_32k/",
+				labels: [
+					Label(
+						artist: "",
+						title: "",
+						time: 0.0
+					),
+					//Stock (Soulwax Remix)
+					Label(
+						artist: "PALMBOMEN",
+						title: "Stock (Soulwax Remix)",
+						time: 15.5
+					),
+					//Fatal Error
+					Label(
+						artist: "FATAL ERROR",
+						title: "Fatal Error",
+						time: 159.0
+					),
+					//Let's Beam Him Up
+					Label(
+						artist: "SUPERSEMPFFT",
+						title: "Let's Beam Him Up",
+						time: 291.0
+					),
+					//Mingi
+					Label(
+						artist: "MIM SULEMAN",
+						title: "Mingi",
+						time: 370.0
+					),
+					//The Strange Art (Inflagranti Remix)
+					Label(
+						artist: "FK CLUB",
+						title: "The Strange Art (Inflagranti Remix)",
+						time: 509.0
+					),
+					//El Sucu Tucu
+					Label(
+						artist: "MATIAS AGUAYO",
+						title: "El Sucu Tucu",
+						time: 639.0
+					),
+					//Naive Reception
+					Label(
+						artist: "DANIEL AVERY",
+						title: "Naive Reception",
+						time: 870.0
+					),
+					//Gabriel (Soulwax Remix)
+					Label(
+						artist: "JOE GODDARD",
+						title: "Gabriel (Soulwax Remix)",
+						time: 967.0
+					),
+					//Body Music (Original Mix)
+					Label(
+						artist: "DANIEL MALASO",
+						title: "Body Music (Original Mix)",
+						time: 1150.0
+					),
+					//Lazer Beams
+					Label(
+						artist: "GREEN VELVET & HARVARD BASS",
+						title: "Lazer Beams",
+						time: 1263.0
+					),
+					//Tryouts
+					Label(
+						artist: "ZOMBIE NATION",
+						title: "Tryouts",
+						time: 1395.0
+					),
+					//Nothing But Pleasure
+					Label(
+						artist: "TOM ROWLANDS",
+						title: "Nothing But Pleasure",
+						time: 1491.0
+					),
+					//Arp #1
+					Label(
+						artist: "JACKSON AND HIS COMPUTER BAND",
+						title: "Arp #1",
+						time: 1644.0
+					),
+					//Synrise (Soulwax Remix)
+					Label(
+						artist: "GOOSE",
+						title: "Synrise (Soulwax Remix)",
+						time: 1826.0
+					),
+					//Mr. Croissant Taker
+					Label(
+						artist: "TRANSISTORCAKE",
+						title: "Mr. Croissant Taker",
+						time: 1976.0
+					),
+					//Plush (Jaques Lu Cont Remix)
+					Label(
+						artist: "TIGA",
+						title: "Plush (Jaques Lu Cont Remix)",
+						time: 2098.0
+					),
+					//Shockwave (Gesaffelstein Remix)
+					Label(
+						artist: "THE HACKER",
+						title: "Shockwave (Gesaffelstein Remix)",
+						time: 2233.0
+					),
+					//After You (Soulwax Remix)
+					Label(
+						artist: "PULP",
+						title: "After You (Soulwax Remix)",
+						time: 2324.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			)
+		],
+		general: nil,
+		identity: nil,
+		solo: nil,
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: East Los FM
+	RadioStation(
+		index: 26,
+		number: 8,
+		name: "East Los FM",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
+			row: 2,
+			column: 1
+		),
+		order: "static",
+		root: "RADIO_08_MEXICAN",
+		songs: [
+			//MEX_FINAL_MIX_
+			Song(
+				file: "MEX_FINAL_MIX_32",
+				root: "RADIO_08_MEXICAN/mex_final_mix_32/",
+				labels: [
+					//El Cocaino
+					Label(
+						artist: "LOS BUITRES DE CULIACAN SINALOA",
+						title: "El Cocaino",
+						time: 0.0
+					),
+					//Es-Toy
+					Label(
+						artist: "MEXICAN INSTITUTE OF SOUND",
+						title: "Es-Toy",
+						time: 155.0
+					),
+					//Criminal Sound
+					Label(
+						artist: "NINA DIOZ",
+						title: "Criminal Sound",
+						time: 274.0
+					),
+					//Radio Capital
+					Label(
+						artist: "LA VIDA BOHEME",
+						title: "Radio Capital",
+						time: 366.0
+					),
+					//Autos, Moda Y Rock And Roll
+					Label(
+						artist: "FANDANGO",
+						title: "Autos, Moda Y Rock And Roll",
+						time: 504.0
+					),
+					//El Tatuado
+					Label(
+						artist: "DON CHETO",
+						title: "El Tatuado",
+						time: 638.0
+					),
+					//Se Me Perdio la Cadenita
+					Label(
+						artist: "LA SONORA DINAMITA",
+						title: "Se Me Perdio la Cadenita",
+						time: 839.0
+					),
+					//Fiebre De Jack
+					Label(
+						artist: "SHE'S A TEASE",
+						title: "Fiebre De Jack",
+						time: 988.0
+					),
+					//Pachuco
+					Label(
+						artist: "MALDITA VECINDAD",
+						title: "Pachuco",
+						time: 1210.0
+					),
+					//El Sonidito
+					Label(
+						artist: "HECHIZEROS BAND",
+						title: "El Sonidito",
+						time: 1395.0
+					),
+					//Fresco
+					Label(
+						artist: "MILKMAN",
+						title: "Fresco",
+						time: 1574.0
+					),
+					//Maldito
+					Label(
+						artist: "JESSY BULBO",
+						title: "Maldito",
+						time: 1778.0
+					),
+					//Yo Tengo El Don
+					Label(
+						artist: "LA LIGA FEAT. ALIKA",
+						title: "Yo Tengo El Don",
+						time: 1951.0
+					),
+					//La Granja
+					Label(
+						artist: "LOS TIGRES DEL NORTE",
+						title: "La Granja",
+						time: 2122.0
+					),
+					//El Rey Y Yo
+					Label(
+						artist: "LOS ANGELES NEGROS",
+						title: "El Rey Y Yo",
+						time: 2346.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			)
+		],
+		general: nil,
+		identity: nil,
+		solo: nil,
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
+	),
+	
+	// MARK: West Coast Classics
+	RadioStation(
+		index: 27,
+		number: 9,
+		name: "West Coast Classics",
+		image: ImageData(
+			name: "gtav_radio_stations_texture_512",
+			row: 1,
+			column: 3
+		),
+		order: "random",
+		root: "RADIO_09_HIPHOP_OLD",
+		songs: [
+			//AFRO_PUFFS
+			Song(
+				file: "AFRO_PUFFS",
+				root: "RADIO_09_HIPHOP_OLD/afro_puffs/",
+				labels: [
+					Label(
+						artist: "THE LADY OF RAGE",
+						title: "Afro Puffs",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "AFRO_PUFFS_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "AFRO_PUFFS_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//AMBITIONZ_AZ_A_RIDAH
+			Song(
+				file: "AMBITIONZ_AZ_A_RIDAH",
+				root: "RADIO_09_HIPHOP_OLD/ambitionz_az_a_ridah/",
+				labels: [
+					Label(
+						artist: "2PAC",
+						title: "Ambitionz Az A Ridah",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "AMBITIONZ_AZ_A_RIDAH_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "AMBITIONZ_AZ_A_RIDAH_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//APPETITE_FOR_DESTRUCTION
+			Song(
+				file: "APPETITE_FOR_DESTRUCTION",
+				root: "RADIO_09_HIPHOP_OLD/appetite_for_destruction/",
+				labels: [
+					Label(
+						artist: "N.W.A",
+						title: "Appetite For Destruction",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "APPETITE_FOR_DESTRUCTION_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "APPETITE_FOR_DESTRUCTION_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BALLAD_OF_A_MENACE
+			Song(
+				file: "BALLAD_OF_A_MENACE",
+				root: "RADIO_09_HIPHOP_OLD/ballad_of_a_menace/",
+				labels: [
+					Label(
+						artist: "CPO",
+						title: "Ballad Of A Menace",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BALLAD_OF_A_MENACE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "BALLAD_OF_A_MENACE_02",
+						delay: 5.0
+					),
+					Intro(
+						file: "BALLAD_OF_A_MENACE_03",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//BOW_DOWN
+			Song(
+				file: "BOW_DOWN",
+				root: "RADIO_09_HIPHOP_OLD/bow_down/",
+				labels: [
+					Label(
+						artist: "WESTSIDE CONNECTION",
+						title: "Bow Down",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BOW_DOWN_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "BOW_DOWN_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//C_WALK
+			Song(
+				file: "C_WALK",
+				root: "RADIO_09_HIPHOP_OLD/c_walk/",
+				labels: [
+					Label(
+						artist: "KURUPT",
+						title: "C-Walk",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "C_WALK_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "C_WALK_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//CAPTAIN_SAVE_A_HOE
+			Song(
+				file: "CAPTAIN_SAVE_A_HOE",
+				root: "RADIO_09_HIPHOP_OLD/captain_save_a_hoe/",
+				labels: [
+					Label(
+						artist: "E-40",
+						title: "Captain Save A Hoe",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CAPTAIN_SAVE_A_HOE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "CAPTAIN_SAVE_A_HOE_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//DOLLAZ_AND_SENSE
+			Song(
+				file: "DOLLAZ_AND_SENSE",
+				root: "RADIO_09_HIPHOP_OLD/dollaz_and_sense/",
+				labels: [
+					Label(
+						artist: "DJ QUIK",
+						title: "Dollaz & Sense",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//FIRST_OF_THE_MONTH
+			Song(
+				file: "FIRST_OF_THE_MONTH",
+				root: "RADIO_09_HIPHOP_OLD/first_of_the_month/",
+				labels: [
+					Label(
+						artist: "BONE THUGS-N-HARMONY",
+						title: "1st Of Tha Month",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FIRST_OF_THE_MONTH_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "FIRST_OF_THE_MONTH_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//GANGSTA_GANGSTA
+			Song(
+				file: "GANGSTA_GANGSTA",
+				root: "RADIO_09_HIPHOP_OLD/gangsta_gangsta/",
+				labels: [
+					Label(
+						artist: "N.W.A",
+						title: "Gangsta Gangsta",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GANGSTA_GANGSTA_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "GANGSTA_GANGSTA_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//GIN_AND_JUICE
+			Song(
+				file: "GIN_AND_JUICE",
+				root: "RADIO_09_HIPHOP_OLD/gin_and_juice/",
+				labels: [
+					Label(
+						artist: "SNOOP DOGG",
+						title: "Gin and Juice",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GIN_AND_JUICE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "GIN_AND_JUICE_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//I_GOT_FIVE_ON_IT
+			Song(
+				file: "I_GOT_FIVE_ON_IT",
+				root: "RADIO_09_HIPHOP_OLD/i_got_five_on_it/",
+				labels: [
+					Label(
+						artist: "THE LUNIZ",
+						title: "I Got 5 On It",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//LATE_NIGHT_HYPE
+			Song(
+				file: "LATE_NIGHT_HYPE",
+				root: "RADIO_09_HIPHOP_OLD/late_night_hype/",
+				labels: [
+					Label(
+						artist: "COMPTON'S MOST WANTED",
+						title: "Late Night Hype",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LATE_NIGHT_HYPE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "LATE_NIGHT_HYPE_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//LIKE_A_PIANO
+			Song(
+				file: "LIKE_A_PIANO",
+				root: "RADIO_09_HIPHOP_OLD/like_a_piano/",
+				labels: [
+					Label(
+						artist: "KING TEE",
+						title: "Played Like A Piano",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 95.0
+			),
+			//MIND_PLAYING_TRICKS
+			Song(
+				file: "MIND_PLAYING_TRICKS",
+				root: "RADIO_09_HIPHOP_OLD/mind_playing_tricks/",
+				labels: [
+					Label(
+						artist: "GETO BOYS",
+						title: "Mind Playing Tricks On Me",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MIND_PLAYING_TRICKS_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "MIND_PLAYING_TRICKS_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//NO_MORE_QUESTIONS
+			Song(
+				file: "NO_MORE_QUESTIONS",
+				root: "RADIO_09_HIPHOP_OLD/no_more_questions/",
+				labels: [
+					Label(
+						artist: "EAZY-E",
+						title: "No More ?'s",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NO_MORE_QUESTIONS_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "NO_MORE_QUESTIONS_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//NOTHIN_BUT_THE_CAVI_HIT
+			Song(
+				file: "NOTHIN_BUT_THE_CAVI_HIT",
+				root: "RADIO_09_HIPHOP_OLD/nothin_but_the_cavi_hit/",
+				labels: [
+					Label(
+						artist: "MACK 10 FEAT. THE DOGG POUND",
+						title: "Nothin' But The Cavi Hit",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NOTHIN_BUT_THE_CAVI_HIT_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "NOTHIN_BUT_THE_CAVI_HIT_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SERVIN_EM_HEAT
+			Song(
+				file: "SERVIN_EM_HEAT",
+				root: "RADIO_09_HIPHOP_OLD/servin_em_heat/",
+				labels: [
+					Label(
+						artist: "SOUTH CENTRAL CARTEL",
+						title: "Servin' 'Em Heat",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SERVIN_EM_HEAT_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "SERVIN_EM_HEAT_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SHERM_STICK
+			Song(
+				file: "SHERM_STICK",
+				root: "RADIO_09_HIPHOP_OLD/sherm_stick/",
+				labels: [
+					Label(
+						artist: "JAYO FELONY",
+						title: "Sherm Stick",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SHERM_STICK_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "SHERM_STICK_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//SO_YOU_WANT_TO_BE_A_GANGSTER
+			Song(
+				file: "SO_YOU_WANT_TO_BE_A_GANGSTER",
+				root: "RADIO_09_HIPHOP_OLD/so_you_want_to_be_a_gangster/",
+				labels: [
+					Label(
+						artist: "TOO $HORT",
+						title: "So You Wanna Be A Gangster",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SO_YOU_WANT_TO_BE_A_GANGSTER_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "SO_YOU_WANT_TO_BE_A_GANGSTER_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//STILL_D_R_E
+			Song(
+				file: "STILL_D_R_E",
+				root: "RADIO_09_HIPHOP_OLD/still_d_r_e/",
+				labels: [
+					Label(
+						artist: "DR. DRE",
+						title: "Still D.R.E (ft Snoop Dogg)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "STILL_D_R_E_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "STILL_D_R_E_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//STRAIGHT_UP_MENACE
+			Song(
+				file: "STRAIGHT_UP_MENACE",
+				root: "RADIO_09_HIPHOP_OLD/straight_up_menace/",
+				labels: [
+					Label(
+						artist: "MC EIHT",
+						title: "Streiht Up Menace",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "STRAIGHT_UP_MENACE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "STRAIGHT_UP_MENACE_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//THE_MURDA_SHOW
+			Song(
+				file: "THE_MURDA_SHOW",
+				root: "RADIO_09_HIPHOP_OLD/the_murda_show/",
+				labels: [
+					Label(
+						artist: "SPICE 1 FEAT. MC EIHT",
+						title: "The Murda Show",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_MURDA_SHOW_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_MURDA_SHOW_02",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_MURDA_SHOW_03",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_MURDA_SHOW_04",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//THE_NEXT_EPISODE
+			Song(
+				file: "THE_NEXT_EPISODE",
+				root: "RADIO_09_HIPHOP_OLD/the_next_episode/",
+				labels: [
+					Label(
+						artist: "DR. DRE",
+						title: "The Next Episode (Ft Snoop Dogg)",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_NEXT_EPISODE_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "THE_NEXT_EPISODE_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//THIS_DJ
+			Song(
+				file: "THIS_DJ",
+				root: "RADIO_09_HIPHOP_OLD/this_dj/",
+				labels: [
+					Label(
+						artist: "WARREN G",
+						title: "This D.J.",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THIS_DJ_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "THIS_DJ_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WE_ROLL_DEEP
+			Song(
+				file: "WE_ROLL_DEEP",
+				root: "RADIO_09_HIPHOP_OLD/we_roll_deep/",
+				labels: [
+					Label(
+						artist: "THE CONSCIOUS DAUGHTERS",
+						title: "We Roll Deep",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WE_ROLL_DEEP_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "WE_ROLL_DEEP_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WHAT_WOULD_YOU_DO
+			Song(
+				file: "WHAT_WOULD_YOU_DO",
+				root: "RADIO_09_HIPHOP_OLD/what_would_you_do/",
+				labels: [
+					Label(
+						artist: "THE DOGG POUND",
+						title: "What Would U Do",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WHAT_WOULD_YOU_DO_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "WHAT_WOULD_YOU_DO_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//WHAT_YOU_WANNA_DO
+			Song(
+				file: "WHAT_YOU_WANNA_DO",
+				root: "RADIO_09_HIPHOP_OLD/what_you_wanna_do/",
+				labels: [
+					Label(
+						artist: "KAUSION",
+						title: "What You Wanna Do",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "WHAT_YOU_WANNA_DO_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "WHAT_YOU_WANNA_DO_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			),
+			//YOU_KNOW_HOW_WE_DO
+			Song(
+				file: "YOU_KNOW_HOW_WE_DO",
+				root: "RADIO_09_HIPHOP_OLD/you_know_how_we_do/",
+				labels: [
+					Label(
+						artist: "ICE CUBE",
+						title: "You Know How We Do It",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "YOU_KNOW_HOW_WE_DO_01",
+						delay: 5.0
+					),
+					Intro(
+						file: "YOU_KNOW_HOW_WE_DO_02",
+						delay: 5.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 95.0
+			)
+		],
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"]
+		),
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"]),
+			Identity(root: "id_15", list: ["ID_15"]),
+			Identity(root: "id_16", list: ["ID_16"]),
+			Identity(root: "id_17", list: ["ID_17"]),
+			Identity(root: "id_18", list: ["ID_18"])
+		],
+		solo: [
+			Solo(root: "mono_solo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "mono_solo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "mono_solo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "mono_solo_04", list: ["MONO_SOLO_04"]),
+			Solo(root: "mono_solo_05", list: ["MONO_SOLO_05"]),
+			Solo(root: "mono_solo_06", list: ["MONO_SOLO_06"]),
+			Solo(root: "mono_solo_07", list: ["MONO_SOLO_07"]),
+			Solo(root: "mono_solo_08", list: ["MONO_SOLO_08"]),
+			Solo(root: "mono_solo_09", list: ["MONO_SOLO_09"]),
+			Solo(root: "mono_solo_10", list: ["MONO_SOLO_10"]),
+			Solo(root: "mono_solo_11", list: ["MONO_SOLO_11"]),
+			Solo(root: "mono_solo_12", list: ["MONO_SOLO_12"]),
+			Solo(root: "mono_solo_13", list: ["MONO_SOLO_13"]),
+			Solo(root: "mono_solo_14", list: ["MONO_SOLO_14"]),
+			Solo(root: "mono_solo_15", list: ["MONO_SOLO_15"]),
+			Solo(root: "mono_solo_16", list: ["MONO_SOLO_16"]),
+			Solo(root: "mono_solo_17", list: ["MONO_SOLO_17"]),
+			Solo(root: "mono_solo_18", list: ["MONO_SOLO_18"]),
+			Solo(root: "mono_solo_19", list: ["MONO_SOLO_19"]),
+			Solo(root: "mono_solo_20", list: ["MONO_SOLO_20"]),
+			Solo(root: "mono_solo_21", list: ["MONO_SOLO_21"]),
+			Solo(root: "mono_solo_22", list: ["MONO_SOLO_22"]),
+			Solo(root: "mono_solo_23", list: ["MONO_SOLO_23"]),
+			Solo(root: "mono_solo_24", list: ["MONO_SOLO_24"]),
+			Solo(root: "mono_solo_25", list: ["MONO_SOLO_25"]),
+			Solo(root: "mono_solo_26", list: ["MONO_SOLO_26"]),
+			Solo(root: "mono_solo_27", list: ["MONO_SOLO_27"]),
+			Solo(root: "mono_solo_28", list: ["MONO_SOLO_28"]),
+			Solo(root: "mono_solo_29", list: ["MONO_SOLO_29"]),
+			Solo(root: "mono_solo_30", list: ["MONO_SOLO_30"])
+		],
+		time: [
+			"EVENING": ["01","02","03","04","05","06","07"],
+			"MORNING": ["01","02","03","04","05","06","07"]
+		],
+		to: [
+			"AD": ["01","02","03","04","05","06","07"],
+			"NEWS": ["01","02","03","04","05","06"]
+		]
+	),
 ]
+
+
+
+

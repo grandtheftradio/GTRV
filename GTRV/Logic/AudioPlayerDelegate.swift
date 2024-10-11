@@ -31,7 +31,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		guard let userInfo = notification.userInfo,
 			  let typeValue = userInfo[AVAudioSessionInterruptionTypeKey] as? UInt,
 			  let type = AVAudioSession.InterruptionType(rawValue: typeValue) else {
-			//print("guard: handleInterruption > userInfo/typeValue/type")
+			//print("[\(#line)]> guard: handleInterruption > userInfo/typeValue/type")
 			return
 		}
 		
@@ -41,13 +41,13 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		case .ended:
 			print("interruption ended")
 			guard let optionsValue = userInfo[AVAudioSessionInterruptionOptionKey] as? UInt else {
-				//print("guard: handleInterruption > optionsValue")
+				//print("[\(#line)]> guard: handleInterruption > optionsValue")
 				return
 			}
 			let options = AVAudioSession.InterruptionOptions(rawValue: optionsValue)
 			if options.contains(.shouldResume) {
 				/*guard let audioPlayer1: AVAudioPlayer = audioPlayer[currentStation.name]?[1] else {
-					//print("guard: handleInterruption > audioPlayer1")
+					print("[\(#line)]> guard: handleInterruption > audioPlayer1")
 					return
 				}*/
 				tuneIn(currentStation)
@@ -102,7 +102,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			// MONITOR INTRO PLAY
 			if (playIntro) {
 				if (currentTime >= introTime) {
-					print("play intro")
+					print("[\(#line)]> play intro")
 					audioPlayers[2]?.setVolume(self.stopped ? 0.0 : 1.0, fadeDuration: 0.0)
 					audioPlayers[2]?.play()
 					audioPlayers[1]?.setVolume(self.stopped ? 0.0 : 0.5, fadeDuration: 0.1)
@@ -116,7 +116,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			// MONITOR OUTRO PLAY
 			if (playOutro) {
 				if (currentTime >= outroTime) {
-					print("play outro")
+					print("[\(#line)]> play outro")
 					audioPlayers[3]?.setVolume(self.stopped ? 0.0 : 1.0, fadeDuration: 0.0)
 					audioPlayers[3]?.play()
 					audioPlayers[1]?.setVolume(self.stopped ? 0.0 : 0.5, fadeDuration: 0.1)
@@ -139,7 +139,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 	
 	func play(_ Station: RadioStation, _ type: String) {
 		guard var tune: TuneData = Tune[Station.name] else {
-			//print("guard: play > tune")
+			//print("[\(#line)]> guard: play > tune")
 			return
 		}
 		
@@ -157,7 +157,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		
 		switch type {
 		case "ad":
-			print("play ad")
+			print("[\(#line)]> play ad")
 			
 			currentSong = nil
 			
@@ -166,11 +166,13 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			let rootAd: [String] = ads[a].components(separatedBy: "/")
 			let adRoot: String = rootAd[0]
 			let ad = rootAd[1]
-			print("ad: RADIO_ADVERTS/\(adRoot)/\(ad)")
-			guard let adPath = Bundle.main.path(forResource: ad, ofType: "mp3", inDirectory: "RADIO_ADVERTS/\(adRoot)/") else {
-				//print("guard: play > ad > adPath")
+			print("[\(#line)]> ad: RADIO_ADVERTS/\(adRoot)/\(ad)")
+			
+			guard let adPath = AudioPath(resource: ad, directory: "RADIO_ADVERTS/\(adRoot)/") else {
+				//print("[\(#line)]> guard: play > ad > adPath")
 				return
 			}
+			
 			let adURL = URL(fileURLWithPath: adPath)
 			do {
 				audioPlayer1 = try AVAudioPlayer(contentsOf: adURL)
@@ -190,18 +192,19 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				print(error.localizedDescription)
 			}
 		case "mono_solo":
-			print("play mono_solo")
+			print("[\(#line)]> play mono_solo")
 			
 			currentSong = nil
 			
-			if let monoSolos: [String] = Station.mono_solo {
+			if let monoSolos: [Solo] = Station.solo {
 				let stationRoot: String = Station.root ?? ""
 				let m: Int = Int(arc4random_uniform(UInt32(monoSolos.count))) //RANDOM MONO_SOLO INDEX
-				let monoSolo: String = monoSolos[m]
-				let monoSoloRoot: String = ("\(stationRoot)/mono_solo_\(monoSolo)")
-				print("mono_solo: \(monoSoloRoot)/MONO_SOLO_\(monoSolo)")
-				guard let monoSoloPath = Bundle.main.path(forResource: "MONO_SOLO_\(monoSolo)", ofType: "mp3", inDirectory: monoSoloRoot) else {
-					//print("guard: play > mono_solo > monoSoloPath")
+				let monoSolo: Solo = monoSolos[m]
+				let solo: String = monoSolo.list.randomElement()!
+				let monoSoloRoot: String = ("\(stationRoot)/\(monoSolos[m].root)")
+				print("[\(#line)]> mono_solo: \(monoSoloRoot)/\(monoSoloRoot)")
+				guard let monoSoloPath = AudioPath(resource: solo, directory: monoSoloRoot) else {
+					//print("[\(#line)]> guard: play > mono_solo > monoSoloPath")
 					return
 				}
 				let monoSoloURL: URL = URL(fileURLWithPath: monoSoloPath)
@@ -224,7 +227,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				}
 			}
 		case "news":
-			print("play news")
+			print("[\(#line)]> play news")
 			
 			currentSong = nil
 			
@@ -233,9 +236,9 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			let rootNews: [String] = newses[n].components(separatedBy: "/")
 			let newsRoot: String = rootNews[0]
 			let news = rootNews[1]
-			print("news: RADIO_NEWS/\(newsRoot)/\(news)")
-			guard let newsPath = Bundle.main.path(forResource: news, ofType: "mp3", inDirectory: "RADIO_NEWS/\(newsRoot)/") else {
-				//print("guard: play > news > newsPath")
+			print("[\(#line)]> news: RADIO_NEWS/\(newsRoot)/\(news)")
+			guard let newsPath = AudioPath(resource: news, directory: "RADIO_NEWS/\(newsRoot)/") else {
+				//print("[\(#line)]> guard: play > news > newsPath")
 				return
 			}
 			let newsURL = URL(fileURLWithPath: newsPath)
@@ -257,18 +260,19 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				print(error.localizedDescription)
 			}
 		case "station_id":
-			print("play station_id")
+			print("[\(#line)]> play station_id")
 			
 			currentSong = nil
 			
-			if let stationIDs: [String] = Station.sid {
+			if let stationIDs: [Identity] = Station.identity {
 				let stationRoot: String = Station.root ?? ""
 				let i: Int = Int(arc4random_uniform(UInt32(stationIDs.count))) //RANDOM ID INDEX
-				let stationID: String = stationIDs[i]
-				let stationIDRoot: String = ("\(stationRoot)/id_\(stationID)")
-				print("id: \(stationIDRoot)/ID_\(stationID)")
-				guard let stationIDPath = Bundle.main.path(forResource: "ID_\(stationID)", ofType: "mp3", inDirectory: stationIDRoot) else {
-					//print("guard: play > station_id > stationIDPath")
+				let stationIdentity: Identity = stationIDs[i]
+				let stationID: String = stationIdentity.list.randomElement()!
+				let stationIDRoot: String = ("\(stationRoot)/\(stationIdentity.root)")
+				print("[\(#line)]> id: \(stationIDRoot)/ID_\(stationID)")
+				guard let stationIDPath = AudioPath(resource: stationID, directory: stationIDRoot) else {
+					//print("[\(#line)]> guard: play > station_id > stationIDPath")
 					return
 				}
 				let stationIDURL: URL = URL(fileURLWithPath: stationIDPath)
@@ -291,41 +295,56 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				}
 			}
 		default: //song
-			print("play song")
+			print("[\(#line)]> play song")
 			if let songs: [Song] = Station.songs {
 				var unplayed: [Song] = unplayedSongs[Station.name] ?? []
 				
 				if (unplayed.isEmpty) {
-					if (Station.rotate) {
-						guard let isRotated = rotated[Station.name] else {
-							//print("guard: play > song > unplayed.isEmpty > isRotated")
+					
+					//print("[\(#line)]> order: \(Station.order)")
+					
+					switch (Station.order) {
+					case "rotate":
+						guard let isOrdered = ordered[Station.name] else {
+							//print("[\(#line)]> guard: play > song > unplayed.isEmpty > isRotated")
 							return
 						}
-						if (!isRotated) {
-							let frs: Int = Int(arc4random_uniform(UInt32(songs.count)))
-							var rotatedSongs: [Song] = []
-							for rs in frs..<songs.count {
-								rotatedSongs.append(songs[rs])
-							}
-							unplayed = rotatedSongs
-							rotated[Station.name] = true
+						if (!isOrdered) {
+							unplayed = Unplayed(songs,Station.order)
+							ordered[Station.name] = true
 						} else {
 							unplayed = songs
 						}
-					} else {
+					case "random", "reverse":
+						unplayed = Unplayed(songs,Station.order)
+					case "alternate", "alternate_r":
+						unplayed = Unplayed(songs,Station.order)
+						
+						//print("unplayed: \(unplayed)")
+						
+					default: //static
 						unplayed = songs
+					}
+					
+					if (tune.In == true) {
+						if (Station.order != "rotate") {
+							if (unplayed.count > 1) {
+								unplayed = Unplayed(unplayed,"rotate")
+							}
+						}
 					}
 				}
 				let stationRoot: String = Station.root ?? ""
-				var s: Int = 0 //UNPLAYED SONG INDEX
-				if Station.randomize {
+				let generalRoot: String = Station.general?.root ?? ""
+				/*var s: Int = 0 //UNPLAYED SONG INDEX
+				if (Station.order == "random") {
 					s = Int(arc4random_uniform(UInt32(unplayed.count)))
-				}
+				}*/
 				
-				let randomSong: Song = unplayed[s]
-				let song: String = randomSong.file
-				let songRoot: String = randomSong.root
-				var intros: [Intro] = randomSong.intros
+				let nextSong: Song = unplayed[0]
+				let song: String = nextSong.file
+				let songRoot: String = nextSong.root
+				var intros: [Intro] = nextSong.intros
 				
 				if (song == "SATURDAY_NIGHTS_ALRIGHT") {
 					// REMOVE "It's Saturday Night" INTRO IF NOT SATURDAY NIGHT
@@ -339,7 +358,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				}
 				
 				let hasIntros: Bool = !intros.isEmpty
-				let generals: [String] = Station.general ?? []
+				let generals: [String] = Station.general?.list ?? []
 				let hasGenerals: Bool = !generals.isEmpty
 				
 				var timeMornings: [String] = []
@@ -372,7 +391,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				
 				// PLAY INTRO
 				if (playIntro) {
-					var introRoot: String = "\(stationRoot)/intro/"
+					var introRoot: String = "\(stationRoot)/\(nextSong.intros_root ?? "")/"
 					var playGeneralIntro: Bool = false
 					if (hasGenerals) {
 						if (hasIntros) {
@@ -457,7 +476,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 							}
 							eveningTimeIntroPlayed = true
 						default:
-							introRoot = "\(stationRoot)/general/"
+							introRoot = "\(stationRoot)/\(generalRoot)/"
 							intros.removeAll()
 							for general in generals {
 								let generalIntro = Intro(
@@ -471,9 +490,9 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					let i: Int = Int(arc4random_uniform(UInt32(intros.count))) //INTRO INDEX
 					let intro: String = intros[i].file
 					introTime = intros[i].delay
-					print("intro: \(introRoot)\(intro)")
-					guard let introPath = Bundle.main.path(forResource: intro, ofType: "mp3", inDirectory: introRoot) else {
-						//print("guard: play > ad > introPath")
+					print("[\(#line)]> intro: \(introRoot)\(intro)")
+					guard let introPath = AudioPath(resource: intro, directory: introRoot) else {
+						//print("[\(#line)]> guard: play > intro > introPath")
 						return
 					}
 					let introURL: URL = URL(fileURLWithPath: introPath)
@@ -485,14 +504,14 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					}
 				}
 				
-				currentSong = randomSong
+				currentSong = nextSong
 				
-				audioPlayerSong[Station.name]? = randomSong
+				audioPlayerSong[Station.name]? = nextSong
 				
 				// PLAY SONG
-				print("song: \(songRoot)\(song)")
-				guard let songPath = Bundle.main.path(forResource: song, ofType: "mp3", inDirectory: "\(songRoot)/") else {
-					//print("guard: play > ad > songPath")
+				print("[\(#line)]> song: \(songRoot)\(song)")
+				guard let songPath = AudioPath(resource: song, directory: "\(songRoot)") else {
+					print("[\(#line)]> guard: play > song > songPath")
 					return
 				}
 				let songURL = URL(fileURLWithPath: songPath)
@@ -512,7 +531,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					audioPlayer1?.play()
 					lastPlayed = "song"
 					
-					unplayed.remove(at: s)
+					unplayed.remove(at: 0)
 					
 					unplayedSongs[Station.name] = unplayed
 				} catch let error {
@@ -547,7 +566,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						}
 					default:
 						outroType = "general"
-						outroRoot = "\(stationRoot)/general/"
+						outroRoot = "\(stationRoot)/\(generalRoot)/"
 						for general in generals {
 							let generalOutro = Intro(file: "GENERAL_\(general)", delay: 0.0) //need to calculate delay: song duration - general duration
 							outros.append(generalOutro)
@@ -555,9 +574,9 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					}
 					let o: Int = Int(arc4random_uniform(UInt32(outros.count))) //RANDOM OUTRO INDEX
 					let outro: String = outros[o].file
-					print("outro: \(outroRoot)\(outro)")
-					guard let outroPath = Bundle.main.path(forResource: outro, ofType: "mp3", inDirectory: outroRoot) else {
-						//print("guard: play > ad > outroPath")
+					print("[\(#line)]> outro: \(outroRoot)\(outro)")
+					guard let outroPath = AudioPath(resource: outro, directory: outroRoot) else {
+						//print("[\(#line)]> guard: play > outro > outroPath")
 						return
 					}
 					let outroURL: URL = URL(fileURLWithPath: outroPath)
@@ -584,10 +603,10 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 	
 	func playRadio(_ selectedStationIndex:Int) {
 		switch selectedStationIndex {
-		case 0,1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20:
-			playStation(Station: RadioStations[selectedStationIndex])
-		default:
+		case 0:
 			StopRadio()
+		default:
+			playStation(Station: RadioStations[selectedStationIndex])
 		}
 	}
 	
@@ -602,8 +621,8 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		var playNews: Bool = false
 		var playID: Bool = false
 		
-		switch Station.number {
-		case 7, 8, 13, 14, 16, 20, 21:
+		switch Station.name {
+		case "Soulwax FM", "East Los FM", "Worldwide FM", "FlyLo FM", "The Lab", "Blonded Los Santos 97.8 FM", "Los Santos Underground Radio":
 			playSong = true
 		default:
 			switch outroType {
@@ -612,8 +631,8 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			case "news":
 				playNews = true
 			default:
-				switch Station.number {
-				case 5, 11:
+				switch Station.name {
+				case "West Coast Talk Radio", "Blaine County Radio":
 					let news_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
 					switch lastPlayed {
 					case "id":
@@ -712,42 +731,76 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		// NEXT TRACK COMMAND HANDLER
 		commandCenter.nextTrackCommand.addTarget { [unowned self] event in
 			var nextStationIndex: Int
+			
 			switch currentStation.index {
-			case 8:
-				nextStationIndex = 10
-			case 20:
-				nextStationIndex = 0
+			case 27:
+				nextStationIndex = 1
 			default:
 				nextStationIndex = (currentStation.index + 1)
 			}
+			
+			var nextIsFavorite: Bool = favorite[RadioStations[nextStationIndex].name] ?? false
+			while !nextIsFavorite {
+				switch nextStationIndex {
+				case 27:
+					nextStationIndex = 1
+				default:
+					nextStationIndex = (nextStationIndex + 1)
+				}
+				nextIsFavorite = favorite[RadioStations[nextStationIndex].name] ?? false
+				if (nextStationIndex == currentStation.index) {
+					break
+				}
+			}
+			if (nextStationIndex == currentStation.index) {
+				return .commandFailed
+			}
+			
 			switch nextStationIndex {
-			case 0,1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20:
+			case 0:
+				return .commandFailed
+			default:
 				let nextRadioStation: RadioStation = RadioStations[nextStationIndex]
 				tuneIn(nextRadioStation)
 				return .success
-			default:
-				return .commandFailed
 			}
 		}
 		
 		// PREVIOUS COMMAND HANDLER
 		commandCenter.previousTrackCommand.addTarget { [unowned self] event in
 			var previousStationIndex: Int
+			
 			switch currentStation.index {
-			case 0:
-				previousStationIndex = 20
-			case 10:
-				previousStationIndex = 8
+			case 1:
+				previousStationIndex = 27
 			default:
 				previousStationIndex = (currentStation.index - 1)
 			}
+			
+			var previousIsFavorite: Bool = favorite[RadioStations[previousStationIndex].name] ?? false
+			while !previousIsFavorite {
+				switch previousStationIndex {
+				case 1:
+					previousStationIndex = 27
+				default:
+					previousStationIndex = (previousStationIndex - 1)
+				}
+				previousIsFavorite = favorite[RadioStations[previousStationIndex].name] ?? false
+				if (previousStationIndex == currentStation.index) {
+					break
+				}
+			}
+			if (previousStationIndex == currentStation.index) {
+				return .commandFailed
+			}
+			
 			switch previousStationIndex {
-			case 0,1,2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18,19,20:
+			case 0:
+				return .commandFailed
+			default:
 				let previousRadioStation: RadioStation = RadioStations[previousStationIndex]
 				tuneIn(previousRadioStation)
 				return .success
-			default:
-				return .commandFailed
 			}
 		}
 	}
@@ -791,7 +844,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						// RESUME
 						stopped = false
 						guard let tune: TuneData = Tune[stationName] else {
-							//print("guard: tuneIn > PAUSE/RESUME > RESUME > tune")
+							//print("[\(#line)]> guard: tuneIn > PAUSE/RESUME > RESUME > tune")
 							return
 						}
 						let tuneInTime: (time: TimeInterval, playNext: Bool) = TuneInTime(
@@ -817,7 +870,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					// RESUME STATION
 					StopRadio()
 					guard let tune: TuneData = Tune[stationName] else {
-						//print("guard: tuneIn > PLAY/RESUME > RESUME STATION > tune")
+						//print("[\(#line)]> guard: tuneIn > PLAY/RESUME > RESUME STATION > tune")
 						return
 					}
 					let tuneInTime: (time: TimeInterval, playNext: Bool) = TuneInTime(
@@ -890,9 +943,9 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			// IMAGE
 			if (albumArtwork == nil) {
 				//let CurrentRadioStation: RadioStation = RadioStations[currentStation.index]
-				let logo: String = currentStation.image
-				let row: Int = currentStation.imagePosition.row
-				let column: Int = currentStation.imagePosition.column
+				let logo: String = currentStation.image.name
+				let row: Int = currentStation.image.row
+				let column: Int = currentStation.image.column
 				let sourceImage: UIImage = UIImage(named: logo)!
 				let cropRect: CGRect = CGRect(
 					x: ((128.0 * Double(row)) - 128),
@@ -924,3 +977,4 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 	}
 	
 }
+
