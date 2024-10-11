@@ -29,7 +29,18 @@ struct Settings: View {
 			
 			ScrollView(.vertical, showsIndicators: false) {
 				VStack(spacing: 20.0) {
+					//SETTINGS HEADER
+					HStack{
+						Text("Preferences")
+						
+						Spacer()
+						
+						Image(systemName: "globe")
+					}
+					.background(.blue)
+					
 					//COLOR SELECTOR
+					Text("Color")
 					ZStack {
 						// COLOR SELECTOR SECTORS
 						ZStack {
@@ -157,6 +168,7 @@ struct Settings: View {
 					
 					Spacer()
 					
+					Text("Background")
 					ZStack(alignment: .topTrailing) {
 						//BACKGROUND IMAGE PICKER
 						PhotosPicker(
@@ -209,7 +221,17 @@ struct Settings: View {
 					
 					Spacer()
 					
-					//SAVE BUTTON
+					//RADIO STATION FAVORITES
+					Text("Radio Station Favorites")
+					VStack {
+						ForEach(Array(favorite.keys), id: \.self) {stationName in
+							RadioStationFavorite(stationName: stationName, favoriteStation: favorite[stationName] ?? false)
+						}
+					}
+					
+					Spacer()
+					
+					//CLOSE BUTTON
 					Button {
 						AudioPlayer.settingsView.toggle()
 						
@@ -223,8 +245,11 @@ struct Settings: View {
 						//IMAGE
 						customBackgroundUIImage?.saveImage(imageName: customBackgroundFileName)
 						
+						//FAVORITE STATIONS
+						
+						
 					} label: {
-						Text("Save")
+						Text("Close")
 							.font(
 								.system(
 									size: 20,

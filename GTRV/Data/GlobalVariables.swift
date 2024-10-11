@@ -15,10 +15,10 @@ var audioPlayer: [String: [Int: AVAudioPlayer]] = [
 	"Blaine County Radio": [:],
 	"The Music Locker": [:],
 	"MOTOMAMI Los Santos": [:],
-	"The Blue Ark": [:],
+	"Blue Ark": [:],
 	"Worldwide FM": [:],
 	"FlyLo FM": [:],
-	"The Low Down 91.1": [:],
+	"The Lowdown 91.1": [:],
 	"The Lab": [:],
 	"Radio Mirror Park": [:],
 	"Kult FM": [:],
@@ -33,7 +33,7 @@ var audioPlayer: [String: [Int: AVAudioPlayer]] = [
 	"Non-Stop-Pop FM": [:],
 	"Radio Los Santos": [:],
 	"Channel X": [:],
-	"WCTR": [:],
+	"West Coast Talk Radio": [:],
 	"Rebel Radio": [:],
 	"Soulwax FM": [:],
 	"East Los FM": [:],
@@ -45,10 +45,10 @@ var audioPlayerSong: [String: Song?] = [
 	"Blaine County Radio": nil,
 	"The Music Locker": nil,
 	"MOTOMAMI Los Santos": nil,
-	"The Blue Ark": nil,
+	"Blue Ark": nil,
 	"Worldwide FM": nil,
 	"FlyLo FM": nil,
-	"The Low Down 91.1": nil,
+	"The Lowdown 91.1": nil,
 	"The Lab": nil,
 	"Radio Mirror Park": nil,
 	"Kult FM": nil,
@@ -63,7 +63,7 @@ var audioPlayerSong: [String: Song?] = [
 	"Non-Stop-Pop FM": nil,
 	"Radio Los Santos": nil,
 	"Channel X": nil,
-	"WCTR": nil,
+	"West Coast Talk Radio": nil,
 	"Rebel Radio": nil,
 	"Soulwax FM": nil,
 	"East Los FM": nil,
@@ -81,7 +81,7 @@ var currentStationNumber:Int? = {
 		return userDefaults.integer(forKey: currentStationNumberKey)
 	}
 }()
-var currentStation: RadioStation = RadioStations[9] //No Radio
+var currentStation: RadioStation = RadioStations[0] //Radio Off
 let customBackgroundFileName: String = "customBackgroundImage"
 var customBackgroundUIImage: UIImage? = UIImage.loadImageFromDiskWith(fileName: customBackgroundFileName)
 var customColor: Color = Color(
@@ -91,6 +91,36 @@ var customColor: Color = Color(
 )
 
 var eveningTimeIntroPlayed: Bool = false
+
+var favorite: [String: Bool] = [
+	"Radio Off": true,
+	"Media Player": false,
+	"The Music Locker": false,
+	"Still Slipping Los Santos": false,
+	"Kult FM": false,
+	"iFruit Radio": false,
+	"Worldwide FM": true,
+	"FlyLo FM": true,
+	"Los Santos Underground Radio": true,
+	"Blonded Los Santos 97.8 FM": true,
+	"Los Santos Rock Radio": true,
+	"Non-Stop-Pop FM": true,
+	"West Coast Classics": true,
+	"Radio Los Santos": true,
+	"The Lab": true,
+	"Radio Mirror Park": true,
+	"Soulwax FM": true,
+	"East Los FM": true,
+	"Rebel Radio": true,
+	"Channel X": true,
+	"Vinewood Boulevard Radio": true,
+	"Space 103.2": true,
+	"The Lowdown 91.1": true,
+	"Blue Ark": true,
+	"Blaine County Radio": true,
+	"West Coast Talk Radio": true,
+	"MOTOMAMI Los Santos": true
+]
 
 var introDuration: TimeInterval = 0.0
 var introTime: TimeInterval = 0.0
@@ -107,10 +137,10 @@ var ordered: [String: Bool] = [
 	"Blaine County Radio": false,
 	"The Music Locker": false,
 	"MOTOMAMI Los Santos": false,
-	"The Blue Ark": false,
+	"Blue Ark": false,
 	"Worldwide FM": false,
 	"FlyLo FM": false,
-	"The Low Down 91.1": false,
+	"The Lowdown 91.1": false,
 	"The Lab": false,
 	"Radio Mirror Park": false,
 	"Kult FM": false,
@@ -125,7 +155,7 @@ var ordered: [String: Bool] = [
 	"Non-Stop-Pop FM": false,
 	"Radio Los Santos": false,
 	"Channel X": false,
-	"WCTR": false,
+	"West Coast Talk Radio": false,
 	"Rebel Radio": false,
 	"Soulwax FM": false,
 	"East Los FM": false,
@@ -175,7 +205,7 @@ var Tune: [String: TuneData] = [
 		Duration: 0.0,
 		Time: tuneDate
 	),
-	"The Blue Ark": TuneData(
+	"Blue Ark": TuneData(
 		In: false,
 		Position: 0.0,
 		Duration: 0.0,
@@ -193,7 +223,7 @@ var Tune: [String: TuneData] = [
 		Duration: 0.0,
 		Time: tuneDate
 	),
-	"The Low Down 91.1": TuneData(
+	"The Lowdown 91.1": TuneData(
 		In: false,
 		Position: 0.0,
 		Duration: 0.0,
@@ -283,7 +313,7 @@ var Tune: [String: TuneData] = [
 		Duration: 0.0,
 		Time: tuneDate
 	),
-	"WCTR": TuneData(
+	"West Coast Talk Radio": TuneData(
 		In: false,
 		Position: 0.0,
 		Duration: 0.0,
@@ -322,10 +352,10 @@ var unplayedSongs: [String: [Song]] = [
 	"Blaine County Radio": [],
 	"The Music Locker": [],
 	"MOTOMAMI Los Santos": [],
-	"The Blue Ark": [],
+	"Blue Ark": [],
 	"Worldwide FM": [],
 	"FlyLo FM": [],
-	"The Low Down 91.1": [],
+	"The Lowdown 91.1": [],
 	"The Lab": [],
 	"Radio Mirror Park": [],
 	"Kult FM": [],
@@ -340,7 +370,7 @@ var unplayedSongs: [String: [Song]] = [
 	"Non-Stop-Pop FM": [],
 	"Radio Los Santos": [],
 	"Channel X": [],
-	"WCTR": [],
+	"West Coast Talk Radio": [],
 	"Rebel Radio": [],
 	"Soulwax FM": [],
 	"East Los FM": [],

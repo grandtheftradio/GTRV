@@ -20,36 +20,40 @@ struct Stations: View {
 					ScrollViewReader { scrollViewProxy in
 						VStack {
 							ForEach(RadioStations) {station in
-								HStack {
-									if ((AudioPlayer.selectedStationNumber != station.number) || (AudioPlayer.selectedStationNumber == 10)) {
-										Spacer()
-									}
-									Button {
-										AudioPlayer.tuneIn(station)
-										if (!AudioPlayer.initialized) {
-											AudioPlayer.setupRemoteControls()
-											AudioPlayer.initialized = true
-											AudioPlayer.setupNotifications()
+								if let favoriteStation = favorite[station.name] {
+									if favoriteStation {
+										HStack {
+											if ((AudioPlayer.selectedStationNumber != station.number) || (AudioPlayer.selectedStationNumber == 10)) {
+												Spacer()
+											}
+											Button {
+												AudioPlayer.tuneIn(station)
+												if (!AudioPlayer.initialized) {
+													AudioPlayer.setupRemoteControls()
+													AudioPlayer.initialized = true
+													AudioPlayer.setupNotifications()
+												}
+											} label: {
+												RadioStationButton(
+													selected: AudioPlayer.selectedStationNumber,
+													station: station,
+													isStopped: AudioPlayer.stopped,
+													highlightColor: viewModel.appColor
+												)
+											}
+											Spacer()
+											if ((AudioPlayer.selectedStationNumber == station.number) && (AudioPlayer.selectedStationNumber != 10)) {
+												StationLabel(
+													album: AudioPlayer.label["album"] ?? "",
+													artist: AudioPlayer.label["artist"] ?? "",
+													title: AudioPlayer.label["title"] ?? ""
+												)
+												Spacer()
+											}
 										}
-									} label: {
-										RadioStationButton(
-											selected: AudioPlayer.selectedStationNumber,
-											station: station,
-											isStopped: AudioPlayer.stopped,
-											highlightColor: viewModel.appColor
-										)
-									}
-									Spacer()
-									if ((AudioPlayer.selectedStationNumber == station.number) && (AudioPlayer.selectedStationNumber != 10)) {
-										StationLabel(
-											album: AudioPlayer.label["album"] ?? "",
-											artist: AudioPlayer.label["artist"] ?? "",
-											title: AudioPlayer.label["title"] ?? ""
-										)
-										Spacer()
+										.id(station.number)
 									}
 								}
-								.id(station.number)
 							}
 						}
 						.padding(

@@ -989,11 +989,11 @@ public let RadioStations: [RadioStation] = [
 		to: nil
 	),
 	
-	// MARK: The Blue Ark
+	// MARK: Blue Ark
 	RadioStation(
 		index: 5,
 		number: 12,
-		name: "The Blue Ark",
+		name: "Blue Ark",
 		image: ImageData(
 			name: "gtav_radio_stations_texture_512",
 			row: 4,
@@ -2544,11 +2544,11 @@ public let RadioStations: [RadioStation] = [
 		]
 	),
 	
-	// MARK: The Low Down 91.1
+	// MARK: The Lowdown 91.1
 	RadioStation(
 		index: 8,
 		number: 15,
-		name: "The Low Down 91.1",
+		name: "The Lowdown 91.1",
 		image: ImageData(
 			name: "gtav_radio_stations_texture_512",
 			row: 3,
@@ -9659,7 +9659,7 @@ public let RadioStations: [RadioStation] = [
 		]
 	),
 	
-	// MARK: WCTR
+	// MARK: West Coast Talk Radio
 	RadioStation(
 		index: 23,
 		number: 5,

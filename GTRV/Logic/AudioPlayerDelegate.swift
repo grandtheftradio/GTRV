@@ -632,7 +632,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				playNews = true
 			default:
 				switch Station.name {
-				case "WCTR", "Blaine County Radio":
+				case "West Coast Talk Radio", "Blaine County Radio":
 					let news_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
 					switch lastPlayed {
 					case "id":
@@ -731,12 +731,31 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		// NEXT TRACK COMMAND HANDLER
 		commandCenter.nextTrackCommand.addTarget { [unowned self] event in
 			var nextStationIndex: Int
+			
 			switch currentStation.index {
 			case 27:
 				nextStationIndex = 1
 			default:
 				nextStationIndex = (currentStation.index + 1)
 			}
+			
+			var nextIsFavorite: Bool = favorite[RadioStations[nextStationIndex].name] ?? false
+			while !nextIsFavorite {
+				switch nextStationIndex {
+				case 27:
+					nextStationIndex = 1
+				default:
+					nextStationIndex = (nextStationIndex + 1)
+				}
+				nextIsFavorite = favorite[RadioStations[nextStationIndex].name] ?? false
+				if (nextStationIndex == currentStation.index) {
+					break
+				}
+			}
+			if (nextStationIndex == currentStation.index) {
+				return .commandFailed
+			}
+			
 			switch nextStationIndex {
 			case 0:
 				return .commandFailed
@@ -750,12 +769,31 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		// PREVIOUS COMMAND HANDLER
 		commandCenter.previousTrackCommand.addTarget { [unowned self] event in
 			var previousStationIndex: Int
+			
 			switch currentStation.index {
 			case 1:
 				previousStationIndex = 27
 			default:
 				previousStationIndex = (currentStation.index - 1)
 			}
+			
+			var previousIsFavorite: Bool = favorite[RadioStations[previousStationIndex].name] ?? false
+			while !previousIsFavorite {
+				switch previousStationIndex {
+				case 1:
+					previousStationIndex = 27
+				default:
+					previousStationIndex = (previousStationIndex - 1)
+				}
+				previousIsFavorite = favorite[RadioStations[previousStationIndex].name] ?? false
+				if (previousStationIndex == currentStation.index) {
+					break
+				}
+			}
+			if (previousStationIndex == currentStation.index) {
+				return .commandFailed
+			}
+			
 			switch previousStationIndex {
 			case 0:
 				return .commandFailed
