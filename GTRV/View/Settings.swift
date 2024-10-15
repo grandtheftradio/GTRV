@@ -31,16 +31,86 @@ struct Settings: View {
 				VStack(spacing: 20.0) {
 					//SETTINGS HEADER
 					HStack{
-						Text("Preferences")
-						
-						Spacer()
-						
-						Image(systemName: "globe")
+						ZStack{
+							HStack{
+								Text("Preferences")
+									.font(
+										.system(
+											size: 25,
+											weight: .bold
+										)
+									)
+									.padding(.vertical, 20.0)
+									.padding(.leading, 15)
+								Spacer()
+							}
+							HStack{
+								Spacer()
+								Image(systemName: "globe")
+									.foregroundStyle(
+										Color(
+											red: 0.14,
+											green: 0.34,
+											blue: 0.60
+										)
+									)
+									.font(
+										.system(
+											size: 120
+										)
+									)
+									.rotationEffect(
+										.degrees(10),
+										anchor: .topLeading
+									)
+									.offset(
+										x: 40,
+										y: 5
+									)
+							}
+							.frame(
+								maxWidth: .infinity,
+								maxHeight: 65
+							)
+							.clipped(
+								antialiased: false
+							)
+						}
+						.background(
+							LinearGradient(
+								gradient: Gradient(
+									colors: [
+										Color(
+											red: 0.01,
+											green: 0.26,
+											blue: 0.47
+										),
+										Color(
+											red: 0.18,
+											green: 0.41,
+											blue: 0.72
+										)
+									]
+								),
+								startPoint: .topLeading,
+								endPoint: .bottomTrailing
+							)
+						)
+						.edgesIgnoringSafeArea(
+							.horizontal
+						)
 					}
-					.background(.blue)
 					
 					//COLOR SELECTOR
-					Text("Color")
+					Text("COLOR")
+						.fontWeight(.bold)
+						.foregroundColor(
+							Color(
+								red: 0.18,
+								green: 0.41,
+								blue: 0.72
+							)
+						)
 					ZStack {
 						// COLOR SELECTOR SECTORS
 						ZStack {
@@ -168,7 +238,19 @@ struct Settings: View {
 					
 					Spacer()
 					
-					Text("Background")
+					Divider()
+						.overlay(.gray)
+					
+					//BACKGROUND IMAGE
+					Text("BACKGROUND IMAGE")
+						.fontWeight(.bold)
+						.foregroundColor(
+							Color(
+								red: 0.18,
+								green: 0.41,
+								blue: 0.72
+							)
+						)
 					ZStack(alignment: .topTrailing) {
 						//BACKGROUND IMAGE PICKER
 						PhotosPicker(
@@ -221,13 +303,41 @@ struct Settings: View {
 					
 					Spacer()
 					
+					Divider()
+						.overlay(.gray)
+					
 					//RADIO STATION FAVORITES
-					Text("Radio Station Favorites")
+					Text("RADIO STATION FAVORITES")
+						.fontWeight(.bold)
+						.foregroundColor(
+							Color(
+								red: 0.18,
+								green: 0.41,
+								blue: 0.72
+							)
+						)
 					VStack {
 						ForEach(Array(favorite.keys), id: \.self) {stationName in
-							RadioStationFavorite(stationName: stationName, favoriteStation: favorite[stationName] ?? false)
+							Button {
+								viewModel.favoriteStation.toggle()
+								favorite[stationName] = !(favorite[stationName] ?? false)
+							} label: {
+								HStack {
+									Text(stationName)
+									
+									Spacer()
+									
+									Image(systemName: (favorite[stationName] ?? false) ? "checkmark" : "square")
+										.symbolRenderingMode(.palette)
+										.foregroundStyle((favorite[stationName] ?? false) ? .black : .white)
+										.frame(width:20,height:20)
+										.background(.white)
+								}
+							}
+							
 						}
 					}
+					.padding(.horizontal, 20)
 					
 					Spacer()
 					
@@ -249,17 +359,31 @@ struct Settings: View {
 						
 						
 					} label: {
-						Text("Close")
-							.font(
-								.system(
-									size: 20,
-									weight: .bold
+						HStack{
+							Text("Close")
+								.font(
+									.system(
+										size: 20,
+										weight: .bold
+									)
 								)
-							)
-							.foregroundColor(
-								.white
-							)
+								.foregroundColor(
+									Color(
+										red: 0.18,
+										green: 0.41,
+										blue: 0.72
+									)
+								)
+						}
+						.frame(
+							maxWidth: 300,
+							minHeight: 50
+						)
 					}
+					.buttonStyle(.borderedProminent)
+					.tint(.gray)
+					
+					Spacer()
 				}
 				.frame(
 					maxWidth: .infinity

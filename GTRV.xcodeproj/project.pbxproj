@@ -44,7 +44,6 @@
 		EBB3BEAA2A97FE2200E72A23 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEA92A97FE2200E72A23 /* Settings.swift */; };
 		EBB3BEAC2A97FE5700E72A23 /* StationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */; };
 		EBB3BEAE2A97FE8700E72A23 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEAD2A97FE8700E72A23 /* Stations.swift */; };
-		EBEB04762CB9878A00628C83 /* RadioStationFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB04752CB9877A00628C83 /* RadioStationFavorite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +86,6 @@
 		EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLabel.swift; sourceTree = "<group>"; };
 		EBB3BEAD2A97FE8700E72A23 /* Stations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
 		EBB3BEAF2A9812B400E72A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		EBEB04752CB9877A00628C83 /* RadioStationFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationFavorite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +201,6 @@
 				EBB3BEA32A97FDA300E72A23 /* ColorSelectorName.swift */,
 				EBB3BEA52A97FDD200E72A23 /* ColorSelectorSector.swift */,
 				EBB3BEA72A97FDF900E72A23 /* RadioStationButton.swift */,
-				EBEB04752CB9877A00628C83 /* RadioStationFavorite.swift */,
 				EBB3BEA92A97FE2200E72A23 /* Settings.swift */,
 				EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */,
 				EBB3BEAD2A97FE8700E72A23 /* Stations.swift */,
@@ -298,7 +295,6 @@
 				EBB3BEA02A97FD4200E72A23 /* BackgroundImage.swift in Sources */,
 				EBB3BE7F2A97EDF000E72A23 /* AudioPlayerDelegate.swift in Sources */,
 				EBB3BE932A97F28300E72A23 /* Sector.swift in Sources */,
-				EBEB04762CB9878A00628C83 /* RadioStationFavorite.swift in Sources */,
 				EBB3BE832A97EE9A00E72A23 /* CharacterColor.swift in Sources */,
 				EBB3BEA42A97FDA300E72A23 /* ColorSelectorName.swift in Sources */,
 				EBB3BE3A2A97E79300E72A23 /* GTRVApp.swift in Sources */,
