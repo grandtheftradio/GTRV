@@ -92,35 +92,52 @@ var customColor: Color = Color(
 
 var eveningTimeIntroPlayed: Bool = false
 
-var favorite: [String: Bool] = [
-	"Radio Off": true,
-	"Media Player": false,
-	"The Music Locker": false,
-	"Still Slipping Los Santos": false,
-	"Kult FM": false,
-	"iFruit Radio": false,
-	"Worldwide FM": true,
-	"FlyLo FM": true,
-	"Los Santos Underground Radio": true,
-	"Blonded Los Santos 97.8 FM": true,
-	"Los Santos Rock Radio": true,
-	"Non-Stop-Pop FM": true,
-	"West Coast Classics": true,
-	"Radio Los Santos": true,
-	"The Lab": true,
-	"Radio Mirror Park": true,
-	"Soulwax FM": true,
-	"East Los FM": true,
-	"Rebel Radio": true,
-	"Channel X": true,
-	"Vinewood Boulevard Radio": true,
-	"Space 103.2": true,
-	"The Lowdown 91.1": true,
-	"Blue Ark": true,
-	"Blaine County Radio": true,
-	"West Coast Talk Radio": true,
-	"MOTOMAMI Los Santos": true
-]
+let favoriteKey: String = "favorite"
+var favorite: [String: Bool] = {
+	var favoriteStations: [String: Bool] = [
+		"Radio Off": true,
+		"Media Player": true,
+		"The Music Locker": true,
+		"Still Slipping Los Santos": false,
+		"Kult FM": true,
+		"iFruit Radio": false,
+		"Worldwide FM": true,
+		"FlyLo FM": true,
+		"Los Santos Underground Radio": true,
+		"Blonded Los Santos 97.8 FM": true,
+		"Los Santos Rock Radio": true,
+		"Non-Stop-Pop FM": true,
+		"West Coast Classics": true,
+		"Radio Los Santos": true,
+		"The Lab": true,
+		"Radio Mirror Park": true,
+		"Soulwax FM": true,
+		"East Los FM": true,
+		"Rebel Radio": true,
+		"Channel X": true,
+		"Vinewood Boulevard Radio": true,
+		"Space 103.2": true,
+		"The Lowdown 91.1": true,
+		"Blue Ark": true,
+		"Blaine County Radio": true,
+		"West Coast Talk Radio": true,
+		"MOTOMAMI Los Santos": true
+	]
+	let userDefaults = UserDefaults.standard
+	if let favoriteStationNames: String = userDefaults.string(forKey: favoriteKey) {
+		favoriteStations.keys.forEach {stationName in
+			if favoriteStationNames.contains(stationName) {
+				favoriteStations[stationName] = true
+			} else {
+				if stationName != "Radio Off" {
+					favoriteStations[stationName] = false
+				}
+			}
+		}
+	}
+	return favoriteStations
+}()
+
 
 var introDuration: TimeInterval = 0.0
 var introTime: TimeInterval = 0.0

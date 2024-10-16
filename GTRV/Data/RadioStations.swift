@@ -160,13 +160,276 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "static",
-		root: nil,
-		songs: nil,
+		root: "dlc_hei4_music",
+		songs: [
+			//HEI4_MLR_KM_BEACH_P1
+			Song(
+				file: "HEI4_MLR_KM_BEACH_P1",
+				root: "dlc_hei4_music/hei4_mlr_km_beach_p1/",
+				labels: [
+					Label(
+						artist: "Keinemusik (Beach Set)",
+						title: "P1",
+						time: 0.0
+					)
+				],
+				set: "KeinemusikB",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_BEACH_P2
+			Song(
+				file: "HEI4_MLR_KM_BEACH_P2",
+				root: "dlc_hei4_music/hei4_mlr_km_beach_p2/",
+				labels: [
+					Label(
+						artist: "Keinemusik (Beach Set)",
+						title: "P2",
+						time: 0.0
+					)
+				],
+				set: "KeinemusikB",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_BEACH_P3
+			Song(
+				file: "HEI4_MLR_KM_BEACH_P3",
+				root: "dlc_hei4_music/hei4_mlr_km_beach_p3/",
+				labels: [
+					Label(
+						artist: "Keinemusik (Beach Set)",
+						title: "P3",
+						time: 0.0
+					)
+				],
+				set: "KeinemusikB",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_BEACH_P4
+			Song(
+				file: "HEI4_MLR_KM_BEACH_P4",
+				root: "dlc_hei4_music/hei4_mlr_km_beach_p4/",
+				labels: [
+					Label(
+						artist: "Keinemusik (Beach Set)",
+						title: "P4",
+						time: 0.0
+					)
+				],
+				set: "KeinemusikB",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_CLUB_P1
+			Song(
+				file: "HEI4_MLR_KM_CLUB_P1",
+				root: "dlc_hei4_music/hei4_mlr_km_club_p1/",
+				labels: [
+					Label(
+						artist: "Keinemusik (Club Set)",
+						title: "P1",
+						time: 0.0
+					)
+				],
+				set: "KeinemusikC",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_CLUB_P2
+			Song(
+				file: "HEI4_MLR_KM_CLUB_P2",
+				root: "dlc_hei4_music/hei4_mlr_km_club_p2/",
+				labels: [
+					Label(
+						artist: "Keinemusik (Club Set)",
+						title: "P2",
+						time: 0.0
+					)
+				],
+				set: "KeinemusikC",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_CLUB_P3
+			Song(
+				file: "HEI4_MLR_KM_CLUB_P3",
+				root: "dlc_hei4_music/hei4_mlr_km_club_p3/",
+				labels: [
+					Label(
+						artist: "Keinemusik (Club Set)",
+						title: "P3",
+						time: 0.0
+					)
+				],
+				set: "KeinemusikC",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_CLUB_P4
+			Song(
+				file: "HEI4_MLR_KM_CLUB_P4",
+				root: "dlc_hei4_music/hei4_mlr_km_club_p4/",
+				labels: [
+					Label(
+						artist: "Keinemusik (Club Set)",
+						title: "P4",
+						time: 0.0
+					)
+				],
+				set: "KeinemusikC",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_MM_P1
+			Song(
+				file: "HEI4_MLR_MM_P1",
+				root: "dlc_hei4_music/hei4_mlr_mm_p1/",
+				labels: [
+					Label(
+						artist: "Moodymann",
+						title: "P1",
+						time: 0.0
+					)
+				],
+				set: "Moodymann",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_MM_P2
+			Song(
+				file: "HEI4_MLR_MM_P2",
+				root: "dlc_hei4_music/hei4_mlr_mm_p2/",
+				labels: [
+					Label(
+						artist: "Moodymann",
+						title: "P2",
+						time: 0.0
+					)
+				],
+				set: "Moodymann",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_MM_P3
+			Song(
+				file: "HEI4_MLR_MM_P3",
+				root: "dlc_hei4_music/hei4_mlr_mm_p3/",
+				labels: [
+					Label(
+						artist: "Moodymann",
+						title: "P3",
+						time: 0.0
+					)
+				],
+				set: "Moodymann",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_MM_P4
+			Song(
+				file: "HEI4_MLR_MM_P4",
+				root: "dlc_hei4_music/hei4_mlr_mm_p4/",
+				labels: [
+					Label(
+						artist: "Moodymann",
+						title: "P4",
+						time: 0.0
+					)
+				],
+				set: "Moodymann",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_PT_P1
+			Song(
+				file: "HEI4_MLR_PT_P1",
+				root: "dlc_hei4_music/hei4_mlr_pt_p1/",
+				labels: [
+					Label(
+						artist: "Palms Trax",
+						title: "P1",
+						time: 0.0
+					)
+				],
+				set: "Palms",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_PT_P2
+			Song(
+				file: "HEI4_MLR_PT_P2",
+				root: "dlc_hei4_music/hei4_mlr_pt_p2/",
+				labels: [
+					Label(
+						artist: "Palms Trax",
+						title: "P2",
+						time: 0.0
+					)
+				],
+				set: "Palms",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_PT_P3
+			Song(
+				file: "HEI4_MLR_PT_P3",
+				root: "dlc_hei4_music/hei4_mlr_pt_p3/",
+				labels: [
+					Label(
+						artist: "Palms Trax",
+						title: "P3",
+						time: 0.0
+					)
+				],
+				set: "Palms",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_PT_P4
+			Song(
+				file: "HEI4_MLR_PT_P4",
+				root: "dlc_hei4_music/hei4_mlr_pt_p4/",
+				labels: [
+					Label(
+						artist: "Palms Trax",
+						title: "P4",
+						time: 0.0
+					)
+				],
+				set: "Palms",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			)
+		],
 		general: nil,
 		identity: nil,
 		solo: nil,
-		time: nil,
-		to: nil
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
 	),
 	
 	// MARK: MOTOMAMI Los Santos
@@ -4259,14 +4522,910 @@ public let RadioStations: [RadioStation] = [
 			row: 1,
 			column: 1
 		),
-		order: "static",
-		root: nil,
-		songs: nil,
+		order: "random",
+		root: "dlc_hei4_music",
+		songs: [
+			//GOING_BACK_TO_CALI
+			Song(
+				file: "GOING_BACK_TO_CALI",
+				root: "dlc_hei4_music/going_back_to_cali/",
+				labels: [
+					Label(
+						artist: "LL_Cool_J",
+						title: "Going_Back_to_Cali",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//SO_IT_GOES
+			Song(
+				file: "SO_IT_GOES",
+				root: "dlc_hei4_music/so_it_goes/",
+				labels: [
+					Label(
+						artist: "NICK_LOWE",
+						title: "SO_IT_GOES",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SO_IT_GOES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SO_IT_GOES_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TOO_MUCH_MONEY
+			Song(
+				file: "TOO_MUCH_MONEY",
+				root: "dlc_hei4_music/too_much_money/",
+				labels: [
+					Label(
+						artist: "AUTOMATIC",
+						title: "TOO_MUCH_MONEY",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TOO_MUCH_MONEY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TOO_MUCH_MONEY_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "TOO_MUCH_MONEY_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//AGE_OF_CONSENT
+			Song(
+				file: "AGE_OF_CONSENT",
+				root: "dlc_hei4_music/age_of_consent/",
+				labels: [
+					Label(
+						artist: "NEW_ORDER",
+						title: "AGE_OF_CONSENT",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "AGE_OF_CONSENT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "AGE_OF_CONSENT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//EISBAR
+			Song(
+				file: "EISBAR",
+				root: "dlc_hei4_music/eisbar/",
+				labels: [
+					Label(
+						artist: "GRAUZONE",
+						title: "EISBAR",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "EISBAR_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "EISBAR_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//SHES_LOST_CONTROL
+			Song(
+				file: "SHES_LOST_CONTROL",
+				root: "dlc_hei4_music/shes_lost_control/",
+				labels: [
+					Label(
+						artist: "JOY_DIVISION",
+						title: "SHES_LOST_CONTROL",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SHES_LOST_CONTROL_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SHES_LOST_CONTROL_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//MANY_TEARS_AGO
+			Song(
+				file: "MANY_TEARS_AGO",
+				root: "dlc_hei4_music/many_tears_ago/",
+				labels: [
+					Label(
+						artist: "CONNIE_FRANCIS",
+						title: "MANY_TEARS_AGO",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MANY_TEARS_AGO_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MANY_TEARS_AGO_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MANY_TEARS_AGO_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//DRAB_MEASURE
+			Song(
+				file: "DRAB_MEASURE",
+				root: "dlc_hei4_music/drab_measure/",
+				labels: [
+					Label(
+						artist: "CRACK_CLOUD",
+						title: "DRAB_MEASURE",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DRAB_MEASURE_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//THE_ADULTS_ARE_TALKING
+			Song(
+				file: "THE_ADULTS_ARE_TALKING",
+				root: "dlc_hei4_music/the_adults_are_talking/",
+				labels: [
+					Label(
+						artist: "THE_STROKES",
+						title: "THE_ADULTS_ARE_TALKING",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THE_ADULTS_ARE_TALKING_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "THE_ADULTS_ARE_TALKING_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TV_CASUALTY
+			Song(
+				file: "TV_CASUALTY",
+				root: "dlc_hei4_music/tv_casualty/",
+				labels: [
+					Label(
+						artist: "MISFITS",
+						title: "TV_CASUALTY",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TV_CASUALTY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TV_CASUALTY_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "TV_CASUALTY_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "TV_CASUALTY_04",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//DEEP
+			Song(
+				file: "DEEP",
+				root: "dlc_hei4_music/deep/",
+				labels: [
+					Label(
+						artist: "DANZIG",
+						title: "DEEP",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DEEP_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//LIEBE_AUF_DEN_ERSTEN_BLICK
+			Song(
+				file: "LIEBE_AUF_DEN_ERSTEN_BLICK",
+				root: "dlc_hei4_music/liebe_auf_den_ersten_blick/",
+				labels: [
+					Label(
+						artist: "DAF",
+						title: "LIEBE_AUF_DEN_ERSTEN_BLICK",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LIEBE_AUF_DEN_ERSTEN_BLICK_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LIEBE_AUF_DEN_ERSTEN_BLICK_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//FACELESS
+			Song(
+				file: "FACELESS",
+				root: "dlc_hei4_music/faceless/",
+				labels: [
+					Label(
+						artist: "A_CERTAIN_RATIO",
+						title: "FACELESS",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FACELESS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FACELESS_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "FACELESS_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TAINTED_LOVE
+			Song(
+				file: "TAINTED_LOVE",
+				root: "dlc_hei4_music/tainted_love/",
+				labels: [
+					Label(
+						artist: "GLORIA_JONES",
+						title: "TAINTED_LOVE",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TAINTED_LOVE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TAINTED_LOVE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//GIRLS_AND_BOYS
+			Song(
+				file: "GIRLS_AND_BOYS",
+				root: "dlc_hei4_music/girls_and_boys/",
+				labels: [
+					Label(
+						artist: "VIAGRA_BOYS",
+						title: "GIRLS_AND_BOYS",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GIRLS_AND_BOYS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GIRLS_AND_BOYS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TIME_BOMB
+			Song(
+				file: "TIME_BOMB",
+				root: "dlc_hei4_music/time_bomb/",
+				labels: [
+					Label(
+						artist: "RAMONES",
+						title: "TIME_BOMB",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TIME_BOMB_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TIME_BOMB_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//LFT_ME_LONELY
+			Song(
+				file: "LFT_ME_LONELY",
+				root: "dlc_hei4_music/lft_me_lonely/",
+				labels: [
+					Label(
+						artist: "MC_SHAN_FEAT__TJ_SWAN",
+						title: "LFT_ME_LONELY",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LFT_ME_LONELY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LFT_ME_LONELY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//WHERE_NO_EAGLES_FLY
+			Song(
+				file: "WHERE_NO_EAGLES_FLY",
+				root: "dlc_hei4_music/where_no_eagles_fly/",
+				labels: [
+					Label(
+						artist: "THE_VOIDZ",
+						title: "WHERE_NO_EAGLES_FLY",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//ROCK_AND_ROLL
+			Song(
+				file: "ROCK_AND_ROLL",
+				root: "dlc_hei4_music/rock_and_roll/",
+				labels: [
+					Label(
+						artist: "THE_VELVET_UNDERGROUND",
+						title: "ROCK_AND_ROLL",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ROCK_AND_ROLL_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ROCK_AND_ROLL_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//HUMAN_FLY
+			Song(
+				file: "HUMAN_FLY",
+				root: "dlc_hei4_music/human_fly/",
+				labels: [
+					Label(
+						artist: "THE_CRAMPS",
+						title: "HUMAN_FLY",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HUMAN_FLY_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//BABY_I_LOVE_YOU_SO
+			Song(
+				file: "BABY_I_LOVE_YOU_SO",
+				root: "dlc_hei4_music/baby_i_love_you_so/",
+				labels: [
+					Label(
+						artist: "COLOURBOX",
+						title: "BABY_I_LOVE_YOU_SO",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "BABY_I_LOVE_YOU_SO_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BABY_I_LOVE_YOU_SO_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "BABY_I_LOVE_YOU_SO_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "BABY_I_LOVE_YOU_SO_04",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//DOWN_ON_THE_STREET
+			Song(
+				file: "DOWN_ON_THE_STREET",
+				root: "dlc_hei4_music/down_on_the_street/",
+				labels: [
+					Label(
+						artist: "THE_STOOGES",
+						title: "DOWN_ON_THE_STREET",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DOWN_ON_THE_STREET_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//ITS_YOURS
+			Song(
+				file: "ITS_YOURS",
+				root: "dlc_hei4_music/its_yours/",
+				labels: [
+					Label(
+						artist: "T_LA_ROCK",
+						title: "ITS_YOURS",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ITS_YOURS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ITS_YOURS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//ON_THE_LEVEL
+			Song(
+				file: "ON_THE_LEVEL",
+				root: "dlc_hei4_music/on_the_level/",
+				labels: [
+					Label(
+						artist: "MAC_DEMARCO",
+						title: "ON_THE_LEVEL",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ON_THE_LEVEL_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//RAGA_MADHUVANTI
+			Song(
+				file: "RAGA_MADHUVANTI",
+				root: "dlc_hei4_music/raga_madhuvanti/",
+				labels: [
+					Label(
+						artist: "CHARANJIT_SINGH",
+						title: "RAGA_MADHUVANTI",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "RAGA_MADHUVANTI_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "RAGA_MADHUVANTI_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "RAGA_MADHUVANTI_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "RAGA_MADHUVANTI_04",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//FOUR_SHADOWS
+			Song(
+				file: "FOUR_SHADOWS",
+				root: "dlc_hei4_music/four_shadows/",
+				labels: [
+					Label(
+						artist: "ARIEL_PINK",
+						title: "FOUR_SHADOWS",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FOUR_SHADOWS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FOUR_SHADOWS_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "FOUR_SHADOWS_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//POOL_SONG
+			Song(
+				file: "POOL_SONG",
+				root: "dlc_hei4_music/pool_song/",
+				labels: [
+					Label(
+						artist: "LEA_PORCELAIN",
+						title: "POOL_SONG",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "POOL_SONG_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "POOL_SONG_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TAKE_DOWN_THE_HOUSE
+			Song(
+				file: "TAKE_DOWN_THE_HOUSE",
+				root: "dlc_hei4_music/take_down_the_house/",
+				labels: [
+					Label(
+						artist: "PROMISELAND",
+						title: "TAKE_DOWN_THE_HOUSE",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TAKE_DOWN_THE_HOUSE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TAKE_DOWN_THE_HOUSE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//HARD_TO_EXPLAIN
+			Song(
+				file: "HARD_TO_EXPLAIN",
+				root: "dlc_hei4_music/hard_to_explain/",
+				labels: [
+					Label(
+						artist: "THE_STROKES",
+						title: "HARD_TO_EXPLAIN",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HARD_TO_EXPLAIN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HARD_TO_EXPLAIN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//ALIEN_CRIME_LORD
+			Song(
+				file: "ALIEN_CRIME_LORD",
+				root: "dlc_hei4_music/alien_crime_lord/",
+				labels: [
+					Label(
+						artist: "THE_VOIDZ",
+						title: "ALIEN_CRIME_LORD",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "ALIEN_CRIME_LORD_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ALIEN_CRIME_LORD_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//NIGHTCLUBBING
+			Song(
+				file: "NIGHTCLUBBING",
+				root: "dlc_hei4_music/nightclubbing/",
+				labels: [
+					Label(
+						artist: "IGGY_POP",
+						title: "NIGHTCLUBBING",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NIGHTCLUBBING_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//THIS_IS_THE_DAY
+			Song(
+				file: "THIS_IS_THE_DAY",
+				root: "dlc_hei4_music/this_is_the_day/",
+				labels: [
+					Label(
+						artist: "THE_THE",
+						title: "THIS_IS_THE_DAY",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "THIS_IS_THE_DAY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "THIS_IS_THE_DAY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//CYCLE
+			Song(
+				file: "CYCLE",
+				root: "dlc_hei4_music/cycle/",
+				labels: [
+					Label(
+						artist: "ARTIST",
+						title: "TITLE",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CYCLE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CYCLE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TYPICAL_GIRLS
+			Song(
+				file: "TYPICAL_GIRLS",
+				root: "dlc_hei4_music/typical_girls/",
+				labels: [
+					Label(
+						artist: "THE_SLITS",
+						title: "TYPICAL_GIRLS",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TYPICAL_GIRLS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TYPICAL_GIRLS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			)
+		],
 		general: nil,
-		identity: nil,
-		solo: nil,
-		time: nil,
-		to: nil
+		identity: [
+			Identity(root: "id_01", list: ["ID_01"]),
+			Identity(root: "id_02", list: ["ID_02"]),
+			Identity(root: "id_03", list: ["ID_03"]),
+			Identity(root: "id_04", list: ["ID_04"]),
+			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_07", list: ["ID_07"]),
+			Identity(root: "id_08", list: ["ID_08"]),
+			Identity(root: "id_09", list: ["ID_09"]),
+			Identity(root: "id_10", list: ["ID_10"]),
+			Identity(root: "id_11", list: ["ID_11"]),
+			Identity(root: "id_12", list: ["ID_12"]),
+			Identity(root: "id_13", list: ["ID_13"]),
+			Identity(root: "id_14", list: ["ID_14"]),
+			Identity(root: "id_16", list: ["ID_14"]),
+			Identity(root: "id_17", list: ["ID_14"]),
+			Identity(root: "id_18", list: ["ID_14"]),
+			Identity(root: "id_19", list: ["ID_14"]),
+			Identity(root: "id_20", list: ["ID_20"]),
+			Identity(root: "id_21", list: ["ID_21"]),
+			Identity(root: "id_22", list: ["ID_22"]),
+			Identity(root: "id_23", list: ["ID_23"]),
+			Identity(root: "id_24", list: ["ID_24"]),
+			Identity(root: "id_25", list: ["ID_25"]),
+			Identity(root: "id_26", list: ["ID_26"]),
+			Identity(root: "id_27", list: ["ID_27"]),
+			Identity(root: "id_28", list: ["ID_28"]),
+			Identity(root: "id_29", list: ["ID_29"]),
+			Identity(root: "id_30", list: ["ID_30"]),
+			Identity(root: "id_36", list: ["ID_36"]),
+			Identity(root: "id_37", list: ["ID_37"]),
+			Identity(root: "id_38", list: ["ID_38"]),
+			Identity(root: "id_39", list: ["ID_39"]),
+			Identity(root: "id_40", list: ["ID_40"]),
+			Identity(root: "id_41", list: ["ID_41"]),
+			Identity(root: "id_43", list: ["ID_43"])
+		],
+		solo: [
+			Solo(root: "djsolo_01", list: ["MONO_SOLO_01"]),
+			Solo(root: "djsolo_02", list: ["MONO_SOLO_02"]),
+			Solo(root: "djsolo_03", list: ["MONO_SOLO_03"]),
+			Solo(root: "djsolo_04", list: ["MONO_SOLO_04"])
+		],
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
 	),
 	
 	// MARK: Space 103.2
@@ -9663,7 +10822,7 @@ public let RadioStations: [RadioStation] = [
 	RadioStation(
 		index: 23,
 		number: 5,
-		name: "WCTR",
+		name: "West Coast Talk Radio",
 		image: ImageData(
 			name: "gta_radio_stations_texture02_512",
 			row: 2,

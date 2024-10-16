@@ -622,7 +622,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		var playID: Bool = false
 		
 		switch Station.name {
-		case "Soulwax FM", "East Los FM", "Worldwide FM", "FlyLo FM", "The Lab", "Blonded Los Santos 97.8 FM", "Los Santos Underground Radio":
+		case "Soulwax FM", "East Los FM", "Worldwide FM", "FlyLo FM", "The Lab", "Blonded Los Santos 97.8 FM", "Los Santos Underground Radio", "The Music Locker":
 			playSong = true
 		default:
 			switch outroType {
