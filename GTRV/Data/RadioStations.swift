@@ -5381,6 +5381,7 @@ public let RadioStations: [RadioStation] = [
 			Identity(root: "id_03", list: ["ID_03"]),
 			Identity(root: "id_04", list: ["ID_04"]),
 			Identity(root: "id_05", list: ["ID_05"]),
+			Identity(root: "id_06", list: ["ID_06"]),
 			Identity(root: "id_07", list: ["ID_07"]),
 			Identity(root: "id_08", list: ["ID_08"]),
 			Identity(root: "id_09", list: ["ID_09"]),
@@ -7344,8 +7345,813 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "static",
-		root: nil,
-		songs: nil,
+		root: "dlc_heist3",
+		songs: [
+			//CASH_SHIT
+			Song(
+				file: "CASH_SHIT",
+				root: "dlc_heist3/cash_shit/",
+				labels: [
+					//CASH_SHIT
+					Label(
+						artist: "MEGAN_THEE_STALLION_FT__DABABY",
+						title: "CASH_SHIT",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "CASH_SHIT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CASH_SHIT_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//CRIME_PAYS
+			Song(
+				file: "CRIME_PAYS",
+				root: "dlc_heist3/crime_pays/",
+				labels: [
+					//CRIME_PAYS
+					Label(
+						artist: "FREDDIE_GIBBS___MADLIB",
+						title: "CRIME_PAYS",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "CRIME_PAYS_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//DANCE_IN_THE_WATER
+			Song(
+				file: "DANCE_IN_THE_WATER",
+				root: "dlc_heist3/dance_in_the_water/",
+				labels: [
+					//DANCE_IN_THE_WATER
+					Label(
+						artist: "DANNY_BROWN",
+						title: "DANCE_IN_THE_WATER",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "DANCE_IN_THE_WATER_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//EVERYTHING_SHE_WANTS
+			Song(
+				file: "EVERYTHING_SHE_WANTS",
+				root: "dlc_heist3/everything_she_wants/",
+				labels: [
+					//EVERYTHING_SHE_WANTS
+					Label(
+						artist: "THE_EGYPTIAN_LOVER",
+						title: "EVERYTHING_SHE_WANTS",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "EVERYTHING_SHE_WANTS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "EVERYTHING_SHE_WANTS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//HIGHEST_IN_THE_ROOM
+			Song(
+				file: "HIGHEST_IN_THE_ROOM",
+				root: "dlc_heist3/highest_in_the_room/",
+				labels: [
+					//HIGHEST_IN_THE_ROOM
+					Label(
+						artist: "TRAVIS_SCOTT",
+						title: "HIGHEST_IN_THE_ROOM",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "HIGHEST_IN_THE_ROOM_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HIGHEST_IN_THE_ROOM_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//HOT_REMIX
+			Song(
+				file: "HOT_REMIX",
+				root: "dlc_heist3/hot_remix/",
+				labels: [
+					//HOT_REMIX
+					Label(
+						artist: "ARTIST",
+						title: "HOT_REMIX",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "HOT_REMIX_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HOT_REMIX_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//POP_STAR
+			Song(
+				file: "POP_STAR",
+				root: "dlc_heist3/pop_star/",
+				labels: [
+					//POP_STAR
+					Label(
+						artist: "DABABY_FT__KEVIN_GATES",
+						title: "POP_STAR",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "POP_STAR_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "POP_STAR_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TBD(READY_TO_GO)
+			Song(
+				file: "TBD",
+				root: "dlc_heist3/tbd/",
+				labels: [
+					//TBD
+					Label(
+						artist: "BAAUER_AND_CHANNEL_TRES_FT__DANNY_BROWN",
+						title: "TBD",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "TBD_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//WINGS
+			Song(
+				file: "WINGS",
+				root: "dlc_heist3/wings/",
+				labels: [
+					//WINGS
+					Label(
+						artist: "SHORELINE_MAFIA",
+						title: "WINGS",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "WINGS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WINGS_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "WINGS_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "WINGS_04",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//WITH_THE_THING
+			Song(
+				file: "WITH_THE_THING",
+				root: "dlc_heist3/with_the_thing/",
+				labels: [
+					//WITH_THE_THING
+					Label(
+						artist: "ALKALINE",
+						title: "WITH_THE_THING",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "WITH_THE_THING_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "WITH_THE_THING_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//ACT_UP
+			Song(
+				file: "ACT_UP",
+				root: "dlc_heist3/act_up/",
+				labels: [
+					//ACT_UP
+					Label(
+						artist: "CITY_GIRLS",
+						title: "ACT_UP",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "ACT_UP_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ACT_UP_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//ALIENS
+			Song(
+				file: "ALIENS",
+				root: "dlc_heist3/aliens/",
+				labels: [
+					//ALIENS
+					Label(
+						artist: "DENZEL_CURRY_AND_YBN_CORDAE_FEAT__TAKE_A_DAYTRIP",
+						title: "ALIENS",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "ALIENS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ALIENS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//W
+			Song(
+				file: "W",
+				root: "dlc_heist3/w/",
+				labels: [
+					//W
+					Label(
+						artist: "KOFFEE_FT__GUNNA",
+						title: "W",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "W_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "W_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//BOP
+			Song(
+				file: "BOP",
+				root: "dlc_heist3/bop/",
+				labels: [
+					//BOP
+					Label(
+						artist: "DABABY",
+						title: "BOP",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "BOP_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BOP_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//NUMB_NUMB_JUICE
+			Song(
+				file: "NUMB_NUMB_JUICE",
+				root: "dlc_heist3/numb_numb_juice/",
+				labels: [
+					//NUMB_NUMB_JUICE
+					Label(
+						artist: "SCHOOLBOY_Q",
+						title: "NUMB_NUMB_JUICE",
+						time: 0.0
+					)
+				],
+				set: "Danny Brown",
+				intros: [
+					Intro(
+						file: "NUMB_NUMB_JUICE_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//GREAZE_MODE
+			Song(
+				file: "GREAZE_MODE",
+				root: "dlc_heist3/greaze_mode/",
+				labels: [
+					//GREAZE_MODE
+					Label(
+						artist: "SKEPTA___NAFE_SMALLS",
+						title: "GREAZE_MODE",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "GREAZE_MODE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GREAZE_MODE_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "GREAZE_MODE_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "GREAZE_MODE_04",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//HUNDRED_K_ON_A_COUPE
+			Song(
+				file: "HUNDRED_K_ON_A_COUPE",
+				root: "dlc_heist3/hundred_k_on_a_coupe/",
+				labels: [
+					//HUNDRED_K_ON_A_COUPE
+					Label(
+						artist: "POP_SMOKE",
+						title: "HUNDRED_K_ON_A_COUPE",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "HUNDRED_K_ON_A_COUPE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HUNDRED_K_ON_A_COUPE_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "HUNDRED_K_ON_A_COUPE_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//I_NEED
+			Song(
+				file: "I_NEED",
+				root: "dlc_heist3/i_need/",
+				labels: [
+					//I_NEED
+					Label(
+						artist: "SLOWTHAI",
+						title: "I_NEED",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "I_NEED_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_04",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_05",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_06",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_07",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_08",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_09",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_10",
+						delay: 8.0
+					),
+					Intro(
+						file: "I_NEED_11",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//KILLIN_DEM
+			Song(
+				file: "KILLIN_DEM",
+				root: "dlc_heist3/killin_dem/",
+				labels: [
+					//KILLIN_DEM
+					Label(
+						artist: "BURNA_BOY_FT__ZLATAN",
+						title: "KILLIN_DEM",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "KILLIN_DEM_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "KILLIN_DEM_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//KISS_AND_TELL
+			Song(
+				file: "KISS_AND_TELL",
+				root: "dlc_heist3/kiss_and_tell/",
+				labels: [
+					//KISS_AND_TELL
+					Label(
+						artist: "SKEPTA___AJ_TRACEY",
+						title: "KISS_AND_TELL",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "KISS_AND_TELL_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "KISS_AND_TELL_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "KISS_AND_TELL_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "KISS_AND_TELL_04",
+						delay: 8.0
+					),
+					Intro(
+						file: "KISS_AND_TELL_05",
+						delay: 8.0
+					),
+					Intro(
+						file: "KISS_AND_TELL_06",
+						delay: 8.0
+					),
+					Intro(
+						file: "KISS_AND_TELL_07",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//KITCHEN_KINGS
+			Song(
+				file: "KITCHEN_KINGS",
+				root: "dlc_heist3/kitchen_kings/",
+				labels: [
+					//KITCHEN_KINGS
+					Label(
+						artist: "D_BLOCK_EUROPE",
+						title: "KITCHEN_KINGS",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "KITCHEN_KINGS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "KITCHEN_KINGS_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "KITCHEN_KINGS_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "KITCHEN_KINGS_04",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//KNOCK_YOUR_BLOCK_OFF
+			Song(
+				file: "KNOCK_YOUR_BLOCK_OFF",
+				root: "dlc_heist3/knock_your_block_off/",
+				labels: [
+					//KNOCK_YOUR_BLOCK_OFF
+					Label(
+						artist: "JME_FT__GIGGS",
+						title: "KNOCK_YOUR_BLOCK_OFF",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "KNOCK_YOUR_BLOCK_OFF_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//MONEY_IN_THE_BANK
+			Song(
+				file: "MONEY_IN_THE_BANK",
+				root: "dlc_heist3/money_in_the_bank/",
+				labels: [
+					//MONEY_IN_THE_BANK
+					Label(
+						artist: "KRANIUM_FT__AJ_TRACEY",
+						title: "MONEY_IN_THE_BANK",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "MONEY_IN_THE_BANK_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MONEY_IN_THE_BANK_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "MONEY_IN_THE_BANK_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//MUST_BE
+			Song(
+				file: "MUST_BE",
+				root: "dlc_heist3/must_be/",
+				labels: [
+					//MUST_BE
+					Label(
+						artist: "J_HUS",
+						title: "MUST_BE",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "MUST_BE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MUST_BE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//ORIGINAL_FORMAT
+			Song(
+				file: "ORIGINAL_FORMAT",
+				root: "dlc_heist3/original_format/",
+				labels: [
+					//ORIGINAL_FORMAT
+					Label(
+						artist: "D_DOUBLE_E_AND_WATCH_THE_RIDE_FT__DJ_DIE__DISMANTLE_AND_DJ_RANDALL",
+						title: "ORIGINAL_FORMAT",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "ORIGINAL_FORMAT_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "ORIGINAL_FORMAT_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "ORIGINAL_FORMAT_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//OPOTOYI
+			Song(
+				file: "OPOTOYI",
+				root: "dlc_heist3/opotoyi/",
+				labels: [
+					//OPOTOYI
+					Label(
+						artist: "NAIRA_MARLEY",
+						title: "OPOTOYI",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "OPOTOYI_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//BACK_TO_BASICS_FLOATING_POINTS_REMIX
+			Song(
+				file: "BACK_TO_BASICS_FLOATING_POINTS_REMIX",
+				root: "dlc_heist3/back_to_basics_floating_points_remix/",
+				labels: [
+					//BACK_TO_BASICS_FLOATING_POINTS_REMIX
+					Label(
+						artist: "HEADIE_ONE_FT__SKEPTA",
+						title: "BACK_TO_BASICS_FLOATING_POINTS_REMIX",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "BACK_TO_BASICS_FLOATING_POINTS_REMIX_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "BACK_TO_BASICS_FLOATING_POINTS_REMIX_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "BACK_TO_BASICS_FLOATING_POINTS_REMIX_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//PATTERN_CHANEL
+			Song(
+				file: "PATTERN_CHANEL",
+				root: "dlc_heist3/pattern_chanel/",
+				labels: [
+					//PATTERN_CHANEL
+					Label(
+						artist: "ESSIE_GANG_FT__SQ_DIESEL",
+						title: "PATTERN_CHANEL",
+						time: 0.0
+					)
+				],
+				set: "Skepta",
+				intros: [
+					Intro(
+						file: "PATTERN_CHANEL_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "PATTERN_CHANEL_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "PATTERN_CHANEL_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			)
+		],
 		general: nil,
 		identity: nil,
 		solo: nil,

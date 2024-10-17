@@ -87,16 +87,6 @@ struct Stations: View {
 				HStack {
 					Spacer()
 					Button {
-						/*switch appColor {
-						case "Michael":
-							appColor = "Franklin"
-						case "Franklin":
-							appColor = "Trevor"
-						case "Trevor":
-							appColor = "Custom"
-						default:
-							appColor = "Michael"
-						}*/
 						AudioPlayer.settingsView.toggle()
 					} label: {
 						Image("settings.icon.\(viewModel.appColor.lowercased()).SFSymbol")

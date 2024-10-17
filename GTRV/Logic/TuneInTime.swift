@@ -19,23 +19,20 @@ func TuneInTime(tune: TuneData) -> (time: TimeInterval, playNext: Bool) {
 	if (elapsedTime < remainingTime) {
 		tuneInTime = (currentPosition + elapsedTime)
 	} else {
-		
-		tuneInTime = Double.random(in: 0.0..<currentDuration)
+		if (currentDuration > 0.0) {
+			tuneInTime = Double.random(in: 0.0..<currentDuration)
+		} else {
+			tuneInTime = 0.0
+		}
 	}
-	/*
-	print("stopTime: \(stopTime)") // play stopped at
-	print("currentTime: \(currentTime)") // play stopped at
-	print("elapsedTime: \(elapsedTime)") // time elapsed since stopped stop
-	print("currentPosition: \(currentPosition)") // song position when stopped
-	print("currentDuration: \(currentDuration)") // duration of stopped song
-	print("remainingTime: \(remainingTime)") // time remaining when stopped
-	print("tuneInTime: \(tuneInTime)") // calculated tune in time
-	print("===============================")
-	*/
 	return (tuneInTime, (elapsedTime >= remainingTime))
 }
 
 // RANDOM
 func TuneInTime(duration: TimeInterval) -> TimeInterval {
-	return Double.random(in: 0.0..<duration)
+	if (duration > 0.0) {
+		return Double.random(in: 0.0..<duration)
+	} else {
+		return 0.0
+	}
 }

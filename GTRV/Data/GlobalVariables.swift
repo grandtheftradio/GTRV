@@ -100,7 +100,7 @@ var favorite: [String: Bool] = {
 		"The Music Locker": true,
 		"Still Slipping Los Santos": false,
 		"Kult FM": true,
-		"iFruit Radio": false,
+		"iFruit Radio": true,
 		"Worldwide FM": true,
 		"FlyLo FM": true,
 		"Los Santos Underground Radio": true,
@@ -185,8 +185,6 @@ var outroType: String = ""
 var playIntro: Bool = false
 var playOutro: Bool = false
 var playedStations: [Int] = []
-
-//var radioStationIndex: Int = 10
 
 var startPlaying: Bool = false
 
