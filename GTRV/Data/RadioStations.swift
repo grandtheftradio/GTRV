@@ -162,79 +162,50 @@ public let RadioStations: [RadioStation] = [
 		order: "static",
 		root: "dlc_hei4_music",
 		songs: [
-			//HEI4_MLR_KM_BEACH_P1
-			Song(
-				file: "HEI4_MLR_KM_BEACH_P1",
-				root: "dlc_hei4_music/hei4_mlr_km_beach_p1/",
-				labels: [
-					Label(
-						artist: "Keinemusik (Beach Set)",
-						title: "P1",
-						time: 0.0
-					)
-				],
-				set: "KeinemusikB",
-				intros: [],
-				intros_root: nil,
-				frequency: 100.0
-			),
-			//HEI4_MLR_KM_BEACH_P2
-			Song(
-				file: "HEI4_MLR_KM_BEACH_P2",
-				root: "dlc_hei4_music/hei4_mlr_km_beach_p2/",
-				labels: [
-					Label(
-						artist: "Keinemusik (Beach Set)",
-						title: "P2",
-						time: 0.0
-					)
-				],
-				set: "KeinemusikB",
-				intros: [],
-				intros_root: nil,
-				frequency: 100.0
-			),
-			//HEI4_MLR_KM_BEACH_P3
-			Song(
-				file: "HEI4_MLR_KM_BEACH_P3",
-				root: "dlc_hei4_music/hei4_mlr_km_beach_p3/",
-				labels: [
-					Label(
-						artist: "Keinemusik (Beach Set)",
-						title: "P3",
-						time: 0.0
-					)
-				],
-				set: "KeinemusikB",
-				intros: [],
-				intros_root: nil,
-				frequency: 100.0
-			),
-			//HEI4_MLR_KM_BEACH_P4
-			Song(
-				file: "HEI4_MLR_KM_BEACH_P4",
-				root: "dlc_hei4_music/hei4_mlr_km_beach_p4/",
-				labels: [
-					Label(
-						artist: "Keinemusik (Beach Set)",
-						title: "P4",
-						time: 0.0
-					)
-				],
-				set: "KeinemusikB",
-				intros: [],
-				intros_root: nil,
-				frequency: 100.0
-			),
 			//HEI4_MLR_KM_CLUB_P1
 			Song(
 				file: "HEI4_MLR_KM_CLUB_P1",
 				root: "dlc_hei4_music/hei4_mlr_km_club_p1/",
 				labels: [
 					Label(
-						artist: "Keinemusik (Club Set)",
-						title: "P1",
+						artist: "ADAM PORT",
+						title: "White Noise Romantica",
 						time: 0.0
+					),
+					Label(
+						artist: "OSUNLADE, PASTABOYS",
+						title: "Deep Musique (Rampa Remix)",
+						time: 330.0
+					),
+					Label(
+						artist: "&ME",
+						title: "After Dark",
+						time: 611.0
+					),
+					Label(
+						artist: "REZNIK & MIKESH",
+						title: "It's Not You It's Me (Adam Port Remix)",
+						time: 954.0
+					),
+					Label(
+						artist: "&ME",
+						title: "Shadows",
+						time: 1259.0
+					),
+					Label(
+						artist: "SIMPLE SYMMETRY",
+						title: "Enkidu (Adam Port's Talum By Night Edit)",
+						time: 1618.0
+					),
+					Label(
+						artist: "RAMPA",
+						title: "2000",
+						time: 1875.0
+					),
+					Label(
+						artist: "&ME",
+						title: "1995",
+						time: 2172.0
 					)
 				],
 				set: "KeinemusikC",
@@ -248,9 +219,34 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_km_club_p2/",
 				labels: [
 					Label(
-						artist: "Keinemusik (Club Set)",
-						title: "P2",
+						artist: "&ME",
+						title: "1995",
 						time: 0.0
+					),
+					Label(
+						artist: "RAMPA",
+						title: "Terrace",
+						time: 2359.0 - 2352
+					),
+					Label(
+						artist: "&ME",
+						title: "Woods",
+						time: 2675.0 - 2352
+					),
+					Label(
+						artist: "TÉLÉPOPMUSIK FEAT. YOUNG & SICK",
+						title: "Connection (Reznik & Mikesh Remix)",
+						time: 2992.0 - 2352
+					),
+					Label(
+						artist: "BELL TOWERS",
+						title: "Want You (Need You) (Adam Port Remix)",
+						time: 3276.0 - 2352
+					),
+					Label(
+						artist: "KEINEMUSIK",
+						title: "Civilist",
+						time: 3627.0 - 2352
 					)
 				],
 				set: "KeinemusikC",
@@ -264,9 +260,29 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_km_club_p3/",
 				labels: [
 					Label(
-						artist: "Keinemusik (Club Set)",
-						title: "P3",
+						artist: "KEINEMUSIK",
+						title: "Civilist",
 						time: 0.0
+					),
+					Label(
+						artist: "RAMPA",
+						title: "Bimma",
+						time: 3909.0 - 3904
+					),
+					Label(
+						artist: "ADAM PORT & STEREO MC'S",
+						title: "Place",
+						time: 4178.0 - 3904
+					),
+					Label(
+						artist: "HONEY DIJON, JOHN MENDELSOHN, TIM K",
+						title: "Thunda (Rampa Remix)",
+						time: 4532.0 - 3904
+					),
+					Label(
+						artist: "&ME",
+						title: "Solaris",
+						time: 4736.0 - 3904
 					)
 				],
 				set: "KeinemusikC",
@@ -280,9 +296,39 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_km_club_p4/",
 				labels: [
 					Label(
-						artist: "Keinemusik (Club Set)",
-						title: "P4",
+						artist: "&ME",
+						title: "Solaris",
 						time: 0.0
+					),
+					Label(
+						artist: "ADAM PORT",
+						title: "Do You Still Think Of Me?",
+						time: 5079.0 - 5056
+					),
+					Label(
+						artist: "&ME FEAT. SABOTA",
+						title: "Trilogy",
+						time: 5376.0 - 5056
+					),
+					Label(
+						artist: "RAMPA",
+						title: "Purge",
+						time: 5620.0 - 5056
+					),
+					Label(
+						artist: "SIMIAN MOBILE DISCO FEAT. DEEP THROAT CHOIR",
+						title: "Caught In A Wave (&ME Remix)",
+						time: 5876.0 - 5056
+					),
+					Label(
+						artist: "YEAH BUT NO",
+						title: "Run Run Run (Adam Port Remix)",
+						time: 6216.0 - 5056
+					),
+					Label(
+						artist: "RAMPA",
+						title: "528Hz",
+						time: 6484.0 - 5056
 					)
 				],
 				set: "KeinemusikC",
@@ -296,9 +342,44 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_mm_p1/",
 				labels: [
 					Label(
-						artist: "Moodymann",
-						title: "P1",
+						artist: "MOODYMANN",
+						title: "I can't Kick This Feeling When It Hits",
 						time: 0.0
+					),
+					Label(
+						artist: "DOPPLEREFFEKT",
+						title: "Pornoviewer",
+						time: 7129.0 - 6869
+					),
+					Label(
+						artist: "THE DIRTBOMBS",
+						title: "Sharivari",
+						time: 7294.0 - 6869
+					),
+					Label(
+						artist: "ANDRES",
+						title: "New For U (Live)",
+						time: 7483.0 - 6869
+					),
+					Label(
+						artist: "KYLE HALL & KERO",
+						title: "Zug Island",
+						time: 7825.0 - 6869
+					),
+					Label(
+						artist: "NORM TALLEY",
+						title: "Cosmic Wave (Delano Smith Remix)",
+						time: 7973.0 - 6869
+					),
+					Label(
+						artist: "AUX 88",
+						title: "My A.U.X Mind",
+						time: 8263.0 - 6869
+					),
+					Label(
+						artist: "CYBONIX",
+						title: "Cybonix Groove",
+						time: 8440.0 - 6869
 					)
 				],
 				set: "Moodymann",
@@ -312,9 +393,49 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_mm_p2/",
 				labels: [
 					Label(
-						artist: "Moodymann",
-						title: "P2",
+						artist: "CYBONIX",
+						title: "Cybonix Groove",
 						time: 0.0
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "I Think Of Saturday",
+						time: 8569.0 - 8559
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "I'll Provide",
+						time: 8765.0 - 8559
+					),
+					Label(
+						artist: "PAPERCLIP PEOPLE",
+						title: "Oscillator",
+						time: 9052.0 - 8559
+					),
+					Label(
+						artist: "BLAKE BAXTER",
+						title: "Wen We Used To Play",
+						time: 9282.0 - 8559
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "Jan",
+						time: 9483.0 - 8559
+					),
+					Label(
+						artist: "NORMA JEAN BELL",
+						title: "I'm The Baddest Bitch",
+						time: 9608.0 - 8559
+					),
+					Label(
+						artist: "ROBERTA SWEED",
+						title: "Runaway",
+						time: 9768.0 - 8559
+					),
+					Label(
+						artist: "GMI/UHM",
+						title: "Formula For Passion",
+						time: 9974.0 - 8559
 					)
 				],
 				set: "Moodymann",
@@ -328,9 +449,69 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_mm_p3/",
 				labels: [
 					Label(
-						artist: "Moodymann",
-						title: "P3",
+						artist: "GMI/UHM",
+						title: "Formula For Passion",
 						time: 0.0
+					),
+					Label(
+						artist: "WAAJEED",
+						title: "Power In Numbers",
+						time: 10213.0 - 10169
+					),
+					Label(
+						artist: "EDDIE FOWLKES",
+						title: "Time To Express",
+						time: 10493.0 - 10169
+					),
+					Label(
+						artist: "SHEEFY MCFLY",
+						title: "Thinkin Bout You",
+						time: 10688.0 - 10169
+					),
+					Label(
+						artist: "AMP FIDDLER",
+						title: "Over U",
+						time: 10938.0 - 10169
+					),
+					Label(
+						artist: "GIL SCOTT-HERON",
+						title: "We Almost Lost Detroit",
+						time: 11182.0 - 10169
+					),
+					Label(
+						artist: "APOLLO BROWN FEAT. PLANET ASIA",
+						title: "Get Back",
+						time: 11357.0 - 10169
+					),
+					Label(
+						artist: "EGB",
+						title: "Shhhh",
+						time: 11449.0 - 10169
+					),
+					Label(
+						artist: "EGB",
+						title: "Clout",
+						time: 11518.0 - 10169
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "Sinner",
+						time: 11652.0 - 10169
+					),
+					Label(
+						artist: "PIRAHNAHEAD & DIVINITI",
+						title: "Love",
+						time: 11806.0 - 10169
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "Got Me Coming Back Rite Now",
+						time: 12009.0 - 10169
+					),
+					Label(
+						artist: "THEO PARRISH",
+						title: "Soul Control",
+						time: 12362.0 - 10169
 					)
 				],
 				set: "Moodymann",
@@ -344,12 +525,241 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_mm_p4/",
 				labels: [
 					Label(
-						artist: "Moodymann",
-						title: "P4",
+						artist: "THEO PARRISH",
+						title: "Soul Control",
 						time: 0.0
+					),
+					Label(
+						artist: "MARCELLUS PITTMAN",
+						title: "Red Dogon Star",
+						time: 12490.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "Rectify",
+						time: 12584.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN FEAT. PITCH BLACK CITY",
+						title: "Runaway",
+						time: 12792.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "Let Me Show You Love",
+						time: 12936.0 - 12397
+					),
+					Label(
+						artist: "AMP FIDDLER FEAT. MOODYMANN",
+						title: "I Get Moody Sometimes",
+						time: 13167.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "No",
+						time: 13415.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "It's 2 Late 4 U & Me",
+						time: 13606.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "Got 2 Make It 2 Heaven",
+						time: 13732.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "Freeki Muthafucka",
+						time: 13845.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "I Got Werk",
+						time: 14084.0 - 12397
+					),
+					Label(
+						artist: "MOODYMANN",
+						title: "1988",
+						time: 14279.0 - 12397
 					)
 				],
 				set: "Moodymann",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_BEACH_P1
+			Song(
+				file: "HEI4_MLR_KM_BEACH_P1",
+				root: "dlc_hei4_music/hei4_mlr_km_beach_p1/",
+				labels: [
+					Label(
+						artist: "RAMPA",
+						title: "Newborn Soul",
+						time: 0.0
+					),
+					Label(
+						artist: "&ME",
+						title: "The Rapture Pt.II",
+						time: 14721.0 - 14157
+					),
+					Label(
+						artist: "JAI PAUL",
+						title: "Crush (Unfinished) (Adam Port Edit)",
+						time: 14992.0 - 14157
+					),
+					Label(
+						artist: "RAMPA & WHOMADEWHO",
+						title: "Tell Me Are We",
+						time: 15265.0 - 14157
+					),
+					Label(
+						artist: "JORIS VOORN & MATTHEW DEAR",
+						title: "Homeland (&ME Remix + Jinadu Vocals)",
+						time: 15523.0 - 14157
+					),
+					Label(
+						artist: "RÜFÜS DU SOL",
+						title: "Underwater (Adam Port Remix)",
+						time: 15853.0 - 14157
+					),
+					Label(
+						artist: "&ME",
+						title: "Garden",
+						time: 16150.0 - 14157
+					),
+					Label(
+						artist: "ADAM PORT",
+						title: "Ganesha Song",
+						time: 16452.0 - 14157
+					),
+					Label(
+						artist: "ÂME",
+						title: "No War (Rampa Remix)",
+						time: 16674.0 - 14157
+					)
+				],
+				set: "KeinemusikB",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_BEACH_P2
+			Song(
+				file: "HEI4_MLR_KM_BEACH_P2",
+				root: "dlc_hei4_music/hei4_mlr_km_beach_p2/",
+				labels: [
+					Label(
+						artist: "ÂME",
+						title: "No War (Rampa Remix)",
+						time: 0.0
+					),
+					Label(
+						artist: "WESTBAM FEAT. RICHARD BUTLER",
+						title: "You Need The Drugs (&ME Remix)",
+						time: 16934.0 - 16786
+					),
+					Label(
+						artist: "NOMI & RAMPA",
+						title: "Inside",
+						time: 17219.0 - 16786
+					),
+					Label(
+						artist: "CUBICOLOR",
+						title: "No Dancers (Adam Port Remix)",
+						time: 17419.0 - 16786
+					),
+					Label(
+						artist: "MANQO",
+						title: "Won't Change (Rampa Retouch)",
+						time: 17650.0 - 16786
+					),
+					Label(
+						artist: "&ME FEAT. ATELIER",
+						title: "Starting Again",
+						time: 17877.0 - 16786
+					),
+					Label(
+						artist: "XINOBI",
+						title: "Far Away Place (Rampa Remix)",
+						time: 18175.0 - 16786
+					)
+				],
+				set: "KeinemusikB",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_BEACH_P3
+			Song(
+				file: "HEI4_MLR_KM_BEACH_P3",
+				root: "dlc_hei4_music/hei4_mlr_km_beach_p3/",
+				labels: [
+					Label(
+						artist: "XINOBI",
+						title: "Far Away Place (Rampa Remix)",
+						time: 0.0
+					),
+					Label(
+						artist: "&ME",
+						title: "The Rapture",
+						time: 18435.0 - 18361
+					),
+					Label(
+						artist: "KEINEMUSIK",
+						title: "Muyè",
+						time: 18799.0 - 18361
+					),
+					Label(
+						artist: "&ME",
+						title: "In Your Eyes",
+						time: 19116.0 - 18361
+					),
+					Label(
+						artist: "RAMPA",
+						title: "Sunday",
+						time: 19465.0 - 18361
+					)
+				],
+				set: "KeinemusikB",
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_MLR_KM_BEACH_P4
+			Song(
+				file: "HEI4_MLR_KM_BEACH_P4",
+				root: "dlc_hei4_music/hei4_mlr_km_beach_p4/",
+				labels: [
+					Label(
+						artist: "RAMPA",
+						title: "Sunday",
+						time: 0.0
+					),
+					Label(
+						artist: "NTEIBINT & STELLA",
+						title: "A State Nearby (Adam Port Calypso Remix)",
+						time: 19736.0 - 19513
+					),
+					Label(
+						artist: "&ME",
+						title: "Fairchild",
+						time: 20160.0 - 19513
+					),
+					Label(
+						artist: "RAMPA FEAT. CHIARA NORIKO",
+						title: "For This",
+						time: 20339.0 - 19513
+					),
+					Label(
+						artist: "HERE_IS_WHY_TONIGHT",
+						title: "HERE_IS_WHY_TONIGHT",
+						time: 20571.0 - 19513
+					)
+				],
+				set: "KeinemusikB",
 				intros: [],
 				intros_root: nil,
 				frequency: 100.0
@@ -360,9 +770,19 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_pt_p1/",
 				labels: [
 					Label(
-						artist: "Palms Trax",
-						title: "P1",
+						artist: "PROFESSOR RHYTHM",
+						title: "Professor 3",
 						time: 0.0
+					),
+					Label(
+						artist: "PALMS TRAX",
+						title: "Petu (Dub Mix)",
+						time: 20716.0 - 20588
+					),
+					Label(
+						artist: "KLEIN & MBO",
+						title: "The MBO Theme",
+						time: 20991.0 - 20588
 					)
 				],
 				set: "Palms",
@@ -376,9 +796,64 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_pt_p2/",
 				labels: [
 					Label(
-						artist: "Palms Trax",
-						title: "P2",
+						artist: "KLEIN & MBO",
+						title: "The MBO Theme",
 						time: 0.0
+					),
+					Label(
+						artist: "PLASTIC MODE",
+						title: "Baja Imperial (Maxi Version)",
+						time: 21198.0 - 21629
+					),
+					Label(
+						artist: "L'AMOUR FEAT. KRYSTAL",
+						title: "Let's Make Love Tonight",
+						time: 21321.0 - 21629
+					),
+					Label(
+						artist: "SHIRLEY LITES",
+						title: "Heat You Up (Melt You Down) (Instrumental)",
+						time: 21443.0 - 21629
+					),
+					Label(
+						artist: "SHANNON",
+						title: "Let The Music Play (Dub Version)",
+						time: 21633.0 - 21629
+					),
+					Label(
+						artist: "NIGHT MOVES",
+						title: "Transdance (New York Disco Mix)",
+						time: 21827.0 - 21629
+					),
+					Label(
+						artist: "N.O.I.A.",
+						title: "The Rule To Survive (Prins Thomas Remix)",
+						time: 21990.0 - 21629
+					),
+					Label(
+						artist: "TOBIAS BERNSTRUP",
+						title: "27",
+						time: 22343.0 - 21629
+					),
+					Label(
+						artist: "BABY'S GANG",
+						title: "Happy Song (Remix)",
+						time: 22487.0 - 21629
+					),
+					Label(
+						artist: "MASALO",
+						title: "New Dance",
+						time: 22609.0 - 21629
+					),
+					Label(
+						artist: "DIVA",
+						title: "Get Up",
+						time: 22844.0 - 21629
+					),
+					Label(
+						artist: "MARIO DIAZ",
+						title: "Can You Feel It (Jackin Up The Dub 12\" Mix)",
+						time: 23033.0 - 21629
 					)
 				],
 				set: "Palms",
@@ -392,25 +867,54 @@ public let RadioStations: [RadioStation] = [
 				root: "dlc_hei4_music/hei4_mlr_pt_p3/",
 				labels: [
 					Label(
-						artist: "Palms Trax",
-						title: "P3",
+						artist: "MARIO DIAZ",
+						title: "Can You Feel It (Jackin Up The Dub 12\" Mix)",
 						time: 0.0
-					)
-				],
-				set: "Palms",
-				intros: [],
-				intros_root: nil,
-				frequency: 100.0
-			),
-			//HEI4_MLR_PT_P4
-			Song(
-				file: "HEI4_MLR_PT_P4",
-				root: "dlc_hei4_music/hei4_mlr_pt_p4/",
-				labels: [
+					),
 					Label(
-						artist: "Palms Trax",
-						title: "P4",
-						time: 0.0
+						artist: "SCRAPPY",
+						title: "Freeze (Limelight Mix)",
+						time: 23214.0 - 23166
+					),
+					Label(
+						artist: "B BEAT GIRLS",
+						title: "For The Same Man",
+						time: 23330.0 - 23166
+					),
+					Label(
+						artist: "GREG LEE",
+						title: "Got U On My Mind",
+						time: 23471.0 - 23166
+					),
+					Label(
+						artist: "ROBERT OWENS",
+						title: "Visions",
+						time: 23723.0 - 23166
+					),
+					Label(
+						artist: "LISA LEE",
+						title: "When Can I Call You (Tommy Musto & Frankie Bones British Telecom Mix)",
+						time: 23930.0 - 23166
+					),
+					Label(
+						artist: "PIERRE'S PFANTASY CLUB",
+						title: "Dream Girl (Original Ralphi Rosario Club Mix)",
+						time: 24229.0 - 23166
+					),
+					Label(
+						artist: "S.L.F.",
+						title: "Show Me What You Got (Acid Mix - Part 1)",
+						time: 24356.0 - 23166
+					),
+					Label(
+						artist: "PHORTUNE",
+						title: "String Free (Club LeRay Mix)",
+						time: 24520.0 - 23166
+					),
+					Label(
+						artist: "KAMAZU",
+						title: "Indaba Kabni",
+						time: 24693.0 - 23166
 					)
 				],
 				set: "Palms",
@@ -8189,14 +8693,85 @@ public let RadioStations: [RadioStation] = [
 			row: 1,
 			column: 1
 		),
-		order: "static",
-		root: nil,
-		songs: nil,
+		order: "rotate",
+		root: "dlc_hei4_music",
+		songs: [
+			//HEI4_STILL_SLIPPING_P1
+			Song(
+				file: "HEI4_STILL_SLIPPING_P1",
+				root: "dlc_hei4_music/hei4_still_slipping_p1/",
+				labels: [
+					Label(
+						artist: "HEI4_STILL_SLIPPING_P1",
+						title: "HEI4_STILL_SLIPPING_P1",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_STILL_SLIPPING_P2
+			Song(
+				file: "HEI4_STILL_SLIPPING_P2",
+				root: "dlc_hei4_music/hei4_still_slipping_p2/",
+				labels: [
+					Label(
+						artist: "HEI4_STILL_SLIPPING_P2",
+						title: "HEI4_STILL_SLIPPING_P2",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_STILL_SLIPPING_P3
+			Song(
+				file: "HEI4_STILL_SLIPPING_P3",
+				root: "dlc_hei4_music/hei4_still_slipping_p3/",
+				labels: [
+					Label(
+						artist: "HEI4_STILL_SLIPPING_P3",
+						title: "HEI4_STILL_SLIPPING_P3",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HEI4_STILL_SLIPPING_P4
+			Song(
+				file: "HEI4_STILL_SLIPPING_P4",
+				root: "dlc_hei4_music/hei4_still_slipping_p4/",
+				labels: [
+					Label(
+						artist: "HEI4_STILL_SLIPPING_P4",
+						title: "HEI4_STILL_SLIPPING_P4",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			)
+		],
 		general: nil,
 		identity: nil,
 		solo: nil,
-		time: nil,
-		to: nil
+		time: [
+			"EVENING": [],
+			"MORNING": []
+		],
+		to: [
+			"AD": [],
+			"NEWS": []
+		]
 	),
 	
 	// MARK: Los Santos Rock Radio
@@ -13235,6 +13810,7 @@ public let RadioStations: [RadioStation] = [
 		]
 	),
 ]
+
 
 
 

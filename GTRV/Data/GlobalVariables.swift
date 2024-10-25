@@ -98,7 +98,7 @@ var favorite: [String: Bool] = {
 		"Radio Off": true,
 		"Media Player": true,
 		"The Music Locker": true,
-		"Still Slipping Los Santos": false,
+		"Still Slipping Los Santos": true,
 		"Kult FM": true,
 		"iFruit Radio": true,
 		"Worldwide FM": true,
