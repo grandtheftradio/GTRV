@@ -142,6 +142,8 @@ var favorite: [String: Bool] = {
 var introDuration: TimeInterval = 0.0
 var introTime: TimeInterval = 0.0
 
+let kultDJSongIntro: Bool = false
+
 var lastPlayed: String = ""
 
 var morningTimeIntroPlayed: Bool = false

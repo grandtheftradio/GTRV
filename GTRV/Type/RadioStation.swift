@@ -11,7 +11,7 @@ public struct RadioStation: Identifiable {
 	let name: String
 	let image: ImageData
 	let order: String
-	let root: String?
+	let root: Root?
 	let songs: [Song]?
 	let general: General?
 	let identity: [Identity]?

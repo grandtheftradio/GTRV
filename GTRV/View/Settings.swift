@@ -364,8 +364,6 @@ struct Settings: View {
 							
 							//CLOSE BUTTON
 							Button {
-								AudioPlayer.settingsView.toggle()
-								
 								//COLOR
 								customColor = viewModel.colorPickerColor
 								UserDefaults.standard.set(viewModel.appColor, forKey:"appColor")
@@ -385,6 +383,7 @@ struct Settings: View {
 								}
 								UserDefaults.standard.set(favoriteStationNames.dropLast(), forKey:favoriteKey)
 								
+								AudioPlayer.settingsView.toggle()
 								
 							} label: {
 								HStack{

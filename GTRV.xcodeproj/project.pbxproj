@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB0A72502CA5D62000890708 /* Unplayed.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0A724F2CA5D62000890708 /* Unplayed.swift */; };
+		EB2B2E682CCFDDE700BB3624 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2B2E672CCFDDE200BB3624 /* Root.swift */; };
 		EB3D10852CA71D3800900793 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = EB3D10842CA71D3800900793 /* Audio */; };
 		EB3D10872CA734DD00900793 /* AudioPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D10862CA734DD00900793 /* AudioPath.swift */; };
 		EB75BB3C2C91F19400BE0F45 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3B2C91F19400BE0F45 /* ImageData.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		EB0A724F2CA5D62000890708 /* Unplayed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unplayed.swift; sourceTree = "<group>"; };
+		EB2B2E672CCFDDE200BB3624 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		EB3D10842CA71D3800900793 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		EB3D10862CA734DD00900793 /* AudioPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPath.swift; sourceTree = "<group>"; };
 		EB75BB3B2C91F19400BE0F45 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				EBB3BE9C2A97FCD900E72A23 /* Intro.swift */,
 				EBB3BE9A2A97FCA600E72A23 /* Label.swift */,
 				EBB3BE962A97FC3900E72A23 /* RadioStation.swift */,
+				EB2B2E672CCFDDE200BB3624 /* Root.swift */,
 				EBB3BE922A97F28300E72A23 /* Sector.swift */,
 				EB75BB412C922BF300BE0F45 /* Solo.swift */,
 				EBB3BE902A97F24400E72A23 /* Song.swift */,
@@ -288,6 +291,7 @@
 				EBB3BEAE2A97FE8700E72A23 /* Stations.swift in Sources */,
 				EBB3BEA82A97FDF900E72A23 /* RadioStationButton.swift in Sources */,
 				EBB3BE7C2A97EDA600E72A23 /* RadioStations.swift in Sources */,
+				EB2B2E682CCFDDE700BB3624 /* Root.swift in Sources */,
 				EBB3BE3C2A97E79300E72A23 /* ContentView.swift in Sources */,
 				EBB3BEAC2A97FE5700E72A23 /* StationLabel.swift in Sources */,
 				EBB3BE7A2A97ED8000E72A23 /* RadioNews.swift in Sources */,

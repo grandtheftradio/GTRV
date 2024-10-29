@@ -57,12 +57,23 @@ public let RadioStations: [RadioStation] = [
 			column: 2
 		),
 		order: "rotate",
-		root: "RADIO_11_TALK_02",
+		root: Root(
+			station: "RADIO_11_TALK_02",
+			song: "RADIO_11_TALK_02",
+			intro: nil,
+			general: nil,
+			identity: "RADIO_11_TALK_02",
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//MONO_BCR_COMMUNITY_HOUR
 			Song(
 				file: "MONO_BCR_COMMUNITY_HOUR",
-				root: "RADIO_11_TALK_02/mono_bcr_community_hour/",
+				root: "mono_bcr_community_hour",
 				labels: [
 					Label(
 						artist: "BCR Community Hour",
@@ -78,7 +89,7 @@ public let RadioStations: [RadioStation] = [
 			//MONO_BEYOND_INSEMINATION
 			Song(
 				file: "MONO_BEYOND_INSEMINATION",
-				root: "RADIO_11_TALK_02/mono_beyond_insemination/",
+				root: "mono_beyond_insemination",
 				labels: [
 					Label(
 						artist: "Beyond Insemination",
@@ -94,7 +105,7 @@ public let RadioStations: [RadioStation] = [
 			//MONO_BLESS_YOUR_HEART
 			Song(
 				file: "MONO_BLESS_YOUR_HEART",
-				root: "RADIO_11_TALK_02/mono_bless_your_heart/",
+				root: "mono_bless_your_heart",
 				labels: [
 					Label(
 						artist: "BLESS YOUR HEART",
@@ -110,7 +121,7 @@ public let RadioStations: [RadioStation] = [
 			//MONO_ZBEYOND_INSEMINATION_PART_2
 			Song(
 				file: "MONO_ZBEYOND_INSEMINATION_PART_2",
-				root: "RADIO_11_TALK_02/mono_zbeyond_insemination_part_2/",
+				root: "mono_zbeyond_insemination_part_2",
 				labels: [
 					Label(
 						artist: "Beyond Insemination",
@@ -160,12 +171,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "static",
-		root: "dlc_hei4_music",
+		root: Root(
+			station: "dlc_hei4_music",
+			song: "dlc_hei4_music",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//HEI4_MLR_KM_CLUB_P1
 			Song(
 				file: "HEI4_MLR_KM_CLUB_P1",
-				root: "dlc_hei4_music/hei4_mlr_km_club_p1/",
+				root: "hei4_mlr_km_club_p1",
 				labels: [
 					Label(
 						artist: "ADAM PORT",
@@ -216,7 +238,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_KM_CLUB_P2
 			Song(
 				file: "HEI4_MLR_KM_CLUB_P2",
-				root: "dlc_hei4_music/hei4_mlr_km_club_p2/",
+				root: "hei4_mlr_km_club_p2",
 				labels: [
 					Label(
 						artist: "&ME",
@@ -257,7 +279,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_KM_CLUB_P3
 			Song(
 				file: "HEI4_MLR_KM_CLUB_P3",
-				root: "dlc_hei4_music/hei4_mlr_km_club_p3/",
+				root: "hei4_mlr_km_club_p3",
 				labels: [
 					Label(
 						artist: "KEINEMUSIK",
@@ -293,7 +315,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_KM_CLUB_P4
 			Song(
 				file: "HEI4_MLR_KM_CLUB_P4",
-				root: "dlc_hei4_music/hei4_mlr_km_club_p4/",
+				root: "hei4_mlr_km_club_p4",
 				labels: [
 					Label(
 						artist: "&ME",
@@ -339,7 +361,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_MM_P1
 			Song(
 				file: "HEI4_MLR_MM_P1",
-				root: "dlc_hei4_music/hei4_mlr_mm_p1/",
+				root: "hei4_mlr_mm_p1",
 				labels: [
 					Label(
 						artist: "MOODYMANN",
@@ -390,7 +412,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_MM_P2
 			Song(
 				file: "HEI4_MLR_MM_P2",
-				root: "dlc_hei4_music/hei4_mlr_mm_p2/",
+				root: "hei4_mlr_mm_p2",
 				labels: [
 					Label(
 						artist: "CYBONIX",
@@ -414,7 +436,7 @@ public let RadioStations: [RadioStation] = [
 					),
 					Label(
 						artist: "BLAKE BAXTER",
-						title: "Wen We Used To Play",
+						title: "When We Used To Play",
 						time: 9282.0 - 8559
 					),
 					Label(
@@ -446,7 +468,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_MM_P3
 			Song(
 				file: "HEI4_MLR_MM_P3",
-				root: "dlc_hei4_music/hei4_mlr_mm_p3/",
+				root: "hei4_mlr_mm_p3",
 				labels: [
 					Label(
 						artist: "GMI/UHM",
@@ -522,7 +544,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_MM_P4
 			Song(
 				file: "HEI4_MLR_MM_P4",
-				root: "dlc_hei4_music/hei4_mlr_mm_p4/",
+				root: "hei4_mlr_mm_p4",
 				labels: [
 					Label(
 						artist: "THEO PARRISH",
@@ -593,7 +615,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_KM_BEACH_P1
 			Song(
 				file: "HEI4_MLR_KM_BEACH_P1",
-				root: "dlc_hei4_music/hei4_mlr_km_beach_p1/",
+				root: "hei4_mlr_km_beach_p1",
 				labels: [
 					Label(
 						artist: "RAMPA",
@@ -649,7 +671,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_KM_BEACH_P2
 			Song(
 				file: "HEI4_MLR_KM_BEACH_P2",
-				root: "dlc_hei4_music/hei4_mlr_km_beach_p2/",
+				root: "hei4_mlr_km_beach_p2",
 				labels: [
 					Label(
 						artist: "ÂME",
@@ -695,7 +717,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_KM_BEACH_P3
 			Song(
 				file: "HEI4_MLR_KM_BEACH_P3",
-				root: "dlc_hei4_music/hei4_mlr_km_beach_p3/",
+				root: "hei4_mlr_km_beach_p3",
 				labels: [
 					Label(
 						artist: "XINOBI",
@@ -731,7 +753,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_KM_BEACH_P4
 			Song(
 				file: "HEI4_MLR_KM_BEACH_P4",
-				root: "dlc_hei4_music/hei4_mlr_km_beach_p4/",
+				root: "hei4_mlr_km_beach_p4",
 				labels: [
 					Label(
 						artist: "RAMPA",
@@ -767,7 +789,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_PT_P1
 			Song(
 				file: "HEI4_MLR_PT_P1",
-				root: "dlc_hei4_music/hei4_mlr_pt_p1/",
+				root: "hei4_mlr_pt_p1",
 				labels: [
 					Label(
 						artist: "PROFESSOR RHYTHM",
@@ -793,7 +815,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_PT_P2
 			Song(
 				file: "HEI4_MLR_PT_P2",
-				root: "dlc_hei4_music/hei4_mlr_pt_p2/",
+				root: "hei4_mlr_pt_p2",
 				labels: [
 					Label(
 						artist: "KLEIN & MBO",
@@ -864,7 +886,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_MLR_PT_P3
 			Song(
 				file: "HEI4_MLR_PT_P3",
-				root: "dlc_hei4_music/hei4_mlr_pt_p3/",
+				root: "hei4_mlr_pt_p3",
 				labels: [
 					Label(
 						artist: "MARIO DIAZ",
@@ -947,12 +969,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: ["rotate","reverse","alternate","alternate_r"].randomElement()!,
-		root: "dlc_security_music",
+		root: Root(
+			station: "dlc_security_music",
+			song: "dlc_security_music",
+			intro: "dlc_security_music/motomami_intro",
+			general: "dlc_security_music/motomami_general",
+			identity: "dlc_security_music",
+			solo: "dlc_security_music",
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//100_dissin
 			Song(
 				file: "0x1DCE0DD0",//0x13667803
-				root: "dlc_security_music/100_dissin/",
+				root: "100_dissin",
 				labels: [
 					Label(
 						artist: "ARMANDO",
@@ -968,7 +1001,7 @@ public let RadioStations: [RadioStation] = [
 			//xulita
 			Song(
 				file: "0x1B0448B0",//0x11BECEC6
-				root: "dlc_security_music/xulita/",
+				root: "xulita",
 				labels: [
 					Label(
 						artist: "YOUNG CISTER FEAT. KAYDY CAIN",
@@ -984,7 +1017,7 @@ public let RadioStations: [RadioStation] = [
 			//snap_and_roll
 			Song(
 				file: "0x0E477B98",//0x062CCA9B
-				root: "dlc_security_music/snap_and_roll/",
+				root: "snap_and_roll",
 				labels: [
 					Label(
 						artist: "SOULJA BOY TELL'EM",
@@ -1005,7 +1038,7 @@ public let RadioStations: [RadioStation] = [
 			//nubes
 			Song(
 				file: "0x1AD8BAFA",//0x1DE39D2B
-				root: "dlc_security_music/nubes/",
+				root: "nubes",
 				labels: [
 					Label(
 						artist: "RAUW ALEJANDRO",
@@ -1030,7 +1063,7 @@ public let RadioStations: [RadioStation] = [
 			//bounce_n_break
 			Song(
 				file: "0x0D607271",//0x02202F9C
-				root: "dlc_security_music/bounce_n_break/",
+				root: "bounce_n_break",
 				labels: [
 					Label(
 						artist: "DJ SPINN",
@@ -1046,7 +1079,7 @@ public let RadioStations: [RadioStation] = [
 			//contigo
 			Song(
 				file: "0x1AB0DEE4",//0x043179FD
-				root: "dlc_security_music/contigo/",
+				root: "contigo",
 				labels: [
 					Label(
 						artist: "ÑEJO & DALMATA",
@@ -1071,7 +1104,7 @@ public let RadioStations: [RadioStation] = [
 			//rockstar_made
 			Song(
 				file: "0x1B3CB8DD",//0x08097FF6
-				root: "dlc_security_music/rockstar_made/",
+				root: "rockstar_made",
 				labels: [
 					Label(
 						artist: "PLAYBOI CARTI",
@@ -1096,7 +1129,7 @@ public let RadioStations: [RadioStation] = [
 			//calle_luna
 			Song(
 				file: "0x0E6DB772",//0x09F4F127
-				root: "dlc_security_music/calle_luna/",
+				root: "calle_luna",
 				labels: [
 					Label(
 						artist: "WILLIE COLÓN & HÉCTOR LAVOE",
@@ -1125,7 +1158,7 @@ public let RadioStations: [RadioStation] = [
 			//machote
 			Song(
 				file: "0x1DC31D8F",//0x13F2722D
-				root: "dlc_security_music/machote/",
+				root: "machote",
 				labels: [
 					Label(
 						artist: "ARCA",
@@ -1150,7 +1183,7 @@ public let RadioStations: [RadioStation] = [
 			//418
 			Song(
 				file: "0x0B6157A1",//0x01C2371A
-				root: "dlc_security_music/418/",
+				root: "418",
 				labels: [
 					Label(
 						artist: "DJ SLUGO",
@@ -1171,7 +1204,7 @@ public let RadioStations: [RadioStation] = [
 			//con_altura
 			Song(
 				file: "0x0BDF6B91",//0x04FC63CB
-				root: "dlc_security_music/con_altura/",
+				root: "con_altura",
 				labels: [
 					Label(
 						artist: "ROSALÍA FEAT. J BALVIN",
@@ -1196,7 +1229,7 @@ public let RadioStations: [RadioStation] = [
 			//klk
 			Song(
 				file: "0x0DB6BA96",//0x182A7858
-				root: "dlc_security_music/klk/",
+				root: "klk",
 				labels: [
 					Label(
 						artist: "ARCA FEAT. ROSALÍA",
@@ -1221,7 +1254,7 @@ public let RadioStations: [RadioStation] = [
 			//linda
 			Song(
 				file: "0x14DF58DA",//0x089C6414
-				root: "dlc_security_music/linda/",
+				root: "linda",
 				labels: [
 					Label(
 						artist: "TOKISCHA & ROSALÍA",
@@ -1246,7 +1279,7 @@ public let RadioStations: [RadioStation] = [
 			//vamos_disco
 			Song(
 				file: "0x14CAF742",//0x175074BD
-				root: "dlc_security_music/vamos_disco/",
+				root: "vamos_disco",
 				labels: [
 					Label(
 						artist: "LAS GUANABANAS",
@@ -1279,7 +1312,7 @@ public let RadioStations: [RadioStation] = [
 			//duro
 			Song(
 				file: "0x004FFC64",//0x094EC2AA
-				root: "dlc_security_music/duro/",
+				root: "duro",
 				labels: [
 					Label(
 						artist: "LA GOONY CHONGA",
@@ -1304,7 +1337,7 @@ public let RadioStations: [RadioStation] = [
 			//bank_robber (skinny_jeans)
 			Song(
 				file: "0x0F83DFE6",//0x1ECA47CC
-				root: "dlc_security_music/bank_robber/",
+				root: "bank_robber",
 				labels: [
 					Label(
 						artist: "LIKKLE VYBZ & LIKKLE ADDI",
@@ -1325,7 +1358,7 @@ public let RadioStations: [RadioStation] = [
 			//dominicana
 			Song(
 				file: "0x0BFCFE77",//0x061AA958
-				root: "dlc_security_music/dominicana/",
+				root: "dominicana",
 				labels: [
 					Label(
 						artist: "CHUCKY73",
@@ -1350,7 +1383,7 @@ public let RadioStations: [RadioStation] = [
 			//tumbando_fronte
 			Song(
 				file: "0x08957DDF",//0x0359245A
-				root: "dlc_security_music/tumbando_fronte/",
+				root: "tumbando_fronte",
 				labels: [
 					Label(
 						artist: "ALBERTO STYLEE",
@@ -1366,7 +1399,7 @@ public let RadioStations: [RadioStation] = [
 			//la_fama
 			Song(
 				file: "0x10C4A42B",//0x07580BF2
-				root: "dlc_security_music/la_fama/",
+				root: "la_fama",
 				labels: [
 					Label(
 						artist: "ROSALÍA & THE WEEKEND",
@@ -1391,7 +1424,7 @@ public let RadioStations: [RadioStation] = [
 			//where_heart_is
 			Song(
 				file: "0x0B550E1C",//0x160CF1BA
-				root: "dlc_security_music/where_heart_is/",
+				root: "where_heart_is",
 				labels: [
 					Label(
 						artist: "Q",
@@ -1407,7 +1440,7 @@ public let RadioStations: [RadioStation] = [
 			//dipra (al_la_mia)
 			Song(
 				file: "0x1CE0150E",//0x03BE5568
-				root: "dlc_security_music/dipra/",
+				root: "dipra",
 				labels: [
 					Label(
 						artist: "BAD GYAL",
@@ -1432,7 +1465,7 @@ public let RadioStations: [RadioStation] = [
 			//mi_nombre
 			Song(
 				file: "0x1EDF2C82",//0x14878196
-				root: "dlc_security_music/mi_nombre/",
+				root: "mi_nombre",
 				labels: [
 					Label(
 						artist: "ROSALÍA",
@@ -1457,7 +1490,7 @@ public let RadioStations: [RadioStation] = [
 			//body_so_good
 			Song(
 				file: "0x06C33383",//0x0921E5CF
-				root: "dlc_security_music/body_so_good/",
+				root: "body_so_good",
 				labels: [
 					Label(
 						artist: "POPCAAN",
@@ -1478,7 +1511,7 @@ public let RadioStations: [RadioStation] = [
 			//bunny_rider
 			Song(
 				file: "0x0D9FF440",//0x10E2CC9A
-				root: "dlc_security_music/bunny_rider/",
+				root: "bunny_rider",
 				labels: [
 					Label(
 						artist: "CAROLINE POLACHEK",
@@ -1503,7 +1536,7 @@ public let RadioStations: [RadioStation] = [
 			//stress
 			Song(
 				file: "0x1FBD1F43",//0x08C62DED
-				root: "dlc_security_music/stress/",
+				root: "stress",
 				labels: [
 					Label(
 						artist: "JUSTICE",
@@ -1528,7 +1561,7 @@ public let RadioStations: [RadioStation] = [
 			//salgo_calle
 			Song(
 				file: "0x0C731A68",//0x0FA8C527
-				root: "dlc_security_music/salgo_calle/",
+				root: "salgo_calle",
 				labels: [
 					Label(
 						artist: "DADDY YANKEE",
@@ -1553,7 +1586,7 @@ public let RadioStations: [RadioStation] = [
 			//volando_voy
 			Song(
 				file: "0x1E9E1CCE",//0x16C3A092
-				root: "dlc_security_music/volando_voy/",
+				root: "volando_voy",
 				labels: [
 					Label(
 						artist: "CAMARÓN DE LA ISLA",
@@ -1578,7 +1611,7 @@ public let RadioStations: [RadioStation] = [
 			//mystery_love
 			Song(
 				file: "0x0EFF101A",//0x0F2949F8
-				root: "dlc_security_music/mystery_love/",
+				root: "mystery_love",
 				labels: [
 					Label(
 						artist: "MR. FINGERS",
@@ -1599,7 +1632,7 @@ public let RadioStations: [RadioStation] = [
 			//a_pale
 			Song(
 				file: "0x05A8D17D",//0x17E0F6F2
-				root: "dlc_security_music/a_pale/",
+				root: "a_pale",
 				labels: [
 					Label(
 						artist: "ROSALÍA",
@@ -1624,7 +1657,7 @@ public let RadioStations: [RadioStation] = [
 			//dos_locos
 			Song(
 				file: "0x0B9DBCCC",//0x097BF14B
-				root: "dlc_security_music/dos_locos/",
+				root: "dos_locos",
 				labels: [
 					Label(
 						artist: "MONCHY & ALEJANDRA",
@@ -1640,7 +1673,7 @@ public let RadioStations: [RadioStation] = [
 			//mi_coranzoncito
 			Song(
 				file: "0x0F7BE938",//0x12FA953F
-				root: "dlc_security_music/mi_coranzoncito/",
+				root: "mi_coranzoncito",
 				labels: [
 					Label(
 						artist: "AVENTURA",
@@ -1669,7 +1702,7 @@ public let RadioStations: [RadioStation] = [
 			//tukuntazo
 			Song(
 				file: "0x084C88C6",//0x1609E800
-				root: "dlc_security_music/tukuntazo/",
+				root: "tukuntazo",
 				labels: [
 					Label(
 						artist: "TOKISCHA & HARACA KIKO & EL CHERRY SCOM",
@@ -1694,7 +1727,7 @@ public let RadioStations: [RadioStation] = [
 			//algo_como_tu
 			Song(
 				file: "0x1F11EA14",//0x06347C21
-				root: "dlc_security_music/algo_como_tu/",
+				root: "algo_como_tu",
 				labels: [
 					Label(
 						artist: "KAYDY CAIN & LOS DEL CONTROL",
@@ -1767,12 +1800,23 @@ public let RadioStations: [RadioStation] = [
 			column: 3
 		),
 		order: "random",
-		root: "RADIO_12_REGGAE",
+		root: Root(
+			station: "RADIO_12_REGGAE",
+			song: "RADIO_12_REGGAE",
+			intro: "RADIO_12_REGGAE/intro",
+			general: "RADIO_12_REGGAE/general",
+			identity: "RADIO_12_REGGAE",
+			solo: "RADIO_12_REGGAE",
+			time: "RADIO_12_REGGAE/time",
+			to: "RADIO_12_REGGAE/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//ADDI_TRUTH
 			Song(
 				file: "ADDI_TRUTH",
-				root: "RADIO_12_REGGAE/addi_truth/",
+				root: "addi_truth",
 				labels: [
 					Label(
 						artist: "VYBZ KARTEL",
@@ -1788,7 +1832,7 @@ public let RadioStations: [RadioStation] = [
 			//CHAPTER3
 			Song(
 				file: "CHAPTER3",
-				root: "RADIO_12_REGGAE/chapter3/",
+				root: "chapter3",
 				labels: [
 					Label(
 						artist: "JOE GIBBS & THE PROFESSIONALS",
@@ -1813,7 +1857,7 @@ public let RadioStations: [RadioStation] = [
 			//CRAZY_GIRL
 			Song(
 				file: "CRAZY_GIRL",
-				root: "RADIO_12_REGGAE/crazy_girl/",
+				root: "crazy_girl",
 				labels: [
 					Label(
 						artist: "HALF PINT",
@@ -1838,7 +1882,7 @@ public let RadioStations: [RadioStation] = [
 			//DISCO_DEVIL
 			Song(
 				file: "DISCO_DEVIL",
-				root: "RADIO_12_REGGAE/disco_devil/",
+				root: "disco_devil",
 				labels: [
 					Label(
 						artist: "LEE SCRATCH PERRY & THE FULL EXPERIENCE",
@@ -1863,7 +1907,7 @@ public let RadioStations: [RadioStation] = [
 			//GRUMBLIN_DUB
 			Song(
 				file: "GRUMBLIN_DUB",
-				root: "RADIO_12_REGGAE/grumblin_dub/",
+				root: "grumblin_dub",
 				labels: [
 					Label(
 						artist: "THE UPSETTERS",
@@ -1888,7 +1932,7 @@ public let RadioStations: [RadioStation] = [
 			//GUN_SHOT_A_FIRE
 			Song(
 				file: "GUN_SHOT_A_FIRE",
-				root: "RADIO_12_REGGAE/gun_shot_a_fire/",
+				root: "gun_shot_a_fire",
 				labels: [
 					Label(
 						artist: "KONSHENS",
@@ -1904,7 +1948,7 @@ public let RadioStations: [RadioStation] = [
 			//I_AM_A_MADMAN
 			Song(
 				file: "I_AM_A_MADMAN",
-				root: "RADIO_12_REGGAE/i_am_a_madman/",
+				root: "i_am_a_madman",
 				labels: [
 					Label(
 						artist: "LEE SCRATCH PERRY",
@@ -1929,7 +1973,7 @@ public let RadioStations: [RadioStation] = [
 			//KINGSTON_BE_WISE
 			Song(
 				file: "KINGSTON_BE_WISE",
-				root: "RADIO_12_REGGAE/kingston_be_wise/",
+				root: "kingston_be_wise",
 				labels: [
 					Label(
 						artist: "PROTOJE",
@@ -1945,7 +1989,7 @@ public let RadioStations: [RadioStation] = [
 			//KINGSTON_TOWN
 			Song(
 				file: "KINGSTON_TOWN",
-				root: "RADIO_12_REGGAE/kingston_town/",
+				root: "kingston_town",
 				labels: [
 					Label(
 						artist: "BUSY SIGNAL",
@@ -1970,7 +2014,7 @@ public let RadioStations: [RadioStation] = [
 			//LOYALS
 			Song(
 				file: "LOYALS",
-				root: "RADIO_12_REGGAE/loyals/",
+				root: "loyals",
 				labels: [
 					Label(
 						artist: "DEMARCO",
@@ -1986,7 +2030,7 @@ public let RadioStations: [RadioStation] = [
 			//MONEY_COME_MONEY_GO
 			Song(
 				file: "MONEY_COME_MONEY_GO",
-				root: "RADIO_12_REGGAE/money_come_money_go/",
+				root: "money_come_money_go",
 				labels: [
 					Label(
 						artist: "LEE \"SCRATCH\" PERRY",
@@ -2011,7 +2055,7 @@ public let RadioStations: [RadioStation] = [
 			//MONEY_IN_MY_POCKET
 			Song(
 				file: "MONEY_IN_MY_POCKET",
-				root: "RADIO_12_REGGAE/money_in_my_pocket/",
+				root: "money_in_my_pocket",
 				labels: [
 					Label(
 						artist: "DENNIS BROWN",
@@ -2027,7 +2071,7 @@ public let RadioStations: [RadioStation] = [
 			//MR_MONEY_MAN
 			Song(
 				file: "MR_MONEY_MAN",
-				root: "RADIO_12_REGGAE/mr_money_man/",
+				root: "mr_money_man",
 				labels: [
 					Label(
 						artist: "DANNY HENSWORTH",
@@ -2052,7 +2096,7 @@ public let RadioStations: [RadioStation] = [
 			//NIGHT_NURSE
 			Song(
 				file: "NIGHT_NURSE",
-				root: "RADIO_12_REGGAE/night_nurse/",
+				root: "night_nurse",
 				labels: [
 					Label(
 						artist: "GREGORY ISAACS",
@@ -2077,7 +2121,7 @@ public let RadioStations: [RadioStation] = [
 			//NOBODY_MOVE_GET_HURT
 			Song(
 				file: "NOBODY_MOVE_GET_HURT",
-				root: "RADIO_12_REGGAE/nobody_move_get_hurt/",
+				root: "nobody_move_get_hurt",
 				labels: [
 					Label(
 						artist: "YELLOWMAN",
@@ -2102,7 +2146,7 @@ public let RadioStations: [RadioStation] = [
 			//ODD_RAS
 			Song(
 				file: "ODD_RAS",
-				root: "RADIO_12_REGGAE/odd_ras/",
+				root: "odd_ras",
 				labels: [
 					Label(
 						artist: "CHRONIXX",
@@ -2118,7 +2162,7 @@ public let RadioStations: [RadioStation] = [
 			//PSYCHO
 			Song(
 				file: "PSYCHO",
-				root: "RADIO_12_REGGAE/psycho/",
+				root: "psycho",
 				labels: [
 					Label(
 						artist: "TOMMY LEE SPARTA",
@@ -2134,7 +2178,7 @@ public let RadioStations: [RadioStation] = [
 			//ROAST_FISH_AND_CORNBREAD
 			Song(
 				file: "ROAST_FISH_AND_CORNBREAD",
-				root: "RADIO_12_REGGAE/roast_fish_and_cornbread/",
+				root: "roast_fish_and_cornbread",
 				labels: [
 					Label(
 						artist: "LEE \"SCRATCH\" PERRY",
@@ -2150,7 +2194,7 @@ public let RadioStations: [RadioStation] = [
 			//SONS_OF_SLAVES
 			Song(
 				file: "SONS_OF_SLAVES",
-				root: "RADIO_12_REGGAE/sons_of_slaves/",
+				root: "sons_of_slaves",
 				labels: [
 					Label(
 						artist: "JUNIOR DELGADO",
@@ -2175,7 +2219,7 @@ public let RadioStations: [RadioStation] = [
 			//TOPIC_OF_THE_DAY
 			Song(
 				file: "TOPIC_OF_THE_DAY",
-				root: "RADIO_12_REGGAE/topic_of_the_day/",
+				root: "topic_of_the_day",
 				labels: [
 					Label(
 						artist: "I-OCTANE",
@@ -2191,7 +2235,7 @@ public let RadioStations: [RadioStation] = [
 			//WE_NEVER_FEAR_DEM
 			Song(
 				file: "WE_NEVER_FEAR_DEM",
-				root: "RADIO_12_REGGAE/we_never_fear_dem/",
+				root: "we_never_fear_dem",
 				labels: [
 					Label(
 						artist: "VYBZ KARTEL FEAT. POPCAAN",
@@ -2264,12 +2308,23 @@ public let RadioStations: [RadioStation] = [
 			column: 4
 		),
 		order: "rotate",
-		root: "RADIO_13_JAZZ",
+		root: Root(
+			station: "RADIO_13_JAZZ",
+			song: "RADIO_13_JAZZ",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//wwfm_p1
 			Song(
 				file: "0x04A02233",
-				root: "RADIO_13_JAZZ/wwfm_p1/",
+				root: "wwfm_p1",
 				labels: [
 					//Mirror Maru
 					Label(
@@ -2328,7 +2383,7 @@ public let RadioStations: [RadioStation] = [
 			//wwfm_p2
 			Song(
 				file: "0x1EDECB2F",
-				root: "RADIO_13_JAZZ/wwfm_p2/",
+				root: "wwfm_p2",
 				labels: [
 					//Thousand Finger Man
 					Label(
@@ -2387,7 +2442,7 @@ public let RadioStations: [RadioStation] = [
 			//wwfm_p3
 			Song(
 				file: "0x15ED4708",
-				root: "RADIO_13_JAZZ/wwfm_p3/",
+				root: "wwfm_p3",
 				labels: [
 					//Lovery (Slow Cuban Vibe Mix)
 					Label(
@@ -2464,7 +2519,7 @@ public let RadioStations: [RadioStation] = [
 			//wwfm_p4
 			Song(
 				file: "0x1E4AFD9D",
-				root: "RADIO_13_JAZZ/wwfm_p4/",
+				root: "wwfm_p4",
 				labels: [
 					//What You Need
 					Label(
@@ -2547,7 +2602,7 @@ public let RadioStations: [RadioStation] = [
 			//wwfm_p1
 			Song(
 				file: "0x120DAFC1",
-				root: "RADIO_13_JAZZ/wwfm_p1/",
+				root: "wwfm_p1",
 				labels: [
 					//Mirror Maru
 					Label(
@@ -2606,7 +2661,7 @@ public let RadioStations: [RadioStation] = [
 			//wwfm_p2
 			Song(
 				file: "0x117A33D2",
-				root: "RADIO_13_JAZZ/wwfm_p2/",
+				root: "wwfm_p2",
 				labels: [
 					//Thousand Finger Man
 					Label(
@@ -2665,7 +2720,7 @@ public let RadioStations: [RadioStation] = [
 			//wwfm_p3
 			Song(
 				file: "0x032BC446",
-				root: "RADIO_13_JAZZ/wwfm_p3/",
+				root: "wwfm_p3",
 				labels: [
 					//Lovery (Slow Cuban Vibe Mix)
 					Label(
@@ -2742,7 +2797,7 @@ public let RadioStations: [RadioStation] = [
 			//wwfm_p4
 			Song(
 				file: "0x1E66F1A0",
-				root: "RADIO_13_JAZZ/wwfm_p4/",
+				root: "wwfm_p4",
 				labels: [
 					//What You Need
 					Label(
@@ -2847,11 +2902,22 @@ public let RadioStations: [RadioStation] = [
 			column: 4
 		),
 		order: "rotate",
-		root: "RADIO_14_DANCE_02",
+		root: Root(
+			station: "RADIO_14_DANCE_02",
+			song: "RADIO_14_DANCE_02",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			Song(
 				file: "0x0A818E80",
-				root: "RADIO_14_DANCE_02/flylo_part1/",
+				root: "flylo_part1",
 				labels: [
 					//Getting There
 					Label(
@@ -2993,7 +3059,7 @@ public let RadioStations: [RadioStation] = [
 			),
 			Song(
 				file: "0x0339EC32",
-				root: "RADIO_14_DANCE_02/flylo_part2/",
+				root: "flylo_part2",
 				labels: [
 					//You Never Come Closer
 					Label(
@@ -3075,7 +3141,7 @@ public let RadioStations: [RadioStation] = [
 			),
 			Song(
 				file: "0x17E2800E",
-				root: "RADIO_14_DANCE_02/flylo_part1/",
+				root: "flylo_part1",
 				labels: [
 					//Getting There
 					Label(
@@ -3217,7 +3283,7 @@ public let RadioStations: [RadioStation] = [
 			),
 			Song(
 				file: "0x08194D53",
-				root: "RADIO_14_DANCE_02/flylo_part2/",
+				root: "flylo_part2",
 				labels: [
 					//You Never Come Closer
 					Label(
@@ -3322,12 +3388,23 @@ public let RadioStations: [RadioStation] = [
 			column: 4
 		),
 		order: "random",
-		root: "RADIO_15_MOTOWN",
+		root: Root(
+			station: "RADIO_15_MOTOWN",
+			song: "RADIO_15_MOTOWN",
+			intro: "RADIO_15_MOTOWN/intro",
+			general: "RADIO_15_MOTOWN/general",
+			identity: "RADIO_15_MOTOWN",
+			solo: "RADIO_15_MOTOWN",
+			time: "RADIO_15_MOTOWN/time",
+			to: "RADIO_15_MOTOWN/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//ASHLEYS_ROACHCLIP
 			Song(
 				file: "ASHLEYS_ROACHCLIP",
-				root: "RADIO_15_MOTOWN/ashleys_roachclip/",
+				root: "ashleys_roachclip",
 				labels: [
 					Label(
 						artist: "THE SOUL SEARCHERS",
@@ -3352,7 +3429,7 @@ public let RadioStations: [RadioStation] = [
 			//BOUNCY_LADY
 			Song(
 				file: "BOUNCY_LADY",
-				root: "RADIO_15_MOTOWN/bouncy_lady/",
+				root: "bouncy_lady",
 				labels: [
 					Label(
 						artist: "PLEASURE",
@@ -3368,7 +3445,7 @@ public let RadioStations: [RadioStation] = [
 			//CALIFORNIA_SOUL
 			Song(
 				file: "CALIFORNIA_SOUL",
-				root: "RADIO_15_MOTOWN/california_soul/",
+				root: "california_soul",
 				labels: [
 					Label(
 						artist: "MARLENA SHAW",
@@ -3393,7 +3470,7 @@ public let RadioStations: [RadioStation] = [
 			//CHANGIN
 			Song(
 				file: "CHANGIN",
-				root: "RADIO_15_MOTOWN/changin/",
+				root: "changin",
 				labels: [
 					Label(
 						artist: "BRASS CONSTRUCTION",
@@ -3409,7 +3486,7 @@ public let RadioStations: [RadioStation] = [
 			//CLIMAX
 			Song(
 				file: "CLIMAX",
-				root: "RADIO_15_MOTOWN/climax/",
+				root: "climax",
 				labels: [
 					Label(
 						artist: "OHIO PLAYERS",
@@ -3434,7 +3511,7 @@ public let RadioStations: [RadioStation] = [
 			//CRUISIN
 			Song(
 				file: "CRUISIN",
-				root: "RADIO_15_MOTOWN/cruisin/",
+				root: "cruisin",
 				labels: [
 					Label(
 						artist: "SMOKEEY ROBINSON",
@@ -3459,7 +3536,7 @@ public let RadioStations: [RadioStation] = [
 			//DO_IT_TIL_YOURE_SATISFIED
 			Song(
 				file: "DO_IT_TIL_YOURE_SATISFIED",
-				root: "RADIO_15_MOTOWN/do_it_til_youre_satisfied/",
+				root: "do_it_til_youre_satisfied",
 				labels: [
 					Label(
 						artist: "BT EXPRESS",
@@ -3484,7 +3561,7 @@ public let RadioStations: [RadioStation] = [
 			//FUNNY_FEELING
 			Song(
 				file: "FUNNY_FEELING",
-				root: "RADIO_15_MOTOWN/funny_feeling/",
+				root: "funny_feeling",
 				labels: [
 					Label(
 						artist: "THE DELFONICS",
@@ -3505,7 +3582,7 @@ public let RadioStations: [RadioStation] = [
 			//HERCULES
 			Song(
 				file: "HERCULES",
-				root: "RADIO_15_MOTOWN/hercules/",
+				root: "hercules",
 				labels: [
 					Label(
 						artist: "AARON NEVILLE",
@@ -3530,7 +3607,7 @@ public let RadioStations: [RadioStation] = [
 			//I_BELIEVE_IN_MIRACLES
 			Song(
 				file: "I_BELIEVE_IN_MIRACLES",
-				root: "RADIO_15_MOTOWN/i_believe_in_miracles/",
+				root: "i_believe_in_miracles",
 				labels: [
 					Label(
 						artist: "JACKSON SISTERS",
@@ -3555,7 +3632,7 @@ public let RadioStations: [RadioStation] = [
 			//I_GET_LIFTED
 			Song(
 				file: "I_GET_LIFTED",
-				root: "RADIO_15_MOTOWN/i_get_lifted/",
+				root: "i_get_lifted",
 				labels: [
 					Label(
 						artist: "GEORGE MACCRAE",
@@ -3580,7 +3657,7 @@ public let RadioStations: [RadioStation] = [
 			//MAGIC_MOUNTAIN
 			Song(
 				file: "MAGIC_MOUNTAIN",
-				root: "RADIO_15_MOTOWN/magic_mountain/",
+				root: "magic_mountain",
 				labels: [
 					Label(
 						artist: "WAR",
@@ -3605,7 +3682,7 @@ public let RadioStations: [RadioStation] = [
 			//O_O_H_CHILD
 			Song(
 				file: "O_O_H_CHILD",
-				root: "RADIO_15_MOTOWN/o_o_h_child/",
+				root: "o_o_h_child",
 				labels: [
 					Label(
 						artist: "THE FIVE STAIRSTEPS",
@@ -3630,7 +3707,7 @@ public let RadioStations: [RadioStation] = [
 			//READY_OR_NOT
 			Song(
 				file: "READY_OR_NOT",
-				root: "RADIO_15_MOTOWN/ready_or_not/",
+				root: "ready_or_not",
 				labels: [
 					Label(
 						artist: "THE DELFONICS",
@@ -3655,7 +3732,7 @@ public let RadioStations: [RadioStation] = [
 			//RUBBER_BAND
 			Song(
 				file: "RUBBER_BAND",
-				root: "RADIO_15_MOTOWN/rubber_band/",
+				root: "rubber_band",
 				labels: [
 					Label(
 						artist: "THE TRAMMPS",
@@ -3680,7 +3757,7 @@ public let RadioStations: [RadioStation] = [
 			//SMILING_FACES
 			Song(
 				file: "SMILING_FACES",
-				root: "RADIO_15_MOTOWN/smiling_faces/",
+				root: "smiling_faces",
 				labels: [
 					Label(
 						artist: "THE UNDISPUTED TRUTH",
@@ -3705,7 +3782,7 @@ public let RadioStations: [RadioStation] = [
 			//STORIES
 			Song(
 				file: "STORIES",
-				root: "RADIO_15_MOTOWN/stories/",
+				root: "stories",
 				labels: [
 					Label(
 						artist: "THE CHAKACHAS",
@@ -3721,7 +3798,7 @@ public let RadioStations: [RadioStation] = [
 			//SUPERMAN_LOVER
 			Song(
 				file: "SUPERMAN_LOVER",
-				root: "RADIO_15_MOTOWN/superman_lover/",
+				root: "superman_lover",
 				labels: [
 					Label(
 						artist: "JOHNNY \"GUITAR\" WATSON",
@@ -3746,7 +3823,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_CISCO_KID
 			Song(
 				file: "THE_CISCO_KID",
-				root: "RADIO_15_MOTOWN/the_cisco_kid/",
+				root: "the_cisco_kid",
 				labels: [
 					Label(
 						artist: "WAR",
@@ -3775,7 +3852,7 @@ public let RadioStations: [RadioStation] = [
 			//VIVA_TIRADO
 			Song(
 				file: "VIVA_TIRADO",
-				root: "RADIO_15_MOTOWN/viva_tirado/",
+				root: "viva_tirado",
 				labels: [
 					Label(
 						artist: "EL CHICANO",
@@ -3853,12 +3930,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "rotate",
-		root: "dlc_thelab",
+		root: Root(
+			station: "dlc_thelab",
+			song: "dlc_thelab",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//LAB_P1
 			Song(
 				file: "LAB_P1",
-				root: "dlc_thelab/lab_p1/",
+				root: "lab_p1",
 				labels: [
 					Label(
 						artist: "",
@@ -3957,7 +4045,7 @@ public let RadioStations: [RadioStation] = [
 			//LAB_P2
 			Song(
 				file: "LAB_P2",
-				root: "dlc_thelab/lab_p2/",
+				root: "lab_p2",
 				labels: [
 					Label(
 						artist: "",
@@ -4037,7 +4125,7 @@ public let RadioStations: [RadioStation] = [
 	// MARK: Radio Mirror Park
 	RadioStation(
 		index: 10,
-		number: 16, /*17*/
+		number: 16,
 		name: "Radio Mirror Park",
 		image: ImageData(
 			name: "gtav_radio_stations_texture_512",
@@ -4045,12 +4133,23 @@ public let RadioStations: [RadioStation] = [
 			column: 2
 		),
 		order: "random",
-		root: "RADIO_16_SILVERLAKE",
+		root: Root(
+			station: "RADIO_16_SILVERLAKE",
+			song: "RADIO_16_SILVERLAKE",
+			intro: "RADIO_16_SILVERLAKE/intro",
+			general: "RADIO_16_SILVERLAKE/general",
+			identity: "RADIO_16_SILVERLAKE",
+			solo: "RADIO_16_SILVERLAKE",
+			time: "RADIO_16_SILVERLAKE/time",
+			to: "RADIO_16_SILVERLAKE/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//ALWAYS
 			Song(
 				file: "ALWAYS",
-				root: "RADIO_16_SILVERLAKE/always/",
+				root: "always",
 				labels: [
 					Label(
 						artist: "PANAMA",
@@ -4075,7 +4174,7 @@ public let RadioStations: [RadioStation] = [
 			//BOOGIE_IN_ZERO_GRAVITY
 			Song(
 				file: "BOOGIE_IN_ZERO_GRAVITY",
-				root: "RADIO_16_SILVERLAKE/boogie_in_zero_gravity/",
+				root: "boogie_in_zero_gravity",
 				labels: [
 					Label(
 						artist: "BLACK STROBE",
@@ -4100,7 +4199,7 @@ public let RadioStations: [RadioStation] = [
 			//CHANGE_OF_COAST
 			Song(
 				file: "CHANGE_OF_COAST",
-				root: "RADIO_16_SILVERLAKE/change_of_coast/",
+				root: "change_of_coast",
 				labels: [
 					Label(
 						artist: "NEON INDIAN",
@@ -4116,7 +4215,7 @@ public let RadioStations: [RadioStation] = [
 			//COLOURS
 			Song(
 				file: "COLOURS",
-				root: "RADIO_16_SILVERLAKE/colours/",
+				root: "colours",
 				labels: [
 					Label(
 						artist: "AGE OF CONSENT",
@@ -4132,7 +4231,7 @@ public let RadioStations: [RadioStation] = [
 			//CRYSTALFILM
 			Song(
 				file: "CRYSTALFILM",
-				root: "RADIO_16_SILVERLAKE/crystalfilm/",
+				root: "crystalfilm",
 				labels: [
 					Label(
 						artist: "LITTLE DRAGON",
@@ -4157,7 +4256,7 @@ public let RadioStations: [RadioStation] = [
 			//DARK_MATTER
 			Song(
 				file: "DARK_MATTER",
-				root: "RADIO_16_SILVERLAKE/dark_matter/",
+				root: "dark_matter",
 				labels: [
 					Label(
 						artist: "FEATHERS",
@@ -4182,7 +4281,7 @@ public let RadioStations: [RadioStation] = [
 			//DO_YOU_BELIEVE
 			Song(
 				file: "DO_YOU_BELIEVE",
-				root: "RADIO_16_SILVERLAKE/do_you_believe/",
+				root: "do_you_believe",
 				labels: [
 					Label(
 						artist: "POOLSIDE",
@@ -4207,7 +4306,7 @@ public let RadioStations: [RadioStation] = [
 			//DONT_COME_CLOSE
 			Song(
 				file: "DONT_COME_CLOSE",
-				root: "RADIO_16_SILVERLAKE/dont_come_close/",
+				root: "dont_come_close",
 				labels: [
 					Label(
 						artist: "YEASAYER",
@@ -4240,7 +4339,7 @@ public let RadioStations: [RadioStation] = [
 			//FEEL_THE_SAME
 			Song(
 				file: "FEEL_THE_SAME",
-				root: "RADIO_16_SILVERLAKE/feel_the_same/",
+				root: "feel_the_same",
 				labels: [
 					Label(
 						artist: "BATTLE TAPES",
@@ -4265,7 +4364,7 @@ public let RadioStations: [RadioStation] = [
 			//FLUTES
 			Song(
 				file: "FLUTES",
-				root: "RADIO_16_SILVERLAKE/flutes/",
+				root: "flutes",
 				labels: [
 					Label(
 						artist: "HOT CHIP",
@@ -4281,7 +4380,7 @@ public let RadioStations: [RadioStation] = [
 			//FORGET
 			Song(
 				file: "FORGET",
-				root: "RADIO_16_SILVERLAKE/forget/",
+				root: "forget",
 				labels: [
 					Label(
 						artist: "TWIN SHADOW",
@@ -4306,7 +4405,7 @@ public let RadioStations: [RadioStation] = [
 			//FROM_NOWHERE
 			Song(
 				file: "FROM_NOWHERE",
-				root: "RADIO_16_SILVERLAKE/from_nowhere/",
+				root: "from_nowhere",
 				labels: [
 					Label(
 						artist: "DAN CROLL",
@@ -4331,7 +4430,7 @@ public let RadioStations: [RadioStation] = [
 			//HEART_IN_THE_PIPES
 			Song(
 				file: "HEART_IN_THE_PIPES",
-				root: "RADIO_16_SILVERLAKE/heart_in_the_pipes/",
+				root: "heart_in_the_pipes",
 				labels: [
 					Label(
 						artist: "TONY CASTLES",
@@ -4356,7 +4455,7 @@ public let RadioStations: [RadioStation] = [
 			//HEARTBREAK
 			Song(
 				file: "HEARTBREAK",
-				root: "RADIO_16_SILVERLAKE/heartbreak/",
+				root: "heartbreak",
 				labels: [
 					Label(
 						artist: "AGE OF CONSENT",
@@ -4372,7 +4471,7 @@ public let RadioStations: [RadioStation] = [
 			//HIGH_PRESSURE
 			Song(
 				file: "HIGH_PRESSURE",
-				root: "RADIO_16_SILVERLAKE/high_pressure/",
+				root: "high_pressure",
 				labels: [
 					Label(
 						artist: "HEALTH",
@@ -4388,7 +4487,7 @@ public let RadioStations: [RadioStation] = [
 			//HOLD_ON_HOLY_GHOST
 			Song(
 				file: "HOLD_ON_HOLY_GHOST",
-				root: "RADIO_16_SILVERLAKE/hold_on_holy_ghost/",
+				root: "hold_on_holy_ghost",
 				labels: [
 					Label(
 						artist: "HOLLY GHOST!",
@@ -4413,7 +4512,7 @@ public let RadioStations: [RadioStation] = [
 			//IN_REAL_LIFE
 			Song(
 				file: "IN_REAL_LIFE",
-				root: "RADIO_16_SILVERLAKE/in_real_life/",
+				root: "in_real_life",
 				labels: [
 					Label(
 						artist: "THE RUBY SUNS",
@@ -4438,7 +4537,7 @@ public let RadioStations: [RadioStation] = [
 			//JASMINE
 			Song(
 				file: "JASMINE",
-				root: "RADIO_16_SILVERLAKE/jasmine/",
+				root: "jasmine",
 				labels: [
 					Label(
 						artist: "JAI PAUL",
@@ -4463,7 +4562,7 @@ public let RadioStations: [RadioStation] = [
 			//LITTLE_WHITE_LIE
 			Song(
 				file: "LITTLE_WHITE_LIE",
-				root: "RADIO_16_SILVERLAKE/little_white_lie/",
+				root: "little_white_lie",
 				labels: [
 					Label(
 						artist: "LIVING DAYS",
@@ -4488,7 +4587,7 @@ public let RadioStations: [RadioStation] = [
 			//LIVING_IN_AMERICA
 			Song(
 				file: "LIVING_IN_AMERICA",
-				root: "RADIO_16_SILVERLAKE/living_in_america/",
+				root: "living_in_america",
 				labels: [
 					Label(
 						artist: "DOM",
@@ -4513,7 +4612,7 @@ public let RadioStations: [RadioStation] = [
 			//LUCKY_BOY
 			Song(
 				file: "LUCKY_BOY",
-				root: "RADIO_16_SILVERLAKE/lucky_boy/",
+				root: "lucky_boy",
 				labels: [
 					Label(
 						artist: "DJ MEHDI",
@@ -4538,7 +4637,7 @@ public let RadioStations: [RadioStation] = [
 			//MESMERIZED
 			Song(
 				file: "MESMERIZED",
-				root: "RADIO_16_SILVERLAKE/mesmerized/",
+				root: "mesmerized",
 				labels: [
 					Label(
 						artist: "SCENIC",
@@ -4554,7 +4653,7 @@ public let RadioStations: [RadioStation] = [
 			//NEW_BEAT
 			Song(
 				file: "NEW_BEAT",
-				root: "RADIO_16_SILVERLAKE/new_beat/",
+				root: "new_beat",
 				labels: [
 					Label(
 						artist: "TORO Y MOI",
@@ -4579,7 +4678,7 @@ public let RadioStations: [RadioStation] = [
 			//NOWHERE_TO_GO
 			Song(
 				file: "NOWHERE_TO_GO",
-				root: "RADIO_16_SILVERLAKE/nowhere_to_go/",
+				root: "nowhere_to_go",
 				labels: [
 					Label(
 						artist: "NITE JEWEL",
@@ -4604,7 +4703,7 @@ public let RadioStations: [RadioStation] = [
 			//O_N_E
 			Song(
 				file: "O_N_E",
-				root: "RADIO_16_SILVERLAKE/o_n_e/",
+				root: "o_n_e",
 				labels: [
 					Label(
 						artist: "YEASAYER",
@@ -4620,7 +4719,7 @@ public let RadioStations: [RadioStation] = [
 			//OLD_LOVE
 			Song(
 				file: "OLD_LOVE",
-				root: "RADIO_16_SILVERLAKE/old_love/",
+				root: "old_love",
 				labels: [
 					Label(
 						artist: "TWIN SHADOW",
@@ -4641,7 +4740,7 @@ public let RadioStations: [RadioStation] = [
 			//ONE_GIRL_ONE_BOY
 			Song(
 				file: "ONE_GIRL_ONE_BOY",
-				root: "RADIO_16_SILVERLAKE/one_girl_one_boy/",
+				root: "one_girl_one_boy",
 				labels: [
 					Label(
 						artist: "!!!",
@@ -4666,7 +4765,7 @@ public let RadioStations: [RadioStation] = [
 			//PHARAOHS
 			Song(
 				file: "PHARAOHS",
-				root: "RADIO_16_SILVERLAKE/pharaohs/",
+				root: "pharaohs",
 				labels: [
 					Label(
 						artist: "SBTRKT",
@@ -4691,7 +4790,7 @@ public let RadioStations: [RadioStation] = [
 			//POLISH_GIRL
 			Song(
 				file: "POLISH_GIRL",
-				root: "RADIO_16_SILVERLAKE/polish_girl/",
+				root: "polish_girl",
 				labels: [
 					Label(
 						artist: "NEON INDIAN",
@@ -4716,7 +4815,7 @@ public let RadioStations: [RadioStation] = [
 			//PSYCHIC_CITY
 			Song(
 				file: "PSYCHIC_CITY",
-				root: "RADIO_16_SILVERLAKE/psychic_city/",
+				root: "psychic_city",
 				labels: [
 					Label(
 						artist: "YACHT",
@@ -4741,7 +4840,7 @@ public let RadioStations: [RadioStation] = [
 			//SHINE_A_LIGHT
 			Song(
 				file: "SHINE_A_LIGHT",
-				root: "RADIO_16_SILVERLAKE/shine_a_light/",
+				root: "shine_a_light",
 				labels: [
 					Label(
 						artist: "THE C90S",
@@ -4766,7 +4865,7 @@ public let RadioStations: [RadioStation] = [
 			//SHOOTING_HOLES
 			Song(
 				file: "SHOOTING_HOLES",
-				root: "RADIO_16_SILVERLAKE/shooting_holes/",
+				root: "shooting_holes",
 				labels: [
 					Label(
 						artist: "TWIN SHADOW",
@@ -4791,7 +4890,7 @@ public let RadioStations: [RadioStation] = [
 			//SLEEPWALKING
 			Song(
 				file: "SLEEPWALKING",
-				root: "RADIO_16_SILVERLAKE/sleepwalking/",
+				root: "sleepwalking",
 				labels: [
 					Label(
 						artist: "THE CHAIN GANG OF 1974",
@@ -4816,7 +4915,7 @@ public let RadioStations: [RadioStation] = [
 			//SO_MANY_DETAILS
 			Song(
 				file: "SO_MANY_DETAILS",
-				root: "RADIO_16_SILVERLAKE/so_many_details/",
+				root: "so_many_details",
 				labels: [
 					Label(
 						artist: "TORO Y MOI",
@@ -4841,7 +4940,7 @@ public let RadioStations: [RadioStation] = [
 			//SOMETIMES
 			Song(
 				file: "SOMETIMES",
-				root: "RADIO_16_SILVERLAKE/sometimes/",
+				root: "sometimes",
 				labels: [
 					Label(
 						artist: "MIAMI HORROR",
@@ -4866,7 +4965,7 @@ public let RadioStations: [RadioStation] = [
 			//STRANGERS_IN_THE_WIND
 			Song(
 				file: "STRANGERS_IN_THE_WIND",
-				root: "RADIO_16_SILVERLAKE/strangers_in_the_wind/",
+				root: "strangers_in_the_wind",
 				labels: [
 					Label(
 						artist: "CUT COPY",
@@ -4882,7 +4981,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_DRUMMER
 			Song(
 				file: "THE_DRUMMER",
-				root: "RADIO_16_SILVERLAKE/the_drummer/",
+				root: "the_drummer",
 				labels: [
 					Label(
 						artist: "NIKI & THE DOVE",
@@ -4907,7 +5006,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_SET_UP
 			Song(
 				file: "THE_SET_UP",
-				root: "RADIO_16_SILVERLAKE/the_set_up/",
+				root: "the_set_up",
 				labels: [
 					Label(
 						artist: "FAVORED NATIONS",
@@ -4923,7 +5022,7 @@ public let RadioStations: [RadioStation] = [
 			//TRULY_ALIVE
 			Song(
 				file: "TRULY_ALIVE",
-				root: "RADIO_16_SILVERLAKE/truly_alive/",
+				root: "truly_alive",
 				labels: [
 					Label(
 						artist: "MITZI",
@@ -4948,7 +5047,7 @@ public let RadioStations: [RadioStation] = [
 			//WHEN_YOURE_OUT
 			Song(
 				file: "WHEN_YOURE_OUT",
-				root: "RADIO_16_SILVERLAKE/when_youre_out/",
+				root: "when_youre_out",
 				labels: [
 					Label(
 						artist: "KAUF",
@@ -5027,86 +5126,27 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "random",
-		root: "dlc_hei4_music",
+		root: Root(
+			station: "dlc_hei4_music",
+			song: "dlc_hei4_music",
+			intro: ((kultDJSongIntro ? "dlc_hei4_music" : "dlc_hei4") + "/intro"),
+			general: "dlc_hei4/general",
+			identity: "dlc_hei4_music",
+			solo: "dlc_hei4_music",
+			time: "dlc_hei4/time",
+			to: nil,
+			ad: "dlc_hei4_music",
+			news: nil
+		),
 		songs: [
-			//GOING_BACK_TO_CALI
-			Song(
-				file: "GOING_BACK_TO_CALI",
-				root: "dlc_hei4_music/going_back_to_cali/",
-				labels: [
-					Label(
-						artist: "LL_Cool_J",
-						title: "Going_Back_to_Cali",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [],
-				intros_root: nil,
-				frequency: 100.0
-			),
-			//SO_IT_GOES
-			Song(
-				file: "SO_IT_GOES",
-				root: "dlc_hei4_music/so_it_goes/",
-				labels: [
-					Label(
-						artist: "NICK_LOWE",
-						title: "SO_IT_GOES",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SO_IT_GOES_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SO_IT_GOES_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//TOO_MUCH_MONEY
-			Song(
-				file: "TOO_MUCH_MONEY",
-				root: "dlc_hei4_music/too_much_money/",
-				labels: [
-					Label(
-						artist: "AUTOMATIC",
-						title: "TOO_MUCH_MONEY",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TOO_MUCH_MONEY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TOO_MUCH_MONEY_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "TOO_MUCH_MONEY_03",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
 			//AGE_OF_CONSENT
 			Song(
 				file: "AGE_OF_CONSENT",
-				root: "dlc_hei4_music/age_of_consent/",
+				root: "age_of_consent",
 				labels: [
 					Label(
-						artist: "NEW_ORDER",
-						title: "AGE_OF_CONSENT",
+						artist: "NEW ORDER",
+						title: "Age Of Consent",
 						time: 0.0
 					)
 				],
@@ -5124,395 +5164,25 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro",
 				frequency: 100.0
 			),
-			//EISBAR
+			//ALIEN_CRIME_LORD
 			Song(
-				file: "EISBAR",
-				root: "dlc_hei4_music/eisbar/",
+				file: "ALIEN_CRIME_LORD",
+				root: "alien_crime_lord",
 				labels: [
 					Label(
-						artist: "GRAUZONE",
-						title: "EISBAR",
+						artist: "THE VOIDZ",
+						title: "Alien Crime Lord",
 						time: 0.0
 					)
 				],
 				set: nil,
 				intros: [
 					Intro(
-						file: "EISBAR_01",
+						file: "ALIEN_CRIME_LORD_01",
 						delay: 8.0
 					),
 					Intro(
-						file: "EISBAR_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//SHES_LOST_CONTROL
-			Song(
-				file: "SHES_LOST_CONTROL",
-				root: "dlc_hei4_music/shes_lost_control/",
-				labels: [
-					Label(
-						artist: "JOY_DIVISION",
-						title: "SHES_LOST_CONTROL",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "SHES_LOST_CONTROL_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "SHES_LOST_CONTROL_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//MANY_TEARS_AGO
-			Song(
-				file: "MANY_TEARS_AGO",
-				root: "dlc_hei4_music/many_tears_ago/",
-				labels: [
-					Label(
-						artist: "CONNIE_FRANCIS",
-						title: "MANY_TEARS_AGO",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "MANY_TEARS_AGO_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "MANY_TEARS_AGO_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "MANY_TEARS_AGO_03",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//DRAB_MEASURE
-			Song(
-				file: "DRAB_MEASURE",
-				root: "dlc_hei4_music/drab_measure/",
-				labels: [
-					Label(
-						artist: "CRACK_CLOUD",
-						title: "DRAB_MEASURE",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DRAB_MEASURE_01",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//THE_ADULTS_ARE_TALKING
-			Song(
-				file: "THE_ADULTS_ARE_TALKING",
-				root: "dlc_hei4_music/the_adults_are_talking/",
-				labels: [
-					Label(
-						artist: "THE_STROKES",
-						title: "THE_ADULTS_ARE_TALKING",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "THE_ADULTS_ARE_TALKING_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "THE_ADULTS_ARE_TALKING_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//TV_CASUALTY
-			Song(
-				file: "TV_CASUALTY",
-				root: "dlc_hei4_music/tv_casualty/",
-				labels: [
-					Label(
-						artist: "MISFITS",
-						title: "TV_CASUALTY",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TV_CASUALTY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TV_CASUALTY_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "TV_CASUALTY_03",
-						delay: 8.0
-					),
-					Intro(
-						file: "TV_CASUALTY_04",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//DEEP
-			Song(
-				file: "DEEP",
-				root: "dlc_hei4_music/deep/",
-				labels: [
-					Label(
-						artist: "DANZIG",
-						title: "DEEP",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "DEEP_01",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//LIEBE_AUF_DEN_ERSTEN_BLICK
-			Song(
-				file: "LIEBE_AUF_DEN_ERSTEN_BLICK",
-				root: "dlc_hei4_music/liebe_auf_den_ersten_blick/",
-				labels: [
-					Label(
-						artist: "DAF",
-						title: "LIEBE_AUF_DEN_ERSTEN_BLICK",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LIEBE_AUF_DEN_ERSTEN_BLICK_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LIEBE_AUF_DEN_ERSTEN_BLICK_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//FACELESS
-			Song(
-				file: "FACELESS",
-				root: "dlc_hei4_music/faceless/",
-				labels: [
-					Label(
-						artist: "A_CERTAIN_RATIO",
-						title: "FACELESS",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "FACELESS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "FACELESS_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "FACELESS_03",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//TAINTED_LOVE
-			Song(
-				file: "TAINTED_LOVE",
-				root: "dlc_hei4_music/tainted_love/",
-				labels: [
-					Label(
-						artist: "GLORIA_JONES",
-						title: "TAINTED_LOVE",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TAINTED_LOVE_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TAINTED_LOVE_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//GIRLS_AND_BOYS
-			Song(
-				file: "GIRLS_AND_BOYS",
-				root: "dlc_hei4_music/girls_and_boys/",
-				labels: [
-					Label(
-						artist: "VIAGRA_BOYS",
-						title: "GIRLS_AND_BOYS",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "GIRLS_AND_BOYS_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "GIRLS_AND_BOYS_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//TIME_BOMB
-			Song(
-				file: "TIME_BOMB",
-				root: "dlc_hei4_music/time_bomb/",
-				labels: [
-					Label(
-						artist: "RAMONES",
-						title: "TIME_BOMB",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "TIME_BOMB_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "TIME_BOMB_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//LFT_ME_LONELY
-			Song(
-				file: "LFT_ME_LONELY",
-				root: "dlc_hei4_music/lft_me_lonely/",
-				labels: [
-					Label(
-						artist: "MC_SHAN_FEAT__TJ_SWAN",
-						title: "LFT_ME_LONELY",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "LFT_ME_LONELY_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "LFT_ME_LONELY_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//WHERE_NO_EAGLES_FLY
-			Song(
-				file: "WHERE_NO_EAGLES_FLY",
-				root: "dlc_hei4_music/where_no_eagles_fly/",
-				labels: [
-					Label(
-						artist: "THE_VOIDZ",
-						title: "WHERE_NO_EAGLES_FLY",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [],
-				intros_root: nil,
-				frequency: 100.0
-			),
-			//ROCK_AND_ROLL
-			Song(
-				file: "ROCK_AND_ROLL",
-				root: "dlc_hei4_music/rock_and_roll/",
-				labels: [
-					Label(
-						artist: "THE_VELVET_UNDERGROUND",
-						title: "ROCK_AND_ROLL",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ROCK_AND_ROLL_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ROCK_AND_ROLL_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//HUMAN_FLY
-			Song(
-				file: "HUMAN_FLY",
-				root: "dlc_hei4_music/human_fly/",
-				labels: [
-					Label(
-						artist: "THE_CRAMPS",
-						title: "HUMAN_FLY",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "HUMAN_FLY_01",
+						file: "ALIEN_CRIME_LORD_02",
 						delay: 8.0
 					)
 				],
@@ -5522,11 +5192,11 @@ public let RadioStations: [RadioStation] = [
 			//BABY_I_LOVE_YOU_SO
 			Song(
 				file: "BABY_I_LOVE_YOU_SO",
-				root: "dlc_hei4_music/baby_i_love_you_so/",
+				root: "baby_i_love_you_so",
 				labels: [
 					Label(
 						artist: "COLOURBOX",
-						title: "BABY_I_LOVE_YOU_SO",
+						title: "Baby I Love You So",
 						time: 0.0
 					)
 				],
@@ -5552,14 +5222,60 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro",
 				frequency: 100.0
 			),
+			//CYCLE
+			Song(
+				file: "CYCLE",
+				root: "cycle",
+				labels: [
+					Label(
+						artist: "ICKY BLOSSOMS",
+						title: "Cycle",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "CYCLE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "CYCLE_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//DEEP
+			Song(
+				file: "DEEP",
+				root: "deep",
+				labels: [
+					Label(
+						artist: "DANZIG",
+						title: "Deep",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DEEP_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
 			//DOWN_ON_THE_STREET
 			Song(
 				file: "DOWN_ON_THE_STREET",
-				root: "dlc_hei4_music/down_on_the_street/",
+				root: "down_on_the_street",
 				labels: [
 					Label(
-						artist: "THE_STOOGES",
-						title: "DOWN_ON_THE_STREET",
+						artist: "THE STOOGES",
+						title: "Down On The Street",
 						time: 0.0
 					)
 				],
@@ -5573,14 +5289,205 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro",
 				frequency: 100.0
 			),
+			//DRAB_MEASURE
+			Song(
+				file: "DRAB_MEASURE",
+				root: "drab_measure",
+				labels: [
+					Label(
+						artist: "CRACK CLOUD",
+						title: "Drab Measure",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "DRAB_MEASURE_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//EISBAR
+			Song(
+				file: "EISBAR",
+				root: "eisbar",
+				labels: [
+					Label(
+						artist: "GRAUZONE",
+						title: "Eisbar",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "EISBAR_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "EISBAR_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//FACELESS
+			Song(
+				file: "FACELESS",
+				root: "faceless",
+				labels: [
+					Label(
+						artist: "A CERTAIN RATIO",
+						title: "Faceless",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FACELESS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FACELESS_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "FACELESS_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//FOUR_SHADOWS
+			Song(
+				file: "FOUR_SHADOWS",
+				root: "four_shadows",
+				labels: [
+					Label(
+						artist: "ARIEL PINK",
+						title: "Four Shadows",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "FOUR_SHADOWS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "FOUR_SHADOWS_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "FOUR_SHADOWS_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//GIRLS_AND_BOYS
+			Song(
+				file: "GIRLS_AND_BOYS",
+				root: "girls_and_boys",
+				labels: [
+					Label(
+						artist: "VIAGRA BOYS",
+						title: "Girls & Boys",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "GIRLS_AND_BOYS_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "GIRLS_AND_BOYS_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//GOING_BACK_TO_CALI
+			Song(
+				file: "GOING_BACK_TO_CALI",
+				root: "going_back_to_cali",
+				labels: [
+					Label(
+						artist: "LL Cool J",
+						title: "Going Back To Cali",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [],
+				intros_root: nil,
+				frequency: 100.0
+			),
+			//HARD_TO_EXPLAIN
+			Song(
+				file: "HARD_TO_EXPLAIN",
+				root: "hard_to_explain",
+				labels: [
+					Label(
+						artist: "THE STROKES",
+						title: "Hard To Explain",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HARD_TO_EXPLAIN_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "HARD_TO_EXPLAIN_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//HUMAN_FLY
+			Song(
+				file: "HUMAN_FLY",
+				root: "human_fly",
+				labels: [
+					Label(
+						artist: "THE CRAMPS",
+						title: "Human Fly",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "HUMAN_FLY_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
 			//ITS_YOURS
 			Song(
 				file: "ITS_YOURS",
-				root: "dlc_hei4_music/its_yours/",
+				root: "its_yours",
 				labels: [
 					Label(
-						artist: "T_LA_ROCK",
-						title: "ITS_YOURS",
+						artist: "T LA ROCK",
+						title: "It's Yours",
 						time: 0.0
 					)
 				],
@@ -5598,14 +5505,114 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro",
 				frequency: 100.0
 			),
+			//LFT_ME_LONELY
+			Song(
+				file: "LFT_ME_LONELY",
+				root: "lft_me_lonely",
+				labels: [
+					Label(
+						artist: "MC SHAN FEAT. TJ SWAN",
+						title: "Left Me Lonely",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LFT_ME_LONELY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LFT_ME_LONELY_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//LIEBE_AUF_DEN_ERSTEN_BLICK
+			Song(
+				file: "LIEBE_AUF_DEN_ERSTEN_BLICK",
+				root: "liebe_auf_den_ersten_blick",
+				labels: [
+					Label(
+						artist: "DAF",
+						title: "Liebe Auf Den Ersten Blick",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "LIEBE_AUF_DEN_ERSTEN_BLICK_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "LIEBE_AUF_DEN_ERSTEN_BLICK_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//MANY_TEARS_AGO
+			Song(
+				file: "MANY_TEARS_AGO",
+				root: "many_tears_ago",
+				labels: [
+					Label(
+						artist: "CONNIE FRANCIS",
+						title: "Many Tears Ago",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "MANY_TEARS_AGO_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MANY_TEARS_AGO_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "MANY_TEARS_AGO_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//NIGHTCLUBBING
+			Song(
+				file: "NIGHTCLUBBING",
+				root: "nightclubbing",
+				labels: [
+					Label(
+						artist: "IGGY POP",
+						title: "Nightclubbing",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "NIGHTCLUBBING_01",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
 			//ON_THE_LEVEL
 			Song(
 				file: "ON_THE_LEVEL",
-				root: "dlc_hei4_music/on_the_level/",
+				root: "on_the_level",
 				labels: [
 					Label(
-						artist: "MAC_DEMARCO",
-						title: "ON_THE_LEVEL",
+						artist: "MAC DEMARCO",
+						title: "On The Level",
 						time: 0.0
 					)
 				],
@@ -5619,14 +5626,39 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro",
 				frequency: 100.0
 			),
+			//POOL_SONG
+			Song(
+				file: "POOL_SONG",
+				root: "pool_song",
+				labels: [
+					Label(
+						artist: "LEA PORCELAIN",
+						title: "Pool Song",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "POOL_SONG_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "POOL_SONG_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
 			//RAGA_MADHUVANTI
 			Song(
 				file: "RAGA_MADHUVANTI",
-				root: "dlc_hei4_music/raga_madhuvanti/",
+				root: "raga_madhuvanti",
 				labels: [
 					Label(
-						artist: "CHARANJIT_SINGH",
-						title: "RAGA_MADHUVANTI",
+						artist: "CHARANJIT SINGH",
+						title: "Raga Madhuvanti",
 						time: 0.0
 					)
 				],
@@ -5652,54 +5684,100 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro",
 				frequency: 100.0
 			),
-			//FOUR_SHADOWS
+			//ROCK_AND_ROLL
 			Song(
-				file: "FOUR_SHADOWS",
-				root: "dlc_hei4_music/four_shadows/",
+				file: "ROCK_AND_ROLL",
+				root: "rock_and_roll",
 				labels: [
 					Label(
-						artist: "ARIEL_PINK",
-						title: "FOUR_SHADOWS",
+						artist: "THE VELVET UNDERGROUND",
+						title: "Rock And Roll",
 						time: 0.0
 					)
 				],
 				set: nil,
 				intros: [
 					Intro(
-						file: "FOUR_SHADOWS_01",
+						file: "ROCK_AND_ROLL_01",
 						delay: 8.0
 					),
 					Intro(
-						file: "FOUR_SHADOWS_02",
-						delay: 8.0
-					),
-					Intro(
-						file: "FOUR_SHADOWS_03",
+						file: "ROCK_AND_ROLL_02",
 						delay: 8.0
 					)
 				],
 				intros_root: "intro",
 				frequency: 100.0
 			),
-			//POOL_SONG
+			//SHES_LOST_CONTROL
 			Song(
-				file: "POOL_SONG",
-				root: "dlc_hei4_music/pool_song/",
+				file: "SHES_LOST_CONTROL",
+				root: "shes_lost_control",
 				labels: [
 					Label(
-						artist: "LEA_PORCELAIN",
-						title: "POOL_SONG",
+						artist: "JOY DIVISION",
+						title: "She's Lost Control",
 						time: 0.0
 					)
 				],
 				set: nil,
 				intros: [
 					Intro(
-						file: "POOL_SONG_01",
+						file: "SHES_LOST_CONTROL_01",
 						delay: 8.0
 					),
 					Intro(
-						file: "POOL_SONG_02",
+						file: "SHES_LOST_CONTROL_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//SO_IT_GOES
+			Song(
+				file: "SO_IT_GOES",
+				root: "so_it_goes",
+				labels: [
+					Label(
+						artist: "NICK LOWE",
+						title: "So It Goes",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "SO_IT_GOES_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "SO_IT_GOES_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TAINTED_LOVE
+			Song(
+				file: "TAINTED_LOVE",
+				root: "tainted_love",
+				labels: [
+					Label(
+						artist: "GLORIA JONES",
+						title: "Tainted Love",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TAINTED_LOVE_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TAINTED_LOVE_02",
 						delay: 8.0
 					)
 				],
@@ -5709,11 +5787,11 @@ public let RadioStations: [RadioStation] = [
 			//TAKE_DOWN_THE_HOUSE
 			Song(
 				file: "TAKE_DOWN_THE_HOUSE",
-				root: "dlc_hei4_music/take_down_the_house/",
+				root: "take_down_the_house",
 				labels: [
 					Label(
 						artist: "PROMISELAND",
-						title: "TAKE_DOWN_THE_HOUSE",
+						title: "Take Down The House",
 						time: 0.0
 					)
 				],
@@ -5731,71 +5809,25 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro",
 				frequency: 100.0
 			),
-			//HARD_TO_EXPLAIN
+			//THE_ADULTS_ARE_TALKING
 			Song(
-				file: "HARD_TO_EXPLAIN",
-				root: "dlc_hei4_music/hard_to_explain/",
+				file: "THE_ADULTS_ARE_TALKING",
+				root: "the_adults_are_talking",
 				labels: [
 					Label(
-						artist: "THE_STROKES",
-						title: "HARD_TO_EXPLAIN",
+						artist: "THE STROKES",
+						title: "The Adults Are Talking",
 						time: 0.0
 					)
 				],
 				set: nil,
 				intros: [
 					Intro(
-						file: "HARD_TO_EXPLAIN_01",
+						file: "THE_ADULTS_ARE_TALKING_01",
 						delay: 8.0
 					),
 					Intro(
-						file: "HARD_TO_EXPLAIN_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//ALIEN_CRIME_LORD
-			Song(
-				file: "ALIEN_CRIME_LORD",
-				root: "dlc_hei4_music/alien_crime_lord/",
-				labels: [
-					Label(
-						artist: "THE_VOIDZ",
-						title: "ALIEN_CRIME_LORD",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "ALIEN_CRIME_LORD_01",
-						delay: 8.0
-					),
-					Intro(
-						file: "ALIEN_CRIME_LORD_02",
-						delay: 8.0
-					)
-				],
-				intros_root: "intro",
-				frequency: 100.0
-			),
-			//NIGHTCLUBBING
-			Song(
-				file: "NIGHTCLUBBING",
-				root: "dlc_hei4_music/nightclubbing/",
-				labels: [
-					Label(
-						artist: "IGGY_POP",
-						title: "NIGHTCLUBBING",
-						time: 0.0
-					)
-				],
-				set: nil,
-				intros: [
-					Intro(
-						file: "NIGHTCLUBBING_01",
+						file: "THE_ADULTS_ARE_TALKING_02",
 						delay: 8.0
 					)
 				],
@@ -5805,11 +5837,11 @@ public let RadioStations: [RadioStation] = [
 			//THIS_IS_THE_DAY
 			Song(
 				file: "THIS_IS_THE_DAY",
-				root: "dlc_hei4_music/this_is_the_day/",
+				root: "this_is_the_day",
 				labels: [
 					Label(
-						artist: "THE_THE",
-						title: "THIS_IS_THE_DAY",
+						artist: "THE THE",
+						title: "This Is The Day",
 						time: 0.0
 					)
 				],
@@ -5827,25 +5859,87 @@ public let RadioStations: [RadioStation] = [
 				intros_root: "intro",
 				frequency: 100.0
 			),
-			//CYCLE
+			//TIME_BOMB
 			Song(
-				file: "CYCLE",
-				root: "dlc_hei4_music/cycle/",
+				file: "TIME_BOMB",
+				root: "time_bomb",
 				labels: [
 					Label(
-						artist: "ARTIST",
-						title: "TITLE",
+						artist: "RAMONES",
+						title: "Time Bomb",
 						time: 0.0
 					)
 				],
 				set: nil,
 				intros: [
 					Intro(
-						file: "CYCLE_01",
+						file: "TIME_BOMB_01",
 						delay: 8.0
 					),
 					Intro(
-						file: "CYCLE_02",
+						file: "TIME_BOMB_02",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TOO_MUCH_MONEY
+			Song(
+				file: "TOO_MUCH_MONEY",
+				root: "too_much_money",
+				labels: [
+					Label(
+						artist: "AUTOMATIC",
+						title: "Too Much Money",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TOO_MUCH_MONEY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TOO_MUCH_MONEY_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "TOO_MUCH_MONEY_03",
+						delay: 8.0
+					)
+				],
+				intros_root: "intro",
+				frequency: 100.0
+			),
+			//TV_CASUALTY
+			Song(
+				file: "TV_CASUALTY",
+				root: "tv_casualty",
+				labels: [
+					Label(
+						artist: "MISFITS",
+						title: "TV Casualty",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: [
+					Intro(
+						file: "TV_CASUALTY_01",
+						delay: 8.0
+					),
+					Intro(
+						file: "TV_CASUALTY_02",
+						delay: 8.0
+					),
+					Intro(
+						file: "TV_CASUALTY_03",
+						delay: 8.0
+					),
+					Intro(
+						file: "TV_CASUALTY_04",
 						delay: 8.0
 					)
 				],
@@ -5855,11 +5949,11 @@ public let RadioStations: [RadioStation] = [
 			//TYPICAL_GIRLS
 			Song(
 				file: "TYPICAL_GIRLS",
-				root: "dlc_hei4_music/typical_girls/",
+				root: "typical_girls",
 				labels: [
 					Label(
-						artist: "THE_SLITS",
-						title: "TYPICAL_GIRLS",
+						artist: "THE SLITS",
+						title: "Typical Girls",
 						time: 0.0
 					)
 				],
@@ -5876,9 +5970,29 @@ public let RadioStations: [RadioStation] = [
 				],
 				intros_root: "intro",
 				frequency: 100.0
+			),
+			//WHERE_NO_EAGLES_FLY
+			Song(
+				file: "WHERE_NO_EAGLES_FLY",
+				root: "where_no_eagles_fly",
+				labels: [
+					Label(
+						artist: "THE VOIDZ",
+						title: "Where No Eagles Fly",
+						time: 0.0
+					)
+				],
+				set: nil,
+				intros: kultDJSongIntro ? [] : [Intro(file: "WHERE_NO_EAGLES_FLY_01", delay: 8.0)],
+				intros_root: nil,
+				frequency: 100.0
 			)
 		],
-		general: nil,
+		general: General(
+			root: "general",
+			prefix: "GENERAL_",
+			list: ["01","02","03","04","05","06","07","08","09","10","11"]
+		),
 		identity: [
 			Identity(root: "id_01", list: ["ID_01"]),
 			Identity(root: "id_02", list: ["ID_02"]),
@@ -5924,8 +6038,8 @@ public let RadioStations: [RadioStation] = [
 			Solo(root: "djsolo_04", list: ["MONO_SOLO_04"])
 		],
 		time: [
-			"EVENING": [],
-			"MORNING": []
+			"EVENING": ["01","02","03","04"],
+			"MORNING": ["01","02","03","04"]
 		],
 		to: [
 			"AD": [],
@@ -5936,7 +6050,7 @@ public let RadioStations: [RadioStation] = [
 	// MARK: Space 103.2
 	RadioStation(
 		index: 12,
-		number: 17, /*18*/
+		number: 17,
 		name: "Space 103.2",
 		image: ImageData(
 			name: "gta_radio_stations_texture02_512",
@@ -5944,12 +6058,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "random",
-		root: "RADIO_17_FUNK",
+		root: Root(
+			station: "RADIO_17_FUNK",
+			song: "RADIO_17_FUNK",
+			intro: "RADIO_17_FUNK/intro",
+			general: "RADIO_17_FUNK/general",
+			identity: "RADIO_17_FUNK",
+			solo: "RADIO_17_FUNK",
+			time: "RADIO_17_FUNK",
+			to: "RADIO_17_FUNK",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//BACK_AND_FORTH
 			Song(
 				file: "BACK_AND_FORTH",
-				root: "RADIO_17_FUNK/back_and_forth/",
+				root: "back_and_forth",
 				labels: [
 					Label(
 						artist: "CAMEO",
@@ -5974,7 +6099,7 @@ public let RadioStations: [RadioStation] = [
 			//CANT_HOLD_BACK*
 			/*Song(
 				file: "CANT_HOLD_BACK",
-				root: "RADIO_17_FUNK/cant_hold_back/",
+				root: "cant_hold_back",
 				labels: [
 					Label(
 						artist: "KANO",
@@ -5999,7 +6124,7 @@ public let RadioStations: [RadioStation] = [
 			//CUTIE_PIE
 			Song(
 				file: "CUTIE_PIE",
-				root: "RADIO_17_FUNK/cutie_pie/",
+				root: "cutie_pie",
 				labels: [
 					Label(
 						artist: "ONE WAY",
@@ -6024,7 +6149,7 @@ public let RadioStations: [RadioStation] = [
 			//DO_IT_ROGER
 			Song(
 				file: "DO_IT_ROGER",
-				root: "RADIO_17_FUNK/do_it_roger/",
+				root: "do_it_roger",
 				labels: [
 					Label(
 						artist: "ZAPP & ROGER",
@@ -6049,7 +6174,7 @@ public let RadioStations: [RadioStation] = [
 			//FLASHBACK
 			Song(
 				file: "FLASHBACK",
-				root: "RADIO_17_FUNK/flashback/",
+				root: "flashback",
 				labels: [
 					Label(
 						artist: "IMAGINATION",
@@ -6065,7 +6190,7 @@ public let RadioStations: [RadioStation] = [
 			//FLASHLIGHT
 			Song(
 				file: "FLASHLIGHT",
-				root: "RADIO_17_FUNK/flashlight/",
+				root: "flashlight",
 				labels: [
 					Label(
 						artist: "PARLIAMENT",
@@ -6081,7 +6206,7 @@ public let RadioStations: [RadioStation] = [
 			//FUNKASIZE_YOU
 			Song(
 				file: "FUNKASIZE_YOU",
-				root: "RADIO_17_FUNK/funkasize_you/",
+				root: "funkasize_you",
 				labels: [
 					Label(
 						artist: "SHO-NUFF",
@@ -6097,7 +6222,7 @@ public let RadioStations: [RadioStation] = [
 			//GIVE_IT_TO_ME_BABY
 			Song(
 				file: "GIVE_IT_TO_ME_BABY",
-				root: "RADIO_17_FUNK/give_it_to_me_baby/",
+				root: "give_it_to_me_baby",
 				labels: [
 					Label(
 						artist: "RICK JAMES",
@@ -6122,7 +6247,7 @@ public let RadioStations: [RadioStation] = [
 			//GOTTA_GET_MY_HANDS_ON_SOME_MONEY
 			Song(
 				file: "GOTTA_GET_MY_HANDS_ON_SOME_MONEY",
-				root: "RADIO_17_FUNK/gotta_get_my_hands_on_some_money/",
+				root: "gotta_get_my_hands_on_some_money",
 				labels: [
 					Label(
 						artist: "FATBACK BAND",
@@ -6147,7 +6272,7 @@ public let RadioStations: [RadioStation] = [
 			//HABOGLABOTRIBIN
 			Song(
 				file: "HABOGLABOTRIBIN",
-				root: "RADIO_17_FUNK/haboglabotribin/",
+				root: "haboglabotribin",
 				labels: [
 					Label(
 						artist: "BERNARD WRIGHT",
@@ -6163,7 +6288,7 @@ public let RadioStations: [RadioStation] = [
 			//HEART_BEAT
 			Song(
 				file: "HEART_BEAT",
-				root: "RADIO_17_FUNK/heart_beat/",
+				root: "heart_beat",
 				labels: [
 					Label(
 						artist: "TAANA GARDNER",
@@ -6188,7 +6313,7 @@ public let RadioStations: [RadioStation] = [
 			//HEARTBREAKER
 			Song(
 				file: "HEARTBREAKER",
-				root: "RADIO_17_FUNK/heartbreaker/",
+				root: "heartbreaker",
 				labels: [
 					Label(
 						artist: "ZAPP",
@@ -6204,7 +6329,7 @@ public let RadioStations: [RadioStation] = [
 			//ID_RATHER_BE_WITH_YOU
 			Song(
 				file: "ID_RATHER_BE_WITH_YOU",
-				root: "RADIO_17_FUNK/id_rather_be_with_you/",
+				root: "id_rather_be_with_you",
 				labels: [
 					Label(
 						artist: "BOOTSY COLLINS",
@@ -6229,7 +6354,7 @@ public let RadioStations: [RadioStation] = [
 			//IM_IN_LOVE
 			Song(
 				file: "IM_IN_LOVE",
-				root: "RADIO_17_FUNK/im_in_love/",
+				root: "im_in_love",
 				labels: [
 					Label(
 						artist: "EVELYN CHAMPAGNE KING",
@@ -6254,7 +6379,7 @@ public let RadioStations: [RadioStation] = [
 			//JOYSTICK
 			Song(
 				file: "JOYSTICK",
-				root: "RADIO_17_FUNK/joystick/",
+				root: "joystick",
 				labels: [
 					Label(
 						artist: "DAZZ BAND",
@@ -6279,7 +6404,7 @@ public let RadioStations: [RadioStation] = [
 			//MOTHERSHIP_CONNECTION
 			Song(
 				file: "MOTHERSHIP_CONNECTION",
-				root: "RADIO_17_FUNK/mothership_connection/",
+				root: "mothership_connection",
 				labels: [
 					Label(
 						artist: "PARLIAMENT",
@@ -6295,7 +6420,7 @@ public let RadioStations: [RadioStation] = [
 			//NIGHTS_FEEL_LIKE
 			Song(
 				file: "NIGHTS_FEEL_LIKE",
-				root: "RADIO_17_FUNK/nights_feel_like/",
+				root: "nights_feel_like",
 				labels: [
 					Label(
 						artist: "BILLY OCEAN",
@@ -6311,7 +6436,7 @@ public let RadioStations: [RadioStation] = [
 			//PARTY_ALL_THE_TIME
 			Song(
 				file: "PARTY_ALL_THE_TIME",
-				root: "RADIO_17_FUNK/party_all_the_time/",
+				root: "party_all_the_time",
 				labels: [
 					Label(
 						artist: "EDDIE MURPHY",
@@ -6327,7 +6452,7 @@ public let RadioStations: [RadioStation] = [
 			//SKELETONS
 			Song(
 				file: "SKELETONS",
-				root: "RADIO_17_FUNK/skeletons/",
+				root: "skeletons",
 				labels: [
 					Label(
 						artist: "STEVIE WONDER",
@@ -6352,7 +6477,7 @@ public let RadioStations: [RadioStation] = [
 			//TONIGHT
 			Song(
 				file: "TONIGHT",
-				root: "RADIO_17_FUNK/tonight/",
+				root: "tonight",
 				labels: [
 					Label(
 						artist: "KLEEER",
@@ -6368,7 +6493,7 @@ public let RadioStations: [RadioStation] = [
 			//WALKING_INTO_SUNSHINE
 			Song(
 				file: "WALKING_INTO_SUNSHINE",
-				root: "RADIO_17_FUNK/walking_into_sunshine/",
+				root: "walking_into_sunshine",
 				labels: [
 					Label(
 						artist: "CENTRAL LINE",
@@ -6384,7 +6509,7 @@ public let RadioStations: [RadioStation] = [
 			//YOURE_THE_ONE_FOR_ME
 			Song(
 				file: "YOURE_THE_ONE_FOR_ME",
-				root: "RADIO_17_FUNK/youre_the_one_for_me/",
+				root: "youre_the_one_for_me",
 				labels: [
 					Label(
 						artist: "D TRAIN",
@@ -6456,7 +6581,7 @@ public let RadioStations: [RadioStation] = [
 	// MARK: Vinewood Boulevard Radio
 	RadioStation(
 		index: 13,
-		number: 18, /*19*/
+		number: 18,
 		name: "Vinewood Boulevard Radio",
 		image: ImageData(
 			name: "gtav_radio_stations_texture_512",
@@ -6464,12 +6589,23 @@ public let RadioStations: [RadioStation] = [
 			column: 3
 		),
 		order: "random",
-		root: "RADIO_18_90S_ROCK",
+		root: Root(
+			station: "RADIO_18_90S_ROCK",
+			song: "RADIO_18_90S_ROCK",
+			intro: "RADIO_18_90S_ROCK/intro",
+			general: "RADIO_18_90S_ROCK/general",
+			identity: "RADIO_18_90S_ROCK",
+			solo: "RADIO_18_90S_ROCK",
+			time: "RADIO_18_90S_ROCK/time",
+			to: "RADIO_18_90S_ROCK/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//ANSWER_TO_YOURSELF
 			Song(
 				file: "ANSWER_TO_YOURSELF",
-				root: "RADIO_18_90S_ROCK/answer_to_yourself/",
+				root: "answer_to_yourself",
 				labels: [
 					Label(
 						artist: "THE SOFT PACK",
@@ -6494,7 +6630,7 @@ public let RadioStations: [RadioStation] = [
 			//BLACK_GREASE
 			Song(
 				file: "BLACK_GREASE",
-				root: "RADIO_18_90S_ROCK/black_grease/",
+				root: "black_grease",
 				labels: [
 					Label(
 						artist: "THE BLACK ANGELS",
@@ -6519,7 +6655,7 @@ public let RadioStations: [RadioStation] = [
 			//CALIFORNIA_GIRLS
 			Song(
 				file: "CALIFORNIA_GIRLS",
-				root: "RADIO_18_90S_ROCK/california_girls/",
+				root: "california_girls",
 				labels: [
 					Label(
 						artist: "SHARK?",
@@ -6544,7 +6680,7 @@ public let RadioStations: [RadioStation] = [
 			//COCAINE
 			Song(
 				file: "COCAINE",
-				root: "RADIO_18_90S_ROCK/cocaine/",
+				root: "cocaine",
 				labels: [
 					Label(
 						artist: "FIDLAR",
@@ -6569,7 +6705,7 @@ public let RadioStations: [RadioStation] = [
 			//CRAWLING_AFTER_YOU
 			Song(
 				file: "CRAWLING_AFTER_YOU",
-				root: "RADIO_18_90S_ROCK/crawling_after_you/",
+				root: "crawling_after_you",
 				labels: [
 					Label(
 						artist: "BASS DRUM OF DEATH",
@@ -6594,7 +6730,7 @@ public let RadioStations: [RadioStation] = [
 			//DIDDY_WAH_DIDDY
 			Song(
 				file: "DIDDY_WAH_DIDDY",
-				root: "RADIO_18_90S_ROCK/diddy_wah_diddy/",
+				root: "diddy_wah_diddy",
 				labels: [
 					Label(
 						artist: "TY SEGALL BAND",
@@ -6610,7 +6746,7 @@ public let RadioStations: [RadioStation] = [
 			//FALL_IN_LINE
 			Song(
 				file: "FALL_IN_LINE",
-				root: "RADIO_18_90S_ROCK/fall_in_line/",
+				root: "fall_in_line",
 				labels: [
 					Label(
 						artist: "MIND SPIDERS",
@@ -6635,7 +6771,7 @@ public let RadioStations: [RadioStation] = [
 			//FIRE_DOESNT_BURN_ITSELF
 			Song(
 				file: "FIRE_DOESNT_BURN_ITSELF",
-				root: "RADIO_18_90S_ROCK/fire_doesnt_burn_itself/",
+				root: "fire_doesnt_burn_itself",
 				labels: [
 					Label(
 						artist: "SAM FLAX",
@@ -6660,7 +6796,7 @@ public let RadioStations: [RadioStation] = [
 			//GONE_FOR_GOOD
 			Song(
 				file: "GONE_FOR_GOOD",
-				root: "RADIO_18_90S_ROCK/gone_for_good/",
+				root: "gone_for_good",
 				labels: [
 					Label(
 						artist: "NOBUNNY",
@@ -6685,7 +6821,7 @@ public let RadioStations: [RadioStation] = [
 			//HYSTERIA
 			Song(
 				file: "HYSTERIA",
-				root: "RADIO_18_90S_ROCK/hysteria/",
+				root: "hysteria",
 				labels: [
 					Label(
 						artist: "CEREMONY",
@@ -6701,7 +6837,7 @@ public let RadioStations: [RadioStation] = [
 			//NEXT_STOP
 			Song(
 				file: "NEXT_STOP",
-				root: "RADIO_18_90S_ROCK/next_stop/",
+				root: "next_stop",
 				labels: [
 					Label(
 						artist: "BLEACHED",
@@ -6726,7 +6862,7 @@ public let RadioStations: [RadioStation] = [
 			//NINE_IS_GOD
 			Song(
 				file: "NINE_IS_GOD",
-				root: "RADIO_18_90S_ROCK/nine_is_god/",
+				root: "nine_is_god",
 				labels: [
 					Label(
 						artist: "WAVVES",
@@ -6751,7 +6887,7 @@ public let RadioStations: [RadioStation] = [
 			//SIXPACK
 			Song(
 				file: "SIXPACK",
-				root: "RADIO_18_90S_ROCK/sixpack/",
+				root: "sixpack",
 				labels: [
 					Label(
 						artist: "JEFF THE BROTHERHOOD",
@@ -6776,7 +6912,7 @@ public let RadioStations: [RadioStation] = [
 			//SLEEPWALKER
 			Song(
 				file: "SLEEPWALKER",
-				root: "RADIO_18_90S_ROCK/sleepwalker/",
+				root: "sleepwalker",
 				labels: [
 					Label(
 						artist: "MOON DUO",
@@ -6801,7 +6937,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_DREAM
 			Song(
 				file: "THE_DREAM",
-				root: "RADIO_18_90S_ROCK/the_dream/",
+				root: "the_dream",
 				labels: [
 					Label(
 						artist: "THEE OH SEES",
@@ -6817,7 +6953,7 @@ public let RadioStations: [RadioStation] = [
 			//THIS_MYSTIC_DECADE
 			Song(
 				file: "THIS_MYSTIC_DECADE",
-				root: "RADIO_18_90S_ROCK/this_mystic_decade/",
+				root: "this_mystic_decade",
 				labels: [
 					Label(
 						artist: "HOT SNAKES",
@@ -6842,7 +6978,7 @@ public let RadioStations: [RadioStation] = [
 			//TURN_IT_AROUND
 			Song(
 				file: "TURN_IT_AROUND",
-				root: "RADIO_18_90S_ROCK/turn_it_around/",
+				root: "turn_it_around",
 				labels: [
 					Label(
 						artist: "THE MEN",
@@ -6871,7 +7007,7 @@ public let RadioStations: [RadioStation] = [
 			//USED_BLOOD
 			Song(
 				file: "USED_BLOOD",
-				root: "RADIO_18_90S_ROCK/used_blood/",
+				root: "used_blood",
 				labels: [
 					Label(
 						artist: "COLISEUM",
@@ -6896,7 +7032,7 @@ public let RadioStations: [RadioStation] = [
 			//WET_BLANKET
 			Song(
 				file: "WET_BLANKET",
-				root: "RADIO_18_90S_ROCK/wet_blanket/",
+				root: "wet_blanket",
 				labels: [
 					Label(
 						artist: "METZ",
@@ -6929,7 +7065,7 @@ public let RadioStations: [RadioStation] = [
 			//WHO_NEEDS_YOU
 			Song(
 				file: "WHO_NEEDS_YOU",
-				root: "RADIO_18_90S_ROCK/who_needs_you/",
+				root: "who_needs_you",
 				labels: [
 					Label(
 						artist: "THE ORWELLS",
@@ -7007,12 +7143,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "rotate",
-		root: "dlc_christmas2017",
+		root: Root(
+			station: "dlc_christmas2017",
+			song: "dlc_christmas2017",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//RADIO_XM17_P1
 			Song(
 				file: "RADIO_XM17_P1", //1864.0
-				root: "dlc_christmas2017/radio_xm17_p1/",
+				root: "radio_xm17_p1",
 				labels: [
 					Label(
 						artist: "",
@@ -7076,7 +7223,7 @@ public let RadioStations: [RadioStation] = [
 			//RADIO_XM17_P2
 			Song(
 				file: "RADIO_XM17_P2", //2357.0
-				root: "dlc_christmas2017/radio_xm17_p2/",
+				root: "radio_xm17_p2",
 				labels: [
 					//When Did You Stop Loving Me, When Did I Stop Loving You
 					Label(
@@ -7153,7 +7300,7 @@ public let RadioStations: [RadioStation] = [
 			//RADIO_XM17_P3
 			Song(
 				file: "RADIO_XM17_P3", //1919.0
-				root: "dlc_christmas2017/radio_xm17_p3/",
+				root: "radio_xm17_p3",
 				labels: [
 					//For Real
 					Label(
@@ -7252,12 +7399,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "rotate",
-		root: "dlc_battle_music",
+		root: Root(
+			station: "dlc_battle_music",
+			song: "dlc_battle_music",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//BATTLE_MIX1_RADIO_01
 			Song(
 				file: "BATTLE_MIX1_RADIO_01",
-				root: "dlc_battle_music/battle_mix1_radio_01/",
+				root: "battle_mix1_radio_01",
 				labels: [
 					//The Plan
 					Label(
@@ -7304,7 +7462,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX1_RADIO_02
 			Song(
 				file: "BATTLE_MIX1_RADIO_02",
-				root: "dlc_battle_music/battle_mix1_radio_02/",
+				root: "battle_mix1_radio_02",
 				labels: [
 					//Madness Of Many
 					Label(
@@ -7375,7 +7533,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX1_RADIO_03
 			Song(
 				file: "BATTLE_MIX1_RADIO_03",
-				root: "dlc_battle_music/battle_mix1_radio_03/",
+				root: "battle_mix1_radio_03",
 				labels: [
 					//Customer Is King
 					Label(
@@ -7410,7 +7568,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX2_RADIO_01
 			Song(
 				file: "BATTLE_MIX2_RADIO_01",
-				root: "dlc_battle_music/battle_mix2_radio_01/",
+				root: "battle_mix2_radio_01",
 				labels: [
 					//Overture
 					Label(
@@ -7457,7 +7615,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX2_RADIO_02
 			Song(
 				file: "BATTLE_MIX2_RADIO_02",
-				root: "dlc_battle_music/battle_mix2_radio_02/",
+				root: "battle_mix2_radio_02",
 				labels: [
 					//Symphony of the Night
 					Label(
@@ -7510,7 +7668,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX2_RADIO_03
 			Song(
 				file: "BATTLE_MIX2_RADIO_03",
-				root: "dlc_battle_music/battle_mix2_radio_03/",
+				root: "battle_mix2_radio_03",
 				labels: [
 					//Myst
 					Label(
@@ -7563,7 +7721,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX3_RADIO_01
 			Song(
 				file: "BATTLE_MIX3_RADIO_01",
-				root: "dlc_battle_music/battle_mix3_radio_01/",
+				root: "battle_mix3_radio_01",
 				labels: [
 					//Convergence
 					Label(
@@ -7604,7 +7762,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX3_RADIO_02
 			Song(
 				file: "BATTLE_MIX3_RADIO_02",
-				root: "dlc_battle_music/battle_mix3_radio_02/",
+				root: "battle_mix3_radio_02",
 				labels: [
 					//Connection (I-Cube Rework)
 					Label(
@@ -7657,7 +7815,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX3_RADIO_03
 			Song(
 				file: "BATTLE_MIX3_RADIO_03",
-				root: "dlc_battle_music/battle_mix3_radio_03/",
+				root: "battle_mix3_radio_03",
 				labels: [
 					//And Dance
 					Label(
@@ -7698,7 +7856,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX4_RADIO_01
 			Song(
 				file: "BATTLE_MIX4_RADIO_01",
-				root: "dlc_battle_music/battle_mix4_radio_01/",
+				root: "battle_mix4_radio_01",
 				labels: [
 					//Sensation
 					Label(
@@ -7733,7 +7891,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX4_RADIO_02
 			Song(
 				file: "BATTLE_MIX4_RADIO_02",
-				root: "dlc_battle_music/battle_mix4_radio_02/",
+				root: "battle_mix4_radio_02",
 				labels: [
 					//Miura
 					Label(
@@ -7792,7 +7950,7 @@ public let RadioStations: [RadioStation] = [
 			//BATTLE_MIX4_RADIO_03
 			Song(
 				file: "BATTLE_MIX4_RADIO_03",
-				root: "dlc_battle_music/battle_mix4_radio_03/",
+				root: "battle_mix4_radio_03",
 				labels: [
 					//Devotion
 					Label(
@@ -7849,12 +8007,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "static",
-		root: "dlc_heist3",
+		root: Root(
+			station: "dlc_heist3",
+			song: "dlc_heist3",
+			intro: "dlc_heist3/intro",
+			general: nil,
+			identity: "dlc_heist3",
+			solo: "dlc_heist3",
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//CASH_SHIT
 			Song(
 				file: "CASH_SHIT",
-				root: "dlc_heist3/cash_shit/",
+				root: "cash_shit",
 				labels: [
 					//CASH_SHIT
 					Label(
@@ -7880,7 +8049,7 @@ public let RadioStations: [RadioStation] = [
 			//CRIME_PAYS
 			Song(
 				file: "CRIME_PAYS",
-				root: "dlc_heist3/crime_pays/",
+				root: "crime_pays",
 				labels: [
 					//CRIME_PAYS
 					Label(
@@ -7902,7 +8071,7 @@ public let RadioStations: [RadioStation] = [
 			//DANCE_IN_THE_WATER
 			Song(
 				file: "DANCE_IN_THE_WATER",
-				root: "dlc_heist3/dance_in_the_water/",
+				root: "dance_in_the_water",
 				labels: [
 					//DANCE_IN_THE_WATER
 					Label(
@@ -7924,7 +8093,7 @@ public let RadioStations: [RadioStation] = [
 			//EVERYTHING_SHE_WANTS
 			Song(
 				file: "EVERYTHING_SHE_WANTS",
-				root: "dlc_heist3/everything_she_wants/",
+				root: "everything_she_wants",
 				labels: [
 					//EVERYTHING_SHE_WANTS
 					Label(
@@ -7950,7 +8119,7 @@ public let RadioStations: [RadioStation] = [
 			//HIGHEST_IN_THE_ROOM
 			Song(
 				file: "HIGHEST_IN_THE_ROOM",
-				root: "dlc_heist3/highest_in_the_room/",
+				root: "highest_in_the_room",
 				labels: [
 					//HIGHEST_IN_THE_ROOM
 					Label(
@@ -7976,7 +8145,7 @@ public let RadioStations: [RadioStation] = [
 			//HOT_REMIX
 			Song(
 				file: "HOT_REMIX",
-				root: "dlc_heist3/hot_remix/",
+				root: "hot_remix",
 				labels: [
 					//HOT_REMIX
 					Label(
@@ -8002,7 +8171,7 @@ public let RadioStations: [RadioStation] = [
 			//POP_STAR
 			Song(
 				file: "POP_STAR",
-				root: "dlc_heist3/pop_star/",
+				root: "pop_star",
 				labels: [
 					//POP_STAR
 					Label(
@@ -8028,7 +8197,7 @@ public let RadioStations: [RadioStation] = [
 			//TBD(READY_TO_GO)
 			Song(
 				file: "TBD",
-				root: "dlc_heist3/tbd/",
+				root: "tbd",
 				labels: [
 					//TBD
 					Label(
@@ -8050,7 +8219,7 @@ public let RadioStations: [RadioStation] = [
 			//WINGS
 			Song(
 				file: "WINGS",
-				root: "dlc_heist3/wings/",
+				root: "wings",
 				labels: [
 					//WINGS
 					Label(
@@ -8084,7 +8253,7 @@ public let RadioStations: [RadioStation] = [
 			//WITH_THE_THING
 			Song(
 				file: "WITH_THE_THING",
-				root: "dlc_heist3/with_the_thing/",
+				root: "with_the_thing",
 				labels: [
 					//WITH_THE_THING
 					Label(
@@ -8110,7 +8279,7 @@ public let RadioStations: [RadioStation] = [
 			//ACT_UP
 			Song(
 				file: "ACT_UP",
-				root: "dlc_heist3/act_up/",
+				root: "act_up",
 				labels: [
 					//ACT_UP
 					Label(
@@ -8136,7 +8305,7 @@ public let RadioStations: [RadioStation] = [
 			//ALIENS
 			Song(
 				file: "ALIENS",
-				root: "dlc_heist3/aliens/",
+				root: "aliens",
 				labels: [
 					//ALIENS
 					Label(
@@ -8162,7 +8331,7 @@ public let RadioStations: [RadioStation] = [
 			//W
 			Song(
 				file: "W",
-				root: "dlc_heist3/w/",
+				root: "w",
 				labels: [
 					//W
 					Label(
@@ -8188,7 +8357,7 @@ public let RadioStations: [RadioStation] = [
 			//BOP
 			Song(
 				file: "BOP",
-				root: "dlc_heist3/bop/",
+				root: "bop",
 				labels: [
 					//BOP
 					Label(
@@ -8214,7 +8383,7 @@ public let RadioStations: [RadioStation] = [
 			//NUMB_NUMB_JUICE
 			Song(
 				file: "NUMB_NUMB_JUICE",
-				root: "dlc_heist3/numb_numb_juice/",
+				root: "numb_numb_juice",
 				labels: [
 					//NUMB_NUMB_JUICE
 					Label(
@@ -8236,7 +8405,7 @@ public let RadioStations: [RadioStation] = [
 			//GREAZE_MODE
 			Song(
 				file: "GREAZE_MODE",
-				root: "dlc_heist3/greaze_mode/",
+				root: "greaze_mode",
 				labels: [
 					//GREAZE_MODE
 					Label(
@@ -8270,7 +8439,7 @@ public let RadioStations: [RadioStation] = [
 			//HUNDRED_K_ON_A_COUPE
 			Song(
 				file: "HUNDRED_K_ON_A_COUPE",
-				root: "dlc_heist3/hundred_k_on_a_coupe/",
+				root: "hundred_k_on_a_coupe",
 				labels: [
 					//HUNDRED_K_ON_A_COUPE
 					Label(
@@ -8300,7 +8469,7 @@ public let RadioStations: [RadioStation] = [
 			//I_NEED
 			Song(
 				file: "I_NEED",
-				root: "dlc_heist3/i_need/",
+				root: "i_need",
 				labels: [
 					//I_NEED
 					Label(
@@ -8362,7 +8531,7 @@ public let RadioStations: [RadioStation] = [
 			//KILLIN_DEM
 			Song(
 				file: "KILLIN_DEM",
-				root: "dlc_heist3/killin_dem/",
+				root: "killin_dem",
 				labels: [
 					//KILLIN_DEM
 					Label(
@@ -8388,7 +8557,7 @@ public let RadioStations: [RadioStation] = [
 			//KISS_AND_TELL
 			Song(
 				file: "KISS_AND_TELL",
-				root: "dlc_heist3/kiss_and_tell/",
+				root: "kiss_and_tell",
 				labels: [
 					//KISS_AND_TELL
 					Label(
@@ -8434,7 +8603,7 @@ public let RadioStations: [RadioStation] = [
 			//KITCHEN_KINGS
 			Song(
 				file: "KITCHEN_KINGS",
-				root: "dlc_heist3/kitchen_kings/",
+				root: "kitchen_kings",
 				labels: [
 					//KITCHEN_KINGS
 					Label(
@@ -8468,7 +8637,7 @@ public let RadioStations: [RadioStation] = [
 			//KNOCK_YOUR_BLOCK_OFF
 			Song(
 				file: "KNOCK_YOUR_BLOCK_OFF",
-				root: "dlc_heist3/knock_your_block_off/",
+				root: "knock_your_block_off",
 				labels: [
 					//KNOCK_YOUR_BLOCK_OFF
 					Label(
@@ -8490,7 +8659,7 @@ public let RadioStations: [RadioStation] = [
 			//MONEY_IN_THE_BANK
 			Song(
 				file: "MONEY_IN_THE_BANK",
-				root: "dlc_heist3/money_in_the_bank/",
+				root: "money_in_the_bank",
 				labels: [
 					//MONEY_IN_THE_BANK
 					Label(
@@ -8520,7 +8689,7 @@ public let RadioStations: [RadioStation] = [
 			//MUST_BE
 			Song(
 				file: "MUST_BE",
-				root: "dlc_heist3/must_be/",
+				root: "must_be",
 				labels: [
 					//MUST_BE
 					Label(
@@ -8546,7 +8715,7 @@ public let RadioStations: [RadioStation] = [
 			//ORIGINAL_FORMAT
 			Song(
 				file: "ORIGINAL_FORMAT",
-				root: "dlc_heist3/original_format/",
+				root: "original_format",
 				labels: [
 					//ORIGINAL_FORMAT
 					Label(
@@ -8576,7 +8745,7 @@ public let RadioStations: [RadioStation] = [
 			//OPOTOYI
 			Song(
 				file: "OPOTOYI",
-				root: "dlc_heist3/opotoyi/",
+				root: "opotoyi",
 				labels: [
 					//OPOTOYI
 					Label(
@@ -8598,7 +8767,7 @@ public let RadioStations: [RadioStation] = [
 			//BACK_TO_BASICS_FLOATING_POINTS_REMIX
 			Song(
 				file: "BACK_TO_BASICS_FLOATING_POINTS_REMIX",
-				root: "dlc_heist3/back_to_basics_floating_points_remix/",
+				root: "back_to_basics_floating_points_remix",
 				labels: [
 					//BACK_TO_BASICS_FLOATING_POINTS_REMIX
 					Label(
@@ -8628,7 +8797,7 @@ public let RadioStations: [RadioStation] = [
 			//PATTERN_CHANEL
 			Song(
 				file: "PATTERN_CHANEL",
-				root: "dlc_heist3/pattern_chanel/",
+				root: "pattern_chanel",
 				labels: [
 					//PATTERN_CHANEL
 					Label(
@@ -8674,7 +8843,18 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "random",
-		root: nil,
+		root: Root(
+			station: "dlc_radio_19_user",
+			song: "dlc_radio_19_user",
+			intro: "dlc_radio_19_user",
+			general: nil,
+			identity: "dlc_radio_19_user",
+			solo: "dlc_radio_19_user",
+			time: "dlc_radio_19_user",
+			to: "dlc_radio_19_user",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: nil,
 		general: nil,
 		identity: nil,
@@ -8694,12 +8874,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "rotate",
-		root: "dlc_hei4_music",
+		root: Root(
+			station: "dlc_hei4_music",
+			song: "dlc_hei4_music",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//HEI4_STILL_SLIPPING_P1
 			Song(
 				file: "HEI4_STILL_SLIPPING_P1",
-				root: "dlc_hei4_music/hei4_still_slipping_p1/",
+				root: "hei4_still_slipping_p1",
 				labels: [
 					Label(
 						artist: "HEI4_STILL_SLIPPING_P1",
@@ -8715,7 +8906,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_STILL_SLIPPING_P2
 			Song(
 				file: "HEI4_STILL_SLIPPING_P2",
-				root: "dlc_hei4_music/hei4_still_slipping_p2/",
+				root: "hei4_still_slipping_p2",
 				labels: [
 					Label(
 						artist: "HEI4_STILL_SLIPPING_P2",
@@ -8731,7 +8922,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_STILL_SLIPPING_P3
 			Song(
 				file: "HEI4_STILL_SLIPPING_P3",
-				root: "dlc_hei4_music/hei4_still_slipping_p3/",
+				root: "hei4_still_slipping_p3",
 				labels: [
 					Label(
 						artist: "HEI4_STILL_SLIPPING_P3",
@@ -8747,7 +8938,7 @@ public let RadioStations: [RadioStation] = [
 			//HEI4_STILL_SLIPPING_P4
 			Song(
 				file: "HEI4_STILL_SLIPPING_P4",
-				root: "dlc_hei4_music/hei4_still_slipping_p4/",
+				root: "hei4_still_slipping_p4",
 				labels: [
 					Label(
 						artist: "HEI4_STILL_SLIPPING_P4",
@@ -8785,12 +8976,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "random",
-		root: "RADIO_01_CLASS_ROCK",
+		root: Root(
+			station: "RADIO_01_CLASS_ROCK",
+			song: "RADIO_01_CLASS_ROCK",
+			intro: "RADIO_01_CLASS_ROCK/intro",
+			general: "RADIO_01_CLASS_ROCK/general",
+			identity: "RADIO_01_CLASS_ROCK",
+			solo: "RADIO_01_CLASS_ROCK",
+			time: "RADIO_01_CLASS_ROCK/time",
+			to: "RADIO_01_CLASS_ROCK/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//ALL_THE_THINGS_SHE_SAID
 			Song(
 				file: "ALL_THE_THINGS_SHE_SAID",
-				root: "RADIO_01_CLASS_ROCK/all_the_things_she_said/",
+				root: "all_the_things_she_said",
 				labels: [
 					Label(
 						artist: "SIMPLE MINDS",
@@ -8815,7 +9017,7 @@ public let RadioStations: [RadioStation] = [
 			//BAKER_STREET
 			Song(
 				file: "BAKER_STREET",
-				root: "RADIO_01_CLASS_ROCK/baker_street/",
+				root: "baker_street",
 				labels: [
 					Label(
 						artist: "GERRY RAFFERTY",
@@ -8840,7 +9042,7 @@ public let RadioStations: [RadioStation] = [
 			//BIG_LOG
 			Song(
 				file: "BIG_LOG",
-				root: "RADIO_01_CLASS_ROCK/big_log/",
+				root: "big_log",
 				labels: [
 					Label(
 						artist: "ROBERT PLANT",
@@ -8865,7 +9067,7 @@ public let RadioStations: [RadioStation] = [
 			//BLACK_VELVET
 			Song(
 				file: "BLACK_VELVET",
-				root: "RADIO_01_CLASS_ROCK/black_velvet/",
+				root: "black_velvet",
 				labels: [
 					Label(
 						artist: "ALANNAH MYLES",
@@ -8890,7 +9092,7 @@ public let RadioStations: [RadioStation] = [
 			//BURNING_HEART
 			Song(
 				file: "BURNING_HEART",
-				root: "RADIO_01_CLASS_ROCK/burning_heart/",
+				root: "burning_heart",
 				labels: [
 					Label(
 						artist: "SURVIVOR",
@@ -8915,7 +9117,7 @@ public let RadioStations: [RadioStation] = [
 			//CARRY_ON_MY_WAYWARD_SUN
 			Song(
 				file: "CARRY_ON_MY_WAYWARD_SUN",
-				root: "RADIO_01_CLASS_ROCK/carry_on_my_wayward_sun/",
+				root: "carry_on_my_wayward_sun",
 				labels: [
 					Label(
 						artist: "KANSAS",
@@ -8940,7 +9142,7 @@ public let RadioStations: [RadioStation] = [
 			//CATS_IN_THE_CRADLE
 			Song(
 				file: "CATS_IN_THE_CRADLE",
-				root: "RADIO_01_CLASS_ROCK/cats_in_the_cradle/",
+				root: "cats_in_the_cradle",
 				labels: [
 					Label(
 						artist: "HARRY CHAPIN",
@@ -8961,7 +9163,7 @@ public let RadioStations: [RadioStation] = [
 			//CIRCLE_IN_THE_SAND
 			Song(
 				file: "CIRCLE_IN_THE_SAND",
-				root: "RADIO_01_CLASS_ROCK/circle_in_the_sand/",
+				root: "circle_in_the_sand",
 				labels: [
 					Label(
 						artist: "BELINDA CARLISLE",
@@ -8977,7 +9179,7 @@ public let RadioStations: [RadioStation] = [
 			//COMING_ON_STRONG
 			Song(
 				file: "COMING_ON_STRONG",
-				root: "RADIO_01_CLASS_ROCK/coming_on_strong/",
+				root: "coming_on_strong",
 				labels: [
 					Label(
 						artist: "BROKEN ENGLISH",
@@ -9002,7 +9204,7 @@ public let RadioStations: [RadioStation] = [
 			//DANGER_ZONE
 			Song(
 				file: "DANGER_ZONE",
-				root: "RADIO_01_CLASS_ROCK/danger_zone/",
+				root: "danger_zone",
 				labels: [
 					Label(
 						artist: "KENNY LOGGINS",
@@ -9018,7 +9220,7 @@ public let RadioStations: [RadioStation] = [
 			//DIRTY_WHITE_BOY
 			Song(
 				file: "DIRTY_WHITE_BOY",
-				root: "RADIO_01_CLASS_ROCK/dirty_white_boy/",
+				root: "dirty_white_boy",
 				labels: [
 					Label(
 						artist: "FOREIGNER",
@@ -9043,7 +9245,7 @@ public let RadioStations: [RadioStation] = [
 			//FORTUNATE_SON
 			Song(
 				file: "FORTUNATE_SON",
-				root: "RADIO_01_CLASS_ROCK/fortunate_son/",
+				root: "fortunate_son",
 				labels: [
 					Label(
 						artist: "CREEDENCE CLEARWATER REVIVAL",
@@ -9068,7 +9270,7 @@ public let RadioStations: [RadioStation] = [
 			//GIMME_ALL_YOUR_LOVIN
 			Song(
 				file: "GIMME_ALL_YOUR_LOVIN",
-				root: "RADIO_01_CLASS_ROCK/gimme_all_your_lovin/",
+				root: "gimme_all_your_lovin",
 				labels: [
 					Label(
 						artist: "ZZ TOP",
@@ -9093,7 +9295,7 @@ public let RadioStations: [RadioStation] = [
 			//HEARTBEAT
 			Song(
 				file: "HEARTBEAT",
-				root: "RADIO_01_CLASS_ROCK/heartbeat/",
+				root: "heartbeat",
 				labels: [
 					Label(
 						artist: "DON JOHNSON",
@@ -9118,7 +9320,7 @@ public let RadioStations: [RadioStation] = [
 			//HIGHER_LOVE
 			Song(
 				file: "HIGHER_LOVE",
-				root: "RADIO_01_CLASS_ROCK/higher_love/",
+				root: "higher_love",
 				labels: [
 					Label(
 						artist: "STEVE WINWOOD",
@@ -9143,7 +9345,7 @@ public let RadioStations: [RadioStation] = [
 			//HOLLYWOOD_NIGHTS
 			Song(
 				file: "HOLLYWOOD_NIGHTS",
-				root: "RADIO_01_CLASS_ROCK/hollywood_nights/",
+				root: "hollywood_nights",
 				labels: [
 					Label(
 						artist: "BOB SEGER",
@@ -9168,7 +9370,7 @@ public let RadioStations: [RadioStation] = [
 			//I_CANT_WAIT
 			Song(
 				file: "I_CANT_WAIT",
-				root: "RADIO_01_CLASS_ROCK/i_cant_wait/",
+				root: "i_cant_wait",
 				labels: [
 					Label(
 						artist: "STEVIE NICKS",
@@ -9193,7 +9395,7 @@ public let RadioStations: [RadioStation] = [
 			//I_DONT_CARE_ANYMORE
 			Song(
 				file: "I_DONT_CARE_ANYMORE",
-				root: "RADIO_01_CLASS_ROCK/i_dont_care_anymore/",
+				root: "i_dont_care_anymore",
 				labels: [
 					Label(
 						artist: "PHIL COLLINS",
@@ -9209,7 +9411,7 @@ public let RadioStations: [RadioStation] = [
 			//I_WOULDNT_WANT_TO_BE
 			Song(
 				file: "I_WOULDNT_WANT_TO_BE",
-				root: "RADIO_01_CLASS_ROCK/i_wouldnt_want_to_be/",
+				root: "i_wouldnt_want_to_be",
 				labels: [
 					Label(
 						artist: "THE ALAN PARSONS PROJECT",
@@ -9234,7 +9436,7 @@ public let RadioStations: [RadioStation] = [
 			//IF_YOU_LEAVE_ME_NOW
 			Song(
 				file: "IF_YOU_LEAVE_ME_NOW",
-				root: "RADIO_01_CLASS_ROCK/if_you_leave_me_now/",
+				root: "if_you_leave_me_now",
 				labels: [
 					Label(
 						artist: "CHICAGO",
@@ -9259,7 +9461,7 @@ public let RadioStations: [RadioStation] = [
 			//IM_FREE
 			Song(
 				file: "IM_FREE",
-				root: "RADIO_01_CLASS_ROCK/im_free/",
+				root: "im_free",
 				labels: [
 					Label(
 						artist: "KENNY LOGGINS",
@@ -9284,7 +9486,7 @@ public let RadioStations: [RadioStation] = [
 			//LONELY_IS_THE_NIGHT
 			Song(
 				file: "LONELY_IS_THE_NIGHT",
-				root: "RADIO_01_CLASS_ROCK/lonely_is_the_night/",
+				root: "lonely_is_the_night",
 				labels: [
 					Label(
 						artist: "BILLY SQUIER",
@@ -9309,7 +9511,7 @@ public let RadioStations: [RadioStation] = [
 			//MISSISSIPPI_QUEEN
 			Song(
 				file: "MISSISSIPPI_QUEEN",
-				root: "RADIO_01_CLASS_ROCK/mississippi_queen/",
+				root: "mississippi_queen",
 				labels: [
 					Label(
 						artist: "MOUNTAIN",
@@ -9334,7 +9536,7 @@ public let RadioStations: [RadioStation] = [
 			//NIGHT_MOVES
 			Song(
 				file: "NIGHT_MOVES",
-				root: "RADIO_01_CLASS_ROCK/night_moves/",
+				root: "night_moves",
 				labels: [
 					Label(
 						artist: "BOB SEGER",
@@ -9359,7 +9561,7 @@ public let RadioStations: [RadioStation] = [
 			//OGDENS_NUT_GONE_FLAKE
 			Song(
 				file: "OGDENS_NUT_GONE_FLAKE",
-				root: "RADIO_01_CLASS_ROCK/ogdens_nut_gone_flake/",
+				root: "ogdens_nut_gone_flake",
 				labels: [
 					Label(
 						artist: "SMALL FACES",
@@ -9384,7 +9586,7 @@ public let RadioStations: [RadioStation] = [
 			//PEACE_OF_MIND
 			Song(
 				file: "PEACE_OF_MIND",
-				root: "RADIO_01_CLASS_ROCK/peace_of_mind/",
+				root: "peace_of_mind",
 				labels: [
 					Label(
 						artist: "BOSTON",
@@ -9409,7 +9611,7 @@ public let RadioStations: [RadioStation] = [
 			//PHOTOGRAPH
 			Song(
 				file: "PHOTOGRAPH",
-				root: "RADIO_01_CLASS_ROCK/photograph/",
+				root: "photograph",
 				labels: [
 					Label(
 						artist: "DEF LEPPARD",
@@ -9434,7 +9636,7 @@ public let RadioStations: [RadioStation] = [
 			//RADIO_GA_GA
 			Song(
 				file: "RADIO_GA_GA",
-				root: "RADIO_01_CLASS_ROCK/radio_ga_ga/",
+				root: "radio_ga_ga",
 				labels: [
 					Label(
 						artist: "QUEEN",
@@ -9455,7 +9657,7 @@ public let RadioStations: [RadioStation] = [
 			//RAIN
 			Song(
 				file: "RAIN",
-				root: "RADIO_01_CLASS_ROCK/rain/",
+				root: "rain",
 				labels: [
 					Label(
 						artist: "THE CULT",
@@ -9480,7 +9682,7 @@ public let RadioStations: [RadioStation] = [
 			//ROCKIN_ME
 			Song(
 				file: "ROCKIN_ME",
-				root: "RADIO_01_CLASS_ROCK/rockin_me/",
+				root: "rockin_me",
 				labels: [
 					Label(
 						artist: "STEVE MILLER",
@@ -9496,7 +9698,7 @@ public let RadioStations: [RadioStation] = [
 			//ROUNDABOUT
 			Song(
 				file: "ROUNDABOUT",
-				root: "RADIO_01_CLASS_ROCK/roundabout/",
+				root: "roundabout",
 				labels: [
 					Label(
 						artist: "YES",
@@ -9521,7 +9723,7 @@ public let RadioStations: [RadioStation] = [
 			//SATURDAY_NIGHTS_ALRIGHT
 			Song(
 				file: "SATURDAY_NIGHTS_ALRIGHT",
-				root: "RADIO_01_CLASS_ROCK/saturday_nights_alright/",
+				root: "saturday_nights_alright",
 				labels: [
 					Label(
 						artist: "ELTON JOHN",
@@ -9546,7 +9748,7 @@ public let RadioStations: [RadioStation] = [
 			//SHADOWS_OF_THE_NIGHT
 			Song(
 				file: "SHADOWS_OF_THE_NIGHT",
-				root: "RADIO_01_CLASS_ROCK/shadows_of_the_night/",
+				root: "shadows_of_the_night",
 				labels: [
 					Label(
 						artist: "PAT BENATAR",
@@ -9575,7 +9777,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_BREAKUP_SONG
 			Song(
 				file: "THE_BREAKUP_SONG",
-				root: "RADIO_01_CLASS_ROCK/the_breakup_song/",
+				root: "the_breakup_song",
 				labels: [
 					Label(
 						artist: "GREG KIHN BAND",
@@ -9600,7 +9802,7 @@ public let RadioStations: [RadioStation] = [
 			//THIRTY_DAYS_IN_THE_HOLE
 			Song(
 				file: "THIRTY_DAYS_IN_THE_HOLE",
-				root: "RADIO_01_CLASS_ROCK/thirty_days_in_the_hole/",
+				root: "thirty_days_in_the_hole",
 				labels: [
 					Label(
 						artist: "HUMBLE PIE",
@@ -9625,7 +9827,7 @@ public let RadioStations: [RadioStation] = [
 			//TOO_LATE_FOR_GOODBYES
 			Song(
 				file: "TOO_LATE_FOR_GOODBYES",
-				root: "RADIO_01_CLASS_ROCK/too_late_for_goodbyes/",
+				root: "too_late_for_goodbyes",
 				labels: [
 					Label(
 						artist: "JULIAN LENNON",
@@ -9650,7 +9852,7 @@ public let RadioStations: [RadioStation] = [
 			//WE_BUILT_THIS_CITY
 			Song(
 				file: "WE_BUILT_THIS_CITY",
-				root: "RADIO_01_CLASS_ROCK/we_built_this_city/",
+				root: "we_built_this_city",
 				labels: [
 					Label(
 						artist: "STARSHIP",
@@ -9675,7 +9877,7 @@ public let RadioStations: [RadioStation] = [
 			//WHAT_A_FOOL_BELIEVES
 			Song(
 				file: "WHAT_A_FOOL_BELIEVES",
-				root: "RADIO_01_CLASS_ROCK/what_a_fool_believes/",
+				root: "what_a_fool_believes",
 				labels: [
 					Label(
 						artist: "THE DOOBIE BROTHERS",
@@ -9757,12 +9959,23 @@ public let RadioStations: [RadioStation] = [
 			column: 2
 		),
 		order: "random",
-		root: "RADIO_02_POP",
+		root: Root(
+			station: "RADIO_02_POP",
+			song: "RADIO_02_POP",
+			intro: "RADIO_02_POP/intro",
+			general: "RADIO_02_POP/general",
+			identity: "RADIO_02_POP",
+			solo: "RADIO_02_POP",
+			time: "RADIO_02_POP/time",
+			to: "RADIO_02_POP/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//ADULT_EDUCATION
 			Song(
 				file: "ADULT_EDUCATION",
-				root: "RADIO_02_POP/adult_education/",
+				root: "adult_education",
 				labels: [
 					Label(
 						artist: "HALL & OATS",
@@ -9787,7 +10000,7 @@ public let RadioStations: [RadioStation] = [
 			//ALRIGHT
 			Song(
 				file: "ALRIGHT",
-				root: "RADIO_02_POP/alright/",
+				root: "alright",
 				labels: [
 					Label(
 						artist: "JAMIROQUAI",
@@ -9803,7 +10016,7 @@ public let RadioStations: [RadioStation] = [
 			//ANTHEM
 			Song(
 				file: "ANTHEM",
-				root: "RADIO_02_POP/anthem/",
+				root: "anthem",
 				labels: [
 					Label(
 						artist: "N-JOI",
@@ -9828,7 +10041,7 @@ public let RadioStations: [RadioStation] = [
 			//APPLAUSE
 			Song(
 				file: "APPLAUSE",
-				root: "RADIO_02_POP/applause/",
+				root: "applause",
 				labels: [
 					Label(
 						artist: "LADY GAGA",
@@ -9853,7 +10066,7 @@ public let RadioStations: [RadioStation] = [
 			//BAD_GIRLS
 			Song(
 				file: "BAD_GIRLS",
-				root: "RADIO_02_POP/bad_girls/",
+				root: "bad_girls",
 				labels: [
 					Label(
 						artist: "M.I.A.",
@@ -9878,7 +10091,7 @@ public let RadioStations: [RadioStation] = [
 			//CIRCLE_IN_THE_SAND*
 			/*Song(
 				file: "CIRCLE_IN_THE_SAND",
-				root: "RADIO_01_CLASS_ROCK/circle_in_the_sand/",
+				root: "circle_in_the_sand",
 				labels: [
 					Label(
 						artist: "",
@@ -9903,7 +10116,7 @@ public let RadioStations: [RadioStation] = [
 			//COOLER_THAN_ME
 			Song(
 				file: "COOLER_THAN_ME",
-				root: "RADIO_02_POP/cooler_than_me/",
+				root: "cooler_than_me",
 				labels: [
 					Label(
 						artist: "MIKE POSNER",
@@ -9928,7 +10141,7 @@ public let RadioStations: [RadioStation] = [
 			//DAYS_GO_BY
 			Song(
 				file: "DAYS_GO_BY",
-				root: "RADIO_02_POP/days_go_by/",
+				root: "days_go_by",
 				labels: [
 					Label(
 						artist: "DIRTY VEGAS",
@@ -9953,7 +10166,7 @@ public let RadioStations: [RadioStation] = [
 			//DONT_WANNA_FALL_IN_LOVE
 			Song(
 				file: "DONT_WANNA_FALL_IN_LOVE",
-				root: "RADIO_02_POP/dont_wanna_fall_in_love/",
+				root: "dont_wanna_fall_in_love",
 				labels: [
 					Label(
 						artist: "JANE CHILD",
@@ -9978,7 +10191,7 @@ public let RadioStations: [RadioStation] = [
 			//EVERYTHING_SHE_WANTS
 			Song(
 				file: "EVERYTHING_SHE_WANTS",
-				root: "RADIO_02_POP/everything_she_wants/",
+				root: "everything_she_wants",
 				labels: [
 					Label(
 						artist: "WHAM!",
@@ -10003,7 +10216,7 @@ public let RadioStations: [RadioStation] = [
 			//FEEL_GOOD_INC
 			Song(
 				file: "FEEL_GOOD_INC",
-				root: "RADIO_02_POP/feel_good_inc/",
+				root: "feel_good_inc",
 				labels: [
 					Label(
 						artist: "GORILLAZ",
@@ -10028,7 +10241,7 @@ public let RadioStations: [RadioStation] = [
 			//GIMME_MORE
 			Song(
 				file: "GIMME_MORE",
-				root: "RADIO_02_POP/gimme_more/",
+				root: "gimme_more",
 				labels: [
 					Label(
 						artist: "BRITNEY SPEARS",
@@ -10053,7 +10266,7 @@ public let RadioStations: [RadioStation] = [
 			//GLAMOROUS
 			Song(
 				file: "GLAMOROUS",
-				root: "RADIO_02_POP/glamorous/",
+				root: "glamorous",
 				labels: [
 					Label(
 						artist: "FERGIE",
@@ -10078,7 +10291,7 @@ public let RadioStations: [RadioStation] = [
 			//I_WANT_IT_THAT_WAY
 			Song(
 				file: "I_WANT_IT_THAT_WAY",
-				root: "RADIO_02_POP/i_want_it_that_way/",
+				root: "i_want_it_that_way",
 				labels: [
 					Label(
 						artist: "BACKSTREET BOYS",
@@ -10103,7 +10316,7 @@ public let RadioStations: [RadioStation] = [
 			//KIDS
 			Song(
 				file: "KIDS",
-				root: "RADIO_02_POP/kids/",
+				root: "kids",
 				labels: [
 					Label(
 						artist: "ROBBIE WILLIAMS & KYLIE MINOGUE",
@@ -10128,7 +10341,7 @@ public let RadioStations: [RadioStation] = [
 			//LADY_HEAR_ME_TONIGHT
 			Song(
 				file: "LADY_HEAR_ME_TONIGHT",
-				root: "RADIO_02_POP/lady_hear_me_tonight/",
+				root: "lady_hear_me_tonight",
 				labels: [
 					Label(
 						artist: "MODJO",
@@ -10153,7 +10366,7 @@ public let RadioStations: [RadioStation] = [
 			//LETS_GO_ALL_THE_WAY
 			Song(
 				file: "LETS_GO_ALL_THE_WAY",
-				root: "RADIO_02_POP/lets_go_all_the_way/",
+				root: "lets_go_all_the_way",
 				labels: [
 					Label(
 						artist: "SLY FOX",
@@ -10178,7 +10391,7 @@ public let RadioStations: [RadioStation] = [
 			//LIVING_IN_A_BOX
 			Song(
 				file: "LIVING_IN_A_BOX",
-				root: "RADIO_02_POP/living_in_a_box/",
+				root: "living_in_a_box",
 				labels: [
 					Label(
 						artist: "LIVING IN A BOX",
@@ -10203,7 +10416,7 @@ public let RadioStations: [RadioStation] = [
 			//ME_AND_YOU
 			Song(
 				file: "ME_AND_YOU",
-				root: "RADIO_02_POP/me_and_you/",
+				root: "me_and_you",
 				labels: [
 					Label(
 						artist: "CASSIE",
@@ -10228,7 +10441,7 @@ public let RadioStations: [RadioStation] = [
 			//MEET_ME_HALFWAY
 			Song(
 				file: "MEET_ME_HALFWAY",
-				root: "RADIO_02_POP/meet_me_halfway/",
+				root: "meet_me_halfway",
 				labels: [
 					Label(
 						artist: "THE BLACK EYED PEAS",
@@ -10253,7 +10466,7 @@ public let RadioStations: [RadioStation] = [
 			//MIDNIGHT_CITY
 			Song(
 				file: "MIDNIGHT_CITY",
-				root: "RADIO_02_POP/midnight_city/",
+				root: "midnight_city",
 				labels: [
 					Label(
 						artist: "M83",
@@ -10278,7 +10491,7 @@ public let RadioStations: [RadioStation] = [
 			//MOVES_LIKE_JAGGER
 			Song(
 				file: "MOVES_LIKE_JAGGER",
-				root: "RADIO_02_POP/moves_like_jagger/",
+				root: "moves_like_jagger",
 				labels: [
 					Label(
 						artist: "MAROON 5",
@@ -10303,7 +10516,7 @@ public let RadioStations: [RadioStation] = [
 			//MUSIC_SOUNDS_BETTER_WITH_YOU
 			Song(
 				file: "MUSIC_SOUNDS_BETTER_WITH_YOU",
-				root: "RADIO_02_POP/music_sounds_better_with_you/",
+				root: "music_sounds_better_with_you",
 				labels: [
 					Label(
 						artist: "STARDUST",
@@ -10328,7 +10541,7 @@ public let RadioStations: [RadioStation] = [
 			//NEW_SENSATION
 			Song(
 				file: "NEW_SENSATION",
-				root: "RADIO_02_POP/new_sensation/",
+				root: "new_sensation",
 				labels: [
 					Label(
 						artist: "INXS",
@@ -10353,7 +10566,7 @@ public let RadioStations: [RadioStation] = [
 			//ON_OUR_OWN
 			Song(
 				file: "ON_OUR_OWN",
-				root: "RADIO_02_POP/on_our_own/",
+				root: "on_our_own",
 				labels: [
 					Label(
 						artist: "BOBBY BROWN",
@@ -10378,7 +10591,7 @@ public let RadioStations: [RadioStation] = [
 			//ONE_THING
 			Song(
 				file: "ONE_THING",
-				root: "RADIO_02_POP/one_thing/",
+				root: "one_thing",
 				labels: [
 					Label(
 						artist: "AMERIE",
@@ -10403,7 +10616,7 @@ public let RadioStations: [RadioStation] = [
 			//ONLY_GIRL_IN_THE_WORLD
 			Song(
 				file: "ONLY_GIRL_IN_THE_WORLD",
-				root: "RADIO_02_POP/only_girl_in_the_world/",
+				root: "only_girl_in_the_world",
 				labels: [
 					Label(
 						artist: "RIHANNA",
@@ -10428,7 +10641,7 @@ public let RadioStations: [RadioStation] = [
 			//PROMISES_PROMISES
 			Song(
 				file: "PROMISES_PROMISES",
-				root: "RADIO_02_POP/promises_promises/",
+				root: "promises_promises",
 				labels: [
 					Label(
 						artist: "NAKED EYES",
@@ -10453,7 +10666,7 @@ public let RadioStations: [RadioStation] = [
 			//PURE_SHORES
 			Song(
 				file: "PURE_SHORES",
-				root: "RADIO_02_POP/pure_shores/",
+				root: "pure_shores",
 				labels: [
 					Label(
 						artist: "ALL SAINTS",
@@ -10478,7 +10691,7 @@ public let RadioStations: [RadioStation] = [
 			//RYTHM_OF_THE_NIGHT
 			Song(
 				file: "RYTHM_OF_THE_NIGHT",
-				root: "RADIO_02_POP/rythm_of_the_night/",
+				root: "rythm_of_the_night",
 				labels: [
 					Label(
 						artist: "CORONA",
@@ -10503,7 +10716,7 @@ public let RadioStations: [RadioStation] = [
 			//SCANDALOUS
 			Song(
 				file: "SCANDALOUS",
-				root: "RADIO_02_POP/scandalous/",
+				root: "scandalous",
 				labels: [
 					Label(
 						artist: "MIS-TEEQ",
@@ -10532,7 +10745,7 @@ public let RadioStations: [RadioStation] = [
 			//SEND_ME_AN_ANGEL
 			Song(
 				file: "SEND_ME_AN_ANGEL",
-				root: "RADIO_02_POP/send_me_an_angel/",
+				root: "send_me_an_angel",
 				labels: [
 					Label(
 						artist: "REAL LIFE",
@@ -10548,7 +10761,7 @@ public let RadioStations: [RadioStation] = [
 			//SIX_UNDERGROUND
 			Song(
 				file: "SIX_UNDERGROUND",
-				root: "RADIO_02_POP/six_underground/",
+				root: "six_underground",
 				labels: [
 					Label(
 						artist: "SNEAKER PIMPS",
@@ -10573,7 +10786,7 @@ public let RadioStations: [RadioStation] = [
 			//SMALLTOWN_BOY
 			Song(
 				file: "SMALLTOWN_BOY",
-				root: "RADIO_02_POP/smalltown_boy/",
+				root: "smalltown_boy",
 				labels: [
 					Label(
 						artist: "BRONSKI BEAT",
@@ -10598,7 +10811,7 @@ public let RadioStations: [RadioStation] = [
 			//SOMETHING_GOT_ME_STARTED_REMIX
 			Song(
 				file: "SOMETHING_GOT_ME_STARTED_REMIX",
-				root: "RADIO_02_POP/something_got_me_started_remix/",
+				root: "something_got_me_started_remix",
 				labels: [
 					Label(
 						artist: "SIMPLY RED",
@@ -10623,7 +10836,7 @@ public let RadioStations: [RadioStation] = [
 			//TAPE_LOOP
 			Song(
 				file: "TAPE_LOOP",
-				root: "RADIO_02_POP/tape_loop/",
+				root: "tape_loop",
 				labels: [
 					Label(
 						artist: "MORCHEEBA",
@@ -10656,7 +10869,7 @@ public let RadioStations: [RadioStation] = [
 			//TELL_TO_MY_HEART
 			Song(
 				file: "TELL_TO_MY_HEART",
-				root: "RADIO_02_POP/tell_to_my_heart/",
+				root: "tell_to_my_heart",
 				labels: [
 					Label(
 						artist: "TAYLOR DAYNE",
@@ -10681,7 +10894,7 @@ public let RadioStations: [RadioStation] = [
 			//TENNIS_COURT
 			Song(
 				file: "TENNIS_COURT",
-				root: "RADIO_02_POP/tennis_court/",
+				root: "tennis_court",
 				labels: [
 					Label(
 						artist: "LORDE",
@@ -10706,7 +10919,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_TIME_IS_NOW
 			Song(
 				file: "THE_TIME_IS_NOW",
-				root: "RADIO_02_POP/the_time_is_now/",
+				root: "the_time_is_now",
 				labels: [
 					Label(
 						artist: "MOLOKO",
@@ -10739,7 +10952,7 @@ public let RadioStations: [RadioStation] = [
 			//WAIT
 			Song(
 				file: "WAIT",
-				root: "RADIO_02_POP/wait/",
+				root: "wait",
 				labels: [
 					Label(
 						artist: "BLOW MONKEYS FEAT. KYM MAZELLE",
@@ -10764,7 +10977,7 @@ public let RadioStations: [RadioStation] = [
 			//WEST_END_GIRLS
 			Song(
 				file: "WEST_END_GIRLS",
-				root: "RADIO_02_POP/west_end_girls/",
+				root: "west_end_girls",
 				labels: [
 					Label(
 						artist: "PET SHOP BOYS",
@@ -10789,7 +11002,7 @@ public let RadioStations: [RadioStation] = [
 			//WITH_EVERY_HEARTBEAT
 			Song(
 				file: "WITH_EVERY_HEARTBEAT",
-				root: "RADIO_02_POP/with_every_heartbeat/",
+				root: "with_every_heartbeat",
 				labels: [
 					Label(
 						artist: "ROBYN",
@@ -10814,7 +11027,7 @@ public let RadioStations: [RadioStation] = [
 			//WORK
 			Song(
 				file: "WORK",
-				root: "RADIO_02_POP/work/",
+				root: "work",
 				labels: [
 					Label(
 						artist: "KELLY ROWLAND",
@@ -10913,12 +11126,23 @@ public let RadioStations: [RadioStation] = [
 			column: 3
 		),
 		order: "random",
-		root: "RADIO_03_HIPHOP_NEW",
+		root: Root(
+			station: "RADIO_03_HIPHOP_NEW",
+			song: "RADIO_03_HIPHOP_NEW",
+			intro: "RADIO_03_HIPHOP_NEW/intro",
+			general: "RADIO_03_HIPHOP_NEW/general",
+			identity: "RADIO_03_HIPHOP_NEW",
+			solo: "RADIO_03_HIPHOP_NEW",
+			time: "RADIO_03_HIPHOP_NEW/time",
+			to: "RADIO_03_HIPHOP_NEW/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//ADHD
 			Song(
 				file: "ADHD",
-				root: "RADIO_03_HIPHOP_NEW/adhd/",
+				root: "adhd",
 				labels: [
 					Label(
 						artist: "KENDRICK LAMAR",
@@ -10943,7 +11167,7 @@ public let RadioStations: [RadioStation] = [
 			//ALI_BOMAYE
 			Song(
 				file: "ALI_BOMAYE",
-				root: "RADIO_03_HIPHOP_NEW/ali_bomaye/",
+				root: "ali_bomaye",
 				labels: [
 					Label(
 						artist: "GAME FEAT. 2 CHAINZ & RICK ROSS",
@@ -10968,7 +11192,7 @@ public let RadioStations: [RadioStation] = [
 			//BAD_NEWS
 			Song(
 				file: "BAD_NEWS",
-				root: "RADIO_03_HIPHOP_NEW/bad_news/",
+				root: "bad_news",
 				labels: [
 					Label(
 						artist: "DANNY BROWN & ACTION BRONSON",
@@ -10993,7 +11217,7 @@ public let RadioStations: [RadioStation] = [
 			//BASSHEADS
 			Song(
 				file: "BASSHEADS",
-				root: "RADIO_03_HIPHOP_NEW/bassheads/",
+				root: "bassheads",
 				labels: [
 					Label(
 						artist: "GANGRENE",
@@ -11018,7 +11242,7 @@ public let RadioStations: [RadioStation] = [
 			//BUGATTI
 			Song(
 				file: "BUGATTI",
-				root: "RADIO_03_HIPHOP_NEW/bugatti/",
+				root: "bugatti",
 				labels: [
 					Label(
 						artist: "ACE HOOD FEAT. FUTURE & RICK ROSS",
@@ -11043,7 +11267,7 @@ public let RadioStations: [RadioStation] = [
 			//COLLARD_GREENS
 			Song(
 				file: "COLLARD_GREENS",
-				root: "RADIO_03_HIPHOP_NEW/collard_greens/",
+				root: "collard_greens",
 				labels: [
 					Label(
 						artist: "SCHOOLBOY Q FEAT. KENDRICK LAMAR",
@@ -11059,7 +11283,7 @@ public let RadioStations: [RadioStation] = [
 			//DO_IT_BIG
 			Song(
 				file: "DO_IT_BIG",
-				root: "RADIO_03_HIPHOP_NEW/do_it_big/",
+				root: "do_it_big",
 				labels: [
 					Label(
 						artist: "PROBLEM & IAMSU! FEAT. BAD LUCC & SAGE THE GEMINI",
@@ -11084,7 +11308,7 @@ public let RadioStations: [RadioStation] = [
 			//EASILY
 			Song(
 				file: "EASILY",
-				root: "RADIO_03_HIPHOP_NEW/easily/",
+				root: "easily",
 				labels: [
 					Label(
 						artist: "CHUCK INGLISH",
@@ -11109,7 +11333,7 @@ public let RadioStations: [RadioStation] = [
 			//EVERYDAY
 			Song(
 				file: "EVERYDAY",
-				root: "RADIO_03_HIPHOP_NEW/everyday/",
+				root: "everyday",
 				labels: [
 					Label(
 						artist: "TROUBLE FT GUCCI MANE",
@@ -11134,7 +11358,7 @@ public let RadioStations: [RadioStation] = [
 			//HOLD_UP
 			Song(
 				file: "HOLD_UP",
-				root: "RADIO_03_HIPHOP_NEW/hold_up/",
+				root: "hold_up",
 				labels: [
 					Label(
 						artist: "MARION BAND$ FEAT. NIPSEY HUSSLE",
@@ -11150,7 +11374,7 @@ public let RadioStations: [RadioStation] = [
 			//HOOD_GONE_LOVE_IT
 			Song(
 				file: "HOOD_GONE_LOVE_IT",
-				root: "RADIO_03_HIPHOP_NEW/hood_gone_love_it/",
+				root: "hood_gone_love_it",
 				labels: [
 					Label(
 						artist: "JAY ROCK FEAT. KENDRICK LAMAR",
@@ -11175,7 +11399,7 @@ public let RadioStations: [RadioStation] = [
 			//HOW_IT_WAS
 			Song(
 				file: "HOW_IT_WAS",
-				root: "RADIO_03_HIPHOP_NEW/how_it_was/",
+				root: "how_it_was",
 				labels: [
 					Label(
 						artist: "FUTURE",
@@ -11200,7 +11424,7 @@ public let RadioStations: [RadioStation] = [
 			//HUNNID_STAX
 			Song(
 				file: "HUNNID_STAX",
-				root: "RADIO_03_HIPHOP_NEW/hunnid_stax/",
+				root: "hunnid_stax",
 				labels: [
 					Label(
 						artist: "AB-SOUL FEAT. SCHOOLBOY Q",
@@ -11225,7 +11449,7 @@ public let RadioStations: [RadioStation] = [
 			//I_CANT_WAIT_SCOOTER
 			Song(
 				file: "I_CANT_WAIT_SCOOTER",
-				root: "RADIO_03_HIPHOP_NEW/i_cant_wait_scooter/",
+				root: "i_cant_wait_scooter",
 				labels: [
 					Label(
 						artist: "YOUNG SCOOTER FT TRINIDAD JAMES",
@@ -11250,7 +11474,7 @@ public let RadioStations: [RadioStation] = [
 			//ILLUMINATE
 			Song(
 				file: "ILLUMINATE",
-				root: "RADIO_03_HIPHOP_NEW/illuminate/",
+				root: "illuminate",
 				labels: [
 					Label(
 						artist: "AB-SOUL FT. KENDRICK LAMAR",
@@ -11275,7 +11499,7 @@ public let RadioStations: [RadioStation] = [
 			//IM_A_REAL_ONE
 			Song(
 				file: "IM_A_REAL_ONE",
-				root: "RADIO_03_HIPHOP_NEW/im_a_real_one/",
+				root: "im_a_real_one",
 				labels: [
 					Label(
 						artist: "YG",
@@ -11300,7 +11524,7 @@ public let RadioStations: [RadioStation] = [
 			//KUSH_COMA
 			Song(
 				file: "KUSH_COMA",
-				root: "RADIO_03_HIPHOP_NEW/kush_coma/",
+				root: "kush_coma",
 				labels: [
 					Label(
 						artist: "DANNY BROWN FEAT. A$AP ROCKY & ZELOOPERZ",
@@ -11325,7 +11549,7 @@ public let RadioStations: [RadioStation] = [
 			//LIFE_OF_A_MACK
 			Song(
 				file: "LIFE_OF_A_MACK",
-				root: "RADIO_03_HIPHOP_NEW/life_of_a_mack/",
+				root: "life_of_a_mack",
 				labels: [
 					Label(
 						artist: "100S",
@@ -11354,7 +11578,7 @@ public let RadioStations: [RadioStation] = [
 			//MILLIONS
 			Song(
 				file: "MILLIONS",
-				root: "RADIO_03_HIPHOP_NEW/millions/",
+				root: "millions",
 				labels: [
 					Label(
 						artist: "SKEME",
@@ -11379,7 +11603,7 @@ public let RadioStations: [RadioStation] = [
 			//R_CALI
 			Song(
 				file: "R_CALI",
-				root: "RADIO_03_HIPHOP_NEW/r_cali/",
+				root: "r_cali",
 				labels: [
 					Label(
 						artist: "A$AP ROCKY",
@@ -11408,7 +11632,7 @@ public let RadioStations: [RadioStation] = [
 			//RELAXIN
 			Song(
 				file: "RELAXIN",
-				root: "RADIO_03_HIPHOP_NEW/relaxin/",
+				root: "relaxin",
 				labels: [
 					Label(
 						artist: "G-SIDE FT G-MANE",
@@ -11433,7 +11657,7 @@ public let RadioStations: [RadioStation] = [
 			//SAY_THAT_THEN
 			Song(
 				file: "SAY_THAT_THEN",
-				root: "RADIO_03_HIPHOP_NEW/say_that_then/",
+				root: "say_that_then",
 				labels: [
 					Label(
 						artist: "PROBLEM FEAT. GLASSES MALONE",
@@ -11458,7 +11682,7 @@ public let RadioStations: [RadioStation] = [
 			//SELLIN_DOPE
 			Song(
 				file: "SELLIN_DOPE",
-				root: "RADIO_03_HIPHOP_NEW/sellin_dope/",
+				root: "sellin_dope",
 				labels: [
 					Label(
 						artist: "FREDDIE GIBBS & MIKE DEAN",
@@ -11474,7 +11698,7 @@ public let RadioStations: [RadioStation] = [
 			//SLOW_DOWN
 			Song(
 				file: "SLOW_DOWN",
-				root: "RADIO_03_HIPHOP_NEW/slow_down/",
+				root: "slow_down",
 				labels: [
 					Label(
 						artist: "CLYDE CARSON FEAT. THE TEAM",
@@ -11499,7 +11723,7 @@ public let RadioStations: [RadioStation] = [
 			//SMOKIN_AND_RIDIN
 			Song(
 				file: "SMOKIN_AND_RIDIN",
-				root: "RADIO_03_HIPHOP_NEW/smokin_and_ridin/",
+				root: "smokin_and_ridin",
 				labels: [
 					Label(
 						artist: "BJ THE CHICAGO KID FEAT. FREDDIE GIBBS & PROBLEM",
@@ -11528,7 +11752,7 @@ public let RadioStations: [RadioStation] = [
 			//STILL_LIVIN
 			Song(
 				file: "STILL_LIVIN",
-				root: "RADIO_03_HIPHOP_NEW/still_livin/",
+				root: "still_livin",
 				labels: [
 					Label(
 						artist: "FREDDIE GIBBS",
@@ -11553,7 +11777,7 @@ public let RadioStations: [RadioStation] = [
 			//SWIMMING_POOLS
 			Song(
 				file: "SWIMMING_POOLS",
-				root: "RADIO_03_HIPHOP_NEW/swimming_pools/",
+				root: "swimming_pools",
 				labels: [
 					Label(
 						artist: "KENDRICK LAMAR",
@@ -11578,7 +11802,7 @@ public let RadioStations: [RadioStation] = [
 			//TOO_HOOD
 			Song(
 				file: "TOO_HOOD",
-				root: "RADIO_03_HIPHOP_NEW/too_hood/",
+				root: "too_hood",
 				labels: [
 					Label(
 						artist: "GUCCI MANE FEAT. CIARA",
@@ -11603,7 +11827,7 @@ public let RadioStations: [RadioStation] = [
 			//UPPER_ECHELON
 			Song(
 				file: "UPPER_ECHELON",
-				root: "RADIO_03_HIPHOP_NEW/upper_echelon/",
+				root: "upper_echelon",
 				labels: [
 					Label(
 						artist: "TRAVI$ SCOTT",
@@ -11628,7 +11852,7 @@ public let RadioStations: [RadioStation] = [
 			//WORK_FERG
 			Song(
 				file: "WORK_FERG",
-				root: "RADIO_03_HIPHOP_NEW/work_ferg/",
+				root: "work_ferg",
 				labels: [
 					Label(
 						artist: "A$AP FERG",
@@ -11649,7 +11873,7 @@ public let RadioStations: [RadioStation] = [
 			//WORK_YOUNG_SCOOTER
 			Song(
 				file: "WORK_YOUNG_SCOOTER",
-				root: "RADIO_03_HIPHOP_NEW/work_young_scooter/",
+				root: "work_young_scooter",
 				labels: [
 					Label(
 						artist: "YOUNG SCOOTER FEAT. GUCCI MANE",
@@ -11737,12 +11961,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "random",
-		root: "RADIO_04_PUNK",
+		root: Root(
+			station: "RADIO_04_PUNK",
+			song: "RADIO_04_PUNK",
+			intro: "RADIO_04_PUNK/intro",
+			general: "RADIO_04_PUNK/general",
+			identity: "RADIO_04_PUNK",
+			solo: "RADIO_04_PUNK",
+			time: "RADIO_04_PUNK/time",
+			to: "RADIO_04_PUNK/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//AMOEBA
 			Song(
 				file: "AMOEBA",
-				root: "RADIO_04_PUNK/amoeba/",
+				root: "amoeba",
 				labels: [
 					Label(
 						artist: "THE ADOLESCENTS",
@@ -11767,7 +12002,7 @@ public let RadioStations: [RadioStation] = [
 			//BLOWN_AWAY
 			Song(
 				file: "BLOWN_AWAY",
-				root: "RADIO_04_PUNK/blown_away/",
+				root: "blown_away",
 				labels: [
 					Label(
 						artist: "YOUTH BRIGADE",
@@ -11792,7 +12027,7 @@ public let RadioStations: [RadioStation] = [
 			//BORED_OF_YOU
 			Song(
 				file: "BORED_OF_YOU",
-				root: "RADIO_04_PUNK/bored_of_you/",
+				root: "bored_of_you",
 				labels: [
 					Label(
 						artist: "AGENT ORANGE",
@@ -11817,7 +12052,7 @@ public let RadioStations: [RadioStation] = [
 			//DONT_NEED_SOCIETY
 			Song(
 				file: "DONT_NEED_SOCIETY",
-				root: "RADIO_04_PUNK/dont_need_society/",
+				root: "dont_need_society",
 				labels: [
 					Label(
 						artist: "D.R.I.",
@@ -11842,7 +12077,7 @@ public let RadioStations: [RadioStation] = [
 			//DONT_PUSH_ME_AROUND
 			Song(
 				file: "DONT_PUSH_ME_AROUND",
-				root: "RADIO_04_PUNK/dont_push_me_around/",
+				root: "dont_push_me_around",
 				labels: [
 					Label(
 						artist: "THE ZEROS",
@@ -11867,7 +12102,7 @@ public let RadioStations: [RadioStation] = [
 			//JOHN_WAYNE
 			Song(
 				file: "JOHN_WAYNE",
-				root: "RADIO_04_PUNK/john_wayne/",
+				root: "john_wayne",
 				labels: [
 					Label(
 						artist: "MDC",
@@ -11892,7 +12127,7 @@ public let RadioStations: [RadioStation] = [
 			//LEXICON_DEVIL
 			Song(
 				file: "LEXICON_DEVIL",
-				root: "RADIO_04_PUNK/lexicon_devil/",
+				root: "lexicon_devil",
 				labels: [
 					Label(
 						artist: "THE GERMS",
@@ -11917,7 +12152,7 @@ public let RadioStations: [RadioStation] = [
 			//LIFE_OF_CRIME
 			Song(
 				file: "LIFE_OF_CRIME",
-				root: "RADIO_04_PUNK/life_of_crime/",
+				root: "life_of_crime",
 				labels: [
 					Label(
 						artist: "THE WEIRDOS",
@@ -11933,7 +12168,7 @@ public let RadioStations: [RadioStation] = [
 			//LINDA_BLAIR
 			Song(
 				file: "LINDA_BLAIR",
-				root: "RADIO_04_PUNK/linda_blair/",
+				root: "linda_blair",
 				labels: [
 					Label(
 						artist: "REDD KROSS",
@@ -11958,7 +12193,7 @@ public let RadioStations: [RadioStation] = [
 			//LOS_ANGELES
 			Song(
 				file: "LOS_ANGELES",
-				root: "RADIO_04_PUNK/los_angeles/",
+				root: "los_angeles",
 				labels: [
 					Label(
 						artist: "X",
@@ -11983,7 +12218,7 @@ public let RadioStations: [RadioStation] = [
 			//MY_WAR
 			Song(
 				file: "MY_WAR",
-				root: "RADIO_04_PUNK/my_war/",
+				root: "my_war",
 				labels: [
 					Label(
 						artist: "BLACK FLAG",
@@ -12008,7 +12243,7 @@ public let RadioStations: [RadioStation] = [
 			//PERVERT
 			Song(
 				file: "PERVERT",
-				root: "RADIO_04_PUNK/pervert/",
+				root: "pervert",
 				labels: [
 					Label(
 						artist: "THE DESCENDENTS",
@@ -12024,7 +12259,7 @@ public let RadioStations: [RadioStation] = [
 			//ROCK_HOUSE
 			Song(
 				file: "ROCK_HOUSE",
-				root: "RADIO_04_PUNK/rock_house/",
+				root: "rock_house",
 				labels: [
 					Label(
 						artist: "CIRCLE JERKS",
@@ -12040,7 +12275,7 @@ public let RadioStations: [RadioStation] = [
 			//SILENT_MAJORITY
 			Song(
 				file: "SILENT_MAJORITY",
-				root: "RADIO_04_PUNK/silent_majority/",
+				root: "silent_majority",
 				labels: [
 					Label(
 						artist: "T.S.O.L.",
@@ -12056,7 +12291,7 @@ public let RadioStations: [RadioStation] = [
 			//SUBLIMINAL
 			Song(
 				file: "SUBLIMINAL",
-				root: "RADIO_04_PUNK/subliminal/",
+				root: "subliminal",
 				labels: [
 					Label(
 						artist: "SUICIDAL TENDENCIES",
@@ -12081,7 +12316,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_ENEMY
 			Song(
 				file: "THE_ENEMY",
-				root: "RADIO_04_PUNK/the_enemy/",
+				root: "the_enemy",
 				labels: [
 					Label(
 						artist: "D.O.A.",
@@ -12106,7 +12341,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_MOUTH_DONT_STOP
 			Song(
 				file: "THE_MOUTH_DONT_STOP",
-				root: "RADIO_04_PUNK/the_mouth_dont_stop/",
+				root: "the_mouth_dont_stop",
 				labels: [
 					Label(
 						artist: "FEAR",
@@ -12131,7 +12366,7 @@ public let RadioStations: [RadioStation] = [
 			//WHATS_NEXT
 			Song(
 				file: "WHATS_NEXT",
-				root: "RADIO_04_PUNK/whats_next/",
+				root: "whats_next",
 				labels: [
 					Label(
 						artist: "OFF!",
@@ -12210,12 +12445,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "rotate",
-		root: "RADIO_05_TALK_01",
+		root: Root(
+			station: "RADIO_05_TALK_01",
+			song: "RADIO_05_TALK_01",
+			intro: nil,
+			general: nil,
+			identity: "RADIO_05_TALK_01",
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//MONO_CHAKRA_ATTACK_PART_1
 			Song(
 				file: "MONO_CHAKRA_ATTACK_PART_1",
-				root: "RADIO_05_TALK_01/mono_chakra_attack_part_1/",
+				root: "mono_chakra_attack_part_1",
 				labels: [
 					Label(
 						artist: "CHAKRA ATTACK",
@@ -12231,7 +12477,7 @@ public let RadioStations: [RadioStation] = [
 			//MONO_CHATTERSPHERE
 			Song(
 				file: "MONO_CHATTERSPHERE",
-				root: "RADIO_05_TALK_01/mono_chattersphere/",
+				root: "mono_chattersphere",
 				labels: [
 					Label(
 						artist: "CHATTERSPHERE",
@@ -12247,7 +12493,7 @@ public let RadioStations: [RadioStation] = [
 			//MONO_DCHAKRA_ATTACK_PART_2
 			Song(
 				file: "MONO_DCHAKRA_ATTACK_PART_2",
-				root: "RADIO_05_TALK_01/mono_dchakra_attack_part_2/",
+				root: "mono_dchakra_attack_part_2",
 				labels: [
 					Label(
 						artist: "CHAKRA ATTACK",
@@ -12263,7 +12509,7 @@ public let RadioStations: [RadioStation] = [
 			//MONO_FERNANDO_SHOW_1
 			Song(
 				file: "MONO_FERNANDO_SHOW_1",
-				root: "RADIO_05_TALK_01/mono_fernando_show_1/",
+				root: "mono_fernando_show_1",
 				labels: [
 					Label(
 						artist: "The Fernando Show",
@@ -12313,12 +12559,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "random",
-		root: "RADIO_06_COUNTRY",
+		root: Root(
+			station: "RADIO_06_COUNTRY",
+			song: "RADIO_06_COUNTRY",
+			intro: "RADIO_06_COUNTRY/intro",
+			general: "RADIO_06_COUNTRY/general",
+			identity: "RADIO_06_COUNTRY",
+			solo: "RADIO_06_COUNTRY",
+			time: "RADIO_06_COUNTRY/time",
+			to: "RADIO_06_COUNTRY/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//ARE_YOU_SURE_HANK
 			Song(
 				file: "ARE_YOU_SURE_HANK",
-				root: "RADIO_06_COUNTRY/are_you_sure_hank/",
+				root: "are_you_sure_hank",
 				labels: [
 					Label(
 						artist: "WAYLON JENNINGS",
@@ -12339,7 +12596,7 @@ public let RadioStations: [RadioStation] = [
 			//CANT_HARDLY_STAND
 			Song(
 				file: "CANT_HARDLY_STAND",
-				root: "RADIO_06_COUNTRY/cant_hardly_stand/",
+				root: "cant_hardly_stand",
 				labels: [
 					Label(
 						artist: "CHARLIE FEATHERS",
@@ -12364,7 +12621,7 @@ public let RadioStations: [RadioStation] = [
 			//CONVOY
 			Song(
 				file: "CONVOY",
-				root: "RADIO_06_COUNTRY/convoy/",
+				root: "convoy",
 				labels: [
 					Label(
 						artist: "C.W. MCCALL",
@@ -12393,7 +12650,7 @@ public let RadioStations: [RadioStation] = [
 			//CRAZY_ARMS
 			Song(
 				file: "CRAZY_ARMS",
-				root: "RADIO_06_COUNTRY/crazy_arms/",
+				root: "crazy_arms",
 				labels: [
 					Label(
 						artist: "RAY PRICE",
@@ -12409,7 +12666,7 @@ public let RadioStations: [RadioStation] = [
 			//DIPPIN_SNUFF
 			Song(
 				file: "DIPPIN_SNUFF",
-				root: "RADIO_06_COUNTRY/dippin_snuff/",
+				root: "dippin_snuff",
 				labels: [
 					Label(
 						artist: "MARVIN JACKSON",
@@ -12425,7 +12682,7 @@ public let RadioStations: [RadioStation] = [
 			//DIVORCE
 			Song(
 				file: "DIVORCE",
-				root: "RADIO_06_COUNTRY/divorce/",
+				root: "divorce",
 				labels: [
 					Label(
 						artist: "TAMMY WYNETTE",
@@ -12441,7 +12698,7 @@ public let RadioStations: [RadioStation] = [
 			//GET_OUTTA_MY_CAR
 			Song(
 				file: "GET_OUTTA_MY_CAR",
-				root: "RADIO_06_COUNTRY/get_outta_my_car/",
+				root: "get_outta_my_car",
 				labels: [
 					Label(
 						artist: "HASIL ADKINS",
@@ -12470,7 +12727,7 @@ public let RadioStations: [RadioStation] = [
 			//GET_WITH_IT
 			Song(
 				file: "GET_WITH_IT",
-				root: "RADIO_06_COUNTRY/get_with_it/",
+				root: "get_with_it",
 				labels: [
 					Label(
 						artist: "CHARLIE FEATHERS",
@@ -12486,7 +12743,7 @@ public let RadioStations: [RadioStation] = [
 			//HIGHWAY_MAN
 			Song(
 				file: "HIGHWAY_MAN",
-				root: "RADIO_06_COUNTRY/highway_man/",
+				root: "highway_man",
 				labels: [
 					Label(
 						artist: "THE HIGHWAYMEN",
@@ -12502,7 +12759,7 @@ public let RadioStations: [RadioStation] = [
 			//I_AINT_LIVING_LONG_LIKE_THIS
 			Song(
 				file: "I_AINT_LIVING_LONG_LIKE_THIS",
-				root: "RADIO_06_COUNTRY/i_aint_living_long_like_this/",
+				root: "i_aint_living_long_like_this",
 				labels: [
 					Label(
 						artist: "WAYLON JENNINGS",
@@ -12523,7 +12780,7 @@ public let RadioStations: [RadioStation] = [
 			//IF_WANT_TO_GET_HEAVEN
 			Song(
 				file: "IF_WANT_TO_GET_HEAVEN",
-				root: "RADIO_06_COUNTRY/if_want_to_get_heaven/",
+				root: "if_want_to_get_heaven",
 				labels: [
 					Label(
 						artist: "OZARK MOUNTAIN DAREDEVILS",
@@ -12548,7 +12805,7 @@ public let RadioStations: [RadioStation] = [
 			//IT_DONT_HURT_ANYMORE
 			Song(
 				file: "IT_DONT_HURT_ANYMORE",
-				root: "RADIO_06_COUNTRY/it_dont_hurt_anymore/",
+				root: "it_dont_hurt_anymore",
 				labels: [
 					Label(
 						artist: "HANK THOMPSON",
@@ -12573,7 +12830,7 @@ public let RadioStations: [RadioStation] = [
 			//IT_WONT_BE_LONG_HATING_YOU
 			Song(
 				file: "IT_WONT_BE_LONG_HATING_YOU",
-				root: "RADIO_06_COUNTRY/it_wont_be_long_hating_you/",
+				root: "it_wont_be_long_hating_you",
 				labels: [
 					Label(
 						artist: "JOHNNY PAYCHECK",
@@ -12598,7 +12855,7 @@ public let RadioStations: [RadioStation] = [
 			//SHE_MADE_TOOTHPICKS_OUT_OF_ME
 			Song(
 				file: "SHE_MADE_TOOTHPICKS_OUT_OF_ME",
-				root: "RADIO_06_COUNTRY/she_made_toothpicks_out_of_me/",
+				root: "she_made_toothpicks_out_of_me",
 				labels: [
 					Label(
 						artist: "HOMER & JETHRO",
@@ -12614,7 +12871,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_GENERAL_LEE
 			Song(
 				file: "THE_GENERAL_LEE",
-				root: "RADIO_06_COUNTRY/the_general_lee/",
+				root: "the_general_lee",
 				labels: [
 					Label(
 						artist: "JOHNNY CASH",
@@ -12639,7 +12896,7 @@ public let RadioStations: [RadioStation] = [
 			//WHISKEY_RIVER
 			Song(
 				file: "WHISKEY_RIVER",
-				root: "RADIO_06_COUNTRY/whiskey_river/",
+				root: "whiskey_river",
 				labels: [
 					Label(
 						artist: "WILLIE NELSON",
@@ -12664,7 +12921,7 @@ public let RadioStations: [RadioStation] = [
 			//YOU_TOOK_ALL_THE_RAMBLIN_OUT
 			Song(
 				file: "YOU_TOOK_ALL_THE_RAMBLIN_OUT",
-				root: "RADIO_06_COUNTRY/you_took_all_the_ramblin_out/",
+				root: "you_took_all_the_ramblin_out",
 				labels: [
 					Label(
 						artist: "JERRY REED",
@@ -12751,12 +13008,23 @@ public let RadioStations: [RadioStation] = [
 			column: 2
 		),
 		order: "static",
-		root: "RADIO_07_DANCE_01",
+		root: Root(
+			station: "RADIO_07_DANCE_01",
+			song: "RADIO_07_DANCE_01",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//SOULWAX_FM_FINAL_MIX_
 			Song(
 				file: "SOULWAX_FM_FINAL_MIX_32K",
-				root: "RADIO_07_DANCE_01/soulwax_fm_final_mix_32k/",
+				root: "soulwax_fm_final_mix_32k",
 				labels: [
 					Label(
 						artist: "",
@@ -12902,12 +13170,23 @@ public let RadioStations: [RadioStation] = [
 			column: 1
 		),
 		order: "static",
-		root: "RADIO_08_MEXICAN",
+		root: Root(
+			station: "RADIO_08_MEXICAN",
+			song: "RADIO_08_MEXICAN",
+			intro: nil,
+			general: nil,
+			identity: nil,
+			solo: nil,
+			time: nil,
+			to: nil,
+			ad: nil,
+			news: nil
+		),
 		songs: [
 			//MEX_FINAL_MIX_
 			Song(
 				file: "MEX_FINAL_MIX_32",
-				root: "RADIO_08_MEXICAN/mex_final_mix_32/",
+				root: "mex_final_mix_32",
 				labels: [
 					//El Cocaino
 					Label(
@@ -13030,12 +13309,23 @@ public let RadioStations: [RadioStation] = [
 			column: 3
 		),
 		order: "random",
-		root: "RADIO_09_HIPHOP_OLD",
+		root: Root(
+			station: "RADIO_09_HIPHOP_OLD",
+			song: "RADIO_09_HIPHOP_OLD",
+			intro: "RADIO_09_HIPHOP_OLD/intro",
+			general: "RADIO_09_HIPHOP_OLD/general",
+			identity: "RADIO_09_HIPHOP_OLD",
+			solo: "RADIO_09_HIPHOP_OLD",
+			time: "RADIO_09_HIPHOP_OLD/time",
+			to: "RADIO_09_HIPHOP_OLD/to",
+			ad: "RADIO_ADVERTS",
+			news: "RADIO_NEWS"
+		),
 		songs: [
 			//AFRO_PUFFS
 			Song(
 				file: "AFRO_PUFFS",
-				root: "RADIO_09_HIPHOP_OLD/afro_puffs/",
+				root: "afro_puffs",
 				labels: [
 					Label(
 						artist: "THE LADY OF RAGE",
@@ -13060,7 +13350,7 @@ public let RadioStations: [RadioStation] = [
 			//AMBITIONZ_AZ_A_RIDAH
 			Song(
 				file: "AMBITIONZ_AZ_A_RIDAH",
-				root: "RADIO_09_HIPHOP_OLD/ambitionz_az_a_ridah/",
+				root: "ambitionz_az_a_ridah",
 				labels: [
 					Label(
 						artist: "2PAC",
@@ -13085,7 +13375,7 @@ public let RadioStations: [RadioStation] = [
 			//APPETITE_FOR_DESTRUCTION
 			Song(
 				file: "APPETITE_FOR_DESTRUCTION",
-				root: "RADIO_09_HIPHOP_OLD/appetite_for_destruction/",
+				root: "appetite_for_destruction",
 				labels: [
 					Label(
 						artist: "N.W.A",
@@ -13110,7 +13400,7 @@ public let RadioStations: [RadioStation] = [
 			//BALLAD_OF_A_MENACE
 			Song(
 				file: "BALLAD_OF_A_MENACE",
-				root: "RADIO_09_HIPHOP_OLD/ballad_of_a_menace/",
+				root: "ballad_of_a_menace",
 				labels: [
 					Label(
 						artist: "CPO",
@@ -13139,7 +13429,7 @@ public let RadioStations: [RadioStation] = [
 			//BOW_DOWN
 			Song(
 				file: "BOW_DOWN",
-				root: "RADIO_09_HIPHOP_OLD/bow_down/",
+				root: "bow_down",
 				labels: [
 					Label(
 						artist: "WESTSIDE CONNECTION",
@@ -13164,7 +13454,7 @@ public let RadioStations: [RadioStation] = [
 			//C_WALK
 			Song(
 				file: "C_WALK",
-				root: "RADIO_09_HIPHOP_OLD/c_walk/",
+				root: "c_walk",
 				labels: [
 					Label(
 						artist: "KURUPT",
@@ -13189,7 +13479,7 @@ public let RadioStations: [RadioStation] = [
 			//CAPTAIN_SAVE_A_HOE
 			Song(
 				file: "CAPTAIN_SAVE_A_HOE",
-				root: "RADIO_09_HIPHOP_OLD/captain_save_a_hoe/",
+				root: "captain_save_a_hoe",
 				labels: [
 					Label(
 						artist: "E-40",
@@ -13214,7 +13504,7 @@ public let RadioStations: [RadioStation] = [
 			//DOLLAZ_AND_SENSE
 			Song(
 				file: "DOLLAZ_AND_SENSE",
-				root: "RADIO_09_HIPHOP_OLD/dollaz_and_sense/",
+				root: "dollaz_and_sense",
 				labels: [
 					Label(
 						artist: "DJ QUIK",
@@ -13230,7 +13520,7 @@ public let RadioStations: [RadioStation] = [
 			//FIRST_OF_THE_MONTH
 			Song(
 				file: "FIRST_OF_THE_MONTH",
-				root: "RADIO_09_HIPHOP_OLD/first_of_the_month/",
+				root: "first_of_the_month",
 				labels: [
 					Label(
 						artist: "BONE THUGS-N-HARMONY",
@@ -13255,7 +13545,7 @@ public let RadioStations: [RadioStation] = [
 			//GANGSTA_GANGSTA
 			Song(
 				file: "GANGSTA_GANGSTA",
-				root: "RADIO_09_HIPHOP_OLD/gangsta_gangsta/",
+				root: "gangsta_gangsta",
 				labels: [
 					Label(
 						artist: "N.W.A",
@@ -13280,7 +13570,7 @@ public let RadioStations: [RadioStation] = [
 			//GIN_AND_JUICE
 			Song(
 				file: "GIN_AND_JUICE",
-				root: "RADIO_09_HIPHOP_OLD/gin_and_juice/",
+				root: "gin_and_juice",
 				labels: [
 					Label(
 						artist: "SNOOP DOGG",
@@ -13305,7 +13595,7 @@ public let RadioStations: [RadioStation] = [
 			//I_GOT_FIVE_ON_IT
 			Song(
 				file: "I_GOT_FIVE_ON_IT",
-				root: "RADIO_09_HIPHOP_OLD/i_got_five_on_it/",
+				root: "i_got_five_on_it",
 				labels: [
 					Label(
 						artist: "THE LUNIZ",
@@ -13321,7 +13611,7 @@ public let RadioStations: [RadioStation] = [
 			//LATE_NIGHT_HYPE
 			Song(
 				file: "LATE_NIGHT_HYPE",
-				root: "RADIO_09_HIPHOP_OLD/late_night_hype/",
+				root: "late_night_hype",
 				labels: [
 					Label(
 						artist: "COMPTON'S MOST WANTED",
@@ -13346,7 +13636,7 @@ public let RadioStations: [RadioStation] = [
 			//LIKE_A_PIANO
 			Song(
 				file: "LIKE_A_PIANO",
-				root: "RADIO_09_HIPHOP_OLD/like_a_piano/",
+				root: "like_a_piano",
 				labels: [
 					Label(
 						artist: "KING TEE",
@@ -13362,7 +13652,7 @@ public let RadioStations: [RadioStation] = [
 			//MIND_PLAYING_TRICKS
 			Song(
 				file: "MIND_PLAYING_TRICKS",
-				root: "RADIO_09_HIPHOP_OLD/mind_playing_tricks/",
+				root: "mind_playing_tricks",
 				labels: [
 					Label(
 						artist: "GETO BOYS",
@@ -13387,7 +13677,7 @@ public let RadioStations: [RadioStation] = [
 			//NO_MORE_QUESTIONS
 			Song(
 				file: "NO_MORE_QUESTIONS",
-				root: "RADIO_09_HIPHOP_OLD/no_more_questions/",
+				root: "no_more_questions",
 				labels: [
 					Label(
 						artist: "EAZY-E",
@@ -13412,7 +13702,7 @@ public let RadioStations: [RadioStation] = [
 			//NOTHIN_BUT_THE_CAVI_HIT
 			Song(
 				file: "NOTHIN_BUT_THE_CAVI_HIT",
-				root: "RADIO_09_HIPHOP_OLD/nothin_but_the_cavi_hit/",
+				root: "nothin_but_the_cavi_hit",
 				labels: [
 					Label(
 						artist: "MACK 10 FEAT. THE DOGG POUND",
@@ -13437,7 +13727,7 @@ public let RadioStations: [RadioStation] = [
 			//SERVIN_EM_HEAT
 			Song(
 				file: "SERVIN_EM_HEAT",
-				root: "RADIO_09_HIPHOP_OLD/servin_em_heat/",
+				root: "servin_em_heat",
 				labels: [
 					Label(
 						artist: "SOUTH CENTRAL CARTEL",
@@ -13462,7 +13752,7 @@ public let RadioStations: [RadioStation] = [
 			//SHERM_STICK
 			Song(
 				file: "SHERM_STICK",
-				root: "RADIO_09_HIPHOP_OLD/sherm_stick/",
+				root: "sherm_stick",
 				labels: [
 					Label(
 						artist: "JAYO FELONY",
@@ -13487,7 +13777,7 @@ public let RadioStations: [RadioStation] = [
 			//SO_YOU_WANT_TO_BE_A_GANGSTER
 			Song(
 				file: "SO_YOU_WANT_TO_BE_A_GANGSTER",
-				root: "RADIO_09_HIPHOP_OLD/so_you_want_to_be_a_gangster/",
+				root: "so_you_want_to_be_a_gangster",
 				labels: [
 					Label(
 						artist: "TOO $HORT",
@@ -13512,7 +13802,7 @@ public let RadioStations: [RadioStation] = [
 			//STILL_D_R_E
 			Song(
 				file: "STILL_D_R_E",
-				root: "RADIO_09_HIPHOP_OLD/still_d_r_e/",
+				root: "still_d_r_e",
 				labels: [
 					Label(
 						artist: "DR. DRE",
@@ -13537,7 +13827,7 @@ public let RadioStations: [RadioStation] = [
 			//STRAIGHT_UP_MENACE
 			Song(
 				file: "STRAIGHT_UP_MENACE",
-				root: "RADIO_09_HIPHOP_OLD/straight_up_menace/",
+				root: "straight_up_menace",
 				labels: [
 					Label(
 						artist: "MC EIHT",
@@ -13562,7 +13852,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_MURDA_SHOW
 			Song(
 				file: "THE_MURDA_SHOW",
-				root: "RADIO_09_HIPHOP_OLD/the_murda_show/",
+				root: "the_murda_show",
 				labels: [
 					Label(
 						artist: "SPICE 1 FEAT. MC EIHT",
@@ -13595,7 +13885,7 @@ public let RadioStations: [RadioStation] = [
 			//THE_NEXT_EPISODE
 			Song(
 				file: "THE_NEXT_EPISODE",
-				root: "RADIO_09_HIPHOP_OLD/the_next_episode/",
+				root: "the_next_episode",
 				labels: [
 					Label(
 						artist: "DR. DRE",
@@ -13620,7 +13910,7 @@ public let RadioStations: [RadioStation] = [
 			//THIS_DJ
 			Song(
 				file: "THIS_DJ",
-				root: "RADIO_09_HIPHOP_OLD/this_dj/",
+				root: "this_dj",
 				labels: [
 					Label(
 						artist: "WARREN G",
@@ -13645,7 +13935,7 @@ public let RadioStations: [RadioStation] = [
 			//WE_ROLL_DEEP
 			Song(
 				file: "WE_ROLL_DEEP",
-				root: "RADIO_09_HIPHOP_OLD/we_roll_deep/",
+				root: "we_roll_deep",
 				labels: [
 					Label(
 						artist: "THE CONSCIOUS DAUGHTERS",
@@ -13670,7 +13960,7 @@ public let RadioStations: [RadioStation] = [
 			//WHAT_WOULD_YOU_DO
 			Song(
 				file: "WHAT_WOULD_YOU_DO",
-				root: "RADIO_09_HIPHOP_OLD/what_would_you_do/",
+				root: "what_would_you_do",
 				labels: [
 					Label(
 						artist: "THE DOGG POUND",
@@ -13695,7 +13985,7 @@ public let RadioStations: [RadioStation] = [
 			//WHAT_YOU_WANNA_DO
 			Song(
 				file: "WHAT_YOU_WANNA_DO",
-				root: "RADIO_09_HIPHOP_OLD/what_you_wanna_do/",
+				root: "what_you_wanna_do",
 				labels: [
 					Label(
 						artist: "KAUSION",
@@ -13720,7 +14010,7 @@ public let RadioStations: [RadioStation] = [
 			//YOU_KNOW_HOW_WE_DO
 			Song(
 				file: "YOU_KNOW_HOW_WE_DO",
-				root: "RADIO_09_HIPHOP_OLD/you_know_how_we_do/",
+				root: "you_know_how_we_do",
 				labels: [
 					Label(
 						artist: "ICE CUBE",
@@ -13810,8 +14100,3 @@ public let RadioStations: [RadioStation] = [
 		]
 	),
 ]
-
-
-
-
-
