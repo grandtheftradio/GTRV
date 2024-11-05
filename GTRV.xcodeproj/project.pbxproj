@@ -13,7 +13,7 @@
 		EB3D10872CA734DD00900793 /* AudioPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D10862CA734DD00900793 /* AudioPath.swift */; };
 		EB75BB3C2C91F19400BE0F45 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3B2C91F19400BE0F45 /* ImageData.swift */; };
 		EB75BB3E2C91FDE500BE0F45 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3D2C91FDE500BE0F45 /* General.swift */; };
-		EB75BB402C9216FE00BE0F45 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3F2C9216FE00BE0F45 /* Identity.swift */; };
+		EB75BB402C9216FE00BE0F45 /* StationID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3F2C9216FE00BE0F45 /* StationID.swift */; };
 		EB75BB422C922BF300BE0F45 /* Solo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB412C922BF300BE0F45 /* Solo.swift */; };
 		EBB3BE3A2A97E79300E72A23 /* GTRVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE392A97E79300E72A23 /* GTRVApp.swift */; };
 		EBB3BE3C2A97E79300E72A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE3B2A97E79300E72A23 /* ContentView.swift */; };
@@ -45,6 +45,7 @@
 		EBB3BEAA2A97FE2200E72A23 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEA92A97FE2200E72A23 /* Settings.swift */; };
 		EBB3BEAC2A97FE5700E72A23 /* StationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */; };
 		EBB3BEAE2A97FE8700E72A23 /* Stations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BEAD2A97FE8700E72A23 /* Stations.swift */; };
+		EBDCC0D32CDA60DB006EB1F0 /* Plays.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDCC0D22CDA60D4006EB1F0 /* Plays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +55,7 @@
 		EB3D10862CA734DD00900793 /* AudioPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPath.swift; sourceTree = "<group>"; };
 		EB75BB3B2C91F19400BE0F45 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		EB75BB3D2C91FDE500BE0F45 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
-		EB75BB3F2C9216FE00BE0F45 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		EB75BB3F2C9216FE00BE0F45 /* StationID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationID.swift; sourceTree = "<group>"; };
 		EB75BB412C922BF300BE0F45 /* Solo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo.swift; sourceTree = "<group>"; };
 		EBB3BE362A97E79300E72A23 /* GTRV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTRV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB3BE392A97E79300E72A23 /* GTRVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTRVApp.swift; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLabel.swift; sourceTree = "<group>"; };
 		EBB3BEAD2A97FE8700E72A23 /* Stations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
 		EBB3BEAF2A9812B400E72A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EBDCC0D22CDA60D4006EB1F0 /* Plays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,10 +184,11 @@
 			children = (
 				EBB3BE942A97FBF500E72A23 /* CustomColorData.swift */,
 				EB75BB3D2C91FDE500BE0F45 /* General.swift */,
-				EB75BB3F2C9216FE00BE0F45 /* Identity.swift */,
+				EB75BB3F2C9216FE00BE0F45 /* StationID.swift */,
 				EB75BB3B2C91F19400BE0F45 /* ImageData.swift */,
 				EBB3BE9C2A97FCD900E72A23 /* Intro.swift */,
 				EBB3BE9A2A97FCA600E72A23 /* Label.swift */,
+				EBDCC0D22CDA60D4006EB1F0 /* Plays.swift */,
 				EBB3BE962A97FC3900E72A23 /* RadioStation.swift */,
 				EB2B2E672CCFDDE200BB3624 /* Root.swift */,
 				EBB3BE922A97F28300E72A23 /* Sector.swift */,
@@ -315,8 +318,9 @@
 				EBB3BE9B2A97FCA600E72A23 /* Label.swift in Sources */,
 				EBB3BEAA2A97FE2200E72A23 /* Settings.swift in Sources */,
 				EBB3BE872A97F0D200E72A23 /* TuneInTime.swift in Sources */,
-				EB75BB402C9216FE00BE0F45 /* Identity.swift in Sources */,
+				EB75BB402C9216FE00BE0F45 /* StationID.swift in Sources */,
 				EBB3BEA22A97FD7200E72A23 /* ButtonImage.swift in Sources */,
+				EBDCC0D32CDA60DB006EB1F0 /* Plays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

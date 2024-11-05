@@ -143,7 +143,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			return
 		}
 		
-		var audioPlayer1: AVAudioPlayer? // song/mono_solo/ad/news/id
+		var audioPlayer1: AVAudioPlayer? // song/solo/ad/news/id
 		var audioPlayer2: AVAudioPlayer? // intro
 		var audioPlayer3: AVAudioPlayer? // outro
 		
@@ -196,20 +196,20 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			} catch let error {
 				print(error.localizedDescription)
 			}
-		case "mono_solo":
-			print("[\(#line)]> play mono_solo")
+		case "solo":
+			print("[\(#line)]> play solo")
 			
 			currentSong = nil
 			
 			if let monoSolos: [Solo] = Station.solo {
 				let soloRoot: String = root.solo ?? ""
-				let m: Int = Int(arc4random_uniform(UInt32(monoSolos.count))) //RANDOM MONO_SOLO INDEX
+				let m: Int = Int(arc4random_uniform(UInt32(monoSolos.count))) //RANDOM SOLO INDEX
 				let monoSolo: Solo = monoSolos[m]
 				let solo: String = monoSolo.list.randomElement()!
 				let monoSoloRoot: String = ("\(soloRoot)/\(monoSolos[m].root)")
-				print("[\(#line)]> mono_solo: \(monoSoloRoot)/\(monoSoloRoot)")
+				print("[\(#line)]> solo: \(monoSoloRoot)")
 				guard let monoSoloPath = AudioPath(resource: solo, directory: monoSoloRoot) else {
-					//print("[\(#line)]> guard: play > mono_solo > monoSoloPath")
+					//print("[\(#line)]> guard: play > solo > monoSoloPath")
 					return
 				}
 				let monoSoloURL: URL = URL(fileURLWithPath: monoSoloPath)
@@ -226,7 +226,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						audioPlayer1?.currentTime = tuneInTime
 						tune.In = false
 					}
-					lastPlayed = "mono_solo"
+					lastPlayed = "solo"
 				} catch let error {
 					print(error.localizedDescription)
 				}
@@ -269,10 +269,10 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			
 			currentSong = nil
 			
-			if let stationIDs: [Identity] = Station.identity {
-				let idRoot: String = root.identity ?? ""
+			if let stationIDs: [StationID] = Station.stationID {
+				let idRoot: String = root.stationID ?? ""
 				let i: Int = Int(arc4random_uniform(UInt32(stationIDs.count))) //RANDOM ID INDEX
-				let stationIdentity: Identity = stationIDs[i]
+				let stationIdentity: StationID = stationIDs[i]
 				let stationID: String = stationIdentity.list.randomElement()!
 				let stationIDRoot: String = ("\(idRoot)/\(stationIdentity.root)")
 				print("[\(#line)]> id: \(stationIDRoot)/\(stationID)")
@@ -374,7 +374,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let hasTimeMornings = !timeMornings.isEmpty
 				let hasTimeEvenings = !timeEvenings.isEmpty
 				
-				if (hasIntros || hasGenerals) {
+				if (hasIntros || (hasGenerals && Station.plays.generalsIntro)) {
 					playIntro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 67.86) // ~73.68%
 				} else {
 					playIntro = false
@@ -397,7 +397,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				if (playIntro) {
 					var introRoot: String = "\(root.intro ?? root.station)"
 					var playGeneralIntro: Bool = false
-					if (hasGenerals) {
+					if (hasGenerals && Station.plays.generalsIntro) {
 						if (hasIntros) {
 							playGeneralIntro = (Double.random(in: 1.0..<(100.0 + 1.0)) <= 26.31) // ~26.31%
 						} else {
@@ -593,7 +593,12 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					do {
 						audioPlayer3 = try AVAudioPlayer(contentsOf: outroURL)
 						outroDuration = audioPlayer3?.duration ?? 0.0
-						outroTime = (songDuration - outroDuration - 5.0)
+						switch Station.name {
+						case "MOTOMAMI Los Santos":
+							outroTime = (songDuration - outroDuration - 0.5)
+						default:
+							outroTime = (songDuration - outroDuration - 5.0)
+						}
 					} catch let error {
 						print(error.localizedDescription)
 					}
@@ -627,14 +632,13 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		
 		var playSong: Bool = false
 		var playAd: Bool = false
-		var playMonoSolo: Bool = false
+		var playSolo: Bool = false
 		var playNews: Bool = false
 		var playID: Bool = false
 		
-		switch Station.name {
-		case "Soulwax FM", "East Los FM", "Worldwide FM", "FlyLo FM", "The Lab", "Blonded Los Santos 97.8 FM", "Los Santos Underground Radio", "The Music Locker":
-			playSong = true
-		default:
+		let stationPlays: Plays = Station.plays
+		
+		if (stationPlays.ads || stationPlays.solos || stationPlays.news || stationPlays.stationIDs) {
 			switch outroType {
 			case "ad":
 				playAd = true
@@ -660,40 +664,55 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						playNews = playAd ? false : (news_ad_song <= 20.0)
 						playSong = !(playAd || playNews)
 					}
+				case "MOTOMAMI Los Santos":
+					
+					switch lastPlayed {
+					case "id":
+						playSong = true
+					case "solo":
+						playSong = true
+					default:
+						let id_solo_song: Double = Double.random(in: 1.0..<(100.0 + 1));print("[\(#line)]> id_solo_song: \(id_solo_song)")
+						playID = (id_solo_song <= 12.5) // ~12.5%
+						playSolo = (playID) ? false : id_solo_song <= (20.83 + 12.5) // ~20.83%
+						playSong = !(playID || playSolo) // ~66.67%
+					}
 				case "Kult FM":
-					let ad_ID_monoSolo: Double = Double.random(in: 1.0..<(100.0 + 1))
+					let ad_ID_solo: Double = Double.random(in: 1.0..<(100.0 + 1))
 					switch lastPlayed {
 					case "id":
 						playSong = true
 					case "ad":
 						playID = true
-					case "mono_solo":
+					case "solo":
 						playSong = true
 					default:
-						playAd = (ad_ID_monoSolo <= 15.0) // ~15.0%
-						playID = playAd ? false : (ad_ID_monoSolo <= (15.0 + 15.0)) // ~15.0%
-						playMonoSolo = (playAd || playID) ? false : (ad_ID_monoSolo <= (10.0 + 15.0 + 15.0)) // ~10.0%
-						playSong = !(playAd || playID || playMonoSolo) // ~60.0%
+						playAd = (ad_ID_solo <= 15.0) // ~15.0%
+						playID = playAd ? false : (ad_ID_solo <= (15.0 + 15.0)) // ~15.0%
+						playSolo = (playAd || playID) ? false : (ad_ID_solo <= (10.0 + 15.0 + 15.0)) // ~10.0%
+						playSong = !(playAd || playID || playSolo) // ~60.0%
 					}
 				default:
-					let news_monoSolo_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
+					let news_solo_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
 					if ((lastPlayed == "ad") || (lastPlayed == "news")) {
 						if (lastPlayed == "ad") {
-							playAd = (news_monoSolo_ad_song <= 5.0) // ~5.0%
+							playAd = (news_solo_ad_song <= 5.0) // ~5.0%
 							playID = !playAd
 						} else {
 							playID = true
 						}
 					} else {
 						if (lastPlayed == "song") {
-							playNews = (news_monoSolo_ad_song <= 1.17) // ~1.17% [-8]
-							playAd = playNews ? false : (news_monoSolo_ad_song <= (1.17 + 2.3)) // ~2.3% [-16]
-							playMonoSolo = (playNews || playAd) ? false : (news_monoSolo_ad_song <= (1.17 + 2.30 + 25.38)) // ~25.38% [+12]
+							playNews = (news_solo_ad_song <= 1.17) // ~1.17% [-8]
+							playAd = playNews ? false : (news_solo_ad_song <= (1.17 + 2.3)) // ~2.3% [-16]
+							playSolo = (playNews || playAd) ? false : (news_solo_ad_song <= (1.17 + 2.30 + 25.38)) // ~25.38% [+12]
 						}
-						playSong = (playNews || playAd || playMonoSolo) ? false : (news_monoSolo_ad_song <= (1.17 + 2.30 + 25.38 + 71.15)) // ~71.15% [+12]
+						playSong = (playNews || playAd || playSolo) ? false : (news_solo_ad_song <= (1.17 + 2.30 + 25.38 + 71.15)) // ~71.15% [+12]
 					}
 				}
 			}
+		} else {
+			playSong = true
 		}
 		
 		switch true {
@@ -702,8 +721,8 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		case playAd:
 			play(Station,"ad")
 			outroType = ""
-		case playMonoSolo:
-			play(Station,"mono_solo")
+		case playSolo:
+			play(Station,"solo")
 		case playNews:
 			play(Station,"news")
 			outroType = ""

@@ -10,7 +10,7 @@ struct Root {
 	let song: String
 	let intro: String?
 	let general: String?
-	let identity: String?
+	let stationID: String?
 	let solo: String?
 	let time: String?
 	let to: String?

@@ -11,10 +11,11 @@ public struct RadioStation: Identifiable {
 	let name: String
 	let image: ImageData
 	let order: String
+	let plays: Plays
 	let root: Root?
 	let songs: [Song]?
 	let general: General?
-	let identity: [Identity]?
+	let stationID: [StationID]?
 	let solo: [Solo]?
 	let time: [String: [String]]?
 	let to: [String: [String]]?
