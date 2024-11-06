@@ -595,7 +595,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						outroDuration = audioPlayer3?.duration ?? 0.0
 						switch Station.name {
 						case "MOTOMAMI Los Santos":
-							outroTime = (songDuration - outroDuration - 0.5)
+							outroTime = (songDuration - outroDuration - 1.0)
 						default:
 							outroTime = (songDuration - outroDuration - 5.0)
 						}
@@ -652,7 +652,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					case "id":
 						playSong = true
 					case "ad":
-						playAd = (news_ad_song <= 40.0) // ~40.0%
+						playAd = (news_ad_song <= 30.0) // ~30.0%
 						playID = !playAd
 					case "news":
 						playID = true
@@ -665,14 +665,15 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						playSong = !(playAd || playNews)
 					}
 				case "MOTOMAMI Los Santos":
-					
+					let id_solo_song: Double = Double.random(in: 1.0..<(100.0 + 1))
 					switch lastPlayed {
 					case "id":
-						playSong = true
+						playSolo = (id_solo_song <= 20.83) // ~20.83%
+						playSong = !playSolo // ~79.17%
 					case "solo":
-						playSong = true
+						playID = (id_solo_song <= 12.5) // ~12.5%
+						playSong = !playID // ~87.50%
 					default:
-						let id_solo_song: Double = Double.random(in: 1.0..<(100.0 + 1));print("[\(#line)]> id_solo_song: \(id_solo_song)")
 						playID = (id_solo_song <= 12.5) // ~12.5%
 						playSolo = (playID) ? false : id_solo_song <= (20.83 + 12.5) // ~20.83%
 						playSong = !(playID || playSolo) // ~66.67%
