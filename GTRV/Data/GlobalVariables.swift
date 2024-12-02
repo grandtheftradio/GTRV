@@ -90,7 +90,9 @@ var customColor: Color = Color(
 	blue: 1.0
 )
 
-var eveningTimeIntroPlayed: Bool = false
+let eveningEndTime: String = "20:30:00" //8:30:00 PM
+let eveningStartTime: String = "17:00:00" //5:00:00 PM
+var eveningTimeIntroOutroPlayed: Bool = false
 
 let favoriteKey: String = "favorite"
 var favorite: [String: Bool] = {
@@ -146,7 +148,9 @@ let kultDJSongIntro: Bool = false
 
 var lastPlayed: String = ""
 
-var morningTimeIntroPlayed: Bool = false
+let morningEndTime: String = "08:30:00" //8:30:00 AM
+let morningStartTime: String = "05:00:00" //5:00:00 AM
+var morningTimeIntroOutroPlayed: Bool = false
 
 var newsPlayed: Bool = false
 

@@ -375,7 +375,12 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let hasTimeEvenings = !timeEvenings.isEmpty
 				
 				if (hasIntros || (hasGenerals && Station.plays.generalsIntro)) {
-					playIntro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 67.86) // ~73.68%
+					switch (Station.name) {
+					case "Kult FM":
+						playIntro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 27.14) // ~27.14%
+					default:
+						playIntro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 67.86) // ~73.68%
+					}
 				} else {
 					playIntro = false
 				}
@@ -388,7 +393,12 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let hasToAds: Bool = !toAdOutros.isEmpty
 				let hasToNews: Bool = !toNewsOutros.isEmpty
 				if (hasGenerals || hasToAds || hasToNews) {
-					playOutro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 79.76) // ~79.76%
+					switch (Station.name) {
+					case "Kult FM":
+						playOutro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 37.14) // ~37.14%
+					default:
+						playOutro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 79.76) // ~79.76%
+					}
 				} else {
 					playOutro = false
 				}
@@ -399,60 +409,47 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					var playGeneralIntro: Bool = false
 					if (hasGenerals && Station.plays.generalsIntro) {
 						if (hasIntros) {
-							playGeneralIntro = (Double.random(in: 1.0..<(100.0 + 1.0)) <= 26.31) // ~26.31%
+							switch (Station.name) {
+							case "Kult FM":
+								playGeneralIntro = (Double.random(in: 1.0..<(100.0 + 1.0)) <= 26.32) // ~26.32%
+							default:
+								playGeneralIntro = (Double.random(in: 1.0..<(100.0 + 1.0)) <= 26.31) // ~26.31%
+							}
 						} else {
 							playGeneralIntro = true
 						}
 					}
 					if (playGeneralIntro) {
-						let currentDateTime: Date = Date()
-						let dateFormatter: DateFormatter = {
-							let df: DateFormatter = DateFormatter()
-							df.dateFormat = "yyyy-MM-dd"
-							return df
-						}()
-						let currentDate: String = dateFormatter.string(from: currentDateTime)
-						
-						var localTimeZoneIdentifier: String {
-							return TimeZone.current.identifier
-						}
-						let dateTimeFormatter: DateFormatter = {
-							let dtf: DateFormatter = DateFormatter()
-							dtf.dateFormat = "yyyy-MM-dd HH:mm:ss"
-							dtf.locale = Locale(identifier: localTimeZoneIdentifier)
-							return dtf
-						}()
-						
-						let morningIntroStartTime: String = "05:00:00" //5:00:00 AM
-						let morningIntroEndTime: String = "08:30:00" //8:30:00 AM
-						let eveningIntroStartTime: String = "17:00:00" //5:00:00 PM
-						let eveningIntroEndTime: String = "20:30:00" //8:30:00 PM
-						
-						let morningIntroStartDateTime: Date = dateTimeFormatter.date(from: "\(currentDate) \(morningIntroStartTime)") ?? Date()
-						let morningInitroEndDateTime: Date = dateTimeFormatter.date(from: "\(currentDate) \(morningIntroEndTime)") ?? Date()
-						let eveningIntroStartDateTime: Date = dateTimeFormatter.date(from: "\(currentDate) \(eveningIntroStartTime)") ?? Date()
-						let eveningIntroEndDateTime: Date = dateTimeFormatter.date(from: "\(currentDate) \(eveningIntroEndTime)") ?? Date()
-						
-						let morningIntroTime: Bool = (morningIntroStartDateTime <= currentDateTime) && (currentDateTime <= morningInitroEndDateTime)
+						let morningIntroTime: Bool = CheckTime("morning")
 						if (!morningIntroTime) {
-							morningTimeIntroPlayed = false
+							morningTimeIntroOutroPlayed = false
 						}
-						let eveningIntroTime: Bool = (eveningIntroStartDateTime <= currentDateTime) && (currentDateTime <= eveningIntroEndDateTime)
+						let eveningIntroTime: Bool = CheckTime("evening")
 						if (!eveningIntroTime) {
-							eveningTimeIntroPlayed = false
+							eveningTimeIntroOutroPlayed = false
 						}
 						
 						var playTimeMorningIntro: Bool = false
-						if (!morningTimeIntroPlayed) {
+						if (!morningTimeIntroOutroPlayed) {
 							if (hasTimeMornings) {
-								playTimeMorningIntro = (morningIntroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
+								switch (Station.name) {
+								case "Kult FM":
+									playTimeMorningIntro = false
+								default:
+									playTimeMorningIntro = (morningIntroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
+								}
 							}
 						}
 						
 						var playTimeEveningIntro: Bool = false
-						if (!eveningTimeIntroPlayed) {
+						if (!eveningTimeIntroOutroPlayed) {
 							if (hasTimeEvenings) {
-								playTimeEveningIntro = (eveningIntroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
+								switch (Station.name) {
+								case "Kult FM":
+									playTimeEveningIntro = false
+								default:
+									playTimeEveningIntro = (eveningIntroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
+								}
 							}
 						}
 						
@@ -467,7 +464,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 								)
 								intros.append(morningIntro)
 							}
-							morningTimeIntroPlayed = true
+							morningTimeIntroOutroPlayed = true
 						case playTimeEveningIntro:
 							introRoot = root.time ?? ""
 							intros.removeAll()
@@ -478,7 +475,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 								)
 								intros.append(eveningIntro)
 							}
-							eveningTimeIntroPlayed = true
+							eveningTimeIntroOutroPlayed = true
 						default:
 							introRoot = root.general ?? ""
 							intros.removeAll()
@@ -575,11 +572,67 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 							outros.append(toNewsOutro)
 						}
 					default:
-						outroType = "general"
-						outroRoot = root.general ?? ""
-						for general in generals {
-							let generalOutro = Intro(file: "GENERAL_\(general)", delay: 0.0) //need to calculate delay: song duration - general duration
-							outros.append(generalOutro)
+						switch (Station.name) {
+						case "Kult FM":
+							let morningOutroTime: Bool = CheckTime("morning")
+							if (!morningOutroTime) {
+								morningTimeIntroOutroPlayed = false
+							}
+							let eveningOutroTime: Bool = CheckTime("evening")
+							if (!eveningOutroTime) {
+								eveningTimeIntroOutroPlayed = false
+							}
+							
+							var playTimeMorningOutro: Bool = false
+							if (!morningTimeIntroOutroPlayed) {
+								if (hasTimeMornings) {
+									playTimeMorningOutro = (morningOutroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 15.38)) // ~15.38%
+								}
+							}
+							
+							var playTimeEveningOutro: Bool = false
+							if (!eveningTimeIntroOutroPlayed) {
+								if (hasTimeEvenings) {
+									playTimeEveningOutro = (eveningOutroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
+								}
+							}
+							
+							switch true {
+							case playTimeMorningOutro:
+								outroRoot = root.time ?? ""
+								for timeMorning in timeMornings {
+									let morningOutro = Intro(
+										file: "MORNING_\(timeMorning)",
+										delay: 8.0
+									)
+									outros.append(morningOutro)
+								}
+								morningTimeIntroOutroPlayed = true
+							case playTimeEveningOutro:
+								outroRoot = root.time ?? ""
+								for timeEvening in timeEvenings {
+									let eveningOutro = Intro(
+										file: "EVENING_\(timeEvening)",
+										delay: 8.0
+									)
+									outros.append(eveningOutro)
+								}
+								eveningTimeIntroOutroPlayed = true
+							default:
+								outroType = "general"
+								outroRoot = root.general ?? ""
+								for general in generals {
+									let generalOutro = Intro(file: "GENERAL_\(general)", delay: 0.0) //need to calculate delay: song duration - general duration
+									outros.append(generalOutro)
+								}
+							}
+						default:
+							outroType = "general"
+							outroRoot = root.general ?? ""
+							for general in generals {
+								let generalOutro = Intro(file: "GENERAL_\(general)", delay: 0.0) //need to calculate delay: song duration - general duration
+								outros.append(generalOutro)
+							}
 						}
 					}
 					let o: Int = Int(arc4random_uniform(UInt32(outros.count))) //RANDOM OUTRO INDEX
@@ -688,10 +741,10 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					case "solo":
 						playSong = true
 					default:
-						playAd = (ad_ID_solo <= 15.0) // ~15.0%
-						playID = playAd ? false : (ad_ID_solo <= (15.0 + 15.0)) // ~15.0%
-						playSolo = (playAd || playID) ? false : (ad_ID_solo <= (10.0 + 15.0 + 15.0)) // ~10.0%
-						playSong = !(playAd || playID || playSolo) // ~60.0%
+						playAd = (ad_ID_solo <= 5.26) // ~5.26%
+						playID = playAd ? false : (ad_ID_solo <= (5.26 + 15.79)) // ~15.79%
+						playSolo = (playAd || playID) ? false : (ad_ID_solo <= (5.26 + 15.79 + 5.26)) // ~5.26%
+						playSong = !(playAd || playID || playSolo) // ~73.68.0%
 					}
 				default:
 					let news_solo_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
