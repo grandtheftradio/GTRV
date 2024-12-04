@@ -1509,7 +1509,7 @@ public let RadioStations: [RadioStation] = [
 				labels: [
 					Label(
 						artist: "BAD GYAL",
-						title: "Al La Mía",
+						title: "A La Mía",
 						time: 0.0
 					)
 				],
