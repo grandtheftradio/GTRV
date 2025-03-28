@@ -11,4 +11,6 @@ struct Song {
 	let labels: [Label]
 	let set: String?
 	let intros: [Intro]
+	let intros_root: String?
+	let frequency: Double
 }
