@@ -1,0 +1,145 @@
+name: Deploy to TestFlight
+
+on:
+  push:
+    branches:
+      - TestFlight
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy to TestFlight
+    runs-on: macos-14
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode Version
+        run: |
+          sudo xcode-select -s /Applications/Xcode_15.4.app || sudo xcode-select -s /Applications/Xcode.app
+          xcodebuild -version
+
+      - name: Configure Build Number
+        run: |
+          BUILD_NUMBER="${{ github.run_number }}"
+          echo "Setting build number to: $BUILD_NUMBER"
+          cd GTRV
+          xcrun agvtool new-version -all "$BUILD_NUMBER" || true
+
+      - name: Install Apple Certificate and Provisioning Profile
+        env:
+          BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+          BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+        run: |
+          # Create temporary keychain
+          KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
+          security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+
+          # Import distribution certificate (.p12)
+          CERT_PATH=$RUNNER_TEMP/build_cert.p12
+          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode -o $CERT_PATH
+          security import $CERT_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security list-keychain -d user -s $KEYCHAIN_PATH
+
+          # Install Provisioning Profile
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          PROFILE_PATH=~/Library/MobileDevice/Provisioning\ Profiles/profile.mobileprovision
+          echo -n "$BUILD_PROVISION_PROFILE_BASE64" | base64 --decode -o "$PROFILE_PATH"
+
+          # Extract UUID and Name from profile and link by UUID
+          PLIST_DATA=$(security cms -D -i "$PROFILE_PATH")
+          PROFILE_UUID=$(/usr/libexec/PlistBuddy -c "Print :UUID" /dev/stdin <<< "$PLIST_DATA")
+          PROFILE_NAME=$(/usr/libexec/PlistBuddy -c "Print :Name" /dev/stdin <<< "$PLIST_DATA")
+          cp "$PROFILE_PATH" ~/Library/MobileDevice/Provisioning\ Profiles/"$PROFILE_UUID".mobileprovision
+
+          echo "Provisioning Profile installed: $PROFILE_NAME ($PROFILE_UUID)"
+          echo "PROFILE_NAME=$PROFILE_NAME" >> $GITHUB_ENV
+          echo "PROFILE_UUID=$PROFILE_UUID" >> $GITHUB_ENV
+          echo "KEYCHAIN_PATH=$KEYCHAIN_PATH" >> $GITHUB_ENV
+
+      - name: Create ExportOptions.plist
+        run: |
+          cat <<EOF > $RUNNER_TEMP/ExportOptions.plist
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>destination</key>
+              <string>export</string>
+              <key>method</key>
+              <string>app-store</string>
+              <key>signingStyle</key>
+              <string>manual</string>
+              <key>provisioningProfiles</key>
+              <dict>
+                  <key>grandtheftradio.GTRV</key>
+                  <string>${{ env.PROFILE_NAME }}</string>
+              </dict>
+          </dict>
+          </plist>
+          EOF
+
+      - name: Setup App Store Connect API Key
+        env:
+          API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_KEY_ID }}
+          API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY_KEY }}
+        run: |
+          mkdir -p ~/.appstoreconnect/private_keys
+          echo "$API_KEY_CONTENT" > ~/.appstoreconnect/private_keys/AuthKey_${API_KEY_ID}.p8
+          mkdir -p ~/.private_keys
+          cp ~/.appstoreconnect/private_keys/AuthKey_${API_KEY_ID}.p8 ~/.private_keys/AuthKey_${API_KEY_ID}.p8
+
+      - name: Build Archive
+        run: |
+          xcodebuild clean archive \
+            -project GTRV.xcodeproj \
+            -scheme GTRV \
+            -configuration Release \
+            -archivePath $RUNNER_TEMP/GTRV.xcarchive \
+            -destination "generic/platform=iOS" \
+            CODE_SIGN_STYLE="Manual" \
+            PROVISIONING_PROFILE="${{ env.PROFILE_UUID }}" \
+            PROVISIONING_PROFILE_SPECIFIER="${{ env.PROFILE_NAME }}" \
+            OTHER_CODE_SIGN_FLAGS="--keychain ${{ env.KEYCHAIN_PATH }}"
+
+      - name: Export IPA
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath $RUNNER_TEMP/GTRV.xcarchive \
+            -exportOptionsPlist $RUNNER_TEMP/ExportOptions.plist \
+            -exportPath $RUNNER_TEMP/build_output \
+            OTHER_CODE_SIGN_FLAGS="--keychain ${{ env.KEYCHAIN_PATH }}"
+
+      - name: Upload to TestFlight
+        env:
+          API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_KEY_ID }}
+          API_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ISSUER_ID }}
+        run: |
+          IPA_PATH=$(find $RUNNER_TEMP/build_output -name "*.ipa" | head -n 1)
+          if [ -z "$IPA_PATH" ]; then
+            echo "Error: No IPA file found in $RUNNER_TEMP/build_output"
+            exit 1
+          fi
+          echo "Uploading $IPA_PATH to TestFlight..."
+          xcrun altool --upload-app \
+            --type ios \
+            --file "$IPA_PATH" \
+            --apiKey "$API_KEY_ID" \
+            --apiIssuer "$API_ISSUER_ID"
+
+      - name: Clean up Keychain and Private Keys
+        if: always()
+        run: |
+          if [ -n "${{ env.KEYCHAIN_PATH }}" ] && [ -f "${{ env.KEYCHAIN_PATH }}" ]; then
+            security delete-keychain "${{ env.KEYCHAIN_PATH }}" || true
+          fi
+          rm -rf ~/.appstoreconnect/private_keys
+          rm -rf ~/.private_keys
+          rm -rf ~/Library/MobileDevice/Provisioning\ Profiles/*
