@@ -74,12 +74,12 @@ jobs:
               <key>destination</key>
               <string>export</string>
               <key>method</key>
-              <string>app-store</string>
+              <string>app-store-connect</string>
               <key>signingStyle</key>
               <string>manual</string>
               <key>provisioningProfiles</key>
               <dict>
-                  <key>grandtheftradio.GTRV</key>
+                  <key>com.jaredrobbins.GTA-V-Radio</key>
                   <string>${{ env.PROFILE_NAME }}</string>
               </dict>
           </dict>
@@ -105,6 +105,8 @@ jobs:
             -archivePath $RUNNER_TEMP/GTRV.xcarchive \
             -destination "generic/platform=iOS" \
             CODE_SIGN_STYLE="Manual" \
+            DEVELOPMENT_TEAM="387VNX25DJ" \
+            CODE_SIGN_IDENTITY="Apple Distribution" \
             PROVISIONING_PROFILE="${{ env.PROFILE_UUID }}" \
             PROVISIONING_PROFILE_SPECIFIER="${{ env.PROFILE_NAME }}" \
             OTHER_CODE_SIGN_FLAGS="--keychain ${{ env.KEYCHAIN_PATH }}"
