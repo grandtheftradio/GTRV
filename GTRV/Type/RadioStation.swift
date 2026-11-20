@@ -15,7 +15,7 @@ public struct RadioStation: Identifiable {
 	let root: Root?
 	let songs: [Song]?
 	let general: General?
-	let stationID: [StationID]?
+	let identity: [Identity]?
 	let solo: [Solo]?
 	let time: [String: [String]]?
 	let to: [String: [String]]?
