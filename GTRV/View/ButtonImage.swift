@@ -14,7 +14,18 @@ struct ButtonImage: View {
 	var column: Int
 	
 	var body: some View {
-		Image(image)
+		Group {
+			if let uiImage = AssetManager.shared.loadImage(named: image) ?? UIImage(named: image) {
+				Image(uiImage: uiImage)
+			} else {
+				ZStack {
+					Color.gray.opacity(0.3)
+					Image(systemName: "radio")
+						.font(.system(size: 40))
+						.foregroundColor(.white.opacity(0.6))
+				}
+			}
+		}
 			.offset(
 				x: ((-128.0 * Double(row)) + 128),
 				y: ((-128.0 * Double(column)) + 128)

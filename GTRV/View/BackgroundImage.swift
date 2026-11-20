@@ -24,26 +24,43 @@ struct BackgroundImage: View {
 					Color.black.opacity(pickerView ? 0.0 : 0.5)
 				)
 		} else {
-			Image("beach_fg")
-				.resizable()
-				.scaledToFit()
-				.padding(.top, 25.0)
-				.background(
-					Image("beach_bg")
+			let fgUIImage = AssetManager.shared.loadImage(named: "beach_fg") ?? UIImage(named: "beach_fg")
+			let bgUIImage = AssetManager.shared.loadImage(named: "beach_bg") ?? UIImage(named: "beach_bg")
+			
+			Group {
+				if let fg = fgUIImage, let bg = bgUIImage {
+					Image(uiImage: fg)
+						.resizable()
+						.scaledToFit()
+						.padding(.top, 25.0)
+						.background(
+							Image(uiImage: bg)
+								.resizable()
+								.scaledToFill()
+								.padding(.bottom, 50.0)
+						)
+				} else if let bg = bgUIImage {
+					Image(uiImage: bg)
 						.resizable()
 						.scaledToFill()
-						.padding(.bottom, 50.0)
-				)
-				.frame(
-					maxWidth: .infinity,
-					maxHeight: .infinity
-				)
-				.blur(
-					radius: pickerView ? 0.0 : 2.5
-				)
-				.overlay(
-					Color.black.opacity(pickerView ? 0.0 : 0.5)
-				)
+				} else if let fg = fgUIImage {
+					Image(uiImage: fg)
+						.resizable()
+						.scaledToFit()
+				} else {
+					Color.black
+				}
+			}
+			.frame(
+				maxWidth: .infinity,
+				maxHeight: .infinity
+			)
+			.blur(
+				radius: pickerView ? 0.0 : 2.5
+			)
+			.overlay(
+				Color.black.opacity(pickerView ? 0.0 : 0.5)
+			)
 		}
 	}
 }

@@ -143,7 +143,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			return
 		}
 		
-		var audioPlayer1: AVAudioPlayer? // song/solo/ad/news/id
+		var audioPlayer1: AVAudioPlayer? // song/mono_solo/ad/news/id
 		var audioPlayer2: AVAudioPlayer? // intro
 		var audioPlayer3: AVAudioPlayer? // outro
 		
@@ -155,25 +155,20 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		}
 		currentAlbum = Station.name
 		
-		guard let root: Root = Station.root else {
-			//print("[\(#line)]> guard: play > root")
-			return
-		}
-		
 		switch type {
 		case "ad":
 			print("[\(#line)]> play ad")
 			
 			currentSong = nil
 			
-			let ads: [String] = Station.name == "Kult FM" ? KFMRadioAdverts : RadioAdverts
+			let ads: [String] = RadioAdverts
 			let a: Int = Int(arc4random_uniform(UInt32(ads.count))) //RANDOM AD INDEX
-			let adRoot_Ad: [String] = ads[a].components(separatedBy: "/")
-			let adRoot: String = "\(root.ad ?? "RADIO_ADVERTS")/\(adRoot_Ad[0])"
-			let ad = adRoot_Ad[1]
-			print("[\(#line)]> ad: \(adRoot)/\(ad)")
+			let rootAd: [String] = ads[a].components(separatedBy: "/")
+			let adRoot: String = rootAd[0]
+			let ad = rootAd[1]
+			print("[\(#line)]> ad: RADIO_ADVERTS/\(adRoot)/\(ad)")
 			
-			guard let adPath = AudioPath(resource: ad, directory: adRoot) else {
+			guard let adPath = AudioPath(resource: ad, directory: "RADIO_ADVERTS/\(adRoot)/") else {
 				//print("[\(#line)]> guard: play > ad > adPath")
 				return
 			}
@@ -196,20 +191,20 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			} catch let error {
 				print(error.localizedDescription)
 			}
-		case "solo":
-			print("[\(#line)]> play solo")
+		case "mono_solo":
+			print("[\(#line)]> play mono_solo")
 			
 			currentSong = nil
 			
 			if let monoSolos: [Solo] = Station.solo {
-				let soloRoot: String = root.solo ?? ""
-				let m: Int = Int(arc4random_uniform(UInt32(monoSolos.count))) //RANDOM SOLO INDEX
+				let stationRoot: String = Station.root ?? ""
+				let m: Int = Int(arc4random_uniform(UInt32(monoSolos.count))) //RANDOM MONO_SOLO INDEX
 				let monoSolo: Solo = monoSolos[m]
 				let solo: String = monoSolo.list.randomElement()!
-				let monoSoloRoot: String = ("\(soloRoot)/\(monoSolos[m].root)")
-				print("[\(#line)]> solo: \(monoSoloRoot)")
+				let monoSoloRoot: String = ("\(stationRoot)/\(monoSolos[m].root)")
+				print("[\(#line)]> mono_solo: \(monoSoloRoot)/\(monoSoloRoot)")
 				guard let monoSoloPath = AudioPath(resource: solo, directory: monoSoloRoot) else {
-					//print("[\(#line)]> guard: play > solo > monoSoloPath")
+					//print("[\(#line)]> guard: play > mono_solo > monoSoloPath")
 					return
 				}
 				let monoSoloURL: URL = URL(fileURLWithPath: monoSoloPath)
@@ -226,7 +221,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						audioPlayer1?.currentTime = tuneInTime
 						tune.In = false
 					}
-					lastPlayed = "solo"
+					lastPlayed = "mono_solo"
 				} catch let error {
 					print(error.localizedDescription)
 				}
@@ -238,11 +233,11 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			
 			let newses: [String] = RadioNews
 			let n: Int = Int(arc4random_uniform(UInt32(newses.count))) //RANDOM NEWS INDEX
-			let newsRoot_News: [String] = newses[n].components(separatedBy: "/")
-			let newsRoot: String = "\(root.news ?? "RADIO_NEWS")/\(newsRoot_News[0])/"
-			let news = newsRoot_News[1]
-			print("[\(#line)]> news: \(newsRoot)/\(news)")
-			guard let newsPath = AudioPath(resource: news, directory: newsRoot) else {
+			let rootNews: [String] = newses[n].components(separatedBy: "/")
+			let newsRoot: String = rootNews[0]
+			let news = rootNews[1]
+			print("[\(#line)]> news: RADIO_NEWS/\(newsRoot)/\(news)")
+			guard let newsPath = AudioPath(resource: news, directory: "RADIO_NEWS/\(newsRoot)/") else {
 				//print("[\(#line)]> guard: play > news > newsPath")
 				return
 			}
@@ -269,13 +264,13 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			
 			currentSong = nil
 			
-			if let stationIDs: [StationID] = Station.stationID {
-				let idRoot: String = root.stationID ?? ""
+			if let stationIDs: [Identity] = Station.identity {
+				let stationRoot: String = Station.root ?? ""
 				let i: Int = Int(arc4random_uniform(UInt32(stationIDs.count))) //RANDOM ID INDEX
-				let stationIdentity: StationID = stationIDs[i]
+				let stationIdentity: Identity = stationIDs[i]
 				let stationID: String = stationIdentity.list.randomElement()!
-				let stationIDRoot: String = ("\(idRoot)/\(stationIdentity.root)")
-				print("[\(#line)]> id: \(stationIDRoot)/\(stationID)")
+				let stationIDRoot: String = ("\(stationRoot)/\(stationIdentity.root)")
+				print("[\(#line)]> id: \(stationIDRoot)/ID_\(stationID)")
 				guard let stationIDPath = AudioPath(resource: stationID, directory: stationIDRoot) else {
 					//print("[\(#line)]> guard: play > station_id > stationIDPath")
 					return
@@ -339,7 +334,8 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						}
 					}
 				}
-				
+				let stationRoot: String = Station.root ?? ""
+				let generalRoot: String = Station.general?.root ?? ""
 				/*var s: Int = 0 //UNPLAYED SONG INDEX
 				if (Station.order == "random") {
 					s = Int(arc4random_uniform(UInt32(unplayed.count)))
@@ -347,7 +343,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				
 				let nextSong: Song = unplayed[0]
 				let song: String = nextSong.file
-				let songRoot: String = "\(root.song)/\(nextSong.root)"
+				let songRoot: String = nextSong.root
 				var intros: [Intro] = nextSong.intros
 				
 				if (song == "SATURDAY_NIGHTS_ALRIGHT") {
@@ -374,13 +370,8 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let hasTimeMornings = !timeMornings.isEmpty
 				let hasTimeEvenings = !timeEvenings.isEmpty
 				
-				if (hasIntros || (hasGenerals && Station.plays.generalsIntro)) {
-					switch (Station.name) {
-					case "Kult FM":
-						playIntro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 27.14) // ~27.14%
-					default:
-						playIntro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 67.86) // ~73.68%
-					}
+				if (hasIntros || hasGenerals) {
+					playIntro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 67.86) // ~73.68%
 				} else {
 					playIntro = false
 				}
@@ -393,69 +384,77 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let hasToAds: Bool = !toAdOutros.isEmpty
 				let hasToNews: Bool = !toNewsOutros.isEmpty
 				if (hasGenerals || hasToAds || hasToNews) {
-					switch (Station.name) {
-					case "Kult FM":
-						playOutro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 37.14) // ~37.14%
-					default:
-						playOutro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 79.76) // ~79.76%
-					}
+					playOutro = tune.In ? false : (Double.random(in: 1.0..<(100.0 + 1.0)) <= 79.76) // ~79.76%
 				} else {
 					playOutro = false
 				}
 				
 				// PLAY INTRO
 				if (playIntro) {
-					var introRoot: String = "\(root.intro ?? root.station)"
+					var introRoot: String = "\(stationRoot)/\(nextSong.intros_root ?? "")/"
 					var playGeneralIntro: Bool = false
-					if (hasGenerals && Station.plays.generalsIntro) {
+					if (hasGenerals) {
 						if (hasIntros) {
-							switch (Station.name) {
-							case "Kult FM":
-								playGeneralIntro = (Double.random(in: 1.0..<(100.0 + 1.0)) <= 26.32) // ~26.32%
-							default:
-								playGeneralIntro = (Double.random(in: 1.0..<(100.0 + 1.0)) <= 26.31) // ~26.31%
-							}
+							playGeneralIntro = (Double.random(in: 1.0..<(100.0 + 1.0)) <= 26.31) // ~26.31%
 						} else {
 							playGeneralIntro = true
 						}
 					}
 					if (playGeneralIntro) {
-						let morningIntroTime: Bool = CheckTime("morning")
-						if (!morningIntroTime) {
-							morningTimeIntroOutroPlayed = false
+						let currentDateTime: Date = Date()
+						let dateFormatter: DateFormatter = {
+							let df: DateFormatter = DateFormatter()
+							df.dateFormat = "yyyy-MM-dd"
+							return df
+						}()
+						let currentDate: String = dateFormatter.string(from: currentDateTime)
+						
+						var localTimeZoneIdentifier: String {
+							return TimeZone.current.identifier
 						}
-						let eveningIntroTime: Bool = CheckTime("evening")
+						let dateTimeFormatter: DateFormatter = {
+							let dtf: DateFormatter = DateFormatter()
+							dtf.dateFormat = "yyyy-MM-dd HH:mm:ss"
+							dtf.locale = Locale(identifier: localTimeZoneIdentifier)
+							return dtf
+						}()
+						
+						let morningIntroStartTime: String = "05:00:00" //5:00:00 AM
+						let morningIntroEndTime: String = "08:30:00" //8:30:00 AM
+						let eveningIntroStartTime: String = "17:00:00" //5:00:00 PM
+						let eveningIntroEndTime: String = "20:30:00" //8:30:00 PM
+						
+						let morningIntroStartDateTime: Date = dateTimeFormatter.date(from: "\(currentDate) \(morningIntroStartTime)") ?? Date()
+						let morningInitroEndDateTime: Date = dateTimeFormatter.date(from: "\(currentDate) \(morningIntroEndTime)") ?? Date()
+						let eveningIntroStartDateTime: Date = dateTimeFormatter.date(from: "\(currentDate) \(eveningIntroStartTime)") ?? Date()
+						let eveningIntroEndDateTime: Date = dateTimeFormatter.date(from: "\(currentDate) \(eveningIntroEndTime)") ?? Date()
+						
+						let morningIntroTime: Bool = (morningIntroStartDateTime <= currentDateTime) && (currentDateTime <= morningInitroEndDateTime)
+						if (!morningIntroTime) {
+							morningTimeIntroPlayed = false
+						}
+						let eveningIntroTime: Bool = (eveningIntroStartDateTime <= currentDateTime) && (currentDateTime <= eveningIntroEndDateTime)
 						if (!eveningIntroTime) {
-							eveningTimeIntroOutroPlayed = false
+							eveningTimeIntroPlayed = false
 						}
 						
 						var playTimeMorningIntro: Bool = false
-						if (!morningTimeIntroOutroPlayed) {
+						if (!morningTimeIntroPlayed) {
 							if (hasTimeMornings) {
-								switch (Station.name) {
-								case "Kult FM":
-									playTimeMorningIntro = false
-								default:
-									playTimeMorningIntro = (morningIntroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
-								}
+								playTimeMorningIntro = (morningIntroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
 							}
 						}
 						
 						var playTimeEveningIntro: Bool = false
-						if (!eveningTimeIntroOutroPlayed) {
+						if (!eveningTimeIntroPlayed) {
 							if (hasTimeEvenings) {
-								switch (Station.name) {
-								case "Kult FM":
-									playTimeEveningIntro = false
-								default:
-									playTimeEveningIntro = (eveningIntroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
-								}
+								playTimeEveningIntro = (eveningIntroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
 							}
 						}
 						
 						switch true {
 						case playTimeMorningIntro:
-							introRoot = root.time ?? ""
+							introRoot = "\(stationRoot)/time/"
 							intros.removeAll()
 							for timeMorning in timeMornings {
 								let morningIntro = Intro(
@@ -464,9 +463,9 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 								)
 								intros.append(morningIntro)
 							}
-							morningTimeIntroOutroPlayed = true
+							morningTimeIntroPlayed = true
 						case playTimeEveningIntro:
-							introRoot = root.time ?? ""
+							introRoot = "\(stationRoot)/time/"
 							intros.removeAll()
 							for timeEvening in timeEvenings {
 								let eveningIntro = Intro(
@@ -475,9 +474,9 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 								)
 								intros.append(eveningIntro)
 							}
-							eveningTimeIntroOutroPlayed = true
+							eveningTimeIntroPlayed = true
 						default:
-							introRoot = root.general ?? ""
+							introRoot = "\(stationRoot)/\(generalRoot)/"
 							intros.removeAll()
 							for general in generals {
 								let generalIntro = Intro(
@@ -488,18 +487,12 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 							}
 						}
 					}
-					var i: Int = Int(arc4random_uniform(UInt32(intros.count))) //INTRO INDEX
-					if (!kultDJSongIntro) {
-						if (!playGeneralIntro) {
-							i = 0
-						}
-					}
+					let i: Int = Int(arc4random_uniform(UInt32(intros.count))) //INTRO INDEX
 					let intro: String = intros[i].file
 					introTime = intros[i].delay
-					
-					print("[\(#line)]> intro: \(introRoot)/\(intro)")
+					print("[\(#line)]> intro: \(introRoot)\(intro)")
 					guard let introPath = AudioPath(resource: intro, directory: introRoot) else {
-						print("[\(#line)]> guard: play > intro > introPath")
+						//print("[\(#line)]> guard: play > intro > introPath")
 						return
 					}
 					let introURL: URL = URL(fileURLWithPath: introPath)
@@ -516,7 +509,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				audioPlayerSong[Station.name]? = nextSong
 				
 				// PLAY SONG
-				print("[\(#line)]> song: \(songRoot)/\(song)")
+				print("[\(#line)]> song: \(songRoot)\(song)")
 				guard let songPath = AudioPath(resource: song, directory: "\(songRoot)") else {
 					print("[\(#line)]> guard: play > song > songPath")
 					return
@@ -559,85 +552,29 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					switch (true) {
 					case playToAdOutro:
 						outroType = "ad"
-						outroRoot = root.to ?? ""
+						outroRoot = "\(stationRoot)/to/"
 						for toAd in toAdOutros {
 							let toAdOutro = Intro(file: "TO_AD_\(toAd)", delay: 0.0) //need to calculate delay: song duration - toAd duration
 							outros.append(toAdOutro)
 						}
 					case playToNewsOutro:
 						outroType = "news"
-						outroRoot = root.to ?? ""
+						outroRoot = "\(stationRoot)/to/"
 						for toNews in toNewsOutros {
 							let toNewsOutro = Intro(file: "TO_NEWS_\(toNews)", delay: 0.0) //need to calculate delay: song duration - toNews duration
 							outros.append(toNewsOutro)
 						}
 					default:
-						switch (Station.name) {
-						case "Kult FM":
-							let morningOutroTime: Bool = CheckTime("morning")
-							if (!morningOutroTime) {
-								morningTimeIntroOutroPlayed = false
-							}
-							let eveningOutroTime: Bool = CheckTime("evening")
-							if (!eveningOutroTime) {
-								eveningTimeIntroOutroPlayed = false
-							}
-							
-							var playTimeMorningOutro: Bool = false
-							if (!morningTimeIntroOutroPlayed) {
-								if (hasTimeMornings) {
-									playTimeMorningOutro = (morningOutroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 15.38)) // ~15.38%
-								}
-							}
-							
-							var playTimeEveningOutro: Bool = false
-							if (!eveningTimeIntroOutroPlayed) {
-								if (hasTimeEvenings) {
-									playTimeEveningOutro = (eveningOutroTime && (Double.random(in: 1.0..<(100.0 + 1.0)) <= 100.0)) // ~6.67%
-								}
-							}
-							
-							switch true {
-							case playTimeMorningOutro:
-								outroRoot = root.time ?? ""
-								for timeMorning in timeMornings {
-									let morningOutro = Intro(
-										file: "MORNING_\(timeMorning)",
-										delay: 8.0
-									)
-									outros.append(morningOutro)
-								}
-								morningTimeIntroOutroPlayed = true
-							case playTimeEveningOutro:
-								outroRoot = root.time ?? ""
-								for timeEvening in timeEvenings {
-									let eveningOutro = Intro(
-										file: "EVENING_\(timeEvening)",
-										delay: 8.0
-									)
-									outros.append(eveningOutro)
-								}
-								eveningTimeIntroOutroPlayed = true
-							default:
-								outroType = "general"
-								outroRoot = root.general ?? ""
-								for general in generals {
-									let generalOutro = Intro(file: "GENERAL_\(general)", delay: 0.0) //need to calculate delay: song duration - general duration
-									outros.append(generalOutro)
-								}
-							}
-						default:
-							outroType = "general"
-							outroRoot = root.general ?? ""
-							for general in generals {
-								let generalOutro = Intro(file: "GENERAL_\(general)", delay: 0.0) //need to calculate delay: song duration - general duration
-								outros.append(generalOutro)
-							}
+						outroType = "general"
+						outroRoot = "\(stationRoot)/\(generalRoot)/"
+						for general in generals {
+							let generalOutro = Intro(file: "GENERAL_\(general)", delay: 0.0) //need to calculate delay: song duration - general duration
+							outros.append(generalOutro)
 						}
 					}
 					let o: Int = Int(arc4random_uniform(UInt32(outros.count))) //RANDOM OUTRO INDEX
 					let outro: String = outros[o].file
-					print("[\(#line)]> outro: \(outroRoot)/\(outro)")
+					print("[\(#line)]> outro: \(outroRoot)\(outro)")
 					guard let outroPath = AudioPath(resource: outro, directory: outroRoot) else {
 						//print("[\(#line)]> guard: play > outro > outroPath")
 						return
@@ -646,12 +583,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 					do {
 						audioPlayer3 = try AVAudioPlayer(contentsOf: outroURL)
 						outroDuration = audioPlayer3?.duration ?? 0.0
-						switch Station.name {
-						case "MOTOMAMI Los Santos":
-							outroTime = (songDuration - outroDuration - 1.0)
-						default:
-							outroTime = (songDuration - outroDuration - 5.0)
-						}
+						outroTime = (songDuration - outroDuration - 5.0)
 					} catch let error {
 						print(error.localizedDescription)
 					}
@@ -685,13 +617,14 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		
 		var playSong: Bool = false
 		var playAd: Bool = false
-		var playSolo: Bool = false
+		var playMonoSolo: Bool = false
 		var playNews: Bool = false
 		var playID: Bool = false
 		
-		let stationPlays: Plays = Station.plays
-		
-		if (stationPlays.ads || stationPlays.solos || stationPlays.news || stationPlays.stationIDs) {
+		switch Station.name {
+		case "Soulwax FM", "East Los FM", "Worldwide FM", "FlyLo FM", "The Lab", "Blonded Los Santos 97.8 FM", "Los Santos Underground Radio":
+			playSong = true
+		default:
 			switch outroType {
 			case "ad":
 				playAd = true
@@ -699,13 +632,13 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				playNews = true
 			default:
 				switch Station.name {
-				case "West Coast Talk Radio", "Blaine County Radio":
+				case "WCTR", "Blaine County Radio":
 					let news_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
 					switch lastPlayed {
 					case "id":
 						playSong = true
 					case "ad":
-						playAd = (news_ad_song <= 30.0) // ~30.0%
+						playAd = (news_ad_song <= 40.0) // ~50.0%
 						playID = !playAd
 					case "news":
 						playID = true
@@ -717,56 +650,25 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						playNews = playAd ? false : (news_ad_song <= 20.0)
 						playSong = !(playAd || playNews)
 					}
-				case "MOTOMAMI Los Santos":
-					let id_solo_song: Double = Double.random(in: 1.0..<(100.0 + 1))
-					switch lastPlayed {
-					case "id":
-						playSolo = (id_solo_song <= 20.83) // ~20.83%
-						playSong = !playSolo // ~79.17%
-					case "solo":
-						playID = (id_solo_song <= 12.5) // ~12.5%
-						playSong = !playID // ~87.50%
-					default:
-						playID = (id_solo_song <= 12.5) // ~12.5%
-						playSolo = (playID) ? false : id_solo_song <= (20.83 + 12.5) // ~20.83%
-						playSong = !(playID || playSolo) // ~66.67%
-					}
-				case "Kult FM":
-					let ad_ID_solo: Double = Double.random(in: 1.0..<(100.0 + 1))
-					switch lastPlayed {
-					case "id":
-						playSong = true
-					case "ad":
-						playID = true
-					case "solo":
-						playSong = true
-					default:
-						playAd = (ad_ID_solo <= 5.26) // ~5.26%
-						playID = playAd ? false : (ad_ID_solo <= (5.26 + 15.79)) // ~15.79%
-						playSolo = (playAd || playID) ? false : (ad_ID_solo <= (5.26 + 15.79 + 5.26)) // ~5.26%
-						playSong = !(playAd || playID || playSolo) // ~73.68.0%
-					}
 				default:
-					let news_solo_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
+					let news_monoSolo_ad_song: Double = Double.random(in: 1.0..<(100.0 + 1))
 					if ((lastPlayed == "ad") || (lastPlayed == "news")) {
 						if (lastPlayed == "ad") {
-							playAd = (news_solo_ad_song <= 5.0) // ~5.0%
+							playAd = (news_monoSolo_ad_song <= 5.0) // ~5.0%
 							playID = !playAd
 						} else {
 							playID = true
 						}
 					} else {
 						if (lastPlayed == "song") {
-							playNews = (news_solo_ad_song <= 1.17) // ~1.17% [-8]
-							playAd = playNews ? false : (news_solo_ad_song <= (1.17 + 2.3)) // ~2.3% [-16]
-							playSolo = (playNews || playAd) ? false : (news_solo_ad_song <= (1.17 + 2.30 + 25.38)) // ~25.38% [+12]
+							playNews = (news_monoSolo_ad_song <= 1.17) // ~1.17% [-8]
+							playAd = playNews ? false : (news_monoSolo_ad_song <= (1.17 + 2.3)) // ~2.3% [-16]
+							playMonoSolo = (playNews || playAd) ? false : (news_monoSolo_ad_song <= (1.17 + 2.30 + 25.38)) // ~25.38% [+12]
 						}
-						playSong = (playNews || playAd || playSolo) ? false : (news_solo_ad_song <= (1.17 + 2.30 + 25.38 + 71.15)) // ~71.15% [+12]
+						playSong = (playNews || playAd || playMonoSolo) ? false : (news_monoSolo_ad_song <= (1.17 + 2.30 + 25.38 + 71.15)) // ~71.15% [+12]
 					}
 				}
 			}
-		} else {
-			playSong = true
 		}
 		
 		switch true {
@@ -775,8 +677,8 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		case playAd:
 			play(Station,"ad")
 			outroType = ""
-		case playSolo:
-			play(Station,"solo")
+		case playMonoSolo:
+			play(Station,"mono_solo")
 		case playNews:
 			play(Station,"news")
 			outroType = ""
@@ -829,31 +731,12 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		// NEXT TRACK COMMAND HANDLER
 		commandCenter.nextTrackCommand.addTarget { [unowned self] event in
 			var nextStationIndex: Int
-			
 			switch currentStation.index {
 			case 27:
 				nextStationIndex = 1
 			default:
 				nextStationIndex = (currentStation.index + 1)
 			}
-			
-			var nextIsFavorite: Bool = favorite[RadioStations[nextStationIndex].name] ?? false
-			while !nextIsFavorite {
-				switch nextStationIndex {
-				case 27:
-					nextStationIndex = 1
-				default:
-					nextStationIndex = (nextStationIndex + 1)
-				}
-				nextIsFavorite = favorite[RadioStations[nextStationIndex].name] ?? false
-				if (nextStationIndex == currentStation.index) {
-					break
-				}
-			}
-			if (nextStationIndex == currentStation.index) {
-				return .commandFailed
-			}
-			
 			switch nextStationIndex {
 			case 0:
 				return .commandFailed
@@ -867,31 +750,12 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 		// PREVIOUS COMMAND HANDLER
 		commandCenter.previousTrackCommand.addTarget { [unowned self] event in
 			var previousStationIndex: Int
-			
 			switch currentStation.index {
 			case 1:
 				previousStationIndex = 27
 			default:
 				previousStationIndex = (currentStation.index - 1)
 			}
-			
-			var previousIsFavorite: Bool = favorite[RadioStations[previousStationIndex].name] ?? false
-			while !previousIsFavorite {
-				switch previousStationIndex {
-				case 1:
-					previousStationIndex = 27
-				default:
-					previousStationIndex = (previousStationIndex - 1)
-				}
-				previousIsFavorite = favorite[RadioStations[previousStationIndex].name] ?? false
-				if (previousStationIndex == currentStation.index) {
-					break
-				}
-			}
-			if (previousStationIndex == currentStation.index) {
-				return .commandFailed
-			}
-			
 			switch previousStationIndex {
 			case 0:
 				return .commandFailed
@@ -1044,24 +908,26 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 				let logo: String = currentStation.image.name
 				let row: Int = currentStation.image.row
 				let column: Int = currentStation.image.column
-				let sourceImage: UIImage = UIImage(named: logo)!
-				let cropRect: CGRect = CGRect(
-					x: ((128.0 * Double(row)) - 128),
-					y: ((128.0 * Double(column)) - 128),
-					width: 128.0,
-					height: 128.0
-				).integral
-				let sourceCGImage: CGImage = sourceImage.cgImage!
-				let croppedCGImage: CGImage = sourceCGImage.cropping(to: cropRect)!
-				let albumArtwork: UIImage = UIImage(
-					cgImage: croppedCGImage,
-					scale: sourceImage.imageRendererFormat.scale,
-					orientation: sourceImage.imageOrientation
-				)
-				let mediaItemPropertyArtwork = MPMediaItemArtwork(boundsSize: albumArtwork.size) { (size: CGSize) -> UIImage in
-					return albumArtwork
+				if let sourceImage = AssetManager.shared.loadImage(named: logo) ?? UIImage(named: logo) {
+					let cropRect: CGRect = CGRect(
+						x: ((128.0 * Double(row)) - 128),
+						y: ((128.0 * Double(column)) - 128),
+						width: 128.0,
+						height: 128.0
+					).integral
+					if let sourceCGImage = sourceImage.cgImage,
+					   let croppedCGImage = sourceCGImage.cropping(to: cropRect) {
+						let albumArtwork: UIImage = UIImage(
+							cgImage: croppedCGImage,
+							scale: sourceImage.imageRendererFormat.scale,
+							orientation: sourceImage.imageOrientation
+						)
+						let mediaItemPropertyArtwork = MPMediaItemArtwork(boundsSize: albumArtwork.size) { (size: CGSize) -> UIImage in
+							return albumArtwork
+						}
+						nowPlayingInfo[MPMediaItemPropertyArtwork] = mediaItemPropertyArtwork
+					}
 				}
-				nowPlayingInfo[MPMediaItemPropertyArtwork] = mediaItemPropertyArtwork
 			}
 			
 			// ARTIST
@@ -1075,4 +941,3 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 	}
 	
 }
-
