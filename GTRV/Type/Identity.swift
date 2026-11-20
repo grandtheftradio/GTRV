@@ -5,7 +5,7 @@
 //  Created by grandtheftradio on 9/11/24.
 //
 
-struct Identity {
+public struct Identity {
 	let root: String
 	let list: [String]
 }
