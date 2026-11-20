@@ -56,7 +56,7 @@ public class AssetManager: ObservableObject {
 		do {
 			let url = try URL(
 				resolvingBookmarkData: bookmarkData,
-				options: .withSecurityScope,
+				options: [],
 				relativeTo: nil,
 				bookmarkDataIsStale: &isStale
 			)
