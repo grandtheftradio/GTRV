@@ -103,3 +103,17 @@ public let RadioAdverts: [String] = [
 	"mono_ad096_jock_cranley1/MONO_AD096_JOCK_CRANLEY1",
 	"mono_ad097_jock_cranley2/MONO_AD097_JOCK_CRANLEY2"
 ]
+public let KFMRadioAdverts: [String] = [
+	"kult_ad001_aquarius/KULT_AD001_AQUARIUS",
+	"kult_ad002_aries/KULT_AD002_ARIES",
+	"kult_ad003_cancer/KULT_AD003_CANCER",
+	"kult_ad004_capricorn/KULT_AD004_CAPRICORN",
+	"kult_ad005_gemini/KULT_AD005_GEMINI",
+	"kult_ad006_leo/KULT_AD006_LEO",
+	"kult_ad007_libra/KULT_AD007_LIBRA",
+	"kult_ad008_pisces/KULT_AD008_PISCES",
+	"kult_ad009_sagitarius/KULT_AD009_SAGITARIUS",
+	"kult_ad010_scorpio/KULT_AD010_SCORPIO",
+	"kult_ad011_taurus/KULT_AD011_TAURUS",
+	"kult_ad012_virgo/KULT_AD012_VIRGO"
+]
