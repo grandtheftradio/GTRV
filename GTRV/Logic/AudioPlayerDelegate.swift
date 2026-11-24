@@ -197,7 +197,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			currentSong = nil
 			
 			if let monoSolos: [Solo] = Station.solo {
-				let stationRoot: String = Station.root ?? ""
+				let stationRoot: String = Station.root?.station ?? ""
 				let m: Int = Int(arc4random_uniform(UInt32(monoSolos.count))) //RANDOM MONO_SOLO INDEX
 				let monoSolo: Solo = monoSolos[m]
 				let solo: String = monoSolo.list.randomElement()!
@@ -265,7 +265,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 			currentSong = nil
 			
 			if let stationIDs: [Identity] = Station.identity {
-				let stationRoot: String = Station.root ?? ""
+				let stationRoot: String = Station.root?.station ?? ""
 				let i: Int = Int(arc4random_uniform(UInt32(stationIDs.count))) //RANDOM ID INDEX
 				let stationIdentity: Identity = stationIDs[i]
 				let stationID: String = stationIdentity.list.randomElement()!
@@ -334,7 +334,7 @@ class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate, ObservableObject {
 						}
 					}
 				}
-				let stationRoot: String = Station.root ?? ""
+				let stationRoot: String = Station.root?.station ?? ""
 				let generalRoot: String = Station.general?.root ?? ""
 				/*var s: Int = 0 //UNPLAYED SONG INDEX
 				if (Station.order == "random") {
