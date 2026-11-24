@@ -15,10 +15,13 @@ public struct RadioStation: Identifiable {
 	let root: Root?
 	let songs: [Song]?
 	let general: General?
-	let identity: [Identity]?
+	let stationID: [StationID]?
 	let solo: [Solo]?
 	let time: [String: [String]]?
 	let to: [String: [String]]?
+	public var identity: [StationID]? {
+		stationID
+	}
 	public var id: Int {
 		number
 	}

@@ -15,6 +15,10 @@
 		EB75BB3E2C91FDE500BE0F45 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3D2C91FDE500BE0F45 /* General.swift */; };
 		EB75BB402C9216FE00BE0F45 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB3F2C9216FE00BE0F45 /* Identity.swift */; };
 		EB75BB422C922BF300BE0F45 /* Solo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB75BB412C922BF300BE0F45 /* Solo.swift */; };
+		EB9900022CA7000100900793 /* Plays.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9900012CA7000100900793 /* Plays.swift */; };
+		EB9900042CA7000200900793 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9900032CA7000200900793 /* Root.swift */; };
+		EB9900062CA7000300900793 /* StationID.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9900052CA7000300900793 /* StationID.swift */; };
+		EB9900082CA7000400900793 /* CheckTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9900072CA7000400900793 /* CheckTime.swift */; };
 		EBB3BE3A2A97E79300E72A23 /* GTRVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE392A97E79300E72A23 /* GTRVApp.swift */; };
 		EBB3BE3C2A97E79300E72A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB3BE3B2A97E79300E72A23 /* ContentView.swift */; };
 		EBB3BE3E2A97E79400E72A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB3BE3D2A97E79400E72A23 /* Assets.xcassets */; };
@@ -56,6 +60,10 @@
 		EB75BB3D2C91FDE500BE0F45 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		EB75BB3F2C9216FE00BE0F45 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		EB75BB412C922BF300BE0F45 /* Solo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solo.swift; sourceTree = "<group>"; };
+		EB9900012CA7000100900793 /* Plays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plays.swift; sourceTree = "<group>"; };
+		EB9900032CA7000200900793 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		EB9900052CA7000300900793 /* StationID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationID.swift; sourceTree = "<group>"; };
+		EB9900072CA7000400900793 /* CheckTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTime.swift; sourceTree = "<group>"; };
 		EBB3BE362A97E79300E72A23 /* GTRV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTRV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB3BE392A97E79300E72A23 /* GTRVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTRVApp.swift; sourceTree = "<group>"; };
 		EBB3BE3B2A97E79300E72A23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,8 +91,8 @@
 		EBB3BEA12A97FD7200E72A23 /* ButtonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImage.swift; sourceTree = "<group>"; };
 		EBB3BEA32A97FDA300E72A23 /* ColorSelectorName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectorName.swift; sourceTree = "<group>"; };
 		EBB3BEA52A97FDD200E72A23 /* ColorSelectorSector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSelectorSector.swift; sourceTree = "<group>"; };
-		EBB3BEA72A97FDF900E72A23 /* RadioStationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationButton.swift; sourceTree = "<group>"; };
-		EBB3BEA92A97FE2200E72A23 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EBB3BEA82A97FDF900E72A23 /* RadioStationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationButton.swift; sourceTree = "<group>"; };
+		EBB3BEAA2A97FE2200E72A23 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		EBB3BEAB2A97FE5700E72A23 /* StationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLabel.swift; sourceTree = "<group>"; };
 		EBB3BEAD2A97FE8700E72A23 /* Stations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stations.swift; sourceTree = "<group>"; };
 		EBB3BEAF2A9812B400E72A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +173,7 @@
 				EBB3BE842A97EECA00E72A23 /* StopRadio.swift */,
 				EBB3BE862A97F0D200E72A23 /* TuneInTime.swift */,
 				EB0A724F2CA5D62000890708 /* Unplayed.swift */,
+				EB9900072CA7000400900793 /* CheckTime.swift */,
 				EBB3BE882A97F13D00E72A23 /* ViewModel.swift */,
 			);
 			path = Logic;
@@ -190,6 +199,9 @@
 				EBB3BE962A97FC3900E72A23 /* RadioStation.swift */,
 				EBB3BE922A97F28300E72A23 /* Sector.swift */,
 				EB75BB412C922BF300BE0F45 /* Solo.swift */,
+				EB9900012CA7000100900793 /* Plays.swift */,
+				EB9900032CA7000200900793 /* Root.swift */,
+				EB9900052CA7000300900793 /* StationID.swift */,
 				EBB3BE902A97F24400E72A23 /* Song.swift */,
 				EBB3BE8E2A97F20C00E72A23 /* TuneData.swift */,
 			);
@@ -315,6 +327,10 @@
 				EBB3BEAA2A97FE2200E72A23 /* Settings.swift in Sources */,
 				EBB3BE872A97F0D200E72A23 /* TuneInTime.swift in Sources */,
 				EB75BB402C9216FE00BE0F45 /* Identity.swift in Sources */,
+				EB9900022CA7000100900793 /* Plays.swift in Sources */,
+				EB9900042CA7000200900793 /* Root.swift in Sources */,
+				EB9900062CA7000300900793 /* StationID.swift in Sources */,
+				EB9900082CA7000400900793 /* CheckTime.swift in Sources */,
 				EBB3BEA22A97FD7200E72A23 /* ButtonImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +499,6 @@
 				DEVELOPMENT_TEAM = 387VNX25DJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GTRV/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
